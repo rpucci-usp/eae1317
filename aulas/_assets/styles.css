@@ -1,0 +1,370 @@
+/* EAE1317 — tema simples para os slides revealjs (Quarto) */
+
+:root {
+  --eae-azul-escuro: #1b3a5c;
+  --eae-azul-claro: #eef3f8;
+  --eae-destaque: #c0392b;
+}
+
+.reveal h1, .reveal h2 {
+  color: var(--eae-azul-escuro);
+}
+
+.reveal .slide-number {
+  color: var(--eae-azul-escuro);
+}
+
+.reveal .callout-note {
+  border-left: 4px solid var(--eae-destaque);
+  background: #fceae8;
+}
+
+.reveal .footer {
+  color: #6b7a89;
+  font-size: 0.55em;
+}
+
+.reveal strong {
+  color: var(--eae-azul-escuro);
+}
+
+/* Slides originais eram 16:9 com sub-níveis em fonte menor (padrão PowerPoint).
+   O tema revealjs não encolhe sub-níveis por padrão, o que estourava a altura
+   de ~45% dos slides. Ajuste geral de densidade abaixo. */
+/* Título sempre do mesmo tamanho, inclusive em slides {.smaller} -------------
+   O `{.smaller}` do Quarto encolhe a fonte da <section> (40px → 28px) e, para o
+   título não encolher junto, reaplica um tamanho compensado:
+
+       .reveal .slides section.smaller h2 { font-size: calc(2.28571em) }
+
+   2.28571 é 1.6/0.7 — ou seja, a compensação devolve o h2 ao tamanho padrão do
+   *tema* (1.6em). Mas este projeto usa 1.5em, e o Quarto não sabe disso: o
+   resultado é o título de um slide {.smaller} sair a 64px enquanto todos os
+   outros saem a 60px. E a regra dele vence por especificidade — (0,3,2) contra
+   (0,2,1) da regra genérica abaixo.
+
+   A correção repete o seletor dele (empate em especificidade; styles.css carrega
+   depois, então ganha) e fixa o tamanho em px. Aqui px é a unidade certa, e não
+   um valor mágico: o revealjs mantém o palco em 1280x720 e escala tudo depois,
+   então 60px significa sempre "60 de 720" — e, ao contrário de `em`, não é
+   afetado pela fonte da <section> que o {.smaller} acabou de mexer. */
+.reveal .slides h2,
+.reveal .slides section.smaller h2 {
+  font-size: 60px;
+  margin-bottom: 0.25em;
+}
+
+.reveal .slides section li {
+  font-size: 0.78em;
+  line-height: 1.28;
+  margin-bottom: 0.28em;
+}
+
+/* Respiro extra em bullets específicos ---------------------------------------
+   O espaçamento acima é apertado de propósito: a maioria dos slides convertidos
+   é densa e o padrão do tema estourava a altura. Onde sobra espaço na tela,
+   `.solto` afrouxa. Funciona em três escopos:
+
+     ## Título {.solto}          o slide inteiro
+     ::: {.solto} ... :::        um grupo de bullets
+     - [texto]{.solto}           um bullet só
+
+   Para dosar sem mexer neste arquivo, sobrescreva as variáveis no próprio
+   slide (valem para tudo que estiver dentro dele):
+
+     ## Título {.solto style="--espaco-bullet: 1.4em; --altura-linha: 1.6"}
+
+   `--espaco-bullet` é a distância ATÉ O PRÓXIMO bullet; `--altura-linha` é o
+   espaçamento DENTRO de um bullet que quebra em mais de uma linha. São coisas
+   diferentes e quase sempre é a primeira que se quer.
+
+   O seletor `:has()` é o mesmo mecanismo já usado na revelação progressiva:
+   a classe cai num <span> dentro do <li> (markdown não deixa marcar o <li>
+   direto), então quem precisa reagir é o <li> em volta.
+
+   Os dois primeiros seletores são presos ao tipo de elemento (`section.solto`,
+   `div.solto`) de propósito. Um `.solto li` solto também pegaria o caso do
+   <span>, mas aí os sub-bullets aninhados dentro daquele item herdariam o
+   espaçamento junto — e a ideia é afrouxar um bullet, não a árvore abaixo dele. */
+.reveal .slides section.solto li,
+.reveal .slides div.solto li,
+.reveal .slides li:has(> span.solto) {
+  margin-bottom: var(--espaco-bullet, 0.85em);
+  line-height: var(--altura-linha, 1.45);
+}
+
+.reveal .slides section ul ul li {
+  font-size: 0.88em;
+}
+
+.reveal .slides section ul ul ul li {
+  font-size: 0.88em;
+}
+
+.reveal .slides section ul {
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.reveal .slides section p {
+  margin-bottom: 0.4em;
+}
+
+.reveal .callout-note {
+  font-size: 0.75em;
+  padding: 0.4em 0.7em;
+}
+
+/* Revelação progressiva ------------------------------------------------------
+   Nos .pptx originais a "animação" era feita duplicando o slide e cobrindo o
+   texto ainda não revelado com um retângulo branco, que ia encolhendo. Aqui
+   isso virou um único slide com spans `.fragment`.
+
+   Como a classe fica no <span> (e não no <li>), o marcador do bullet apareceria
+   sozinho antes do texto ser revelado. Estas regras escondem o marcador
+   enquanto o fragmento correspondente não está visível — o espaço da linha
+   continua reservado, então o texto não "salta" ao ser revelado, igual à caixa
+   branca do PowerPoint. */
+.reveal .slides li:has(> span.fragment:not(.visible))::marker {
+  color: transparent;
+}
+
+/* Fallback para navegadores sem :has() — mantém o marcador sempre visível em
+   vez de quebrar o layout. Nada a fazer além de documentar a limitação. */
+
+/* Equações fora de lista --------------------------------------------------
+   Parágrafos do slide original marcados <a:buNone/> (sem marcador) — em geral
+   uma equação com <m:jc m:val="centerGroup"/> (centralizada). Viram um bloco
+   ::: {.eq-block} fora da lista de bullets: precisou ser um div fenced porque
+   um "$$...$$" solto, só com linha em branco ao redor, não quebra de forma
+   confiável a lista anterior no Pandoc — o bloco acabava "engolido" como
+   parágrafo de continuação do <li> anterior (testado e confirmado). */
+.reveal .eq-block {
+  text-align: center;
+  margin: 0.15em 0;
+}
+
+/* Mesmo mecanismo acima, mas para texto comum sem marcador (ex.: uma linha de
+   "Referência: ..." no fim de um slide) — precisa do div para escapar da
+   lista, mas continua alinhado à esquerda como o resto do corpo do texto. */
+.reveal .no-bullet {
+  text-align: left;
+  margin: 0.1em 0;
+}
+
+/* .reveal .slides section p (acima) tem 2 classes + 2 tags de especificidade;
+   ".eq-block p" sozinho (2 classes + 1 tag) perde a briga mesmo vindo depois
+   no arquivo — por isso repete "section" aqui para empatar/superar. */
+.reveal .slides section .eq-block p,
+.reveal .slides section .no-bullet p {
+  margin: 0;
+}
+
+/* Mais espaço entre dois blocos .no-bullet consecutivos ---------------------
+   Com o parágrafo interno zerado (regra acima), sobra só a margem de 0.1em do
+   próprio div — dois blocos seguidos ficam quase colados. E como margem
+   vertical de blocos adjacentes COLAPSA (fica com o maior valor, não a soma
+   dos dois), aumentar só um dos lados já separa o par: não precisa mexer nos
+   dois blocos, só no de baixo.
+
+   Reaproveita o nome ".solto" já usado em bullets soltos, mas aqui marca o
+   div .no-bullet inteiro:
+
+     ::: {.no-bullet .solto}
+     **Definição 2:** ...
+     :::
+
+   Dosar sem tocar neste arquivo, com a mesma variável nomeada:
+
+     ::: {.no-bullet .solto style="--espaco-bloco: 1.4em"} */
+.reveal .no-bullet.solto {
+  margin-top: var(--espaco-bloco, 0.9em);
+}
+
+/* MathJax aplica por padrão ~40px de margem vertical em toda equação de
+   destaque (.MathJax_Display) — não vem do nosso CSS, vem da própria lib, e
+   sozinho já era maior que qualquer ajuste de densidade feito aqui. Sem isso,
+   qualquer slide com uma equação centralizada estourava a altura. */
+.reveal .MathJax_Display {
+  margin: 0.2em 0 !important;
+}
+
+/* Capas de seção ------------------------------------------------------------
+   Slides 4 e 11 do .pptx original não são slides de conteúdo: usam o layout
+   "Section Header" do master (título 40pt à esquerda, ancorado embaixo, com uma
+   linha de apoio 20pt em cinza logo abaixo e sem marcador). Funcionam como
+   capas intermediárias, anunciando o bloco de slides que vem a seguir.
+
+   Aqui o equivalente é `## Título {.section-cover}` com a linha de apoio em um
+   `::: {.section-sub}` — o div é necessário pelo mesmo motivo documentado em
+   .no-bullet acima (escapar da lista de bullets).
+
+   Medidas em px porque o revealjs mantém o palco interno fixo em 1280x720 e só
+   escala o conjunto depois: 40pt sobre os 540pt de altura do slide original
+   equivalem a 53px aqui, e 20pt a 27px.
+
+   O bloco é descido por `padding-top` em vez de centralizado com flex de
+   propósito: o revealjs escreve `display: block` inline no slide visível (e
+   `display: none` nos demais), então um `display: flex` do CSS só valeria com
+   `!important` — o que também venceria o `none` e faria todos os slides
+   aparecerem de uma vez. O padding reproduz a posição fixa do layout original:
+   o título termina a 3,86" dos 7,5" de altura ≈ 370px de 720. */
+.reveal .slides section.section-cover {
+  text-align: left;
+  /* sem border-box o slide fica 720+305px de altura e o revealjs sobe o
+     conteúdo para "caber" na tela, jogando fora o recuo calculado acima. */
+  box-sizing: border-box;
+  padding-top: 305px;
+  /* 2,83" de 13,33" no original ≈ 21% da largura do slide; o palco já entra
+     com 8% de margem de cada lado, então sobram ~14% de recuo aqui. */
+  padding-left: 14%;
+  padding-right: 6%;
+}
+
+.reveal .slides section.section-cover h2 {
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 0.2em 0;
+  border-bottom: none;
+}
+
+.reveal .slides section.section-cover .section-sub,
+.reveal .slides section.section-cover .section-sub p {
+  font-size: 27px;
+  color: #595959; /* schemeClr tx1 com lumMod 65% no master */
+  margin: 0;
+}
+
+/* Alternativas de votação ---------------------------------------------------
+   Nos slides de votação a letra — (a), (b), (c) — já é o marcador, então não
+   entram como lista: um marcador de bullet antes da letra fica redundante.
+
+   Cada alternativa precisa ser um parágrafo separado (linha em branco entre
+   elas no .qmd), senão o markdown junta as três num parágrafo só e elas saem
+   na mesma linha. O recuo pendente alinha a segunda linha de uma alternativa
+   longa com o texto da primeira, e não com a letra. */
+.reveal .opcoes {
+  margin: 0.6em 0 0 0;
+}
+
+/* 1.45em ≈ a largura de "(a) " em negrito no corpo do slide (medida: 46px do
+   rótulo + o espaço, sobre uma fonte de 40px). Um recuo maior que isso deixa a
+   segunda linha desalinhada à direita do texto da primeira. */
+.reveal .slides section .opcoes p {
+  margin: 0 0 0.45em 0;
+  padding-left: 1.45em;
+  text-indent: -1.45em;
+}
+
+/* Mapa do modelo ------------------------------------------------------------
+   A derivação do ótimo de Pareto ocupa cinco slides seguidos de Lagrangiana, e
+   nenhum deles diz em qual das quatro condições estamos. Estas caixas repetem o
+   caminho inteiro na abertura de cada bloco, com a etapa corrente destacada. */
+.reveal .step-map {
+  display: flex;
+  gap: 0.6em;
+  margin: 0.7em 0;
+}
+
+.reveal .step-map .step {
+  flex: 1;
+  border: 2px solid #ccd8e4;
+  border-radius: 6px;
+  padding: 0.5em 0.6em;
+  font-size: 0.6em;
+  line-height: 1.3;
+}
+
+.reveal .slides section .step-map .step p {
+  margin: 0;
+}
+
+.reveal .step-map .step strong {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.reveal .step-map .step.now {
+  border-color: var(--eae-azul-escuro);
+  background: var(--eae-azul-claro);
+}
+
+/* Tabela de comparação ------------------------------------------------------
+   Pareto x Competitivo lado a lado. As equações vão em fração de uma linha só
+   (barra em vez de \frac aninhado): uma fração de frações numa célula estica a
+   linha para três alturas de texto e a tabela deixa de caber no slide. */
+.reveal .cmp table {
+  width: 100%;
+  font-size: 0.62em;
+  border-collapse: collapse;
+}
+
+.reveal .cmp th,
+.reveal .cmp td {
+  padding: 0.45em 0.5em;
+  vertical-align: middle;
+  border-bottom: 1px solid #dde5ec;
+}
+
+.reveal .cmp thead th {
+  color: var(--eae-azul-escuro);
+  border-bottom: 2px solid var(--eae-azul-escuro);
+}
+
+.reveal .cmp tbody tr:last-child {
+  background: #fceae8;   /* a linha onde o mercado falha */
+}
+
+/* Tabela de dados -----------------------------------------------------------
+   Mesma densidade da .cmp, mas sem o destaque da última linha: serve para tabelas
+   em que a última linha não significa nada de especial (na .cmp ela é a linha onde
+   o mercado falha, e o rosa está lá de propósito). Números centralizados, primeira
+   coluna à esquerda porque é rótulo, não dado. */
+.reveal .tabela table {
+  width: 100%;
+  font-size: 0.6em;
+  border-collapse: collapse;
+  margin: 0.5em 0;
+}
+
+.reveal .tabela th,
+.reveal .tabela td {
+  padding: 0.35em 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #dde5ec;
+}
+
+.reveal .tabela thead th {
+  color: var(--eae-azul-escuro);
+  border-bottom: 2px solid var(--eae-azul-escuro);
+}
+
+.reveal .tabela thead th:first-child,
+.reveal .tabela tbody td:first-child {
+  text-align: left;
+}
+
+/* Diagramas vetoriais -------------------------------------------------------
+   Gráficos como a Caixa de Edgeworth não existem como imagem no .pptx: são
+   formas nativas do PowerPoint (curvas de Bézier, elipses, conectores), que o
+   conversor reconstrói como SVG. O SVG já vem recortado na bounding box do
+   desenho, então aqui é só limitar a altura para dividir o slide com o texto. */
+.reveal .diagram {
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.reveal .diagram img {
+  /* px, not vh: revealjs keeps its internal layout fixed at 1280x720 and
+     scales the whole stage afterward, so a px value here always means "X out
+     of 720" no matter how big the real browser window is. vh is relative to
+     the actual window, so the same "46vh" rendered at very different pixel
+     heights across two otherwise-identical checks in this project — the
+     image looked "small" for reasons that had nothing to do with the image
+     itself. 330px ≈ the old 46vh at the 720 reference height. */
+  max-height: 330px;
+  width: auto;
+  max-width: 92%;
+}

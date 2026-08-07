@@ -1,0 +1,17 @@
+<svg width="416" height="360"
+     viewBox="379.1 325.7 416.2 359.6"
+     xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#000000"/>
+    </marker>
+  </defs>
+  <path d="M 421.07 390.06 A 253.78 261.98 0 0 1 674.85 651.62" fill="none" stroke="#C00000" stroke-width="3.00"/>
+  <line x1="421.1" y1="663.4" x2="421.1" y2="355.5" stroke="#000000" stroke-width="1.00" marker-end="url(#arrow)"/>
+  <line x1="412.5" y1="652.0" x2="781.3" y2="652.0" stroke="#000000" stroke-width="1.00" marker-end="url(#arrow)"/>
+  <path d="M 565.54 370.46 C 579.84 417.58 594.14 464.71 628.84 497.07 C 663.53 529.42 718.62 547.01 773.70 564.59" fill="none" stroke="#0A111D" stroke-width="1.00"/>
+  <line x1="482.9" y1="339.7" x2="745.2" y2="621.2" stroke="#0070C0" stroke-width="3.00" stroke-dasharray="2,2"/>
+  <text x="726.6" y="613.3" font-size="15" font-style="italic" fill="#000000">−px/py</text>
+  <text x="393.1" y="359.2" font-size="15" font-style="italic" fill="#000000">y</text>
+  <text x="757.9" y="671.3" font-size="15" font-style="italic" fill="#000000">x</text>
+</svg>

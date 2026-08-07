@@ -1,0 +1,741 @@
+---
+title: "Externalidades"
+subtitle: "EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais"
+author: "Rafael Pucci"
+date: "2026-08-11"
+lang: pt
+format:
+  revealjs:
+    theme: simple
+    width: 1280
+    height: 720
+    margin: 0.08
+    slide-number: true
+    chalkboard: true
+    incremental: false
+    css: styles.css
+    footer: "EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais"
+---
+
+## Aula Passada
+
+- Algumas Correntes de Pensamento
+  - Valor Intrínseco vs. Valor Instrumental
+  - Biocentrismo vs. Antropocentrismo
+  - Princípio Preventivo
+  - Sustentabilidade
+- Eficiência Econômica
+  - Fronteira de Pareto
+  - Eficiência em Trocas e em Produção
+  - Princípio Equimarginal
+  - Equilíbrio Competitivo e Teoremas do Bem-Estar
+  - Oferta e Demanda
+    - Equilíbrio de Mercado
+    - Disposição a Pagar
+
+## Agenda
+
+- Principais tipos de poluição
+  - Água
+  - Ar
+  - Solo
+- Modelo de Externalidades
+  - Alocação de Pareto
+  - Equilíbrio Competitivo
+  - Intervenções
+    - Imposto de Pigou
+  - Custo de Abatimento
+
+## Tipos de Poluição {.section-cover}
+
+## Tipos de Poluição
+
+- Neste curso, o problema central é a poluição do meio ambiente pela ação humana.
+- Poluição é, genericamente, um subproduto.
+  - É algo gerado pela atividade humana, mas **não é um fim**.
+  - (Quase) ninguém gera poluição porque é divertido.
+- [A poluição pode advir tanto de atividades produtivas de empresas quanto de decisões de indivíduos.]{.fragment fragment-index=1}
+  - [Uma fábrica pode emitir poluentes no ar ao gerar energia;]{.fragment fragment-index=1}
+  - [Um indivíduo pode gerar poluentes ao dirigir todos os dias para o trabalho.]{.fragment fragment-index=1}
+
+## Tipos de Poluição
+
+- Podemos categorizar poluição sob várias óticas.
+- De acordo com setores responsáveis:
+  - Fábricas, agricultura, geração de eletricidade etc.
+- De acordo com a fonte:
+  - Pontual: uma fábrica específica despeja esgoto no rio;
+  - Não-Pontual: várias fazendas usam agrotóxicos que contaminam um rio.
+- De acordo com a forma que a poluição nos afeta:
+  - Saúde;
+  - Produtividade de atividades econômicas (pesca, agricultura etc);
+  - Amenidades: comprometimento de paisagem, parque etc.
+
+## Poluição da Água
+
+
+::: {.no-bullet}
+Degradação de **águas superficiais e subterrâneas, além de zonas costeiras**.
+:::
+
+
+::: {.no-bullet}
+**Causas comuns de poluição da água?**
+:::
+
+  - Matéria orgânica e bactérias em esgoto lançado nos rios;
+  - Excesso de nutrientes (nitrogênio e fósforo) que escoam de áreas agrícolas;
+  - Metais pesados (chumbo e mercúrio) liberados por fábricas e garimpos;
+  - Sedimentos sólidos de construções e erosão em áreas rurais;
+  - Ácido sulfúrico proveniente de chuvas em áreas urbanas.
+
+## Poluição da Água
+
+
+::: {.no-bullet}
+**Quais são alguns efeitos da poluição da água?**
+:::
+
+- Matéria orgânica → consumo excessivo de oxigênio → hipóxia e mortalidade de peixes;
+- Nutrientes → proliferação e morte de algas → decomposição → hipóxia;
+- Sedimentos → assoreamento dos rios → enchentes;
+- Vazamento de petróleo → mortalidade de vida marinha;
+- Contaminação da água → doenças.
+
+::: {.no-bullet}
+**Exemplos:** Rios Pinheiros, Tietê e Tamanduateí.
+:::
+
+
+## Poluição do Ar
+
+
+::: {.no-bullet}
+**Poluição do Ar Nociva (não há níveis seguros de exposição):**
+:::
+
+- Compostos químicos como amianto, mercúrio, chumbo, benzeno e arsênico são tóxicos e, frequentemente, carcinogênicos;
+- Oriunda de processos industriais químicos ou demolição de construções antigas (amianto).
+
+::: {.no-bullet}
+**Poluição do Ar Convencional:**
+:::
+
+- Oriunda da queima de combustíveis fósseis para gerar eletricidade, transporte e aquecimento domiciliar
+- Dióxido de Enxofre (carvão);
+- Monóxido de Carbono e Óxidos de Nitrogênio (motores);
+- Material particulado: combustão incompleta, incêndios florestais, aquecimento e cozinha.
+
+## Poluição do Ar
+
+
+::: {.no-bullet}
+**Há ainda poluição do ar geradora de mudanças climáticas:**
+:::
+
+- Não são necessariamente poluentes, mas são problemáticos em alta concentração;
+- Gases de Efeito Estufa (Dióxido de Carbono, Óxido Nitroso e Metano);
+- Gases CFCs (degradação da camada de ozônio).
+
+::: {.no-bullet}
+**Alguns efeitos da poluição do ar?**
+:::
+
+  - Material particulado aumenta risco de doenças respiratórias e cardíacas;
+  - Óxido de Nitrogênio → Ozônio superficial → smog e problemas pulmonares;
+  - Dióxido de Enxofre → chuva ácida → corrosão de monumentos e florestas;
+  - Mudanças Climáticas.
+
+## Poluição do Solo
+
+
+::: {.no-bullet}
+**Duas categorias:**
+:::
+
+- Descarte de lixo convencional, infectante, nocivo ou radioativo;
+- Alteração de paisagens com danos à biodiversidade e a serviços de ecossistêmicos.
+
+::: {.no-bullet}
+**Alguns efeitos da poluição do solo?**
+:::
+
+- Lixões → animais e insetos transmissores de doenças;
+- Contaminação do solo → redução no valor da propriedade;
+- Lixo radioativo → mortalidade de pessoas e animais;
+- Desmatamento → perda de biodiversidade e surgimento de arboviroses.
+
+::: {.no-bullet}
+**Exemplos:** Césio-137 em Goiânia (1987), com 249 contaminados; desmatamento na Amazônia
+:::
+
+
+## Em resumo
+
+
+::: {.no-bullet}
+**Diferentes tipos de poluição têm diferentes impactos.**
+:::
+
+- É importante entender o contexto de cada problema.
+- Quem é afetado? Quem se beneficia?
+  - Resposta é relevante para desenho de políticas públicas.
+
+::: {.no-bullet}
+Muitas vezes, inclusive, os tipos de poluição interagem.
+:::
+
+- Chuva ácida é causada por poluição do ar e gera poluição na água.
+
+## Modelo de Externalidades {.section-cover}
+
+## Externalidades
+
+- Vimos que Ótimo de Pareto é métrica comum em Economia para comparar diferentes cenários.
+  - E vimos que há situações em que o Ótimo de Pareto não é alcançado pelo Equilíbrio Competitivo.
+- Trataremos, agora, de uma falha de mercado recorrente em que o Ótimo de Pareto não é alcançado pela competição.
+
+::: {.no-bullet}
+**Externalidades:** interações de indivíduo com meio ambiente que provocam **impactos positivos ou negativos, diretos e não solicitados** em outro indivíduo.
+:::
+
+
+## Externalidades
+
+
+::: {.no-bullet}
+Importante: externalidades **não são mediadas por mecanismos de mercado (preços).**
+:::
+
+- Se uma fábrica passa a consumir mais eletricidade e provoca aumento no preço da energia, isto não é externalidade.
+
+::: {.no-bullet}
+**Exemplo clássico:** lavanderia vizinha a uma fábrica.
+:::
+
+- Fábrica escolhe quanto produzir, lançando fumaça no ar.
+  - Fumaça impacta produção de roupas limpas da lavanderia, mas esta não ganha nenhuma compensação por isso.
+- Custo de produção da fábrica não embute custo adicional gerado para lavanderia e outros vizinhos.
+
+## Externalidades
+
+
+::: {.no-bullet}
+**Outro exemplo:** fazendeiro aplica fertilizantes, contaminando lençol freático.
+:::
+
+- Comunidades vizinhas consomem água contaminada, mas não são compensadas por isso;
+- Custo do fazendeiro não embute externalidade negativa gerada.
+
+::: {.no-bullet}
+[**Mais um:** apiário ao lado de pomar de laranjas.]{.fragment fragment-index=1}
+:::
+
+- [Pomar é mais produtivo por conta das abelhas, mas não paga por esse serviço.]{.fragment fragment-index=1}
+
+
+## Definições
+
+
+::: {.no-bullet}
+**Definição 1:** uma alocação é considerada Pareto-ótima se uma realocação de recursos não pode fazer um indivíduo melhor sem deixar outro pior.
+:::
+
+
+::: {.no-bullet .solto style="--espaco-bloco: 1.4em"}
+**Definição 2:** uma externalidade existe quando a utilidade ou função de produção do agente A depende diretamente de variáveis reais escolhidas pelo agente B, sem que haja compensação pelo efeito gerado no bem-estar de A.
+:::
+
+
+## Definições
+
+
+::: {.no-bullet}
+Podemos categorizar externalidades em dois grupos principais:
+:::
+
+- **Externalidade de Consumo:** consumo do agente A afeta bem-estar do agente B.
+  - Deslocar-se com automóvel, emitindo gases estufa e contribuindo para aquecimento global;
+  - Plantar um jardim bonito na frente da casa, gerando felicidade para quem passa.
+- **Externalidade de Produção:** quando produção de uma firma gera impacto em outros agentes.
+  - Fábrica emite fumaça e prejudica vizinhos;
+  - Apiário ajuda na produção de laranjas do fazendeiro vizinho.
+
+## Exemplo Estilizado
+
+- Para fixarmos a ideia da externalidade como falha de mercado, suponha o exemplo clássico de **uma ilha com uma pessoa apenas, o Robinson.**
+- Ilha tem bosque indispensável para abrigar animais de caça;
+- Robinson usa madeira para construir sua casa e gosta de comer carne.
+
+::: {.no-bullet}
+Suponha que ele derrube **o bosque inteiro** para construir sua casa, e fique sem carne. Essa alocação é **eficiente**?
+:::
+
+[- Se Robinson é o único habitante da ilha, qualquer alocação individualmente ótima é, também, Pareto-ótima.
+  - Robinson pode desmatar o bosque inteiro e ficar sem carne.]{.fragment fragment-index=1}
+
+
+## Exemplo Estilizado
+
+
+::: {.no-bullet}
+Externalidade surge quando Robinson compartilha a ilha com outros agentes.
+:::
+
+- Suponha que Robinson e Dona Florinda vivam na ilha.
+- [Além disso, suponha as seguintes preferências:]{.fragment fragment-index=1}
+  - [Robinson gosta de casas monumentais, mas é vegano;]{.fragment fragment-index=1}
+  - [Dona Florinda dorme sob as estrelas, mas adora carne.]{.fragment fragment-index=1}
+
+::: {.no-bullet}
+[**Mesma pergunta:** Robinson derruba o bosque inteiro. Agora, com duas pessoas na ilha, essa alocação é eficiente?]{.fragment fragment-index=2}
+:::
+
+- [No caso competitivo, há uma falha de mercado:]{.fragment fragment-index=3}
+  - [É provável que Robinson desmate todo o bosque para construir seu palácio, deixando Dona Florinda sem carne.]{.fragment fragment-index=3}
+
+## Exemplo Estilizado
+
+::: {.no-bullet}
+Dona Florinda vê o bosque sendo derrubado e sabe que vai ficar sem carne. **Se fosse ela, o que tentaria?**
+:::
+
+::: {.opcoes}
+**(a)** Exigir que Robinson pare de derrubar.
+
+**(b)** Oferecer alguma coisa a ele em troca de preservar o bosque.
+
+**(c)** Nada. A ilha é dele, ele que decida.
+:::
+
+## Exemplo Estilizado
+
+
+::: {.no-bullet}
+A solução nesse exemplo estilizado passa por algum tipo de **coordenação**.
+:::
+
+
+::: {.no-bullet}
+[Podemos pensar em duas formas:]{.fragment fragment-index=1}
+:::
+
+1. [**Caso Não-Cooperativo:** Suponha que Robinson chegou antes à ilha e tem total controle sobre ela.]{.fragment fragment-index=1}
+   - [**Dona Florinda pode oferecer seus serviços de engenharia** e ensinar Robinson a construir casas mais eficientemente; **em troca, bosque é relativamente preservado.**]{.fragment fragment-index=1}
+   - [Existência de direitos de propriedade claramente definidos permitem a criação de um mecanismo de trocas → 1º Teorema do Bem-Estar funciona.]{.fragment fragment-index=1}
+1. [**Caso Cooperativo:** Robinson e Dona Florinda podem formar um clã e combinar um arranjo voluntariamente.]{.fragment fragment-index=2}
+   - [Acordo coletivo sobre o uso da madeira do bosque.]{.fragment fragment-index=2}
+
+::: {.no-bullet}
+[Ambas as soluções servem para **internalizar a externalidade**.]{.fragment fragment-index=2}
+:::
+
+
+## Exemplo Estilizado
+
+
+::: {.no-bullet}
+Em Economia do Meio Ambiente, a maioria dos problemas tem raiz similar.
+:::
+
+- Falta de coordenação devido a
+  - Mercados ausentes;
+  - Direitos de propriedade incompletos;
+  - Enforcement ineficiente;
+  - Incapacidade de indivíduos de tomar decisões coletivas.
+- Para resolvê-los, muitas vezes, é necessário criar **mecanismos de coordenação**.
+
+## Modelo Formal de Externalidades
+
+
+::: {.no-bullet}
+Considere uma economia com 2 indivíduos.
+:::
+
+
+::: {.no-bullet}
+A função utilidade de cada um é dada por
+:::
+
+
+::: {.eq-block}
+$${U}_{i}\left({x}_{i},{z}_{i},E\right)$$
+:::
+
+- Em que ${x}_{i}$ e ${z}_{i}$ são o consumo de dois bens diferentes por $i\in \{1,2\}$.
+- $E$ é o nível de poluição ambiental.
+  - Isto é exógeno ao indivíduo, ou seja, fora de seu controle.
+- Vamos supor que a externalidade seja **negativa**. Como isso se manifesta no modelo?
+  - [$\frac{\partial {U}_{i}}{\partial E}<0$]{.fragment fragment-index=1}
+
+## Modelo Formal de Externalidades
+
+
+::: {.no-bullet}
+Suponha, ainda, que a produção de $x$ é responsável por gerar poluição.
+:::
+
+- Ou seja, é a fonte de externalidade nesta economia.
+
+::: {.no-bullet}
+A função de produção de $x$ é dada por
+:::
+
+
+::: {.eq-block}
+$$x=f({\ell }_{x},E)$$
+:::
+
+- Em que ${\ell }_{x}$ é o trabalho empregado para produzir $x$.
+- É como se trabalho e poluição fossem insumos.
+  - Produto marginal positivo: $\frac{\partial f}{\partial {\ell }_{x}}>0$ e $\frac{\partial f}{\partial E}>0$
+
+## Modelo Formal de Externalidades
+
+
+::: {.no-bullet}
+O bem $z$ é produzido pela tecnologia.
+:::
+
+
+::: {.eq-block}
+$$z=g({\ell }_{z})$$
+:::
+
+
+::: {.no-bullet}
+Além disso, considere que o trabalho está limitado à dotação total de tempo:
+:::
+
+
+::: {.eq-block}
+$${\ell }_{x}+{\ell }_{z}=\ell$$
+:::
+
+
+## Alocação Ótima de Pareto
+
+
+::: {.no-bullet}
+Como encontramos o Ótimo de Pareto nesta economia?
+:::
+
+
+::: {.no-bullet}
+[Uma forma é maximizar a utilidade de um dos indivíduos sujeito a algumas restrições:]{.fragment fragment-index=1}
+:::
+
+- [Não piorar outro indivíduo;]{.fragment fragment-index=1}
+- [Usar tecnologias existentes;]{.fragment fragment-index=1}
+- [Respeitar total de recursos disponíveis.]{.fragment fragment-index=1}
+
+::: {.no-bullet}
+[Como montamos esse problema de maximização? **LOUSA**]{.fragment fragment-index=1}
+:::
+
+
+## O caminho até o ótimo de Pareto
+
+:::: {.step-map}
+::: {.step .now}
+**1. Consumo**
+TMS igual para os dois indivíduos
+:::
+::: {.step}
+**2. Produção**
+como repartir o trabalho entre $x$ e $z$
+:::
+::: {.step}
+**3. Trocas**
+TMS igual à inclinação da fronteira de produção
+:::
+::: {.step}
+**4. Poluição**
+quanto de $E$ aceitar
+:::
+::::
+
+- São **quatro condições** que saem das CPOs do mesmo problema.
+- As três primeiras já apareceram na aula passada, em versão simplificada.
+- [A quarta é nova e não será reproduzida via mercado.]{.fragment fragment-index=1}
+
+## Alocação Ótima de Pareto
+
+
+::: {.eq-block}
+$$\max_{{x}_{1},{x}_{2},{z}_{1},{z}_{2},{\ell }_{x},{\ell }_{z},E} {U}_{1}\left({x}_{1},{z}_{1},E\right)+{\lambda }_{u}\left[{U}_{2}\left({x}_{2},{z}_{2},E\right)-{u}_{2}\right]+$$
+:::
+
+
+::: {.eq-block}
+$$+{\lambda }_{x}\left[f\left({\ell }_{x},E\right)-{x}_{1}-{x}_{2}\right]+{\lambda }_{z}\left[g\left({\ell }_{z}\right)-{z}_{1}-{z}_{2}\right]+{\lambda }_{\ell }\left[\ell -{\ell }_{x}-{\ell }_{z}\right]$$
+:::
+
+
+::: {.no-bullet}
+Eficiência em consumo exige que solução $({x}_{1}^{*},{x}_{2}^{*},{z}_{1}^{*},{z}_{2}^{*},{\ell }_{x}^{*},{\ell }_{z}^{*},{E}^{*})$ seja tal que (**LOUSA**)
+:::
+
+
+::: {.eq-block .fragment fragment-index=1}
+$$\frac{\frac{\partial {U}_{1}}{\partial {x}_{1}}}{\frac{\partial {U}_{1}}{\partial {z}_{1}}}=\frac{{\lambda }_{x}}{{\lambda }_{z}}=\frac{\frac{\partial {U}_{2}}{\partial {x}_{2}}}{\frac{\partial {U}_{2}}{\partial {z}_{2}}}$$
+:::
+
+- [Taxa marginal de substituição entre $x$ e $z$ igual para ambos os indivíduos.]{.fragment fragment-index=1}
+
+## Alocação Ótima de Pareto
+
+
+::: {.no-bullet}
+Eficiência em Produção requer que (**LOUSA**)
+:::
+
+
+::: {.eq-block .fragment fragment-index=1}
+$${\lambda }_{x}\frac{\partial f}{\partial {\ell }_{x}}={\lambda }_{\ell }={\lambda }_{z}\frac{\partial g}{\partial {\ell }_{z}}$$
+:::
+
+- [Valor-sombra do produto marginal de cada bem é igual ao preço-sombra do trabalho (${\lambda }_{\ell }$).]{.fragment fragment-index=1}
+
+## Alocação Ótima de Pareto
+
+
+::: {.no-bullet}
+Combinando as condições anteriores, chegamos à Eficiência em Trocas:
+:::
+
+
+::: {.eq-block}
+$$\frac{\frac{\partial {U}_{i}}{\partial {x}_{i}}}{\frac{\partial {U}_{i}}{\partial {z}_{i}}}=\frac{{\lambda }_{x}}{{\lambda }_{z}}=\frac{\frac{\partial g}{\partial {\ell }_{z}}}{\frac{\partial f}{\partial {\ell }_{x}}} \forall i$$
+:::
+
+- Ou seja, **a inclinação das curvas de indiferença de cada indivíduo** (lado esquerdo) **é igual à inclinação da fronteira de possibilidades de produção** (lado direito).
+  - Como vimos de forma simplificada na aula passada.
+
+## Alocação Ótima de Pareto
+
+
+::: {.no-bullet}
+Finalmente, resta a condição de primeira ordem para a poluição ambiental (**LOUSA**).
+:::
+
+
+::: {.no-bullet}
+[Podemos deixar essa condição mais intuitiva (**LOUSA**):]{.fragment fragment-index=1}
+:::
+
+
+::: {.eq-block .fragment fragment-index=2}
+$$\underbrace{-\frac{\frac{\partial {U}_{1}}{\partial E}}{\frac{\partial {U}_{1}}{\partial {x}_{1}}} -\frac{\frac{\partial {U}_{2}}{\partial E}}{\frac{\partial {U}_{2}}{\partial {x}_{2}}}}_{\substack{\text{Disposição marginal a sacrificar } x \\ \text{para reduzir } E}} = \underbrace{\frac{\partial f}{\partial E}}_{\substack{\text{Custo marginal de reduzir } E \text{ em} \\ \text{termos de unidades produzidas de } x}}$$
+:::
+
+
+::: {.no-bullet}
+[Eficiência exige que soma das disposições marginais a pagar para reduzir $E$ seja igual a custo marginal de fazê-lo.]{.fragment fragment-index=2}
+:::
+
+- [**Tudo em termos de unidades de** $x$ **sacrificadas**.]{.fragment fragment-index=2}
+
+<!-- No .pptx as duas chaves vermelhas sob a equação são formas desenhadas, com
+     os rótulos em caixas de texto soltas. Aqui viraram \underbrace no próprio
+     LaTeX: a chave acompanha o termo mesmo quando a equação é reescalada. -->
+
+## Alocação Ótima de Pareto
+
+
+::: {.no-bullet}
+Notem que, à semelhança do caso de Bens Públicos,
+:::
+
+- O benefício que 1 recebe da redução de $E$ não interfere no benefício recebido por 2.
+
+::: {.no-bullet}
+A equação vista no slide anterior é a condição de Lindahl-Samuelson para provisão eficiente de bens públicos.
+:::
+
+
+::: {.no-bullet}
+Notem, também, que a alocação ótima de Pareto $({x}_{1}^{*},{x}_{2}^{*},{z}_{1}^{*},{z}_{2}^{*},{\ell }_{x}^{*},{\ell }_{z}^{*},{E}^{*})$ depende do nível de utilidade ${u}_{2}$ fixado para 2.
+:::
+
+- Outras alocações ótimas seriam possíveis.
+
+## Equilíbrio Competitivo
+
+
+::: {.no-bullet}
+Usaremos a alocação de Pareto como nosso ponto de partida.
+:::
+
+
+::: {.no-bullet}
+Agora, veremos qual seria a alocação produzida pelos **agentes atuando independentemente e tomando preços como dados**.
+:::
+
+
+::: {.no-bullet}
+Para isso, suponha que
+:::
+
+  - ${p}_{x}$ e ${p}_{z}$ são os preços de $x$ e $z$ respectivamente
+  - $w$ é o salário pago aos trabalhadores
+  - ${y}_{i}$ é a renda dos indivíduos
+
+## O mesmo caminho, agora com preços
+
+:::: {.step-map}
+::: {.step}
+**1. Consumo**
+problema do consumidor
+:::
+::: {.step}
+**2. Produção**
+problema da firma
+:::
+::: {.step}
+**3. Trocas**
+sai das duas anteriores
+:::
+::: {.step .now}
+**4. Poluição**
+quem decide $E$?
+:::
+::::
+
+- Vamos refazer as **mesmas quatro condições**, agora com agentes independentes e preços de mercado no lugar dos preços-sombra.
+- [A pergunta que interessa é a quarta: no ótimo de Pareto quem escolhia $E$ era o planejador. **Aqui, quem escolhe?**]{.fragment fragment-index=1}
+
+## Equilíbrio Competitivo
+
+
+::: {.no-bullet}
+Primeiro, resolveremos o problema dos consumidores (**LOUSA**).
+:::
+
+
+::: {.eq-block .fragment fragment-index=1}
+$$\max_{{x}_{i},{z}_{i}} {U}_{i}\left({x}_{i},{z}_{i},E\right)+{\lambda }_{i}({y}_{i}-{p}_{x}{x}_{i}-{p}_{z}{z}_{i})$$
+:::
+
+
+::: {.no-bullet}
+[**CPOs :**]{.fragment fragment-index=1}
+:::
+
+
+::: {.eq-block .fragment fragment-index=1}
+$$\frac{\partial {U}_{i}}{\partial {x}_{i}}={\lambda }_{i}{p}_{x} ; \frac{\partial {U}_{i}}{\partial {z}_{i}}={\lambda }_{i}{p}_{z} \forall i$$
+:::
+
+
+::: {.no-bullet}
+[Isto nos dá a condição de eficiência.]{.fragment fragment-index=1}
+:::
+
+
+::: {.eq-block .fragment fragment-index=1}
+$$\frac{\frac{\partial {U}_{1}}{\partial {x}_{1}}}{\frac{\partial {U}_{1}}{\partial {z}_{1}}}=\frac{{p}_{x}}{{p}_{z}}=\frac{\frac{\partial {U}_{2}}{\partial {x}_{2}}}{\frac{\partial {U}_{2}}{\partial {z}_{2}}}$$
+:::
+
+
+## Equilíbrio Competitivo
+
+
+::: {.no-bullet}
+Segundo, resolveremos o problema das firmas (**LOUSA**).
+:::
+
+
+::: {.eq-block .fragment fragment-index=1}
+$$\max_{{\ell }_{z}} {p}_{z} g\left({\ell }_{z}\right)-w {\ell }_{z}$$
+:::
+
+
+::: {.no-bullet}
+[**CPO:** $\frac{\partial g}{\partial {\ell }_{z}}{p}_{z}=w$]{.fragment fragment-index=1}
+:::
+
+
+::: {.eq-block .fragment fragment-index=2}
+$$\max_{{\ell }_{x},E} {p}_{x} f\left({\ell }_{x},E\right)-w {\ell }_{x}-\underbrace{\phantom{{p}_{E}E}}_{\substack{\text{não há preço} \\ \text{para } E}}$$
+:::
+
+
+::: {.no-bullet}
+[**CPOs :** $\frac{\partial f}{\partial {\ell }_{x}}{p}_{x}=w ; \frac{\partial f}{\partial E}=0$]{.fragment fragment-index=2}
+:::
+
+
+::: {.no-bullet}
+[O preço pago pela poluição é zero neste caso.]{.fragment fragment-index=2}
+:::
+
+  - [Não há mercado para isso.]{.fragment fragment-index=2}
+
+<!-- No .pptx o termo que falta na função lucro é um círculo tracejado vazio,
+     com uma seta ligando-o à CPO ∂f/∂E = 0. Vira um \underbrace sobre um
+     \phantom: o buraco fica no lugar certo da equação, e não como uma figura
+     solta que o revealjs escalaria por conta própria. -->
+
+## Equilíbrio Competitivo
+
+
+::: {.no-bullet}
+Notem que eficiência no mercado de trabalho é satisfeita:
+:::
+
+
+::: {.eq-block}
+$${p}_{x}\frac{\partial f}{\partial {\ell }_{x}}=w={p}_{z}\frac{\partial g}{\partial {\ell }_{z}}$$
+:::
+
+
+::: {.no-bullet}
+Da mesma forma, eficiência nas trocas também:
+:::
+
+
+::: {.eq-block}
+$$\frac{\frac{\partial {U}_{i}}{\partial {x}_{i}}}{\frac{\partial {U}_{i}}{\partial {z}_{i}}}=\frac{{p}_{x}}{{p}_{z}}=\frac{\frac{\partial g}{\partial {\ell }_{z}}}{\frac{\partial f}{\partial {\ell }_{x}}} \forall i$$
+:::
+
+
+::: {.no-bullet}
+Mas o que acontece com a condição de eficiência para poluição?
+:::
+
+
+## Equilíbrio Competitivo
+
+
+::: {.no-bullet}
+Notem que
+:::
+
+
+::: {.eq-block}
+$$0=\frac{\partial f}{\partial E} \neq \underbrace{-\frac{\frac{\partial {U}_{1}}{\partial E}}{\frac{\partial {U}_{1}}{\partial {x}_{1}}}-\frac{\frac{\partial {U}_{2}}{\partial E}}{\frac{\partial {U}_{2}}{\partial {x}_{2}}}}_{\substack{\text{Soma das disposições marginais} \\ \text{a pagar para reduzir } E}}>0$$
+:::
+
+
+::: {.no-bullet}
+**Firma iguala produto marginal ao custo marginal da poluição**.
+:::
+
+- Notem que, desconsiderando externalidade, firma quer poluir enquanto tivermos $\frac{\partial f}{\partial E}>0$.
+- Equilíbrio competitivo não atinge eficiência de Pareto.
+
+## Onde está a falha de mercado?
+
+::: {.cmp}
+| | Ótimo de Pareto | Equilíbrio Competitivo |
+|---|---|---|
+| **1. Consumo** | $TMS^{1}=\frac{{\lambda}_{x}}{{\lambda}_{z}}=TMS^{2}$ | $TMS^{1}=\frac{{p}_{x}}{{p}_{z}}=TMS^{2}$ &nbsp; ✔ |
+| **2. Produção** | ${\lambda}_{x}\frac{\partial f}{\partial {\ell}_{x}}={\lambda}_{\ell}={\lambda}_{z}\frac{\partial g}{\partial {\ell}_{z}}$ | ${p}_{x}\frac{\partial f}{\partial {\ell}_{x}}=w={p}_{z}\frac{\partial g}{\partial {\ell}_{z}}$ &nbsp; ✔ |
+| **3. Trocas** | $TMS=\frac{\partial g/\partial {\ell}_{z}}{\partial f/\partial {\ell}_{x}}$ | $TMS=\frac{\partial g/\partial {\ell}_{z}}{\partial f/\partial {\ell}_{x}}$ &nbsp; ✔ |
+| **4. Poluição** | $-\sum_{i}\frac{\partial {U}_{i}/\partial E}{\partial {U}_{i}/\partial {x}_{i}}=\frac{\partial f}{\partial E}$ | $\frac{\partial f}{\partial E}=0$ &nbsp; ✘ |
+:::
+
+- No problema do planejador central, os preços-sombra ${\lambda}$ fazem o papel que os preços fazem no mercado, por isso as três primeiras linhas coincidem.
+- [As três primeiras linhas mostram o **1º Teorema do Bem-Estar** funcionando.]{.fragment fragment-index=1}
+- [A quarta linha falha porque **não existe mercado para** $E$, então seu preço é zero.]{.fragment fragment-index=2}

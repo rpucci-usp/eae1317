@@ -1,0 +1,23 @@
+# Artefatos de renderização do Quarto — regeneráveis, não versionar
+/.quarto/
+*_files/
+*_cache/
+*.html
+aulas/**/*_files/
+aulas/**/*.html
+_site/
+
+# Documentação interna — gabaritos e notas de preparação
+NOTAS-TECNICAS.md
+NOTAS-PEDAGOGICAS.md
+
+# Sistema
+.DS_Store
+Thumbs.db
+.Rhistory
+
+**/*.quarto_ipynb
+
+# Cache do Python
+__pycache__/
+*.pyc
