@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Rafael Pucci">
+  <meta name="dcterms.date" content="2026-08-06">
+  <title>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais – Eficiência Econômica</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../_assets/styles.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Eficiência Econômica</h1>
+  <p class="subtitle">EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rafael Pucci 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-08-06</p>
+</section>
+<section id="exemplo-redução-de-esgoto-lançado-no-tietê" class="slide level2">
+<h2>Exemplo: redução de esgoto lançado no Tietê</h2>
+<div class="no-bullet">
+<p>Considere duas fábricas despejando a mesma carga no rio.</p>
+</div>
+<div class="no-bullet">
+<p>O órgão ambiental exige um abatimento (redução) total da poluição de <strong>100 toneladas</strong>.</p>
+</div>
+<div class="no-bullet">
+<p>Suponha que</p>
+</div>
+<ul>
+<li>A fábrica <strong>A</strong> consegue abater poluição a <strong>R$ 1 mil</strong> por tonelada</li>
+<li>A fábrica <strong>B</strong> consegue abater poluição a <strong>R$ 5 mil</strong> por tonelada</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Como você dividiria o abatimento entre as duas firmas?</strong></p>
+</div>
+</section>
+<section id="exemplo-redução-de-esgoto-lançado-no-tietê-1" class="slide level2">
+<h2>Exemplo: redução de esgoto lançado no Tietê</h2>
+<ul>
+<li><span class="fragment" data-fragment-index="1"><strong>50 t em cada uma:</strong> 50 × 1 + 50 × 5 = <strong>R$ 300 mil</strong>.</span></li>
+<li><span class="fragment" data-fragment-index="2"><strong>100 t só na A:</strong> 100 × 1 = <strong>R$ 100 mil</strong>.</span></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="3">As duas alternativas cortam as mesmas 100 toneladas.</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="3"><strong>A segunda é melhor? É a mais justa?</strong></span></p>
+</div>
+</section>
+<section id="aula-passada" class="slide level2">
+<h2>Aula Passada</h2>
+<ul>
+<li>O que é Economia do Meio Ambiente?</li>
+<li>Introdução do Curso</li>
+</ul>
+</section>
+<section id="agenda" class="slide level2 smaller">
+<h2>Agenda</h2>
+<ul>
+<li>Algumas Correntes de Pensamento
+<ul>
+<li>Valor Intrínseco vs.&nbsp;Valor Instrumental</li>
+<li>Biocentrismo vs.&nbsp;Antropocentrismo</li>
+<li>Princípio Preventivo</li>
+<li>Sustentabilidade</li>
+</ul></li>
+<li>Eficiência Econômica
+<ul>
+<li>Fronteira de Pareto</li>
+<li>Eficiência em Trocas e em Produção</li>
+<li>Princípio Equimarginal (exercício em duplas)</li>
+<li>Equilíbrio Competitivo e Teoremas do Bem-Estar</li>
+<li>Oferta e Demanda
+<ul>
+<li>Equilíbrio de Mercado</li>
+<li>Disposição a Pagar</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p>Referência: Kolstad, cap. 4.</p>
+</div>
+</section>
+<section id="correntes-de-pensamento" class="slide level2 section-cover">
+<h2>Correntes de Pensamento</h2>
+<div class="section-sub">
+<p>Como atribuir valor ao Meio Ambiente?</p>
+</div>
+</section>
+<section id="outro-exemplo-represa-extinguirá-espécie-de-planta" class="slide level2">
+<h2>Outro exemplo: represa extinguirá espécie de planta</h2>
+<div class="no-bullet">
+<p>Suponha que a a construção de uma represa vá extinguir uma espécie de planta. A princípio, <strong>ninguém a usa para nada</strong>: não é insumo para remédio, não é comestível e não atrai turistas.</p>
+</div>
+<div class="no-bullet">
+<p><strong>Isso é um custo ambiental? Por quê?</strong></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Não. Se ninguém a usa, não há perda a contabilizar.</span></li>
+<li><span class="fragment" data-fragment-index="2">Sim. A espécie vale por si só, independentemente de nos servir.</span></li>
+<li><span class="fragment" data-fragment-index="3">Sim. Ela poderia vir a ser útil, mas jamais saberemos.</span></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="4">As três respostas são válidas e atreladas a diferentes formas de dar valor aos bens ambientais, que discutiremos em seguida.</span></p>
+</div>
+</section>
+<section id="algumas-correntes-de-pensamento" class="slide level2">
+<h2>Algumas Correntes de Pensamento</h2>
+<ul>
+<li>Como podemos avaliar bens ou danos ambientais?
+<ul>
+<li>Há diferentes “valores” que se podem atribuir a um rio limpo, por exemplo.
+<ul>
+<li>Dependendo de quais valores contam (ou não), avaliação muda.</li>
+</ul></li>
+<li>Há também diferentes formas de se avaliar a gravidade de um dano ambiental.
+<ul>
+<li>Quão incertas são as consequências e quanto destas queremos considerar?</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="valores-instrumental-e-intrínseco" class="slide level2">
+<h2>Valores Instrumental e Intrínseco</h2>
+<ul>
+<li><strong>Valor Instrumental</strong> tem a ver com a utilidade de alguma coisa.
+<ul>
+<li>Algo tem valor porque funciona como instrumento para atingir um objetivo útil.</li>
+</ul></li>
+<li><strong>Valor Intrínseco</strong> não está atrelado à utilidade de algo.
+<ul>
+<li>Pode ser inútil e ainda assim ter valor intrínseco.</li>
+</ul></li>
+<li><strong>Exemplo 1:</strong> mosquitos
+<ul>
+<li>Valor instrumental é, provavelmente, negativo (estorvo, não nos serve para nada).</li>
+<li>Valor intrínseco: toda vida tem seu valor, independentemente de nos incomodar ou não.</li>
+</ul></li>
+<li><strong>Exemplo 2:</strong> floresta Amazônica
+<ul>
+<li>Valor instrumental (até pouco tempo atrás) era visto como muito pequeno para pessoas que moram em São Paulo, por exemplo.</li>
+<li>Valor intrínseco: saber que a floresta existe nos dá uma sensação boa.</li>
+</ul></li>
+</ul>
+</section>
+<section id="biocentrismo-vs.-antropocentrismo" class="slide level2">
+<h2>Biocentrismo vs.&nbsp;Antropocentrismo</h2>
+<ul>
+<li>Biocentrismo vs.&nbsp;Antropocentrismo
+<ul>
+<li><strong>Biocentrismo</strong> propõe que <strong>todos os seres vivos têm valor</strong>, independentemente de seus usos para nós.
+<ul>
+<li>Meio ambiente, portanto, tem valor mesmo que não nos seja útil.</li>
+</ul></li>
+<li><strong>Antropocentrismo</strong> propõe que meio ambiente <strong>tem valor na medida em que nos proporciona gratificação material</strong>.
+<ul>
+<li>Mosquito terá valor, por exemplo, se eu puder modificá-lo geneticamente para combater pragas de ratos que destroem estoques de alimentos.</li>
+<li>Floresta Amazônica tem valor porque sua umidade traz chuvas ao Centro-Oeste, aumentando a produtividade das lavouras.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="princípio-preventivo" class="slide level2">
+<h2>Princípio Preventivo</h2>
+<ul>
+<li>Outra corrente de pensamento se baseia no fato de que danos ambientais podem ser muito incertos e irreversíveis.
+<ul>
+<li>Por exemplo, a construção de uma represa pode extinguir uma espécie de planta cuja essência poderia ser usada na cura do câncer de pele.
+<ul>
+<li>Qual valor foi perdido? O valor que as pessoas dão à planta ou o valor das vidas que poderiam ter sido salvas?</li>
+</ul></li>
+</ul></li>
+<li>A ideia do Princípio Preventivo é de que deveríamos minimizar arrependimentos.
+<ul>
+<li>Se há alguma chance de dano irreversível, deveríamos evitá-lo, a não ser que custo social seja “alto demais”.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Problemas com esse princípio:</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Pode ser paralisante.</span></li>
+<li><span class="fragment" data-fragment-index="1">É difícil avaliar quando um custo social se torna “alto demais”.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="sustentabilidade" class="slide level2">
+<h2>Sustentabilidade</h2>
+<ul>
+<li>Usar o meio ambiente para necessidades humanas, mas sem comprometer a manutenção de ecossistemas no longo prazo.</li>
+<li><strong>Desenvolvimento sustentável:</strong> “desenvolvimento que atenda às necessidades do presente sem comprometer a habilidade de gerações futuras de atender às suas próprias necessidades” (Toman, 1994).</li>
+<li>Ideia tem apelo em Economia, pois pressupõe que existe uma <strong>utilização ótima do meio ambiente</strong>.
+<ul>
+<li>Pescar é bom, mas pesca excessiva é ruim.</li>
+<li>A partir de que ponto “é excessivo”?</li>
+</ul></li>
+<li>Para Robert Solow, por exemplo, sustentabilidade seria garantir que <strong>gerações futuras estejam ao menos tão bem quanto as presentes</strong>.</li>
+</ul>
+</section>
+<section id="onde-a-economia-se-posiciona" class="slide level2">
+<h2>Onde a Economia se posiciona</h2>
+<div class="no-bullet">
+<p>O arcabouço que construiremos a partir de agora tende a ser <strong>antropocêntrico e instrumental</strong>, pois mede valor pela <strong>disposição a pagar</strong> das pessoas.</p>
+</div>
+<ul>
+<li>Isso é mais amplo do que parece e pode incluir <strong>valor de existência</strong>.
+<ul>
+<li>Posso pagar para saber que a Amazônia continua de pé, sem nunca pretender visitá-la.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Mas há dois valores que a disposição a pagar <strong>não</strong> captura:</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">O de quem não tem renda para expressá-lo;</span></li>
+<li><span class="fragment" data-fragment-index="2">O de quem ainda não nasceu.</span></li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2">É importante que esta limitação esteja transparente, pois nos informa sobre aquilo que ignoramos, mas que, mesmo assim, pode ser valorizado por alguns grupos.</span></p>
+</div>
+</section>
+<section id="eficiência-econômica" class="slide level2 section-cover">
+<h2>Eficiência Econômica</h2>
+<div class="section-sub">
+<p>Retomando o Conceito de Ótimo de Pareto</p>
+</div>
+</section>
+<section id="eficiência-econômica-1" class="slide level2">
+<h2>Eficiência Econômica</h2>
+<ul>
+<li>Nos cursos introdutórios de Micro, a noção de <strong>eficiência</strong> aparece frequentemente.
+<ul>
+<li>Em Economia, eficiência é equivalente ao <strong>Ótimo de Pareto</strong>.</li>
+<li><span class="fragment" data-fragment-index="1">Não é possível melhorar bem-estar de alguém sem piorar o do outro.</span></li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Qual é um dos resultados teóricos básicos envolvendo o Ótimo de Pareto?</span>
+<ul>
+<li><span class="fragment" data-fragment-index="2">1º Teorema do Bem-Estar → alocações de mercado são Pareto-eficientes.</span></li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="2">Há exceções?</span>
+<ul>
+<li><span class="fragment" data-fragment-index="3">Sim, quando há <strong>falhas de mercado</strong>.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="eficiência-econômica-e-meio-ambiente" class="slide level2">
+<h2>Eficiência Econômica e Meio Ambiente</h2>
+<ul>
+<li>No contexto de Economia do Meio Ambiente, trataremos de eficiência ao pensarmos em
+<ul>
+<li>Nível ótimo de poluição, dadas as necessidades materiais;</li>
+<li>Distribuição ótima dos custos de se reduzir poluição.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Exemplo: reduzir poluição da água no Rio Tietê.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Primeiro, queremos saber qual é o nível ideal de poluição de água.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Zero é uma potencial resposta, mas custos podem ser proibitivos.</span></li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="2">Segundo, qual é a forma mais eficiente de se reduzir essa poluição.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Suponha que a redução ótima seja de 80% em relação ao nível atual e que isso possa ser feito com menos despejo de esgoto.</span></li>
+<li><span class="fragment" data-fragment-index="2">Uma alternativa é reduzir em 80% esgoto vindo de todos os bairros da cidade;</span></li>
+<li><span class="fragment" data-fragment-index="2">Entretanto, pode ser mais barato reduzir esse despejo em alguns bairros versus outros.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Neste caso, redução poderia ser maior nesses bairros e menor naqueles onde custo é maior.</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="fronteira-de-pareto" class="slide level2">
+<h2>Fronteira de Pareto</h2>
+<ul>
+<li><strong>Definição:</strong> a fronteira de Pareto consiste em todas as alocações para as quais não existe outra alocação que seja Pareto-preferida.</li>
+<li>Consideraremos uma alocação como eficiente se ela for Ótima de Pareto.
+<ul>
+<li>Ou seja, a alocação precisa estar na fronteira de Pareto.</li>
+</ul></li>
+<li>Conceito de eficiência de Pareto não deixa recursos “sobrando”.
+<ul>
+<li>Entretanto, não é possível comparar alocações na fronteira (<strong>LOUSA</strong>);</li>
+<li>Exemplo: alocar todos os recursos para indivíduo 1 ou tudo para 2 são alternativas igualmente eficientes.
+<ul>
+<li><span class="fragment" data-fragment-index="1">Mas qual é melhor?</span></li>
+<li><span class="fragment" data-fragment-index="1">Qual é mais justa?</span></li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2"><strong>O critério é mudo sobre isso</strong>, o que constitui outra limitação a ser reconhecida.</span></p>
+</div>
+</section>
+<section id="o-caminho-até-a-eficiência" class="slide level2">
+<h2>O caminho até a eficiência</h2>
+<div class="step-map">
+<div class="step now">
+<p><strong>1. Trocas</strong> TMS igual entre os indivíduos</p>
+</div>
+<div class="step">
+<p><strong>2. Produção</strong> TMT igual entre as firmas</p>
+</div>
+<div class="step">
+<p><strong>3. Mercado</strong> TMS <span class="math inline">\(=\)</span> TMT no equilíbrio</p>
+</div>
+</div>
+<ul>
+<li>Discutiremos essas <strong>três condições</strong> em sequência.</li>
+<li>Na próxima aula, voltaremos a elas por meio de um modelo formal.]{.fragment fragment-index=1}</li>
+</ul>
+</section>
+<section id="eficiência-em-trocas" class="slide level2">
+<h2>Eficiência em Trocas</h2>
+<ul>
+<li>Trataremos de eficiência (e ineficiência) em dois contextos:
+<ul>
+<li>Trocas e Produção.</li>
+</ul></li>
+<li>Recursos estão ineficientemente alocados se é possível trocá-los entre indivíduos e aumentar o bem-estar de pelo menos uma pessoa, sem piorar o de ninguém.</li>
+<li>Recordemos o conceito de Caixa de Edgeworth.
+<ul>
+<li>Suponha uma economia de trocas com 2 indivíduos;</li>
+<li>Cada um tem uma dotação <span class="math inline">\({\omega }_{i}=({x}_{i}, {y}_{i})\)</span> dos dois bens existentes nessa economia.</li>
+</ul></li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Desenho na LOUSA.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="caixa-de-edgeworth" class="slide level2">
+<h2>Caixa de Edgeworth</h2>
+<ul>
+<li>Ponto A corresponde à <strong>dotação inicial</strong>: o que cada um tem antes de qualquer troca.</li>
+<li>A região sombreada reúne todas as alocações <strong>preferidas por ambos</strong> a A.</li>
+</ul>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/02-edgeworth-1.svg"></p>
+</div>
+</section>
+<section id="caixa-de-edgeworth-1" class="slide level2">
+<h2>Caixa de Edgeworth</h2>
+<ul>
+<li>Ponto B é preferido por ambos a A. <strong>Mas é eficiente?</strong></li>
+<li><span class="fragment" data-fragment-index="1">Não, pois ainda há trocas boas para os dois.</span></li>
+</ul>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/02-edgeworth-2.svg"></p>
+</div>
+</section>
+<section id="caixa-de-edgeworth-2" class="slide level2">
+<h2>Caixa de Edgeworth</h2>
+<ul>
+<li>Em C, as curvas se <strong>tangenciam</strong>: não é possível melhorar um sem piorar outro.</li>
+<li>É um ponto onde se igualam as Taxas Marginais de Substituição (TMS).</li>
+<li><span class="fragment" data-fragment-index="1">Quantos pontos como C existem?</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Toda a linha vermelha: a <strong>curva de contrato</strong>, que liga as duas origens.</span></li>
+<li><span class="fragment" data-fragment-index="2">É a Fronteira de Pareto desta economia, desenhada na caixa.</span></li>
+</ul></li>
+</ul>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/02-edgeworth-3.svg"></p>
+</div>
+</section>
+<section id="preços-relativos-e-tms" class="slide level2">
+<h2>Preços Relativos e TMS</h2>
+<ul>
+<li>Sabemos que o problema de maximização de utilidade leva à equivalência entre <strong>taxa marginal de substituição (TMS)</strong> e <strong>preços relativos</strong>.</li>
+<li>No caso em que há mais indivíduos, como preço é igual para todos, temos</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[TM{S}_{xy}^{1}=\frac{{p}_{x}}{{p}_{y}}=TM{S}_{xy}^{2}\]</span></p>
+</div>
+<ul>
+<li>Como podemos representar os preços na Caixa de Edgeworth?</li>
+</ul>
+</section>
+<section id="preços-relativos-e-tms-1" class="slide level2">
+<h2>Preços Relativos e TMS</h2>
+<ul>
+<li>Reta com inclinação <span class="math inline">\(-\frac{{p}_{x}}{{p}_{y}}\)</span>.
+<ul>
+<li>Passa pela dotação inicial e tangente a ambas as curvas de indiferença no equilíbrio eficiente.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Partindo de A, o mercado conduz equilíbrio até a <strong>C</strong>.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Demais pontos da curva de contrato são <strong>igualmente eficientes</strong>, mas inalcançáveis a partir desta dotação.</span></li>
+</ul></li>
+</ul>
+<div class="diagram" style="margin-top: -50px;">
+<p><img data-src="../_assets/figuras/02-edgeworth-4.svg"></p>
+</div>
+</section>
+<section id="o-caminho-até-a-eficiência-1" class="slide level2">
+<h2>O caminho até a eficiência</h2>
+<div class="step-map">
+<div class="step">
+<p><strong>1. Trocas</strong> TMS igual entre os indivíduos</p>
+</div>
+<div class="step now">
+<p><strong>2. Produção</strong> TMT igual entre as firmas</p>
+</div>
+<div class="step">
+<p><strong>3. Mercado</strong> TMS <span class="math inline">\(=\)</span> TMT no equilíbrio</p>
+</div>
+</div>
+<ul>
+<li>No caso das trocas, tratamos de como distribuir dois bens (<span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>) entre dois indivíduos.</li>
+<li><strong>Se há produção</strong>, queremos alocar insumos para produzir eficientemente ambos esses bens.</li>
+<li>Suponha uma firma que produz ambos os bens e cuja função lucro seja dada por</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\pi ={p}_{x}x+{p}_{y}y-C\]</span></p>
+</div>
+<div class="no-bullet" style="font-size: 0.7em; margin-left: 2em;">
+<p>sendo <span class="math inline">\(C\)</span> um custo fixo.</p>
+</div>
+</section>
+<section id="eficiência-em-produção" class="slide level2">
+<h2>Eficiência em Produção</h2>
+<ul>
+<li>Podemos isolar <span class="math inline">\(y\)</span> na equação anterior e obter</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[y=\frac{\pi +C}{{p}_{y}}-\frac{{p}_{x}}{{p}_{y}}x\]</span></p>
+</div>
+<ul>
+<li>Com isso, desenhamos curvas iso-lucro (<strong>LOUSA</strong>).
+<ul>
+<li>Estas curvas nos dão composições de <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> que geram o mesmo lucro;</li>
+<li>Se <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> são dois bens, mais para “nordeste” é melhor.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Se <span class="math inline">\(x\)</span> é um bem e <span class="math inline">\(y\)</span> é um “mal” (poluição), gráfico muda(<strong>LOUSA</strong>).</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Preço de <span class="math inline">\(y\)</span> passa a ser negativo (<span class="math inline">\({p}_{y}&lt;0\)</span>);</span></li>
+<li><span class="fragment" data-fragment-index="1">Neste caso, mais para “sudeste” é melhor;</span></li>
+<li><span class="fragment" data-fragment-index="1">Note que, para quantidades pequenas de <span class="math inline">\(x\)</span>, precisaríamos de <span class="math inline">\(y\)</span> negativo.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="curvas-de-iso-lucro-dois-bens" class="slide level2">
+<h2>Curvas de Iso-Lucro: dois bens</h2>
+<ul>
+<li>Intercepto <span class="math inline">\(\frac{\pi +C}{{p}_{y}}\)</span> <strong>positivo</strong>, inclinação <span class="math inline">\(-\frac{{p}_{x}}{{p}_{y}}\)</span> <strong>negativa</strong>.</li>
+<li>Cada reta reúne as combinações de <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> que dão o <strong>mesmo lucro</strong>.</li>
+</ul>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/02-isolucro-bens.svg"></p>
+</div>
+</section>
+<section id="curvas-de-iso-lucro-quando-y-é-um-mal" class="slide level2">
+<h2>Curvas de Iso-Lucro: quando <em>y</em> é um “mal”</h2>
+<ul>
+<li><strong>O sinal de</strong> <span class="math inline">\({p}_{y}\)</span> se inverte, o que faz com que a reta também se inverta.</li>
+<li><span class="fragment" data-fragment-index="1">Inclinação <strong>positiva</strong>: fixando o lucro e produzindo mais <span class="math inline">\(x\)</span>, é necessário aceitar mais poluição.</span></li>
+<li><span class="fragment" data-fragment-index="2">Intercepto <strong>negativo</strong>: tracejado indica quantidade impossível de poluição (<span class="math inline">\(y&lt;0\)</span>).</span></li>
+</ul>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/02-isolucro-mal.svg"></p>
+</div>
+</section>
+<section id="fronteira-de-possibilidades-de-produção" class="slide level2">
+<h2>Fronteira de Possibilidades de Produção</h2>
+<ul>
+<li>Muitas vezes, ao invés de trabalharmos com um “mal”, é mais conveniente <strong>redefinir</strong> <span class="math inline">\(y\)</span> <strong>como “ausência de…”</strong>
+<ul>
+<li>Ausência de poluição tem preço positivo, portanto voltamos ao caso usual.</li>
+</ul></li>
+<li>Fronteira de Possibilidades de Produção dá as combinações de <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> que podem ser produzidas (<strong>LOUSA</strong>).
+<ul>
+<li>Produzir fora da fronteira é ineficiente, pois trabalho é desperdiçado.</li>
+</ul></li>
+<li>Maximizando lucro limitado à Fronteira de Produção nos dá que a <strong>taxa marginal de substituição técnica (TMT)</strong> é igual aos <strong>preços relativos</strong>.</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[TMT=\frac{{p}_{x}}{{p}_{y}}\]</span></p>
+</div>
+</section>
+<section id="fronteira-de-possibilidades-de-produção-1" class="slide level2">
+<h2>Fronteira de Possibilidades de Produção</h2>
+<ul>
+<li>Note que, se houver várias firmas produzindo esses dois bens, a equalização pressupõe que</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[TM{T}_{j}=\frac{{p}_{x}}{{p}_{y}} \forall j\]</span></p>
+</div>
+<ul>
+<li>Ou seja, taxa marginal de substituição técnica deve ser idêntica.
+<ul>
+<li><strong>Princípio Equimarginal</strong>.</li>
+</ul></li>
+<li>No entanto, suponha que <span class="math inline">\(y\)</span> seja “emissão de poluição”.
+<ul>
+<li><strong>É comum que o custo de reduzir poluição de cada firma seja diferente</strong>;</li>
+<li>Ou seja, quanto de <span class="math inline">\(x\)</span> a firma precisa sacrificar para gerar menos <span class="math inline">\(y\)</span>;</li>
+<li>Isto coloca um desafio para implementação metas ambientais. Por exemplo, qual é o problema de obrigar as firmas a emitirem uma quantidade fixa de poluição?</li>
+</ul></li>
+</ul>
+</section>
+<section id="exercício-qual-é-o-corte-mais-barato" class="slide level2 smaller">
+<h2>Exercício: qual é o corte mais barato?</h2>
+<div class="no-bullet">
+<p>Considere três firmas na bacia do Tietê. O órgão ambiental exige um corte total de <strong>90 toneladas</strong> de despejo industrial. Cada firma corta em blocos de 10 toneladas e cada corte custa mais que o anterior.</p>
+</div>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Custo do bloco (R$ mil)</th>
+<th>Firma A</th>
+<th>Firma B</th>
+<th>Firma C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1º bloco (10 t)</td>
+<td>10</td>
+<td>30</td>
+<td>60</td>
+</tr>
+<tr class="even">
+<td>2º bloco (10 t)</td>
+<td>20</td>
+<td>60</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>3º bloco (10 t)</td>
+<td>30</td>
+<td>90</td>
+<td>180</td>
+</tr>
+<tr class="even">
+<td>4º bloco (10 t)</td>
+<td>40</td>
+<td>120</td>
+<td>240</td>
+</tr>
+<tr class="odd">
+<td>5º bloco (10 t)</td>
+<td>50</td>
+<td>150</td>
+<td>300</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="no-bullet">
+<p><strong>Em duplas (5 minutos)</strong>: (i) Quanto custa exigir 30 t de cada firma? (ii) Qual é o corte de 90 t mais barato possível? (iii) Nesse corte, o que há de comum entre as três firmas?</p>
+</div>
+</section>
+<section id="exercício-qual-é-o-corte-mais-barato-1" class="slide level2 smaller">
+<h2>Exercício: qual é o corte mais barato?</h2>
+<div class="cmp">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Corte uniforme (30 t cada)</th>
+<th>Corte mais barato</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Firma A</strong></td>
+<td>30 t — R$ 60 mil</td>
+<td>50 t — R$ 150 mil</td>
+</tr>
+<tr class="even">
+<td><strong>Firma B</strong></td>
+<td>30 t — R$ 180 mil</td>
+<td>30 t — R$ 180 mil</td>
+</tr>
+<tr class="odd">
+<td><strong>Firma C</strong></td>
+<td>30 t — R$ 360 mil</td>
+<td>10 t — R$ 60 mil</td>
+</tr>
+<tr class="even">
+<td><strong>Total (90 t)</strong></td>
+<td><strong>R$ 600 mil</strong></td>
+<td><strong>R$ 390 mil</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Diferença</strong></td>
+<td></td>
+<td><strong>R$ 210 mil mais barato (35%)</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">As duas colunas cortam as <strong>mesmas 90 toneladas</strong>, mas a da esquerda desperdiça R$ 210 mil.</span></li>
+<li><span class="fragment" data-fragment-index="2"><strong>Princípio Equimarginal:</strong> o corte barato é o que compra todo bloco de até R$ 90 mil, <strong>em qualquer firma</strong>. Ou seja, um preço só é aplicado a todas.</span></li>
+<li><span class="fragment" data-fragment-index="3">No entanto, para montar essa tabela, o regulador precisa saber o custo de cada firma. <strong>Ele sabe?</strong></span></li>
+</ul>
+</section>
+<section id="o-caminho-até-a-eficiência-2" class="slide level2">
+<h2>O caminho até a eficiência</h2>
+<div class="step-map">
+<div class="step">
+<p><strong>1. Trocas</strong> TMS igual entre os indivíduos</p>
+</div>
+<div class="step">
+<p><strong>2. Produção</strong> TMT igual entre as firmas</p>
+</div>
+<div class="step now">
+<p><strong>3. Mercado</strong> TMS <span class="math inline">\(=\)</span> TMT no equilíbrio</p>
+</div>
+</div>
+<ul>
+<li>As duas primeiras condições foram construídas <strong>em separado</strong>: uma na caixa de trocas, outra na fronteira de produção.</li>
+<li><span class="fragment" data-fragment-index="1">Para amarrá-las, precisamos do <strong>preço relativo</strong>, que é o mesmo para consumidores e firmas.</span></li>
+</ul>
+</section>
+<section id="equilíbrio-de-mercado" class="slide level2">
+<h2>Equilíbrio de Mercado</h2>
+<ul>
+<li>No equilíbrio, trocas e produção são eficientes:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[TMS=\frac{{p}_{x}}{{p}_{y}}=TMT\]</span></p>
+</div>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/02-equilibrio-mercado.svg" style="max-height:380px"></p>
+</div>
+</section>
+<section id="teoremas-do-bem-estar" class="slide level2">
+<h2>Teoremas do Bem-Estar</h2>
+<ul>
+<li>1º Teorema do Bem-Estar:
+<ul>
+<li>O equilíbrio competitivo é ótimo de Pareto.</li>
+</ul></li>
+<li>2º Teorema do Bem-Estar:
+<ul>
+<li>Em uma economia competitiva, qualquer alocação ótima de Pareto pode ser alcançada partindo-se de uma distribuição inicial arbitrária de recursos.</li>
+</ul></li>
+</ul>
+</section>
+<section id="teoremas-do-bem-estar-1" class="slide level2">
+<h2>Teoremas do Bem-Estar</h2>
+<ul>
+<li>Mas esses resultados são válidos apenas sob determinadas circunstâncias:
+<ul>
+<li>Direitos de Propriedade Completos.
+<ul>
+<li>Bem definidos, estáveis e transferíveis.</li>
+</ul></li>
+<li>Agentes são tomadores de preços e não há barreira à entrada.</li>
+<li>Informação completa.</li>
+<li>Ausência de custos de transação.</li>
+</ul></li>
+<li>No contexto de problemas ambientais como poluição, essas condições são satisfeitas?
+<ul>
+<li>Se não, qual das premissas é, normalmente, violada?</li>
+</ul></li>
+</ul>
+</section>
+<section id="teoremas-do-bem-estar-2" class="slide level2">
+<h2>Teoremas do Bem-Estar</h2>
+<ul>
+<li>Direitos de propriedade <strong>não</strong> estão bem definidos e nem sempre são transferíveis.
+<ul>
+<li>Direitos de propriedade completos: <strong>todos os benefícios e custos</strong> de um bem (ou mal) são atribuíveis ao dono dos direitos.</li>
+<li>No caso de uma coxinha, consumidor recebe os benefícios e incorre nos custos sozinho.</li>
+<li>No caso de uma refinaria de petróleo, firma tem receita com produção e custo com insumos, <strong>mas não compensa os custos da poluição gerada</strong>.
+<ul>
+<li>Quem absorve esses custos é, por exemplo, a população vizinha à fábrica.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="modelo-simplificado-de-externalidades" class="slide level2">
+<h2>Modelo Simplificado de Externalidades</h2>
+<ul>
+<li>A curva de oferta de mercado nos dá o <strong>custo marginal de produção privado</strong> de um bem.</li>
+<li>Podemos interpretar a curva de demanda de mercado como o <strong>benefício marginal privado</strong> (ou disposição marginal a pagar).
+<ul>
+<li>Quanto mais para a direita (maior quantidade do bem), menor a disposição marginal a pagar por uma unidade adicional desse bem;</li>
+<li>É a velha história do copo d’água para matar a sede.</li>
+</ul></li>
+<li>Vamos usar essas curvas de custo marginal e benefício marginal <strong>privados</strong> para motivar o problema de externalidades.</li>
+</ul>
+</section>
+<section id="custo-marginal-e-benefício-marginal" class="slide level2">
+<h2>Custo Marginal e Benefício Marginal</h2>
+<ul>
+<li>Consideremos o caso de uma refinaria que produz derivados de petróleo.
+<ul>
+<li>Podemos traçar <strong>curvas de oferta e demanda</strong> para esse produto (<strong>LOUSA</strong>);</li>
+<li><strong>Equilíbrio Competitivo maximiza excedente total</strong> (excedente do produtor + excedente do consumidor).</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Entretanto, refinaria gera custos adicionais à população vizinha.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Podemos pensar em uma <strong>curva de custo marginal social</strong>;</span></li>
+<li><span class="fragment" data-fragment-index="1">Neste caso, <span class="math inline">\(\textit{CMg Social}&gt;\textit{CMg Privado}\)</span>.</span></li>
+</ul></li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Desenho na LOUSA.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="custo-marginal-e-benefício-marginal-1" class="slide level2">
+<h2>Custo Marginal e Benefício Marginal</h2>
+<ul>
+<li>Se mercado age sozinho, equilíbrio é dado por <span class="math inline">\({x}^{*}\)</span> e <span class="math inline">\({p}^{*}\)</span>.
+<ul>
+<li>Equilíbrio Competitivo está no cruzamento entre custo marginal privado e benefício marginal privado.</li>
+<li>Qual é o problema com esse ponto de equilíbrio?</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Equilíbrio competitivo <strong>não é ótimo de Pareto</strong>.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Equilíbrio considerando custo marginal social seria <span class="math inline">\({x}^{O}\)</span> e <span class="math inline">\({p}^{O}\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="1">Produção em excesso: <span class="math inline">\({x}^{*}-{x}^{O}\)</span>.</span></li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Como podemos medir a perda social desse equilíbrio competitivo?</span>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Excesso de produção gera custo social igual ao “peso morto”.</span></li>
+</ul></li>
+</ul>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

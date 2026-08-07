@@ -1,0 +1,22 @@
+<svg width="480" height="380" viewBox="0 0 480 380"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Equilíbrio de mercado: a reta de preço tangencia a fronteira de produção e a curva de indiferença no mesmo ponto</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+  </defs>
+  <line x1="58.00" y1="334.00" x2="58.00" y2="34.00" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.00" y1="334.00" x2="454.00" y2="334.00" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="460.00" y="339.00" font-size="15" fill="#000000" text-anchor="start" font-style="italic">x</text>
+  <text x="42.00" y="38.00" font-size="15" fill="#000000" text-anchor="start" font-style="italic">y</text>
+  <path d="M 58.00 79.28 A 334.65 254.72 0 0 1 392.65 334.00" fill="none" stroke="#C00000" stroke-width="2.4"/>
+  <path d="M 262.03 45.32 L 263.33 47.54 L 264.62 49.73 L 265.91 51.88 L 267.20 54.01 L 268.49 56.11 L 269.78 58.18 L 271.07 60.22 L 272.37 62.23 L 273.66 64.22 L 274.95 66.18 L 276.24 68.12 L 277.53 70.03 L 278.82 71.92 L 280.11 73.78 L 281.41 75.61 L 282.70 77.43 L 283.99 79.22 L 285.28 80.99 L 286.57 82.73 L 287.86 84.46 L 289.16 86.16 L 290.45 87.84 L 291.74 89.50 L 293.03 91.15 L 294.32 92.77 L 295.61 94.37 L 296.90 95.95 L 298.20 97.51 L 299.49 99.06 L 300.78 100.59 L 302.07 102.09 L 303.36 103.59 L 304.65 105.06 L 305.95 106.52 L 307.24 107.96 L 308.53 109.38 L 309.82 110.79 L 311.11 112.18 L 312.40 113.55 L 313.69 114.91 L 314.99 116.26 L 316.28 117.59 L 317.57 118.90 L 318.86 120.21 L 320.15 121.49 L 321.44 122.76 L 322.73 124.02 L 324.03 125.27 L 325.32 126.50 L 326.61 127.72 L 327.90 128.92 L 329.19 130.12 L 330.48 131.30 L 331.78 132.47 L 333.07 133.62 L 334.36 134.77 L 335.65 135.90 L 336.94 137.02 L 338.23 138.13 L 339.52 139.23 L 340.82 140.31 L 342.11 141.39 L 343.40 142.45 L 344.69 143.51 L 345.98 144.55 L 347.27 145.58 L 348.56 146.61 L 349.86 147.62 L 351.15 148.62 L 352.44 149.62 L 353.73 150.60 L 355.02 151.57 L 356.31 152.54 L 357.61 153.49 L 358.90 154.44 L 360.19 155.38 L 361.48 156.31 L 362.77 157.23 L 364.06 158.14 L 365.35 159.04 L 366.65 159.94 L 367.94 160.82 L 369.23 161.70 L 370.52 162.57 L 371.81 163.43 L 373.10 164.29 L 374.40 165.13 L 375.69 165.97 L 376.98 166.80 L 378.27 167.63 L 379.56 168.44 L 380.85 169.25 L 382.14 170.05 L 383.44 170.85 L 384.73 171.64 L 386.02 172.42 L 387.31 173.19 L 388.60 173.96 L 389.89 174.72 L 391.18 175.47 L 392.48 176.22 L 393.77 176.96 L 395.06 177.70 L 396.35 178.43 L 397.64 179.15 L 398.93 179.87 L 400.23 180.58 L 401.52 181.28 L 402.81 181.98 L 404.10 182.67 L 405.39 183.36 L 406.68 184.04 L 407.97 184.72 L 409.27 185.39 L 410.56 186.05 L 411.85 186.71 L 413.14 187.37 L 414.43 188.02 L 415.72 188.66 L 417.01 189.30 L 418.31 189.93 L 419.60 190.56 L 420.89 191.19 L 422.18 191.80 L 423.47 192.42 L 424.76 193.03 L 426.06 193.63 L 427.35 194.23 L 428.64 194.83 L 429.93 195.42 L 431.22 196.00 L 432.51 196.58 L 433.80 197.16 L 435.10 197.73 L 436.39 198.30 L 437.68 198.87 L 438.97 199.43 L 440.26 199.98 L 441.55 200.53 L 442.85 201.08" fill="none" stroke="#0A111D" stroke-width="1.60" stroke-linecap="round"/>
+  <line x1="166.18" y1="45.32" x2="448.42" y2="282.82" stroke="#0070C0" stroke-width="2.20"/>
+  <circle cx="306.18" cy="163.13" r="4" fill="#000000"/>
+  <text x="278.18" y="183.13" font-size="15" fill="#000000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">E</text>
+  <text x="151.70" y="186.26" font-size="15" fill="#C00000" text-anchor="start" font-weight="600" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">FPP</text>
+  <text x="381.49" y="144.18" font-size="13" fill="#000000" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">curva de</text>
+  <text x="381.49" y="158.33" font-size="13" fill="#000000" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">indiferença</text>
+  <text x="176.18" y="37.32" font-size="13" fill="#0070C0" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">inclinação = −pₓ/pᵧ</text>
+</svg>
