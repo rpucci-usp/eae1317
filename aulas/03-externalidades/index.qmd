@@ -13,8 +13,11 @@ format:
     slide-number: true
     chalkboard: true
     incremental: false
-    css: styles.css
+    css: ../_assets/styles.css
     footer: "EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ## Aula Passada
@@ -271,8 +274,8 @@ Podemos categorizar externalidades em dois grupos principais:
 Suponha que ele derrube **o bosque inteiro** para construir sua casa, e fique sem carne. Essa alocação é **eficiente**?
 :::
 
-[- Se Robinson é o único habitante da ilha, qualquer alocação individualmente ótima é, também, Pareto-ótima.
-  - Robinson pode desmatar o bosque inteiro e ficar sem carne.]{.fragment fragment-index=1}
+- [Se Robinson é o único habitante da ilha, qualquer alocação individualmente ótima é, também, Pareto-ótima.]{.fragment fragment-index=1}
+  - [Robinson pode desmatar o bosque inteiro e ficar sem carne.]{.fragment fragment-index=1}
 
 
 ## Exemplo Estilizado
@@ -672,10 +675,6 @@ $$\max_{{\ell }_{x},E} {p}_{x} f\left({\ell }_{x},E\right)-w {\ell }_{x}-\underb
 
   - [Não há mercado para isso.]{.fragment fragment-index=2}
 
-<!-- No .pptx o termo que falta na função lucro é um círculo tracejado vazio,
-     com uma seta ligando-o à CPO ∂f/∂E = 0. Vira um \underbrace sobre um
-     \phantom: o buraco fica no lugar certo da equação, e não como uma figura
-     solta que o revealjs escalaria por conta própria. -->
 
 ## Equilíbrio Competitivo
 

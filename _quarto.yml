@@ -2,7 +2,8 @@ project:
   type: website
   render:
     - index.qmd
-    - aulas/02-eficiencia/
+    - aulas/
+
 
 website:
   title: "EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais"
