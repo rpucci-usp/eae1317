@@ -1,5 +1,292 @@
 [
   {
+    "objectID": "aulas/03-externalidades/index.html#aula-passada",
+    "href": "aulas/03-externalidades/index.html#aula-passada",
+    "title": "Externalidades",
+    "section": "Aula Passada",
+    "text": "Aula Passada\n\nAlgumas Correntes de Pensamento\n\nValor Intrínseco vs. Valor Instrumental\nBiocentrismo vs. Antropocentrismo\nPrincípio Preventivo\nSustentabilidade\n\nEficiência Econômica\n\nFronteira de Pareto\nEficiência em Trocas e em Produção\nPrincípio Equimarginal\nEquilíbrio Competitivo e Teoremas do Bem-Estar\nOferta e Demanda\n\nEquilíbrio de Mercado\nDisposição a Pagar"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#agenda",
+    "href": "aulas/03-externalidades/index.html#agenda",
+    "title": "Externalidades",
+    "section": "Agenda",
+    "text": "Agenda\n\nPrincipais tipos de poluição\n\nÁgua\nAr\nSolo\n\nModelo de Externalidades\n\nAlocação de Pareto\nEquilíbrio Competitivo\nIntervenções\n\nImposto de Pigou\n\nCusto de Abatimento"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#tipos-de-poluição",
+    "href": "aulas/03-externalidades/index.html#tipos-de-poluição",
+    "title": "Externalidades",
+    "section": "Tipos de Poluição",
+    "text": "Tipos de Poluição"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#tipos-de-poluição-1",
+    "href": "aulas/03-externalidades/index.html#tipos-de-poluição-1",
+    "title": "Externalidades",
+    "section": "Tipos de Poluição",
+    "text": "Tipos de Poluição\n\nNeste curso, o problema central é a poluição do meio ambiente pela ação humana.\nPoluição é, genericamente, um subproduto.\n\nÉ algo gerado pela atividade humana, mas não é um fim.\n(Quase) ninguém gera poluição porque é divertido.\n\nA poluição pode advir tanto de atividades produtivas de empresas quanto de decisões de indivíduos.\n\nUma fábrica pode emitir poluentes no ar ao gerar energia;\nUm indivíduo pode gerar poluentes ao dirigir todos os dias para o trabalho."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#tipos-de-poluição-2",
+    "href": "aulas/03-externalidades/index.html#tipos-de-poluição-2",
+    "title": "Externalidades",
+    "section": "Tipos de Poluição",
+    "text": "Tipos de Poluição\n\nPodemos categorizar poluição sob várias óticas.\nDe acordo com setores responsáveis:\n\nFábricas, agricultura, geração de eletricidade etc.\n\nDe acordo com a fonte:\n\nPontual: uma fábrica específica despeja esgoto no rio;\nNão-Pontual: várias fazendas usam agrotóxicos que contaminam um rio.\n\nDe acordo com a forma que a poluição nos afeta:\n\nSaúde;\nProdutividade de atividades econômicas (pesca, agricultura etc);\nAmenidades: comprometimento de paisagem, parque etc."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#poluição-da-água",
+    "href": "aulas/03-externalidades/index.html#poluição-da-água",
+    "title": "Externalidades",
+    "section": "Poluição da Água",
+    "text": "Poluição da Água\n\nDegradação de águas superficiais e subterrâneas, além de zonas costeiras.\n\n\nCausas comuns de poluição da água?\n\n\nMatéria orgânica e bactérias em esgoto lançado nos rios;\nExcesso de nutrientes (nitrogênio e fósforo) que escoam de áreas agrícolas;\nMetais pesados (chumbo e mercúrio) liberados por fábricas e garimpos;\nSedimentos sólidos de construções e erosão em áreas rurais;\nÁcido sulfúrico proveniente de chuvas em áreas urbanas."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#poluição-da-água-1",
+    "href": "aulas/03-externalidades/index.html#poluição-da-água-1",
+    "title": "Externalidades",
+    "section": "Poluição da Água",
+    "text": "Poluição da Água\n\nQuais são alguns efeitos da poluição da água?\n\n\nMatéria orgânica → consumo excessivo de oxigênio → hipóxia e mortalidade de peixes;\nNutrientes → proliferação e morte de algas → decomposição → hipóxia;\nSedimentos → assoreamento dos rios → enchentes;\nVazamento de petróleo → mortalidade de vida marinha;\nContaminação da água → doenças.\n\n\nExemplos: Rios Pinheiros, Tietê e Tamanduateí."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#poluição-do-ar",
+    "href": "aulas/03-externalidades/index.html#poluição-do-ar",
+    "title": "Externalidades",
+    "section": "Poluição do Ar",
+    "text": "Poluição do Ar\n\nPoluição do Ar Nociva (não há níveis seguros de exposição):\n\n\nCompostos químicos como amianto, mercúrio, chumbo, benzeno e arsênico são tóxicos e, frequentemente, carcinogênicos;\nOriunda de processos industriais químicos ou demolição de construções antigas (amianto).\n\n\nPoluição do Ar Convencional:\n\n\nOriunda da queima de combustíveis fósseis para gerar eletricidade, transporte e aquecimento domiciliar\nDióxido de Enxofre (carvão);\nMonóxido de Carbono e Óxidos de Nitrogênio (motores);\nMaterial particulado: combustão incompleta, incêndios florestais, aquecimento e cozinha."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#poluição-do-ar-1",
+    "href": "aulas/03-externalidades/index.html#poluição-do-ar-1",
+    "title": "Externalidades",
+    "section": "Poluição do Ar",
+    "text": "Poluição do Ar\n\nHá ainda poluição do ar geradora de mudanças climáticas:\n\n\nNão são necessariamente poluentes, mas são problemáticos em alta concentração;\nGases de Efeito Estufa (Dióxido de Carbono, Óxido Nitroso e Metano);\nGases CFCs (degradação da camada de ozônio).\n\n\nAlguns efeitos da poluição do ar?\n\n\nMaterial particulado aumenta risco de doenças respiratórias e cardíacas;\nÓxido de Nitrogênio → Ozônio superficial → smog e problemas pulmonares;\nDióxido de Enxofre → chuva ácida → corrosão de monumentos e florestas;\nMudanças Climáticas."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#poluição-do-solo",
+    "href": "aulas/03-externalidades/index.html#poluição-do-solo",
+    "title": "Externalidades",
+    "section": "Poluição do Solo",
+    "text": "Poluição do Solo\n\nDuas categorias:\n\n\nDescarte de lixo convencional, infectante, nocivo ou radioativo;\nAlteração de paisagens com danos à biodiversidade e a serviços de ecossistêmicos.\n\n\nAlguns efeitos da poluição do solo?\n\n\nLixões → animais e insetos transmissores de doenças;\nContaminação do solo → redução no valor da propriedade;\nLixo radioativo → mortalidade de pessoas e animais;\nDesmatamento → perda de biodiversidade e surgimento de arboviroses.\n\n\nExemplos: Césio-137 em Goiânia (1987), com 249 contaminados; desmatamento na Amazônia"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#em-resumo",
+    "href": "aulas/03-externalidades/index.html#em-resumo",
+    "title": "Externalidades",
+    "section": "Em resumo",
+    "text": "Em resumo\n\nDiferentes tipos de poluição têm diferentes impactos.\n\n\nÉ importante entender o contexto de cada problema.\nQuem é afetado? Quem se beneficia?\n\nResposta é relevante para desenho de políticas públicas.\n\n\n\nMuitas vezes, inclusive, os tipos de poluição interagem.\n\n\nChuva ácida é causada por poluição do ar e gera poluição na água."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#modelo-de-externalidades",
+    "href": "aulas/03-externalidades/index.html#modelo-de-externalidades",
+    "title": "Externalidades",
+    "section": "Modelo de Externalidades",
+    "text": "Modelo de Externalidades"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#externalidades",
+    "href": "aulas/03-externalidades/index.html#externalidades",
+    "title": "Externalidades",
+    "section": "Externalidades",
+    "text": "Externalidades\n\nVimos que Ótimo de Pareto é métrica comum em Economia para comparar diferentes cenários.\n\nE vimos que há situações em que o Ótimo de Pareto não é alcançado pelo Equilíbrio Competitivo.\n\nTrataremos, agora, de uma falha de mercado recorrente em que o Ótimo de Pareto não é alcançado pela competição.\n\n\nExternalidades: interações de indivíduo com meio ambiente que provocam impactos positivos ou negativos, diretos e não solicitados em outro indivíduo."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#externalidades-1",
+    "href": "aulas/03-externalidades/index.html#externalidades-1",
+    "title": "Externalidades",
+    "section": "Externalidades",
+    "text": "Externalidades\n\nImportante: externalidades não são mediadas por mecanismos de mercado (preços).\n\n\nSe uma fábrica passa a consumir mais eletricidade e provoca aumento no preço da energia, isto não é externalidade.\n\n\nExemplo clássico: lavanderia vizinha a uma fábrica.\n\n\nFábrica escolhe quanto produzir, lançando fumaça no ar.\n\nFumaça impacta produção de roupas limpas da lavanderia, mas esta não ganha nenhuma compensação por isso.\n\nCusto de produção da fábrica não embute custo adicional gerado para lavanderia e outros vizinhos."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#externalidades-2",
+    "href": "aulas/03-externalidades/index.html#externalidades-2",
+    "title": "Externalidades",
+    "section": "Externalidades",
+    "text": "Externalidades\n\nOutro exemplo: fazendeiro aplica fertilizantes, contaminando lençol freático.\n\n\nComunidades vizinhas consomem água contaminada, mas não são compensadas por isso;\nCusto do fazendeiro não embute externalidade negativa gerada.\n\n\nMais um: apiário ao lado de pomar de laranjas.\n\n\nPomar é mais produtivo por conta das abelhas, mas não paga por esse serviço."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#definições",
+    "href": "aulas/03-externalidades/index.html#definições",
+    "title": "Externalidades",
+    "section": "Definições",
+    "text": "Definições\n\nDefinição 1: uma alocação é considerada Pareto-ótima se uma realocação de recursos não pode fazer um indivíduo melhor sem deixar outro pior.\n\n\nDefinição 2: uma externalidade existe quando a utilidade ou função de produção do agente A depende diretamente de variáveis reais escolhidas pelo agente B, sem que haja compensação pelo efeito gerado no bem-estar de A."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#definições-1",
+    "href": "aulas/03-externalidades/index.html#definições-1",
+    "title": "Externalidades",
+    "section": "Definições",
+    "text": "Definições\n\nPodemos categorizar externalidades em dois grupos principais:\n\n\nExternalidade de Consumo: consumo do agente A afeta bem-estar do agente B.\n\nDeslocar-se com automóvel, emitindo gases estufa e contribuindo para aquecimento global;\nPlantar um jardim bonito na frente da casa, gerando felicidade para quem passa.\n\nExternalidade de Produção: quando produção de uma firma gera impacto em outros agentes.\n\nFábrica emite fumaça e prejudica vizinhos;\nApiário ajuda na produção de laranjas do fazendeiro vizinho."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#exemplo-estilizado",
+    "href": "aulas/03-externalidades/index.html#exemplo-estilizado",
+    "title": "Externalidades",
+    "section": "Exemplo Estilizado",
+    "text": "Exemplo Estilizado\n\nPara fixarmos a ideia da externalidade como falha de mercado, suponha o exemplo clássico de uma ilha com uma pessoa apenas, o Robinson.\nIlha tem bosque indispensável para abrigar animais de caça;\nRobinson usa madeira para construir sua casa e gosta de comer carne.\n\n\nSuponha que ele derrube o bosque inteiro para construir sua casa, e fique sem carne. Essa alocação é eficiente?\n\n\nSe Robinson é o único habitante da ilha, qualquer alocação individualmente ótima é, também, Pareto-ótima.\n\nRobinson pode desmatar o bosque inteiro e ficar sem carne."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#exemplo-estilizado-1",
+    "href": "aulas/03-externalidades/index.html#exemplo-estilizado-1",
+    "title": "Externalidades",
+    "section": "Exemplo Estilizado",
+    "text": "Exemplo Estilizado\n\nExternalidade surge quando Robinson compartilha a ilha com outros agentes.\n\n\nSuponha que Robinson e Dona Florinda vivam na ilha.\nAlém disso, suponha as seguintes preferências:\n\nRobinson gosta de casas monumentais, mas é vegano;\nDona Florinda dorme sob as estrelas, mas adora carne.\n\n\n\nMesma pergunta: Robinson derruba o bosque inteiro. Agora, com duas pessoas na ilha, essa alocação é eficiente?\n\n\nNo caso competitivo, há uma falha de mercado:\n\nÉ provável que Robinson desmate todo o bosque para construir seu palácio, deixando Dona Florinda sem carne."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#exemplo-estilizado-2",
+    "href": "aulas/03-externalidades/index.html#exemplo-estilizado-2",
+    "title": "Externalidades",
+    "section": "Exemplo Estilizado",
+    "text": "Exemplo Estilizado\n\nDona Florinda vê o bosque sendo derrubado e sabe que vai ficar sem carne. Se fosse ela, o que tentaria?\n\n\n(a) Exigir que Robinson pare de derrubar.\n(b) Oferecer alguma coisa a ele em troca de preservar o bosque.\n(c) Nada. A ilha é dele, ele que decida."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#exemplo-estilizado-3",
+    "href": "aulas/03-externalidades/index.html#exemplo-estilizado-3",
+    "title": "Externalidades",
+    "section": "Exemplo Estilizado",
+    "text": "Exemplo Estilizado\n\nA solução nesse exemplo estilizado passa por algum tipo de coordenação.\n\n\nPodemos pensar em duas formas:\n\n\nCaso Não-Cooperativo: Suponha que Robinson chegou antes à ilha e tem total controle sobre ela.\n\nDona Florinda pode oferecer seus serviços de engenharia e ensinar Robinson a construir casas mais eficientemente; em troca, bosque é relativamente preservado.\nExistência de direitos de propriedade claramente definidos permitem a criação de um mecanismo de trocas → 1º Teorema do Bem-Estar funciona.\n\nCaso Cooperativo: Robinson e Dona Florinda podem formar um clã e combinar um arranjo voluntariamente.\n\nAcordo coletivo sobre o uso da madeira do bosque.\n\n\n\nAmbas as soluções servem para internalizar a externalidade."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#exemplo-estilizado-4",
+    "href": "aulas/03-externalidades/index.html#exemplo-estilizado-4",
+    "title": "Externalidades",
+    "section": "Exemplo Estilizado",
+    "text": "Exemplo Estilizado\n\nEm Economia do Meio Ambiente, a maioria dos problemas tem raiz similar.\n\n\nFalta de coordenação devido a\n\nMercados ausentes;\nDireitos de propriedade incompletos;\nEnforcement ineficiente;\nIncapacidade de indivíduos de tomar decisões coletivas.\n\nPara resolvê-los, muitas vezes, é necessário criar mecanismos de coordenação."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#modelo-formal-de-externalidades",
+    "href": "aulas/03-externalidades/index.html#modelo-formal-de-externalidades",
+    "title": "Externalidades",
+    "section": "Modelo Formal de Externalidades",
+    "text": "Modelo Formal de Externalidades\n\nConsidere uma economia com 2 indivíduos.\n\n\nA função utilidade de cada um é dada por\n\n\n\\[{U}_{i}\\left({x}_{i},{z}_{i},E\\right)\\]\n\n\nEm que \\({x}_{i}\\) e \\({z}_{i}\\) são o consumo de dois bens diferentes por \\(i\\in \\{1,2\\}\\).\n\\(E\\) é o nível de poluição ambiental.\n\nIsto é exógeno ao indivíduo, ou seja, fora de seu controle.\n\nVamos supor que a externalidade seja negativa. Como isso se manifesta no modelo?\n\n\\(\\frac{\\partial {U}_{i}}{\\partial E}&lt;0\\)"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#modelo-formal-de-externalidades-1",
+    "href": "aulas/03-externalidades/index.html#modelo-formal-de-externalidades-1",
+    "title": "Externalidades",
+    "section": "Modelo Formal de Externalidades",
+    "text": "Modelo Formal de Externalidades\n\nSuponha, ainda, que a produção de \\(x\\) é responsável por gerar poluição.\n\n\nOu seja, é a fonte de externalidade nesta economia.\n\n\nA função de produção de \\(x\\) é dada por\n\n\n\\[x=f({\\ell }_{x},E)\\]\n\n\nEm que \\({\\ell }_{x}\\) é o trabalho empregado para produzir \\(x\\).\nÉ como se trabalho e poluição fossem insumos.\n\nProduto marginal positivo: \\(\\frac{\\partial f}{\\partial {\\ell }_{x}}&gt;0\\) e \\(\\frac{\\partial f}{\\partial E}&gt;0\\)"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#modelo-formal-de-externalidades-2",
+    "href": "aulas/03-externalidades/index.html#modelo-formal-de-externalidades-2",
+    "title": "Externalidades",
+    "section": "Modelo Formal de Externalidades",
+    "text": "Modelo Formal de Externalidades\n\nO bem \\(z\\) é produzido pela tecnologia.\n\n\n\\[z=g({\\ell }_{z})\\]\n\n\nAlém disso, considere que o trabalho está limitado à dotação total de tempo:\n\n\n\\[{\\ell }_{x}+{\\ell }_{z}=\\ell\\]"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto",
+    "href": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto",
+    "title": "Externalidades",
+    "section": "Alocação Ótima de Pareto",
+    "text": "Alocação Ótima de Pareto\n\nComo encontramos o Ótimo de Pareto nesta economia?\n\n\nUma forma é maximizar a utilidade de um dos indivíduos sujeito a algumas restrições:\n\n\nNão piorar outro indivíduo;\nUsar tecnologias existentes;\nRespeitar total de recursos disponíveis.\n\n\nComo montamos esse problema de maximização? LOUSA"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#o-caminho-até-o-ótimo-de-pareto",
+    "href": "aulas/03-externalidades/index.html#o-caminho-até-o-ótimo-de-pareto",
+    "title": "Externalidades",
+    "section": "O caminho até o ótimo de Pareto",
+    "text": "O caminho até o ótimo de Pareto\n\n\n1. Consumo TMS igual para os dois indivíduos\n\n\n2. Produção como repartir o trabalho entre \\(x\\) e \\(z\\)\n\n\n3. Trocas TMS igual à inclinação da fronteira de produção\n\n\n4. Poluição quanto de \\(E\\) aceitar\n\n\n\nSão quatro condições que saem das CPOs do mesmo problema.\nAs três primeiras já apareceram na aula passada, em versão simplificada.\nA quarta é nova e não será reproduzida via mercado."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-1",
+    "href": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-1",
+    "title": "Externalidades",
+    "section": "Alocação Ótima de Pareto",
+    "text": "Alocação Ótima de Pareto\n\n\\[\\max_{{x}_{1},{x}_{2},{z}_{1},{z}_{2},{\\ell }_{x},{\\ell }_{z},E} {U}_{1}\\left({x}_{1},{z}_{1},E\\right)+{\\lambda }_{u}\\left[{U}_{2}\\left({x}_{2},{z}_{2},E\\right)-{u}_{2}\\right]+\\]\n\n\n\\[+{\\lambda }_{x}\\left[f\\left({\\ell }_{x},E\\right)-{x}_{1}-{x}_{2}\\right]+{\\lambda }_{z}\\left[g\\left({\\ell }_{z}\\right)-{z}_{1}-{z}_{2}\\right]+{\\lambda }_{\\ell }\\left[\\ell -{\\ell }_{x}-{\\ell }_{z}\\right]\\]\n\n\nEficiência em consumo exige que solução \\(({x}_{1}^{*},{x}_{2}^{*},{z}_{1}^{*},{z}_{2}^{*},{\\ell }_{x}^{*},{\\ell }_{z}^{*},{E}^{*})\\) seja tal que (LOUSA)\n\n\n\\[\\frac{\\frac{\\partial {U}_{1}}{\\partial {x}_{1}}}{\\frac{\\partial {U}_{1}}{\\partial {z}_{1}}}=\\frac{{\\lambda }_{x}}{{\\lambda }_{z}}=\\frac{\\frac{\\partial {U}_{2}}{\\partial {x}_{2}}}{\\frac{\\partial {U}_{2}}{\\partial {z}_{2}}}\\]\n\n\nTaxa marginal de substituição entre \\(x\\) e \\(z\\) igual para ambos os indivíduos."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-2",
+    "href": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-2",
+    "title": "Externalidades",
+    "section": "Alocação Ótima de Pareto",
+    "text": "Alocação Ótima de Pareto\n\nEficiência em Produção requer que (LOUSA)\n\n\n\\[{\\lambda }_{x}\\frac{\\partial f}{\\partial {\\ell }_{x}}={\\lambda }_{\\ell }={\\lambda }_{z}\\frac{\\partial g}{\\partial {\\ell }_{z}}\\]\n\n\nValor-sombra do produto marginal de cada bem é igual ao preço-sombra do trabalho (\\({\\lambda }_{\\ell }\\))."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-3",
+    "href": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-3",
+    "title": "Externalidades",
+    "section": "Alocação Ótima de Pareto",
+    "text": "Alocação Ótima de Pareto\n\nCombinando as condições anteriores, chegamos à Eficiência em Trocas:\n\n\n\\[\\frac{\\frac{\\partial {U}_{i}}{\\partial {x}_{i}}}{\\frac{\\partial {U}_{i}}{\\partial {z}_{i}}}=\\frac{{\\lambda }_{x}}{{\\lambda }_{z}}=\\frac{\\frac{\\partial g}{\\partial {\\ell }_{z}}}{\\frac{\\partial f}{\\partial {\\ell }_{x}}} \\forall i\\]\n\n\nOu seja, a inclinação das curvas de indiferença de cada indivíduo (lado esquerdo) é igual à inclinação da fronteira de possibilidades de produção (lado direito).\n\nComo vimos de forma simplificada na aula passada."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-4",
+    "href": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-4",
+    "title": "Externalidades",
+    "section": "Alocação Ótima de Pareto",
+    "text": "Alocação Ótima de Pareto\n\nFinalmente, resta a condição de primeira ordem para a poluição ambiental (LOUSA).\n\n\nPodemos deixar essa condição mais intuitiva (LOUSA):\n\n\n\\[\\underbrace{-\\frac{\\frac{\\partial {U}_{1}}{\\partial E}}{\\frac{\\partial {U}_{1}}{\\partial {x}_{1}}} -\\frac{\\frac{\\partial {U}_{2}}{\\partial E}}{\\frac{\\partial {U}_{2}}{\\partial {x}_{2}}}}_{\\substack{\\text{Disposição marginal a sacrificar } x \\\\ \\text{para reduzir } E}} = \\underbrace{\\frac{\\partial f}{\\partial E}}_{\\substack{\\text{Custo marginal de reduzir } E \\text{ em} \\\\ \\text{termos de unidades produzidas de } x}}\\]\n\n\nEficiência exige que soma das disposições marginais a pagar para reduzir \\(E\\) seja igual a custo marginal de fazê-lo.\n\n\nTudo em termos de unidades de \\(x\\) sacrificadas."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-5",
+    "href": "aulas/03-externalidades/index.html#alocação-ótima-de-pareto-5",
+    "title": "Externalidades",
+    "section": "Alocação Ótima de Pareto",
+    "text": "Alocação Ótima de Pareto\n\nNotem que, à semelhança do caso de Bens Públicos,\n\n\nO benefício que 1 recebe da redução de \\(E\\) não interfere no benefício recebido por 2.\n\n\nA equação vista no slide anterior é a condição de Lindahl-Samuelson para provisão eficiente de bens públicos.\n\n\nNotem, também, que a alocação ótima de Pareto \\(({x}_{1}^{*},{x}_{2}^{*},{z}_{1}^{*},{z}_{2}^{*},{\\ell }_{x}^{*},{\\ell }_{z}^{*},{E}^{*})\\) depende do nível de utilidade \\({u}_{2}\\) fixado para 2.\n\n\nOutras alocações ótimas seriam possíveis."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#equilíbrio-competitivo",
+    "href": "aulas/03-externalidades/index.html#equilíbrio-competitivo",
+    "title": "Externalidades",
+    "section": "Equilíbrio Competitivo",
+    "text": "Equilíbrio Competitivo\n\nUsaremos a alocação de Pareto como nosso ponto de partida.\n\n\nAgora, veremos qual seria a alocação produzida pelos agentes atuando independentemente e tomando preços como dados.\n\n\nPara isso, suponha que\n\n\n\\({p}_{x}\\) e \\({p}_{z}\\) são os preços de \\(x\\) e \\(z\\) respectivamente\n\\(w\\) é o salário pago aos trabalhadores\n\\({y}_{i}\\) é a renda dos indivíduos"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#o-mesmo-caminho-agora-com-preços",
+    "href": "aulas/03-externalidades/index.html#o-mesmo-caminho-agora-com-preços",
+    "title": "Externalidades",
+    "section": "O mesmo caminho, agora com preços",
+    "text": "O mesmo caminho, agora com preços\n\n\n1. Consumo problema do consumidor\n\n\n2. Produção problema da firma\n\n\n3. Trocas sai das duas anteriores\n\n\n4. Poluição quem decide \\(E\\)?\n\n\n\nVamos refazer as mesmas quatro condições, agora com agentes independentes e preços de mercado no lugar dos preços-sombra.\nA pergunta que interessa é a quarta: no ótimo de Pareto quem escolhia \\(E\\) era o planejador. Aqui, quem escolhe?"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#equilíbrio-competitivo-1",
+    "href": "aulas/03-externalidades/index.html#equilíbrio-competitivo-1",
+    "title": "Externalidades",
+    "section": "Equilíbrio Competitivo",
+    "text": "Equilíbrio Competitivo\n\nPrimeiro, resolveremos o problema dos consumidores (LOUSA).\n\n\n\\[\\max_{{x}_{i},{z}_{i}} {U}_{i}\\left({x}_{i},{z}_{i},E\\right)+{\\lambda }_{i}({y}_{i}-{p}_{x}{x}_{i}-{p}_{z}{z}_{i})\\]\n\n\nCPOs :\n\n\n\\[\\frac{\\partial {U}_{i}}{\\partial {x}_{i}}={\\lambda }_{i}{p}_{x} ; \\frac{\\partial {U}_{i}}{\\partial {z}_{i}}={\\lambda }_{i}{p}_{z} \\forall i\\]\n\n\nIsto nos dá a condição de eficiência.\n\n\n\\[\\frac{\\frac{\\partial {U}_{1}}{\\partial {x}_{1}}}{\\frac{\\partial {U}_{1}}{\\partial {z}_{1}}}=\\frac{{p}_{x}}{{p}_{z}}=\\frac{\\frac{\\partial {U}_{2}}{\\partial {x}_{2}}}{\\frac{\\partial {U}_{2}}{\\partial {z}_{2}}}\\]"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#equilíbrio-competitivo-2",
+    "href": "aulas/03-externalidades/index.html#equilíbrio-competitivo-2",
+    "title": "Externalidades",
+    "section": "Equilíbrio Competitivo",
+    "text": "Equilíbrio Competitivo\n\nSegundo, resolveremos o problema das firmas (LOUSA).\n\n\n\\[\\max_{{\\ell }_{z}} {p}_{z} g\\left({\\ell }_{z}\\right)-w {\\ell }_{z}\\]\n\n\nCPO: \\(\\frac{\\partial g}{\\partial {\\ell }_{z}}{p}_{z}=w\\)\n\n\n\\[\\max_{{\\ell }_{x},E} {p}_{x} f\\left({\\ell }_{x},E\\right)-w {\\ell }_{x}-\\underbrace{\\phantom{{p}_{E}E}}_{\\substack{\\text{não há preço} \\\\ \\text{para } E}}\\]\n\n\nCPOs : \\(\\frac{\\partial f}{\\partial {\\ell }_{x}}{p}_{x}=w ; \\frac{\\partial f}{\\partial E}=0\\)\n\n\nO preço pago pela poluição é zero neste caso.\n\n\nNão há mercado para isso."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#equilíbrio-competitivo-3",
+    "href": "aulas/03-externalidades/index.html#equilíbrio-competitivo-3",
+    "title": "Externalidades",
+    "section": "Equilíbrio Competitivo",
+    "text": "Equilíbrio Competitivo\n\nNotem que eficiência no mercado de trabalho é satisfeita:\n\n\n\\[{p}_{x}\\frac{\\partial f}{\\partial {\\ell }_{x}}=w={p}_{z}\\frac{\\partial g}{\\partial {\\ell }_{z}}\\]\n\n\nDa mesma forma, eficiência nas trocas também:\n\n\n\\[\\frac{\\frac{\\partial {U}_{i}}{\\partial {x}_{i}}}{\\frac{\\partial {U}_{i}}{\\partial {z}_{i}}}=\\frac{{p}_{x}}{{p}_{z}}=\\frac{\\frac{\\partial g}{\\partial {\\ell }_{z}}}{\\frac{\\partial f}{\\partial {\\ell }_{x}}} \\forall i\\]\n\n\nMas o que acontece com a condição de eficiência para poluição?"
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#equilíbrio-competitivo-4",
+    "href": "aulas/03-externalidades/index.html#equilíbrio-competitivo-4",
+    "title": "Externalidades",
+    "section": "Equilíbrio Competitivo",
+    "text": "Equilíbrio Competitivo\n\nNotem que\n\n\n\\[0=\\frac{\\partial f}{\\partial E} \\neq \\underbrace{-\\frac{\\frac{\\partial {U}_{1}}{\\partial E}}{\\frac{\\partial {U}_{1}}{\\partial {x}_{1}}}-\\frac{\\frac{\\partial {U}_{2}}{\\partial E}}{\\frac{\\partial {U}_{2}}{\\partial {x}_{2}}}}_{\\substack{\\text{Soma das disposições marginais} \\\\ \\text{a pagar para reduzir } E}}&gt;0\\]\n\n\nFirma iguala produto marginal ao custo marginal da poluição.\n\n\nNotem que, desconsiderando externalidade, firma quer poluir enquanto tivermos \\(\\frac{\\partial f}{\\partial E}&gt;0\\).\nEquilíbrio competitivo não atinge eficiência de Pareto."
+  },
+  {
+    "objectID": "aulas/03-externalidades/index.html#onde-está-a-falha-de-mercado",
+    "href": "aulas/03-externalidades/index.html#onde-está-a-falha-de-mercado",
+    "title": "Externalidades",
+    "section": "Onde está a falha de mercado?",
+    "text": "Onde está a falha de mercado?\n\n\n\n\n\n\n\n\n\n\nÓtimo de Pareto\nEquilíbrio Competitivo\n\n\n\n\n1. Consumo\n\\(TMS^{1}=\\frac{{\\lambda}_{x}}{{\\lambda}_{z}}=TMS^{2}\\)\n\\(TMS^{1}=\\frac{{p}_{x}}{{p}_{z}}=TMS^{2}\\)   ✔\n\n\n2. Produção\n\\({\\lambda}_{x}\\frac{\\partial f}{\\partial {\\ell}_{x}}={\\lambda}_{\\ell}={\\lambda}_{z}\\frac{\\partial g}{\\partial {\\ell}_{z}}\\)\n\\({p}_{x}\\frac{\\partial f}{\\partial {\\ell}_{x}}=w={p}_{z}\\frac{\\partial g}{\\partial {\\ell}_{z}}\\)   ✔\n\n\n3. Trocas\n\\(TMS=\\frac{\\partial g/\\partial {\\ell}_{z}}{\\partial f/\\partial {\\ell}_{x}}\\)\n\\(TMS=\\frac{\\partial g/\\partial {\\ell}_{z}}{\\partial f/\\partial {\\ell}_{x}}\\)   ✔\n\n\n4. Poluição\n\\(-\\sum_{i}\\frac{\\partial {U}_{i}/\\partial E}{\\partial {U}_{i}/\\partial {x}_{i}}=\\frac{\\partial f}{\\partial E}\\)\n\\(\\frac{\\partial f}{\\partial E}=0\\)   ✘\n\n\n\n\n\nNo problema do planejador central, os preços-sombra \\({\\lambda}\\) fazem o papel que os preços fazem no mercado, por isso as três primeiras linhas coincidem.\nAs três primeiras linhas mostram o 1º Teorema do Bem-Estar funcionando.\nA quarta linha falha porque não existe mercado para \\(E\\), então seu preço é zero."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EAE1317",
+    "section": "",
+    "text": "Eficiência Econômica\nExternalidades"
+  },
+  {
+    "objectID": "index.html#aulas",
+    "href": "index.html#aulas",
+    "title": "EAE1317",
+    "section": "",
+    "text": "Eficiência Econômica\nExternalidades"
+  },
+  {
     "objectID": "aulas/02-eficiencia/index.html#exemplo-redução-de-esgoto-lançado-no-tietê",
     "href": "aulas/02-eficiencia/index.html#exemplo-redução-de-esgoto-lançado-no-tietê",
     "title": "Eficiência Econômica",
@@ -271,19 +558,5 @@
     "title": "Eficiência Econômica",
     "section": "Custo Marginal e Benefício Marginal",
     "text": "Custo Marginal e Benefício Marginal\n\nSe mercado age sozinho, equilíbrio é dado por \\({x}^{*}\\) e \\({p}^{*}\\).\n\nEquilíbrio Competitivo está no cruzamento entre custo marginal privado e benefício marginal privado.\nQual é o problema com esse ponto de equilíbrio?\n\nEquilíbrio competitivo não é ótimo de Pareto.\n\nEquilíbrio considerando custo marginal social seria \\({x}^{O}\\) e \\({p}^{O}\\).\nProdução em excesso: \\({x}^{*}-{x}^{O}\\).\n\nComo podemos medir a perda social desse equilíbrio competitivo?\n\nExcesso de produção gera custo social igual ao “peso morto”."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "EAE1317",
-    "section": "",
-    "text": "Eficiência Econômica\nExternalidades"
-  },
-  {
-    "objectID": "index.html#aulas",
-    "href": "index.html#aulas",
-    "title": "EAE1317",
-    "section": "",
-    "text": "Eficiência Econômica\nExternalidades"
   }
 ]

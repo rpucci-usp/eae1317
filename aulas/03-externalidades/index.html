@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Rafael Pucci">
+  <meta name="dcterms.date" content="2026-08-11">
+  <title>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais – Externalidades</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../_assets/styles.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Externalidades</h1>
+  <p class="subtitle">EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rafael Pucci 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-08-11</p>
+</section>
+<section id="aula-passada" class="slide level2">
+<h2>Aula Passada</h2>
+<ul>
+<li>Algumas Correntes de Pensamento
+<ul>
+<li>Valor Intrínseco vs.&nbsp;Valor Instrumental</li>
+<li>Biocentrismo vs.&nbsp;Antropocentrismo</li>
+<li>Princípio Preventivo</li>
+<li>Sustentabilidade</li>
+</ul></li>
+<li>Eficiência Econômica
+<ul>
+<li>Fronteira de Pareto</li>
+<li>Eficiência em Trocas e em Produção</li>
+<li>Princípio Equimarginal</li>
+<li>Equilíbrio Competitivo e Teoremas do Bem-Estar</li>
+<li>Oferta e Demanda
+<ul>
+<li>Equilíbrio de Mercado</li>
+<li>Disposição a Pagar</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Principais tipos de poluição
+<ul>
+<li>Água</li>
+<li>Ar</li>
+<li>Solo</li>
+</ul></li>
+<li>Modelo de Externalidades
+<ul>
+<li>Alocação de Pareto</li>
+<li>Equilíbrio Competitivo</li>
+<li>Intervenções
+<ul>
+<li>Imposto de Pigou</li>
+</ul></li>
+<li>Custo de Abatimento</li>
+</ul></li>
+</ul>
+</section>
+<section id="tipos-de-poluição" class="slide level2 section-cover">
+<h2>Tipos de Poluição</h2>
+</section>
+<section id="tipos-de-poluição-1" class="slide level2">
+<h2>Tipos de Poluição</h2>
+<ul>
+<li>Neste curso, o problema central é a poluição do meio ambiente pela ação humana.</li>
+<li>Poluição é, genericamente, um subproduto.
+<ul>
+<li>É algo gerado pela atividade humana, mas <strong>não é um fim</strong>.</li>
+<li>(Quase) ninguém gera poluição porque é divertido.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">A poluição pode advir tanto de atividades produtivas de empresas quanto de decisões de indivíduos.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Uma fábrica pode emitir poluentes no ar ao gerar energia;</span></li>
+<li><span class="fragment" data-fragment-index="1">Um indivíduo pode gerar poluentes ao dirigir todos os dias para o trabalho.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="tipos-de-poluição-2" class="slide level2">
+<h2>Tipos de Poluição</h2>
+<ul>
+<li>Podemos categorizar poluição sob várias óticas.</li>
+<li>De acordo com setores responsáveis:
+<ul>
+<li>Fábricas, agricultura, geração de eletricidade etc.</li>
+</ul></li>
+<li>De acordo com a fonte:
+<ul>
+<li>Pontual: uma fábrica específica despeja esgoto no rio;</li>
+<li>Não-Pontual: várias fazendas usam agrotóxicos que contaminam um rio.</li>
+</ul></li>
+<li>De acordo com a forma que a poluição nos afeta:
+<ul>
+<li>Saúde;</li>
+<li>Produtividade de atividades econômicas (pesca, agricultura etc);</li>
+<li>Amenidades: comprometimento de paisagem, parque etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="poluição-da-água" class="slide level2">
+<h2>Poluição da Água</h2>
+<div class="no-bullet">
+<p>Degradação de <strong>águas superficiais e subterrâneas, além de zonas costeiras</strong>.</p>
+</div>
+<div class="no-bullet">
+<p><strong>Causas comuns de poluição da água?</strong></p>
+</div>
+<ul>
+<li>Matéria orgânica e bactérias em esgoto lançado nos rios;</li>
+<li>Excesso de nutrientes (nitrogênio e fósforo) que escoam de áreas agrícolas;</li>
+<li>Metais pesados (chumbo e mercúrio) liberados por fábricas e garimpos;</li>
+<li>Sedimentos sólidos de construções e erosão em áreas rurais;</li>
+<li>Ácido sulfúrico proveniente de chuvas em áreas urbanas.</li>
+</ul>
+</section>
+<section id="poluição-da-água-1" class="slide level2">
+<h2>Poluição da Água</h2>
+<div class="no-bullet">
+<p><strong>Quais são alguns efeitos da poluição da água?</strong></p>
+</div>
+<ul>
+<li>Matéria orgânica → consumo excessivo de oxigênio → hipóxia e mortalidade de peixes;</li>
+<li>Nutrientes → proliferação e morte de algas → decomposição → hipóxia;</li>
+<li>Sedimentos → assoreamento dos rios → enchentes;</li>
+<li>Vazamento de petróleo → mortalidade de vida marinha;</li>
+<li>Contaminação da água → doenças.</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Exemplos:</strong> Rios Pinheiros, Tietê e Tamanduateí.</p>
+</div>
+</section>
+<section id="poluição-do-ar" class="slide level2">
+<h2>Poluição do Ar</h2>
+<div class="no-bullet">
+<p><strong>Poluição do Ar Nociva (não há níveis seguros de exposição):</strong></p>
+</div>
+<ul>
+<li>Compostos químicos como amianto, mercúrio, chumbo, benzeno e arsênico são tóxicos e, frequentemente, carcinogênicos;</li>
+<li>Oriunda de processos industriais químicos ou demolição de construções antigas (amianto).</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Poluição do Ar Convencional:</strong></p>
+</div>
+<ul>
+<li>Oriunda da queima de combustíveis fósseis para gerar eletricidade, transporte e aquecimento domiciliar</li>
+<li>Dióxido de Enxofre (carvão);</li>
+<li>Monóxido de Carbono e Óxidos de Nitrogênio (motores);</li>
+<li>Material particulado: combustão incompleta, incêndios florestais, aquecimento e cozinha.</li>
+</ul>
+</section>
+<section id="poluição-do-ar-1" class="slide level2">
+<h2>Poluição do Ar</h2>
+<div class="no-bullet">
+<p><strong>Há ainda poluição do ar geradora de mudanças climáticas:</strong></p>
+</div>
+<ul>
+<li>Não são necessariamente poluentes, mas são problemáticos em alta concentração;</li>
+<li>Gases de Efeito Estufa (Dióxido de Carbono, Óxido Nitroso e Metano);</li>
+<li>Gases CFCs (degradação da camada de ozônio).</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Alguns efeitos da poluição do ar?</strong></p>
+</div>
+<ul>
+<li>Material particulado aumenta risco de doenças respiratórias e cardíacas;</li>
+<li>Óxido de Nitrogênio → Ozônio superficial → smog e problemas pulmonares;</li>
+<li>Dióxido de Enxofre → chuva ácida → corrosão de monumentos e florestas;</li>
+<li>Mudanças Climáticas.</li>
+</ul>
+</section>
+<section id="poluição-do-solo" class="slide level2">
+<h2>Poluição do Solo</h2>
+<div class="no-bullet">
+<p><strong>Duas categorias:</strong></p>
+</div>
+<ul>
+<li>Descarte de lixo convencional, infectante, nocivo ou radioativo;</li>
+<li>Alteração de paisagens com danos à biodiversidade e a serviços de ecossistêmicos.</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Alguns efeitos da poluição do solo?</strong></p>
+</div>
+<ul>
+<li>Lixões → animais e insetos transmissores de doenças;</li>
+<li>Contaminação do solo → redução no valor da propriedade;</li>
+<li>Lixo radioativo → mortalidade de pessoas e animais;</li>
+<li>Desmatamento → perda de biodiversidade e surgimento de arboviroses.</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Exemplos:</strong> Césio-137 em Goiânia (1987), com 249 contaminados; desmatamento na Amazônia</p>
+</div>
+</section>
+<section id="em-resumo" class="slide level2">
+<h2>Em resumo</h2>
+<div class="no-bullet">
+<p><strong>Diferentes tipos de poluição têm diferentes impactos.</strong></p>
+</div>
+<ul>
+<li>É importante entender o contexto de cada problema.</li>
+<li>Quem é afetado? Quem se beneficia?
+<ul>
+<li>Resposta é relevante para desenho de políticas públicas.</li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p>Muitas vezes, inclusive, os tipos de poluição interagem.</p>
+</div>
+<ul>
+<li>Chuva ácida é causada por poluição do ar e gera poluição na água.</li>
+</ul>
+</section>
+<section id="modelo-de-externalidades" class="slide level2 section-cover">
+<h2>Modelo de Externalidades</h2>
+</section>
+<section id="externalidades" class="slide level2">
+<h2>Externalidades</h2>
+<ul>
+<li>Vimos que Ótimo de Pareto é métrica comum em Economia para comparar diferentes cenários.
+<ul>
+<li>E vimos que há situações em que o Ótimo de Pareto não é alcançado pelo Equilíbrio Competitivo.</li>
+</ul></li>
+<li>Trataremos, agora, de uma falha de mercado recorrente em que o Ótimo de Pareto não é alcançado pela competição.</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Externalidades:</strong> interações de indivíduo com meio ambiente que provocam <strong>impactos positivos ou negativos, diretos e não solicitados</strong> em outro indivíduo.</p>
+</div>
+</section>
+<section id="externalidades-1" class="slide level2">
+<h2>Externalidades</h2>
+<div class="no-bullet">
+<p>Importante: externalidades <strong>não são mediadas por mecanismos de mercado (preços).</strong></p>
+</div>
+<ul>
+<li>Se uma fábrica passa a consumir mais eletricidade e provoca aumento no preço da energia, isto não é externalidade.</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Exemplo clássico:</strong> lavanderia vizinha a uma fábrica.</p>
+</div>
+<ul>
+<li>Fábrica escolhe quanto produzir, lançando fumaça no ar.
+<ul>
+<li>Fumaça impacta produção de roupas limpas da lavanderia, mas esta não ganha nenhuma compensação por isso.</li>
+</ul></li>
+<li>Custo de produção da fábrica não embute custo adicional gerado para lavanderia e outros vizinhos.</li>
+</ul>
+</section>
+<section id="externalidades-2" class="slide level2">
+<h2>Externalidades</h2>
+<div class="no-bullet">
+<p><strong>Outro exemplo:</strong> fazendeiro aplica fertilizantes, contaminando lençol freático.</p>
+</div>
+<ul>
+<li>Comunidades vizinhas consomem água contaminada, mas não são compensadas por isso;</li>
+<li>Custo do fazendeiro não embute externalidade negativa gerada.</li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1"><strong>Mais um:</strong> apiário ao lado de pomar de laranjas.</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Pomar é mais produtivo por conta das abelhas, mas não paga por esse serviço.</span></li>
+</ul>
+</section>
+<section id="definições" class="slide level2">
+<h2>Definições</h2>
+<div class="no-bullet">
+<p><strong>Definição 1:</strong> uma alocação é considerada Pareto-ótima se uma realocação de recursos não pode fazer um indivíduo melhor sem deixar outro pior.</p>
+</div>
+<div class="no-bullet solto" style="--espaco-bloco: 1.4em">
+<p><strong>Definição 2:</strong> uma externalidade existe quando a utilidade ou função de produção do agente A depende diretamente de variáveis reais escolhidas pelo agente B, sem que haja compensação pelo efeito gerado no bem-estar de A.</p>
+</div>
+</section>
+<section id="definições-1" class="slide level2">
+<h2>Definições</h2>
+<div class="no-bullet">
+<p>Podemos categorizar externalidades em dois grupos principais:</p>
+</div>
+<ul>
+<li><strong>Externalidade de Consumo:</strong> consumo do agente A afeta bem-estar do agente B.
+<ul>
+<li>Deslocar-se com automóvel, emitindo gases estufa e contribuindo para aquecimento global;</li>
+<li>Plantar um jardim bonito na frente da casa, gerando felicidade para quem passa.</li>
+</ul></li>
+<li><strong>Externalidade de Produção:</strong> quando produção de uma firma gera impacto em outros agentes.
+<ul>
+<li>Fábrica emite fumaça e prejudica vizinhos;</li>
+<li>Apiário ajuda na produção de laranjas do fazendeiro vizinho.</li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplo-estilizado" class="slide level2">
+<h2>Exemplo Estilizado</h2>
+<ul>
+<li>Para fixarmos a ideia da externalidade como falha de mercado, suponha o exemplo clássico de <strong>uma ilha com uma pessoa apenas, o Robinson.</strong></li>
+<li>Ilha tem bosque indispensável para abrigar animais de caça;</li>
+<li>Robinson usa madeira para construir sua casa e gosta de comer carne.</li>
+</ul>
+<div class="no-bullet">
+<p>Suponha que ele derrube <strong>o bosque inteiro</strong> para construir sua casa, e fique sem carne. Essa alocação é <strong>eficiente</strong>?</p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Se Robinson é o único habitante da ilha, qualquer alocação individualmente ótima é, também, Pareto-ótima.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Robinson pode desmatar o bosque inteiro e ficar sem carne.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplo-estilizado-1" class="slide level2">
+<h2>Exemplo Estilizado</h2>
+<div class="no-bullet">
+<p>Externalidade surge quando Robinson compartilha a ilha com outros agentes.</p>
+</div>
+<ul>
+<li>Suponha que Robinson e Dona Florinda vivam na ilha.</li>
+<li><span class="fragment" data-fragment-index="1">Além disso, suponha as seguintes preferências:</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Robinson gosta de casas monumentais, mas é vegano;</span></li>
+<li><span class="fragment" data-fragment-index="1">Dona Florinda dorme sob as estrelas, mas adora carne.</span></li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2"><strong>Mesma pergunta:</strong> Robinson derruba o bosque inteiro. Agora, com duas pessoas na ilha, essa alocação é eficiente?</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="3">No caso competitivo, há uma falha de mercado:</span>
+<ul>
+<li><span class="fragment" data-fragment-index="3">É provável que Robinson desmate todo o bosque para construir seu palácio, deixando Dona Florinda sem carne.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplo-estilizado-2" class="slide level2">
+<h2>Exemplo Estilizado</h2>
+<div class="no-bullet">
+<p>Dona Florinda vê o bosque sendo derrubado e sabe que vai ficar sem carne. <strong>Se fosse ela, o que tentaria?</strong></p>
+</div>
+<div class="opcoes">
+<p><strong>(a)</strong> Exigir que Robinson pare de derrubar.</p>
+<p><strong>(b)</strong> Oferecer alguma coisa a ele em troca de preservar o bosque.</p>
+<p><strong>(c)</strong> Nada. A ilha é dele, ele que decida.</p>
+</div>
+</section>
+<section id="exemplo-estilizado-3" class="slide level2">
+<h2>Exemplo Estilizado</h2>
+<div class="no-bullet">
+<p>A solução nesse exemplo estilizado passa por algum tipo de <strong>coordenação</strong>.</p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Podemos pensar em duas formas:</span></p>
+</div>
+<ol type="1">
+<li><span class="fragment" data-fragment-index="1"><strong>Caso Não-Cooperativo:</strong> Suponha que Robinson chegou antes à ilha e tem total controle sobre ela.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1"><strong>Dona Florinda pode oferecer seus serviços de engenharia</strong> e ensinar Robinson a construir casas mais eficientemente; <strong>em troca, bosque é relativamente preservado.</strong></span></li>
+<li><span class="fragment" data-fragment-index="1">Existência de direitos de propriedade claramente definidos permitem a criação de um mecanismo de trocas → 1º Teorema do Bem-Estar funciona.</span></li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="2"><strong>Caso Cooperativo:</strong> Robinson e Dona Florinda podem formar um clã e combinar um arranjo voluntariamente.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Acordo coletivo sobre o uso da madeira do bosque.</span></li>
+</ul></li>
+</ol>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2">Ambas as soluções servem para <strong>internalizar a externalidade</strong>.</span></p>
+</div>
+</section>
+<section id="exemplo-estilizado-4" class="slide level2">
+<h2>Exemplo Estilizado</h2>
+<div class="no-bullet">
+<p>Em Economia do Meio Ambiente, a maioria dos problemas tem raiz similar.</p>
+</div>
+<ul>
+<li>Falta de coordenação devido a
+<ul>
+<li>Mercados ausentes;</li>
+<li>Direitos de propriedade incompletos;</li>
+<li>Enforcement ineficiente;</li>
+<li>Incapacidade de indivíduos de tomar decisões coletivas.</li>
+</ul></li>
+<li>Para resolvê-los, muitas vezes, é necessário criar <strong>mecanismos de coordenação</strong>.</li>
+</ul>
+</section>
+<section id="modelo-formal-de-externalidades" class="slide level2">
+<h2>Modelo Formal de Externalidades</h2>
+<div class="no-bullet">
+<p>Considere uma economia com 2 indivíduos.</p>
+</div>
+<div class="no-bullet">
+<p>A função utilidade de cada um é dada por</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{U}_{i}\left({x}_{i},{z}_{i},E\right)\]</span></p>
+</div>
+<ul>
+<li>Em que <span class="math inline">\({x}_{i}\)</span> e <span class="math inline">\({z}_{i}\)</span> são o consumo de dois bens diferentes por <span class="math inline">\(i\in \{1,2\}\)</span>.</li>
+<li><span class="math inline">\(E\)</span> é o nível de poluição ambiental.
+<ul>
+<li>Isto é exógeno ao indivíduo, ou seja, fora de seu controle.</li>
+</ul></li>
+<li>Vamos supor que a externalidade seja <strong>negativa</strong>. Como isso se manifesta no modelo?
+<ul>
+<li><span class="fragment" data-fragment-index="1"><span class="math inline">\(\frac{\partial {U}_{i}}{\partial E}&lt;0\)</span></span></li>
+</ul></li>
+</ul>
+</section>
+<section id="modelo-formal-de-externalidades-1" class="slide level2">
+<h2>Modelo Formal de Externalidades</h2>
+<div class="no-bullet">
+<p>Suponha, ainda, que a produção de <span class="math inline">\(x\)</span> é responsável por gerar poluição.</p>
+</div>
+<ul>
+<li>Ou seja, é a fonte de externalidade nesta economia.</li>
+</ul>
+<div class="no-bullet">
+<p>A função de produção de <span class="math inline">\(x\)</span> é dada por</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[x=f({\ell }_{x},E)\]</span></p>
+</div>
+<ul>
+<li>Em que <span class="math inline">\({\ell }_{x}\)</span> é o trabalho empregado para produzir <span class="math inline">\(x\)</span>.</li>
+<li>É como se trabalho e poluição fossem insumos.
+<ul>
+<li>Produto marginal positivo: <span class="math inline">\(\frac{\partial f}{\partial {\ell }_{x}}&gt;0\)</span> e <span class="math inline">\(\frac{\partial f}{\partial E}&gt;0\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="modelo-formal-de-externalidades-2" class="slide level2">
+<h2>Modelo Formal de Externalidades</h2>
+<div class="no-bullet">
+<p>O bem <span class="math inline">\(z\)</span> é produzido pela tecnologia.</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[z=g({\ell }_{z})\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Além disso, considere que o trabalho está limitado à dotação total de tempo:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{\ell }_{x}+{\ell }_{z}=\ell\]</span></p>
+</div>
+</section>
+<section id="alocação-ótima-de-pareto" class="slide level2">
+<h2>Alocação Ótima de Pareto</h2>
+<div class="no-bullet">
+<p>Como encontramos o Ótimo de Pareto nesta economia?</p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Uma forma é maximizar a utilidade de um dos indivíduos sujeito a algumas restrições:</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Não piorar outro indivíduo;</span></li>
+<li><span class="fragment" data-fragment-index="1">Usar tecnologias existentes;</span></li>
+<li><span class="fragment" data-fragment-index="1">Respeitar total de recursos disponíveis.</span></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Como montamos esse problema de maximização? <strong>LOUSA</strong></span></p>
+</div>
+</section>
+<section id="o-caminho-até-o-ótimo-de-pareto" class="slide level2">
+<h2>O caminho até o ótimo de Pareto</h2>
+<div class="step-map">
+<div class="step now">
+<p><strong>1. Consumo</strong> TMS igual para os dois indivíduos</p>
+</div>
+<div class="step">
+<p><strong>2. Produção</strong> como repartir o trabalho entre <span class="math inline">\(x\)</span> e <span class="math inline">\(z\)</span></p>
+</div>
+<div class="step">
+<p><strong>3. Trocas</strong> TMS igual à inclinação da fronteira de produção</p>
+</div>
+<div class="step">
+<p><strong>4. Poluição</strong> quanto de <span class="math inline">\(E\)</span> aceitar</p>
+</div>
+</div>
+<ul>
+<li>São <strong>quatro condições</strong> que saem das CPOs do mesmo problema.</li>
+<li>As três primeiras já apareceram na aula passada, em versão simplificada.</li>
+<li><span class="fragment" data-fragment-index="1">A quarta é nova e não será reproduzida via mercado.</span></li>
+</ul>
+</section>
+<section id="alocação-ótima-de-pareto-1" class="slide level2">
+<h2>Alocação Ótima de Pareto</h2>
+<div class="eq-block">
+<p><span class="math display">\[\max_{{x}_{1},{x}_{2},{z}_{1},{z}_{2},{\ell }_{x},{\ell }_{z},E} {U}_{1}\left({x}_{1},{z}_{1},E\right)+{\lambda }_{u}\left[{U}_{2}\left({x}_{2},{z}_{2},E\right)-{u}_{2}\right]+\]</span></p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[+{\lambda }_{x}\left[f\left({\ell }_{x},E\right)-{x}_{1}-{x}_{2}\right]+{\lambda }_{z}\left[g\left({\ell }_{z}\right)-{z}_{1}-{z}_{2}\right]+{\lambda }_{\ell }\left[\ell -{\ell }_{x}-{\ell }_{z}\right]\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Eficiência em consumo exige que solução <span class="math inline">\(({x}_{1}^{*},{x}_{2}^{*},{z}_{1}^{*},{z}_{2}^{*},{\ell }_{x}^{*},{\ell }_{z}^{*},{E}^{*})\)</span> seja tal que (<strong>LOUSA</strong>)</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\frac{\frac{\partial {U}_{1}}{\partial {x}_{1}}}{\frac{\partial {U}_{1}}{\partial {z}_{1}}}=\frac{{\lambda }_{x}}{{\lambda }_{z}}=\frac{\frac{\partial {U}_{2}}{\partial {x}_{2}}}{\frac{\partial {U}_{2}}{\partial {z}_{2}}}\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Taxa marginal de substituição entre <span class="math inline">\(x\)</span> e <span class="math inline">\(z\)</span> igual para ambos os indivíduos.</span></li>
+</ul>
+</section>
+<section id="alocação-ótima-de-pareto-2" class="slide level2">
+<h2>Alocação Ótima de Pareto</h2>
+<div class="no-bullet">
+<p>Eficiência em Produção requer que (<strong>LOUSA</strong>)</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[{\lambda }_{x}\frac{\partial f}{\partial {\ell }_{x}}={\lambda }_{\ell }={\lambda }_{z}\frac{\partial g}{\partial {\ell }_{z}}\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Valor-sombra do produto marginal de cada bem é igual ao preço-sombra do trabalho (<span class="math inline">\({\lambda }_{\ell }\)</span>).</span></li>
+</ul>
+</section>
+<section id="alocação-ótima-de-pareto-3" class="slide level2">
+<h2>Alocação Ótima de Pareto</h2>
+<div class="no-bullet">
+<p>Combinando as condições anteriores, chegamos à Eficiência em Trocas:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\frac{\partial {U}_{i}}{\partial {x}_{i}}}{\frac{\partial {U}_{i}}{\partial {z}_{i}}}=\frac{{\lambda }_{x}}{{\lambda }_{z}}=\frac{\frac{\partial g}{\partial {\ell }_{z}}}{\frac{\partial f}{\partial {\ell }_{x}}} \forall i\]</span></p>
+</div>
+<ul>
+<li>Ou seja, <strong>a inclinação das curvas de indiferença de cada indivíduo</strong> (lado esquerdo) <strong>é igual à inclinação da fronteira de possibilidades de produção</strong> (lado direito).
+<ul>
+<li>Como vimos de forma simplificada na aula passada.</li>
+</ul></li>
+</ul>
+</section>
+<section id="alocação-ótima-de-pareto-4" class="slide level2">
+<h2>Alocação Ótima de Pareto</h2>
+<div class="no-bullet">
+<p>Finalmente, resta a condição de primeira ordem para a poluição ambiental (<strong>LOUSA</strong>).</p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Podemos deixar essa condição mais intuitiva (<strong>LOUSA</strong>):</span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="2">
+<p><span class="math display">\[\underbrace{-\frac{\frac{\partial {U}_{1}}{\partial E}}{\frac{\partial {U}_{1}}{\partial {x}_{1}}} -\frac{\frac{\partial {U}_{2}}{\partial E}}{\frac{\partial {U}_{2}}{\partial {x}_{2}}}}_{\substack{\text{Disposição marginal a sacrificar } x \\ \text{para reduzir } E}} = \underbrace{\frac{\partial f}{\partial E}}_{\substack{\text{Custo marginal de reduzir } E \text{ em} \\ \text{termos de unidades produzidas de } x}}\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2">Eficiência exige que soma das disposições marginais a pagar para reduzir <span class="math inline">\(E\)</span> seja igual a custo marginal de fazê-lo.</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="2"><strong>Tudo em termos de unidades de</strong> <span class="math inline">\(x\)</span> <strong>sacrificadas</strong>.</span></li>
+</ul>
+<!-- No .pptx as duas chaves vermelhas sob a equação são formas desenhadas, com
+     os rótulos em caixas de texto soltas. Aqui viraram \underbrace no próprio
+     LaTeX: a chave acompanha o termo mesmo quando a equação é reescalada. -->
+</section>
+<section id="alocação-ótima-de-pareto-5" class="slide level2">
+<h2>Alocação Ótima de Pareto</h2>
+<div class="no-bullet">
+<p>Notem que, à semelhança do caso de Bens Públicos,</p>
+</div>
+<ul>
+<li>O benefício que 1 recebe da redução de <span class="math inline">\(E\)</span> não interfere no benefício recebido por 2.</li>
+</ul>
+<div class="no-bullet">
+<p>A equação vista no slide anterior é a condição de Lindahl-Samuelson para provisão eficiente de bens públicos.</p>
+</div>
+<div class="no-bullet">
+<p>Notem, também, que a alocação ótima de Pareto <span class="math inline">\(({x}_{1}^{*},{x}_{2}^{*},{z}_{1}^{*},{z}_{2}^{*},{\ell }_{x}^{*},{\ell }_{z}^{*},{E}^{*})\)</span> depende do nível de utilidade <span class="math inline">\({u}_{2}\)</span> fixado para 2.</p>
+</div>
+<ul>
+<li>Outras alocações ótimas seriam possíveis.</li>
+</ul>
+</section>
+<section id="equilíbrio-competitivo" class="slide level2">
+<h2>Equilíbrio Competitivo</h2>
+<div class="no-bullet">
+<p>Usaremos a alocação de Pareto como nosso ponto de partida.</p>
+</div>
+<div class="no-bullet">
+<p>Agora, veremos qual seria a alocação produzida pelos <strong>agentes atuando independentemente e tomando preços como dados</strong>.</p>
+</div>
+<div class="no-bullet">
+<p>Para isso, suponha que</p>
+</div>
+<ul>
+<li><span class="math inline">\({p}_{x}\)</span> e <span class="math inline">\({p}_{z}\)</span> são os preços de <span class="math inline">\(x\)</span> e <span class="math inline">\(z\)</span> respectivamente</li>
+<li><span class="math inline">\(w\)</span> é o salário pago aos trabalhadores</li>
+<li><span class="math inline">\({y}_{i}\)</span> é a renda dos indivíduos</li>
+</ul>
+</section>
+<section id="o-mesmo-caminho-agora-com-preços" class="slide level2">
+<h2>O mesmo caminho, agora com preços</h2>
+<div class="step-map">
+<div class="step">
+<p><strong>1. Consumo</strong> problema do consumidor</p>
+</div>
+<div class="step">
+<p><strong>2. Produção</strong> problema da firma</p>
+</div>
+<div class="step">
+<p><strong>3. Trocas</strong> sai das duas anteriores</p>
+</div>
+<div class="step now">
+<p><strong>4. Poluição</strong> quem decide <span class="math inline">\(E\)</span>?</p>
+</div>
+</div>
+<ul>
+<li>Vamos refazer as <strong>mesmas quatro condições</strong>, agora com agentes independentes e preços de mercado no lugar dos preços-sombra.</li>
+<li><span class="fragment" data-fragment-index="1">A pergunta que interessa é a quarta: no ótimo de Pareto quem escolhia <span class="math inline">\(E\)</span> era o planejador. <strong>Aqui, quem escolhe?</strong></span></li>
+</ul>
+</section>
+<section id="equilíbrio-competitivo-1" class="slide level2">
+<h2>Equilíbrio Competitivo</h2>
+<div class="no-bullet">
+<p>Primeiro, resolveremos o problema dos consumidores (<strong>LOUSA</strong>).</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\max_{{x}_{i},{z}_{i}} {U}_{i}\left({x}_{i},{z}_{i},E\right)+{\lambda }_{i}({y}_{i}-{p}_{x}{x}_{i}-{p}_{z}{z}_{i})\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1"><strong>CPOs :</strong></span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\frac{\partial {U}_{i}}{\partial {x}_{i}}={\lambda }_{i}{p}_{x} ; \frac{\partial {U}_{i}}{\partial {z}_{i}}={\lambda }_{i}{p}_{z} \forall i\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Isto nos dá a condição de eficiência.</span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\frac{\frac{\partial {U}_{1}}{\partial {x}_{1}}}{\frac{\partial {U}_{1}}{\partial {z}_{1}}}=\frac{{p}_{x}}{{p}_{z}}=\frac{\frac{\partial {U}_{2}}{\partial {x}_{2}}}{\frac{\partial {U}_{2}}{\partial {z}_{2}}}\]</span></p>
+</div>
+</section>
+<section id="equilíbrio-competitivo-2" class="slide level2">
+<h2>Equilíbrio Competitivo</h2>
+<div class="no-bullet">
+<p>Segundo, resolveremos o problema das firmas (<strong>LOUSA</strong>).</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\max_{{\ell }_{z}} {p}_{z} g\left({\ell }_{z}\right)-w {\ell }_{z}\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1"><strong>CPO:</strong> <span class="math inline">\(\frac{\partial g}{\partial {\ell }_{z}}{p}_{z}=w\)</span></span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="2">
+<p><span class="math display">\[\max_{{\ell }_{x},E} {p}_{x} f\left({\ell }_{x},E\right)-w {\ell }_{x}-\underbrace{\phantom{{p}_{E}E}}_{\substack{\text{não há preço} \\ \text{para } E}}\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2"><strong>CPOs :</strong> <span class="math inline">\(\frac{\partial f}{\partial {\ell }_{x}}{p}_{x}=w ; \frac{\partial f}{\partial E}=0\)</span></span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2">O preço pago pela poluição é zero neste caso.</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Não há mercado para isso.</span></li>
+</ul>
+</section>
+<section id="equilíbrio-competitivo-3" class="slide level2">
+<h2>Equilíbrio Competitivo</h2>
+<div class="no-bullet">
+<p>Notem que eficiência no mercado de trabalho é satisfeita:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{p}_{x}\frac{\partial f}{\partial {\ell }_{x}}=w={p}_{z}\frac{\partial g}{\partial {\ell }_{z}}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Da mesma forma, eficiência nas trocas também:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\frac{\partial {U}_{i}}{\partial {x}_{i}}}{\frac{\partial {U}_{i}}{\partial {z}_{i}}}=\frac{{p}_{x}}{{p}_{z}}=\frac{\frac{\partial g}{\partial {\ell }_{z}}}{\frac{\partial f}{\partial {\ell }_{x}}} \forall i\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Mas o que acontece com a condição de eficiência para poluição?</p>
+</div>
+</section>
+<section id="equilíbrio-competitivo-4" class="slide level2">
+<h2>Equilíbrio Competitivo</h2>
+<div class="no-bullet">
+<p>Notem que</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[0=\frac{\partial f}{\partial E} \neq \underbrace{-\frac{\frac{\partial {U}_{1}}{\partial E}}{\frac{\partial {U}_{1}}{\partial {x}_{1}}}-\frac{\frac{\partial {U}_{2}}{\partial E}}{\frac{\partial {U}_{2}}{\partial {x}_{2}}}}_{\substack{\text{Soma das disposições marginais} \\ \text{a pagar para reduzir } E}}&gt;0\]</span></p>
+</div>
+<div class="no-bullet">
+<p><strong>Firma iguala produto marginal ao custo marginal da poluição</strong>.</p>
+</div>
+<ul>
+<li>Notem que, desconsiderando externalidade, firma quer poluir enquanto tivermos <span class="math inline">\(\frac{\partial f}{\partial E}&gt;0\)</span>.</li>
+<li>Equilíbrio competitivo não atinge eficiência de Pareto.</li>
+</ul>
+</section>
+<section id="onde-está-a-falha-de-mercado" class="slide level2">
+<h2>Onde está a falha de mercado?</h2>
+<div class="cmp">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Ótimo de Pareto</th>
+<th>Equilíbrio Competitivo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Consumo</strong></td>
+<td><span class="math inline">\(TMS^{1}=\frac{{\lambda}_{x}}{{\lambda}_{z}}=TMS^{2}\)</span></td>
+<td><span class="math inline">\(TMS^{1}=\frac{{p}_{x}}{{p}_{z}}=TMS^{2}\)</span> &nbsp; ✔</td>
+</tr>
+<tr class="even">
+<td><strong>2. Produção</strong></td>
+<td><span class="math inline">\({\lambda}_{x}\frac{\partial f}{\partial {\ell}_{x}}={\lambda}_{\ell}={\lambda}_{z}\frac{\partial g}{\partial {\ell}_{z}}\)</span></td>
+<td><span class="math inline">\({p}_{x}\frac{\partial f}{\partial {\ell}_{x}}=w={p}_{z}\frac{\partial g}{\partial {\ell}_{z}}\)</span> &nbsp; ✔</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Trocas</strong></td>
+<td><span class="math inline">\(TMS=\frac{\partial g/\partial {\ell}_{z}}{\partial f/\partial {\ell}_{x}}\)</span></td>
+<td><span class="math inline">\(TMS=\frac{\partial g/\partial {\ell}_{z}}{\partial f/\partial {\ell}_{x}}\)</span> &nbsp; ✔</td>
+</tr>
+<tr class="even">
+<td><strong>4. Poluição</strong></td>
+<td><span class="math inline">\(-\sum_{i}\frac{\partial {U}_{i}/\partial E}{\partial {U}_{i}/\partial {x}_{i}}=\frac{\partial f}{\partial E}\)</span></td>
+<td><span class="math inline">\(\frac{\partial f}{\partial E}=0\)</span> &nbsp; ✘</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>No problema do planejador central, os preços-sombra <span class="math inline">\({\lambda}\)</span> fazem o papel que os preços fazem no mercado, por isso as três primeiras linhas coincidem.</li>
+<li><span class="fragment" data-fragment-index="1">As três primeiras linhas mostram o <strong>1º Teorema do Bem-Estar</strong> funcionando.</span></li>
+<li><span class="fragment" data-fragment-index="2">A quarta linha falha porque <strong>não existe mercado para</strong> <span class="math inline">\(E\)</span>, então seu preço é zero.</span></li>
+</ul>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/rpucci-usp\.github\.io\/eae1317\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
