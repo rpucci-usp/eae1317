@@ -273,6 +273,13 @@
     "text": "Onde está a falha de mercado?\n\n\n\n\n\n\n\n\n\n\nÓtimo de Pareto\nEquilíbrio Competitivo\n\n\n\n\n1. Consumo\n\\(TMS^{1}=\\frac{{\\lambda}_{x}}{{\\lambda}_{z}}=TMS^{2}\\)\n\\(TMS^{1}=\\frac{{p}_{x}}{{p}_{z}}=TMS^{2}\\)   ✔\n\n\n2. Produção\n\\({\\lambda}_{x}\\frac{\\partial f}{\\partial {\\ell}_{x}}={\\lambda}_{\\ell}={\\lambda}_{z}\\frac{\\partial g}{\\partial {\\ell}_{z}}\\)\n\\({p}_{x}\\frac{\\partial f}{\\partial {\\ell}_{x}}=w={p}_{z}\\frac{\\partial g}{\\partial {\\ell}_{z}}\\)   ✔\n\n\n3. Trocas\n\\(TMS=\\frac{\\partial g/\\partial {\\ell}_{z}}{\\partial f/\\partial {\\ell}_{x}}\\)\n\\(TMS=\\frac{\\partial g/\\partial {\\ell}_{z}}{\\partial f/\\partial {\\ell}_{x}}\\)   ✔\n\n\n4. Poluição\n\\(-\\sum_{i}\\frac{\\partial {U}_{i}/\\partial E}{\\partial {U}_{i}/\\partial {x}_{i}}=\\frac{\\partial f}{\\partial E}\\)\n\\(\\frac{\\partial f}{\\partial E}=0\\)   ✘\n\n\n\n\n\nNo problema do planejador central, os preços-sombra \\({\\lambda}\\) fazem o papel que os preços fazem no mercado, por isso as três primeiras linhas coincidem.\nAs três primeiras linhas mostram o 1º Teorema do Bem-Estar funcionando.\nA quarta linha falha porque não existe mercado para \\(E\\), então seu preço é zero."
   },
   {
+    "objectID": "aulas/03-externalidades/index.html#referências",
+    "href": "aulas/03-externalidades/index.html#referências",
+    "title": "Externalidades",
+    "section": "Referências",
+    "text": "Referências\n\n\nKolstad, Charles D. 2011. Environmental Economics. 2.ª ed. Oxford University Press.\n\n\nPhaneuf, Daniel J., e Till Requate. 2017. A Course in Environmental Economics: Theory, Policy, and Practice. Cambridge University Press."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "EAE1317",
@@ -558,5 +565,12 @@
     "title": "Eficiência Econômica",
     "section": "Custo Marginal e Benefício Marginal",
     "text": "Custo Marginal e Benefício Marginal\n\nSe mercado age sozinho, equilíbrio é dado por \\({x}^{*}\\) e \\({p}^{*}\\).\n\nEquilíbrio Competitivo está no cruzamento entre custo marginal privado e benefício marginal privado.\nQual é o problema com esse ponto de equilíbrio?\n\nEquilíbrio competitivo não é ótimo de Pareto.\n\nEquilíbrio considerando custo marginal social seria \\({x}^{O}\\) e \\({p}^{O}\\).\nProdução em excesso: \\({x}^{*}-{x}^{O}\\).\n\nComo podemos medir a perda social desse equilíbrio competitivo?\n\nExcesso de produção gera custo social igual ao “peso morto”."
+  },
+  {
+    "objectID": "aulas/02-eficiencia/index.html#referências",
+    "href": "aulas/02-eficiencia/index.html#referências",
+    "title": "Eficiência Econômica",
+    "section": "Referências",
+    "text": "Referências\n\n\nKolstad, Charles D. 2011. Environmental Economics. 2.ª ed. Oxford University Press."
   }
 ]
