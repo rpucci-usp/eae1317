@@ -15,6 +15,9 @@ format:
     incremental: false
     css: ../_assets/styles.css
     footer: "EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais"
+bibliography: ../_assets/references.bib
+nocite: |
+  @kolstad2011, @phaneuf2017
 editor: 
   markdown: 
     wrap: 72
@@ -738,3 +741,11 @@ $$0=\frac{\partial f}{\partial E} \neq \underbrace{-\frac{\frac{\partial {U}_{1}
 - No problema do planejador central, os preços-sombra ${\lambda}$ fazem o papel que os preços fazem no mercado, por isso as três primeiras linhas coincidem.
 - [As três primeiras linhas mostram o **1º Teorema do Bem-Estar** funcionando.]{.fragment fragment-index=1}
 - [A quarta linha falha porque **não existe mercado para** $E$, então seu preço é zero.]{.fragment fragment-index=2}
+
+
+
+## Referências
+
+::: {#refs}
+:::
+
