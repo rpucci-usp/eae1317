@@ -16,7 +16,7 @@ Depende so da biblioteca padrao, como os outros scripts desta pasta.
 
     py scripts/figuras2svg.py
 
-Escreve em aulas/figuras/. Os arquivos `02-eficiencia-slideNN.svg` sao os
+Escreve em aulas/_assets/figuras/. Os arquivos `02-eficiencia-slideNN.svg` sao os
 originais vindos do .pptx e nao sao tocados nem referenciados pelo .qmd.
 """
 
@@ -34,7 +34,12 @@ COR_SOMBRA = "#dce8f2"     # preenchimento da lente
 COR_INVIAVEL = "#8a94a0"
 FONTE = 15
 
-DEST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "aulas", "figuras")
+# aulas/_assets/figuras, e nao aulas/figuras: os recursos compartilhados foram
+# para _assets quando cada aula virou uma pasta com index.qmd dentro. Ficou um
+# tempo apontando para o caminho antigo, e como o script so falha na hora de
+# escrever, isso so aparece quando alguem tenta regerar as figuras.
+DEST = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                    "..", "aulas", "_assets", "figuras")
 
 
 def esc(s):
@@ -455,7 +460,7 @@ def isolucro():
 
 
 if __name__ == "__main__":
-    print("gerando em aulas/figuras/:")
+    print("gerando em aulas/_assets/figuras/:")
     equilibrio()
     edgeworth()
     isolucro()

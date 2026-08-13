@@ -1,0 +1,160 @@
+<!-- Widget interativo do slide "Experimentem: onde vocês parariam?" (aula 04).
+     Incluído com {{< include ../_assets/_widget-abatimento.qmd >}}.
+     O nome começa com "_" para o Quarto não tentar renderizá-lo como página.
+
+     A economia aqui é EXATAMENTE a das figuras 04-otimo-*.svg
+     (scripts/figuras04svg.py) — o widget é aquela figura destravada. Se um dos
+     dois mudar de parâmetro, o outro tem que mudar junto, senão a aula passa a
+     mostrar dois ótimos diferentes para o mesmo modelo.
+
+     Cuidado ao editar: este arquivo é um bloco de HTML bruto, e uma LINHA EM
+     BRANCO no meio dele faz o Pandoc voltar para o modo markdown — daí em
+     diante o `<div>` seguinte vira texto literal na tela. Sem linha em branco,
+     nada de `$` no JavaScript (viraria math do MathJax) e nada de `--` dentro
+     de comentário HTML. -->
+<div class="wab" data-prevent-swipe>
+<div class="wab-graf"><svg id="wab-svg" viewBox="0 0 900 300" role="img" aria-label="Custo marginal de abatimento das duas firmas e dano marginal"></svg></div>
+<!-- Os dois <label> ficam na MESMA linha do <div> que os contém, e isso não é
+     estilo: uma linha de HTML que começa com tag INLINE (label, span, output)
+     tira o Pandoc do modo HTML bruto e ele passa a tratar aquilo como parágrafo
+     markdown — o resultado era um <p> aparecendo dentro do <span> e o rótulo
+     quebrando entre o número e o "t". Linha que começa com tag de bloco (div,
+     p) não tem esse problema, por isso o resto do arquivo pode respirar. -->
+<div class="wab-ctl"><label><span>Firma 1 emite <output id="wab-o1">75,0</output> t</span><input id="wab-s1" type="range" min="0" max="100" step="2.5" value="75"></label><label><span>Firma 2 emite <output id="wab-o2">50,0</output> t</span><input id="wab-s2" type="range" min="0" max="100" step="2.5" value="50"></label></div>
+<div class="wab-botoes"><button type="button" data-e="100,100">sem regulação</button><button type="button" data-e="0,0">poluição zero</button><button type="button" data-e="62.5,62.5">corte igual</button><button type="button" data-e="75,50">ótimo</button></div>
+<div class="wab-num">
+<div class="wab-barra"><span id="wab-b1" class="wab-b wab-b-c"></span><span id="wab-b2" class="wab-b wab-b-c"></span><span id="wab-b3" class="wab-b wab-b-d"></span><i id="wab-min" class="wab-marca"></i></div>
+<p><b>Custo social:</b> R&#36; <output id="wab-sc">2.500</output> mil &nbsp;=&nbsp; <span class="wab-c">abatimento <output id="wab-ca">938</output></span> + <span class="wab-d">dano <output id="wab-da">1.563</output></span> &nbsp;·&nbsp; <output id="wab-diag">o mínimo possível</output></p>
+</div>
+</div>
+<script>
+(function () {
+  var EH = 100, A1 = 1, A2 = 0.5, DD = 0.2;
+  var VERM = "#C00000", AZUL = "#0070C0", ESC = "#1b3a5c", CINZA = "#8a94a0";
+  var SC_MIN = 2500, SC_MAX = 7500;
+  function cmg1(e) { return A1 * (EH - e); }
+  function cmg2(e) { return A2 * (EH - e); }
+  function dmg(E) { return DD * E; }
+  function c1(e) { return A1 * (EH - e) * (EH - e) / 2; }
+  function c2(e) { return A2 * (EH - e) * (EH - e) / 2; }
+  function dano(E) { return DD * E * E / 2; }
+  /* Os tres paineis compartilham a escala vertical de proposito: e o que torna
+     honesta a comparacao das tres alturas, que e o ponto inteiro do widget. */
+  var YMAX = 108, TOPO = 40, BASE = 66, ESQ = 46, DIR = 22, LARG = 300, ALT = 300;
+  function py(v) { return ALT - BASE - v * (ALT - TOPO - BASE) / YMAX; }
+  function mkx(off, xmax) {
+    return function (v) { return off + ESQ + v * (LARG - ESQ - DIR) / xmax; };
+  }
+  var paineis = [
+    { off: 0,   xmax: 112, cor: VERM, f: cmg1, tit: "Firma 1 (custo alto)",  ry: "CMg₁", rx: "e₁" },
+    { off: 300, xmax: 112, cor: VERM, f: cmg2, tit: "Firma 2 (custo baixo)", ry: "CMg₂", rx: "e₂" },
+    { off: 600, xmax: 210, cor: AZUL, f: dmg,  tit: "Dano marginal",          ry: "D′(E)", rx: "E" }
+  ];
+  paineis.forEach(function (p) { p.px = mkx(p.off, p.xmax); });
+  function txt(x, y, s, o) {
+    o = o || {};
+    return '<text x="' + x + '" y="' + y + '" font-size="' + (o.tam || 13) +
+      '" fill="' + (o.cor || "#000") + '" text-anchor="' + (o.anc || "start") +
+      '"' + (o.it ? ' font-style="italic"' : "") +
+      (o.neg ? ' font-weight="600"' : "") +
+      ' stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke">' +
+      s + "</text>";
+  }
+  function fmt(v, casas) {
+    return v.toFixed(casas || 0).replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+  function desenhar(e1, e2) {
+    var E = e1 + e2, vals = [e1, e2, E], alturas = [cmg1(e1), cmg2(e2), dmg(E)];
+    /* A tracejada de mu* so aparece quando as tres alturas coincidem: e a
+       recompensa visual do exercicio, nao um enfeite permanente. Ela entra
+       ANTES dos paineis para ficar POR BAIXO dos rotulos numericos — que tem
+       contorno branco e a apagam onde passariam por cima. Desenhada depois,
+       ela riscava o "25,0" de cada eixo. */
+    var iguais = Math.abs(alturas[0] - alturas[1]) < 0.6 &&
+                 Math.abs(alturas[1] - alturas[2]) < 0.6;
+    var s = "";
+    /* Um segmento POR PAINEL, e nao uma linha unica atravessando os tres.
+       Atravessando, o tracejado passava pela faixa a esquerda de cada eixo, que
+       e onde mora o rotulo da altura — e o trecho que sobrava colado nele era
+       lido como sinal de menos ("-25,0"). Como os tres paineis compartilham a
+       escala vertical, tres segmentos na mesma altura leem igual. */
+    if (iguais) {
+      paineis.forEach(function (p) {
+        s += '<line x1="' + p.px(0) + '" y1="' + py(alturas[0]) + '" x2="' +
+             (p.px(p.xmax) + 2) + '" y2="' + py(alturas[0]) + '" stroke="' + ESC +
+             '" stroke-width="1.6" stroke-dasharray="7 4"/>';
+      });
+    }
+    paineis.forEach(function (p, i) {
+      var x0 = p.px(0), x1 = p.px(p.xmax), y0 = py(0), yTop = py(YMAX);
+      s += txt(p.off + LARG / 2, 15, p.tit, { anc: "middle", neg: true, tam: 13 });
+      s += txt(x0 + 6, TOPO - 6, p.ry, { it: true });
+      s += txt(x1 + 4, y0 + 4, p.rx, { it: true });
+      s += '<line x1="' + x0 + '" y1="' + y0 + '" x2="' + x0 + '" y2="' + yTop +
+           '" stroke="#000" stroke-width="1.1"/>';
+      s += '<line x1="' + x0 + '" y1="' + y0 + '" x2="' + x1 + '" y2="' + y0 +
+           '" stroke="#000" stroke-width="1.1"/>';
+      var v = vals[i], h = alturas[i];
+      /* area = custo de abatimento (entre e e e-chapeu) ou dano (de 0 ate E) */
+      if (i < 2 && v < EH) {
+        s += '<path d="M ' + p.px(v) + " " + py(0) + " L " + p.px(EH) + " " + py(0) +
+             " L " + p.px(v) + " " + py(h) + ' Z" fill="' + p.cor + '" fill-opacity="0.75"/>';
+      } else if (i === 2 && v > 0) {
+        s += '<path d="M ' + p.px(0) + " " + py(0) + " L " + p.px(v) + " " + py(0) +
+             " L " + p.px(v) + " " + py(h) + ' Z" fill="' + p.cor + '" fill-opacity="0.75"/>';
+      }
+      /* CMg desce de f(0) ate zero em e-chapeu; D' sobe de zero ate f(xmax). */
+      var bx = i < 2 ? EH : p.xmax;
+      s += '<line x1="' + p.px(0) + '" y1="' + py(p.f(0)) + '" x2="' + p.px(bx) +
+           '" y2="' + py(p.f(bx)) + '" stroke="' + p.cor + '" stroke-width="2.4"/>';
+      s += '<line x1="' + p.px(v) + '" y1="' + py(0) + '" x2="' + p.px(v) + '" y2="' +
+           py(h) + '" stroke="' + CINZA + '" stroke-width="1" stroke-dasharray="4 3"/>';
+      s += '<circle cx="' + p.px(v) + '" cy="' + py(h) + '" r="4.5" fill="' + ESC +
+           '" stroke="#fff" stroke-width="1.5"/>';
+      s += txt(p.px(v), py(0) + 18, (i === 2 ? "E = " : "") + fmt(v, 1),
+               { anc: "middle", tam: 12, cor: ESC, neg: true });
+      s += txt(x0 - 6, py(h) + 4, fmt(h, 1), { anc: "end", tam: 12, cor: p.cor, neg: true });
+    });
+    s += txt(450, ALT - 10,
+             iguais ? "CMg₁ = CMg₂ = D′(E) (três alturas iguais)"
+                    : "as três alturas ainda são diferentes: dá para trocar abatimento por dano e sair ganhando",
+             { anc: "middle", tam: 14, neg: true, cor: iguais ? ESC : CINZA });
+    return s;
+  }
+  var svg = document.getElementById("wab-svg");
+  var s1 = document.getElementById("wab-s1"), s2 = document.getElementById("wab-s2");
+  function atualizar() {
+    var e1 = parseFloat(s1.value), e2 = parseFloat(s2.value), E = e1 + e2;
+    svg.innerHTML = desenhar(e1, e2);
+    document.getElementById("wab-o1").textContent = fmt(e1, 1);
+    document.getElementById("wab-o2").textContent = fmt(e2, 1);
+    var ca = c1(e1) + c2(e2), da = dano(E), sc = ca + da;
+    document.getElementById("wab-ca").textContent = fmt(ca);
+    document.getElementById("wab-da").textContent = fmt(da);
+    document.getElementById("wab-sc").textContent = fmt(sc);
+    var larg = function (v) { return (100 * v / SC_MAX).toFixed(2) + "%"; };
+    document.getElementById("wab-b1").style.width = larg(c1(e1));
+    document.getElementById("wab-b2").style.width = larg(c2(e2));
+    document.getElementById("wab-b3").style.width = larg(da);
+    document.getElementById("wab-min").style.left = larg(SC_MIN);
+    var d = sc - SC_MIN;
+    document.getElementById("wab-diag").textContent =
+      d < 1 ? "o mínimo possível" : fmt(d) + " mil acima do mínimo";
+  }
+  [s1, s2].forEach(function (el) {
+    el.addEventListener("input", atualizar);
+    /* O revealjs escuta teclado e roda do mouse no documento inteiro. Ele ja
+       ignora teclas vindas de <input>, mas nao a roda: sem este
+       stopPropagation, rolar sobre o slider troca de slide. */
+    el.addEventListener("wheel", function (ev) { ev.stopPropagation(); });
+  });
+  Array.prototype.forEach.call(
+    document.querySelectorAll(".wab-botoes button"), function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute("data-e").split(",");
+        s1.value = v[0]; s2.value = v[1]; atualizar();
+      });
+    });
+  atualizar();
+})();
+</script>

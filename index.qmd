@@ -6,3 +6,4 @@ title: "EAE1317"
 
 1. [Eficiência Econômica](aulas/02-eficiencia/)
 2. [Externalidades](aulas/03-externalidades/)
+3. [Modelo de Custos e Danos](aulas/04-custos-danos/)
