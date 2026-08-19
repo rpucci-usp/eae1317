@@ -8,3 +8,4 @@ title: "EAE1317"
 2. [Externalidades](aulas/03-externalidades/)
 3. [Modelo de Custos e Danos](aulas/04-custos-danos/)
 4. [Teorema de Coase](aulas/05-coase/)
+5. [Políticas Ambientais I](aulas/06-comando-imposto/)
