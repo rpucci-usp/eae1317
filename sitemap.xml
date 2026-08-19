@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rpucci-usp.github.io/eae1317/aulas/04-custos-danos/index.html</loc>
-    <lastmod>2026-08-13T00:35:41.297Z</lastmod>
+    <loc>https://rpucci-usp.github.io/eae1317/aulas/05-coase/index.html</loc>
+    <lastmod>2026-08-19T14:01:44.625Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rpucci-usp.github.io/eae1317/aulas/03-externalidades/index.html</loc>
+    <lastmod>2026-08-10T23:12:13.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rpucci-usp.github.io/eae1317/index.html</loc>
+    <lastmod>2026-08-17T21:22:00.523Z</lastmod>
   </url>
   <url>
     <loc>https://rpucci-usp.github.io/eae1317/aulas/02-eficiencia/index.html</loc>
     <lastmod>2026-08-10T23:15:50.474Z</lastmod>
   </url>
   <url>
-    <loc>https://rpucci-usp.github.io/eae1317/index.html</loc>
-    <lastmod>2026-08-12T22:38:40.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rpucci-usp.github.io/eae1317/aulas/03-externalidades/index.html</loc>
-    <lastmod>2026-08-10T23:12:13.666Z</lastmod>
+    <loc>https://rpucci-usp.github.io/eae1317/aulas/04-custos-danos/index.html</loc>
+    <lastmod>2026-08-13T00:35:41.297Z</lastmod>
   </url>
 </urlset>
