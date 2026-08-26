@@ -1,4 +1,4 @@
-<svg width="1020" height="420" viewBox="0 0 1020 420"
+<svg width="1036" height="420" viewBox="0 0 1036 420"
      xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
   <title>Alocação eficiente de emissões, etapa 1</title>
   <defs>
@@ -12,28 +12,28 @@
   <text x="170.0" y="15.0" font-size="14" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Firma 1 (custo alto)</text>
   <text x="510.0" y="15.0" font-size="14" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Firma 2 (custo baixo)</text>
   <text x="850.0" y="15.0" font-size="14" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Danos sofridos pelos consumidores</text>
-  <line x1="58.0" y1="332.0" x2="58.0" y2="38.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="332.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="58.0" y1="332.0" x2="322.0" y2="332.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
-  <text x="330.0" y="337.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₁</text>
-  <text x="66.0" y="38.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₁</text>
-  <line x1="398.0" y1="332.0" x2="398.0" y2="38.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="330.0" y="338.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₁</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₁</text>
+  <line x1="398.0" y1="332.0" x2="398.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="398.0" y1="332.0" x2="662.0" y2="332.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
-  <text x="670.0" y="337.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₂</text>
-  <text x="406.0" y="38.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₂</text>
-  <line x1="738.0" y1="332.0" x2="738.0" y2="38.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="670.0" y="338.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₂</text>
+  <text x="406.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₂</text>
+  <line x1="738.0" y1="332.0" x2="738.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="738.0" y1="332.0" x2="1002.0" y2="332.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
-  <text x="1010.0" y="337.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">E</text>
-  <text x="746.0" y="38.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D′(E)</text>
-  <line x1="58.0" y1="67.2" x2="280.6" y2="332.0" stroke="#C00000" stroke-width="2.2"/>
-  <line x1="398.0" y1="199.6" x2="620.6" y2="332.0" stroke="#C00000" stroke-width="2.2"/>
-  <line x1="738.0" y1="332.0" x2="982.1" y2="223.4" stroke="#0070C0" stroke-width="2.2"/>
+  <text x="1010.0" y="338.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">E</text>
+  <text x="746.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D′(E)</text>
+  <line x1="58.0" y1="74.6" x2="280.6" y2="332.0" stroke="#C00000" stroke-width="2.2"/>
+  <line x1="398.0" y1="203.3" x2="620.6" y2="332.0" stroke="#C00000" stroke-width="2.2"/>
+  <line x1="738.0" y1="332.0" x2="982.1" y2="226.5" stroke="#0070C0" stroke-width="2.2"/>
   <text x="280.6" y="352.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ê₁</text>
   <text x="620.6" y="352.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ê₂</text>
-  <line x1="738.0" y1="226.1" x2="976.1" y2="226.1" stroke="#0070C0" stroke-width="1.1" stroke-dasharray="4 3"/>
-  <line x1="976.1" y1="332.0" x2="976.1" y2="226.1" stroke="#0070C0" stroke-width="1.1" stroke-dasharray="4 3"/>
-  <circle cx="976.1" cy="226.1" r="4.5" fill="#0070C0" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="738.0" y1="229.0" x2="976.1" y2="229.0" stroke="#0070C0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="976.1" y1="332.0" x2="976.1" y2="229.0" stroke="#0070C0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="976.1" cy="229.0" r="4.5" fill="#0070C0" stroke="#ffffff" stroke-width="1.5"/>
   <text x="976.1" y="352.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ê₁+ê₂</text>
-  <text x="730.0" y="231.1" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D′</text>
+  <text x="730.0" y="234.0" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D′</text>
   <circle cx="280.6" cy="332.0" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
   <circle cx="620.6" cy="332.0" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
   <text x="510.0" y="408.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">sem regulação: CMg₁ = CMg₂ = 0, mas o dano marginal é alto</text>

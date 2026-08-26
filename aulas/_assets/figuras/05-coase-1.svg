@@ -10,23 +10,23 @@
     </marker>
   </defs>
   <text x="410.0" y="15.0" font-size="14" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">O consumidor detém o direito: sem contrato, E = 0</text>
-  <line x1="58.0" y1="288.0" x2="58.0" y2="38.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="288.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="58.0" y1="288.0" x2="802.0" y2="288.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
-  <text x="810.0" y="293.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">E</text>
-  <text x="66.0" y="38.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$/t</text>
-  <line x1="58.0" y1="80.6" x2="733.2" y2="288.0" stroke="#C00000" stroke-width="2.2"/>
-  <line x1="58.0" y1="288.0" x2="794.0" y2="137.3" stroke="#0070C0" stroke-width="2.2"/>
-  <text x="88.4" y="63.3" font-size="15" fill="#C00000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg(E)</text>
-  <text x="773.7" y="120.0" font-size="15" fill="#0070C0" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D′(E)</text>
-  <line x1="58.0" y1="205.0" x2="463.1" y2="205.0" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
-  <line x1="463.1" y1="288.0" x2="463.1" y2="205.0" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
-  <circle cx="463.1" cy="205.0" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="810.0" y="294.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">E</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$/t</text>
+  <line x1="58.0" y1="87.4" x2="733.2" y2="288.0" stroke="#C00000" stroke-width="2.2"/>
+  <line x1="58.0" y1="288.0" x2="794.0" y2="142.3" stroke="#0070C0" stroke-width="2.2"/>
+  <text x="88.4" y="70.7" font-size="15" fill="#C00000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg(E)</text>
+  <text x="773.7" y="125.5" font-size="15" fill="#0070C0" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">D′(E)</text>
+  <line x1="58.0" y1="207.8" x2="463.1" y2="207.8" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="463.1" y1="288.0" x2="463.1" y2="207.8" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="463.1" cy="207.8" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
   <text x="463.1" y="308.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">E*</text>
-  <text x="50.0" y="210.0" font-size="15" fill="#1b3a5c" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">μ*</text>
+  <text x="50.0" y="212.8" font-size="15" fill="#1b3a5c" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">μ*</text>
   <text x="733.2" y="308.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Ê</text>
-  <path d="M 58.0 288.0 L 58.0 80.6 L 463.1 205.0 Z" fill="#1b3a5c" fill-opacity="0.22" stroke="none"/>
-  <text x="199.8" y="194.7" font-size="14" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ganhos = 3.600</text>
+  <path d="M 58.0 288.0 L 58.0 87.4 L 463.1 207.8 Z" fill="#1b3a5c" fill-opacity="0.22" stroke="none"/>
+  <text x="199.8" y="197.7" font-size="14" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ganhos = 3.600</text>
   <circle cx="58.0" cy="288.0" r="5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="74.9" y1="276.2" x2="442.9" y2="276.2" stroke="#1b3a5c" stroke-width="1.8" marker-end="url(#seta)"/>
+  <line x1="74.9" y1="276.6" x2="442.9" y2="276.6" stroke="#1b3a5c" stroke-width="1.8" marker-end="url(#seta)"/>
   <text x="410.0" y="358.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">cada tonelada autorizada vale mais para a firma do que custa ao consumidor — até E*</text>
 </svg>

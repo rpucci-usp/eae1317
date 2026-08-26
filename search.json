@@ -203,6 +203,27 @@
     "text": "Exemplo Prático\n\nPara o setor como um todo, e para os grandes emissores, a independência não é rejeitada: perder a alocação gratuita não muda a emissão.\n\nQuem perdeu a dotação respondeu comprando mais permissões, e não poluindo menos.\n\nPara os pequenos emissores, a emissão cai cerca de 20%, o que sugere custo de transação ou limitação organizacional.\nComo eles respondem por parcela pequena da emissão, a independência sobrevive no agregado."
   },
   {
+    "objectID": "aulas/07-permissoes-subsidios/index.html#por-que-o-tamanho-da-firma-importaria",
+    "href": "aulas/07-permissoes-subsidios/index.html#por-que-o-tamanho-da-firma-importaria",
+    "title": "Permissões Negociáveis e Subsídios",
+    "section": "Por que o tamanho da firma importaria?",
+    "text": "Por que o tamanho da firma importaria?\n\nNosso modelo diz que a dotação sai na derivada. Para os grandes emissores foi isso que os dados mostraram. Para os pequenos, não: tirar a dotação fez a emissão cair.\n\n\nComprar e vender permissão custa alguma coisa além do preço? O quê, exatamente?\nPor que esse custo pesaria mais sobre uma firma pequena?\nE, no nosso modelo, em que ponto ele entraria?\n\n\nDiscutam em duplas, 3 minutos."
+  },
+  {
+    "objectID": "aulas/07-permissoes-subsidios/index.html#o-preço-deixa-de-ser-um-só",
+    "href": "aulas/07-permissoes-subsidios/index.html#o-preço-deixa-de-ser-um-só",
+    "title": "Permissões Negociáveis e Subsídios",
+    "section": "O preço deixa de ser um só",
+    "text": "O preço deixa de ser um só\n\nSuponha que negociar uma permissão custe \\(k\\) por unidade, além do preço \\(\\sigma\\). O custo total da firma passa a ser\n\n\n\\[T{C}_{j}={C}_{j}\\left({e}_{j}\\right)+\\sigma \\left({e}_{j}-\\bar{e}_{j}\\right)+k\\left|{e}_{j}-\\bar{e}_{j}\\right|\\]\n\n\nSe compra, paga \\(\\sigma +k\\) por unidade, e para em \\(-{C}_{j}^{′}\\left({e}_{j}\\right)=\\sigma +k\\).\nSe vende, recebe \\(\\sigma -k\\), e para em \\(-{C}_{j}^{′}\\left({e}_{j}\\right)=\\sigma -k\\).\nE se \\(\\sigma -k\\leq -{C}_{j}^{′}\\left(\\bar{e}_{j}\\right)\\leq \\sigma +k\\), não faz nem uma coisa nem outra: \\({e}_{j}=\\bar{e}_{j}\\).\nOu seja, a dotação voltou para dentro da escolha da firma."
+  },
+  {
+    "objectID": "aulas/07-permissoes-subsidios/index.html#a-mesma-curva-dois-custos-de-transação",
+    "href": "aulas/07-permissoes-subsidios/index.html#a-mesma-curva-dois-custos-de-transação",
+    "title": "Permissões Negociáveis e Subsídios",
+    "section": "A mesma curva, dois custos de transação",
+    "text": "A mesma curva, dois custos de transação\n\n\n\n\nCom \\(k\\) pequeno, o intervalo \\([\\sigma -k \\; , \\; \\sigma +k]\\) é estreito \\(\\rightarrow\\) mais provável que dotação de permissões esteja fora, o que leva a firma a negociar.\nCom \\(k\\) grande, o intervalo é largo \\(\\rightarrow\\) mais provável que dotação caia dentro \\(\\rightarrow\\) emissão é a própria dotação.\nO teto continua valendo, portanto a emissão total não muda. Muda quem abate, e aí volta o peso morto do padrão uniforme."
+  },
+  {
     "objectID": "aulas/07-permissoes-subsidios/index.html#subsídios",
     "href": "aulas/07-permissoes-subsidios/index.html#subsídios",
     "title": "Permissões Negociáveis e Subsídios",

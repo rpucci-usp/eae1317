@@ -11,39 +11,39 @@
   </defs>
   <text x="220.0" y="15.0" font-size="14" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Firma 1 (custo alto)</text>
   <text x="660.0" y="15.0" font-size="14" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Firma 2 (custo baixo)</text>
-  <line x1="58.0" y1="264.0" x2="58.0" y2="38.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="264.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="58.0" y1="264.0" x2="422.0" y2="264.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
-  <text x="430.0" y="269.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₁</text>
-  <text x="66.0" y="38.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₁</text>
-  <line x1="498.0" y1="264.0" x2="498.0" y2="38.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="430.0" y="270.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₁</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₁</text>
+  <line x1="498.0" y1="264.0" x2="498.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="498.0" y1="264.0" x2="862.0" y2="264.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
-  <text x="870.0" y="269.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₂</text>
-  <text x="506.0" y="38.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₂</text>
-  <line x1="58.0" y1="62.1" x2="367.6" y2="264.0" stroke="#C00000" stroke-width="2.2"/>
-  <line x1="498.0" y1="163.1" x2="807.6" y2="264.0" stroke="#C00000" stroke-width="2.2"/>
+  <text x="870.0" y="270.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₂</text>
+  <text x="506.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg₂</text>
+  <line x1="58.0" y1="69.6" x2="367.6" y2="264.0" stroke="#C00000" stroke-width="2.2"/>
+  <line x1="498.0" y1="166.8" x2="807.6" y2="264.0" stroke="#C00000" stroke-width="2.2"/>
   <text x="367.6" y="284.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ê₁</text>
   <text x="807.6" y="284.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ê₂</text>
-  <line x1="251.5" y1="264.0" x2="251.5" y2="70.2" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="251.5" y1="264.0" x2="251.5" y2="77.3" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
   <text x="251.5" y="284.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ē</text>
-  <line x1="691.5" y1="264.0" x2="691.5" y2="70.2" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="691.5" y1="264.0" x2="691.5" y2="77.3" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
   <text x="691.5" y="284.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ē</text>
-  <path d="M 290.2 264.0 L 367.6 264.0 L 290.2 213.5 Z" fill="#C00000" fill-opacity="0.8" stroke="none"/>
-  <path d="M 251.5 264.0 L 290.2 264.0 L 290.2 213.5 L 251.5 213.5 Z" fill="#0070C0" fill-opacity="0.45" stroke="none"/>
-  <path d="M 251.5 213.5 L 290.2 213.5 L 251.5 188.3 Z" fill="#1b3a5c" fill-opacity="0.3" stroke="none"/>
-  <path d="M 691.5 264.0 L 807.6 264.0 L 691.5 226.2 Z" fill="#C00000" fill-opacity="0.8" stroke="none"/>
-  <path d="M 652.8 264.0 L 691.5 264.0 L 691.5 226.2 L 652.8 213.5 Z" fill="#C00000" fill-opacity="0.45" stroke="none"/>
-  <path d="M 652.8 213.5 L 691.5 226.2 L 691.5 213.5 Z" fill="#1b3a5c" fill-opacity="0.3" stroke="none"/>
-  <line x1="54.0" y1="213.5" x2="854.0" y2="213.5" stroke="#1b3a5c" stroke-width="1.6" stroke-dasharray="7 4"/>
-  <text x="50.0" y="218.5" font-size="15" fill="#1b3a5c" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">σ*</text>
-  <line x1="290.2" y1="264.0" x2="290.2" y2="213.5" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <path d="M 290.2 264.0 L 367.6 264.0 L 290.2 215.4 Z" fill="#C00000" fill-opacity="0.8" stroke="none"/>
+  <path d="M 251.5 264.0 L 290.2 264.0 L 290.2 215.4 L 251.5 215.4 Z" fill="#0070C0" fill-opacity="0.45" stroke="none"/>
+  <path d="M 251.5 215.4 L 290.2 215.4 L 251.5 191.1 Z" fill="#1b3a5c" fill-opacity="0.3" stroke="none"/>
+  <path d="M 691.5 264.0 L 807.6 264.0 L 691.5 227.5 Z" fill="#C00000" fill-opacity="0.8" stroke="none"/>
+  <path d="M 652.8 264.0 L 691.5 264.0 L 691.5 227.5 L 652.8 215.4 Z" fill="#C00000" fill-opacity="0.45" stroke="none"/>
+  <path d="M 652.8 215.4 L 691.5 227.5 L 691.5 215.4 Z" fill="#1b3a5c" fill-opacity="0.3" stroke="none"/>
+  <line x1="54.0" y1="215.4" x2="854.0" y2="215.4" stroke="#1b3a5c" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="50.0" y="220.4" font-size="15" fill="#1b3a5c" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">σ*</text>
+  <line x1="290.2" y1="264.0" x2="290.2" y2="215.4" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
   <text x="290.2" y="284.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₁*</text>
-  <line x1="652.8" y1="264.0" x2="652.8" y2="213.5" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="652.8" y1="264.0" x2="652.8" y2="215.4" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
   <text x="652.8" y="284.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">e₂*</text>
-  <text x="311.8" y="252.9" font-size="16" fill="#ffffff" text-anchor="middle" font-style="italic" font-weight="600">A</text>
-  <text x="270.8" y="242.8" font-size="16" fill="#000000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">B</text>
-  <text x="262.0" y="200.4" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">C</text>
-  <text x="717.8" y="254.9" font-size="16" fill="#ffffff" text-anchor="middle" font-style="italic" font-weight="600">D</text>
-  <text x="672.1" y="248.9" font-size="16" fill="#ffffff" text-anchor="start" font-style="italic" font-weight="600">E</text>
-  <text x="672.1" y="207.1" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">F</text>
+  <text x="311.8" y="253.3" font-size="16" fill="#ffffff" text-anchor="middle" font-style="italic" font-weight="600">A</text>
+  <text x="270.8" y="243.6" font-size="16" fill="#000000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">B</text>
+  <text x="262.0" y="202.8" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">C</text>
+  <text x="717.8" y="255.2" font-size="16" fill="#ffffff" text-anchor="middle" font-style="italic" font-weight="600">D</text>
+  <text x="672.1" y="249.4" font-size="16" fill="#ffffff" text-anchor="start" font-style="italic" font-weight="600">E</text>
+  <text x="672.1" y="209.2" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">F</text>
   <text x="448.0" y="332.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">a firma 1 paga B = 312,5 e a firma 2 recebe E + F = 312,5: é a mesma quantia, e nada disso vai para o governo</text>
 </svg>
