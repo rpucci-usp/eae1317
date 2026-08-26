@@ -410,6 +410,54 @@ O mercado europeu de carbono (EU ETS) permite testar isso com dados
 - [Como eles respondem por parcela pequena da emissão, a independência
   sobrevive no agregado.]{.fragment fragment-index=2}
 
+## Por que o tamanho da firma importaria?
+
+::: {.no-bullet}
+Nosso modelo diz que a dotação sai na derivada. Para os grandes emissores foi
+isso que os dados mostraram. Para os pequenos, não: tirar a dotação fez a
+emissão cair.
+:::
+
+- Comprar e vender permissão custa alguma coisa **além do preço**? O quê,
+  exatamente?
+- Por que esse custo pesaria mais sobre uma firma pequena?
+- E, no nosso modelo, **em que ponto** ele entraria?
+
+::: {.no-bullet}
+Discutam em duplas, 3 minutos.
+:::
+
+## O preço deixa de ser um só
+
+::: {.no-bullet}
+Suponha que negociar uma permissão custe $k$ por unidade, além do preço
+$\sigma$. O custo total da firma passa a ser
+:::
+
+::: {.eq-block}
+$$T{C}_{j}={C}_{j}\left({e}_{j}\right)+\sigma \left({e}_{j}-\bar{e}_{j}\right)+k\left|{e}_{j}-\bar{e}_{j}\right|$$
+:::
+
+- [Se **compra**, paga $\sigma +k$ por unidade, e para em
+  $-{C}_{j}^{′}\left({e}_{j}\right)=\sigma +k$.]{.fragment fragment-index=1}
+- [Se **vende**, recebe $\sigma -k$, e para em
+  $-{C}_{j}^{′}\left({e}_{j}\right)=\sigma -k$.]{.fragment fragment-index=1}
+- [E se $\sigma -k\leq -{C}_{j}^{′}\left(\bar{e}_{j}\right)\leq \sigma +k$, não
+  faz nem uma coisa nem outra: ${e}_{j}=\bar{e}_{j}$.]{.fragment fragment-index=2}
+- [Ou seja, a dotação **voltou** para dentro da escolha da firma.]{.fragment fragment-index=3}
+
+## A mesma curva, dois custos de transação
+
+::: {.diagram}
+![](../_assets/figuras/07-custo-transacao.svg){style="max-height:268px"}
+:::
+
+- Com $k$ pequeno, o intervalo $[\sigma -k \; , \; \sigma +k]$ é estreito $\rightarrow$ mais provável que dotação de permissões esteja fora, o que leva a firma a negociar.
+- [Com $k$ grande, o intervalo é largo $\rightarrow$ mais provável que dotação caia dentro $\rightarrow$ emissão **é** a própria
+  dotação.]{.fragment fragment-index=1}
+- [O teto continua valendo, portanto a emissão total não muda. Muda **quem
+  abate**, e aí volta o peso morto do padrão uniforme.]{.fragment fragment-index=2}
+
 ## Subsídios {.section-cover}
 
 ## Voltando aos instrumentos de preço

@@ -46,6 +46,17 @@ COR_GUIA = "#8a94a0"
 COR_APAGADA = "#c8d0d8"
 COR_DESTAQUE = "#1b3a5c"
 FONTE = 15
+# Os rotulos dos eixos (o nome da variavel em cada ponta) sao maiores que o
+# resto do texto da figura porque sao os unicos que o aluno precisa ler do
+# fundo da sala: sem eles o desenho nao diz de que grandeza esta falando. Os
+# rotulos de marca (marca_x/marca_y) continuam em FONTE — sao muitos, e
+# aumenta-los junto encheria o eixo.
+FONTE_EIXO = 19
+# Folga a direita da tela para o rotulo do eixo horizontal do painel mais a
+# direita, que o Painel.eixos() escreve FORA da largura do painel. Serve para
+# rotulo curto ("E", "e₁"); rotulo longo, como o "permissoes" da aula 07, pede
+# folga propria e maior.
+FOLGA_ROTULO_X = 16
 SUB1 = "₁"
 SUB2 = "₂"
 
@@ -92,8 +103,13 @@ class Painel:
     # TOPO reserva DUAS linhas acima da area de plotagem: o titulo do painel na
     # primeira e o rotulo do eixo vertical na segunda. Com uma linha so, o
     # titulo "Danos sofridos pelos consumidores" passava por cima de "D′(E)".
+    #
+    # O valor subiu de 46 para 54 quando FONTE_EIXO passou a 19: o rotulo do
+    # eixo vertical e escrito a partir da base, entao fonte maior cresce PARA
+    # CIMA, e a 46 a caixa dele (24px de altura) encostava na do titulo (que
+    # termina em y=20). Medido: com 54 sobram 8px entre as duas.
     ALT = 312
-    TOPO = 46
+    TOPO = 54
     BASE = 48
     MARG_ESQ = 58
     MARG_DIR = 26
@@ -135,10 +151,10 @@ class Painel:
                    ' stroke="{}" stroke-width="1.2" marker-end="{}"/>'
                    .format(self.px(self.x0), self.py(self.y0),
                            self.px(self.x1) + 8, self.py(self.y0), cor, seta))
-        self.texto(self.px(self.x1) + 16, self.py(self.y0) + 5, rot_x,
-                   absoluto=True, cor=cor)
+        self.texto(self.px(self.x1) + 16, self.py(self.y0) + 6, rot_x,
+                   absoluto=True, cor=cor, tam=FONTE_EIXO)
         self.texto(self.px(self.x0) + 8, self.py(self.y1) - 8, rot_y,
-                   absoluto=True, cor=cor, ancora="start")
+                   absoluto=True, cor=cor, ancora="start", tam=FONTE_EIXO)
 
     def reta(self, xa, ya, xb, yb, cor=COR_CMG, larg=2.2, tracejado=None):
         pa, pb = self.p(xa, ya), self.p(xb, yb)
@@ -269,7 +285,10 @@ ALT_3P = 380
 
 def montar(etapa):
     """etapa 1..4; ver docstring do modulo."""
-    t = Tela(3 * LARG_P, ALT_3P + 40)
+    # +FOLGA_ROTULO_X pelo mesmo motivo do par total/marginal: o "E" do painel
+    # da direita e escrito fora da largura do painel e, com FONTE_EIXO em 19,
+    # encostava na borda do viewBox.
+    t = Tela(3 * LARG_P + FOLGA_ROTULO_X, ALT_3P + 40)
     p1 = Painel(t, 0 * LARG_P, LARG_P, (0, 115), (0, Y_MAX), ALT_3P)
     p2 = Painel(t, 1 * LARG_P, LARG_P, (0, 115), (0, Y_MAX), ALT_3P)
     p3 = Painel(t, 2 * LARG_P, LARG_P, (0, 215), (0, Y_MAX), ALT_3P)
@@ -381,7 +400,12 @@ def total_vs_marginal(nome, titulo, f_total, f_marg, xlab, tot_lab, mg_lab,
     # alargar e de graca. Com LARG_P a figura saia a 593px de largura num palco
     # de 1075 e parecia perdida no meio do slide.
     larg_p = 440
-    t = Tela(2 * larg_p, Painel.ALT + 6)
+    # +FOLGA_ROTULO_X: o rotulo do eixo horizontal do painel da direita e
+    # escrito 16px depois do fim do eixo, com ancora "start", e fica fora da
+    # largura do painel. Com FONTE_EIXO em 19 o "e₁" passou a exceder o viewBox
+    # em 6px e saia cortado. Mesma folga que a aula 06 (FOLGA_DIR) e a 07
+    # (FOLGA_EX) ja reservam pelo mesmo motivo.
+    t = Tela(2 * larg_p + FOLGA_ROTULO_X, Painel.ALT + 6)
     # D(E) cresce e C_j(e_j) decresce, entao o topo da escala esta em pontas
     # opostas — usar f_total(0) fixo daria ylim (0, 0) para o dano e o Painel
     # dividiria por zero.

@@ -546,6 +546,111 @@ def figura_exercicio():
     return t
 
 
+# ---------------------------------------------------------------------------
+# 7. custo de transacao: por que a dotacao volta a importar
+# ---------------------------------------------------------------------------
+# Serve ao bloco de discussao que segue o exemplo do EU ETS. O resultado de
+# Zaklan (2023) e que a independencia vale para os grandes emissores e falha
+# para os pequenos, e a hipotese dele e custo de transacao. Esta figura mostra
+# o mecanismo dentro do modelo da aula.
+#
+# Com custo k por unidade transacionada, o preco relevante deixa de ser um so:
+# quem compra paga sigma + k, quem vende recebe sigma - k, e entre os dois ha
+# uma FAIXA de dotacoes em que nao vale a pena fazer nem uma coisa nem outra.
+# Dentro dessa faixa a emissao E a dotacao, ou seja, a dotacao volta para
+# dentro da condicao de primeira ordem.
+#
+# Os dois paineis usam a MESMA curva de abatimento de proposito: a unica coisa
+# diferente entre eles e k, senao a figura mediria duas coisas ao mesmo tempo.
+A_CT = 50.0          # CMg(e) = A_CT - B_CT * e, a mesma curva da firma 2
+B_CT = 0.5
+K_GRANDE = 1.0       # emissor grande: custo de transacao baixo
+K_PEQUENO = 5.0      # emissor pequeno: custo de transacao alto
+E_DOT_CT = 56.0      # a dotacao gratuita, igual nos dois paineis
+
+cmg_ct = lambda e: A_CT - B_CT * e
+# quem compra para em CMg = sigma + k; quem vende para em CMg = sigma - k
+e_compra = lambda k: (A_CT - (SIGMA + k)) / B_CT
+e_vende = lambda k: (A_CT - (SIGMA - k)) / B_CT
+
+# Sem atrito a faixa colapsa num ponto e a dotacao some, que e o resultado do
+# resto da aula.
+assert abs(e_compra(0.0) - e_vende(0.0)) < 1e-9, "sem k a faixa deveria ser um ponto"
+assert abs(e_compra(0.0) - 50.0) < 1e-9, "o otimo sem atrito saiu do lugar"
+# O contraste que a figura precisa mostrar: a mesma dotacao cai FORA da faixa
+# estreita e DENTRO da faixa larga.
+assert E_DOT_CT > e_vende(K_GRANDE), \
+    "a dotacao deveria cair fora da faixa do emissor grande"
+assert e_compra(K_PEQUENO) <= E_DOT_CT <= e_vende(K_PEQUENO), \
+    "a dotacao deveria cair dentro da faixa do emissor pequeno"
+
+# Distancia vertical minima, em px, entre DOIS rotulos vizinhos do eixo. Os tres
+# rotulos em jogo sao "sigma+k", "sigma" e "sigma-k", e os vizinhos ficam a
+# k * sy um do outro (nao 2k: 2k e a faixa inteira, que cobre dois intervalos).
+# Uma caixa de texto de 15px tem ~11px de altura, entao 13 da folga de dois.
+FOLGA_ROTULO_Y = 13
+X_MAX_CT = 115
+Y_MAX_CT = 58        # escala propria: aqui a curva vai so ate 50, e usar o
+                     # Y_MAX = 108 das outras figuras jogaria metade do painel
+                     # fora. Os DOIS paineis compartilham esta escala, que e o
+                     # que a comparacao exige.
+
+
+def _painel_transacao(t, x_off, titulo, k):
+    p = Painel(t, x_off, LARG_2P, (0, X_MAX_CT), (0, Y_MAX_CT))
+    p.titulo(titulo)
+    p.eixos("e", "CMg")
+    p.reta(0, cmg_ct(0), A_CT / B_CT, 0, cor=COR_CMG)
+
+    ec, ev = e_compra(k), e_vende(k)
+    # a faixa de dotacoes em que a firma nao negocia
+    p.area([(ec, 0), (ev, 0), (ev, SIGMA - k), (ec, SIGMA + k)],
+           COR_DESTAQUE, 0.16)
+    # As duas horizontais existem nos dois paineis, mas so recebem rotulo onde
+    # ha altura para os dois textos mais o de sigma entre eles. Com k = 1 a
+    # distancia e de ~4px e os tres rotulos se empilham num borrao ilegivel; a
+    # faixa estreita e justamente o assunto do painel, entao quem sai e o
+    # rotulo, e nao a faixa. O painel da direita nomeia as duas linhas, e a
+    # construcao e a mesma nos dois.
+    rotular = k * p.sy >= FOLGA_ROTULO_Y
+    for y, rot in ((SIGMA + k, "σ+k"), (SIGMA - k, "σ−k")):
+        p.reta(0, y, A_CT / B_CT, y, cor=COR_GUIA, larg=1.0, tracejado="3 3")
+        if rotular:
+            p.marca_y(y, rot, cor=COR_GUIA)
+    p.texto(0.5 * (ec + ev), -7.5, "não negocia", cor=COR_DESTAQUE,
+            negrito=True, tam=14, italico=False, ancora="middle")
+
+    # a dotacao gratuita, identica nos dois paineis
+    p.reta(E_DOT_CT, 0, E_DOT_CT, Y_MAX_CT - 4, cor=COR_GUIA, larg=1.1,
+           tracejado="4 3")
+    p.texto(E_DOT_CT, Y_MAX_CT - 2, "ē", cor=COR_DESTAQUE, negrito=True,
+            tam=15, ancora="middle")
+
+    # onde a firma para: na borda da faixa se a dotacao cair fora dela, na
+    # propria dotacao se cair dentro
+    e_fim = min(max(E_DOT_CT, ec), ev)
+    p.ponto(e_fim, cmg_ct(e_fim))
+    return p
+
+
+def figura_custo_transacao():
+    t = Tela(2 * LARG_2P + FOLGA_DIR, Painel.ALT + 30)
+    p1 = _painel_transacao(t, 0, "Emissor grande (k = 1)", K_GRANDE)
+    _painel_transacao(t, LARG_2P, "Emissor pequeno (k = 5)", K_PEQUENO)
+
+    # sigma atravessa os dois paineis: e o mesmo preco de mercado para todo
+    # mundo, e e justamente por isso que a diferenca so pode vir de k
+    y = p1.py(SIGMA)
+    t.add('<line x1="{:.1f}" y1="{:.1f}" x2="{:.1f}" y2="{:.1f}"'
+          ' stroke="{}" stroke-width="1.6" stroke-dasharray="7 4"/>'
+          .format(p1.px(0) - 4, y, p1.px(X_MAX_CT) + LARG_2P, y, COR_DESTAQUE))
+    p1.marca_y(SIGMA, "σ", cor=COR_DESTAQUE)
+
+    rodape(t, "com k pequeno a firma negocia e para em 52; com k grande ela"
+              " fica na dotação e emite 56")
+    return t
+
+
 def main():
     # Sem acento nem grego no print: o console do Windows abre em cp1252.
     print("Figuras da aula 07 (sigma* = {:.0f}, {:.1f} permissoes trocadas por"
@@ -579,6 +684,13 @@ def main():
     figura_exercicio().salvar(
         "07-exercicio-leilao.svg",
         "O preço do leilão sai das ofertas das usinas, e não do regulador")
+    print("  custo de transacao: faixa estreita [{:.0f}, {:.0f}], faixa larga"
+          " [{:.0f}, {:.0f}], dotacao {:.0f}"
+          .format(e_compra(K_GRANDE), e_vende(K_GRANDE),
+                  e_compra(K_PEQUENO), e_vende(K_PEQUENO), E_DOT_CT))
+    figura_custo_transacao().salvar(
+        "07-custo-transacao.svg",
+        "Com custo de transação, a dotação volta a decidir a emissão")
 
 
 if __name__ == "__main__":
