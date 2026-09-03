@@ -44,6 +44,7 @@ SYMS = {
     'ρ': r'\rho', 'σ': r'\sigma', 'Σ': r'\Sigma', 'τ': r'\tau',
     'φ': r'\phi', 'Φ': r'\Phi', 'ω': r'\omega', 'Ω': r'\Omega',
     'χ': r'\chi', 'η': r'\eta', 'ξ': r'\xi', 'ι': r'\iota',
+    'ψ': r'\psi', 'Ψ': r'\Psi', '↑': r'\uparrow', '↓': r'\downarrow',
     '≥': r'\geq', '≤': r'\leq', '≠': r'\neq', '→': r'\to',
     '×': r'\times', '·': r'\cdot', '∞': r'\infty', '∂': r'\partial',
     '∑': r'\sum', '∫': r'\int', '√': r'\sqrt', '°': r'^\circ',
@@ -62,7 +63,18 @@ DELIMS = {'{': r'\{', '}': r'\}', '|': '|', '‖': r'\|', '⟨': r'\langle',
           '⟩': r'\rangle', '': '.'}
 SKIP_PR = {'ctrlPr', 'sSubPr', 'sSupPr', 'sSubSupPr', 'fPr', 'radPr', 'naryPr',
            'dPr', 'mathPr', 'oMathParaPr', 'rPr', 'functPr', 'barPr',
-           'groupChrPr', 'limLowPr', 'limUppPr'}
+           'groupChrPr', 'limLowPr', 'limUppPr', 'accPr', 'eqArrPr'}
+# <m:acc> carries the accent as a *combining* character in m:chr. Dropping it
+# turns the regulator's estimate D̃ into the true D, with nothing on screen
+# saying so — the two then read as the same object in slides whose whole point
+# is that they differ. The default when m:chr is absent is the hat.
+ACCENTS = {
+    '̃': r'\tilde', '̂': r'\hat', '̄': r'\bar',
+    '̅': r'\overline', '̇': r'\dot', '̈': r'\ddot',
+    '̊': r'\mathring', '̌': r'\check', '̀': r'\grave',
+    '́': r'\acute', '⃗': r'\vec', '⃖': r'\overleftarrow',
+    '⏞': r'\overbrace', '⏟': r'\underbrace',
+}
 # Wingdings arrow used as "implies" in the source decks
 WINGDINGS_ARROW = ''
 
@@ -151,6 +163,26 @@ def latex_of(elem):
             latex_of(e) if e is not None else '',
             latex_of(sub) if sub is not None else '',
             latex_of(sup) if sup is not None else '')
+    if tag == 'acc':
+        pr, e = child(elem, 'accPr'), child(elem, 'e')
+        ch = child(pr, 'chr') if pr is not None else None
+        val = ch.attrib.get(M_VAL, '') if ch is not None else '̂'
+        cmd = ACCENTS.get(val, r'\hat')
+        inner = latex_of(e) if e is not None else ''
+        return r'%s{%s}' % (cmd, inner)
+    if tag == 'bar':
+        pr, e = child(elem, 'barPr'), child(elem, 'e')
+        pos = child(pr, 'pos') if pr is not None else None
+        top = pos is None or pos.attrib.get(M_VAL, 'top') == 'top'
+        inner = latex_of(e) if e is not None else ''
+        return r'%s{%s}' % (r'\overline' if top else r'\underline', inner)
+    if tag == 'eqArr':
+        # Equation array: one <m:e> per line. Used for piecewise definitions,
+        # where the enclosing <m:d> supplies the brace. Joined with a space the
+        # lines run together and the "se ..." conditions read as factors.
+        lines = [latex_of(c) for c in elem if ln(c.tag) == 'e']
+        return r'\begin{array}{l}%s\end{array}' % r' \\ '.join(
+            l for l in lines if l.strip())
     if tag == 'rad':
         deg, e = child(elem, 'deg'), child(elem, 'e')
         inner = latex_of(e) if e is not None else ''
@@ -159,11 +191,14 @@ def latex_of(elem):
     if tag == 'nary':
         chr_el = child(elem, 'naryPr')
         sub, sup, e = child(elem, 'sub'), child(elem, 'sup'), child(elem, 'e')
-        op = r'\sum'
+        # OMML's default operator when m:chr is absent is the integral, not the
+        # sum. The attribute is m:val, so reading it as plain 'val' never found
+        # anything and every n-ary came out as \sum, integrals included.
+        op = r'\int'
         if chr_el is not None:
             ch = child(chr_el, 'chr')
             if ch is not None:
-                op = SYMS.get(ch.attrib.get('val', ''), r'\sum')
+                op = SYMS.get(ch.attrib.get(M_VAL, ''), r'\sum')
         out = op
         if sub is not None and latex_of(sub).strip():
             out += '_{%s}' % latex_of(sub)

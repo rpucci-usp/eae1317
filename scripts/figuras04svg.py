@@ -52,6 +52,14 @@ FONTE = 15
 # rotulos de marca (marca_x/marca_y) continuam em FONTE — sao muitos, e
 # aumenta-los junto encheria o eixo.
 FONTE_EIXO = 19
+# O titulo do painel e a linha de legenda sob a figura tinham ficado para tras
+# quando FONTE_EIXO subiu para 19: o nome da grandeza no eixo era lido do fundo
+# da sala e o titulo do painel, logo acima dele, nao. Sao os tres textos que
+# dizem DE QUE a figura fala, entao andam juntos. Os rotulos de marca
+# (marca_x/marca_y, do tipo "ē", "e₁*", "50") continuam em FONTE: sao muitos por
+# figura, e subir todos junto encheria o eixo.
+FONTE_TITULO = 18
+FONTE_LEGENDA = 17
 # Folga a direita da tela para o rotulo do eixo horizontal do painel mais a
 # direita, que o Painel.eixos() escreve FORA da largura do painel. Serve para
 # rotulo curto ("E", "e₁"); rotulo longo, como o "permissoes" da aula 07, pede
@@ -213,8 +221,11 @@ class Painel:
                    .format(cx, cy, tam, cor, ancora, est, peso, aro, esc(s)))
 
     def titulo(self, s, cor=COR_EIXO):
-        self.texto(self.x_off + self.larg / 2, 15, s, absoluto=True, cor=cor,
-                   ancora="middle", italico=False, negrito=True, tam=14)
+        # y=17 e nao 15: a 18px a caixa do glifo cresce ~2px para baixo, e a
+        # base tinha que descer junto para o topo dela nao sair do viewBox.
+        self.texto(self.x_off + self.larg / 2, 17, s, absoluto=True, cor=cor,
+                   ancora="middle", italico=False, negrito=True,
+                   tam=FONTE_TITULO)
 
 
 class Tela:
@@ -250,11 +261,18 @@ class Tela:
             ' refX="5" refY="4.5" orient="auto">\n'
             '      <path d="M0,0 L9,4.5 L0,9 Z" fill="{ca}"/>\n'
             '    </marker>\n'
+            # Serve a linha que sai pelo topo do painel (a perna de 300 do
+            # exercicio da aula 08): a seta diz "continua", e continuar em azul
+            # de dano diz de qual curva ela e.
+            '    <marker id="seta-dano" markerWidth="9" markerHeight="9"'
+            ' refX="5" refY="4.5" orient="auto">\n'
+            '      <path d="M0,0 L9,4.5 L0,9 Z" fill="{cd}"/>\n'
+            '    </marker>\n'
             '  </defs>\n'
             '{b}\n'
             '</svg>\n'
         ).format(w=self.larg, h=self.alt, t=esc(titulo), c=COR_EIXO,
-                 ca=COR_APAGADA, b="\n".join(self.partes))
+                 ca=COR_APAGADA, cd=COR_DANO, b="\n".join(self.partes))
         if not os.path.isdir(DEST):
             os.makedirs(DEST)
         caminho = os.path.join(DEST, nome)
@@ -321,7 +339,8 @@ def montar(etapa):
         p2.ponto(E_CHAPEU, 0)
         t.texto(1.5 * LARG_P, ALT_3P + 28,
                 "sem regulação: CMg₁ = CMg₂ = 0, mas o dano marginal é alto",
-                ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+                ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE,
+                negrito=True)
         return t
 
     # etapas 2-4: o nivel comum mu* atravessa os tres paineis --------------
@@ -359,27 +378,29 @@ def montar(etapa):
         da area preenchida — ou seja, branco sobre branco, invisivel."""
         p.texto(0.5 * (e_est + E_CHAPEU), MU + 13,
                 "C" + sub + "(e" + sub + "*)", cor=COR_CMG, negrito=True,
-                tam=13, ancora="middle")
+                tam=FONTE, ancora="middle")
 
     if etapa == 2:
         t.texto(1.5 * LARG_P, ALT_3P + 28,
                 "no ótimo as três alturas se igualam: CMg₁ ="
                 " CMg₂ = D′(E*) = μ*",
-                ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+                ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE,
+                negrito=True)
     elif etapa == 3:
         rotular_custo(p1, E1, SUB1)
         rotular_custo(p2, E2, SUB2)
         t.texto(LARG_P, ALT_3P + 28, "custo de abatimento = área sob CMg entre"
-                " e* e ê", ancora="middle", tam=15, cor=COR_CMG,
+                " e* e ê", ancora="middle", tam=FONTE_LEGENDA, cor=COR_CMG,
                 negrito=True)
     elif etapa == 4:
         rotular_custo(p1, E1, SUB1)
         rotular_custo(p2, E2, SUB2)
         p3.texto(E_TOT * 0.55, MU * 0.28, "D(E*)", cor="#ffffff", negrito=True,
-                 tam=13, halo=False)
+                 tam=FONTE, halo=False)
         t.texto(1.5 * LARG_P, ALT_3P + 28,
                 "custo social = C₁(e₁*) + C₂(e₂*) + D(E*)",
-                ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+                ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE,
+                negrito=True)
     return t
 
 

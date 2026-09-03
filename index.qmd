@@ -10,3 +10,4 @@ title: "EAE1317"
 4. [Teorema de Coase](aulas/05-coase/)
 5. [Políticas Ambientais I](aulas/06-comando-imposto/)
 6. [Políticas Ambientais II](aulas/07-permissoes-subsidios/)
+7. [Informação Assimétrica](aulas/08-informacao-assimetrica/)

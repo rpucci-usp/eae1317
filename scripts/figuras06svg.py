@@ -48,7 +48,8 @@ import os
 # precisam ler como a mesma coisa (vermelho = custo de abatimento, azul = dano,
 # azul-escuro = ganho, halo branco nos rotulos, mesma seta de eixo).
 from figuras04svg import (Painel, Tela, COR_CMG, COR_DANO, COR_EIXO,
-                          COR_GUIA, COR_DESTAQUE, SUB1, SUB2)
+                          COR_GUIA, COR_DESTAQUE, SUB1, SUB2,
+                          FONTE, FONTE_LEGENDA)
 
 # --- a economia desenhada (identica a da aula 04) ---------------------------
 E_CHAPEU = 100.0     # emissao de cada firma sem regulacao (as duas iguais)
@@ -161,7 +162,7 @@ def duas_firmas(titulo_extra=""):
 
 def rodape(t, texto, cor=COR_DESTAQUE):
     t.texto((2 * LARG_2P + FOLGA_DIR) / 2, Painel.ALT + 20, texto,
-            ancora="middle", tam=15, cor=cor, negrito=True)
+            ancora="middle", tam=FONTE_LEGENDA, cor=cor, negrito=True)
 
 
 def barra_uniforme(p):
@@ -323,7 +324,9 @@ assert abs(cmg_agregado(50.0) - 50.0) < 1e-9, "o bico saiu do lugar"
 
 
 def figura_agregado():
-    t = Tela(3 * LARG_3P, ALT_3P + 40)
+    # +FOLGA_DIR pelo mesmo motivo das figuras de dois paineis: o "E" do
+    # painel da direita e escrito fora da largura dele e saia 4px cortado.
+    t = Tela(3 * LARG_3P + FOLGA_DIR, ALT_3P + 40)
     p1 = Painel(t, 0 * LARG_3P, LARG_3P, (0, X_MAX), (0, Y_MAX), ALT_3P)
     p2 = Painel(t, 1 * LARG_3P, LARG_3P, (0, X_MAX), (0, Y_MAX), ALT_3P)
     p3 = Painel(t, 2 * LARG_3P, LARG_3P, (0, X_MAX_AGR), (0, Y_MAX), ALT_3P)
@@ -367,7 +370,7 @@ def figura_agregado():
 
     t.texto(1.5 * LARG_3P, ALT_3P + 28,
             "E(τ*) = e₁(τ*) + e₂(τ*) = 125, e é onde a agregada cruza D′(E)",
-            ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+            ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE, negrito=True)
     return t
 
 

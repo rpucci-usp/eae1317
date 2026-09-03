@@ -35,7 +35,8 @@ Escreve em aulas/_assets/figuras/.
 """
 
 from figuras04svg import (Painel, Tela, COR_CMG, COR_DANO, COR_EIXO,
-                          COR_GUIA, COR_APAGADA, COR_DESTAQUE, SUB1, SUB2)
+                          COR_GUIA, COR_APAGADA, COR_DESTAQUE, SUB1, SUB2,
+                          FONTE, FONTE_LEGENDA)
 
 # --- a economia desenhada (identica a das aulas 04 e 06) --------------------
 E_CHAPEU = 100.0
@@ -166,7 +167,7 @@ def duas_firmas():
 
 def rodape(t, texto, cor=COR_DESTAQUE, larg=None):
     larg = larg if larg is not None else 2 * LARG_2P + FOLGA_DIR
-    t.texto(larg / 2, Painel.ALT + 20, texto, ancora="middle", tam=15,
+    t.texto(larg / 2, Painel.ALT + 20, texto, ancora="middle", tam=FONTE_LEGENDA,
             cor=cor, negrito=True)
 
 
@@ -253,7 +254,7 @@ def figura_leilao():
     # Direita: a oferta entra pelo eixo horizontal e o preco sai no fim.
     p_lei.reta(E_TOT, 0, E_TOT, Y_MAX - 12, cor=COR_DESTAQUE, larg=2.0)
     p_lei.texto(E_TOT + 6, Y_MAX - 16, "oferta L", cor=COR_DESTAQUE,
-                negrito=True, italico=False, tam=14)
+                negrito=True, italico=False, tam=FONTE)
     p_lei.reta(0, SIGMA, E_TOT, SIGMA, cor=COR_GUIA, larg=1.1, tracejado="4 3")
     p_lei.marca_y(SIGMA, "σ*", cor=COR_DESTAQUE)
     p_lei.ponto(E_TOT, SIGMA)
@@ -261,7 +262,7 @@ def figura_leilao():
 
     t.texto((2 * LARG_LEILAO + FOLGA_DIR) / 2, ALT_LEILAO + 30,
             "com L = E* = 125, o leilão devolve σ* = 25, que é a alíquota da"
-            " aula passada", ancora="middle", tam=15, cor=COR_DESTAQUE,
+            " aula passada", ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE,
             negrito=True)
     return t
 
@@ -287,9 +288,9 @@ def figura_permissoes_1():
     seta(p1, E_BARRA, E1, Y_SETA)
     seta(p2, E_BARRA, E2, Y_SETA)
     p1.texto(0.5 * (E_BARRA + E1), Y_SETA + 12, "compra 12,5", cor=COR_DESTAQUE,
-             negrito=True, italico=False, tam=14, ancora="middle")
+             negrito=True, italico=False, tam=FONTE, ancora="middle")
     p2.texto(0.5 * (E2 + E_BARRA), Y_SETA + 12, "vende 12,5", cor=COR_DESTAQUE,
-             negrito=True, italico=False, tam=14, ancora="middle")
+             negrito=True, italico=False, tam=FONTE, ancora="middle")
 
     rodape(t, "ninguém disse quanto cada uma corta: as duas param onde"
               " CMg = σ*, e a emissão total continua L = 125")
@@ -346,13 +347,13 @@ def figura_permissoes_2():
     p1.texto(0.5 * (E_BARRA + E1), SIGMA * 0.42, "B", cor=COR_EIXO,
              negrito=True, tam=16)
     p1.texto(E_BARRA + 3.4, SIGMA + 6.5, "C", cor=COR_DESTAQUE, negrito=True,
-             tam=15, ancora="middle")
+             tam=FONTE, ancora="middle")
     p2.texto(71, 4.5, "D", cor="#ffffff", negrito=True, tam=16, halo=False,
              ancora="middle")
     p2.texto(0.5 * (E2 + E_BARRA), cmg2(E_BARRA) * 0.40, "E", cor="#ffffff",
              negrito=True, tam=16, halo=False)
     p2.texto(0.5 * (E2 + E_BARRA), SIGMA + 3.2, "F", cor=COR_DESTAQUE,
-             negrito=True, tam=15, ancora="middle")
+             negrito=True, tam=FONTE, ancora="middle")
 
     rodape(t, "a firma 1 paga B = 312,5 e a firma 2 recebe E + F = 312,5:"
               " é a mesma quantia, e nada disso vai para o governo")
@@ -370,9 +371,9 @@ def figura_permissoes_3():
         p.marca_x(e_est, "e" + sub + "*", cor=COR_DESTAQUE)
 
     p1.texto(E_BARRA + 3.4, SIGMA + 6.5, "C", cor=COR_DESTAQUE, negrito=True,
-             tam=15, ancora="middle")
+             tam=FONTE, ancora="middle")
     p2.texto(0.5 * (E2 + E_BARRA), SIGMA + 3.2, "F", cor=COR_DESTAQUE,
-             negrito=True, tam=15, ancora="middle")
+             negrito=True, tam=FONTE, ancora="middle")
 
     rodape(t, "C + F = {} é o que a troca poupa, e é o peso morto que o padrão"
               " uniforme deixava na mesa".format(fmt(round(GANHO, 1))))
@@ -398,16 +399,16 @@ def figura_subsidio_1():
         p.marca_x(e_est, "e" + sub + "*", cor=COR_DESTAQUE)
 
     p1.texto(E1 + 11, cmg1(E1) * 0.28, "abate", cor="#ffffff", negrito=True,
-             tam=13, halo=False, italico=False)
+             tam=FONTE, halo=False, italico=False)
     p2.texto(E2 + 15, cmg2(E2) * 0.30, "abate", cor="#ffffff", negrito=True,
-             tam=13, halo=False, italico=False)
+             tam=FONTE, halo=False, italico=False)
     p1.texto(0.5 * (E1 + E_CHAPEU), PSI + 7, "recebe 625", cor=COR_DESTAQUE,
-             negrito=True, tam=14, ancora="middle", italico=False)
+             negrito=True, tam=FONTE, ancora="middle", italico=False)
     p2.texto(0.5 * (E2 + E_CHAPEU), PSI + 7, "recebe 1.250", cor=COR_DESTAQUE,
-             negrito=True, tam=14, ancora="middle", italico=False)
+             negrito=True, tam=FONTE, ancora="middle", italico=False)
 
     rodape(t, "com ψ = 25 e referência ê, as duas param em e* de novo:"
-              " é a alocação do imposto, com o dinheiro andando ao contrário")
+              " o dinheiro é que anda ao contrário")
     return t
 
 
@@ -430,7 +431,7 @@ def figura_subsidio_2():
     p1.area([(E_REF, 0), (E_CHAPEU, 0), (E_REF, cmg1(E_REF))], COR_CMG, 0.80)
     p1.ponto(E_CHAPEU, 0, cor=COR_CMG)
     p1.texto(E_CHAPEU - 4, 9, "fica em ê" + SUB1, cor=COR_CMG, negrito=True,
-             tam=14, ancora="end", italico=False)
+             tam=FONTE, ancora="end", italico=False)
 
     # Firma 2: a referencia comum ainda esta acima do otimo dela, entao ela
     # continua no programa e recebe o retangulo maior.
@@ -440,7 +441,7 @@ def figura_subsidio_2():
     p2.ponto(E2, PSI)
     p2.marca_x(E2, "e" + SUB2 + "*", cor=COR_DESTAQUE)
     p2.texto(0.5 * (E2 + E_REF), PSI + 7, "recebe 750", cor=COR_DESTAQUE,
-             negrito=True, tam=14, ancora="middle", italico=False)
+             negrito=True, tam=FONTE, ancora="middle", italico=False)
 
     rodape(t, "referência comum ē = 80: a firma 1 sai do programa e a emissão"
               " total sobe de 125 para 150", cor=COR_CMG)
@@ -516,7 +517,7 @@ def figura_exercicio():
     # de quem e cada oferta vencedora
     for k in range(L_EX):
         v, dono = LANCES[k]
-        p.texto(k + 0.5, v + 4.5, dono, cor=COR_CMG, negrito=True, tam=15,
+        p.texto(k + 0.5, v + 4.5, dono, cor=COR_CMG, negrito=True, tam=FONTE,
                 ancora="middle")
 
     # o dano marginal, que e o que diz ao governo quantas permissoes emitir.
@@ -525,12 +526,12 @@ def figura_exercicio():
     p.reta(0, DANO_MG_EX, 10.6, DANO_MG_EX, cor=COR_DANO, larg=1.4,
            tracejado="6 4")
     p.texto(10.4, DANO_MG_EX + 5, "D′ = 45", cor=COR_DANO, negrito=True,
-            tam=14, ancora="end")
+            tam=FONTE, ancora="end")
 
     # a oferta: a unica coisa que o governo escolhe
     p.reta(L_EX, 0, L_EX, 106, cor=COR_DESTAQUE, larg=2.0)
     p.texto(L_EX + 0.15, 102, "oferta L = 4", cor=COR_DESTAQUE, negrito=True,
-            tam=14, italico=False)
+            tam=FONTE, italico=False)
 
     # o cruzamento, que e um segmento
     p.area([(3.86, P_MIN), (4.14, P_MIN), (4.14, P_MAX), (3.86, P_MAX)],
@@ -538,11 +539,11 @@ def figura_exercicio():
     p.marca_y(P_MAX, fmt(P_MAX), cor=COR_DESTAQUE)
     p.marca_y(P_MIN, fmt(P_MIN), cor=COR_DESTAQUE)
     p.texto(4.35, 0.5 * (P_MIN + P_MAX), "o preço fecha aqui",
-            cor=COR_DESTAQUE, negrito=True, tam=14, italico=False)
+            cor=COR_DESTAQUE, negrito=True, tam=FONTE, italico=False)
 
     t.texto(LARG_EX / 2, ALT_EX + 32,
             "o governo escolheu a vertical; a altura veio dos lances das duas"
-            " usinas", ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+            " usinas", ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE, negrito=True)
     return t
 
 
@@ -618,13 +619,13 @@ def _painel_transacao(t, x_off, titulo, k):
         if rotular:
             p.marca_y(y, rot, cor=COR_GUIA)
     p.texto(0.5 * (ec + ev), -7.5, "não negocia", cor=COR_DESTAQUE,
-            negrito=True, tam=14, italico=False, ancora="middle")
+            negrito=True, tam=FONTE, italico=False, ancora="middle")
 
     # a dotacao gratuita, identica nos dois paineis
     p.reta(E_DOT_CT, 0, E_DOT_CT, Y_MAX_CT - 4, cor=COR_GUIA, larg=1.1,
            tracejado="4 3")
     p.texto(E_DOT_CT, Y_MAX_CT - 2, "ē", cor=COR_DESTAQUE, negrito=True,
-            tam=15, ancora="middle")
+            tam=FONTE, ancora="middle")
 
     # onde a firma para: na borda da faixa se a dotacao cair fora dela, na
     # propria dotacao se cair dentro

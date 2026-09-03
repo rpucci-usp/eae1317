@@ -42,7 +42,8 @@ import os
 # familia (vermelho = custo de abatimento, azul = dano, halo branco nos
 # rotulos, mesma seta de eixo).
 from figuras04svg import (Painel, Tela, COR_CMG, COR_DANO, COR_EIXO,
-                          COR_GUIA, COR_DESTAQUE)
+                          COR_GUIA, COR_DESTAQUE, FONTE, FONTE_LEGENDA,
+                          FOLGA_ROTULO_X)
 
 # --- a economia desenhada ---------------------------------------------------
 E_CHAPEU = 200.0     # emissao da firma sem restricao nenhuma; C(Ê) = 0
@@ -89,7 +90,9 @@ def fmt(v):
 
 def moldura(titulo_painel):
     """A parte que as tres figuras tem identica: curvas, eixos, E*, mu*."""
-    t = Tela(LARG, ALT_P + 32)
+    # +FOLGA_ROTULO_X: o "E" do eixo horizontal e escrito FORA da largura do
+    # painel, e sem folga ele saia 4px cortado pela borda do viewBox.
+    t = Tela(LARG + FOLGA_ROTULO_X, ALT_P + 32)
     p = Painel(t, 0, LARG, (0, X_MAX), (0, Y_MAX), ALT_P)
     p.titulo(titulo_painel)
     p.eixos("E", "R$/t")
@@ -142,7 +145,7 @@ def triangulo_dir(p, opacidade=0.22):
 
 def rotulo_area(p, x, y, valor):
     p.texto(x, y, "ganhos = " + fmt(valor), cor=COR_DESTAQUE, negrito=True,
-            tam=14, ancora="middle", italico=False)
+            tam=FONTE, ancora="middle", italico=False)
 
 
 def figura_consumidor():
@@ -154,7 +157,7 @@ def figura_consumidor():
     t.texto(LARG / 2, ALT_P + 22,
             "cada tonelada autorizada vale mais para a firma do que custa ao"
             " consumidor — até E*",
-            ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+            ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE, negrito=True)
     return t
 
 
@@ -167,7 +170,7 @@ def figura_firma():
     t.texto(LARG / 2, ALT_P + 22,
             "cada tonelada abatida custa menos à firma do que vale ao"
             " consumidor — até E*",
-            ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+            ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE, negrito=True)
     return t
 
 
@@ -184,7 +187,7 @@ def figura_dois_lados():
     t.texto(LARG / 2, ALT_P + 22,
             "o excedente depende de quem tem o direito; o ponto onde ele acaba,"
             " não",
-            ancora="middle", tam=15, cor=COR_DESTAQUE, negrito=True)
+            ancora="middle", tam=FONTE_LEGENDA, cor=COR_DESTAQUE, negrito=True)
     return t
 
 
