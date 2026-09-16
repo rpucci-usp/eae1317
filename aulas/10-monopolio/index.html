@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Rafael Pucci">
+  <meta name="dcterms.date" content="2026-09-17">
+  <title>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais – Mercado Não Competitivo</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../_assets/styles.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Mercado Não Competitivo</h1>
+  <p class="subtitle">EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rafael Pucci 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-09-17</p>
+</section>
+<section id="imposto-de-poluição-em-mercado-com-apenas-um-produtor" class="slide level2">
+<h2>Imposto de poluição em mercado com apenas um produtor</h2>
+<div class="no-bullet">
+<p>Uma indústria poluidora tem um único produtor. O regulador cobra dele um imposto igual ao dano marginal, que é a alíquota eficiente quando o mercado é competitivo.</p>
+</div>
+<div class="opcoes">
+<p><strong>(a)</strong> O bem-estar sobe: o imposto corrige a externalidade, e isso vale em qualquer mercado.</p>
+<p><strong>(b)</strong> O bem-estar sobe, mas menos do que sob concorrência, porque o monopolista repassa parte da conta ao preço.</p>
+<p><strong>(c)</strong> O bem-estar pode cair: o monopolista já produzia de menos, e o imposto o faz produzir menos ainda.</p>
+</div>
+</section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Mercado Competitivo pelo Produto Final
+<ul>
+<li>Função Custo</li>
+<li>Demanda de Mercado</li>
+</ul></li>
+<li>Instrumentos de Política
+<ul>
+<li>Impostos</li>
+<li>Permissões</li>
+</ul></li>
+<li>Monopólio no Mercado do Produto Final
+<ul>
+<li>Modelo Básico</li>
+<li>Imposto sobre Poluição</li>
+<li>Subsídio à Produção do Bem Final</li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p>Referência: Phaneuf e Requate, caps. 5 e 6</p>
+</div>
+</section>
+<section id="onde-estamos-no-modelo" class="slide level2">
+<h2>Onde estamos no modelo</h2>
+<div class="step-map">
+<div class="step">
+<p><strong>1. Uma escolha</strong> a firma decide quanto emitir, e a produção fica fora do modelo.</p>
+</div>
+<div class="step now">
+<p><strong>2. Duas escolhas</strong> a firma decide quanto produzir e quanto emitir, e o custo liga as duas.</p>
+</div>
+<div class="step now">
+<p><strong>3. Mercado competitivo</strong> o preço é dado, e um instrumento basta.</p>
+</div>
+<div class="step">
+<p><strong>4. Mercado monopolista</strong> o vendedor escolhe o preço, e um instrumento não basta.</p>
+</div>
+</div>
+</section>
+<section id="produto-e-poluição" class="slide level2 section-cover">
+<h2>Produto e Poluição</h2>
+</section>
+<section id="custo-produtivo-e-demanda-de-consumidores" class="slide level2">
+<h2>Custo Produtivo e Demanda de Consumidores</h2>
+<ul>
+<li>Para simplificar nossas análises, nós ignoramos os custos produtivos das firmas.</li>
+<li>Também não discutimos a demanda pelos produtos finais.</li>
+<li>Vamos retomar o que vimos nas primeiras aulas.
+<ul>
+<li>Expandiremos as funções-custo.</li>
+<li>Adicionaremos produtos ao mercado consumidor.</li>
+</ul></li>
+</ul>
+</section>
+<section id="função-custo" class="slide level2">
+<h2>Função-Custo</h2>
+<ul>
+<li>Considere uma tecnologia que produz o bem <span class="math inline">\(x\)</span>:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[x=f({\ell }_{1},...,{\ell }_{K})\]</span></p>
+</div>
+<ul>
+<li>Em que <span class="math inline">\(({\ell }_{1},...,{\ell }_{K})\)</span> é um vetor de insumos.</li>
+<li><span class="fragment" data-fragment-index="1">Defina também a tecnologia que gera poluição a partir do uso dos insumos:</span></li>
+</ul>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[e=g({\ell }_{1},...,{\ell }_{K})\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Ou seja, poluição é subproduto dos insumos usados na produção de <span class="math inline">\(x\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="2">A ausência de subscrito <span class="math inline">\(j\)</span> em <span class="math inline">\(f\left(\cdot \right)\)</span> é apenas por conveniência. Continue assumindo firmas heterogêneas com <span class="math inline">\({f}_{j}(\cdot
+)\)</span>.</span></li>
+</ul>
+</section>
+<section id="função-custo-1" class="slide level2">
+<h2>Função-Custo</h2>
+<ul>
+<li>Note que o produto marginal de <span class="math inline">\(f(\cdot )\)</span> e <span class="math inline">\(g(\cdot )\)</span> em relação a um insumo <span class="math inline">\({\ell }_{k}\)</span> pode ser positivo, negativo ou zero.</li>
+<li>Isto significa que pode haver insumos que aumentam a produção de <span class="math inline">\(x\)</span> ao mesmo tempo em que reduzem emissões.</li>
+</ul>
+</section>
+<section id="função-custo-2" class="slide level2">
+<h2>Função-Custo</h2>
+<ul>
+<li>A função-custo é resultado do problema de minimização de custos de cada firma.</li>
+<li>Definiremos a função-custo como:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[C\left(x,e\right)=\min_{({\ell }_{1},...,{\ell }_{K})} \left\{\sum_{k=1}^{K} {w}_{k}{\ell }_{k}+\lambda [x-f({\ell }_{1},...,{\ell }_{K})+\mu [e-g({\ell }_{1},...,{\ell }_{K})\right\}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Em que <span class="math inline">\(({w}_{1},...,{w}_{K})\)</span> é o vetor de preços dos insumos (fatores de produção).</p>
+</div>
+<ul>
+<li>Como exemplo, insumos podem ser capital, trabalho, petróleo, carvão etc.</li>
+</ul>
+</section>
+<section id="premissas-adicionais" class="slide level2">
+<h2>Premissas Adicionais</h2>
+<ul>
+<li>A função-custo <span class="math inline">\(C(x,e)\)</span> é duplamente diferenciável.</li>
+<li><span class="math inline">\({C}_{x}\left(x,e\right)=\frac{\partial C\left(x,e\right)}{\partial x}&gt;0\)</span> <span class="math inline">\(\to\)</span> Custo aumenta com produto.</li>
+<li><span class="fragment" data-fragment-index="1">Para cada nível de produção de <span class="math inline">\(x\)</span>, há nível de emissão <span class="math inline">\({ê}^{x}\)</span> tal que:</span></li>
+</ul>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[{C}_{e}\left(x,{ê}^{x}\right)=\frac{\partial C\left(x,{ê}^{x}\right)}{\partial e}=0\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Isto é análogo ao caso de <span class="math inline">\(ê\)</span> nas aulas anteriores, que era o nível de poluição em um ambiente sem nenhuma regulação.</span></li>
+</ul>
+</section>
+<section id="premissas-adicionais-1" class="slide level2">
+<h2>Premissas Adicionais</h2>
+<div class="no-bullet">
+<p>Sobre o custo marginal de abatimento, <span class="math inline">\(-{C}_{e}(x,e)\)</span>, temos que:</p>
+</div>
+<ul>
+<li><span class="math inline">\({C}_{e}\left(x,e\right)&lt;0 \quad \forall e&lt;{ê}^{x}\)</span>.</li>
+<li><span class="math inline">\({C}_{e}\left(x,e\right)\geq 0 \quad \forall e\geq {ê}^{x}\)</span>.</li>
+<li>Estas duas premissas dizem que o custo da firma aumenta conforme ela escolhe poluição acima ou abaixo do nível ótimo <span class="math inline">\({ê}^{x}\)</span>.</li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Além disso, temos:</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1"><span class="math inline">\({C}_{xe}\left(x,e\right)={C}_{ex}\left(x,e\right)&lt;0 ↔ -{C}_{ex}\left(x,e\right)&gt;0 \forall e&lt;{ê}^{x}\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="2">Isto significa que o custo marginal de abatimento aumenta com a produção.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Ou seja, é mais caro (na margem) reduzir poluição se a produção é maior.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="o-custo-tem-um-mínimo-em-e" class="slide level2">
+<h2>O custo tem um mínimo em <span class="math inline">\(e\)</span></h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-custo-1.svg" style="max-height:390px"></p>
+</div>
+<ul>
+<li>Note que o custo de produzir <span class="math inline">\(x={x}_{1}\)</span> é mínimo com <span class="math inline">\(e={ê}^{{x}_{1}}\)</span>.</li>
+<li><span class="fragment" data-fragment-index="1">Custo aumenta se <span class="math inline">\(e&gt;{ê}^{{x}_{1}}\)</span> ou se <span class="math inline">\(e&lt;{ê}^{{x}_{1}}\)</span>. Poluir de menos também custa caro.</span></li>
+</ul>
+</section>
+<section id="e-o-mínimo-anda-com-a-produção" class="slide level2">
+<h2>E o mínimo anda com a produção</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-custo-2.svg" style="max-height:350px"></p>
+</div>
+<ul>
+<li>Com <span class="math inline">\({x}_{2}&gt;{x}_{1}\)</span>, a curva inteira sobe e o mínimo se desloca para <span class="math inline">\({ê}^{{x}_{2}}\)</span>.</li>
+<li><span class="fragment" data-fragment-index="1">No segundo gráfico, note que os custos marginais de abatimento <span class="math inline">\(-{C}_{e}({x}_{1},e)\)</span> e <span class="math inline">\(-{C}_{e}({x}_{2},e)\)</span> são iguais a zero quando <span class="math inline">\(e={ê}^{{x}_{1}}\)</span> ou <span class="math inline">\(e={ê}^{{x}_{2}}\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="2">Para cada <span class="math inline">\(e\)</span>, a curva de <span class="math inline">\({x}_{2}\)</span> está por cima. É isto que <span class="math inline">\(-{C}_{ex}&gt;0\)</span> quer dizer.</span></li>
+</ul>
+</section>
+<section id="demanda-dos-consumidores" class="slide level2">
+<h2>Demanda dos Consumidores</h2>
+<div class="no-bullet">
+<p>Assuma a seguinte função-utilidade quase-linear:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{U}^{i}={u}_{i}\left({x}_{i}\right)+{z}_{i}-{D}_{i}\left(E\right)\]</span></p>
+</div>
+<ul>
+<li><span class="math inline">\({x}_{i}\)</span> é o consumo do bem cuja produção é poluente.</li>
+<li><span class="math inline">\({z}_{i}\)</span> é o gasto em todos os outros bens.</li>
+</ul>
+<div class="no-bullet">
+<p>A restrição orçamentária do consumidor é dada por:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{y}_{i}=p{x}_{i}+{z}_{i}\]</span></p>
+</div>
+<ul>
+<li>Em que <span class="math inline">\(p\)</span> é o preço do bem <span class="math inline">\(x\)</span>.</li>
+</ul>
+</section>
+<section id="função-de-demanda-inversa" class="slide level2">
+<h2>Função de Demanda Inversa</h2>
+<div class="no-bullet">
+<p>O consumidor maximiza utilidade sujeito à restrição orçamentária.</p>
+</div>
+<ul>
+<li>Condição de primeira ordem é <span class="math inline">\({u}_{i}^{′}\left({x}_{i}\right)=p\)</span>.</li>
+</ul>
+<div class="no-bullet">
+<p>Podemos definir a função de demanda inversa individual (disposição marginal a pagar) usando a CPO:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{p}_{i}\left({x}_{i}\right)={u}_{i}^{′}({x}_{i})\]</span></p>
+</div>
+<div class="no-bullet">
+<p>O benefício de se consumir <span class="math inline">\({x}_{i}\)</span> unidades é dado por:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[\int_{0}^{{x}_{i}} {p}_{i}\left(t\right)dt={u}_{i}({x}_{i})\]</span></p>
+</div>
+</section>
+<section id="benefício-agregado-do-consumo-de-x" class="slide level2">
+<h2>Benefício Agregado do Consumo de <span class="math inline">\(x\)</span></h2>
+<div class="no-bullet">
+<p>Para agregar o benefício de se consumir <span class="math inline">\(x\)</span> entre os consumidores, defina:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[X=\sum_{i=1}^{I} {x}_{i}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>A demanda inversa agregada é dada pela soma horizontal das demandas individuais.</p>
+</div>
+<ul>
+<li>Vamos chamá-la de <span class="math inline">\(P(X)\)</span>.</li>
+</ul>
+<div class="no-bullet">
+<p>Com isso, temos danos e benefícios associados à poluição:</p>
+</div>
+<ul>
+<li>Dano causado pela produção de <span class="math inline">\(x\)</span> é <span class="math inline">\(D(E)\)</span>.</li>
+<li>Benefício por consumir <span class="math inline">\(x\)</span> é a área sob <span class="math inline">\(P(X)\)</span>.</li>
+</ul>
+</section>
+<section id="maximização-de-bem-estar-social" class="slide level2">
+<h2>Maximização de Bem-Estar Social</h2>
+<div class="no-bullet">
+<p>O bem-estar social gerado por <span class="math inline">\(x\)</span>, neste caso, é dado por:</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[W\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\right) = \int_{0}^{\sum {x}_{j}} P\left(t\right)dt - \sum_{j=1}^{J} {C}^{j}\left({x}_{j},{e}_{j}\right) - D(E)\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Os três termos são benefício total aos consumidores, custo total das firmas e dano causado pela poluição. O problema do regulador é:</span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\underset{\begin{array}{l}{x}_{1},...,{x}_{J} \\ {e}_{1},...,{e}_{J}\end{array}}{\max_{}} W({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J})\]</span></p>
+</div>
+</section>
+<section id="maximização-de-bem-estar-social-1" class="slide level2">
+<h2>Maximização de Bem-Estar Social</h2>
+<div class="no-bullet">
+<p>O bem-estar social gerado por <span class="math inline">\(x\)</span>, neste caso, é dado por:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[W\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\right) = \int_{0}^{\sum {x}_{j}} P\left(t\right)dt - \sum_{j=1}^{J} {C}^{j}\left({x}_{j},{e}_{j}\right) - D\left(E\right)\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Quais são as condições de primeira ordem?</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[P\left(X\right)={C}_{{x}_{j}}^{j}\left({x}_{j},{e}_{j}\right) \forall j\]</span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[{D}^{′}\left(E\right)=-{C}_{{e}_{j}}^{j}\left({x}_{j},{e}_{j}\right) \forall j\]</span></p>
+</div>
+</section>
+<section id="maximização-de-bem-estar-social-2" class="slide level2">
+<h2>Maximização de Bem-Estar Social</h2>
+<ul>
+<li>A condição <span class="math inline">\(P\left(X\right)={C}_{{x}_{j}}^{j}\left({x}_{j},{e}_{j}\right)\)</span> representa o resultado básico de microeconomia que <strong>iguala custo marginal a benefício marginal do consumo</strong>.</li>
+<li>A condição <span class="math inline">\({D}^{′}\left(E\right)=-{C}_{{e}_{j}}^{j}\left({x}_{j},{e}_{j}\right)\)</span> representa o que vimos anteriormente, em que <strong>dano marginal da poluição se iguala ao custo marginal de abatimento</strong>.</li>
+</ul>
+<div class="no-bullet">
+<p>São duas condições, e nenhuma delas é nova. A novidade é considerá-las ao mesmo tempo.</p>
+</div>
+</section>
+<section id="as-duas-condições-lado-a-lado" class="slide level2">
+<h2>As duas condições lado a lado</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-otimo.svg" style="max-height:350px"></p>
+</div>
+<ul>
+<li>O painel da direita é a figura das aulas 04 a 09: <span class="math inline">\(-C′(E)=(200-E)/3\)</span> cruzando <span class="math inline">\(D′(E)=0{,}2E\)</span> em <span class="math inline">\({E}^{*}=125\)</span>, com preço 25.</li>
+<li><span class="fragment" data-fragment-index="1">O que esta aula acrescenta é o painel da esquerda. A curva vermelha da direita é a curva de abatimento <strong>no nível de produção <span class="math inline">\({X}^{*}\)</span></strong>. Logo, esta é diferente para cada <span class="math inline">\({X}^{*}\)</span>.</span></li>
+</ul>
+</section>
+<section id="instrumentos-de-política" class="slide level2">
+<h2>Instrumentos de Política</h2>
+<ul>
+<li>Para avaliar como impostos e permissões afetam o equilíbrio, precisamos avaliar o caso competitivo.</li>
+<li>Começaremos com impostos e, depois, veremos permissões.</li>
+</ul>
+<div class="no-bullet">
+<p>A pergunta a guardar é quantos instrumentos o regulador precisa para atender às <strong>duas</strong> condições do ótimo.</p>
+</div>
+</section>
+<section id="impostos" class="slide level2">
+<h2>Impostos</h2>
+<p>No equilíbrio competitivo, temos firmas maximizando lucro, dado pela função abaixo:</p>
+<div class="eq-block">
+<p><span class="math display">\[{Π}_{j}\left({x}_{j},{e}_{j}\right)=p{x}_{j}-{C}^{j}\left({x}_{j},{e}_{j}\right)-\tau {e}_{j}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Como de costume, a escolha ótima é revelada pelas CPOs:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[p={C}_{{x}_{j}}^{j}\left({x}_{j}, {e}_{j}\right) \qquad \tau =-{C}_{{e}_{j}}^{j}({x}_{j},{e}_{j})\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Se o regulador tem informação plena, pode tentar implementar um imposto <span class="math inline">\(\tau
+={D}^{′}({E}^{*})\)</span> e alcançar o ótimo de Pareto.</p>
+</div>
+</section>
+<section id="leilão-de-permissões" class="slide level2">
+<h2>Leilão de Permissões</h2>
+<p>O governo emite <span class="math inline">\(L\)</span> permissões, de modo que temos:</p>
+<div class="eq-block">
+<p><span class="math display">\[{Π}_{j}\left({x}_{j},{e}_{j}\right)=p{x}_{j}-{C}^{j}\left({x}_{j},{e}_{j}\right)-\sigma (L){e}_{j}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>E CPOs:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[p={C}_{{x}_{j}}^{j}\left({x}_{j}, {e}_{j}\right) \qquad \sigma (L)=-{C}_{{e}_{j}}^{j}({x}_{j},{e}_{j})\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Se <span class="math inline">\(L={E}^{*}\)</span>, teremos o ótimo de Pareto.</p>
+</div>
+<ul>
+<li><strong>Um instrumento, e as duas condições atendidas.</strong></li>
+</ul>
+</section>
+<section id="custo-de-abatimento-não-separável" class="slide level2">
+<h2>Custo de Abatimento Não-Separável</h2>
+<div class="no-bullet">
+<p>Em alguns contextos, firmas não conseguem abater poluição com tecnologia específica para isso.</p>
+</div>
+<ul>
+<li>Nestes casos, redução de poluição acontece somente por meio de <strong>redução de produção</strong>.</li>
+</ul>
+<div class="no-bullet">
+<p>Formalmente, teríamos uma função <span class="math inline">\(C(x)\)</span> com <span class="math inline">\({C}^{′}\left(x\right)&gt;0\)</span> e <span class="math inline">\({C}^{′′}\left(x\right)\geq 0\)</span>.</p>
+</div>
+<div class="no-bullet">
+<p>Além disso, emissões seriam função direta da produção.</p>
+</div>
+<ul>
+<li>Ou seja, <span class="math inline">\(e=\phi (x)\)</span>.</li>
+<li>Como exemplo, considere uma função linear <span class="math inline">\(e=\phi \left(x\right)=\delta x\)</span>.</li>
+</ul>
+</section>
+<section id="custo-de-abatimento-não-separável-1" class="slide level2">
+<h2>Custo de Abatimento Não-Separável</h2>
+<div class="no-bullet">
+<p>Se a redução de poluição afeta diretamente a produção, o custo de abatimento é a perda de lucro da firma.</p>
+</div>
+<ul>
+<li>Ou seja, trata-se de um custo de oportunidade.</li>
+</ul>
+<div class="no-bullet">
+<p>Com <span class="math inline">\(e=\delta x \to x=\frac{e}{\delta }\)</span>, o lucro da firma é dado por:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[Π=px-C\left(x\right)=\frac{p.e}{\delta }-C\left(\frac{e}{\delta }\right)\]</span></p>
+</div>
+</section>
+<section id="custo-de-abatimento-não-separável-2" class="slide level2">
+<h2>Custo de Abatimento Não-Separável</h2>
+<div class="no-bullet">
+<p>Sabemos que <span class="math inline">\(\hat{e}\)</span> resolve a seguinte expressão:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[\frac{dΠ}{de}=\left[p-{C}^{′}\left(\frac{\hat{e}}{\delta }\right)\right]\frac{1}{\delta }=0\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">O que acontece quando <span class="math inline">\(e&lt;\hat{e}\)</span>?</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Lucro diminui em <span class="math inline">\(\frac{dΠ}{de}=\left[p-{C}^{′}\left(\frac{e}{\delta }\right)\right]\frac{1}{\delta }\)</span>, e por isso <span class="math inline">\(\frac{dΠ}{de}\)</span> pode ser interpretada como o custo marginal de abatimento.</span></li>
+</ul>
+</section>
+<section id="abater-é-lucro-perdido" class="slide level2">
+<h2>Abater é lucro perdido</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-nao-separavel.svg" style="max-height:350px"></p>
+</div>
+<ul>
+<li>O lucro tem um pico em <span class="math inline">\(\hat{e}\)</span>, que é onde a firma pararia sem regulação nenhuma.</li>
+<li><span class="fragment" data-fragment-index="1">Descer de <span class="math inline">\(\hat{e}=100\)</span> para <span class="math inline">\(e=60\)</span> custa 400 de lucro, que é exatamente a área sob a curva marginal.</span></li>
+<li>Aqui, <strong>abater é produzir menos</strong>.</li>
+</ul>
+</section>
+<section id="monopólio" class="slide level2 section-cover">
+<h2>Monopólio</h2>
+</section>
+<section id="onde-estamos-no-modelo-1" class="slide level2">
+<h2>Onde estamos no modelo</h2>
+<div class="step-map">
+<div class="step">
+<p><strong>1. Uma escolha</strong> a firma decide quanto emitir, e a produção fica fora do modelo.</p>
+</div>
+<div class="step">
+<p><strong>2. Duas escolhas</strong> a firma decide quanto produzir e quanto emitir, e o custo liga as duas.</p>
+</div>
+<div class="step">
+<p><strong>3. Mercado competitivo</strong> o preço é dado, e um instrumento basta.</p>
+</div>
+<div class="step now">
+<p><strong>4. Mercado monopolista</strong> o vendedor escolhe o preço, e um instrumento não basta.</p>
+</div>
+</div>
+</section>
+<section id="introduzindo-falhas-de-concorrência" class="slide level2">
+<h2>Introduzindo Falhas de Concorrência</h2>
+<ul>
+<li>Vamos discutir como nossas conclusões se alteram quando as firmas poluidoras não atuam em mercado competitivo.</li>
+<li>Muitos mercados regulados de fato não são competitivos.
+<ul>
+<li>Energia.</li>
+<li>Montadoras de automóveis.</li>
+<li>Refinarias de petróleo.</li>
+</ul></li>
+<li>Para simplificar, trataremos do caso de monopólio.
+<ul>
+<li>Mas também seria possível analisar oligopólio ou concorrência monopolística.</li>
+</ul></li>
+</ul>
+</section>
+<section id="monopólio-1" class="slide level2">
+<h2>Monopólio</h2>
+<ul>
+<li>Vamos denotar <span class="math inline">\(P(X)\)</span> como a demanda inversa pelo produto final.</li>
+<li>Como só há uma firma, emissão individual é <span class="math inline">\(E\)</span>.</li>
+<li>Qual é o problema do monopolista (com imposto)?</li>
+</ul>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\max_{X,E} Π\left(X,E\right)=P\left(X\right)X-C\left(X,E\right)-\tau E\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Qual é a decisão ótima do monopolista?</span></li>
+</ul>
+<div class="eq-block fragment" data-fragment-index="2">
+<p><span class="math display">\[{P}^{′}\left({X}^{m}\right){X}^{m}+P\left({X}^{m}\right)={C}_{X}\left({X}^{m},{E}^{m}\right)\]</span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="2">
+<p><span class="math display">\[-{C}_{E}({X}^{m},{E}^{m})=\tau\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="3">A segunda CPO é <strong>idêntica</strong> à da firma competitiva.</span></p>
+</div>
+</section>
+<section id="solução-de-pareto-para-monopólio" class="slide level2">
+<h2>Solução de Pareto para Monopólio</h2>
+<ul>
+<li>Vejamos como seria a solução eficiente para o caso de monopólio.
+<ul>
+<li>Note que há duas falhas de mercado aqui: <strong>concorrência imperfeita e externalidades</strong>.</li>
+</ul></li>
+<li>Novamente, maximizaremos bem-estar total:</li>
+</ul>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\max_{X,E} W\left(X,E\right) = \int_{0}^{X} P\left(t\right)dt-C\left(X,E\right)-D\left(E\right)\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">CPOs:</span></p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[P\left({X}^{*}\right)={C}_{X}\left({X}^{*},{E}^{*}\right) \qquad {D}^{′}\left(E\right)=-{C}_{E}\left({X}^{*},{E}^{*}\right)\]</span></p>
+</div>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="2">São as mesmas duas condições do caso competitivo. O regulador quer <span class="math inline">\(P(X)\)</span>, e o monopolista entrega <span class="math inline">\({P}^{′}(X)X+P(X)\)</span>.</span></p>
+</div>
+</section>
+<section id="o-mesmo-imposto-e-metade-da-produção" class="slide level2">
+<h2>O mesmo imposto, e metade da produção</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-monopolio.svg" style="max-height:306px"></p>
+</div>
+<ul>
+<li>O custo marginal de produzir fica constante em <span class="math inline">\(c+\delta \tau =60\)</span>.</li>
+<li>Produzir 50 em vez de 100 desloca curva de abatimento para baixo. Aqui, está atuando a premissa <span class="math inline">\(-{C}_{ex}&gt;0\)</span> em funcionamento.</li>
+<li>Monopólio <strong>polui menos</strong> do que o ótimo sob <span class="math inline">\({\tau }^{*}\)</span>. Poluição fica em <span class="math inline">\({E}^{m}=25\)</span>, onde abater custa 25 e evita só 5 de dano.</li>
+</ul>
+</section>
+<section id="eficiência-apenas-com-imposto" class="slide level2">
+<h2>Eficiência apenas com imposto?</h2>
+<p>É possível alcançar a solução ótima <span class="math inline">\(({X}^{*},{E}^{*})\)</span> apenas com um imposto <span class="math inline">\(\tau\)</span>? - Para isso, denote <span class="math inline">\({X}^{m}(\tau )\)</span> e <span class="math inline">\({E}^{m}(\tau )\)</span> como as escolhas do monopolista em função do nível de <span class="math inline">\(\tau\)</span>. Regulador define <span class="math inline">\(\tau\)</span> para maximizar</p>
+<div class="eq-block">
+<p><span class="math display">\[\max_{\tau} W\left[{X}^{m}\left(\tau \right),{E}^{m}\left(\tau \right)\right]\]</span></p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[= \int_{0}^{{X}^{m}(\tau )} P\left(t\right)dt-C\left[{X}^{m}\left(\tau \right),{E}^{m}\left(\tau \right)\right]-D\left({E}^{m}\left(\tau \right)\right)\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Note que o regulador tem <strong>um</strong> instrumento e <strong>duas</strong> margens a corrigir.</p>
+</div>
+</section>
+<section id="eficiência-apenas-com-imposto-1" class="slide level2">
+<h2>Eficiência apenas com imposto?</h2>
+<ul>
+<li>Neste caso, o imposto vai ser diferente do dano marginal, que seria o imposto eficiente:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[{\tau }^{m}={D}^{′}\left({E}^{m}\right)+{P}^{′}\left({X}^{m}\right){X}^{m}\frac{\frac{\partial {X}^{m}}{\partial \tau }}{\frac{\partial {E}^{m}}{\partial \tau }} \neq {D}^{′}\left({E}^{*}\right)={\tau }^{*}\]</span></p>
+</div>
+<ul>
+<li>Na verdade, é possível mostrar algebricamente que <span class="math inline">\(\frac{\frac{\partial {X}^{m}}{\partial \tau }}{\frac{\partial {E}^{m}}{\partial \tau }}&gt;0\)</span>.</li>
+<li>Ou seja, imposto vai ser menor do que o eficiente: <span class="math inline">\({\tau }^{m}&lt;{\tau }^{*}\)</span>.</li>
+</ul>
+</section>
+<section id="eficiência-apenas-com-imposto-2" class="slide level2">
+<h2>Eficiência apenas com imposto?</h2>
+<div class="no-bullet">
+<p>Lembrando que <span class="math inline">\({P}^{′}\left(X\right)&lt;0\)</span>, note que:</p>
+</div>
+<ul>
+<li><strong>Se</strong> <span class="math inline">\(|{P}^{′}\left({X}^{m})\right|\)</span> <strong>é pequeno</strong> (demanda mais elástica), imposto se aproxima do ótimo.</li>
+<li><strong>Se</strong> <span class="math inline">\(|{P}^{′}\left({X}^{m})\right|\)</span> <strong>é grande</strong> (demanda inelástica), distorção do poder de mercado é maior e imposto fica mais longe do ótimo.</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[{\tau }^{m}={D}^{′}\left({E}^{m}\right)+{P}^{′}\left({X}^{m}\right){X}^{m}\frac{\frac{\partial {X}^{m}}{\partial \tau }}{\frac{\partial {E}^{m}}{\partial \tau }}\]</span></p>
+</div>
+</section>
+<section id="qual-alíquota-então" class="slide level2">
+<h2>Qual alíquota então?</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-imposto.svg" style="max-height:266px"></p>
+</div>
+<ul>
+<li>Com os números desta aula, o melhor imposto sozinho é <span class="math inline">\({\tau }^{m}=8{,}3\)</span>, e ainda assim sobra perda de 1.000.</li>
+<li>Se usarmos a alíquota do mundo competitivo, <span class="math inline">\({\tau }^{*}=25\)</span>, a perda é de 2.250: <strong>pior do que não cobrar imposto nenhum</strong>, que perderia 1.312,5.</li>
+<li><span class="fragment" data-fragment-index="2">Na verdade, acima da alíquota de 16,7, a perda sob monopólio desregulado é menor do que a perda com imposto.</span></li>
+</ul>
+</section>
+<section id="subsídio-à-produção-do-bem-final" class="slide level2">
+<h2>Subsídio à Produção do Bem Final</h2>
+<ul>
+<li>Conclusão é que apenas um imposto sobre emissões <strong>não é suficiente</strong> para atingir Ótimo de Pareto.</li>
+<li>Para atingir níveis eficientes de <span class="math inline">\(X\)</span> e <span class="math inline">\(E\)</span>, precisamos de um instrumento adicional.
+<ul>
+<li>Subsídio à produção de <span class="math inline">\(X\)</span>.</li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">Do curso de Microeconomia, sabemos que monopólios tendem a produzir menos do que o ótimo para aumentar preço.</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Ao subsidiar produção de <span class="math inline">\(X\)</span>, é possível incentivar nível socialmente ótimo.</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="subsídio-à-produção-do-bem-final-1" class="slide level2">
+<h2>Subsídio à Produção do Bem Final</h2>
+<ul>
+<li>Defina <span class="math inline">\(\psi\)</span> como o subsídio à produção de <span class="math inline">\(X\)</span>.</li>
+<li>Novo problema do monopolista será:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\max_{X,E} Π\left(X,E\right)=\left[P\left(X\right)+\psi \right]X-C\left(X,E\right)-\tau E\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Cujas CPOs são:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[{P}^{′}\left({X}^{m}\right){X}^{m}+P\left({X}^{m}\right)+\psi ={C}_{X}\left({X}^{m},{E}^{m}\right)\]</span></p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[-{C}_{E}({X}^{m},{E}^{m})=\tau\]</span></p>
+</div>
+</section>
+<section id="subsídio-à-produção-do-bem-final-2" class="slide level2">
+<h2>Subsídio à Produção do Bem Final</h2>
+<ul>
+<li>Se definirmos <span class="math inline">\(\psi =-{P}^{′}\left({X}^{*}\right){X}^{*}\)</span> e <span class="math inline">\(\tau ={D}^{′}\left({E}^{*}\right)\)</span>, teremos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[P\left(X\right)+{P}^{′}\left(X\right)X-{P}^{′}\left({X}^{*}\right){X}^{*}={C}_{X}\left(X,E\right)\]</span></p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[-{C}_{E}\left(X,E\right)={D}^{′}({E}^{*})\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Duas falhas de mercado, dois instrumentos: <span class="math inline">\(\tau\)</span> cuida da externalidade e <span class="math inline">\(\psi\)</span> cuida do poder de mercado.</p>
+</div>
+</section>
+<section id="duas-falhas-dois-instrumentos" class="slide level2">
+<h2>Duas falhas, dois instrumentos</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-subsidio.svg" style="max-height:300px"></p>
+</div>
+<ul>
+<li>Com <span class="math inline">\(\psi =-P′({X}^{*}){X}^{*}=100\)</span>, a receita marginal sobe exatamente o tanto que o poder de mercado tinha derrubado.</li>
+<li>Com a produção de volta em 100, a curva de abatimento volta ao lugar, e o mesmo <span class="math inline">\({\tau }^{*}=25\)</span> agora entrega <span class="math inline">\({E}^{*}=125\)</span>.</li>
+<li>Entretanto, defender um subsídio a monopólios tende a ser politicamente difícil.</li>
+</ul>
+</section>
+<section id="exercício-fábrica-monopolista" class="slide level2">
+<h2>Exercício: fábrica monopolista</h2>
+<div class="no-bullet">
+<p>Uma única fábrica vende lotes de um produto. Cada lote emite 2 t, e cada tonelada causa R$ 15 mil de dano. Produzir um lote custa R$ 30 mil.</p>
+</div>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>lote</th>
+<th>1º</th>
+<th>2º</th>
+<th>3º</th>
+<th>4º</th>
+<th>5º</th>
+<th>6º</th>
+<th>7º</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Disposição a pagar</td>
+<td>95</td>
+<td>85</td>
+<td>75</td>
+<td>65</td>
+<td>55</td>
+<td>45</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>Receita marginal</td>
+<td>95</td>
+<td>75</td>
+<td>55</td>
+<td>35</td>
+<td>15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><strong>(a)</strong> Quantos lotes o regulador quer que sejam produzidos?</li>
+<li><strong>(b)</strong> Quantos lotes a fábrica produz sem política nenhuma?</li>
+<li><strong>(c)</strong> E se ela pagar um imposto igual ao dano marginal, R$ 30 mil por lote?</li>
+<li><strong>(d)</strong> E se, junto com o imposto, ela receber R$ 40 mil de subsídio por lote?</li>
+</ul>
+</section>
+<section id="solução" class="slide level2">
+<h2>Solução</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-exercicio.svg" style="max-height:305px"></p>
+</div>
+<ul>
+<li><strong>(a)</strong> Vale produzir enquanto a disposição a pagar cobre o custo social de 60: são <strong>4 lotes</strong>.</li>
+<li><span class="fragment" data-fragment-index="1"><strong>(b)</strong> A fábrica produz enquanto a receita marginal cobre os 30 de custo: são <strong>4 lotes</strong> também.</span></li>
+<li><span class="fragment" data-fragment-index="2"><strong>(c)</strong> Com o imposto, ela compara a receita marginal com 60 e para em <strong>2 lotes</strong>.</span></li>
+<li><span class="fragment" data-fragment-index="3"><strong>(d)</strong> Com o subsídio de 40, a receita marginal sobe e ela volta aos <strong>4 lotes</strong>.</span></li>
+</ul>
+</section>
+<section id="imposto-correto-no-mercado-errado" class="slide level2">
+<h2>Imposto correto no mercado errado</h2>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Lotes</th>
+<th>Emissão</th>
+<th>Bem-estar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Eficiente</td>
+<td>4</td>
+<td>8 t</td>
+<td><strong>80</strong></td>
+</tr>
+<tr class="even">
+<td>Concorrência sem política</td>
+<td>7</td>
+<td>14 t</td>
+<td>35</td>
+</tr>
+<tr class="odd">
+<td>Monopólio sem política</td>
+<td>4</td>
+<td>8 t</td>
+<td><strong>80</strong></td>
+</tr>
+<tr class="even">
+<td>Monopólio com <span class="math inline">\(\tau =30\)</span></td>
+<td>2</td>
+<td>4 t</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>Monopólio com <span class="math inline">\(\tau =30\)</span> e <span class="math inline">\(\psi =40\)</span></td>
+<td>4</td>
+<td>8 t</td>
+<td><strong>80</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Sob concorrência, falta de regulação custa 45 de bem-estar. Sob monopólio, falta de regulação custa zero.</li>
+<li>O imposto que conserta a linha 2 é prejudicial na linha 3. É o mesmo imposto, mas o mercado é outro.</li>
+<li>Com o subsídio junto, o imposto volta a ser inofensivo.</li>
+</ul>
+</section>
+<section id="voltando-à-pergunta-da-abertura" class="slide level2">
+<h2>Voltando à pergunta da abertura</h2>
+<div class="no-bullet">
+<p><strong>Imposto de poluição em mercado com apenas um produtor.</strong></p>
+</div>
+<div class="opcoes">
+<ul>
+<li><p>A resposta é <strong>(c)</strong>: o bem-estar pode cair, como vimos.</p></li>
+<li><p>O monopolista já restringe a produção, e restringir produção é abater. O imposto induz produção ainda menor.</p></li>
+<li><p>Quanto menos elástica a demanda, maior a distorção que o imposto agrava.</p></li>
+</ul>
+</div>
+<div class="no-bullet">
+<p>Isso não quer dizer que se deva deixar o monopolista em paz, mas, sim, que a alíquota correta é menor do que no mercado competitivo.</p>
+</div>
+</section>
+<section id="concluindo" class="slide level2">
+<h2>Concluindo</h2>
+<ul>
+<li>A função-custo <span class="math inline">\(C(x,e)\)</span> liga produção e poluição: para cada <span class="math inline">\(x\)</span> há um <span class="math inline">\({ê}^{x}\)</span>, e abater fica mais caro quando se produz mais.</li>
+<li>Sob concorrência, um instrumento só (imposto ou permissões) atende às duas condições do ótimo de Pareto.</li>
+<li>Sob monopólio há <strong>duas</strong> falhas de mercado, e um imposto sozinho não dá conta e pode ser bem menor: <span class="math inline">\({\tau }^{m}&lt;{\tau }^{*}\)</span>.</li>
+<li>O par <span class="math inline">\(\tau ={D}^{′}({E}^{*})\)</span> e <span class="math inline">\(\psi =-{P}^{′}({X}^{*}){X}^{*}\)</span> alcança o ótimo, mas subsidiar monopolista é politicamente difícil.</li>
+<li>Portanto, second-best usando apenas imposto <span class="math inline">\(\tau\)</span> pode ser a <strong>melhor solução dentre as alternativas factíveis</strong>.</li>
+</ul>
+</section>
+<section id="referências" class="slide level2 smaller scrollable">
+<h2>Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-phaneuf2017" class="csl-entry" role="listitem">
+Phaneuf, Daniel J., e Till Requate. 2017. <em>A Course in Environmental Economics: Theory, Policy, and Practice</em>. Cambridge University Press.
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/rpucci-usp\.github\.io\/eae1317\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
