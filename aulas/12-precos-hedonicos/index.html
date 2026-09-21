@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Rafael Pucci">
+  <meta name="dcterms.date" content="2026-09-24">
+  <title>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais – Preços Hedônicos</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../_assets/styles.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Preços Hedônicos</h1>
+  <p class="subtitle">EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rafael Pucci 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-09-24</p>
+</section>
+<section id="um-apartamento-perto-do-parque-custa-15-mais" class="slide level2">
+<h2>Um apartamento perto do parque custa 15% mais</h2>
+<div class="no-bullet">
+<p>Dois apartamentos, mesma metragem, mesmo número de quartos, mesmo andar. Um fica a 500 metros de um parque e custa 15% mais caro que o outro. O que esses 15% medem?</p>
+</div>
+<div class="opcoes">
+<p><strong>(a)</strong> A disposição a pagar pelo parque de quem comprou o apartamento perto dele.</p>
+<p><strong>(b)</strong> A disposição a pagar média da cidade pelo parque.</p>
+<p><strong>(c)</strong> Nada em particular: bairros com parque costumam ser melhores em tudo, e os 15% podem ser as outras coisas.</p>
+</div>
+</section>
+<section id="aula-passada" class="slide level2">
+<h2>Aula Passada</h2>
+<ul>
+<li>Revisão: Medidas de Bem-Estar
+<ul>
+<li>Demandas Marshalliana e Hicksiana</li>
+<li>Variação Compensada e Variação Equivalente</li>
+</ul></li>
+<li>Como Medir Valor de Bens Ambientais
+<ul>
+<li>Peculiaridade de Bens Ambientais</li>
+</ul></li>
+<li>Medidas Indiretas
+<ul>
+<li>Preferência Revelada</li>
+<li>Bens Complementares</li>
+<li>Bens Substitutos</li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p>Referência: Phaneuf e Requate, caps. 14 e 15</p>
+</div>
+</section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Bens com qualidade diferenciada
+<ul>
+<li>Distribuição Observada</li>
+</ul></li>
+<li>Modelo de Preços Hedônicos
+<ul>
+<li>Premissas</li>
+<li>Demanda</li>
+<li>Oferta</li>
+<li>Pontos de Equilíbrio</li>
+</ul></li>
+<li>Estimando Disposição Marginal a Pagar
+<ul>
+<li>Modelo Econométrico</li>
+<li>Aplicações</li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p>Referência: Phaneuf e Requate, caps. 15 e 18</p>
+</div>
+</section>
+<section id="onde-estamos-no-curso" class="slide level2">
+<h2>Onde estamos no curso</h2>
+<div class="step-map">
+<div class="step">
+<p><strong>1. Complementares.</strong> O valor da praia aparece no gasto com a viagem.</p>
+</div>
+<div class="step">
+<p><strong>2. Substitutos.</strong> O valor do ar aparece no gasto com o purificador.</p>
+</div>
+<div class="step now">
+<p><strong>3. Diferenciados.</strong> O valor do ar aparece <strong>dentro</strong> do preço do apartamento, que já tem mercado.</p>
+</div>
+<div class="step now">
+<p><strong>4. E daí o problema é outro:</strong> separar o que é o ar do que é o bairro.</p>
+</div>
+</div>
+</section>
+<section id="bens-com-qualidade-diferenciada" class="slide level2 section-cover">
+<h2>Bens com Qualidade Diferenciada</h2>
+</section>
+<section id="bens-com-qualidade-diferenciada-1" class="slide level2">
+<h2>Bens com Qualidade Diferenciada</h2>
+<div class="no-bullet">
+<p>Estudaremos agora o caso em que o bem ambiental afeta o preço do bem privado.</p>
+</div>
+<div class="no-bullet">
+<p><strong>Exemplo 1:</strong> mercado imobiliário.</p>
+</div>
+<ul>
+<li>Preço de apartamento depende de metragem, nº de quartos, andar.</li>
+<li>Mas também de proximidade do metrô, centro da cidade.</li>
+<li>E, ainda, da qualidade do ar no local, proximidade a um lixão, a um rio poluído etc.</li>
+</ul>
+<div class="no-bullet">
+<p><strong>Exemplo 2:</strong> salário.</p>
+</div>
+<ul>
+<li>Salário que trabalhador aceita depende de várias coisas.</li>
+<li>Depende do tipo de trabalho, do esforço esperado.</li>
+<li>Mas também das condições de trabalho: riscos à saúde, qualidade do ar no local e outras possíveis insalubridades.</li>
+</ul>
+</section>
+<section id="bens-com-qualidade-diferenciada-2" class="slide level2">
+<h2>Bens com Qualidade Diferenciada</h2>
+<div class="no-bullet">
+<p>A diferença deste caso com os dois anteriores é que, agora, o consumidor está comprando (indiretamente) o bem ambiental.</p>
+</div>
+<div class="no-bullet">
+<p>No que segue, trataremos de um modelo teórico para fundamentar o <strong>modelo empírico de preços hedônicos</strong>.</p>
+</div>
+<ul>
+<li>Na aula passada, o gasto com a viagem e o gasto com o purificador eram pistas <strong>ao lado</strong> do bem ambiental.</li>
+<li>Aqui o bem ambiental está <strong>dentro</strong> do preço, e a tarefa é extraí-lo de lá.</li>
+</ul>
+</section>
+<section id="distribuição-observada" class="slide level2">
+<h2>Distribuição Observada</h2>
+<div class="no-bullet">
+<p>Preço por metro quadrado (valor venal) em 2019 e distância ao Ibirapuera.</p>
+</div>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-ibirapuera.png" style="max-height:470px"></p>
+</div>
+</section>
+<section id="distribuição-observada-1" class="slide level2">
+<h2>Distribuição Observada</h2>
+<ul>
+<li>O preço cai com a distância ao parque, e a queda é bem visível.</li>
+<li><strong>Mas por quê?</strong> O parque em si, ou o que costuma vir junto com um parque?</li>
+<li><span class="fragment" data-fragment-index="1">Segurança, escola, metrô, restaurante, vizinho rico.</span></li>
+<li><span class="fragment" data-fragment-index="2">Esse é o problema da aula inteira, e vamos precisar do modelo antes de atacá-lo.</span></li>
+</ul>
+</section>
+<section id="seis-apartamentos-e-uma-tabela-de-preços" class="slide level2">
+<h2>Seis apartamentos e uma tabela de preços</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-menu-1.svg" style="height:430px;max-height:430px"></p>
+</div>
+<ul>
+<li>Para montar a intuição, um mercado de brinquedo: seis apartamentos idênticos em tudo, menos na qualidade do ar <span class="math inline">\(q\)</span> do quarteirão.</li>
+<li>Os preços estão aí. O que este desenho diz sobre quanto vale o ar limpo?</li>
+</ul>
+</section>
+<section id="o-cardápio-do-mercado" class="slide level2">
+<h2>O cardápio do mercado</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-menu-2.svg" style="height:430px;max-height:430px"></p>
+</div>
+<ul>
+<li>Ligando os pontos, sai a <strong>função de preços hedônicos</strong> <span class="math inline">\(P(q)\)</span>.</li>
+<li>Note o que ela faz: dois pontos de qualidade custam R$ 4 mil embaixo e R$ 36 mil em cima.</li>
+</ul>
+</section>
+<section id="parece-uma-curva-de-demanda-e-não-é" class="slide level2">
+<h2>Parece uma curva de demanda, e não é</h2>
+<div class="no-bullet">
+<p>Se <span class="math inline">\(P(q)\)</span> fosse uma demanda inversa por qualidade do ar, ela estaria dizendo que as pessoas pagam <strong>mais</strong> por unidade quanto <strong>mais</strong> ar limpo já têm. Isso contraria tudo o que este curso fez desde a aula 02.</p>
+</div>
+<ul>
+<li><span class="math inline">\(P(q)\)</span> <strong>não é</strong> a demanda de ninguém, nem a oferta de ninguém.</li>
+<li><span class="math inline">\(P(q)\)</span> <strong>é</strong> o cardápio: o que o mercado cobra hoje por cada nível de <span class="math inline">\(q\)</span>.</li>
+<li>Nenhum comprador e nenhum vendedor escolhe <span class="math inline">\(P(q)\)</span>. Todos a tomam como dada e escolhem <strong>um ponto</strong> dela.</li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">O que ela tem de útil é a <strong>inclinação no ponto que alguém escolheu</strong>.</span></p>
+</div>
+</section>
+<section id="o-cardápio-do-café" class="slide level2">
+<h2>O cardápio do café</h2>
+<div class="no-bullet">
+<p>A padaria cobra R$ 6 pelo café pequeno, R$ 8 pelo médio e R$ 11 pelo grande. Você pede o médio.</p>
+</div>
+<ul>
+<li>O cardápio tem inclinação crescente: o segundo aumento de tamanho custa mais que o primeiro.</li>
+<li>Isso não diz nada sobre o seu apetite. Diz sobre a padaria.</li>
+<li><span class="fragment" data-fragment-index="1">O que a <strong>sua escolha</strong> revela: passar de pequeno a médio vale mais de R$ 2 para você, e passar de médio a grande vale menos de R$ 3.</span></li>
+<li><span class="fragment" data-fragment-index="2">É exatamente isso que o modelo hedônico faz, com apartamentos no lugar de cafés e ar limpo no lugar de mililitros.</span></li>
+</ul>
+</section>
+<section id="premissas" class="slide level2">
+<h2>Premissas</h2>
+<ul>
+<li>Assume-se que um imóvel possa ser totalmente descrito por um vetor finito de características e um termo para o bem ambiental.
+<ul>
+<li>O vetor <span class="math inline">\(x\)</span> inclui <span class="math inline">\(J\)</span> características.</li>
+<li>O valor <span class="math inline">\(q\)</span> corresponde ao bem ambiental.</li>
+</ul></li>
+<li>As preferências dos consumidores são em relação aos atributos, não ao bem imóvel em si.</li>
+<li>O preço do imóvel é uma função <span class="math inline">\(P(x,q)\)</span>.</li>
+</ul>
+</section>
+<section id="demanda" class="slide level2 section-cover">
+<h2>Demanda</h2>
+</section>
+<section id="demanda-1" class="slide level2">
+<h2>Demanda</h2>
+<ul>
+<li>O consumidor maximiza utilidade <span class="math inline">\(U(x,q,z,s)\)</span>.
+<ul>
+<li><span class="math inline">\(x\)</span> é o vetor de características não-ambientais;</li>
+<li><span class="math inline">\(q\)</span> é o bem ambiental;</li>
+<li><span class="math inline">\(z\)</span> é o bem numerário;</li>
+<li><span class="math inline">\(s\)</span> representa características pessoais de cada consumidor (preferências heterogêneas).</li>
+</ul></li>
+<li>A restrição orçamentária é dada por <span class="math inline">\(y=P\left(x,q\right)+z\)</span>.</li>
+<li>O consumidor resolve:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\max_{x,q,z} U(x,q,z,s) \text{ s.a. } y=P\left(x,q\right)+z\]</span></p>
+</div>
+</section>
+<section id="demanda-2" class="slide level2">
+<h2>Demanda</h2>
+<ul>
+<li>Note que o consumidor pode escolher o valor de <span class="math inline">\(q\)</span>.</li>
+<li>Note, também, que qualquer combinação de <span class="math inline">\(x\)</span> e <span class="math inline">\(q\)</span> é possível.
+<ul>
+<li>Isto é uma abstração: nem sempre é possível escolher cada característica separadamente.</li>
+</ul></li>
+<li>Condições de primeira ordem são:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\partial U\left(x,q,z,s\right)}{\partial {x}_{j}}=\lambda \frac{\partial P\left(x,q\right)}{\partial {x}_{j}} \qquad \frac{\partial U\left(x,q,z,s\right)}{\partial q}=\lambda \frac{\partial P\left(x,q\right)}{\partial q} \qquad \frac{\partial U\left(x,q,z,s\right)}{\partial z}=\lambda\]</span></p>
+</div>
+</section>
+<section id="demanda-3" class="slide level2">
+<h2>Demanda</h2>
+<ul>
+<li>Combinando as 2 últimas CPOs, temos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\partial U\left(x,q,z,s\right)/\partial q}{\partial U\left(x,q,z,s\right)/\partial z} = \frac{\partial P\left(x,q\right)}{\partial q}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>À esquerda, a <strong>disposição marginal a pagar por <span class="math inline">\(q\)</span></strong>. À direita, o <strong>preço marginal implícito de <span class="math inline">\(q\)</span></strong>.</p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Esta é a equação da aula inteira, e ela é uma igualdade entre uma coisa que ninguém observa e uma coisa que se estima com dados de cartório.</span></li>
+</ul>
+</section>
+<section id="demanda-4" class="slide level2">
+<h2>Demanda</h2>
+<ul>
+<li>Considere um nível de utilidade de referência <span class="math inline">\(\overline{u}\)</span>.</li>
+<li>Defina uma quantidade <span class="math inline">\(b\)</span> a ser gasta com o imóvel de modo que <span class="math inline">\(z=y-b\)</span>.</li>
+<li>Assim, teremos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\overline{u}=U(x,q,y-b,s)\]</span></p>
+</div>
+<ul>
+<li>Finalmente, podemos inverter a função para obtermos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[y-b={U}^{-1}(x,q,\overline{u},s)\]</span></p>
+</div>
+</section>
+<section id="demanda-5" class="slide level2">
+<h2>Demanda</h2>
+<ul>
+<li>O objetivo desta manipulação é definir uma “bid function” <span class="math inline">\(b\left(x,q,y,s,\overline{u}\right)\)</span>.
+<ul>
+<li>É o lance (oferta) que o comprador fará ao vendedor de um imóvel.</li>
+</ul></li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[b\left(x,q,y,s,\overline{u}\right)=y-{U}^{-1}(x,q,\overline{u},s)\]</span></p>
+</div>
+<ul>
+<li>Por fim, se diferenciarmos <span class="math inline">\(\overline{u}=U[x,q,y-b\left(x,q,y,s,\overline{u}\right),s]\)</span> em relação a <span class="math inline">\(q\)</span>, teremos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[0=\frac{\partial U}{\partial q}-\frac{\partial U}{\partial z}\frac{\partial b}{\partial q}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>(Lembrando que <span class="math inline">\(z=y-b\)</span>.)</p>
+</div>
+</section>
+<section id="demanda-6" class="slide level2">
+<h2>Demanda</h2>
+<ul>
+<li>Rearranjando os termos, chegamos a:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\partial U/\partial q}{\partial U/\partial z} = \frac{\partial b\left(x,q,y,s,\overline{u}\right)}{\partial q} = \frac{\partial P}{\partial q}\]</span></p>
+</div>
+<div class="no-bullet">
+<p>Ou seja, conseguimos estimar a <strong>disposição marginal a pagar por <span class="math inline">\(q\)</span></strong> para um nível de referência fixo de utilidade <span class="math inline">\(\overline{u}\)</span>.</p>
+</div>
+</section>
+<section id="as-curvas-de-lance-do-consumidor-1" class="slide level2">
+<h2>As curvas de lance do consumidor 1</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-lance-1.svg" style="height:410px;max-height:410px"></p>
+</div>
+<ul>
+<li>Cada curva de lance liga as combinações de <span class="math inline">\(q\)</span> e <strong>gasto com o imóvel</strong> que deixam o consumidor na mesma utilidade.</li>
+<li>Cuidado com a leitura: o eixo vertical é <strong>gasto</strong>, então curva mais <strong>baixa</strong> é utilidade mais <strong>alta</strong>.</li>
+<li>A curva mais baixa de todas não é alcançável: nenhum apartamento é vendido por aquele preço.</li>
+</ul>
+</section>
+<section id="ele-para-onde-o-lance-encosta-no-cardápio" class="slide level2">
+<h2>Ele para onde o lance encosta no cardápio</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-lance-2.svg" style="height:420px;max-height:420px"></p>
+</div>
+<ul>
+<li>A melhor curva alcançável é a que <strong>tangencia</strong> o cardápio, e a tangência é a escolha: <span class="math inline">\(q=4\)</span>, ao preço de R$ 316 mil.</li>
+<li>No ponto de tangência, <span class="math inline">\(\partial b/\partial q = \partial P/\partial q = 8\)</span>.</li>
+<li>É a mesma equação do slide anterior, agora como um desenho.</li>
+</ul>
+</section>
+<section id="dois-consumidores-dois-pontos-o-mesmo-cardápio" class="slide level2">
+<h2>Dois consumidores, dois pontos, o mesmo cardápio</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-lance-3.svg" style="height:430px;max-height:430px"></p>
+</div>
+<ul>
+<li>O consumidor 2 valoriza mais a qualidade do ar, e por isso encosta no cardápio mais adiante: <span class="math inline">\(q=6\)</span>, a R$ 336 mil.</li>
+<li>Os dois enfrentam <strong>o mesmo</strong> cardápio e leem dele números diferentes: 8 e 12.</li>
+</ul>
+</section>
+<section id="oferta" class="slide level2 section-cover">
+<h2>Oferta</h2>
+</section>
+<section id="oferta-1" class="slide level2">
+<h2>Oferta</h2>
+<ul>
+<li>E a oferta de imóveis?</li>
+<li>Suponha que uma firma produza cada imóvel a um custo <span class="math inline">\(C(x,q,v)\)</span>.
+<ul>
+<li><span class="math inline">\(v\)</span> representa características individuais da firma.</li>
+</ul></li>
+<li>O problema de maximização de lucro será:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\max_{x,q} \Pi =P\left(x,q\right)-C(x,q,v)\]</span></p>
+</div>
+<ul>
+<li>Com CPOs <span class="math inline">\(\frac{\partial P}{\partial q}=\frac{\partial C}{\partial q}\)</span> e <span class="math inline">\(\frac{\partial P}{\partial {x}_{j}}=\frac{\partial C}{\partial {x}_{j}}\)</span>.</li>
+</ul>
+</section>
+<section id="oferta-2" class="slide level2">
+<h2>Oferta</h2>
+<ul>
+<li>Analogamente ao caso do consumidor, defina uma quantidade <span class="math inline">\(\theta\)</span> que a firma está disposta a aceitar pelo imóvel:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\overline{\Pi }=\theta -C(x,q,v)\]</span></p>
+</div>
+<ul>
+<li>Novamente, teremos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\partial \theta \left(x,q,v,\overline{\Pi }\right)}{\partial q}=\frac{\partial P}{\partial q}=\frac{\partial C}{\partial q}\]</span></p>
+</div>
+</section>
+<section id="as-curvas-de-oferta-encostam-por-cima" class="slide level2">
+<h2>As curvas de oferta encostam por cima</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-oferta.svg" style="height:420px;max-height:420px"></p>
+</div>
+<ul>
+<li><span class="math inline">\(\theta\)</span> é o que a firma precisa <strong>receber</strong> para manter o lucro, então curva mais <strong>alta</strong> é lucro mais <strong>alto</strong>.</li>
+<li>A melhor alcançável é, de novo, a tangente: a firma 1 entrega <span class="math inline">\(q=4\)</span> e a firma 2 entrega <span class="math inline">\(q=6\)</span>.</li>
+<li>É a imagem espelhada da página anterior.</li>
+</ul>
+</section>
+<section id="pontos-de-equilíbrio" class="slide level2">
+<h2>Pontos de Equilíbrio</h2>
+<ul>
+<li>Os pontos onde há transação entre, por exemplo, o indivíduo 1 e a firma 1 é dado por:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\frac{\partial b\left(x,q,y,{s}_{1},{u}^{0}\right)}{\partial q}=\frac{\partial \theta \left(x,q,{v}_{1},{\Pi }^{0} \right)}{\partial q}\]</span></p>
+</div>
+<ul>
+<li>Esse ponto vai estar associado a um determinado nível de <span class="math inline">\(q={q}_{1}\)</span>.
+<ul>
+<li>E a um valor <span class="math inline">\(P(x,{q}_{1})\)</span> pago pelo imóvel que tem <span class="math inline">\(q={q}_{1}\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="o-cardápio-é-o-que-sobra" class="slide level2">
+<h2>O cardápio é o que sobra</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-equilibrio.svg" style="height:420px;max-height:420px"></p>
+</div>
+<ul>
+<li>Cada comprador encosta por baixo, cada vendedor encosta por cima, e o cardápio passa exatamente por todos os pontos de encosto.</li>
+<li><strong>Ninguém escolheu <span class="math inline">\(P(q)\)</span>.</strong> Ela é a curva que faz todas as tangências valerem ao mesmo tempo, e o nome disso é envoltória <span class="citation" data-cites="rosen1974">(<a href="#/referências" role="doc-biblioref" onclick="">Rosen 1974</a>)</span>.</li>
+</ul>
+</section>
+<section id="o-cardápio-e-a-inclinação-dele" class="slide level2">
+<h2>O cardápio e a inclinação dele</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-implicito.svg" style="height:410px;max-height:410px"></p>
+</div>
+<ul>
+<li>À direita está <span class="math inline">\(P′(q)\)</span>, o preço implícito de um ponto a mais de qualidade.</li>
+<li>Ela sobe, e <strong>ninguém anda sobre ela</strong>: cada consumidor ocupa um ponto só, e é o dele.</li>
+<li>A demanda de cada consumidor por <span class="math inline">\(q\)</span>, aqui, é <strong>horizontal</strong>. A reta que sobe é a fila de consumidores, ordenada por quanto valorizam o ar limpo.</li>
+</ul>
+</section>
+<section id="estimando-disposição-marginal-a-pagar" class="slide level2 section-cover">
+<h2>Estimando Disposição Marginal a Pagar</h2>
+</section>
+<section id="estimando-disposição-marginal-a-pagar-1" class="slide level2">
+<h2>Estimando Disposição Marginal a Pagar</h2>
+<ul>
+<li>No fim, queremos estimar:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[MWTP=\frac{\partial P\left(x,q\right)}{\partial q}\]</span></p>
+</div>
+<ul>
+<li>Como?</li>
+</ul>
+</section>
+<section id="estimando-disposição-marginal-a-pagar-2" class="slide level2">
+<h2>Estimando Disposição Marginal a Pagar</h2>
+<ul>
+<li>Suponha que você tenha dados sobre o preço de cada imóvel na cidade e suas características.</li>
+<li>Suponha, ainda, que o preço é uma função linear das características.</li>
+<li>Então, temos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[{p}_{i}=f\left({X}_{i},{q}_{i},{\varepsilon }_{i},\beta \right)={\beta }_{0}+\sum_{j=1}^{J} {\beta }_{j}{x}_{j}+\alpha {q}_{i}+{\varepsilon }_{i}\]</span></p>
+</div>
+</section>
+<section id="estimando-disposição-marginal-a-pagar-3" class="slide level2">
+<h2>Estimando Disposição Marginal a Pagar</h2>
+<ul>
+<li>Qual é o parâmetro estimado de interesse?</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\alpha =\frac{\partial p}{\partial q}\]</span></p>
+</div>
+<ul>
+<li>Ao estimarmos o modelo, temos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[{\hat{p}}_{i}={\hat{\beta }}_{0}+\sum_{j=1}^{J} {\hat{\beta }}_{j}{x}_{j}+\hat{\alpha }{q}_{i}\]</span></p>
+</div>
+<ul>
+<li>E <span class="math inline">\(\hat{\alpha }\)</span> é a estimativa da disposição marginal a pagar por <span class="math inline">\(q\)</span>.</li>
+</ul>
+</section>
+<section id="de-quem-exatamente" class="slide level2">
+<h2>De quem, exatamente?</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-regressao.svg" style="height:410px;max-height:410px"></p>
+</div>
+<ul>
+<li>Rodando o MQO nos seis apartamentos do começo da aula, sai exatamente <strong>10</strong>.</li>
+<li>Mas o preço por ponto de qualidade vai de 2 a 18 ao longo da tabela, e 10 é o valor em <span class="math inline">\(q=5\)</span>, o meio da amostra.</li>
+<li><span class="math inline">\(\hat{\alpha }\)</span> é uma <strong>média</strong>, e ela é a disposição marginal a pagar de quem escolheu o meio do cardápio.</li>
+</ul>
+</section>
+<section id="as-duas-advertências-e-elas-são-diferentes" class="slide level2">
+<h2>As duas advertências, e elas são diferentes</h2>
+<div class="cmp">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>problema</th>
+<th>como se ataca</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interpretação</td>
+<td><span class="math inline">\(\hat{\alpha }\)</span> é o preço implícito no ponto médio, e não a demanda por <span class="math inline">\(q\)</span></td>
+<td>reconhecer que a medida é local e não extrapolar</td>
+</tr>
+<tr class="even">
+<td>Identificação</td>
+<td>o que está no <span class="math inline">\(\varepsilon\)</span> pode andar junto com <span class="math inline">\(q\)</span></td>
+<td>achar variação em <span class="math inline">\(q\)</span> que seja quase aleatória</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>O primeiro é um problema de <strong>leitura</strong>, e existe mesmo com dados perfeitos.</li>
+<li>O segundo é um problema de <strong>dados</strong>, e é o que derruba a maioria das estimativas hedônicas.</li>
+<li><span class="fragment" data-fragment-index="1">A alternativa (c) da votação de abertura é sobre o segundo.</span></li>
+</ul>
+</section>
+<section id="aplicação-i" class="slide level2">
+<h2>Aplicação I</h2>
+<div class="no-bullet">
+<p><span class="citation" data-cites="ramirez2022">(<a href="#/referências" role="doc-biblioref" onclick="">Ramírez-Juidías et al. 2022</a>)</span> estudam disposição a pagar para morar próximo a áreas verdes em Sevilha.</p>
+</div>
+<ul>
+<li>Mil anúncios de imóveis da cidade, com preço, área útil, número de cômodos, idade e banheiros.</li>
+<li>A variável ambiental é o tamanho da área verde próxima, medida com um sistema de informação geográfica.</li>
+</ul>
+</section>
+<section id="aplicação-i-1" class="slide level2">
+<h2>Aplicação I</h2>
+<ul>
+<li>Proximidade a áreas verdes aumenta valor da propriedade.</li>
+<li>Coeficiente é medida de disposição marginal a pagar por áreas verdes.</li>
+<li><span class="fragment" data-fragment-index="1">O trabalho compara várias formas funcionais, e quais variáveis importam depende do modelo escolhido.</span></li>
+<li><span class="fragment" data-fragment-index="2">Isso é uma pista do que vem nas próximas aplicações: a fragilidade não está na teoria, está no que sobra no erro.</span></li>
+</ul>
+</section>
+<section id="aplicação-ii" class="slide level2">
+<h2>Aplicação II</h2>
+<div class="no-bullet">
+<p><span class="citation" data-cites="chakraborty2023">(<a href="#/referências" role="doc-biblioref" onclick="">Sen Chakraborty et al. 2023</a>)</span> analisam o valor de estruturas para conter erosão do solo, na Nigéria.</p>
+</div>
+<ul>
+<li>Efeito no preço dos lotes agrícolas.</li>
+<li>Mede-se como esse valor varia dependendo da exposição dos lotes a climas mais úmidos.
+<ul>
+<li>Mais chuvas causam mais erosão, elevando o valor de tecnologias adaptativas.</li>
+</ul></li>
+<li>Dados de valor da terra declarados pelos próprios domicílios, na pesquisa de padrão de vida da Nigéria de 2015-2016 e 2018-2019.</li>
+</ul>
+</section>
+<section id="aplicação-ii-1" class="slide level2">
+<h2>Aplicação II</h2>
+<ul>
+<li>Controle de erosão tem valor maior em regiões com chuvas mais intensas.</li>
+<li>O preço implícito estimado é de cerca de <strong>26% do valor médio da terra</strong>, o equivalente a meio ano de renda de um domicílio agrícola nigeriano.</li>
+<li>Em locais com chuvas extremas, não parece haver efeito. Por quê?
+<ul>
+<li>Pode ser que controle de erosão seja impraticável nessas áreas.</li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p><span class="fragment" data-fragment-index="1">Repare que o preço implícito <strong>varia com o contexto</strong>. É exatamente o que a figura do cardápio previa: a inclinação não é um número só.</span></p>
+</div>
+</section>
+<section id="aplicação-iii" class="slide level2">
+<h2>Aplicação III</h2>
+<div class="no-bullet">
+<p><span class="citation" data-cites="greenstone2008">(<a href="#/referências" role="doc-biblioref" onclick="">Greenstone e Gallagher 2008</a>)</span> estudam disposição a pagar por morar perto de locais de descarte de lixo tóxico.</p>
+</div>
+<ul>
+<li>Exploram uma política de limpeza desses locais implementada na década de 1980 nos EUA, o programa Superfund.</li>
+<li>Ideia é que locais afetados pela limpeza experimentariam aumento de preço do imóvel.</li>
+<li>Este aumento poderia ser atribuído à eliminação da externalidade negativa.</li>
+<li><span class="fragment" data-fragment-index="1">Até 2000, cerca de US$ 30 bilhões já tinham sido gastos em limpezas, a um custo médio de US$ 43 milhões por local.</span></li>
+</ul>
+</section>
+<section id="aplicação-iii-1" class="slide level2">
+<h2>Aplicação III</h2>
+<ul>
+<li>Autores fazem primeiro uma regressão de preços hedônicos baseada na distância aos lixões tóxicos.</li>
+<li>Encontram que a limpeza aumentaria preço em cerca de <strong>7%</strong>.
+<ul>
+<li>Após controlar pelas características dos imóveis.</li>
+</ul></li>
+</ul>
+<div class="no-bullet">
+<p>É a estimativa que o modelo desta aula manda fazer, feita com cuidado. Ela parece resolver a questão.</p>
+</div>
+</section>
+<section id="aplicação-iii-2" class="slide level2">
+<h2>Aplicação III</h2>
+<ul>
+<li>Entretanto, há alguns problemas.
+<ul>
+<li>Primeiro, locais que receberam a política podem ser muito diferentes de outros lugares por diversos motivos.</li>
+<li>Segundo, as estimativas variam muito dependendo da amostra e dos controles escolhidos.</li>
+</ul></li>
+<li>Sendo assim, voltam-se para uma abordagem mais robusta.</li>
+</ul>
+</section>
+<section id="aplicação-iii-3" class="slide level2">
+<h2>Aplicação III</h2>
+<ul>
+<li>Aproveitam o fato de que a política criou quase-aleatoriedades.
+<ul>
+<li>Alguns locais foram “tratados” antes dos outros por conta de regra arbitrária.</li>
+</ul></li>
+<li>Com orçamento limitado, a Environmental Protection Agency (EPA) dos EUA selecionou os <strong>400 locais</strong> de descarte de lixo tóxico <strong>mais perigosos</strong>.
+<ul>
+<li>Estes locais foram priorizados para limpeza, deixando os outros para depois.</li>
+<li>São locais que receberam uma nota 28,5 ou mais na escala criada pela EPA.</li>
+</ul></li>
+<li>Ideia é comparar locais priorizados com os outros.
+<ul>
+<li>Provavelmente, são mais comparáveis do que locais que não precisam de limpeza.</li>
+</ul></li>
+</ul>
+</section>
+<section id="o-desenho-e-o-que-ele-achou" class="slide level2">
+<h2>O desenho, e o que ele achou</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-rdd.svg" style="height:430px;max-height:430px"></p>
+</div>
+<ul>
+<li>À esquerda, o que uma descontinuidade encontraria se a limpeza valorizasse os imóveis: um salto no corte de 28,5.</li>
+<li>À direita, o que os autores encontram: nada que se distinga de zero.</li>
+</ul>
+</section>
+<section id="aplicação-iii-4" class="slide level2">
+<h2>Aplicação III</h2>
+<ul>
+<li>Com abordagem mais robusta, encontram efeitos de cerca de <strong>4%</strong>.</li>
+<li>Com RDD, efeito local fica em torno de <strong>2%</strong>.</li>
+<li><span class="fragment" data-fragment-index="1"><strong>E nenhum dos dois é estatisticamente distinguível de zero.</strong> Quase duas décadas depois, não se rejeita que a limpeza não teve efeito nenhum sobre o preço.</span></li>
+<li><span class="fragment" data-fragment-index="2">Os benefícios medidos pelo mercado imobiliário ficam <strong>bem abaixo</strong> dos US$ 43 milhões de custo médio por limpeza.</span></li>
+</ul>
+</section>
+<section id="o-que-aconteceu-com-os-7" class="slide level2">
+<h2>O que aconteceu com os 7%</h2>
+<ul>
+<li>Os 7% da primeira regressão não eram o valor do lixão: eram tudo o que anda junto com um lixão e não estava nos controles.</li>
+<li>O corte de 28,5 substitui a comparação “perto de lixão contra longe de lixão” por “quase entrou na lista contra entrou raspando”.</li>
+<li><span class="fragment" data-fragment-index="1">Isso não diz que preços hedônicos não funcionam. Diz que <span class="math inline">\(\hat{\alpha }\)</span> só vale quando a variação em <span class="math inline">\(q\)</span> não carrega mais nada junto.</span></li>
+<li><span class="fragment" data-fragment-index="2">E há uma leitura alternativa, que os autores levantam: talvez os moradores simplesmente não acreditassem que a limpeza tivesse reduzido o risco.</span></li>
+</ul>
+</section>
+<section id="exercício-quem-compra-qual-apartamento" class="slide level2">
+<h2>Exercício: quem compra qual apartamento</h2>
+<div class="no-bullet">
+<p>Os seis apartamentos do começo da aula, com o preço em R$ mil. Quatro compradores, cada um valorizando <strong>cada ponto</strong> de qualidade do ar em <span class="math inline">\(s\)</span> mil reais, sempre o mesmo valor.</p>
+</div>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th><span class="math inline">\(q\)</span></th>
+<th>0</th>
+<th>2</th>
+<th>4</th>
+<th>6</th>
+<th>8</th>
+<th>10</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preço</td>
+<td>300</td>
+<td>304</td>
+<td>316</td>
+<td>336</td>
+<td>364</td>
+<td>400</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><strong>(a)</strong> Com <span class="math inline">\(s = 4, 8, 12\)</span> e <span class="math inline">\(16\)</span>, qual apartamento cada um leva?</li>
+<li><strong>(b)</strong> O comprador com <span class="math inline">\(s=12\)</span> está em qual apartamento? Vale a pena ele subir para <span class="math inline">\(q=8\)</span>?</li>
+<li><strong>(c)</strong> Você regride preço contra <span class="math inline">\(q\)</span> nos seis apartamentos. Que inclinação obtém?</li>
+<li><strong>(d)</strong> Essa inclinação é a disposição marginal a pagar de quem?</li>
+</ul>
+</section>
+<section id="solução" class="slide level2">
+<h2>Solução</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/12-exercicio.svg" style="max-height:300px"></p>
+</div>
+<ul>
+<li><strong>(a)</strong> Cada um para onde o degrau do cardápio passa a custar mais do que <span class="math inline">\(s\)</span> vale: <span class="math inline">\(q = 2, 4, 6\)</span> e <span class="math inline">\(8\)</span>, a 304, 316, 336 e 364.</li>
+<li><span class="fragment" data-fragment-index="1"><strong>(b)</strong> Ele está em <span class="math inline">\(q=6\)</span>. Subir para 8 lhe entrega <span class="math inline">\(12\times 2=24\)</span> e custa <span class="math inline">\(364-336=28\)</span>. <strong>Não vale</strong>, e ele fica onde está.</span></li>
+<li><span class="fragment" data-fragment-index="2"><strong>(c)</strong> A inclinação de MQO é exatamente <strong>10</strong>.</span></li>
+<li><span class="fragment" data-fragment-index="3"><strong>(d)</strong> De ninguém desses quatro. É o preço implícito em <span class="math inline">\(q=5\)</span>, e nenhum comprador está lá.</span></li>
+</ul>
+</section>
+<section id="o-que-o-exercício-mostra" class="slide level2">
+<h2>O que o exercício mostra</h2>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>comprador</th>
+<th><span class="math inline">\(s\)</span></th>
+<th>compra <span class="math inline">\(q\)</span></th>
+<th>paga</th>
+<th><span class="math inline">\(P′(q)\)</span> no ponto dele</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>304</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>8</td>
+<td>4</td>
+<td>316</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>12</td>
+<td>6</td>
+<td>336</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>16</td>
+<td>8</td>
+<td>364</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td><strong>MQO</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>A coluna da direita bate com a de <span class="math inline">\(s\)</span> em todas as linhas: o modelo funciona, e a tangência entrega a disposição marginal a pagar de cada um.</li>
+<li>O 10 da última linha não bate com ninguém, e também não está errado: é a média ponderada dos quatro, e é o que uma regressão linear devolve.</li>
+<li><strong>É por isso que o efeito de RDD de Greenstone e Gallagher é local.</strong> Ele vale perto do corte, e não para a cidade inteira.</li>
+</ul>
+</section>
+<section id="voltando-à-pergunta-da-abertura" class="slide level2">
+<h2>Voltando à pergunta da abertura</h2>
+<div class="no-bullet">
+<p><strong>O apartamento perto do parque custa 15% mais. O que esses 15% medem?</strong></p>
+</div>
+<div class="opcoes">
+<ul>
+<li><p>Se a proximidade do parque fosse a única coisa diferente entre os dois imóveis, a resposta seria <strong>(a)</strong>: a disposição marginal a pagar de quem escolheu morar ali.</p></li>
+<li><p>Nunca seria <strong>(b)</strong>: a média da cidade exigiria conhecer as curvas de lance de todo mundo, e a regressão só entrega tangências.</p></li>
+<li><p>Na prática, quase sempre é <strong>(c)</strong> em parte, e o resto da aula foi sobre como saber quanto.</p></li>
+</ul>
+</div>
+</section>
+<section id="concluindo" class="slide level2">
+<h2>Concluindo</h2>
+<ul>
+<li>A função de preços hedônicos <span class="math inline">\(P(x,q)\)</span> é o <strong>cardápio</strong> do mercado, e é a envoltória das curvas de lance e de oferta.</li>
+<li>Sua inclinação em cada ponto iguala a disposição marginal a pagar de quem comprou ali com o custo marginal de quem vendeu.</li>
+<li>Estimar <span class="math inline">\(\hat{\alpha }\)</span> dá o preço implícito <strong>médio</strong>, que é uma medida local e não a curva de demanda por qualidade ambiental.</li>
+<li>E <span class="math inline">\(\hat{\alpha }\)</span> só mede o bem ambiental se a variação em <span class="math inline">\(q\)</span> não vier acompanhada de outra coisa, o que quase nunca é verdade sem um desenho de pesquisa.</li>
+<li>Com os três métodos das duas aulas (complementares, substitutos e diferenciados), o dano marginal do modelo de custos e danos deixa de ser hipótese e passa a ser estimativa.</li>
+<li><span class="fragment" data-fragment-index="1">Fica a pergunta: e quando não há mercado nenhum onde procurar, nem viagem, nem filtro, nem imóvel?</span></li>
+</ul>
+</section>
+<section id="referências" class="slide level2 smaller scrollable">
+<h2>Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-greenstone2008" class="csl-entry" role="listitem">
+Greenstone, Michael, e Justin Gallagher. 2008. <span>«Does Hazardous Waste Matter? Evidence from the Housing Market and the Superfund Program»</span>. <em>The Quarterly Journal of Economics</em> 123 (3): 951–1003. <a href="https://doi.org/10.1162/qjec.2008.123.3.951">https://doi.org/10.1162/qjec.2008.123.3.951</a>.
+</div>
+<div id="ref-phaneuf2017" class="csl-entry" role="listitem">
+Phaneuf, Daniel J., e Till Requate. 2017. <em>A Course in Environmental Economics: Theory, Policy, and Practice</em>. Cambridge University Press.
+</div>
+<div id="ref-ramirez2022" class="csl-entry" role="listitem">
+Ramírez-Juidías, Emilio, José-Lázaro Amaro-Mellado, e Jorge L. Leiva-Piedra. 2022. <span>«Influence of the Urban Green Spaces of Seville (Spain) on Housing Prices through the Hedonic Assessment Methodology and Geospatial Analysis»</span>. <em>Sustainability</em> 14 (24): 16613. <a href="https://doi.org/10.3390/su142416613">https://doi.org/10.3390/su142416613</a>.
+</div>
+<div id="ref-rosen1974" class="csl-entry" role="listitem">
+Rosen, Sherwin. 1974. <span>«Hedonic Prices and Implicit Markets: Product Differentiation in Pure Competition»</span>. <em>Journal of Political Economy</em> 82 (1): 34–55. <a href="https://doi.org/10.1086/260169">https://doi.org/10.1086/260169</a>.
+</div>
+<div id="ref-chakraborty2023" class="csl-entry" role="listitem">
+Sen Chakraborty, Kritika, Avinandan Chakraborty, e Robert P. Berrens. 2023. <span>«Valuing Soil Erosion Control Investments in Nigerian Agricultural Lands: A Hedonic Pricing Model»</span>. <em>World Development</em> 170: 106316. <a href="https://doi.org/10.1016/j.worlddev.2023.106316">https://doi.org/10.1016/j.worlddev.2023.106316</a>.
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

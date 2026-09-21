@@ -419,7 +419,7 @@ Rafael Pucci
 <p>O bem-estar social gerado por <span class="math inline">\(x\)</span>, neste caso, é dado por:</p>
 </div>
 <div class="eq-block">
-<p><span class="math display">\[W\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\right) = \int_{0}^{\sum {x}_{j}} P\left(t\right)dt - \sum_{j=1}^{J} {C}^{j}\left({x}_{j},{e}_{j}\right) - D\left(E\right)\]</span></p>
+<p><span class="math display">\[W\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\right) = \int_{0}^{\sum {x}_{j}} P\left(t\right)dt - \sum_{j=1}^{J} {C}^{j}\left({x}_{j},{e}_{j}\right) - D(E)\]</span></p>
 </div>
 <div class="no-bullet">
 <p>Quais são as condições de primeira ordem?</p>
@@ -441,14 +441,36 @@ Rafael Pucci
 <p>São duas condições, e nenhuma delas é nova. A novidade é considerá-las ao mesmo tempo.</p>
 </div>
 </section>
+<section id="o-equilíbrio-sem-imposto" class="slide level2">
+<h2>O equilíbrio sem imposto</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-otimo-1.svg" style="max-height:310px"></p>
+</div>
+<ul>
+<li>Sem imposto, a firma para onde abater deixa de custar, em <span class="math inline">\(e={ê}^{x}\)</span>, e o custo marginal de produzir é o “limpo”, <span class="math inline">\({C}_{x}=c=10\)</span>.</li>
+<li><span class="fragment" data-fragment-index="1">A demanda faz o resto: <span class="math inline">\(X=150\)</span>, e a emissão que vem junto é <span class="math inline">\({ê}^{X}=300\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="2">Ali, abater a última tonelada custa zero e evitaria 60 de dano.</span></li>
+</ul>
+</section>
+<section id="o-imposto-sobe-o-custo-marginal" class="slide level2">
+<h2>O imposto sobe o custo marginal</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/10-otimo-2.svg" style="max-height:310px"></p>
+</div>
+<ul>
+<li>Com um imposto <span class="math inline">\(\tau\)</span> por tonelada, a firma abate até <span class="math inline">\(\tau =-{C}_{e}\)</span>, e o custo marginal de produzir vira <span class="math inline">\({C}_{x}=c+\delta \tau\)</span>.</li>
+<li><span class="fragment" data-fragment-index="1">Com <span class="math inline">\({\tau }^{*}=25\)</span>, ela vai de 10 a 60, e a produção cai para 100.</span></li>
+<li><span class="fragment" data-fragment-index="2">A curva de abatimento anda junto, porque depende de <span class="math inline">\(X\)</span>, e o mesmo <span class="math inline">\({\tau }^{*}\)</span> para em <span class="math inline">\({E}^{*}=125\)</span>.</span></li>
+</ul>
+</section>
 <section id="as-duas-condições-lado-a-lado" class="slide level2">
 <h2>As duas condições lado a lado</h2>
 <div class="diagram">
-<p><img data-src="../_assets/figuras/10-otimo.svg" style="max-height:350px"></p>
+<p><img data-src="../_assets/figuras/10-otimo-3.svg" style="max-height:310px"></p>
 </div>
 <ul>
 <li>O painel da direita é a figura das aulas 04 a 09: <span class="math inline">\(-C′(E)=(200-E)/3\)</span> cruzando <span class="math inline">\(D′(E)=0{,}2E\)</span> em <span class="math inline">\({E}^{*}=125\)</span>, com preço 25.</li>
-<li><span class="fragment" data-fragment-index="1">O que esta aula acrescenta é o painel da esquerda. A curva vermelha da direita é a curva de abatimento <strong>no nível de produção <span class="math inline">\({X}^{*}\)</span></strong>. Logo, esta é diferente para cada <span class="math inline">\({X}^{*}\)</span>.</span></li>
+<li>Esta aula acrescenta o painel da esquerda, ao passo que a curva vermelha da direita é a curva de abatimento <strong>no nível de produção <span class="math inline">\({X}^{*}\)</span></strong>. Note que esta é diferente para cada <span class="math inline">\({X}^{*}\)</span>.</li>
 </ul>
 </section>
 <section id="instrumentos-de-política" class="slide level2">
@@ -553,7 +575,7 @@ Rafael Pucci
 </div>
 <ul>
 <li>O lucro tem um pico em <span class="math inline">\(\hat{e}\)</span>, que é onde a firma pararia sem regulação nenhuma.</li>
-<li><span class="fragment" data-fragment-index="1">Descer de <span class="math inline">\(\hat{e}=100\)</span> para <span class="math inline">\(e=60\)</span> custa 400 de lucro, que é exatamente a área sob a curva marginal.</span></li>
+<li>Descer de <span class="math inline">\(\hat{e}=100\)</span> para <span class="math inline">\(e=60\)</span> custa 400 de lucro, que é exatamente a área sob a curva da direita.</li>
 <li>Aqui, <strong>abater é produzir menos</strong>.</li>
 </ul>
 </section>
@@ -651,7 +673,11 @@ Rafael Pucci
 </section>
 <section id="eficiência-apenas-com-imposto" class="slide level2">
 <h2>Eficiência apenas com imposto?</h2>
-<p>É possível alcançar a solução ótima <span class="math inline">\(({X}^{*},{E}^{*})\)</span> apenas com um imposto <span class="math inline">\(\tau\)</span>? - Para isso, denote <span class="math inline">\({X}^{m}(\tau )\)</span> e <span class="math inline">\({E}^{m}(\tau )\)</span> como as escolhas do monopolista em função do nível de <span class="math inline">\(\tau\)</span>. Regulador define <span class="math inline">\(\tau\)</span> para maximizar</p>
+<p>É possível alcançar a solução ótima <span class="math inline">\(({X}^{*},{E}^{*})\)</span> apenas com um imposto <span class="math inline">\(\tau\)</span>?</p>
+<ul>
+<li>Para isso, denote <span class="math inline">\({X}^{m}(\tau )\)</span> e <span class="math inline">\({E}^{m}(\tau )\)</span> como as escolhas do monopolista em função do nível de <span class="math inline">\(\tau\)</span>.</li>
+</ul>
+<p>Regulador define <span class="math inline">\(\tau\)</span> para maximizar</p>
 <div class="eq-block">
 <p><span class="math display">\[\max_{\tau} W\left[{X}^{m}\left(\tau \right),{E}^{m}\left(\tau \right)\right]\]</span></p>
 </div>
@@ -696,7 +722,7 @@ Rafael Pucci
 <ul>
 <li>Com os números desta aula, o melhor imposto sozinho é <span class="math inline">\({\tau }^{m}=8{,}3\)</span>, e ainda assim sobra perda de 1.000.</li>
 <li>Se usarmos a alíquota do mundo competitivo, <span class="math inline">\({\tau }^{*}=25\)</span>, a perda é de 2.250: <strong>pior do que não cobrar imposto nenhum</strong>, que perderia 1.312,5.</li>
-<li><span class="fragment" data-fragment-index="2">Na verdade, acima da alíquota de 16,7, a perda sob monopólio desregulado é menor do que a perda com imposto.</span></li>
+<li>Na verdade, acima da alíquota de 16,7, a perda sob monopólio desregulado é menor do que a perda com imposto.</li>
 </ul>
 </section>
 <section id="subsídio-à-produção-do-bem-final" class="slide level2">
@@ -1195,7 +1221,7 @@ Phaneuf, Daniel J., e Till Requate. 2017. <em>A Course in Environmental Economic
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/rpucci-usp\.github\.io\/eae1317\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

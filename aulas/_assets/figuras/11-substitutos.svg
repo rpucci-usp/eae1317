@@ -1,0 +1,57 @@
+<svg width="738" height="402" viewBox="0 0 738 402"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Duas tecnologias, os mesmos dois pontos</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="178.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Substitutos perfeitos: f = x + q</text>
+  <line x1="58.0" y1="288.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="288.0" x2="338.0" y2="288.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="346.0" y="294.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">q</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">x (garrafas por semana)</text>
+  <text x="534.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Substitutos imperfeitos: f = x · q</text>
+  <line x1="414.0" y1="288.0" x2="414.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="414.0" y1="288.0" x2="694.0" y2="288.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="702.0" y="294.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">q</text>
+  <text x="422.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">x (garrafas por semana)</text>
+  <path d="M 58.0 67.2 L 60.2 69.2 L 62.5 71.1 L 64.7 73.0 L 67.0 75.0 L 69.2 76.9 L 71.5 78.8 L 73.7 80.8 L 76.0 82.7 L 78.2 84.6 L 80.5 86.6 L 82.7 88.5 L 84.9 90.4 L 87.2 92.4 L 89.4 94.3 L 91.7 96.2 L 93.9 98.2 L 96.2 100.1 L 98.4 102.0 L 100.7 103.9 L 102.9 105.9 L 105.2 107.8 L 107.4 109.7 L 109.6 111.7 L 111.9 113.6 L 114.1 115.5 L 116.4 117.5 L 118.6 119.4 L 120.9 121.3 L 123.1 123.3 L 125.4 125.2 L 127.6 127.1 L 129.8 129.1 L 132.1 131.0 L 134.3 132.9 L 136.6 134.9 L 138.8 136.8 L 141.1 138.7 L 143.3 140.6 L 145.6 142.6 L 147.8 144.5 L 150.1 146.4 L 152.3 148.4 L 154.5 150.3 L 156.8 152.2 L 159.0 154.2 L 161.3 156.1 L 163.5 158.0 L 165.8 160.0 L 168.0 161.9 L 170.3 163.8 L 172.5 165.8 L 174.8 167.7 L 177.0 169.6 L 179.2 171.6 L 181.5 173.5 L 183.7 175.4 L 186.0 177.3 L 188.2 179.3 L 190.5 181.2 L 192.7 183.1 L 195.0 185.1 L 197.2 187.0 L 199.5 188.9 L 201.7 190.9 L 203.9 192.8 L 206.2 194.7 L 208.4 196.7 L 210.7 198.6 L 212.9 200.5 L 215.2 202.5 L 217.4 204.4 L 219.7 206.3 L 221.9 208.3 L 224.2 210.2 L 226.4 212.1 L 228.6 214.0 L 230.9 216.0 L 233.1 217.9 L 235.4 219.8 L 237.6 221.8 L 239.9 223.7 L 242.1 225.6 L 244.4 227.6 L 246.6 229.5 L 248.8 231.4 L 251.1 233.4 L 253.3 235.3 L 255.6 237.2 L 257.8 239.2 L 260.1 241.1 L 262.3 243.0 L 264.6 245.0 L 266.8 246.9 L 269.1 248.8 L 271.3 250.7 L 273.5 252.7 L 275.8 254.6 L 278.0 256.5 L 280.3 258.5 L 282.5 260.4 L 284.8 262.3 L 287.0 264.3 L 289.3 266.2 L 291.5 268.1 L 293.8 270.1 L 296.0 272.0 L 298.2 273.9 L 300.5 275.9 L 302.7 277.8 L 305.0 279.7 L 307.2 281.7 L 309.5 283.6 L 311.7 285.5 L 314.0 287.4 L 316.2 289.4 L 318.5 291.3 L 320.7 293.2 L 322.9 295.2 L 325.2 297.1 L 327.4 299.0" fill="none" stroke="#2E7D32" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="312.0" y="217.4" font-size="15" fill="#2E7D32" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">x = 10 − q</text>
+  <path d="M 465.3 56.2 L 467.1 64.1 L 469.0 71.5 L 470.8 78.5 L 472.6 85.0 L 474.4 91.1 L 476.2 96.8 L 478.0 102.3 L 479.9 107.4 L 481.7 112.2 L 483.5 116.8 L 485.3 121.2 L 487.1 125.3 L 488.9 129.3 L 490.8 133.0 L 492.6 136.6 L 494.4 140.0 L 496.2 143.3 L 498.0 146.4 L 499.9 149.4 L 501.7 152.3 L 503.5 155.1 L 505.3 157.7 L 507.1 160.3 L 508.9 162.7 L 510.8 165.1 L 512.6 167.3 L 514.4 169.5 L 516.2 171.6 L 518.0 173.7 L 519.8 175.6 L 521.7 177.5 L 523.5 179.3 L 525.3 181.1 L 527.1 182.8 L 528.9 184.5 L 530.8 186.1 L 532.6 187.7 L 534.4 189.2 L 536.2 190.7 L 538.0 192.1 L 539.8 193.5 L 541.7 194.8 L 543.5 196.1 L 545.3 197.4 L 547.1 198.6 L 548.9 199.8 L 550.7 201.0 L 552.6 202.2 L 554.4 203.3 L 556.2 204.3 L 558.0 205.4 L 559.8 206.4 L 561.7 207.4 L 563.5 208.4 L 565.3 209.4 L 567.1 210.3 L 568.9 211.2 L 570.7 212.1 L 572.6 213.0 L 574.4 213.8 L 576.2 214.7 L 578.0 215.5 L 579.8 216.3 L 581.6 217.0 L 583.5 217.8 L 585.3 218.5 L 587.1 219.3 L 588.9 220.0 L 590.7 220.7 L 592.6 221.4 L 594.4 222.0 L 596.2 222.7 L 598.0 223.4 L 599.8 224.0 L 601.6 224.6 L 603.5 225.2 L 605.3 225.8 L 607.1 226.4 L 608.9 227.0 L 610.7 227.5 L 612.5 228.1 L 614.4 228.6 L 616.2 229.2 L 618.0 229.7 L 619.8 230.2 L 621.6 230.7 L 623.5 231.2 L 625.3 231.7 L 627.1 232.2 L 628.9 232.6 L 630.7 233.1 L 632.5 233.6 L 634.4 234.0 L 636.2 234.5 L 638.0 234.9 L 639.8 235.3 L 641.6 235.7 L 643.4 236.2 L 645.3 236.6 L 647.1 237.0 L 648.9 237.4 L 650.7 237.7 L 652.5 238.1 L 654.4 238.5 L 656.2 238.9 L 658.0 239.2 L 659.8 239.6 L 661.6 240.0 L 663.4 240.3 L 665.3 240.7 L 667.1 241.0 L 668.9 241.3 L 670.7 241.7 L 672.5 242.0 L 674.3 242.3 L 676.2 242.6 L 678.0 242.9 L 679.8 243.2 L 681.6 243.5 L 683.4 243.8" fill="none" stroke="#6A3D9A" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="675.7" y="200.6" font-size="15" fill="#6A3D9A" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">x = 21 / q</text>
+  <line x1="58.0" y1="133.5" x2="135.0" y2="133.5" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="135.0" y1="288.0" x2="135.0" y2="133.5" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="135.0" cy="133.5" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="135.0" y="308.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3</text>
+  <text x="50.0" y="138.5" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">7</text>
+  <line x1="58.0" y1="221.8" x2="237.6" y2="221.8" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="237.6" y1="288.0" x2="237.6" y2="221.8" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="237.6" cy="221.8" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="237.6" y="308.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">7</text>
+  <text x="50.0" y="226.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3</text>
+  <line x1="414.0" y1="133.5" x2="491.0" y2="133.5" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="491.0" y1="288.0" x2="491.0" y2="133.5" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="491.0" cy="133.5" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="491.0" y="308.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3</text>
+  <text x="406.0" y="138.5" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">7</text>
+  <line x1="414.0" y1="221.8" x2="593.6" y2="221.8" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="593.6" y1="288.0" x2="593.6" y2="221.8" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="593.6" cy="221.8" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="593.6" y="308.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">7</text>
+  <text x="406.0" y="226.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3</text>
+  <line x1="456.3" y1="63.9" x2="525.6" y2="203.0" stroke="#C00000" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <line x1="559.0" y1="209.0" x2="628.3" y2="234.5" stroke="#C00000" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="537.2" y="95.9" font-size="15" fill="#C00000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">inclinação 7/3</text>
+  <text x="632.1" y="257.1" font-size="15" fill="#C00000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3/7</text>
+  <text x="194.0" y="120.2" font-size="15" fill="#C00000" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">inclinação −1 em</text>
+  <text x="194.0" y="144.5" font-size="15" fill="#C00000" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">todo ponto</text>
+  <text x="369.0" y="362.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">as duas tecnologias passam pelos mesmos pontos e</text>
+  <text x="369.0" y="382.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">poupam os mesmos R$ 20: o que muda é a inclinação</text>
+</svg>

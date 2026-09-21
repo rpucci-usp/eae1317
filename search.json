@@ -1,5 +1,383 @@
 [
   {
+    "objectID": "aulas/12-precos-hedonicos/index.html#um-apartamento-perto-do-parque-custa-15-mais",
+    "href": "aulas/12-precos-hedonicos/index.html#um-apartamento-perto-do-parque-custa-15-mais",
+    "title": "Preços Hedônicos",
+    "section": "Um apartamento perto do parque custa 15% mais",
+    "text": "Um apartamento perto do parque custa 15% mais\n\nDois apartamentos, mesma metragem, mesmo número de quartos, mesmo andar. Um fica a 500 metros de um parque e custa 15% mais caro que o outro. O que esses 15% medem?\n\n\n(a) A disposição a pagar pelo parque de quem comprou o apartamento perto dele.\n(b) A disposição a pagar média da cidade pelo parque.\n(c) Nada em particular: bairros com parque costumam ser melhores em tudo, e os 15% podem ser as outras coisas."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aula-passada",
+    "href": "aulas/12-precos-hedonicos/index.html#aula-passada",
+    "title": "Preços Hedônicos",
+    "section": "Aula Passada",
+    "text": "Aula Passada\n\nRevisão: Medidas de Bem-Estar\n\nDemandas Marshalliana e Hicksiana\nVariação Compensada e Variação Equivalente\n\nComo Medir Valor de Bens Ambientais\n\nPeculiaridade de Bens Ambientais\n\nMedidas Indiretas\n\nPreferência Revelada\nBens Complementares\nBens Substitutos\n\n\n\nReferência: Phaneuf e Requate, caps. 14 e 15"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#agenda",
+    "href": "aulas/12-precos-hedonicos/index.html#agenda",
+    "title": "Preços Hedônicos",
+    "section": "Agenda",
+    "text": "Agenda\n\nBens com qualidade diferenciada\n\nDistribuição Observada\n\nModelo de Preços Hedônicos\n\nPremissas\nDemanda\nOferta\nPontos de Equilíbrio\n\nEstimando Disposição Marginal a Pagar\n\nModelo Econométrico\nAplicações\n\n\n\nReferência: Phaneuf e Requate, caps. 15 e 18"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#onde-estamos-no-curso",
+    "href": "aulas/12-precos-hedonicos/index.html#onde-estamos-no-curso",
+    "title": "Preços Hedônicos",
+    "section": "Onde estamos no curso",
+    "text": "Onde estamos no curso\n\n\n1. Complementares. O valor da praia aparece no gasto com a viagem.\n\n\n2. Substitutos. O valor do ar aparece no gasto com o purificador.\n\n\n3. Diferenciados. O valor do ar aparece dentro do preço do apartamento, que já tem mercado.\n\n\n4. E daí o problema é outro: separar o que é o ar do que é o bairro."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada",
+    "href": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada",
+    "title": "Preços Hedônicos",
+    "section": "Bens com Qualidade Diferenciada",
+    "text": "Bens com Qualidade Diferenciada"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada-1",
+    "href": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada-1",
+    "title": "Preços Hedônicos",
+    "section": "Bens com Qualidade Diferenciada",
+    "text": "Bens com Qualidade Diferenciada\n\nEstudaremos agora o caso em que o bem ambiental afeta o preço do bem privado.\n\n\nExemplo 1: mercado imobiliário.\n\n\nPreço de apartamento depende de metragem, nº de quartos, andar.\nMas também de proximidade do metrô, centro da cidade.\nE, ainda, da qualidade do ar no local, proximidade a um lixão, a um rio poluído etc.\n\n\nExemplo 2: salário.\n\n\nSalário que trabalhador aceita depende de várias coisas.\nDepende do tipo de trabalho, do esforço esperado.\nMas também das condições de trabalho: riscos à saúde, qualidade do ar no local e outras possíveis insalubridades."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada-2",
+    "href": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada-2",
+    "title": "Preços Hedônicos",
+    "section": "Bens com Qualidade Diferenciada",
+    "text": "Bens com Qualidade Diferenciada\n\nA diferença deste caso com os dois anteriores é que, agora, o consumidor está comprando (indiretamente) o bem ambiental.\n\n\nNo que segue, trataremos de um modelo teórico para fundamentar o modelo empírico de preços hedônicos.\n\n\nNa aula passada, o gasto com a viagem e o gasto com o purificador eram pistas ao lado do bem ambiental.\nAqui o bem ambiental está dentro do preço, e a tarefa é extraí-lo de lá."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#distribuição-observada",
+    "href": "aulas/12-precos-hedonicos/index.html#distribuição-observada",
+    "title": "Preços Hedônicos",
+    "section": "Distribuição Observada",
+    "text": "Distribuição Observada\n\nPreço por metro quadrado (valor venal) em 2019 e distância ao Ibirapuera."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#distribuição-observada-1",
+    "href": "aulas/12-precos-hedonicos/index.html#distribuição-observada-1",
+    "title": "Preços Hedônicos",
+    "section": "Distribuição Observada",
+    "text": "Distribuição Observada\n\nO preço cai com a distância ao parque, e a queda é bem visível.\nMas por quê? O parque em si, ou o que costuma vir junto com um parque?\nSegurança, escola, metrô, restaurante, vizinho rico.\nEsse é o problema da aula inteira, e vamos precisar do modelo antes de atacá-lo."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#seis-apartamentos-e-uma-tabela-de-preços",
+    "href": "aulas/12-precos-hedonicos/index.html#seis-apartamentos-e-uma-tabela-de-preços",
+    "title": "Preços Hedônicos",
+    "section": "Seis apartamentos e uma tabela de preços",
+    "text": "Seis apartamentos e uma tabela de preços\n\n\n\n\nPara montar a intuição, um mercado de brinquedo: seis apartamentos idênticos em tudo, menos na qualidade do ar \\(q\\) do quarteirão.\nOs preços estão aí. O que este desenho diz sobre quanto vale o ar limpo?"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-mercado",
+    "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-mercado",
+    "title": "Preços Hedônicos",
+    "section": "O cardápio do mercado",
+    "text": "O cardápio do mercado\n\n\n\n\nLigando os pontos, sai a função de preços hedônicos \\(P(q)\\).\nNote o que ela faz: dois pontos de qualidade custam R$ 4 mil embaixo e R$ 36 mil em cima."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#parece-uma-curva-de-demanda-e-não-é",
+    "href": "aulas/12-precos-hedonicos/index.html#parece-uma-curva-de-demanda-e-não-é",
+    "title": "Preços Hedônicos",
+    "section": "Parece uma curva de demanda, e não é",
+    "text": "Parece uma curva de demanda, e não é\n\nSe \\(P(q)\\) fosse uma demanda inversa por qualidade do ar, ela estaria dizendo que as pessoas pagam mais por unidade quanto mais ar limpo já têm. Isso contraria tudo o que este curso fez desde a aula 02.\n\n\n\\(P(q)\\) não é a demanda de ninguém, nem a oferta de ninguém.\n\\(P(q)\\) é o cardápio: o que o mercado cobra hoje por cada nível de \\(q\\).\nNenhum comprador e nenhum vendedor escolhe \\(P(q)\\). Todos a tomam como dada e escolhem um ponto dela.\n\n\nO que ela tem de útil é a inclinação no ponto que alguém escolheu."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-café",
+    "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-café",
+    "title": "Preços Hedônicos",
+    "section": "O cardápio do café",
+    "text": "O cardápio do café\n\nA padaria cobra R$ 6 pelo café pequeno, R$ 8 pelo médio e R$ 11 pelo grande. Você pede o médio.\n\n\nO cardápio tem inclinação crescente: o segundo aumento de tamanho custa mais que o primeiro.\nIsso não diz nada sobre o seu apetite. Diz sobre a padaria.\nO que a sua escolha revela: passar de pequeno a médio vale mais de R$ 2 para você, e passar de médio a grande vale menos de R$ 3.\nÉ exatamente isso que o modelo hedônico faz, com apartamentos no lugar de cafés e ar limpo no lugar de mililitros."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#premissas",
+    "href": "aulas/12-precos-hedonicos/index.html#premissas",
+    "title": "Preços Hedônicos",
+    "section": "Premissas",
+    "text": "Premissas\n\nAssume-se que um imóvel possa ser totalmente descrito por um vetor finito de características e um termo para o bem ambiental.\n\nO vetor \\(x\\) inclui \\(J\\) características.\nO valor \\(q\\) corresponde ao bem ambiental.\n\nAs preferências dos consumidores são em relação aos atributos, não ao bem imóvel em si.\nO preço do imóvel é uma função \\(P(x,q)\\)."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda-1",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda-1",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda\n\nO consumidor maximiza utilidade \\(U(x,q,z,s)\\).\n\n\\(x\\) é o vetor de características não-ambientais;\n\\(q\\) é o bem ambiental;\n\\(z\\) é o bem numerário;\n\\(s\\) representa características pessoais de cada consumidor (preferências heterogêneas).\n\nA restrição orçamentária é dada por \\(y=P\\left(x,q\\right)+z\\).\nO consumidor resolve:\n\n\n\\[\\max_{x,q,z} U(x,q,z,s) \\text{ s.a. } y=P\\left(x,q\\right)+z\\]"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda-2",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda-2",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda\n\nNote que o consumidor pode escolher o valor de \\(q\\).\nNote, também, que qualquer combinação de \\(x\\) e \\(q\\) é possível.\n\nIsto é uma abstração: nem sempre é possível escolher cada característica separadamente.\n\nCondições de primeira ordem são:\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial {x}_{j}}=\\lambda \\frac{\\partial P\\left(x,q\\right)}{\\partial {x}_{j}} \\qquad \\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial q}=\\lambda \\frac{\\partial P\\left(x,q\\right)}{\\partial q} \\qquad \\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial z}=\\lambda\\]"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda-3",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda-3",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda\n\nCombinando as 2 últimas CPOs, temos:\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)/\\partial q}{\\partial U\\left(x,q,z,s\\right)/\\partial z} = \\frac{\\partial P\\left(x,q\\right)}{\\partial q}\\]\n\n\nÀ esquerda, a disposição marginal a pagar por \\(q\\). À direita, o preço marginal implícito de \\(q\\).\n\n\nEsta é a equação da aula inteira, e ela é uma igualdade entre uma coisa que ninguém observa e uma coisa que se estima com dados de cartório."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda-4",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda-4",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda\n\nConsidere um nível de utilidade de referência \\(\\overline{u}\\).\nDefina uma quantidade \\(b\\) a ser gasta com o imóvel de modo que \\(z=y-b\\).\nAssim, teremos:\n\n\n\\[\\overline{u}=U(x,q,y-b,s)\\]\n\n\nFinalmente, podemos inverter a função para obtermos:\n\n\n\\[y-b={U}^{-1}(x,q,\\overline{u},s)\\]"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda-5",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda-5",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda\n\nO objetivo desta manipulação é definir uma “bid function” \\(b\\left(x,q,y,s,\\overline{u}\\right)\\).\n\nÉ o lance (oferta) que o comprador fará ao vendedor de um imóvel.\n\n\n\n\\[b\\left(x,q,y,s,\\overline{u}\\right)=y-{U}^{-1}(x,q,\\overline{u},s)\\]\n\n\nPor fim, se diferenciarmos \\(\\overline{u}=U[x,q,y-b\\left(x,q,y,s,\\overline{u}\\right),s]\\) em relação a \\(q\\), teremos:\n\n\n\\[0=\\frac{\\partial U}{\\partial q}-\\frac{\\partial U}{\\partial z}\\frac{\\partial b}{\\partial q}\\]\n\n\n(Lembrando que \\(z=y-b\\).)"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#demanda-6",
+    "href": "aulas/12-precos-hedonicos/index.html#demanda-6",
+    "title": "Preços Hedônicos",
+    "section": "Demanda",
+    "text": "Demanda\n\nRearranjando os termos, chegamos a:\n\n\n\\[\\frac{\\partial U/\\partial q}{\\partial U/\\partial z} = \\frac{\\partial b\\left(x,q,y,s,\\overline{u}\\right)}{\\partial q} = \\frac{\\partial P}{\\partial q}\\]\n\n\nOu seja, conseguimos estimar a disposição marginal a pagar por \\(q\\) para um nível de referência fixo de utilidade \\(\\overline{u}\\)."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#as-curvas-de-lance-do-consumidor-1",
+    "href": "aulas/12-precos-hedonicos/index.html#as-curvas-de-lance-do-consumidor-1",
+    "title": "Preços Hedônicos",
+    "section": "As curvas de lance do consumidor 1",
+    "text": "As curvas de lance do consumidor 1\n\n\n\n\nCada curva de lance liga as combinações de \\(q\\) e gasto com o imóvel que deixam o consumidor na mesma utilidade.\nCuidado com a leitura: o eixo vertical é gasto, então curva mais baixa é utilidade mais alta.\nA curva mais baixa de todas não é alcançável: nenhum apartamento é vendido por aquele preço."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#ele-para-onde-o-lance-encosta-no-cardápio",
+    "href": "aulas/12-precos-hedonicos/index.html#ele-para-onde-o-lance-encosta-no-cardápio",
+    "title": "Preços Hedônicos",
+    "section": "Ele para onde o lance encosta no cardápio",
+    "text": "Ele para onde o lance encosta no cardápio\n\n\n\n\nA melhor curva alcançável é a que tangencia o cardápio, e a tangência é a escolha: \\(q=4\\), ao preço de R$ 316 mil.\nNo ponto de tangência, \\(\\partial b/\\partial q = \\partial P/\\partial q = 8\\).\nÉ a mesma equação do slide anterior, agora como um desenho."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#dois-consumidores-dois-pontos-o-mesmo-cardápio",
+    "href": "aulas/12-precos-hedonicos/index.html#dois-consumidores-dois-pontos-o-mesmo-cardápio",
+    "title": "Preços Hedônicos",
+    "section": "Dois consumidores, dois pontos, o mesmo cardápio",
+    "text": "Dois consumidores, dois pontos, o mesmo cardápio\n\n\n\n\nO consumidor 2 valoriza mais a qualidade do ar, e por isso encosta no cardápio mais adiante: \\(q=6\\), a R$ 336 mil.\nOs dois enfrentam o mesmo cardápio e leem dele números diferentes: 8 e 12."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#oferta",
+    "href": "aulas/12-precos-hedonicos/index.html#oferta",
+    "title": "Preços Hedônicos",
+    "section": "Oferta",
+    "text": "Oferta"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#oferta-1",
+    "href": "aulas/12-precos-hedonicos/index.html#oferta-1",
+    "title": "Preços Hedônicos",
+    "section": "Oferta",
+    "text": "Oferta\n\nE a oferta de imóveis?\nSuponha que uma firma produza cada imóvel a um custo \\(C(x,q,v)\\).\n\n\\(v\\) representa características individuais da firma.\n\nO problema de maximização de lucro será:\n\n\n\\[\\max_{x,q} \\Pi =P\\left(x,q\\right)-C(x,q,v)\\]\n\n\nCom CPOs \\(\\frac{\\partial P}{\\partial q}=\\frac{\\partial C}{\\partial q}\\) e \\(\\frac{\\partial P}{\\partial {x}_{j}}=\\frac{\\partial C}{\\partial {x}_{j}}\\)."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#oferta-2",
+    "href": "aulas/12-precos-hedonicos/index.html#oferta-2",
+    "title": "Preços Hedônicos",
+    "section": "Oferta",
+    "text": "Oferta\n\nAnalogamente ao caso do consumidor, defina uma quantidade \\(\\theta\\) que a firma está disposta a aceitar pelo imóvel:\n\n\n\\[\\overline{\\Pi }=\\theta -C(x,q,v)\\]\n\n\nNovamente, teremos:\n\n\n\\[\\frac{\\partial \\theta \\left(x,q,v,\\overline{\\Pi }\\right)}{\\partial q}=\\frac{\\partial P}{\\partial q}=\\frac{\\partial C}{\\partial q}\\]"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#as-curvas-de-oferta-encostam-por-cima",
+    "href": "aulas/12-precos-hedonicos/index.html#as-curvas-de-oferta-encostam-por-cima",
+    "title": "Preços Hedônicos",
+    "section": "As curvas de oferta encostam por cima",
+    "text": "As curvas de oferta encostam por cima\n\n\n\n\n\\(\\theta\\) é o que a firma precisa receber para manter o lucro, então curva mais alta é lucro mais alto.\nA melhor alcançável é, de novo, a tangente: a firma 1 entrega \\(q=4\\) e a firma 2 entrega \\(q=6\\).\nÉ a imagem espelhada da página anterior."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#pontos-de-equilíbrio",
+    "href": "aulas/12-precos-hedonicos/index.html#pontos-de-equilíbrio",
+    "title": "Preços Hedônicos",
+    "section": "Pontos de Equilíbrio",
+    "text": "Pontos de Equilíbrio\n\nOs pontos onde há transação entre, por exemplo, o indivíduo 1 e a firma 1 é dado por:\n\n\n\\[\\frac{\\partial b\\left(x,q,y,{s}_{1},{u}^{0}\\right)}{\\partial q}=\\frac{\\partial \\theta \\left(x,q,{v}_{1},{\\Pi }^{0} \\right)}{\\partial q}\\]\n\n\nEsse ponto vai estar associado a um determinado nível de \\(q={q}_{1}\\).\n\nE a um valor \\(P(x,{q}_{1})\\) pago pelo imóvel que tem \\(q={q}_{1}\\)."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-é-o-que-sobra",
+    "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-é-o-que-sobra",
+    "title": "Preços Hedônicos",
+    "section": "O cardápio é o que sobra",
+    "text": "O cardápio é o que sobra\n\n\n\n\nCada comprador encosta por baixo, cada vendedor encosta por cima, e o cardápio passa exatamente por todos os pontos de encosto.\nNinguém escolheu \\(P(q)\\). Ela é a curva que faz todas as tangências valerem ao mesmo tempo, e o nome disso é envoltória (Rosen 1974)."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-e-a-inclinação-dele",
+    "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-e-a-inclinação-dele",
+    "title": "Preços Hedônicos",
+    "section": "O cardápio e a inclinação dele",
+    "text": "O cardápio e a inclinação dele\n\n\n\n\nÀ direita está \\(P′(q)\\), o preço implícito de um ponto a mais de qualidade.\nEla sobe, e ninguém anda sobre ela: cada consumidor ocupa um ponto só, e é o dele.\nA demanda de cada consumidor por \\(q\\), aqui, é horizontal. A reta que sobe é a fila de consumidores, ordenada por quanto valorizam o ar limpo."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar",
+    "href": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar",
+    "title": "Preços Hedônicos",
+    "section": "Estimando Disposição Marginal a Pagar",
+    "text": "Estimando Disposição Marginal a Pagar"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar-1",
+    "href": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar-1",
+    "title": "Preços Hedônicos",
+    "section": "Estimando Disposição Marginal a Pagar",
+    "text": "Estimando Disposição Marginal a Pagar\n\nNo fim, queremos estimar:\n\n\n\\[MWTP=\\frac{\\partial P\\left(x,q\\right)}{\\partial q}\\]\n\n\nComo?"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar-2",
+    "href": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar-2",
+    "title": "Preços Hedônicos",
+    "section": "Estimando Disposição Marginal a Pagar",
+    "text": "Estimando Disposição Marginal a Pagar\n\nSuponha que você tenha dados sobre o preço de cada imóvel na cidade e suas características.\nSuponha, ainda, que o preço é uma função linear das características.\nEntão, temos:\n\n\n\\[{p}_{i}=f\\left({X}_{i},{q}_{i},{\\varepsilon }_{i},\\beta \\right)={\\beta }_{0}+\\sum_{j=1}^{J} {\\beta }_{j}{x}_{j}+\\alpha {q}_{i}+{\\varepsilon }_{i}\\]"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar-3",
+    "href": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar-3",
+    "title": "Preços Hedônicos",
+    "section": "Estimando Disposição Marginal a Pagar",
+    "text": "Estimando Disposição Marginal a Pagar\n\nQual é o parâmetro estimado de interesse?\n\n\n\\[\\alpha =\\frac{\\partial p}{\\partial q}\\]\n\n\nAo estimarmos o modelo, temos:\n\n\n\\[{\\hat{p}}_{i}={\\hat{\\beta }}_{0}+\\sum_{j=1}^{J} {\\hat{\\beta }}_{j}{x}_{j}+\\hat{\\alpha }{q}_{i}\\]\n\n\nE \\(\\hat{\\alpha }\\) é a estimativa da disposição marginal a pagar por \\(q\\)."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#de-quem-exatamente",
+    "href": "aulas/12-precos-hedonicos/index.html#de-quem-exatamente",
+    "title": "Preços Hedônicos",
+    "section": "De quem, exatamente?",
+    "text": "De quem, exatamente?\n\n\n\n\nRodando o MQO nos seis apartamentos do começo da aula, sai exatamente 10.\nMas o preço por ponto de qualidade vai de 2 a 18 ao longo da tabela, e 10 é o valor em \\(q=5\\), o meio da amostra.\n\\(\\hat{\\alpha }\\) é uma média, e ela é a disposição marginal a pagar de quem escolheu o meio do cardápio."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#as-duas-advertências-e-elas-são-diferentes",
+    "href": "aulas/12-precos-hedonicos/index.html#as-duas-advertências-e-elas-são-diferentes",
+    "title": "Preços Hedônicos",
+    "section": "As duas advertências, e elas são diferentes",
+    "text": "As duas advertências, e elas são diferentes\n\n\n\n\n\n\n\n\n\n\nproblema\ncomo se ataca\n\n\n\n\nInterpretação\n\\(\\hat{\\alpha }\\) é o preço implícito no ponto médio, e não a demanda por \\(q\\)\nreconhecer que a medida é local e não extrapolar\n\n\nIdentificação\no que está no \\(\\varepsilon\\) pode andar junto com \\(q\\)\nachar variação em \\(q\\) que seja quase aleatória\n\n\n\n\n\nO primeiro é um problema de leitura, e existe mesmo com dados perfeitos.\nO segundo é um problema de dados, e é o que derruba a maioria das estimativas hedônicas.\nA alternativa (c) da votação de abertura é sobre o segundo."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-i",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-i",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação I",
+    "text": "Aplicação I\n\n(Ramírez-Juidías et al. 2022) estudam disposição a pagar para morar próximo a áreas verdes em Sevilha.\n\n\nMil anúncios de imóveis da cidade, com preço, área útil, número de cômodos, idade e banheiros.\nA variável ambiental é o tamanho da área verde próxima, medida com um sistema de informação geográfica."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-i-1",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-i-1",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação I",
+    "text": "Aplicação I\n\nProximidade a áreas verdes aumenta valor da propriedade.\nCoeficiente é medida de disposição marginal a pagar por áreas verdes.\nO trabalho compara várias formas funcionais, e quais variáveis importam depende do modelo escolhido.\nIsso é uma pista do que vem nas próximas aplicações: a fragilidade não está na teoria, está no que sobra no erro."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-ii",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-ii",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação II",
+    "text": "Aplicação II\n\n(Sen Chakraborty et al. 2023) analisam o valor de estruturas para conter erosão do solo, na Nigéria.\n\n\nEfeito no preço dos lotes agrícolas.\nMede-se como esse valor varia dependendo da exposição dos lotes a climas mais úmidos.\n\nMais chuvas causam mais erosão, elevando o valor de tecnologias adaptativas.\n\nDados de valor da terra declarados pelos próprios domicílios, na pesquisa de padrão de vida da Nigéria de 2015-2016 e 2018-2019."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-ii-1",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-ii-1",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação II",
+    "text": "Aplicação II\n\nControle de erosão tem valor maior em regiões com chuvas mais intensas.\nO preço implícito estimado é de cerca de 26% do valor médio da terra, o equivalente a meio ano de renda de um domicílio agrícola nigeriano.\nEm locais com chuvas extremas, não parece haver efeito. Por quê?\n\nPode ser que controle de erosão seja impraticável nessas áreas.\n\n\n\nRepare que o preço implícito varia com o contexto. É exatamente o que a figura do cardápio previa: a inclinação não é um número só."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação III",
+    "text": "Aplicação III\n\n(Greenstone e Gallagher 2008) estudam disposição a pagar por morar perto de locais de descarte de lixo tóxico.\n\n\nExploram uma política de limpeza desses locais implementada na década de 1980 nos EUA, o programa Superfund.\nIdeia é que locais afetados pela limpeza experimentariam aumento de preço do imóvel.\nEste aumento poderia ser atribuído à eliminação da externalidade negativa.\nAté 2000, cerca de US$ 30 bilhões já tinham sido gastos em limpezas, a um custo médio de US$ 43 milhões por local."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-1",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii-1",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação III",
+    "text": "Aplicação III\n\nAutores fazem primeiro uma regressão de preços hedônicos baseada na distância aos lixões tóxicos.\nEncontram que a limpeza aumentaria preço em cerca de 7%.\n\nApós controlar pelas características dos imóveis.\n\n\n\nÉ a estimativa que o modelo desta aula manda fazer, feita com cuidado. Ela parece resolver a questão."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-2",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii-2",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação III",
+    "text": "Aplicação III\n\nEntretanto, há alguns problemas.\n\nPrimeiro, locais que receberam a política podem ser muito diferentes de outros lugares por diversos motivos.\nSegundo, as estimativas variam muito dependendo da amostra e dos controles escolhidos.\n\nSendo assim, voltam-se para uma abordagem mais robusta."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-3",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii-3",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação III",
+    "text": "Aplicação III\n\nAproveitam o fato de que a política criou quase-aleatoriedades.\n\nAlguns locais foram “tratados” antes dos outros por conta de regra arbitrária.\n\nCom orçamento limitado, a Environmental Protection Agency (EPA) dos EUA selecionou os 400 locais de descarte de lixo tóxico mais perigosos.\n\nEstes locais foram priorizados para limpeza, deixando os outros para depois.\nSão locais que receberam uma nota 28,5 ou mais na escala criada pela EPA.\n\nIdeia é comparar locais priorizados com os outros.\n\nProvavelmente, são mais comparáveis do que locais que não precisam de limpeza."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-desenho-e-o-que-ele-achou",
+    "href": "aulas/12-precos-hedonicos/index.html#o-desenho-e-o-que-ele-achou",
+    "title": "Preços Hedônicos",
+    "section": "O desenho, e o que ele achou",
+    "text": "O desenho, e o que ele achou\n\n\n\n\nÀ esquerda, o que uma descontinuidade encontraria se a limpeza valorizasse os imóveis: um salto no corte de 28,5.\nÀ direita, o que os autores encontram: nada que se distinga de zero."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-4",
+    "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii-4",
+    "title": "Preços Hedônicos",
+    "section": "Aplicação III",
+    "text": "Aplicação III\n\nCom abordagem mais robusta, encontram efeitos de cerca de 4%.\nCom RDD, efeito local fica em torno de 2%.\nE nenhum dos dois é estatisticamente distinguível de zero. Quase duas décadas depois, não se rejeita que a limpeza não teve efeito nenhum sobre o preço.\nOs benefícios medidos pelo mercado imobiliário ficam bem abaixo dos US$ 43 milhões de custo médio por limpeza."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-que-aconteceu-com-os-7",
+    "href": "aulas/12-precos-hedonicos/index.html#o-que-aconteceu-com-os-7",
+    "title": "Preços Hedônicos",
+    "section": "O que aconteceu com os 7%",
+    "text": "O que aconteceu com os 7%\n\nOs 7% da primeira regressão não eram o valor do lixão: eram tudo o que anda junto com um lixão e não estava nos controles.\nO corte de 28,5 substitui a comparação “perto de lixão contra longe de lixão” por “quase entrou na lista contra entrou raspando”.\nIsso não diz que preços hedônicos não funcionam. Diz que \\(\\hat{\\alpha }\\) só vale quando a variação em \\(q\\) não carrega mais nada junto.\nE há uma leitura alternativa, que os autores levantam: talvez os moradores simplesmente não acreditassem que a limpeza tivesse reduzido o risco."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#exercício-quem-compra-qual-apartamento",
+    "href": "aulas/12-precos-hedonicos/index.html#exercício-quem-compra-qual-apartamento",
+    "title": "Preços Hedônicos",
+    "section": "Exercício: quem compra qual apartamento",
+    "text": "Exercício: quem compra qual apartamento\n\nOs seis apartamentos do começo da aula, com o preço em R$ mil. Quatro compradores, cada um valorizando cada ponto de qualidade do ar em \\(s\\) mil reais, sempre o mesmo valor.\n\n\n\n\n\n\\(q\\)\n0\n2\n4\n6\n8\n10\n\n\n\n\nPreço\n300\n304\n316\n336\n364\n400\n\n\n\n\n\n(a) Com \\(s = 4, 8, 12\\) e \\(16\\), qual apartamento cada um leva?\n(b) O comprador com \\(s=12\\) está em qual apartamento? Vale a pena ele subir para \\(q=8\\)?\n(c) Você regride preço contra \\(q\\) nos seis apartamentos. Que inclinação obtém?\n(d) Essa inclinação é a disposição marginal a pagar de quem?"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#solução",
+    "href": "aulas/12-precos-hedonicos/index.html#solução",
+    "title": "Preços Hedônicos",
+    "section": "Solução",
+    "text": "Solução\n\n\n\n\n(a) Cada um para onde o degrau do cardápio passa a custar mais do que \\(s\\) vale: \\(q = 2, 4, 6\\) e \\(8\\), a 304, 316, 336 e 364.\n(b) Ele está em \\(q=6\\). Subir para 8 lhe entrega \\(12\\times 2=24\\) e custa \\(364-336=28\\). Não vale, e ele fica onde está.\n(c) A inclinação de MQO é exatamente 10.\n(d) De ninguém desses quatro. É o preço implícito em \\(q=5\\), e nenhum comprador está lá."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#o-que-o-exercício-mostra",
+    "href": "aulas/12-precos-hedonicos/index.html#o-que-o-exercício-mostra",
+    "title": "Preços Hedônicos",
+    "section": "O que o exercício mostra",
+    "text": "O que o exercício mostra\n\n\n\n\ncomprador\n\\(s\\)\ncompra \\(q\\)\npaga\n\\(P′(q)\\) no ponto dele\n\n\n\n\n1\n4\n2\n304\n4\n\n\n2\n8\n4\n316\n8\n\n\n3\n12\n6\n336\n12\n\n\n4\n16\n8\n364\n16\n\n\nMQO\n\n\n\n10\n\n\n\n\n\nA coluna da direita bate com a de \\(s\\) em todas as linhas: o modelo funciona, e a tangência entrega a disposição marginal a pagar de cada um.\nO 10 da última linha não bate com ninguém, e também não está errado: é a média ponderada dos quatro, e é o que uma regressão linear devolve.\nÉ por isso que o efeito de RDD de Greenstone e Gallagher é local. Ele vale perto do corte, e não para a cidade inteira."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#voltando-à-pergunta-da-abertura",
+    "href": "aulas/12-precos-hedonicos/index.html#voltando-à-pergunta-da-abertura",
+    "title": "Preços Hedônicos",
+    "section": "Voltando à pergunta da abertura",
+    "text": "Voltando à pergunta da abertura\n\nO apartamento perto do parque custa 15% mais. O que esses 15% medem?\n\n\n\nSe a proximidade do parque fosse a única coisa diferente entre os dois imóveis, a resposta seria (a): a disposição marginal a pagar de quem escolheu morar ali.\nNunca seria (b): a média da cidade exigiria conhecer as curvas de lance de todo mundo, e a regressão só entrega tangências.\nNa prática, quase sempre é (c) em parte, e o resto da aula foi sobre como saber quanto."
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#concluindo",
+    "href": "aulas/12-precos-hedonicos/index.html#concluindo",
+    "title": "Preços Hedônicos",
+    "section": "Concluindo",
+    "text": "Concluindo\n\nA função de preços hedônicos \\(P(x,q)\\) é o cardápio do mercado, e é a envoltória das curvas de lance e de oferta.\nSua inclinação em cada ponto iguala a disposição marginal a pagar de quem comprou ali com o custo marginal de quem vendeu.\nEstimar \\(\\hat{\\alpha }\\) dá o preço implícito médio, que é uma medida local e não a curva de demanda por qualidade ambiental.\nE \\(\\hat{\\alpha }\\) só mede o bem ambiental se a variação em \\(q\\) não vier acompanhada de outra coisa, o que quase nunca é verdade sem um desenho de pesquisa.\nCom os três métodos das duas aulas (complementares, substitutos e diferenciados), o dano marginal do modelo de custos e danos deixa de ser hipótese e passa a ser estimativa.\nFica a pergunta: e quando não há mercado nenhum onde procurar, nem viagem, nem filtro, nem imóvel?"
+  },
+  {
+    "objectID": "aulas/12-precos-hedonicos/index.html#referências",
+    "href": "aulas/12-precos-hedonicos/index.html#referências",
+    "title": "Preços Hedônicos",
+    "section": "Referências",
+    "text": "Referências\n\n\nGreenstone, Michael, e Justin Gallagher. 2008. «Does Hazardous Waste Matter? Evidence from the Housing Market and the Superfund Program». The Quarterly Journal of Economics 123 (3): 951–1003. https://doi.org/10.1162/qjec.2008.123.3.951.\n\n\nPhaneuf, Daniel J., e Till Requate. 2017. A Course in Environmental Economics: Theory, Policy, and Practice. Cambridge University Press.\n\n\nRamírez-Juidías, Emilio, José-Lázaro Amaro-Mellado, e Jorge L. Leiva-Piedra. 2022. «Influence of the Urban Green Spaces of Seville (Spain) on Housing Prices through the Hedonic Assessment Methodology and Geospatial Analysis». Sustainability 14 (24): 16613. https://doi.org/10.3390/su142416613.\n\n\nRosen, Sherwin. 1974. «Hedonic Prices and Implicit Markets: Product Differentiation in Pure Competition». Journal of Political Economy 82 (1): 34–55. https://doi.org/10.1086/260169.\n\n\nSen Chakraborty, Kritika, Avinandan Chakraborty, e Robert P. Berrens. 2023. «Valuing Soil Erosion Control Investments in Nigerian Agricultural Lands: A Hedonic Pricing Model». World Development 170: 106316. https://doi.org/10.1016/j.worlddev.2023.106316."
+  },
+  {
     "objectID": "aulas/10-monopolio/index.html#imposto-de-poluição-em-mercado-com-apenas-um-produtor",
     "href": "aulas/10-monopolio/index.html#imposto-de-poluição-em-mercado-com-apenas-um-produtor",
     "title": "Mercado Não Competitivo",
@@ -116,7 +494,7 @@
     "href": "aulas/10-monopolio/index.html#maximização-de-bem-estar-social-1",
     "title": "Mercado Não Competitivo",
     "section": "Maximização de Bem-Estar Social",
-    "text": "Maximização de Bem-Estar Social\n\nO bem-estar social gerado por \\(x\\), neste caso, é dado por:\n\n\n\\[W\\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\\right) = \\int_{0}^{\\sum {x}_{j}} P\\left(t\\right)dt - \\sum_{j=1}^{J} {C}^{j}\\left({x}_{j},{e}_{j}\\right) - D\\left(E\\right)\\]\n\n\nQuais são as condições de primeira ordem?\n\n\n\\[P\\left(X\\right)={C}_{{x}_{j}}^{j}\\left({x}_{j},{e}_{j}\\right) \\forall j\\]\n\n\n\\[{D}^{′}\\left(E\\right)=-{C}_{{e}_{j}}^{j}\\left({x}_{j},{e}_{j}\\right) \\forall j\\]"
+    "text": "Maximização de Bem-Estar Social\n\nO bem-estar social gerado por \\(x\\), neste caso, é dado por:\n\n\n\\[W\\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\\right) = \\int_{0}^{\\sum {x}_{j}} P\\left(t\\right)dt - \\sum_{j=1}^{J} {C}^{j}\\left({x}_{j},{e}_{j}\\right) - D(E)\\]\n\n\nQuais são as condições de primeira ordem?\n\n\n\\[P\\left(X\\right)={C}_{{x}_{j}}^{j}\\left({x}_{j},{e}_{j}\\right) \\forall j\\]\n\n\n\\[{D}^{′}\\left(E\\right)=-{C}_{{e}_{j}}^{j}\\left({x}_{j},{e}_{j}\\right) \\forall j\\]"
   },
   {
     "objectID": "aulas/10-monopolio/index.html#maximização-de-bem-estar-social-2",
@@ -130,7 +508,7 @@
     "href": "aulas/10-monopolio/index.html#as-duas-condições-lado-a-lado",
     "title": "Mercado Não Competitivo",
     "section": "As duas condições lado a lado",
-    "text": "As duas condições lado a lado\n\n\n\n\nO painel da direita é a figura das aulas 04 a 09: \\(-C′(E)=(200-E)/3\\) cruzando \\(D′(E)=0{,}2E\\) em \\({E}^{*}=125\\), com preço 25.\nO que esta aula acrescenta é o painel da esquerda. A curva vermelha da direita é a curva de abatimento no nível de produção \\({X}^{*}\\). Logo, esta é diferente para cada \\({X}^{*}\\)."
+    "text": "As duas condições lado a lado\n\n\n\n\nO painel da direita é a figura das aulas 04 a 09: \\(-C′(E)=(200-E)/3\\) cruzando \\(D′(E)=0{,}2E\\) em \\({E}^{*}=125\\), com preço 25.\nEsta aula acrescenta o painel da esquerda, ao passo que a curva vermelha da direita é a curva de abatimento no nível de produção \\({X}^{*}\\). Note que esta é diferente para cada \\({X}^{*}\\)."
   },
   {
     "objectID": "aulas/10-monopolio/index.html#instrumentos-de-política",
@@ -179,7 +557,7 @@
     "href": "aulas/10-monopolio/index.html#abater-é-lucro-perdido",
     "title": "Mercado Não Competitivo",
     "section": "Abater é lucro perdido",
-    "text": "Abater é lucro perdido\n\n\n\n\nO lucro tem um pico em \\(\\hat{e}\\), que é onde a firma pararia sem regulação nenhuma.\nDescer de \\(\\hat{e}=100\\) para \\(e=60\\) custa 400 de lucro, que é exatamente a área sob a curva marginal.\nAqui, abater é produzir menos."
+    "text": "Abater é lucro perdido\n\n\n\n\nO lucro tem um pico em \\(\\hat{e}\\), que é onde a firma pararia sem regulação nenhuma.\nDescer de \\(\\hat{e}=100\\) para \\(e=60\\) custa 400 de lucro, que é exatamente a área sob a curva da direita.\nAqui, abater é produzir menos."
   },
   {
     "objectID": "aulas/10-monopolio/index.html#monopólio",
@@ -228,7 +606,7 @@
     "href": "aulas/10-monopolio/index.html#eficiência-apenas-com-imposto",
     "title": "Mercado Não Competitivo",
     "section": "Eficiência apenas com imposto?",
-    "text": "Eficiência apenas com imposto?\nÉ possível alcançar a solução ótima \\(({X}^{*},{E}^{*})\\) apenas com um imposto \\(\\tau\\)? - Para isso, denote \\({X}^{m}(\\tau )\\) e \\({E}^{m}(\\tau )\\) como as escolhas do monopolista em função do nível de \\(\\tau\\). Regulador define \\(\\tau\\) para maximizar\n\n\\[\\max_{\\tau} W\\left[{X}^{m}\\left(\\tau \\right),{E}^{m}\\left(\\tau \\right)\\right]\\]\n\n\n\\[= \\int_{0}^{{X}^{m}(\\tau )} P\\left(t\\right)dt-C\\left[{X}^{m}\\left(\\tau \\right),{E}^{m}\\left(\\tau \\right)\\right]-D\\left({E}^{m}\\left(\\tau \\right)\\right)\\]\n\n\nNote que o regulador tem um instrumento e duas margens a corrigir."
+    "text": "Eficiência apenas com imposto?\nÉ possível alcançar a solução ótima \\(({X}^{*},{E}^{*})\\) apenas com um imposto \\(\\tau\\)?\n\nPara isso, denote \\({X}^{m}(\\tau )\\) e \\({E}^{m}(\\tau )\\) como as escolhas do monopolista em função do nível de \\(\\tau\\).\n\nRegulador define \\(\\tau\\) para maximizar\n\n\\[\\max_{\\tau} W\\left[{X}^{m}\\left(\\tau \\right),{E}^{m}\\left(\\tau \\right)\\right]\\]\n\n\n\\[= \\int_{0}^{{X}^{m}(\\tau )} P\\left(t\\right)dt-C\\left[{X}^{m}\\left(\\tau \\right),{E}^{m}\\left(\\tau \\right)\\right]-D\\left({E}^{m}\\left(\\tau \\right)\\right)\\]\n\n\nNote que o regulador tem um instrumento e duas margens a corrigir."
   },
   {
     "objectID": "aulas/10-monopolio/index.html#eficiência-apenas-com-imposto-1",
@@ -1110,14 +1488,14 @@
     "href": "index.html",
     "title": "EAE1317",
     "section": "",
-    "text": "Eficiência Econômica\nExternalidades\nModelo de Custos e Danos\nTeorema de Coase\nPolíticas Ambientais I\nPolíticas Ambientais II\nInformação Assimétrica\nMercado Não Competitivo"
+    "text": "Eficiência Econômica\nExternalidades\nModelo de Custos e Danos\nTeorema de Coase\nPolíticas Ambientais I\nPolíticas Ambientais II\nInformação Assimétrica\nMercado Não Competitivo\nValoração de Bens Ambientais\nPreços Hedônicos"
   },
   {
     "objectID": "index.html#aulas",
     "href": "index.html#aulas",
     "title": "EAE1317",
     "section": "",
-    "text": "Eficiência Econômica\nExternalidades\nModelo de Custos e Danos\nTeorema de Coase\nPolíticas Ambientais I\nPolíticas Ambientais II\nInformação Assimétrica\nMercado Não Competitivo"
+    "text": "Eficiência Econômica\nExternalidades\nModelo de Custos e Danos\nTeorema de Coase\nPolíticas Ambientais I\nPolíticas Ambientais II\nInformação Assimétrica\nMercado Não Competitivo\nValoração de Bens Ambientais\nPreços Hedônicos"
   },
   {
     "objectID": "aulas/02-eficiencia/index.html#exemplo-redução-de-esgoto-lançado-no-tietê",
@@ -2112,5 +2490,537 @@
     "title": "Informação Assimétrica",
     "section": "Referências",
     "text": "Referências\n\n\nPhaneuf, Daniel J., e Till Requate. 2017. A Course in Environmental Economics: Theory, Policy, and Practice. Cambridge University Press.\n\n\nWeitzman, Martin L. 1974. «Prices vs. Quantities». The Review of Economic Studies 41 (4): 477–91. https://doi.org/10.2307/2296698."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#de-onde-vem-o-dano-marginal",
+    "href": "aulas/11-valoracao/index.html#de-onde-vem-o-dano-marginal",
+    "title": "Valoração de Bens Ambientais",
+    "section": "De onde vem o dano marginal?",
+    "text": "De onde vem o dano marginal?\n\nDesde as primeiras aulas, assumimos que \\(D′(E)\\) é dado, mas como poderíamos medir o dano? Por exemplo, considere um programa que deixa uma praia mais limpa: medir o benefício (queda no dano) dessa intervenção?\n\n\n(a) Pelo custo do programa. O que foi gasto para limpar é o valor da limpeza.\n(b) Perguntando às pessoas quanto elas pagariam por uma praia mais limpa.\n(c) Olhando o que as pessoas já gastam para ir à praia, e quanto esse gasto muda."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#agenda",
+    "href": "aulas/11-valoracao/index.html#agenda",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Agenda",
+    "text": "Agenda\n\nRevisão: Medidas de Bem-Estar\n\nDemandas Marshalliana e Hicksiana\nVariação Compensada e Variação Equivalente\n\nComo Medir Valor de Bens Ambientais\n\nPeculiaridade de Bens Ambientais\n\nMedidas Indiretas\n\nPreferência Revelada\nBens Complementares\nBens Substitutos\nQualidade\n\n\n\nReferência: Phaneuf e Requate, caps. 14 e 15"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#onde-estamos-no-curso",
+    "href": "aulas/11-valoracao/index.html#onde-estamos-no-curso",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Onde estamos no curso",
+    "text": "Onde estamos no curso\n\n\n1. O dano era dado. \\(D′(E)\\) entra no modelo como informação conhecida.\n\n\n2. O dano precisa ser medido. Não há preço observável.\n\n\n3. Preferência revelada. O que as pessoas fazem com o dinheiro delas entrega o que elas não dizem.\n\n\n4. Bens diferenciados. O valor do ar limpo embutido no preço do apartamento."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bem-estar-e-dinheiro",
+    "href": "aulas/11-valoracao/index.html#bem-estar-e-dinheiro",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bem-Estar e Dinheiro",
+    "text": "Bem-Estar e Dinheiro"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#demanda-por-bens-ambientais",
+    "href": "aulas/11-valoracao/index.html#demanda-por-bens-ambientais",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Demanda por Bens Ambientais",
+    "text": "Demanda por Bens Ambientais\n\nAo longo das últimas aulas, focamos no comportamento das firmas poluidoras.\n\nOu seja, tratamos da oferta de bens e da geração de poluição.\n\nA outra dimensão relevante de questões ambientais diz respeito à demanda por bens ambientais.\n\nComo inferir o valor que consumidores atribuem a bens ambientais?\n\nExemplos: água limpa, ar limpo, floresta preservada etc.\n\n\nComo veremos, não é trivial atribuir valor a esses bens.\n\nÉ difícil observar variação na quantidade de bens ambientais.\nGeralmente, não há mercado para esses bens."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#wtp-e-wta",
+    "href": "aulas/11-valoracao/index.html#wtp-e-wta",
+    "title": "Valoração de Bens Ambientais",
+    "section": "WTP e WTA",
+    "text": "WTP e WTA\n\nWillingness to Pay (WTP) é a disposição a pagar por uma mudança.\n\n\nQuanto o indivíduo está disposto a pagar por uma praia mais limpa?\n\n\nWillingness to Accept (WTA) é a disposição a aceitar alguma compensação por uma mudança.\n\n\nQuanto o indivíduo está disposto a receber como compensação por uma praia mais suja?\n\n\nExemplo: estojo, WTA e WTP."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#wtp-e-wta-1",
+    "href": "aulas/11-valoracao/index.html#wtp-e-wta-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "WTP e WTA",
+    "text": "WTP e WTA\n\nNa teoria, WTP e WTA são, frequentemente, tratadas como a mesma coisa.\n\n\nNo caso de um bem ambiental, a diferença estaria na alocação dos direitos de propriedade:\n\n\nSe uma firma poluidora é dona da praia, o consumidor estaria disposto a pagar por uma redução de poluição.\nSe indivíduos são donos da praia, estariam dispostos a aceitar pagamento da firma poluidora para tolerar um aumento de poluição.\n\n\nReconhecem o arranjo? É o Teorema de Coase da aula 05: a dotação inicial de direitos muda quem paga, não a alocação."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#wtp-e-wta-2",
+    "href": "aulas/11-valoracao/index.html#wtp-e-wta-2",
+    "title": "Valoração de Bens Ambientais",
+    "section": "WTP e WTA",
+    "text": "WTP e WTA\n\nNa prática, há uma diferença quantitativa entre WTP e WTA.\n\n\nAlguns experimentos mostram que WTA é substancialmente maior do que WTP.\n\n\nExemplo: experimento com xícaras (Kahneman et al. 1990)\n\n\nAlguns alunos receberam xícaras (US$ 6,00) e outros não;\nDepois, o mercado foi aberto para compra e venda de xícaras entre alunos;\nAlunos que receberam xícaras estavam muito mais relutantes em vender (alta WTA) do que os outros estavam dispostos a comprar (baixa WTP)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#o-que-o-mercado-das-xícaras-deveria-ter-feito",
+    "href": "aulas/11-valoracao/index.html#o-que-o-mercado-das-xícaras-deveria-ter-feito",
+    "title": "Valoração de Bens Ambientais",
+    "section": "O que o mercado das xícaras deveria ter feito",
+    "text": "O que o mercado das xícaras deveria ter feito\n\nAs xícaras foram sorteadas. Se a disposição a pagar é a mesma coisa que a disposição a aceitar, metade das xícaras deveria acabar trocando de mãos.\n\n\n\n\n\n\nmediana\n\n\n\n\nPreço mínimo de quem recebeu a xícara (WTA)\nUS$ 5,25\n\n\nPreço máximo de quem não recebeu (WTP)\nUS$ 2,25\n\n\nXícaras negociadas\ncerca de um quarto do previsto\n\n\n\n\n\nMeia hora de posse dobrou o valor da xícara.\nE o volume negociado ficou bem abaixo do que o Teorema de Coase previa.\nNote que a xícara é um bem privado, com preço de mercado, que qualquer um pode comprar na esquina."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#wtp-e-wta-3",
+    "href": "aulas/11-valoracao/index.html#wtp-e-wta-3",
+    "title": "Valoração de Bens Ambientais",
+    "section": "WTP e WTA",
+    "text": "WTP e WTA\n\nNo caso de bens ambientais, a razão entre WTA e WTP pode ser ainda maior.\n\n\nMuitos bens ambientais são únicos: Lençóis Maranhenses, Chapada dos Veadeiros ou a Floresta Amazônica.\nAbrir mão de algo único é difícil, porque não há substitutos.\n\n\nQuanto aceitaríamos receber para deixarmos a Floresta Amazônica ser transformada em um estacionamento gigante?\n\n\nProvavelmente, um valor próximo de infinito."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#wtp-e-wta-4",
+    "href": "aulas/11-valoracao/index.html#wtp-e-wta-4",
+    "title": "Valoração de Bens Ambientais",
+    "section": "WTP e WTA",
+    "text": "WTP e WTA\n\nQuanto pagaríamos para evitar que a Floresta Amazônica vire um estacionamento?\n\n\nCertamente, bem menos do que infinito.\nAfinal, todos temos restrições orçamentárias.\n\n\nEssa diferença entre WTA e WTP é um desafio, por exemplo, na elaboração de questionários sobre o valor atribuído a um bem ambiental:\n\n\nDependendo da pergunta, resposta pode ser em termos de WTA ou WTP."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#a-razão-está-nos-substitutos-e-não-na-renda",
+    "href": "aulas/11-valoracao/index.html#a-razão-está-nos-substitutos-e-não-na-renda",
+    "title": "Valoração de Bens Ambientais",
+    "section": "A razão está nos substitutos, e não na renda",
+    "text": "A razão está nos substitutos, e não na renda\n\nPor muito tempo se atribuiu a diferença entre WTA e WTP ao efeito renda, que é pequeno para bens baratos. Aí a diferença observada parecia irracionalidade.\n\n\n(Hanemann 1991) mostra que a razão WTA/WTP depende de duas coisas: a elasticidade-renda da demanda dividida pela elasticidade de substituição entre o bem e o resto do consumo.\nQuando não há substituto próximo, a elasticidade de substituição vai a zero e a razão pode crescer sem limite.\nOu seja, a intuição do slide anterior (a floresta é única) não é um desvio da teoria: é o que a teoria prevê.\nPara uma xícara, há substitutos por toda parte, e aí a diferença de 2,3 vezes é comportamental mesmo."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#medidas-de-bem-estar",
+    "href": "aulas/11-valoracao/index.html#medidas-de-bem-estar",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Medidas de Bem-Estar",
+    "text": "Medidas de Bem-Estar\n\nAntes de entrarmos nos problemas de mensurar o valor de bens ambientais, retomaremos brevemente a valoração de bens privados.\nComo devem se lembrar, há dois métodos para se medir bem-estar:\n\nVariação Compensada;\nVariação Equivalente.\n\nAmbos esses métodos dependem de outros conceitos conhecidos:\n\nDemanda Compensada (Hicksiana);\nFunção Utilidade Indireta;\nFunção Dispêndio."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#demanda-marshalliana",
+    "href": "aulas/11-valoracao/index.html#demanda-marshalliana",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Demanda Marshalliana",
+    "text": "Demanda Marshalliana\n\nPara relembrarmos esses conceitos, consideremos um modelo básico.\nHá dois tipos de bens privados: \\(x\\) e \\(z\\).\n\n\\(x\\) é um vetor de bens privados \\({x}_{j}\\) com preços \\({p}_{j}\\);\n\\(z\\) é um bem numerário com preço normalizado para \\({p}_{z}=1\\).\n\nA qualidade ambiental é um bem denotado por \\(q\\).\nO consumidor maximiza utilidade sujeito à restrição orçamentária:\n\n\n\\[\\max_{x,z} \\left\\{U\\left(x,z,q\\right)+\\lambda \\left(y-z-\\sum {p}_{j}{x}_{j}\\right)\\right\\}\\]\n\n\nComo sabemos, a solução desse problema nos dará as demandas por cada bem em função de preço, renda e qualidade ambiental: \\({x}_{j}(p,y,q)\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#demanda-hicksiana",
+    "href": "aulas/11-valoracao/index.html#demanda-hicksiana",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Demanda Hicksiana",
+    "text": "Demanda Hicksiana\n\nA demanda Hicksiana (ou compensada) é resultado da minimização de dispêndio (gasto) do consumidor sujeita a uma utilidade \\(\\overline{u}\\).\n\n\n\\[\\min_{x,z} \\left\\{z+\\sum {p}_{j}{x}_{j}+\\mu \\left[\\overline{u}-U\\left(x,z,q\\right)\\right]\\right\\}\\]\n\n\nA solução nos dará as demandas compensadas em função de preços, nível de utilidade e qualidade ambiental: \\({h}_{j}(p,\\overline{u},q)\\).\nDemanda compensada não é facilmente observável, pois depende de \\(\\overline{u}\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#dualidade",
+    "href": "aulas/11-valoracao/index.html#dualidade",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Dualidade",
+    "text": "Dualidade\n\nDenote a função dispêndio como \\(E(p,u,q)\\).\n\nÉ o gasto mínimo, a preços dados, para alcançar determinada utilidade.\nSabemos que \\(y=E(p,u,q)\\) no equilíbrio.\n\nSabemos que, para dado nível de \\(u={u}^{0}\\), ambas as demandas são iguais:\n\n\n\\[{x}_{j}\\left[p,E\\left(p,{u}^{0},q\\right),q\\right]={h}_{j}\\left(p,{u}^{0},q\\right) \\forall j\\]\n\n\nÀ esquerda, a Demanda Marshalliana. À direita, a Demanda Compensada."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#um-consumidor-com-números",
+    "href": "aulas/11-valoracao/index.html#um-consumidor-com-números",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Um consumidor com números",
+    "text": "Um consumidor com números\n\nVamos parametrizar o problema de forma mais concreta, como exemplo. Considere um consumidor com preferências Cobb-Douglas, em que \\(x\\) é uma ida (viagem) à praia:\n\n\n\\[U\\left(x,z\\right)=\\sqrt{xz} \\qquad y=100 \\qquad {p}^{0}=4 \\to {p}^{1}=1\\]\n\n\nDaí saem as quatro funções da revisão:\n\n\n\\[x\\left(p,y\\right)=\\frac{y}{2p} \\qquad V\\left(p,y\\right)=\\frac{y}{2\\sqrt{p}} \\qquad E\\left(p,u\\right)=2u\\sqrt{p} \\qquad h\\left(p,u\\right)=\\frac{u}{\\sqrt{p}}\\]\n\n\nCom isso, \\({u}^{0}=V(4,100)=25\\) e \\({u}^{1}=V(1,100)=50\\).\nAntes, consumidor fazia 12,5 viagens por ano. Depois da queda de preço, são 50 viagens."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#variação-compensada",
+    "href": "aulas/11-valoracao/index.html#variação-compensada",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Variação Compensada",
+    "text": "Variação Compensada\n\nSuponha um aumento de preço → A variação compensada é a quantidade de dinheiro que o consumidor precisa receber para alcançar a utilidade anterior ao aumento de preço.\nSuponha uma queda de preço → A variação compensada é a quantidade de dinheiro que o consumidor precisa perder para alcançar a utilidade anterior ao aumento de preço.\nOu seja, a variação compensada (\\(VC\\)) garante que:\n\n\n\\[V\\left({p}^{0},y,q\\right)=V({p}^{1},y-VC,q)\\]\n\n\nEm que \\(0\\) e \\(1\\) representam antes e depois da mudança de preço."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#variação-compensada-1",
+    "href": "aulas/11-valoracao/index.html#variação-compensada-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Variação Compensada",
+    "text": "Variação Compensada\n\nPara calcular o valor da variação compensada, fazemos:\n\n\n\\[VC=E\\left({p}^{0},{u}^{0},q\\right)-E\\left({p}^{1},{u}^{0},q\\right)=y-E\\left({p}^{1},{u}^{0},q\\right)\\]\n\n\nOu seja, mantém-se a utilidade fixa em \\({u}^{0}\\) (antes da mudança).\nEntão, calculam-se os gastos do consumidor sob preços antigos (\\({p}^{0}\\)) e novos preços (\\({p}^{1}\\)).\nSe \\({p}^{1}&gt;{p}^{0}\\), então \\(VC&lt;0\\): o consumidor gastaria mais para manter a mesma utilidade.\nNo nosso exemplo, o preço caiu, portanto \\(VC=100-2\\times 25\\times 1=\\mathbf{50}\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#tirar-renda-até-voltar-à-curva-de-antes",
+    "href": "aulas/11-valoracao/index.html#tirar-renda-até-voltar-à-curva-de-antes",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Tirar renda até voltar à curva de antes",
+    "text": "Tirar renda até voltar à curva de antes\n\n\n\n\nEm A o consumidor está no preço inicial, e, em B, no preço novo.\nCom o preço novo, empurramos a reta para baixo até que tangencie a curva \\({u}^{0}\\) novamente: é o ponto C.\nEsse deslocamento pode ser induzido, alternativamente, por uma queda na renda igual a \\(VC = 50\\). Ou seja, é preciso tirar 50 de renda do consumidor para alcançar o ponto C sob o preço inicial."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#variação-equivalente",
+    "href": "aulas/11-valoracao/index.html#variação-equivalente",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Variação Equivalente",
+    "text": "Variação Equivalente\n\nSuponha um aumento de preço → A variação equivalente é a quantidade de dinheiro que o consumidor precisaria perder para alcançar a nova utilidade (mais baixa), sem mexer nos preços.\nSuponha uma queda de preço → A variação equivalente é a quantidade de dinheiro que o consumidor precisaria ganhar para alcançar a nova utilidade (mais alta), sem mexer nos preços.\nOu seja, a variação equivalente (\\(VE\\)) garante que:\n\n\n\\[V\\left({p}^{1},y,q\\right)=V({p}^{0},y+VE,q)\\]\n\n\nEm que \\(0\\) e \\(1\\) representam antes e depois da mudança de preço."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#variação-equivalente-1",
+    "href": "aulas/11-valoracao/index.html#variação-equivalente-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Variação Equivalente",
+    "text": "Variação Equivalente\n\nPara calcular o valor da variação equivalente, fazemos:\n\n\n\\[VE=E\\left({p}^{0},{u}^{1},q\\right)-E\\left({p}^{1},{u}^{1},q\\right)=E\\left({p}^{0},{u}^{1},q\\right)-y\\]\n\n\nOu seja, mantém-se a utilidade fixa em \\({u}^{1}\\) (após a mudança).\nEntão, calculam-se os gastos do consumidor sob preços antigos (\\({p}^{0}\\)) e novos preços (\\({p}^{1}\\)).\nSe \\({p}^{1}&gt;{p}^{0}\\), então \\(VE&lt;0\\): o consumidor gastaria mais para obter a nova utilidade.\nNo nosso caso, \\(VE=2\\times 50\\times 2-100=\\mathbf{100}\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#dar-renda-até-chegar-à-curva-de-depois",
+    "href": "aulas/11-valoracao/index.html#dar-renda-até-chegar-à-curva-de-depois",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Dar renda até chegar à curva de depois",
+    "text": "Dar renda até chegar à curva de depois\n\n\n\n\nO enquadramento é o mesmo do slide anterior, e A e B estão onde estavam. Só o eixo vertical vai mais longe.\nAgora seguramos o preço velho e empurramos a reta para cima, até encostar na curva \\({u}^{1}\\): é o ponto D.\nO tanto de renda que teve de entrar é \\(VE = 100\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#a-mesma-mudança-dois-números",
+    "href": "aulas/11-valoracao/index.html#a-mesma-mudança-dois-números",
+    "title": "Valoração de Bens Ambientais",
+    "section": "A mesma mudança, dois números",
+    "text": "A mesma mudança, dois números\n\n\n\n\n\n\n\n\n\n\n\npergunta que responde\nutilidade de referência\nvalor\n\n\n\n\nVariação Compensada\nquanto tiro de você depois da mudança?\n\\({u}^{0}\\), a de antes\n50\n\n\nVariação Equivalente\nquanto te dou no lugar da mudança?\n\\({u}^{1}\\), a de depois\n100\n\n\n\n\n\nAs duas medem a mesma queda de preço, e dão números que diferem por um fator de dois.\nA diferença não é erro de conta. São perguntas diferentes, e a resposta de cada uma depende de qual curva de indiferença serve de régua.\nRepare que \\(VC\\) é a disposição a pagar pela queda de preço e \\(VE\\) é a disposição a aceitar para abrir mão dela.\nÉ a mesma distinção entre WTP e WTA do começo da aula, agora com uma fórmula em vez de uma xícara."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#áreas-sob-curvas-de-demanda",
+    "href": "aulas/11-valoracao/index.html#áreas-sob-curvas-de-demanda",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Áreas sob Curvas de Demanda",
+    "text": "Áreas sob Curvas de Demanda\n\nUsando as curvas de Demanda Hicksiana, temos:\n\n\n\\[VC=E\\left({p}^{0},{u}^{0},q\\right)-E\\left({p}^{1},{u}^{0},q\\right)=\\int_{{p}_{j}^{1}}^{{p}_{j}^{0}} h({p}_{j},{p}_{-j},{u}^{0},q){dp}_{j}\\]\n\n\n\\[VE=E\\left({p}^{0},{u}^{1},q\\right)-E\\left({p}^{1},{u}^{1},q\\right)=\\int_{{p}_{j}^{1}}^{{p}_{j}^{0}} h({p}_{j},{p}_{-j},{u}^{1},q){dp}_{j}\\]\n\n\nRepare que a integral é em preço, e não em quantidade. É a faixa horizontal entre os dois preços, à esquerda da curva."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#a-mesma-vc-agora-como-área",
+    "href": "aulas/11-valoracao/index.html#a-mesma-vc-agora-como-área",
+    "title": "Valoração de Bens Ambientais",
+    "section": "A mesma VC, agora como área",
+    "text": "A mesma VC, agora como área\n\n\n\n\nA Hicksiana de referência é \\(h(p,{u}^{0})=25/\\sqrt{p}\\), que passa pelo ponto A do slide anterior.\nA faixa entre \\(p=1\\) e \\(p=4\\), à esquerda dela, vale exatamente 50."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#e-a-mesma-ve",
+    "href": "aulas/11-valoracao/index.html#e-a-mesma-ve",
+    "title": "Valoração de Bens Ambientais",
+    "section": "E a mesma VE",
+    "text": "E a mesma VE\n\n\n\n\nAgora a régua é \\(h(p,{u}^{1})=50/\\sqrt{p}\\), que passa pelo ponto B.\nMesma conta, outra curva: 100."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#áreas-sob-curvas-de-demanda-1",
+    "href": "aulas/11-valoracao/index.html#áreas-sob-curvas-de-demanda-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Áreas sob Curvas de Demanda",
+    "text": "Áreas sob Curvas de Demanda\n\nUma aproximação sujeita a imprecisões: Excedente do Consumidor.\n\n\n\n\n\nA Marshalliana é a única das três que se observa, porque não depende de \\(\\overline{u}\\).\nEla passa por A e por B, então fica entre as duas Hicksianas."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#quando-o-excedente-basta",
+    "href": "aulas/11-valoracao/index.html#quando-o-excedente-basta",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Quando o excedente basta",
+    "text": "Quando o excedente basta\n\nCom esta família de preferências as três medidas têm fórmula fechada, e o expoente \\(\\alpha\\) é justamente a fatia do orçamento gasta com o bem:\n\n\n\\[VC=y\\left(1-{p}^{-\\alpha }\\right) \\qquad EC=\\alpha y\\ln p \\qquad VE=y({p}^{\\alpha }-1)\\]\n\n\n\n\n\n\nviagem é 50% do orçamento\nviagem é 5% do orçamento\n\n\n\n\n\\(VC\\)\n50,00\n6,70\n\n\nExcedente do Consumidor\n69,31\n6,93\n\n\n\\(VE\\)\n100,00\n7,18\n\n\nerro do excedente sobre \\(VC\\)\n38,6%\n3,5%\n\n\n\n\n\nA mesma queda de preço, a mesma teoria, e a aproximação passa de péssima a irrelevante.\nBens ambientais quase sempre são uma fatia pequena do orçamento, e é por isso que a literatura aplicada usa excedente sem pedir desculpas."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-ambientais",
+    "href": "aulas/11-valoracao/index.html#bens-ambientais",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Ambientais",
+    "text": "Bens Ambientais"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#como-medir-valor-de-bens-ambientais",
+    "href": "aulas/11-valoracao/index.html#como-medir-valor-de-bens-ambientais",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Como Medir Valor de Bens Ambientais",
+    "text": "Como Medir Valor de Bens Ambientais\n\nNo caso de bens ambientais, tipicamente tratamos de mudanças na quantidade (ou qualidade) ao invés do preço.\n\nOu seja, olharemos para \\(q\\).\n\nNeste caso, teríamos:\n\n\n\\[V\\left(p,y,{q}^{0}\\right)=V(p,y-VC,{q}^{1}) \\qquad V\\left(p,y,{q}^{1}\\right)=V(p,y+VE,{q}^{0})\\]\n\n\n\\[VC=y-E\\left(p,{u}^{0},{q}^{1}\\right) \\qquad VE=E\\left(p,{u}^{1},{q}^{0}\\right)-y\\]\n\n\nÉ a mesma conta de antes, com \\(q\\) no lugar de \\(p\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#peculiaridade-de-bens-ambientais",
+    "href": "aulas/11-valoracao/index.html#peculiaridade-de-bens-ambientais",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Peculiaridade de Bens Ambientais",
+    "text": "Peculiaridade de Bens Ambientais\n\nNão há mercado para o bem ambiental, tampouco preços variando.\n\n\nÉ mais difícil determinar mudanças no dispêndio relacionadas ao bem ambiental.\n\n\nNão é possível usar o excedente do consumidor, pois não conseguimos traçar uma curva de demanda.\n\n\nNão há preço para o bem ambiental.\nPrecisaríamos estimar qual é a disposição marginal a pagar por mais (menos) quantidade do bem ambiental (demanda inversa)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#medidas-indiretas",
+    "href": "aulas/11-valoracao/index.html#medidas-indiretas",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Medidas Indiretas",
+    "text": "Medidas Indiretas\n\nSe não temos medidas diretas, como a disposição marginal a pagar, precisamos de alternativas.\n\n\nVeremos medidas indiretas baseadas no conceito de preferência revelada.\n\n\nA partir das escolhas que as pessoas efetivamente fazem, podemos inferir qual valor elas atribuem a bens ambientais.\n\n\nUsaremos variação de preço de outros bens para inferir o valor do bem ambiental."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#preferência-revelada",
+    "href": "aulas/11-valoracao/index.html#preferência-revelada",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Preferência Revelada",
+    "text": "Preferência Revelada\n\nExemplo 1: Viagem a Manaus.\n\n\nParque Nacional de Anavilhanas é patrimônio ambiental.\nSaindo de São Paulo, chegar até lá envolve vários custos.\n\nPassagem aérea (~R$ 2.800,00 para maio/2025);\nEstadia;\nTransporte de voadeira pelo Rio Negro.\n\nVárias pessoas viajam anualmente até lá e pagam esses custos.\n\nEssas pessoas preferem estar lá ao invés de usarem o dinheiro para outra coisa.\n\nÉ possível inferir valor do parque a partir do gasto que as pessoas incorrem."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#preferência-revelada-1",
+    "href": "aulas/11-valoracao/index.html#preferência-revelada-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Preferência Revelada",
+    "text": "Preferência Revelada\n\nExemplo 2: Filtro de Água ou Garrafas de Água.\n\n\nEm algumas cidades do Brasil, a água da torneira possui contaminantes prejudiciais à saúde.\nPara se protegerem, indivíduos instalam filtros nas torneiras.\nPodemos inferir valor da água limpa a partir do custo do filtro.\n\nOu a partir do gasto com garrafas d’água.\n\n\n\nExemplo 3: Gasto de Turistas no Litoral.\n\n\nAlgumas praias paulistas se tornaram mais sujas ao longo dos anos.\nO número de turistas (e seus gastos) nessas praias ao longo do tempo pode nos dizer o valor atribuído à sua qualidade ambiental."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#medidas-indiretas-3-categorias",
+    "href": "aulas/11-valoracao/index.html#medidas-indiretas-3-categorias",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Medidas Indiretas, 3 Categorias",
+    "text": "Medidas Indiretas, 3 Categorias\n\nNós vamos dividir essas abordagens indiretas em três categorias:\n\n\nBens Complementares;\nBens Substitutos;\nBens Diferenciados (Qualidade).\n\n\nAs duas primeiras são o resto desta aula. A terceira é a aula seguinte inteira."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares",
+    "href": "aulas/11-valoracao/index.html#bens-complementares",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-1",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\nEste é o caso relacionado a atividades recreativas.\n\n\nA demanda por viagens a um local é condicional à sua qualidade ambiental.\nMudanças na qualidade ambiental afetam demanda por viagens.\n\n\nÉ como se \\(q\\) fosse uma qualidade do bem privado.\n\n\nDa mesma forma que a limpeza da praia é uma qualidade da viagem."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-2",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-2",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\nVamos medir a disposição a pagar por um aumento de qualidade ambiental \\({q}^{0}\\to {q}^{1}\\).\n\n\nQueremos uma medida indireta para \\(VC=E\\left(p,{u}^{0},{q}^{0}\\right)-E\\left(p,{u}^{0},{q}^{1}\\right)\\).\n\n\nUma possibilidade é:\n\n\n\\[A=\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{1}\\right)} h\\left(p,{u}^{0},{q}^{1}\\right)dp-\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{0}\\right)} h\\left(p,{u}^{0},{q}^{0}\\right)dp\\]\n\n\nEm que \\(\\overline{p}\\left({q}^{1}\\right)\\) é o preço do bem privado que levaria a demanda por esse bem a zero quando \\(q={q}^{1}\\). O mesmo para \\(\\overline{p}\\left({q}^{0}\\right)\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-3",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-3",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\n\\(\\overline{p}\\left({q}^{1}\\right)\\) e \\(\\overline{p}\\left({q}^{0}\\right)\\) são os preços de esgotamento (ou afogamento).\n\n\nPreço mais alto que alguém está disposto a pagar pelo bem privado para dado nível de qualidade ambiental (\\({q}^{0}\\) ou \\({q}^{1}\\)).\n\n\nExemplo: considere uma praia e dois cenários.\n\n\nEm um cenário de praia limpa, ninguém paga passagem aérea com preço acima de \\(\\overline{p}\\left({q}^{1}\\right)\\);\nEm um cenário de praia suja, ninguém paga passagem aérea com preço acima de \\(\\overline{p}\\left({q}^{0}\\right)\\);\nProvavelmente, \\(\\overline{p}\\left({q}^{1}\\right)&gt;\\overline{p}\\left({q}^{0}\\right)\\).\n\n\nAqui, assumimos que esses preços de esgotamento são finitos."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#com-a-praia-suja",
+    "href": "aulas/11-valoracao/index.html#com-a-praia-suja",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Com a praia suja",
+    "text": "Com a praia suja\n\n\n\n\nA viagem custa R$ 20, e a essa altura da curva ele faz 4 viagens por ano.\nAcima de R$ 60 ele não vai mais: este é o preço de esgotamento \\(\\overline{p}({q}^{0})\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#com-a-praia-limpa",
+    "href": "aulas/11-valoracao/index.html#com-a-praia-limpa",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Com a praia limpa",
+    "text": "Com a praia limpa\n\n\n\n\nA limpeza gira a curva para fora: agora ele faz 8 viagens, e só desiste acima de R$ 100.\n\\(A\\) é a diferença entre as duas áreas: R$ 240 por pessoa por ano.\nNote que nenhuma das duas curvas tem preço de qualidade ambiental nelas. A conta inteira é feita com o preço da viagem."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-4",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-4",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\nA questão é se \\(A=VC\\).\n\n\nSe sim, temos uma boa medida indireta.\n\n\nVerifiquemos (LOUSA).\n\n\nTemos que:\n\n\n\\[A=VC+E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]\\]\n\n\nSe \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0 \\to A=VC\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-5",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-5",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\nO que significa assumir \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0\\) ?\n\n\nDispêndio para obter \\({u}^{0}\\) não varia com \\(q\\) quando o bem privado não é consumido.\nDe outra forma, o bem ambiental só tem valor quando o bem privado é consumido.\n\nÉ como se o bem ambiental só tivesse “valor de uso”.\n\n\n\nExemplo: é como valorizar os Lençóis Maranhenses só porque é possível viajar até lá.\n\n\nOu seja, o bem que importa é a viagem, não o local intrinsecamente."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#o-que-a-viagem-não-mede",
+    "href": "aulas/11-valoracao/index.html#o-que-a-viagem-não-mede",
+    "title": "Valoração de Bens Ambientais",
+    "section": "O que a viagem não mede",
+    "text": "O que a viagem não mede\n\n\n\n\nSuponha que a pessoa pagaria R$ 100 por ano pela praia limpa mesmo que nunca fosse lá.\nOs dois triângulos continuam dando 240, porque nada disso passa pelo custo da viagem.\nNesse caso \\(A\\) é um piso para \\(VC\\), e não \\(VC\\). A hipótese de complementaridade fraca é justamente a de que essa barra cinza não existe."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-6",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-6",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\nQuando poderia fazer sentido pensar que o bem ambiental só tem “valor de uso”?\n\n\nTipicamente, quando os indivíduos consideram aquele bem como não essencial.\n\n\nExemplo: cachoeiras no interior de São Paulo.\n\n\nUma cachoeira específica só tem valor se estiver aberta à visitação.\nIsto porque há uma infinidade de cachoeiras similares disponíveis.\nNenhuma delas é, a princípio, única.\n\n\nObviamente, sabemos que a definição do que é “único” não é trivial."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-complementares-7",
+    "href": "aulas/11-valoracao/index.html#bens-complementares-7",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Complementares",
+    "text": "Bens Complementares\n\nMesmo que o bem ambiental em questão seja não-essencial, ainda não conseguimos observar a Demanda Compensada.\n\n\nSeria necessário aproximar \\(VC\\) usando a Demanda Marshalliana:\n\n\n\\[\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{1}\\right)} x\\left(p,y,{q}^{1}\\right)dp-\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{0}\\right)} x\\left(p,y,{q}^{0}\\right)dp\\]\n\n\nSob algumas condições, essa aproximação é razoável.\n\n\nEm particular, se as elasticidades-renda de \\(x\\) e \\(q\\) forem similares.\nÉ o mesmo argumento da tabela de alguns slides atrás: se a viagem é uma fatia pequena do orçamento, a diferença some."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#isso-já-foi-usado-para-cobrar-uma-conta",
+    "href": "aulas/11-valoracao/index.html#isso-já-foi-usado-para-cobrar-uma-conta",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Isso já foi usado para cobrar uma conta",
+    "text": "Isso já foi usado para cobrar uma conta\n\nO vazamento da plataforma Deepwater Horizon, em 2010, sujou a costa do Golfo do México. Para calcular a indenização, a agência ambiental americana precisava de um número (English et al. 2018).\n\n\nForam cinco anos de trabalho, oito pesquisas amostrais e um modelo de demanda por viagens de recreação para toda a população dos EUA.\nCusto da viagem calculado com modo de transporte, inclusive passagem aérea.\n\n\n\n\n\nDias de recreação perdidos\nmais de 16 milhões\n\n\nExcedente médio por dia perdido\ncerca de US$ 42\n\n\nDano recreacional total\nUS$ 661 milhões"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#isso-já-foi-usado-para-cobrar-uma-conta-1",
+    "href": "aulas/11-valoracao/index.html#isso-já-foi-usado-para-cobrar-uma-conta-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Isso já foi usado para cobrar uma conta",
+    "text": "Isso já foi usado para cobrar uma conta\n\nA conta é exatamente a dos dois triângulos: quanto de área sob a demanda por viagens desapareceu quando \\(q\\) caiu.\nNote o que não está nesses 661 milhões: o valor que alguém em Chicago atribui a um Golfo do México limpo sem nunca pensar em ir lá.\nPela complementaridade fraca, esse valor é zero por hipótese.\nOu seja, o número que foi a juízo é, pela própria construção, um piso."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-1",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nEste é o caso em que bens privados e o bem ambiental são intermediários na obtenção de um bem final.\n\n\nExemplo 1: Saúde de uma pessoa com asma.\n\n\nRemédios e bombinha são bens privados.\nQualidade do ar é o bem ambiental.\nSão substitutos que ajudam a obter mais saúde (bem final).\n\n\nExemplo 2: Saúde e qualidade da água.\n\n\nFiltro e garrafas de água são bens privados.\nQualidade da água é bem ambiental."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-2",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-2",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nO valor do bem ambiental pode, portanto, ser inferido a partir dos bens privados substitutos.\n\n\nPara estudar este caso, vamos considerar um modelo de produção:\n\n\nBem ambiental e bens privados são insumos.\nExiste uma tecnologia que transforma esses insumos no bem final (ex.: saúde).\n\n\nFunção de produção \\(H=f(x,q)\\).\n\n\n\\(x\\) é o bem privado; \\(q\\) é o bem ambiental;\n\\({f}_{x}&gt;0\\); \\({f}_{q}&gt;0\\) → os bens intermediários ajudam na produção de \\(H\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-3",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-3",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nO sinal de \\({f}_{xq}(x,q)\\) vai depender do contexto.\n\n\nExemplo 1: qualidade da água e saúde.\n\n\nQuanto melhor a qualidade da água (\\(q\\)), menor é a contribuição do filtro à saúde.\nLogo, esperaríamos \\({f}_{xq}&lt;0\\).\nOu seja, benefício marginal do filtro é decrescente conforme qualidade da água aumenta.\n\n\nExemplo 2: peixes pescados, idas ao pesqueiro e estoque de peixes no lago.\n\n\nPeixes pescados geram utilidade, e quanto mais peixes no lago, mais produtiva é a ida ao pesqueiro.\n\\({f}_{xq}&gt;0\\): benefício marginal da ida ao pesqueiro aumenta conforme o bem ambiental melhora."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#duas-tecnologias-os-mesmos-dois-pontos",
+    "href": "aulas/11-valoracao/index.html#duas-tecnologias-os-mesmos-dois-pontos",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Duas tecnologias, os mesmos dois pontos",
+    "text": "Duas tecnologias, os mesmos dois pontos\n\n\n\n\nUma família precisa de \\(H\\) de água segura por semana. A torneira entrega \\(q\\) de graça, e o resto vem de garrafas a R$ 5 cada.\nNos dois painéis, passar de \\(q=3\\) para \\(q=7\\) derruba as garrafas de 7 para 3, e poupa os mesmos R$ 20.\nO que muda é a inclinação da isoquanta, que é o \\({f}_{q}/{f}_{x}\\) que vamos usar em seguida."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-4",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-4",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nA função-custo pode ser escrita como um problema de minimização tradicional:\n\n\n\\[C\\left(p,q,H\\right)=\\min_{x} \\left\\{px+\\mu \\left[H-f\\left(x,q\\right)\\right]\\right\\}\\]\n\n\nEsse é o menor custo para a obtenção de \\(H\\), escolhendo \\(x\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-5",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-5",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nO consumidor maximiza sua utilidade sujeita ao custo e ao formato de \\(f(\\cdot )\\):\n\n\n\\[\\max_{x,z} U(H,z) \\text{ s.a. } y=C\\left(p,q,H\\right)+z, \\quad H=f(x,q)\\]\n\n\nNote que \\(x\\) e \\(q\\) afetam a utilidade apenas através de \\(H\\).\nIsto significa que \\(x\\) e \\(q\\) não têm benefícios diretos ao consumidor.\nA solução desse problema nos dá uma demanda \\(x(p,y,q)\\), e o nível de produção é tal que:\n\n\n\\[H\\left(p,y,q\\right)=f\\left[x\\left(p,y,q\\right), q\\right]\\]"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-6",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-6",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nPara medir bem-estar, precisamos da função dispêndio:\n\n\n\\[E\\left(p,u,q\\right)=\\min_{H,z} \\left\\{C\\left(p,q,H\\right)+z \\text{ s.a. } U\\left(H,z\\right)=u\\right\\}\\]\n\n\nE obtemos demandas compensadas por \\(H\\) e \\(z\\).\n\n\nNovamente, \\(VC=E\\left(p,{u}^{0},{q}^{0}\\right)-E\\left(p,{u}^{0},{q}^{1}\\right)\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-7",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-7",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nPrimeiro, vamos analisar uma mudança marginal em \\(q\\), mantendo \\(H\\) constante.\n\n\nA disposição marginal a pagar por uma mudança em \\(q\\) é:\n\n\n\\[MWTP=-\\frac{\\partial E\\left(p,u,q\\right)}{\\partial q}=-\\frac{\\partial C\\left(p,q,H\\right)}{\\partial q}\\]\n\n\nVamos combinar essa expressão com os resultados anteriores da escolha do consumidor (LOUSA)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-8",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-8",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nOu seja, para uma mudança marginal em \\(q\\) mantendo \\(H\\) constante, conseguimos calcular a MWTP de três formas:\n\n\nUsando a função-custo → \\(MWTP=-\\frac{\\partial C(p,q,H)}{\\partial q}\\)\nUsando a tecnologia de “produção” → \\(MWTP=p \\frac{\\partial f/\\partial q}{\\partial f/\\partial x}\\)\nUsando a demanda por \\(x\\) → \\(MWTP=-p\\frac{\\partial x}{\\partial q}\\)\n\n\nA terceira é a única que se observa: é o gasto com garrafas que se vê no caixa do supermercado."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#total-e-margem-não-são-a-mesma-coisa",
+    "href": "aulas/11-valoracao/index.html#total-e-margem-não-são-a-mesma-coisa",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Total e margem não são a mesma coisa",
+    "text": "Total e margem não são a mesma coisa\n\n\n\n\nCom substitutos perfeitos, cada ponto de qualidade vale R$ 5, sempre.\nCom a tecnologia multiplicativa, o primeiro ponto vale R$ 11,70 e o último vale R$ 2,10.\nAs duas áreas valem 20, que é a economia total do slide anterior. Só a curva é diferente."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-9",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-9",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nE se mudança não for marginal, saindo de \\({q}^{0}\\) para \\({q}^{1}\\)?\n\n\nPodemos usar algo similar à medida usada para bens complementares.\n\n\n\\[A=\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{1}\\right)} h\\left(p,{u}^{0},{q}^{1}\\right)dp-\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{0}\\right)} h\\left(p,{u}^{0},{q}^{0}\\right)dp\\]\n\n\nNo caso de bens substitutos, \\(A=VC\\) ocorre quando \\(x\\) é essencial para \\(H\\) (contrário do caso de complementares)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-10",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-10",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nQuando \\(x\\) é essencial para \\(H\\), temos:\n\n\n\\[f\\left(0,q\\right)=0\\to H=0\\to U(0,z)\\]\n\n\n\\(U(0,z)\\) não varia com mudanças em \\(q\\), porque o bem ambiental só faz diferença quando o bem privado é consumido.\n\n\nSe \\(x\\) é essencial, podemos usar mesma estratégia de antes com “preços de afogamento”:\n\n\nQuando os preços são iguais a \\(\\overline{p}\\left({q}^{1}\\right)\\) e \\(\\overline{p}\\left({q}^{0}\\right)\\), o bem \\(x\\) não é consumido;\nIsso implica em \\(H=0\\);\nQuando \\(H=0\\), o dispêndio para alcançar \\({u}^{0}\\) não depende de \\(q\\);\nIsto nos dá \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0 \\to A=VC\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-11",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-11",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nCaso Especial: \\(f(x,q)\\) é separável.\n\n\nSuponha que \\(f\\left(x,q\\right)=x+q\\).\n\n\nÉ o caso de substitutos perfeitos (água da torneira limpa ou água filtrada).\n\n\nCom isso, o problema de minimização de custo do consumidor será:\n\n\n\\[C\\left(p,q,H\\right)=\\min_{x} \\left\\{px+\\mu \\left[H-x-q\\right]\\right\\}\\]\n\n\nAssumindo solução interior, temos \\(p=\\mu\\) e \\(x=H-q\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-12",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-12",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\nA função-custo é dada por \\(C\\left(p,q,H\\right)=p(H-q)\\).\n\n\nRetomemos o problema de maximização de utilidade:\n\n\n\\[\\max_{x,z} U[H,z] \\text{ s.a. } y=C\\left(p,q,H\\right)+z, \\quad H=f(x,q)\\]\n\n\nNo caso separável, temos:\n\n\n\\[y=p\\left(H-q\\right)+z \\to y+p\\cdot q=p\\cdot H+z \\to y+p\\cdot q=p\\cdot f(x,q)+z\\]"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-13",
+    "href": "aulas/11-valoracao/index.html#bens-substitutos-13",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Bens Substitutos",
+    "text": "Bens Substitutos\n\n\\(p\\cdot q\\) funciona como um modificador da renda \\(y\\): \\(\\tilde{y}=y+p\\cdot q\\).\n\n\nSuponha \\({q}^{1}-{q}^{0}&gt;0\\) → renda aumentaria em \\(p({q}^{1}-{q}^{0})\\).\n\n\nQual é a disposição a pagar por esse aumento de renda?\n\n\nÉ o mesmo que perguntar a disposição a pagar por mais dinheiro.\nSerá exatamente \\(p({q}^{1}-{q}^{0})\\).\n\n\nLogo, no caso separável em que bens são substitutos, a disposição a pagar por um aumento na qualidade do bem ambiental é simplesmente o preço do bem privado vezes a diferença de qualidade."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira",
+    "href": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Comprar ar limpo em prateleira",
+    "text": "Comprar ar limpo em prateleira\n\nNa China, a norma de aquecimento ao norte do Rio Huai criou décadas de poluição a mais de um lado da linha. (Ito e Zhang 2020) usam dados de caixa de purificadores de ar para ler a disposição a pagar direto no consumo.\n\n\nO purificador é o \\(x\\) do modelo, e a qualidade do ar é o \\(q\\).\nQuem mora do lado poluído compra mais purificador, e paga mais caro por modelos que filtram melhor.\n\n\n\n\n\n\npor domicílio, por ano\n\n\n\n\nReduzir PM₁₀ em 1 µg/m³\nUS$ 1,34\n\n\nEliminar toda a poluição causada pela norma do Huai\nUS$ 32,70"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira-1",
+    "href": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Comprar ar limpo em prateleira",
+    "text": "Comprar ar limpo em prateleira\n\nRepare que o número sai de \\(-p\\,\\partial x/\\partial q\\), que é a terceira das três formas de calcular a MWTP.\nNenhum chinês foi perguntado quanto vale o ar limpo. O que se observou foi o que ele levou para casa.\nA disposição a pagar cresce com a renda e com a exposição a informação sobre a qualidade do ar.\nIsso é um alerta: a medida capta a disposição a pagar de quem pode pagar, e a de quem sabe que o problema existe."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#quem-ignora-o-gasto-defensivo-subestima-o-benefício",
+    "href": "aulas/11-valoracao/index.html#quem-ignora-o-gasto-defensivo-subestima-o-benefício",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Quem ignora o gasto defensivo subestima o benefício",
+    "text": "Quem ignora o gasto defensivo subestima o benefício\n\nO NOx Budget Program é o cap-and-trade americano de óxidos de nitrogênio, primo do EU ETS da aula 07. (Deschênes et al. 2017) medem o que ele fez com a saúde.\n\n\nO programa derrubou emissão de NOx, ozônio, gasto com remédios e mortalidade.\nRedução anual de compra de medicamentos: cerca de US$ 800 milhões.\nRedução anual de mortalidade: cerca de US$ 1,3 bilhão.\nOu seja, o gasto defensivo é mais de um terço da disposição a pagar total.\nUma avaliação que olhasse só para mortalidade perderia essa parte inteira, e a política pareceria menos vantajosa do que é."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#exercício-quanto-vale-despoluir-a-praia",
+    "href": "aulas/11-valoracao/index.html#exercício-quanto-vale-despoluir-a-praia",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Exercício: quanto vale despoluir a praia",
+    "text": "Exercício: quanto vale despoluir a praia\n\nUma pessoa mora em São Paulo e vai ao litoral. Cada viagem custa R$ 20. A tabela traz o quanto ela valoriza cada viagem adicional, nos dois cenários de qualidade da praia.\n\n\n\n\n\nviagem\n1ª\n2ª\n3ª\n4ª\n5ª\n6ª\n7ª\n8ª\n\n\n\n\nPraia suja\n40\n30\n20\n10\n\n\n\n\n\n\nPraia limpa\n80\n70\n60\n50\n40\n30\n20\n10\n\n\n\n\n\n(a) Quantas viagens ela faz em cada cenário?\n(b) Quais são os preços de esgotamento nos dois cenários?\n(c) Quanto vale a despoluição para ela, por ano?\n(d) A praia recebe 50 mil visitantes com esse mesmo perfil, e despoluir custa R$ 6 milhões por ano. Vale a pena?"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#solução",
+    "href": "aulas/11-valoracao/index.html#solução",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Solução",
+    "text": "Solução\n\n\n\n\n(a) Ela viaja enquanto o valor cobre os 20: são 3 viagens com a praia suja e 7 com a praia limpa.\n(b) Os preços de esgotamento são o degrau mais alto de cada escada: 40 e 80.\n(c) Excedente de 30 na praia suja e de 210 na limpa, então \\(A = \\mathbf{180}\\) por ano.\n(d) \\(180 \\times 50.000 = \\textbf{R\\$ 9 milhões}\\) contra R$ 6 milhões de custo. Vale."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#e-o-que-essa-conta-não-viu",
+    "href": "aulas/11-valoracao/index.html#e-o-que-essa-conta-não-viu",
+    "title": "Valoração de Bens Ambientais",
+    "section": "E o que essa conta não viu",
+    "text": "E o que essa conta não viu\n\n\n\n\n\nbenefício anual\n\n\n\n\nQuem vai à praia (50 mil pessoas × 180)\nR$ 9 milhões\n\n\nQuem mora em Manaus e nunca vai\nR$ 0, por hipótese\n\n\nCusto da despoluição\nR$ 6 milhões\n\n\n\n\n\nA resposta do item (d) sobrevive: 9 é maior que 6, e o valor de não-uso só aumentaria o lado do benefício.\nMas o sinal da conclusão nem sempre é robusto assim. Se despoluir custasse R$ 12 milhões, a decisão dependeria inteiramente da linha do meio.\nE a complementaridade fraca não é uma hipótese sobre o mundo: é uma hipótese sobre o que o método consegue enxergar."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#voltando-à-pergunta-da-abertura",
+    "href": "aulas/11-valoracao/index.html#voltando-à-pergunta-da-abertura",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Voltando à pergunta da abertura",
+    "text": "Voltando à pergunta da abertura\n\nUm programa deixa uma praia mais limpa. Como o economista mede o benefício?\n\n\n\nA resposta é (c): pelo que as pessoas já gastam com bens ligados à praia, e por quanto esse gasto muda.\nA alternativa (a) confunde custo com benefício, que é exatamente o erro que o modelo de custos e danos da aula 04 existe para evitar.\nA alternativa (b) é o outro ramo da literatura, o de preferência declarada, e tem o problema de WTP contra WTA que vimos no começo da aula.\n\n\n\nE a resposta de (c) é sempre um piso, porque só enxerga o que passa por algum mercado."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#concluindo",
+    "href": "aulas/11-valoracao/index.html#concluindo",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Concluindo",
+    "text": "Concluindo\n\n\\(VC\\) e \\(VE\\) respondem perguntas diferentes sobre a mesma mudança, e só coincidem quando o efeito renda é desprezível.\nO excedente do consumidor fica entre as duas, e é uma aproximação boa justamente para bens que são fatia pequena do orçamento.\nSem mercado para \\(q\\), a saída é a preferência revelada: o valor do bem ambiental aparece no gasto com um bem privado ligado a ele.\nCom complementares, a medida é a diferença de áreas entre os preços de esgotamento, e ela vale se o bem ambiental só tiver valor de uso.\nCom substitutos, a medida é o gasto defensivo que deixa de ser feito, e ela vale se o bem privado for essencial.\nFica a pergunta da próxima aula: e quando o bem ambiental não é complemento nem substituto de nada, mas vem embutido no preço de um bem que já tem mercado?"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#referências",
+    "href": "aulas/11-valoracao/index.html#referências",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Referências",
+    "text": "Referências\n\n\nDeschênes, Olivier, Michael Greenstone, e Joseph S. Shapiro. 2017. «Defensive Investments and the Demand for Air Quality: Evidence from the NOx Budget Program». American Economic Review 107 (10): 2958–89. https://doi.org/10.1257/aer.20131002.\n\n\nEnglish, Eric, Roger H. von Haefen, Joseph Herriges, et al. 2018. «Estimating the Value of Lost Recreation Days from the Deepwater Horizon Oil Spill». Journal of Environmental Economics and Management 91: 26–45. https://doi.org/10.1016/j.jeem.2018.06.010.\n\n\nHanemann, W. Michael. 1991. «Willingness to Pay and Willingness to Accept: How Much Can They Differ?» The American Economic Review 81 (3): 635–47.\n\n\nIto, Koichiro, e Shuang Zhang. 2020. «Willingness to Pay for Clean Air: Evidence from Air Purifier Markets in China». Journal of Political Economy 128 (5): 1627–72. https://doi.org/10.1086/705554.\n\n\nKahneman, Daniel, Jack L. Knetsch, e Richard H. Thaler. 1990. «Experimental Tests of the Endowment Effect and the Coase Theorem». Journal of Political Economy 98 (6): 1325–48. https://doi.org/10.1086/261737.\n\n\nPhaneuf, Daniel J., e Till Requate. 2017. A Course in Environmental Economics: Theory, Policy, and Practice. Cambridge University Press."
+  },
+  {
+    "objectID": "aulas/10-monopolio/index.html#o-equilíbrio-sem-imposto",
+    "href": "aulas/10-monopolio/index.html#o-equilíbrio-sem-imposto",
+    "title": "Mercado Não Competitivo",
+    "section": "O equilíbrio sem imposto",
+    "text": "O equilíbrio sem imposto\n\n\n\n\nSem imposto, a firma para onde abater deixa de custar, em \\(e={ê}^{x}\\), e o custo marginal de produzir é o “limpo”, \\({C}_{x}=c=10\\).\nA demanda faz o resto: \\(X=150\\), e a emissão que vem junto é \\({ê}^{X}=300\\).\nAli, abater a última tonelada custa zero e evitaria 60 de dano."
+  },
+  {
+    "objectID": "aulas/10-monopolio/index.html#o-imposto-sobe-o-custo-marginal",
+    "href": "aulas/10-monopolio/index.html#o-imposto-sobe-o-custo-marginal",
+    "title": "Mercado Não Competitivo",
+    "section": "O imposto sobe o custo marginal",
+    "text": "O imposto sobe o custo marginal\n\n\n\n\nCom um imposto \\(\\tau\\) por tonelada, a firma abate até \\(\\tau =-{C}_{e}\\), e o custo marginal de produzir vira \\({C}_{x}=c+\\delta \\tau\\).\nCom \\({\\tau }^{*}=25\\), ela vai de 10 a 60, e a produção cai para 100.\nA curva de abatimento anda junto, porque depende de \\(X\\), e o mesmo \\({\\tau }^{*}\\) para em \\({E}^{*}=125\\)."
   }
 ]
