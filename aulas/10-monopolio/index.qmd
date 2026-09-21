@@ -297,7 +297,7 @@ O bem-estar social gerado por $x$, neste caso, é dado por:
 :::
 
 ::: {.eq-block}
-$$W\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\right) = \int_{0}^{\sum {x}_{j}} P\left(t\right)dt - \sum_{j=1}^{J} {C}^{j}\left({x}_{j},{e}_{j}\right) - D\left(E\right)$$
+$$W\left({x}_{1},...,{x}_{J},{e}_{1},...,{e}_{J}\right) = \int_{0}^{\sum {x}_{j}} P\left(t\right)dt - \sum_{j=1}^{J} {C}^{j}\left({x}_{j},{e}_{j}\right) - D(E)$$
 :::
 
 ::: {.no-bullet}
@@ -326,16 +326,42 @@ $${D}^{′}\left(E\right)=-{C}_{{e}_{j}}^{j}\left({x}_{j},{e}_{j}\right) \forall
 São duas condições, e nenhuma delas é nova. A novidade é considerá-las ao mesmo tempo.
 :::
 
+## O equilíbrio sem imposto
+
+::: {.diagram}
+![](../_assets/figuras/10-otimo-1.svg){style="max-height:310px"}
+:::
+
+- Sem imposto, a firma para onde abater deixa de custar, em $e={ê}^{x}$, e o
+  custo marginal de produzir é o "limpo", ${C}_{x}=c=10$.
+- [A demanda faz o resto: $X=150$, e a emissão que vem junto é
+  ${ê}^{X}=300$.]{.fragment fragment-index=1}
+- [Ali, abater a última tonelada custa zero e evitaria 60 de
+  dano.]{.fragment fragment-index=2}
+
+## O imposto sobe o custo marginal
+
+::: {.diagram}
+![](../_assets/figuras/10-otimo-2.svg){style="max-height:310px"}
+:::
+
+- Com um imposto $\tau$ por tonelada, a firma abate até $\tau =-{C}_{e}$, e o
+  custo marginal de produzir vira ${C}_{x}=c+\delta \tau$.
+- [Com ${\tau }^{*}=25$, ela vai de 10 a 60, e a produção cai para
+  100.]{.fragment fragment-index=1}
+- [A curva de abatimento anda junto, porque depende de $X$, e o mesmo
+  ${\tau }^{*}$ para em ${E}^{*}=125$.]{.fragment fragment-index=2}
+
 ## As duas condições lado a lado
 
 ::: {.diagram}
-![](../_assets/figuras/10-otimo.svg){style="max-height:350px"}
+![](../_assets/figuras/10-otimo-3.svg){style="max-height:310px"}
 :::
 
 - O painel da direita é a figura das aulas 04 a 09: $-C′(E)=(200-E)/3$ cruzando
   $D′(E)=0{,}2E$ em ${E}^{*}=125$, com preço 25.
-- [O que esta aula acrescenta é o painel da esquerda. A curva vermelha da
-  direita é a curva de abatimento **no nível de produção ${X}^{*}$**. Logo, esta é diferente para cada ${X}^{*}$.]{.fragment fragment-index=1}
+- Esta aula acrescenta o painel da esquerda, ao passo que a curva vermelha da
+  direita é a curva de abatimento **no nível de produção ${X}^{*}$**. Note que esta é diferente para cada ${X}^{*}$.
 
 ## Instrumentos de Política
 
@@ -454,8 +480,8 @@ $$\frac{dΠ}{de}=\left[p-{C}^{′}\left(\frac{\hat{e}}{\delta }\right)\right]\fr
 
 - O lucro tem um pico em $\hat{e}$, que é onde a firma pararia sem regulação
   nenhuma.
-- [Descer de $\hat{e}=100$ para $e=60$ custa 400 de lucro, que é exatamente a
-  área sob a curva marginal.]{.fragment fragment-index=1}
+- Descer de $\hat{e}=100$ para $e=60$ custa 400 de lucro, que é exatamente a
+  área sob a curva da direita.
 - Aqui, **abater é produzir menos**.
 
 ## Monopólio {.section-cover}
@@ -556,8 +582,10 @@ monopolista entrega ${P}^{′}(X)X+P(X)$.]{.fragment fragment-index=2}
 ## Eficiência apenas com imposto?
 
 É possível alcançar a solução ótima $({X}^{*},{E}^{*})$ apenas com um imposto $\tau$?
-  - Para isso, denote ${X}^{m}(\tau )$ e ${E}^{m}(\tau )$ como as escolhas do
+
+- Para isso, denote ${X}^{m}(\tau )$ e ${E}^{m}(\tau )$ como as escolhas do
     monopolista em função do nível de $\tau$.
+    
 Regulador define $\tau$ para maximizar
 
 ::: {.eq-block}
@@ -609,7 +637,7 @@ $${\tau }^{m}={D}^{′}\left({E}^{m}\right)+{P}^{′}\left({X}^{m}\right){X}^{m}
 - Com os números desta aula, o melhor imposto sozinho é ${\tau }^{m}=8{,}3$, e
   ainda assim sobra perda de 1.000.
 - Se usarmos a alíquota do mundo competitivo, ${\tau }^{*}=25$, a perda é de 2.250: **pior do que não cobrar imposto nenhum**, que perderia 1.312,5.
-- [Na verdade, acima da alíquota de 16,7, a perda sob monopólio desregulado é menor do que a perda com imposto.]{.fragment fragment-index=2}
+- Na verdade, acima da alíquota de 16,7, a perda sob monopólio desregulado é menor do que a perda com imposto.
 
 ## Subsídio à Produção do Bem Final
 
