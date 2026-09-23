@@ -40,5 +40,5 @@
   <line x1="74.5" y1="70.6" x2="98.7" y2="70.6" stroke="#1b3a5c" stroke-width="2.2"/>
   <line x1="74.5" y1="181.3" x2="98.7" y2="181.3" stroke="#1b3a5c" stroke-width="2.2"/>
   <text x="110.8" y="120.4" font-size="15" fill="#1b3a5c" text-anchor="start" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">VE = 100</text>
-  <text x="363.0" y="372.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ao preço velho, dar R$ 100 de renda leva o consumidor à curva u¹: VE = 200 − 100 = 100</text>
+  <text x="363.0" y="372.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ao preço antigo, dar R$ 100 de renda leva o consumidor à curva u¹: VE = 200 − 100 = 100</text>
 </svg>

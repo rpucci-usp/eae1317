@@ -504,6 +504,20 @@
     "text": "Maximização de Bem-Estar Social\n\nA condição \\(P\\left(X\\right)={C}_{{x}_{j}}^{j}\\left({x}_{j},{e}_{j}\\right)\\) representa o resultado básico de microeconomia que iguala custo marginal a benefício marginal do consumo.\nA condição \\({D}^{′}\\left(E\\right)=-{C}_{{e}_{j}}^{j}\\left({x}_{j},{e}_{j}\\right)\\) representa o que vimos anteriormente, em que dano marginal da poluição se iguala ao custo marginal de abatimento.\n\n\nSão duas condições, e nenhuma delas é nova. A novidade é considerá-las ao mesmo tempo."
   },
   {
+    "objectID": "aulas/10-monopolio/index.html#o-equilíbrio-sem-imposto",
+    "href": "aulas/10-monopolio/index.html#o-equilíbrio-sem-imposto",
+    "title": "Mercado Não Competitivo",
+    "section": "O equilíbrio sem imposto",
+    "text": "O equilíbrio sem imposto\n\n\n\n\nSem imposto, a firma para onde abater deixa de custar, em \\(e={ê}^{x}\\), e o custo marginal de produzir é o “limpo”, \\({C}_{x}=c=10\\).\nA demanda faz o resto: \\(X=150\\), e a emissão que vem junto é \\({ê}^{X}=300\\).\nAli, abater a última tonelada custa zero e evitaria 60 de dano."
+  },
+  {
+    "objectID": "aulas/10-monopolio/index.html#o-imposto-sobe-o-custo-marginal",
+    "href": "aulas/10-monopolio/index.html#o-imposto-sobe-o-custo-marginal",
+    "title": "Mercado Não Competitivo",
+    "section": "O imposto sobe o custo marginal",
+    "text": "O imposto sobe o custo marginal\n\n\n\n\nCom um imposto \\(\\tau\\) por tonelada, a firma abate até \\(\\tau =-{C}_{e}\\), e o custo marginal de produzir vira \\({C}_{x}=c+\\delta \\tau\\).\nCom \\({\\tau }^{*}=25\\), ela vai de 10 a 60, e a produção cai para 100.\nA curva de abatimento anda junto, porque depende de \\(X\\), e o mesmo \\({\\tau }^{*}\\) para em \\({E}^{*}=125\\)."
+  },
+  {
     "objectID": "aulas/10-monopolio/index.html#as-duas-condições-lado-a-lado",
     "href": "aulas/10-monopolio/index.html#as-duas-condições-lado-a-lado",
     "title": "Mercado Não Competitivo",
@@ -2629,42 +2643,42 @@
     "href": "aulas/11-valoracao/index.html#tirar-renda-até-voltar-à-curva-de-antes",
     "title": "Valoração de Bens Ambientais",
     "section": "Tirar renda até voltar à curva de antes",
-    "text": "Tirar renda até voltar à curva de antes\n\n\n\n\nEm A o consumidor está no preço inicial, e, em B, no preço novo.\nCom o preço novo, empurramos a reta para baixo até que tangencie a curva \\({u}^{0}\\) novamente: é o ponto C.\nEsse deslocamento pode ser induzido, alternativamente, por uma queda na renda igual a \\(VC = 50\\). Ou seja, é preciso tirar 50 de renda do consumidor para alcançar o ponto C sob o preço inicial."
+    "text": "Tirar renda até voltar à curva de antes\n\n\n\n\nEm A o consumidor está no preço inicial, e, em B, no preço novo.\nCom novo preço, reta cai para baixo até que tangencie a curva \\({u}^{0}\\) novamente: é o ponto C.\nEsse deslocamento corresponde a uma queda na renda igual a \\(VC = 50\\) sob o preço inicial."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#variação-equivalente",
     "href": "aulas/11-valoracao/index.html#variação-equivalente",
     "title": "Valoração de Bens Ambientais",
     "section": "Variação Equivalente",
-    "text": "Variação Equivalente\n\nSuponha um aumento de preço → A variação equivalente é a quantidade de dinheiro que o consumidor precisaria perder para alcançar a nova utilidade (mais baixa), sem mexer nos preços.\nSuponha uma queda de preço → A variação equivalente é a quantidade de dinheiro que o consumidor precisaria ganhar para alcançar a nova utilidade (mais alta), sem mexer nos preços.\nOu seja, a variação equivalente (\\(VE\\)) garante que:\n\n\n\\[V\\left({p}^{1},y,q\\right)=V({p}^{0},y+VE,q)\\]\n\n\nEm que \\(0\\) e \\(1\\) representam antes e depois da mudança de preço."
+    "text": "Variação Equivalente\n\nSuponha um aumento de preço \\(\\rightarrow\\) A variação equivalente é a quantidade de dinheiro que o consumidor precisaria perder para alcançar a nova utilidade (mais baixa), sem mexer nos preços.\nSuponha uma queda de preço \\(\\rightarrow\\) A variação equivalente é a quantidade de dinheiro que o consumidor precisaria ganhar para alcançar a nova utilidade (mais alta), sem mexer nos preços.\nOu seja, a variação equivalente (\\(VE\\)) garante que:\n\n\n\\[V\\left({p}^{1},y,q\\right)=V({p}^{0},y+VE,q)\\]\n\n\nEm que \\(0\\) e \\(1\\) representam antes e depois da mudança de preço."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#variação-equivalente-1",
     "href": "aulas/11-valoracao/index.html#variação-equivalente-1",
     "title": "Valoração de Bens Ambientais",
     "section": "Variação Equivalente",
-    "text": "Variação Equivalente\n\nPara calcular o valor da variação equivalente, fazemos:\n\n\n\\[VE=E\\left({p}^{0},{u}^{1},q\\right)-E\\left({p}^{1},{u}^{1},q\\right)=E\\left({p}^{0},{u}^{1},q\\right)-y\\]\n\n\nOu seja, mantém-se a utilidade fixa em \\({u}^{1}\\) (após a mudança).\nEntão, calculam-se os gastos do consumidor sob preços antigos (\\({p}^{0}\\)) e novos preços (\\({p}^{1}\\)).\nSe \\({p}^{1}&gt;{p}^{0}\\), então \\(VE&lt;0\\): o consumidor gastaria mais para obter a nova utilidade.\nNo nosso caso, \\(VE=2\\times 50\\times 2-100=\\mathbf{100}\\)."
+    "text": "Variação Equivalente\n\nPara calcular o valor da variação equivalente, fazemos:\n\n\n\\[VE=E\\left({p}^{0},{u}^{1},q\\right)-E\\left({p}^{1},{u}^{1},q\\right)=E\\left({p}^{0},{u}^{1},q\\right)-y\\]\n\n\nOu seja, mantém-se a utilidade fixa em \\({u}^{1}\\) (após a mudança).\nEntão, calculam-se os gastos do consumidor sob preços antigos (\\({p}^{0}\\)) e novos preços (\\({p}^{1}\\)).\nSe \\({p}^{1}&gt;{p}^{0}\\), então \\(VE&lt;0\\): o consumidor gastaria mais para obter a nova utilidade.\nNo nosso exemplo, \\(VE=2\\times 50\\times 2-100=\\mathbf{100}\\)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#dar-renda-até-chegar-à-curva-de-depois",
     "href": "aulas/11-valoracao/index.html#dar-renda-até-chegar-à-curva-de-depois",
     "title": "Valoração de Bens Ambientais",
     "section": "Dar renda até chegar à curva de depois",
-    "text": "Dar renda até chegar à curva de depois\n\n\n\n\nO enquadramento é o mesmo do slide anterior, e A e B estão onde estavam. Só o eixo vertical vai mais longe.\nAgora seguramos o preço velho e empurramos a reta para cima, até encostar na curva \\({u}^{1}\\): é o ponto D.\nO tanto de renda que teve de entrar é \\(VE = 100\\)."
+    "text": "Dar renda até chegar à curva de depois\n\n\n\n\nO enquadramento é o mesmo do slide anterior, com mesmos pontos A e B.\nFixando o preço inicial, deslocamos a reta para cima até que encoste na curva \\({u}^{1}\\): é o ponto D.\nEsse deslocamento corresponde a um adicional de renda igual a \\(VE = 100\\) sob o preço inicial."
   },
   {
-    "objectID": "aulas/11-valoracao/index.html#a-mesma-mudança-dois-números",
-    "href": "aulas/11-valoracao/index.html#a-mesma-mudança-dois-números",
+    "objectID": "aulas/11-valoracao/index.html#a-mesma-mudança-medida-por-duas-quantidades",
+    "href": "aulas/11-valoracao/index.html#a-mesma-mudança-medida-por-duas-quantidades",
     "title": "Valoração de Bens Ambientais",
-    "section": "A mesma mudança, dois números",
-    "text": "A mesma mudança, dois números\n\n\n\n\n\n\n\n\n\n\n\npergunta que responde\nutilidade de referência\nvalor\n\n\n\n\nVariação Compensada\nquanto tiro de você depois da mudança?\n\\({u}^{0}\\), a de antes\n50\n\n\nVariação Equivalente\nquanto te dou no lugar da mudança?\n\\({u}^{1}\\), a de depois\n100\n\n\n\n\n\nAs duas medem a mesma queda de preço, e dão números que diferem por um fator de dois.\nA diferença não é erro de conta. São perguntas diferentes, e a resposta de cada uma depende de qual curva de indiferença serve de régua.\nRepare que \\(VC\\) é a disposição a pagar pela queda de preço e \\(VE\\) é a disposição a aceitar para abrir mão dela.\nÉ a mesma distinção entre WTP e WTA do começo da aula, agora com uma fórmula em vez de uma xícara."
+    "section": "A mesma mudança medida por duas quantidades",
+    "text": "A mesma mudança medida por duas quantidades\n\n\n\n\n\n\n\n\n\n\n\nrégua\nse a mudança melhora\nse a mudança piora\n\n\n\n\n\\(VC\\): quanto ajusto na renda depois da mudança?\n\\({u}^{0}\\), antes\né a WTP pela mudança (aqui, 50)\né a WTA para tolerar\n\n\n\\(VE\\): quanto ajusto na renda sem a mudança?\n\\({u}^{1}\\), depois\né a WTA para abrir mão (aqui, 100)\né a WTP para evitar\n\n\n\n\n\nAs duas medem a mesma queda de preço, mas dão números que diferem consideravelmente.\nA diferença não é erro de conta. São perguntas diferentes, e a resposta de cada uma depende de qual curva de indiferença serve de régua.\nO que decide se a resposta é WTP ou WTA não é a medida: é a direção da mudança. Na abertura da aula a praia ficava mais suja, que é a coluna da direita."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#áreas-sob-curvas-de-demanda",
     "href": "aulas/11-valoracao/index.html#áreas-sob-curvas-de-demanda",
     "title": "Valoração de Bens Ambientais",
     "section": "Áreas sob Curvas de Demanda",
-    "text": "Áreas sob Curvas de Demanda\n\nUsando as curvas de Demanda Hicksiana, temos:\n\n\n\\[VC=E\\left({p}^{0},{u}^{0},q\\right)-E\\left({p}^{1},{u}^{0},q\\right)=\\int_{{p}_{j}^{1}}^{{p}_{j}^{0}} h({p}_{j},{p}_{-j},{u}^{0},q){dp}_{j}\\]\n\n\n\\[VE=E\\left({p}^{0},{u}^{1},q\\right)-E\\left({p}^{1},{u}^{1},q\\right)=\\int_{{p}_{j}^{1}}^{{p}_{j}^{0}} h({p}_{j},{p}_{-j},{u}^{1},q){dp}_{j}\\]\n\n\nRepare que a integral é em preço, e não em quantidade. É a faixa horizontal entre os dois preços, à esquerda da curva."
+    "text": "Áreas sob Curvas de Demanda\n\nUsando as curvas de Demanda Hicksiana, temos:\n\n\n\\[VC=E\\left({p}^{0},{u}^{0},q\\right)-E\\left({p}^{1},{u}^{0},q\\right)=\\int_{{p}_{j}^{1}}^{{p}_{j}^{0}} h({p}_{j},{p}_{-j},{u}^{0},q){dp}_{j}\\]\n\n\n\\[VE=E\\left({p}^{0},{u}^{1},q\\right)-E\\left({p}^{1},{u}^{1},q\\right)=\\int_{{p}_{j}^{1}}^{{p}_{j}^{0}} h({p}_{j},{p}_{-j},{u}^{1},q){dp}_{j}\\]\n\n\nRepare que a integral é em preço, não em quantidade. É a faixa horizontal entre os dois preços, à esquerda da curva."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#a-mesma-vc-agora-como-área",
@@ -2692,7 +2706,7 @@
     "href": "aulas/11-valoracao/index.html#quando-o-excedente-basta",
     "title": "Valoração de Bens Ambientais",
     "section": "Quando o excedente basta",
-    "text": "Quando o excedente basta\n\nCom esta família de preferências as três medidas têm fórmula fechada, e o expoente \\(\\alpha\\) é justamente a fatia do orçamento gasta com o bem:\n\n\n\\[VC=y\\left(1-{p}^{-\\alpha }\\right) \\qquad EC=\\alpha y\\ln p \\qquad VE=y({p}^{\\alpha }-1)\\]\n\n\n\n\n\n\nviagem é 50% do orçamento\nviagem é 5% do orçamento\n\n\n\n\n\\(VC\\)\n50,00\n6,70\n\n\nExcedente do Consumidor\n69,31\n6,93\n\n\n\\(VE\\)\n100,00\n7,18\n\n\nerro do excedente sobre \\(VC\\)\n38,6%\n3,5%\n\n\n\n\n\nA mesma queda de preço, a mesma teoria, e a aproximação passa de péssima a irrelevante.\nBens ambientais quase sempre são uma fatia pequena do orçamento, e é por isso que a literatura aplicada usa excedente sem pedir desculpas."
+    "text": "Quando o excedente basta\n\nNo nosso exemplo Cobb-Douglas, as três medidas têm fórmula fechada, e o expoente \\(\\alpha\\) é a fatia do orçamento gasta com o bem.\n\n\n\\[VC=y\\left(1-{p}^{-\\alpha }\\right) \\qquad EC=\\alpha y\\ln p \\qquad VE=y({p}^{\\alpha }-1)\\]\n\n\n\n\n\n\nviagem é 50% do orçamento\nviagem é 5% do orçamento\n\n\n\n\n\\(VC\\)\n50,00\n6,70\n\n\nExcedente do Consumidor\n69,31\n6,93\n\n\n\\(VE\\)\n100,00\n7,18\n\n\nerro do excedente sobre \\(VC\\)\n38,6%\n3,5%\n\n\n\n\n\nCom a mesma queda de preço, o erro é pequeno quando o bem pesa pouco no orçamento.\nComo muitos bens ambientais são fatia pequena do orçamento, a aproximação Marshalliana serve, mas só onde há substituto. Sem ele, quem manda é Hanemann."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-ambientais",
@@ -2706,14 +2720,14 @@
     "href": "aulas/11-valoracao/index.html#como-medir-valor-de-bens-ambientais",
     "title": "Valoração de Bens Ambientais",
     "section": "Como Medir Valor de Bens Ambientais",
-    "text": "Como Medir Valor de Bens Ambientais\n\nNo caso de bens ambientais, tipicamente tratamos de mudanças na quantidade (ou qualidade) ao invés do preço.\n\nOu seja, olharemos para \\(q\\).\n\nNeste caso, teríamos:\n\n\n\\[V\\left(p,y,{q}^{0}\\right)=V(p,y-VC,{q}^{1}) \\qquad V\\left(p,y,{q}^{1}\\right)=V(p,y+VE,{q}^{0})\\]\n\n\n\\[VC=y-E\\left(p,{u}^{0},{q}^{1}\\right) \\qquad VE=E\\left(p,{u}^{1},{q}^{0}\\right)-y\\]\n\n\nÉ a mesma conta de antes, com \\(q\\) no lugar de \\(p\\)."
+    "text": "Como Medir Valor de Bens Ambientais\n\nNo caso de bens ambientais, entretanto, tipicamente tratamos de mudanças na quantidade (ou qualidade) ao invés do preço.\n\nOu seja, olharemos para \\(q\\).\n\nNeste caso, teríamos:\n\n\n\\[V\\left(p,y,{q}^{0}\\right)=V(p,y-VC,{q}^{1}) \\qquad V\\left(p,y,{q}^{1}\\right)=V(p,y+VE,{q}^{0})\\]\n\n\n\\[VC=y-E\\left(p,{u}^{0},{q}^{1}\\right) \\qquad VE=E\\left(p,{u}^{1},{q}^{0}\\right)-y\\]\n\n\nÉ a mesma conta de antes, com \\(q\\) no lugar de \\(p\\)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#peculiaridade-de-bens-ambientais",
     "href": "aulas/11-valoracao/index.html#peculiaridade-de-bens-ambientais",
     "title": "Valoração de Bens Ambientais",
     "section": "Peculiaridade de Bens Ambientais",
-    "text": "Peculiaridade de Bens Ambientais\n\nNão há mercado para o bem ambiental, tampouco preços variando.\n\n\nÉ mais difícil determinar mudanças no dispêndio relacionadas ao bem ambiental.\n\n\nNão é possível usar o excedente do consumidor, pois não conseguimos traçar uma curva de demanda.\n\n\nNão há preço para o bem ambiental.\nPrecisaríamos estimar qual é a disposição marginal a pagar por mais (menos) quantidade do bem ambiental (demanda inversa)."
+    "text": "Peculiaridade de Bens Ambientais\n\nComo não há mercado para o bem ambiental, preços não variam: como observar mudanças no dispêndio?\n\n\nAlém disso, não é possível usar o excedente do consumidor, pois não conseguimos traçar uma curva de demanda.\n\n\nNão há preço para o bem ambiental.\nPrecisaríamos estimar qual é a disposição marginal a pagar por mais (menos) quantidade do bem ambiental (demanda inversa)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#medidas-indiretas",
@@ -2727,21 +2741,21 @@
     "href": "aulas/11-valoracao/index.html#preferência-revelada",
     "title": "Valoração de Bens Ambientais",
     "section": "Preferência Revelada",
-    "text": "Preferência Revelada\n\nExemplo 1: Viagem a Manaus.\n\n\nParque Nacional de Anavilhanas é patrimônio ambiental.\nSaindo de São Paulo, chegar até lá envolve vários custos.\n\nPassagem aérea (~R$ 2.800,00 para maio/2025);\nEstadia;\nTransporte de voadeira pelo Rio Negro.\n\nVárias pessoas viajam anualmente até lá e pagam esses custos.\n\nEssas pessoas preferem estar lá ao invés de usarem o dinheiro para outra coisa.\n\nÉ possível inferir valor do parque a partir do gasto que as pessoas incorrem."
+    "text": "Preferência Revelada\n\nExemplo 1: Viagem a Manaus.\n\n\nParque Nacional de Anavilhanas é patrimônio ambiental.\nSaindo de São Paulo, chegar até lá envolve vários custos.\n\nPassagem aérea;\nEstadia;\nTransporte de voadeira pelo Rio Negro.\n\nVárias pessoas viajam anualmente até lá e pagam esses custos.\n\nEssas pessoas preferem estar lá ao invés de usarem o dinheiro para outra coisa.\n\nÉ possível inferir valor do parque a partir do gasto que as pessoas incorrem."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#preferência-revelada-1",
     "href": "aulas/11-valoracao/index.html#preferência-revelada-1",
     "title": "Valoração de Bens Ambientais",
     "section": "Preferência Revelada",
-    "text": "Preferência Revelada\n\nExemplo 2: Filtro de Água ou Garrafas de Água.\n\n\nEm algumas cidades do Brasil, a água da torneira possui contaminantes prejudiciais à saúde.\nPara se protegerem, indivíduos instalam filtros nas torneiras.\nPodemos inferir valor da água limpa a partir do custo do filtro.\n\nOu a partir do gasto com garrafas d’água.\n\n\n\nExemplo 3: Gasto de Turistas no Litoral.\n\n\nAlgumas praias paulistas se tornaram mais sujas ao longo dos anos.\nO número de turistas (e seus gastos) nessas praias ao longo do tempo pode nos dizer o valor atribuído à sua qualidade ambiental."
+    "text": "Preferência Revelada\n\nExemplo 2: Filtro de Água ou Garrafas de Água.\n\n\nEm algumas cidades do Brasil, a água da torneira possui contaminantes prejudiciais à saúde.\nPara se protegerem, indivíduos instalam filtros nas torneiras.\nPodemos inferir valor da água limpa a partir do custo do filtro.\n\nOu a partir do gasto com garrafas d’água.\n\n\n\nExemplo 3: Gasto de Turistas no Litoral.\n\n\nSuponha que algumas praias paulistas se tornaram mais sujas ao longo dos anos.\nA queda no número de turistas (e seus gastos) nessas praias ao longo do tempo pode nos informar sobre o valor atribuído à sua qualidade ambiental."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#medidas-indiretas-3-categorias",
     "href": "aulas/11-valoracao/index.html#medidas-indiretas-3-categorias",
     "title": "Valoração de Bens Ambientais",
     "section": "Medidas Indiretas, 3 Categorias",
-    "text": "Medidas Indiretas, 3 Categorias\n\nNós vamos dividir essas abordagens indiretas em três categorias:\n\n\nBens Complementares;\nBens Substitutos;\nBens Diferenciados (Qualidade).\n\n\nAs duas primeiras são o resto desta aula. A terceira é a aula seguinte inteira."
+    "text": "Medidas Indiretas, 3 Categorias\n\nNós vamos dividir essas abordagens indiretas em três categorias:\n\n\nBens Complementares;\nBens Substitutos;\nBens Diferenciados (Qualidade)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-complementares",
@@ -2797,7 +2811,7 @@
     "href": "aulas/11-valoracao/index.html#bens-complementares-5",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Complementares",
-    "text": "Bens Complementares\n\nO que significa assumir \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0\\) ?\n\n\nDispêndio para obter \\({u}^{0}\\) não varia com \\(q\\) quando o bem privado não é consumido.\nDe outra forma, o bem ambiental só tem valor quando o bem privado é consumido.\n\nÉ como se o bem ambiental só tivesse “valor de uso”.\n\n\n\nExemplo: é como valorizar os Lençóis Maranhenses só porque é possível viajar até lá.\n\n\nOu seja, o bem que importa é a viagem, não o local intrinsecamente."
+    "text": "Bens Complementares\n\nO que significa assumir \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0\\) ?\n\n\nDispêndio para obter \\({u}^{0}\\) não varia com \\(q\\) quando o bem privado não é consumido.\nDe outra forma, o bem ambiental só tem valor quando o bem privado é consumido.\n\nÉ como se o bem ambiental só tivesse “valor de uso”.\n\nEssa hipótese tem nome, e é o conceito a levar desta aula: complementaridade fraca (Mäler 1974).\n\n\nExemplo: é como valorizar os Lençóis Maranhenses só porque é possível viajar até lá.\n\n\nOu seja, o bem que importa é a viagem, não o local intrinsecamente."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#o-que-a-viagem-não-mede",
@@ -2832,7 +2846,7 @@
     "href": "aulas/11-valoracao/index.html#isso-já-foi-usado-para-cobrar-uma-conta-1",
     "title": "Valoração de Bens Ambientais",
     "section": "Isso já foi usado para cobrar uma conta",
-    "text": "Isso já foi usado para cobrar uma conta\n\nA conta é exatamente a dos dois triângulos: quanto de área sob a demanda por viagens desapareceu quando \\(q\\) caiu.\nNote o que não está nesses 661 milhões: o valor que alguém em Chicago atribui a um Golfo do México limpo sem nunca pensar em ir lá.\nPela complementaridade fraca, esse valor é zero por hipótese.\nOu seja, o número que foi a juízo é, pela própria construção, um piso."
+    "text": "Isso já foi usado para cobrar uma conta\n\nA conta é exatamente a dos dois triângulos: quanto de área sob a demanda por viagens desapareceu quando \\(q\\) caiu.\nNote o que não está nesses 661 milhões: o valor que alguém em Chicago atribui a um Golfo do México limpo sem nunca pensar em ir lá.\nPela complementaridade fraca, esse valor é zero por hipótese.\nOu seja, o número que foi a juízo é, pela própria construção, um piso.\nNo mesmo processo, uma pesquisa de preferência declarada perguntou a domicílios de todo o país quanto pagariam para evitar um dano igual (Bishop et al. 2017). Deu ao menos US$ 17,2 bilhões.\nAs duas contas não medem a mesma coisa, e é esse o ponto: a segunda mede o que a complementaridade fraca zerou na primeira."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos",
@@ -2986,41 +3000,27 @@
     "href": "aulas/11-valoracao/index.html#e-o-que-essa-conta-não-viu",
     "title": "Valoração de Bens Ambientais",
     "section": "E o que essa conta não viu",
-    "text": "E o que essa conta não viu\n\n\n\n\n\nbenefício anual\n\n\n\n\nQuem vai à praia (50 mil pessoas × 180)\nR$ 9 milhões\n\n\nQuem mora em Manaus e nunca vai\nR$ 0, por hipótese\n\n\nCusto da despoluição\nR$ 6 milhões\n\n\n\n\n\nA resposta do item (d) sobrevive: 9 é maior que 6, e o valor de não-uso só aumentaria o lado do benefício.\nMas o sinal da conclusão nem sempre é robusto assim. Se despoluir custasse R$ 12 milhões, a decisão dependeria inteiramente da linha do meio.\nE a complementaridade fraca não é uma hipótese sobre o mundo: é uma hipótese sobre o que o método consegue enxergar."
+    "text": "E o que essa conta não viu\n\n\n\n\n\nbenefício anual\n\n\n\n\nQuem vai à praia (50 mil pessoas × 180)\nR$ 9 milhões\n\n\nQuem mora em Manaus e nunca vai\nR$ 0, por hipótese\n\n\nCusto da despoluição\nR$ 6 milhões\n\n\n\n\n\nA resposta do item (d) sobrevive: 9 é maior que 6, e o valor de não-uso só aumentaria o lado do benefício.\nMas o sinal da conclusão nem sempre é robusto assim. Se despoluir custasse R$ 12 milhões, a decisão dependeria inteiramente da linha do meio.\nE a complementaridade fraca não é uma hipótese sobre o mundo: é uma hipótese sobre o que o método consegue enxergar.\nE repare na primeira linha: 50 mil pessoas pagando pela mesma praia é a agregação vertical de um bem público, que é de onde sai o \\({D}^{′}(E)\\) da aula 04."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#voltando-à-pergunta-da-abertura",
     "href": "aulas/11-valoracao/index.html#voltando-à-pergunta-da-abertura",
     "title": "Valoração de Bens Ambientais",
     "section": "Voltando à pergunta da abertura",
-    "text": "Voltando à pergunta da abertura\n\nUm programa deixa uma praia mais limpa. Como o economista mede o benefício?\n\n\n\nA resposta é (c): pelo que as pessoas já gastam com bens ligados à praia, e por quanto esse gasto muda.\nA alternativa (a) confunde custo com benefício, que é exatamente o erro que o modelo de custos e danos da aula 04 existe para evitar.\nA alternativa (b) é o outro ramo da literatura, o de preferência declarada, e tem o problema de WTP contra WTA que vimos no começo da aula.\n\n\n\nE a resposta de (c) é sempre um piso, porque só enxerga o que passa por algum mercado."
+    "text": "Voltando à pergunta da abertura\n\nUm programa deixa uma praia mais limpa. Como o economista mede o benefício?\n\n\n\nA resposta é (c): pelo que as pessoas já gastam com bens ligados à praia, e por quanto esse gasto muda.\nA alternativa (a) confunde custo com benefício, que é exatamente o erro que o modelo de custos e danos da aula 04 existe para evitar.\nA alternativa (b) é o outro ramo da literatura, o de preferência declarada. Ela alcança o que (c) não alcança, como nos US$ 17,2 bilhões do Golfo, ao custo de depender do que as pessoas dizem, e não do que fazem.\n\n\n\nE a resposta de (c) é sempre um piso, porque só enxerga o que passa por algum mercado."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#concluindo",
     "href": "aulas/11-valoracao/index.html#concluindo",
     "title": "Valoração de Bens Ambientais",
     "section": "Concluindo",
-    "text": "Concluindo\n\n\\(VC\\) e \\(VE\\) respondem perguntas diferentes sobre a mesma mudança, e só coincidem quando o efeito renda é desprezível.\nO excedente do consumidor fica entre as duas, e é uma aproximação boa justamente para bens que são fatia pequena do orçamento.\nSem mercado para \\(q\\), a saída é a preferência revelada: o valor do bem ambiental aparece no gasto com um bem privado ligado a ele.\nCom complementares, a medida é a diferença de áreas entre os preços de esgotamento, e ela vale se o bem ambiental só tiver valor de uso.\nCom substitutos, a medida é o gasto defensivo que deixa de ser feito, e ela vale se o bem privado for essencial.\nFica a pergunta da próxima aula: e quando o bem ambiental não é complemento nem substituto de nada, mas vem embutido no preço de um bem que já tem mercado?"
+    "text": "Concluindo\n\n\\(VC\\) e \\(VE\\) respondem perguntas diferentes sobre a mesma mudança, e só coincidem quando o efeito renda é desprezível.\nO excedente do consumidor fica entre as duas, e é uma aproximação boa para bens que são fatia pequena do orçamento e têm substituto.\nSem mercado para \\(q\\), a saída é a preferência revelada: o valor do bem ambiental aparece no gasto com um bem privado ligado a ele.\nCom complementares, a medida é a diferença de áreas entre os preços de esgotamento, e ela vale se o bem ambiental só tiver valor de uso.\nCom substitutos, a medida é o gasto defensivo que deixa de ser feito, e ela vale se o bem privado for essencial.\nFica a pergunta da próxima aula: e quando o bem ambiental não é complemento nem substituto de nada, mas vem embutido no preço de um bem que já tem mercado?"
   },
   {
     "objectID": "aulas/11-valoracao/index.html#referências",
     "href": "aulas/11-valoracao/index.html#referências",
     "title": "Valoração de Bens Ambientais",
     "section": "Referências",
-    "text": "Referências\n\n\nDeschênes, Olivier, Michael Greenstone, e Joseph S. Shapiro. 2017. «Defensive Investments and the Demand for Air Quality: Evidence from the NOx Budget Program». American Economic Review 107 (10): 2958–89. https://doi.org/10.1257/aer.20131002.\n\n\nEnglish, Eric, Roger H. von Haefen, Joseph Herriges, et al. 2018. «Estimating the Value of Lost Recreation Days from the Deepwater Horizon Oil Spill». Journal of Environmental Economics and Management 91: 26–45. https://doi.org/10.1016/j.jeem.2018.06.010.\n\n\nHanemann, W. Michael. 1991. «Willingness to Pay and Willingness to Accept: How Much Can They Differ?» The American Economic Review 81 (3): 635–47.\n\n\nIto, Koichiro, e Shuang Zhang. 2020. «Willingness to Pay for Clean Air: Evidence from Air Purifier Markets in China». Journal of Political Economy 128 (5): 1627–72. https://doi.org/10.1086/705554.\n\n\nKahneman, Daniel, Jack L. Knetsch, e Richard H. Thaler. 1990. «Experimental Tests of the Endowment Effect and the Coase Theorem». Journal of Political Economy 98 (6): 1325–48. https://doi.org/10.1086/261737.\n\n\nPhaneuf, Daniel J., e Till Requate. 2017. A Course in Environmental Economics: Theory, Policy, and Practice. Cambridge University Press."
-  },
-  {
-    "objectID": "aulas/10-monopolio/index.html#o-equilíbrio-sem-imposto",
-    "href": "aulas/10-monopolio/index.html#o-equilíbrio-sem-imposto",
-    "title": "Mercado Não Competitivo",
-    "section": "O equilíbrio sem imposto",
-    "text": "O equilíbrio sem imposto\n\n\n\n\nSem imposto, a firma para onde abater deixa de custar, em \\(e={ê}^{x}\\), e o custo marginal de produzir é o “limpo”, \\({C}_{x}=c=10\\).\nA demanda faz o resto: \\(X=150\\), e a emissão que vem junto é \\({ê}^{X}=300\\).\nAli, abater a última tonelada custa zero e evitaria 60 de dano."
-  },
-  {
-    "objectID": "aulas/10-monopolio/index.html#o-imposto-sobe-o-custo-marginal",
-    "href": "aulas/10-monopolio/index.html#o-imposto-sobe-o-custo-marginal",
-    "title": "Mercado Não Competitivo",
-    "section": "O imposto sobe o custo marginal",
-    "text": "O imposto sobe o custo marginal\n\n\n\n\nCom um imposto \\(\\tau\\) por tonelada, a firma abate até \\(\\tau =-{C}_{e}\\), e o custo marginal de produzir vira \\({C}_{x}=c+\\delta \\tau\\).\nCom \\({\\tau }^{*}=25\\), ela vai de 10 a 60, e a produção cai para 100.\nA curva de abatimento anda junto, porque depende de \\(X\\), e o mesmo \\({\\tau }^{*}\\) para em \\({E}^{*}=125\\)."
+    "text": "Referências\n\n\nBishop, Richard C., Kevin J. Boyle, Richard T. Carson, et al. 2017. «Putting a Value on Injuries to Natural Assets: The BP Oil Spill». Science 356 (6335): 253–54. https://doi.org/10.1126/science.aam8124.\n\n\nDeschênes, Olivier, Michael Greenstone, e Joseph S. Shapiro. 2017. «Defensive Investments and the Demand for Air Quality: Evidence from the NOx Budget Program». American Economic Review 107 (10): 2958–89. https://doi.org/10.1257/aer.20131002.\n\n\nEnglish, Eric, Roger H. von Haefen, Joseph Herriges, et al. 2018. «Estimating the Value of Lost Recreation Days from the Deepwater Horizon Oil Spill». Journal of Environmental Economics and Management 91: 26–45. https://doi.org/10.1016/j.jeem.2018.06.010.\n\n\nHanemann, W. Michael. 1991. «Willingness to Pay and Willingness to Accept: How Much Can They Differ?» The American Economic Review 81 (3): 635–47.\n\n\nIto, Koichiro, e Shuang Zhang. 2020. «Willingness to Pay for Clean Air: Evidence from Air Purifier Markets in China». Journal of Political Economy 128 (5): 1627–72. https://doi.org/10.1086/705554.\n\n\nKahneman, Daniel, Jack L. Knetsch, e Richard H. Thaler. 1990. «Experimental Tests of the Endowment Effect and the Coase Theorem». Journal of Political Economy 98 (6): 1325–48. https://doi.org/10.1086/261737.\n\n\nMäler, Karl-Göran. 1974. Environmental Economics: A Theoretical Inquiry. Johns Hopkins University Press for Resources for the Future.\n\n\nPhaneuf, Daniel J., e Till Requate. 2017. A Course in Environmental Economics: Theory, Policy, and Practice. Cambridge University Press."
   }
 ]
