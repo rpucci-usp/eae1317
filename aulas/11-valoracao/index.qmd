@@ -335,7 +335,7 @@ $$VC=E\left({p}^{0},{u}^{0},q\right)-E\left({p}^{1},{u}^{0},q\right)=y-E\left({p
 ## Tirar renda até voltar à curva de antes
 
 ::: {.diagram}
-![](../_assets/figuras/11-vc.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/11-vc.svg){style="height:300px;max-height:300px"}
 :::
 
 - Em **A** o consumidor está no preço inicial, e, em **B**, no preço novo.
@@ -376,7 +376,7 @@ $$VE=E\left({p}^{0},{u}^{1},q\right)-E\left({p}^{1},{u}^{1},q\right)=E\left({p}^
 ## Dar renda até chegar à curva de depois
 
 ::: {.diagram}
-![](../_assets/figuras/11-ve.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/11-ve.svg){style="height:300px;max-height:300px"}
 :::
 
 - O enquadramento é o mesmo do slide anterior, com mesmos pontos **A** e **B**.
@@ -419,7 +419,7 @@ entre os dois preços, à esquerda da curva.
 ## A mesma VC, agora como área
 
 ::: {.diagram}
-![](../_assets/figuras/11-area-vc.svg){style="height:440px;max-height:440px"}
+![](../_assets/figuras/11-area-vc.svg){style="height:380px;max-height:380px"}
 :::
 
 - A Hicksiana de referência é $h(p,{u}^{0})=25/\sqrt{p}$, que passa pelo ponto
@@ -429,7 +429,7 @@ entre os dois preços, à esquerda da curva.
 ## E a mesma VE
 
 ::: {.diagram}
-![](../_assets/figuras/11-area-ve.svg){style="height:440px;max-height:440px"}
+![](../_assets/figuras/11-area-ve.svg){style="height:380px;max-height:380px"}
 :::
 
 - Agora a régua é $h(p,{u}^{1})=50/\sqrt{p}$, que passa pelo ponto **B**.
@@ -442,13 +442,13 @@ Uma aproximação sujeita a imprecisões: Excedente do Consumidor.
 :::
 
 ::: {.diagram}
-![](../_assets/figuras/11-area-ec.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/11-area-ec.svg){style="height:380px;max-height:380px"}
 :::
 
 - A Marshalliana é a única das três que se observa, porque não depende de $\overline{u}$.
 - Ela passa por **A** e por **B**, então fica **entre** as duas Hicksianas.
 
-## Quando o excedente basta
+## Quando o excedente basta {.smaller}
 
 ::: {.no-bullet}
 No nosso exemplo Cobb-Douglas, as três medidas têm fórmula fechada, e o
@@ -638,7 +638,7 @@ Aqui, assumimos que esses preços de esgotamento são finitos.
 ## Com a praia suja
 
 ::: {.diagram}
-![](../_assets/figuras/11-choke-1.svg){style="height:430px;max-height:430px"}
+![](../_assets/figuras/11-choke-1.svg){style="height:300px;max-height:300px"}
 :::
 
 - A viagem custa R\$ 20, e a essa altura da curva ele faz 4 viagens por ano.
@@ -648,7 +648,7 @@ Aqui, assumimos que esses preços de esgotamento são finitos.
 ## Com a praia limpa
 
 ::: {.diagram}
-![](../_assets/figuras/11-choke-2.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/11-choke-2.svg){style="height:300px;max-height:300px"}
 :::
 
 - A limpeza gira a curva para fora: agora ele faz 8 viagens, e só desiste acima
@@ -699,10 +699,10 @@ até lá.
 
 - Ou seja, o bem que importa é a viagem, não o local intrinsecamente.
 
-## O que a viagem não mede
+## O que a viagem não mede {.smaller}
 
 ::: {.diagram}
-![](../_assets/figuras/11-nao-uso.svg){style="height:410px;max-height:410px"}
+![](../_assets/figuras/11-nao-uso.svg){style="height:360px;max-height:360px"}
 :::
 
 - Suponha que a pessoa pagaria R\$ 100 por ano pela praia limpa **mesmo que
@@ -836,7 +836,7 @@ Função de produção $H=f(x,q)$.
 - $x$ é o bem privado; $q$ é o bem ambiental;
 - ${f}_{x}>0$; ${f}_{q}>0$ → os bens intermediários ajudam na produção de $H$.
 
-## Bens Substitutos
+## Bens Substitutos {.smaller}
 
 ::: {.no-bullet}
 O sinal de ${f}_{xq}(x,q)$ vai depender do contexto.
@@ -864,7 +864,7 @@ O sinal de ${f}_{xq}(x,q)$ vai depender do contexto.
 ## Duas tecnologias, os mesmos dois pontos
 
 ::: {.diagram}
-![](../_assets/figuras/11-substitutos.svg){style="height:405px;max-height:405px"}
+![](../_assets/figuras/11-substitutos.svg){style="height:295px;max-height:295px"}
 :::
 
 - Uma família precisa de $H$ de água segura por semana. A torneira entrega $q$
@@ -960,7 +960,7 @@ do supermercado.
 ## Total e margem não são a mesma coisa
 
 ::: {.diagram}
-![](../_assets/figuras/11-mwtp.svg){style="height:405px;max-height:405px"}
+![](../_assets/figuras/11-mwtp.svg){style="height:295px;max-height:295px"}
 :::
 
 - Com substitutos perfeitos, cada ponto de qualidade vale R\$ 5, sempre.
@@ -1149,7 +1149,7 @@ qualidade da praia.
 ## Solução
 
 ::: {.diagram}
-![](../_assets/figuras/11-exercicio.svg){style="max-height:300px"}
+![](../_assets/figuras/11-exercicio.svg){style="max-height:285px"}
 :::
 
 - **(a)** Ela viaja enquanto o valor cobre os 20: são **3 viagens** com a praia
@@ -1204,7 +1204,7 @@ E a resposta de (c) é sempre um **piso**, porque só enxerga o que passa por
 algum mercado.
 :::
 
-## Concluindo
+## Concluindo {.smaller}
 
 - $VC$ e $VE$ respondem perguntas diferentes sobre a mesma mudança, e só
   coincidem quando o efeito renda é desprezível.

@@ -329,7 +329,7 @@ São duas condições, e nenhuma delas é nova. A novidade é considerá-las ao 
 ## O equilíbrio sem imposto
 
 ::: {.diagram}
-![](../_assets/figuras/10-otimo-1.svg){style="max-height:310px"}
+![](../_assets/figuras/10-otimo-1.svg){style="max-height:300px"}
 :::
 
 - Sem imposto, a firma para onde abater deixa de custar, em $e={ê}^{x}$, e o
@@ -342,7 +342,7 @@ São duas condições, e nenhuma delas é nova. A novidade é considerá-las ao 
 ## O imposto sobe o custo marginal
 
 ::: {.diagram}
-![](../_assets/figuras/10-otimo-2.svg){style="max-height:310px"}
+![](../_assets/figuras/10-otimo-2.svg){style="max-height:300px"}
 :::
 
 - Com um imposto $\tau$ por tonelada, a firma abate até $\tau =-{C}_{e}$, e o
@@ -355,7 +355,7 @@ São duas condições, e nenhuma delas é nova. A novidade é considerá-las ao 
 ## As duas condições lado a lado
 
 ::: {.diagram}
-![](../_assets/figuras/10-otimo-3.svg){style="max-height:310px"}
+![](../_assets/figuras/10-otimo-3.svg){style="max-height:300px"}
 :::
 
 - O painel da direita é a figura das aulas 04 a 09: $-C′(E)=(200-E)/3$ cruzando
@@ -631,7 +631,7 @@ $${\tau }^{m}={D}^{′}\left({E}^{m}\right)+{P}^{′}\left({X}^{m}\right){X}^{m}
 ## Qual alíquota então?
 
 ::: {.diagram}
-![](../_assets/figuras/10-imposto.svg){style="max-height:266px"}
+![](../_assets/figuras/10-imposto.svg){style="max-height:255px"}
 :::
 
 - Com os números desta aula, o melhor imposto sozinho é ${\tau }^{m}=8{,}3$, e
@@ -722,10 +722,10 @@ tonelada causa R\$ 15 mil de dano. Produzir um lote custa R\$ 30 mil.
 - **(c)** E se ela pagar um imposto igual ao dano marginal, R\$ 30 mil por lote?
 - **(d)** E se, junto com o imposto, ela receber R\$ 40 mil de subsídio por lote?
 
-## Solução
+## Solução {.smaller}
 
 ::: {.diagram}
-![](../_assets/figuras/10-exercicio.svg){style="max-height:305px"}
+![](../_assets/figuras/10-exercicio.svg){style="max-height:382px"}
 :::
 
 - **(a)** Vale produzir enquanto a disposição a pagar cobre o custo social de

@@ -55,7 +55,7 @@
 }
 
 .reveal .slides section li {
-  font-size: 0.78em;
+  font-size: 0.86em;
   line-height: 1.28;
   margin-bottom: 0.28em;
 }
@@ -476,4 +476,19 @@
   max-height: 330px;
   width: auto;
   max-width: 92%;
+}
+
+/* Slide de Referências ------------------------------------------------------
+   O Quarto já marca essa seção como .scrollable sozinho, então nada se perde:
+   a lista rola. Mas o que rola não é projetado, e com oito entradas (aula 11)
+   as últimas ficam fora da tela.
+
+   {.smaller} no título do slide NÃO resolve: foi medido, 851px antes e 851px
+   depois, porque a regra de .smaller do reveal não alcança div.csl-entry, que
+   é onde o pandoc-citeproc põe cada referência. Mirar a entrada direto é o
+   único caminho. */
+.reveal div#refs .csl-entry {
+  font-size: 0.78em;
+  line-height: 1.3;
+  margin-bottom: 0.35em;
 }
