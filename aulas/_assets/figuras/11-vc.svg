@@ -1,0 +1,44 @@
+<svg width="726" height="406" viewBox="0 0 726 406"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Variação Compensada: tirar renda até voltar a u⁰</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="350.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Variação Compensada: tirar renda até voltar a u⁰</text>
+  <line x1="58.0" y1="292.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="292.0" x2="682.0" y2="292.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="690.0" y="298.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">x</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">z (R$ gastos em outros bens)</text>
+  <line x1="58.0" y1="85.0" x2="333.0" y2="292.0" stroke="#c8d0d8" stroke-width="2.2"/>
+  <line x1="58.0" y1="85.0" x2="674.0" y2="200.9" stroke="#c8d0d8" stroke-width="2.2"/>
+  <circle cx="195.5" cy="188.5" r="4.0" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="608.0" cy="188.5" r="4.0" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 117.8 54.0 L 122.4 71.1 L 127.1 86.0 L 131.7 98.9 L 136.3 110.3 L 141.0 120.5 L 145.6 129.6 L 150.2 137.7 L 154.9 145.1 L 159.5 151.8 L 164.1 157.9 L 168.8 163.6 L 173.4 168.7 L 178.0 173.5 L 182.7 177.9 L 187.3 182.0 L 191.9 185.8 L 196.6 189.3 L 201.2 192.7 L 205.9 195.8 L 210.5 198.7 L 215.1 201.4 L 219.8 204.0 L 224.4 206.5 L 229.0 208.8 L 233.7 211.0 L 238.3 213.1 L 242.9 215.1 L 247.6 216.9 L 252.2 218.7 L 256.8 220.4 L 261.5 222.1 L 266.1 223.6 L 270.7 225.1 L 275.4 226.5 L 280.0 227.9 L 284.6 229.2 L 289.3 230.5 L 293.9 231.7 L 298.6 232.9 L 303.2 234.0 L 307.8 235.0 L 312.5 236.1 L 317.1 237.1 L 321.7 238.0 L 326.4 239.0 L 331.0 239.9 L 335.6 240.8 L 340.3 241.6 L 344.9 242.4 L 349.5 243.2 L 354.2 244.0 L 358.8 244.7 L 363.4 245.4 L 368.1 246.1 L 372.7 246.8 L 377.4 247.4 L 382.0 248.1 L 386.6 248.7 L 391.3 249.3 L 395.9 249.9 L 400.5 250.5 L 405.2 251.0 L 409.8 251.6 L 414.4 252.1 L 419.1 252.6 L 423.7 253.1 L 428.3 253.6 L 433.0 254.1 L 437.6 254.5 L 442.2 255.0 L 446.9 255.4 L 451.5 255.8 L 456.1 256.3 L 460.8 256.7 L 465.4 257.1 L 470.1 257.5 L 474.7 257.9 L 479.3 258.2 L 484.0 258.6 L 488.6 259.0 L 493.2 259.3 L 497.9 259.7 L 502.5 260.0 L 507.1 260.3 L 511.8 260.6 L 516.4 261.0 L 521.0 261.3 L 525.7 261.6 L 530.3 261.9 L 534.9 262.2 L 539.6 262.5 L 544.2 262.7 L 548.9 263.0 L 553.5 263.3 L 558.1 263.6 L 562.8 263.8 L 567.4 264.1 L 572.0 264.3 L 576.7 264.6 L 581.3 264.8 L 585.9 265.0 L 590.6 265.3 L 595.2 265.5 L 599.8 265.7 L 604.5 266.0 L 609.1 266.2 L 613.7 266.4 L 618.4 266.6 L 623.0 266.8 L 627.6 267.0 L 632.3 267.2 L 636.9 267.4 L 641.6 267.6 L 646.2 267.8 L 650.8 268.0 L 655.5 268.2 L 660.1 268.4 L 664.7 268.5 L 669.4 268.7 L 674.0 268.9" fill="none" stroke="#6A3D9A" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="58.0" y1="188.5" x2="608.0" y2="292.0" stroke="#1b3a5c" stroke-width="2.2"/>
+  <circle cx="333.0" cy="240.3" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="195.5" y="163.7" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">A</text>
+  <text x="624.5" y="172.0" font-size="15" fill="#000000" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">B</text>
+  <text x="350.6" y="225.8" font-size="15" fill="#1b3a5c" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">C</text>
+  <text x="542.0" y="167.8" font-size="15" fill="#c8d0d8" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">p¹</text>
+  <text x="316.5" y="265.1" font-size="15" fill="#c8d0d8" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">p⁰</text>
+  <text x="564.0" y="250.6" font-size="15" fill="#6A3D9A" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">u⁰ = 25</text>
+  <text x="278.0" y="198.9" font-size="15" fill="#1b3a5c" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">p¹ com VC</text>
+  <text x="50.0" y="90.0" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">100</text>
+  <text x="50.0" y="193.5" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">50</text>
+  <text x="195.5" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">12,5</text>
+  <text x="333.0" y="312.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">25</text>
+  <text x="608.0" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">50</text>
+  <line x1="86.6" y1="188.5" x2="86.6" y2="85.0" stroke="#1b3a5c" stroke-width="2.2"/>
+  <line x1="74.5" y1="85.0" x2="98.7" y2="85.0" stroke="#1b3a5c" stroke-width="2.2"/>
+  <line x1="74.5" y1="188.5" x2="98.7" y2="188.5" stroke="#1b3a5c" stroke-width="2.2"/>
+  <text x="110.8" y="126.4" font-size="15" fill="#1b3a5c" text-anchor="start" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">VC = 50</text>
+  <text x="363.0" y="372.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">ao preço novo, tirar R$ 50 da renda devolve o consumidor à curva u⁰: VC = 100 − 50 = 50</text>
+</svg>

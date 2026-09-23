@@ -97,7 +97,7 @@ from figuras08svg import fmt, reta_clip, escada, rodape
 # Terceira cor, e ela e necessaria. Vermelho e custo e azul e dano em todas as
 # figuras do curso; o MERCADO DO PRODUTO nao existia ate esta aula e nao tem
 # cor. Pintar a demanda de azul funcionaria em `10-monopolio.svg`, que so tem um
-# painel, e mentiria em `10-otimo.svg`, onde a demanda fica ao lado do dano.
+# painel, e mentiria no trio do otimo, onde a demanda fica ao lado do dano.
 COR_PROD = "#2E7D32"
 # O mesmo vermelho, mais claro, para a curva do nivel de producao MENOR. Nao e
 # COR_APAGADA: as duas curvas sao igualmente o assunto da figura, o que muda e
@@ -154,6 +154,18 @@ assert abs(e_de(x_mon(TAU_OTIMO), TAU_OTIMO) - 25.0) < 1e-9, "E do monopolio mud
 # X = 75 - tau e E = 150 - 5 tau, as duas retas citadas na docstring
 assert abs(x_mon(0.0) - 75.0) < 1e-9 and abs(e_de(x_mon(0.0), 0.0) - 150.0) < 1e-9
 
+# --- o mercado competitivo SEM imposto --------------------------------------
+# Com tau = 0 a firma para onde abater deixa de custar, ou seja, em e-chapeu(X),
+# e o custo marginal de produzir e o "limpo": C_X = c. A demanda faz o resto.
+X_LIVRE = x_conc(0.0)                     # 150
+E_LIVRE = e_de(X_LIVRE, 0.0)              # 300
+assert abs(cmg_reduzido(0.0) - C0) < 1e-9, "sem imposto o CMg deixou de ser c"
+assert abs(X_LIVRE - 150.0) < 1e-9, "a producao sem imposto mudou"
+assert abs(E_LIVRE - e_chapeu(X_LIVRE)) < 1e-9, "sem imposto a firma deveria nao abater"
+assert abs(E_LIVRE - 300.0) < 1e-9, "a emissao sem imposto mudou"
+assert abs(mac(X_LIVRE, E_LIVRE)) < 1e-9, "abater a ultima tonelada deveria custar zero"
+assert abs(dano_mg(E_LIVRE) - 60.0) < 1e-9, "o dano marginal em e-chapeu mudou"
+
 # --- bem-estar como funcao do imposto ---------------------------------------
 
 
@@ -186,6 +198,13 @@ TAU_EMPATE = 75.0 / 4.5           # 50/3, onde W(tau) volta a W(0)
 assert abs(w_mon(TAU_EMPATE) - w_mon(0.0)) < 1e-9, "o empate mudou de lugar"
 
 perda = lambda tau: W_PRIMEIRO - w_mon(tau)
+
+# O ponto de partida do trio do otimo: sem politica nenhuma, o mercado
+# competitivo perde 5.250 dos 7.500. E a maior perda da aula inteira, e vale ter
+# o numero a mao para responder "e se nao fizermos nada?".
+W_LIVRE = bem_estar(X_LIVRE, E_LIVRE)
+assert abs(W_LIVRE - 2250.0) < 1e-9, "o bem-estar sem imposto mudou"
+assert abs(W_PRIMEIRO - W_LIVRE - 5250.0) < 1e-9, "a perda sem imposto mudou"
 assert abs(perda(TAU_SEGUNDO) - 1000.0) < 1e-9
 assert abs(perda(0.0) - 1312.5) < 1e-9
 assert abs(perda(TAU_OTIMO) - 2250.0) < 1e-9
@@ -262,6 +281,13 @@ Y_MAX_P = 176                    # P(0) = 160
 X_MAX_E = 215                    # o mercado de emissao, igual ao da aula 08
 Y_MAX_E = 72
 
+# O trio do otimo precisa de um eixo de emissao MAIS LARGO que os demais: a
+# etapa sem imposto para em e-chapeu(150) = 300, e 215 cortaria a figura no meio
+# do argumento. As tres etapas dividem o mesmo enquadramento, que e o que
+# permite ler o deslocamento. `10-monopolio.svg` e `10-subsidio.svg` ficam nos
+# 215, porque la o assunto e a distancia entre 125 e 25, que 312 espremeria.
+X_MAX_EO = 312
+
 SUB_X1 = "x" + chr(0x2081)
 SUB_X2 = "x" + chr(0x2082)
 
@@ -271,6 +297,9 @@ SUB_X2 = "x" + chr(0x2082)
 # lido como "e elevado a x, indice 1", que e outra coisa.
 EHAT_X1 = "ê" + chr(0x02E3) + chr(0x00B9)
 EHAT_X2 = "ê" + chr(0x02E3) + chr(0x00B2)
+EHAT_X = "ê" + chr(0x02E3)
+CX = "C" + chr(0x2093)
+MEN_CE = "−C" + chr(0x2091)
 
 
 # ---------------------------------------------------------------------------
@@ -338,42 +367,125 @@ def custo_figura(nome, titulo, so_total):
 
 
 # ---------------------------------------------------------------------------
-# 3. O otimo de Pareto: os dois mercados lado a lado
+# 3. O otimo de Pareto, em tres etapas
 # ---------------------------------------------------------------------------
+# A primeira versao era UMA figura, ja com o imposto dentro da horizontal do
+# custo marginal ("C_x = c + delta tau*"). A pedido do autor em 21/09: o imposto
+# aparecia antes de ter sido apresentado, e o slide pedia que a turma aceitasse
+# de uma vez o equilibrio, o instrumento e o otimo. As tres etapas separam isso:
+#
+#   1. sem imposto   C_x = c = 10, X = 150, e a firma nao abate: E = 300
+#   2. entra o imposto   a horizontal sobe para 60, X cai para 100, E para 125
+#   3. o otimo   as duas condicoes do slide anterior, uma em cada painel
+#
+# As tres dividem eixos, para que o deslocamento seja legivel de uma etapa para
+# a seguinte. E por isso que o eixo de emissao vai a X_MAX_EO, e nao a X_MAX_E.
 
-def figura_otimo():
+
+def _otimo_produto(t, etapa):
+    p = Painel(t, 0, LARG_PAR, (0, X_MAX_P), (0, Y_MAX_P), ALT_PAR)
+    p.titulo("Mercado do produto")
+    p.eixos("X", "R$ por unidade")
+    p.curva(demanda, 0, X_MAX_P, cor=COR_PROD, larg=2.4)
+    p.texto(18, demanda(18) + 7, "P(X)", cor=COR_PROD, tam=FONTE_LEGENDA,
+            negrito=True)
+
+    if etapa == 1:
+        p.reta(0, C0, X_MAX_P, C0, cor=COR_CMG, larg=2.4)
+        # No mesmo lugar do rotulo da etapa 2, para que a turma veja a MESMA
+        # horizontal subir. A direita, a 140, ele caia em cima da demanda, que
+        # so cruza 10 em X = 150.
+        p.texto(14, C0 + 10, CX + " = c = 10", cor=COR_CMG,
+                tam=FONTE_LEGENDA, negrito=True)
+        p.guia(X_LIVRE, C0)
+        p.ponto(X_LIVRE, C0)
+        p.marca_x(X_LIVRE, "X = 150")
+        p.marca_y(C0, "10")
+        return p
+
+    if etapa == 2:
+        # A horizontal de antes fica apagada por tras, com o ponto dela: sem
+        # isso, "o custo marginal sobe" e uma afirmacao do bullet.
+        p.reta(0, C0, X_MAX_P, C0, cor=COR_APAGADA, larg=2.2)
+        p.ponto(X_LIVRE, C0, cor=COR_APAGADA)
+        p.marca_x(X_LIVRE, "sem τ", cor=COR_APAGADA)
+        p.marca_y(C0, "10", cor=COR_APAGADA)
+
+    p.reta(0, P_OTIMO, X_MAX_P, P_OTIMO, cor=COR_CMG, larg=2.4)
+    p.texto(14, P_OTIMO + 8, CX + " = c + δτ*", cor=COR_CMG,
+            tam=FONTE_LEGENDA, negrito=True)
+    p.guia(X_OTIMO, P_OTIMO)
+    p.ponto(X_OTIMO, P_OTIMO)
+    p.marca_x(X_OTIMO, "X* = 100")
+    p.marca_y(P_OTIMO, "60")
+    return p
+
+
+def _otimo_emissao(t, etapa):
+    p = Painel(t, LARG_PAR, LARG_PAR, (0, X_MAX_EO), (0, Y_MAX_E), ALT_PAR)
+    p.titulo("Mercado de emissão")
+    p.eixos("E", "R$ por tonelada")
+    reta_clip(p, dano_mg, COR_DANO, larg=2.4)
+    # ABAIXO da propria reta, e ancorado a direita: acima dela, na etapa 1, o
+    # rotulo caia em cima do ponto azul de (300, 60), que e o numero a apontar.
+    p.texto(290, dano_mg(290) - 6, "D′(E)", cor=COR_DANO,
+            tam=FONTE_LEGENDA, negrito=True, ancora="end")
+
+    if etapa == 1:
+        reta_clip(p, lambda E: mac(X_LIVRE, E), COR_CMG, larg=2.4)
+        # A 150 o rotulo passava rente a tracejada do dano em 60, e a 200 caia
+        # em cima do cruzamento das duas curvas.
+        p.texto(125, mac(X_LIVRE, 125) + 6, MEN_CE + "(X, E)", cor=COR_CMG,
+                tam=FONTE_LEGENDA, negrito=True)
+        # O imposto e zero, entao a firma desce a curva ate o proprio eixo. Nao
+        # ha horizontal a desenhar, e e esse o ponto.
+        p.ponto(E_LIVRE, 0.0)
+        p.marca_x(E_LIVRE, EHAT_X + " = 300")
+        p.reta(E_LIVRE, 0, E_LIVRE, dano_mg(E_LIVRE), cor=COR_GUIA, larg=1.1,
+               tracejado="4 3")
+        p.reta(0, dano_mg(E_LIVRE), E_LIVRE, dano_mg(E_LIVRE), cor=COR_GUIA,
+               larg=1.1, tracejado="4 3")
+        # A tonelada que ninguem abate: custa zero abater e evita 60 de dano.
+        p.ponto(E_LIVRE, dano_mg(E_LIVRE), cor=COR_DANO)
+        p.marca_y(dano_mg(E_LIVRE), "60", cor=COR_DANO)
+        return p
+
+    if etapa == 2:
+        reta_clip(p, lambda E: mac(X_LIVRE, E), COR_APAGADA, larg=2.2)
+        p.ponto(E_LIVRE, 0.0, cor=COR_APAGADA)
+        p.marca_x(E_LIVRE, "sem τ", cor=COR_APAGADA)
+        # A horizontal do imposto atravessa o painel: ela e a novidade da etapa,
+        # e a curva e que veio ao encontro dela.
+        p.reta(0, TAU_OTIMO, X_MAX_EO, TAU_OTIMO, cor=COR_GUIA, larg=1.4,
+               tracejado="5 4")
+        p.reta(E_OTIMO, 0, E_OTIMO, TAU_OTIMO, cor=COR_GUIA, larg=1.1,
+               tracejado="4 3")
+        p.marca_y(TAU_OTIMO, "τ* = 25")
+    else:
+        p.guia(E_OTIMO, TAU_OTIMO)
+        p.marca_y(TAU_OTIMO, "25")
+
+    reta_clip(p, lambda E: mac(X_OTIMO, E), COR_CMG, larg=2.4)
+    p.texto(24, mac(X_OTIMO, 24) + 5, MEN_CE + "(X*, E)", cor=COR_CMG,
+            tam=FONTE_LEGENDA, negrito=True)
+    p.ponto(E_OTIMO, TAU_OTIMO)
+    p.marca_x(E_OTIMO, "E* = 125")
+    return p
+
+
+def figura_otimo(etapa):
     t = Tela(2 * LARG_PAR + FOLGA_ROTULO_X, ALT_PAR + 6)
-
-    pa = Painel(t, 0, LARG_PAR, (0, X_MAX_P), (0, Y_MAX_P), ALT_PAR)
-    pa.titulo("Mercado do produto")
-    pa.eixos("X", "R$ por unidade")
-    pa.curva(demanda, 0, X_MAX_P, cor=COR_PROD, larg=2.4)
-    pa.reta(0, P_OTIMO, X_MAX_P, P_OTIMO, cor=COR_CMG, larg=2.4)
-    pa.texto(18, demanda(18) + 7, "P(X)", cor=COR_PROD, tam=FONTE_LEGENDA,
-             negrito=True)
-    pa.texto(14, P_OTIMO + 8, "C" + chr(0x2093) + " = c + δτ*", cor=COR_CMG,
-             tam=FONTE_LEGENDA, negrito=True)
-    pa.guia(X_OTIMO, P_OTIMO)
-    pa.ponto(X_OTIMO, P_OTIMO)
-    pa.marca_x(X_OTIMO, "X* = 100")
-    pa.marca_y(P_OTIMO, "60")
-
-    pb = Painel(t, LARG_PAR, LARG_PAR, (0, X_MAX_E), (0, Y_MAX_E), ALT_PAR)
-    pb.titulo("Mercado de emissão")
-    pb.eixos("E", "R$ por tonelada")
-    reta_clip(pb, lambda E: mac(X_OTIMO, E), COR_CMG, larg=2.4)
-    reta_clip(pb, dano_mg, COR_DANO, larg=2.4)
-    pb.texto(24, mac(X_OTIMO, 24) + 4.5, "−C" + chr(0x2091) + "(X*, E)",
-             cor=COR_CMG, tam=FONTE_LEGENDA, negrito=True)
-    pb.texto(168, dano_mg(168) + 4.5, "D′(E)", cor=COR_DANO,
-             tam=FONTE_LEGENDA, negrito=True)
-    pb.guia(E_OTIMO, TAU_OTIMO)
-    pb.ponto(E_OTIMO, TAU_OTIMO)
-    pb.marca_x(E_OTIMO, "E* = 125")
-    pb.marca_y(TAU_OTIMO, "25")
-
-    t.salvar("10-otimo.svg",
-             "As duas condições do ótimo de Pareto com produto e poluição")
+    _otimo_produto(t, etapa)
+    _otimo_emissao(t, etapa)
+    titulo = {
+        1: "O mercado competitivo sem imposto: produção e "
+           "emissão demais",
+        2: "O imposto sobe o custo marginal de produzir, e os dois mercados "
+           "se movem",
+        3: "As duas condições do ótimo de Pareto com produto "
+           "e poluição",
+    }[etapa]
+    t.salvar("10-otimo-{}.svg".format(etapa), titulo)
 
 
 # ---------------------------------------------------------------------------
@@ -668,13 +780,16 @@ def main():
     custo_figura("10-custo-2.svg",
                  "Custo total e custo marginal de abatimento, para dois níveis de produção",
                  False)
-    figura_otimo()
+    for etapa in (1, 2, 3):
+        figura_otimo(etapa)
     figura_monopolio()
     figura_imposto()
     figura_subsidio()
     figura_nao_separavel()
     figura_exercicio()
-    print("\nO otimo: X* = {}, E* = {}, p* = {}, tau* = {}".format(
+    print("\nSem imposto: X = {}, E = {}, bem-estar {}".format(
+        fmt(X_LIVRE, 0), fmt(E_LIVRE, 0), fmt(W_LIVRE)))
+    print("O otimo: X* = {}, E* = {}, p* = {}, tau* = {}".format(
         fmt(X_OTIMO, 0), fmt(E_OTIMO, 0), fmt(P_OTIMO, 0), fmt(TAU_OTIMO, 0)))
     print("Monopolio com tau*: X = {}, E = {}".format(
         fmt(x_mon(TAU_OTIMO), 0), fmt(e_de(x_mon(TAU_OTIMO), TAU_OTIMO), 0)))

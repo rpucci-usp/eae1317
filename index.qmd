@@ -12,3 +12,5 @@ title: "EAE1317"
 6. [Políticas Ambientais II](aulas/07-permissoes-subsidios/)
 7. [Informação Assimétrica](aulas/08-informacao-assimetrica/)
 8. [Mercado Não Competitivo](aulas/10-monopolio/)
+9. [Valoração de Bens Ambientais](aulas/11-valoracao/)
+10. [Preços Hedônicos](aulas/12-precos-hedonicos/)

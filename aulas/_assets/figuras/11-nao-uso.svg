@@ -1,0 +1,34 @@
+<svg width="666" height="396" viewBox="0 0 666 396"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Complementaridade fraca: o que a viagem não mede</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="320.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Complementaridade fraca: o que a viagem não mede</text>
+  <line x1="58.0" y1="282.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="282.0" x2="622.0" y2="282.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="630.0" y="288.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke"></text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$ por pessoa por ano</text>
+  <path d="M 129.0 282.0 L 234.1 282.0 L 234.1 151.7 L 129.0 151.7 Z" fill="#6A3D9A" fill-opacity="0.45" stroke="none"/>
+  <text x="181.6" y="213.6" font-size="18" fill="#6A3D9A" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">240</text>
+  <path d="M 314.4 282.0 L 419.4 282.0 L 419.4 151.7 L 314.4 151.7 Z" fill="#6A3D9A" fill-opacity="0.45" stroke="none"/>
+  <text x="366.9" y="213.6" font-size="18" fill="#6A3D9A" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">240</text>
+  <path d="M 314.4 151.7 L 419.4 151.7 L 419.4 97.4 L 314.4 97.4 Z" fill="#c8d0d8" fill-opacity="0.95" stroke="none"/>
+  <text x="366.9" y="121.3" font-size="18" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">100</text>
+  <text x="181.6" y="302.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">o que A mede</text>
+  <text x="366.9" y="302.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">o que VC vale</text>
+  <text x="50.0" y="156.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">240</text>
+  <text x="50.0" y="102.4" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">340</text>
+  <line x1="58.0" y1="151.7" x2="614.0" y2="151.7" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <text x="436.4" y="118.1" font-size="15" fill="#1b3a5c" text-anchor="start" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">valor que não</text>
+  <text x="436.4" y="128.9" font-size="15" fill="#1b3a5c" text-anchor="start" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">passa pela viagem</text>
+  <text x="333.0" y="362.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">se quem nunca viaja também se importa, A é um piso de VC, e não VC</text>
+</svg>
