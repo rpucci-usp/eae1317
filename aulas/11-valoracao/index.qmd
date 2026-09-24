@@ -128,7 +128,7 @@ propriedade:
 [É o Teorema de Coase: a dotação inicial de direitos muda quem paga, não a alocação.]{.fragment fragment-index=1}
 :::
 
-## WTP e WTA
+## WTP e WTA: bens privados
 
 ::: {.no-bullet}
 Na prática, há uma diferença quantitativa entre WTP e WTA.
@@ -145,7 +145,7 @@ Na prática, há uma diferença quantitativa entre WTP e WTA.
 - Alunos que receberam xícaras estavam muito mais relutantes em vender (alta
   WTA) do que os outros estavam dispostos a comprar (baixa WTP).
 
-## O que o mercado das xícaras deveria ter feito
+## WTP e WTA: bens privados
 
 ::: {.no-bullet}
 As xícaras foram sorteadas. Se a disposição a pagar é a mesma coisa que a
@@ -164,7 +164,7 @@ disposição a aceitar, metade das xícaras deveria acabar trocando de mãos.
 - E volume negociado ficou bem abaixo do que esperado.
 - Note que a xícara é um bem privado, com preço de mercado, que qualquer um pode comprar na esquina.
 
-## WTP e WTA
+## WTP e WTA: bens ambientais
 
 ::: {.no-bullet}
 No caso de bens ambientais, a razão entre WTA e WTP pode ser ainda maior.
@@ -181,7 +181,7 @@ transformada em um estacionamento gigante?
 
 - Provavelmente, um valor próximo de infinito.
 
-## WTP e WTA
+## WTP e WTA: bens ambientais
 
 ::: {.no-bullet}
 **Quanto pagaríamos** para evitar que a Floresta Amazônica vire um
