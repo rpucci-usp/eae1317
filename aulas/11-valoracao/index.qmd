@@ -107,9 +107,6 @@ uma mudança.
 - Quanto o indivíduo está disposto a receber como compensação por uma praia
   mais suja?
 
-::: {.no-bullet}
-Exemplo: estojo, WTA e WTP.
-:::
 
 ## WTP e WTA
 
@@ -128,8 +125,7 @@ propriedade:
   firma poluidora para tolerar um aumento de poluição.
 
 ::: {.no-bullet}
-[Reconhecem o arranjo? É o Teorema de Coase da aula 05: a dotação inicial de
-direitos muda quem paga, não a alocação.]{.fragment fragment-index=1}
+[É o Teorema de Coase: a dotação inicial de direitos muda quem paga, não a alocação.]{.fragment fragment-index=1}
 :::
 
 ## WTP e WTA
@@ -164,11 +160,9 @@ disposição a aceitar, metade das xícaras deveria acabar trocando de mãos.
 | Xícaras negociadas | cerca de **um quarto** do previsto |
 :::
 
-- [Meia hora de posse dobrou o valor da xícara.]{.fragment fragment-index=1}
-- [E o volume negociado ficou bem abaixo do que o Teorema de Coase
-  previa.]{.fragment fragment-index=1}
-- [Note que a xícara é um bem privado, com preço de mercado, que qualquer um
-  pode comprar na esquina.]{.fragment fragment-index=2}
+- Possuir a xícara aumentou seu valor.
+- E volume negociado ficou bem abaixo do que esperado.
+- Note que a xícara é um bem privado, com preço de mercado, que qualquer um pode comprar na esquina.
 
 ## WTP e WTA
 
@@ -202,7 +196,7 @@ Essa diferença entre WTA e WTP é um desafio, por exemplo, na elaboração de
 questionários sobre o valor atribuído a um bem ambiental:
 :::
 
-- Dependendo da pergunta, resposta pode ser em termos de WTA ou WTP.
+- Dependendo da pergunta, resposta pode ser WTA ou WTP.
 
 ## A razão está nos substitutos, e não na renda
 
@@ -216,15 +210,13 @@ pequeno para bens baratos. Aí a diferença observada parecia irracionalidade.
   entre o bem e o resto do consumo.
 - Quando não há substituto próximo, a elasticidade de substituição vai a zero e
   a razão pode crescer sem limite.
-- [Ou seja, a intuição do slide anterior (a floresta é única) não é um desvio da
-  teoria: é o que a teoria prevê.]{.fragment fragment-index=1}
-- [Para uma xícara, há substitutos por toda parte, e aí a diferença de 2,3 vezes
-  é comportamental mesmo.]{.fragment fragment-index=2}
+- Isto ajuda a entender o exemplo anterior: não há substitutos à Floresta Amazônica.
+- No caso das xícaras, há substitutos por toda parte e a diferença de 2,3 vezes pode ser apenas comportamental.
+
 
 ## Medidas de Bem-Estar
 
-- Antes de entrarmos nos problemas de mensurar o valor de bens ambientais,
-  retomaremos brevemente a **valoração de bens privados.**
+- Antes de entrarmos nos problemas de mensurar o valor de bens ambientais, retomaremos brevemente a **valoração de bens privados.**
 - Como devem se lembrar, há dois métodos para se medir bem-estar:
   - Variação Compensada;
   - Variação Equivalente.
@@ -246,8 +238,7 @@ pequeno para bens baratos. Aí a diferença observada parecia irracionalidade.
 $$\max_{x,z} \left\{U\left(x,z,q\right)+\lambda \left(y-z-\sum {p}_{j}{x}_{j}\right)\right\}$$
 :::
 
-- Como sabemos, a solução desse problema nos dará as **demandas por cada bem em
-  função de preço, renda e qualidade ambiental**: ${x}_{j}(p,y,q)$.
+- Como sabemos, a solução desse problema nos dará as **demandas por cada bem em função de preço, renda e qualidade ambiental**: ${x}_{j}(p,y,q)$.
 
 ## Demanda Hicksiana
 
@@ -258,8 +249,7 @@ $$\max_{x,z} \left\{U\left(x,z,q\right)+\lambda \left(y-z-\sum {p}_{j}{x}_{j}\ri
 $$\min_{x,z} \left\{z+\sum {p}_{j}{x}_{j}+\mu \left[\overline{u}-U\left(x,z,q\right)\right]\right\}$$
 :::
 
-- A solução nos dará as **demandas compensadas em função de preços, nível de
-  utilidade e qualidade ambiental**: ${h}_{j}(p,\overline{u},q)$.
+- A solução nos dará as **demandas compensadas em função de preços, nível de utilidade e qualidade ambiental**: ${h}_{j}(p,\overline{u},q)$.
 - Demanda compensada não é facilmente observável, pois depende de
   $\overline{u}$.
 
@@ -278,7 +268,7 @@ $${x}_{j}\left[p,E\left(p,{u}^{0},q\right),q\right]={h}_{j}\left(p,{u}^{0},q\rig
 À esquerda, a Demanda Marshalliana. À direita, a Demanda Compensada.
 :::
 
-## Um consumidor com números
+## Exemplo numérico
 
 ::: {.no-bullet}
 Vamos parametrizar o problema de forma mais concreta, como exemplo. Considere um consumidor com preferências Cobb-Douglas, em que $x$ é uma ida (viagem) à praia:
@@ -301,11 +291,9 @@ $$x\left(p,y\right)=\frac{y}{2p} \qquad V\left(p,y\right)=\frac{y}{2\sqrt{p}} \q
 ## Variação Compensada
 
 - Suponha um aumento de preço → A variação compensada é a quantidade de dinheiro
-  que o **consumidor precisa receber para alcançar a utilidade anterior ao
-  aumento de preço.**
+  que o **consumidor precisa receber para alcançar a utilidade anterior ao aumento de preço.**
 - Suponha uma queda de preço → A variação compensada é a quantidade de dinheiro
-  que o **consumidor precisa perder para alcançar a utilidade anterior ao
-  aumento de preço.**
+  que o **consumidor precisa perder para alcançar a utilidade anterior à queda de preço.**
 - [Ou seja, a variação compensada ($VC$) garante que:]{.fragment fragment-index=2}
 
 ::: {.eq-block .fragment fragment-index=2}
@@ -328,19 +316,17 @@ $$VC=E\left({p}^{0},{u}^{0},q\right)-E\left({p}^{1},{u}^{0},q\right)=y-E\left({p
 - Ou seja, mantém-se a utilidade fixa em ${u}^{0}$ (antes da mudança).
 - Então, calculam-se os gastos do consumidor sob preços antigos (${p}^{0}$) e
   novos preços (${p}^{1}$).
-- Se ${p}^{1}>{p}^{0}$, então $VC<0$: o consumidor gastaria mais para manter a
-  mesma utilidade.
+- Se ${p}^{1}>{p}^{0}$, então $VC<0$: o consumidor gastaria mais para manter a mesma utilidade.
 - [No nosso exemplo, o preço caiu, portanto $VC=100-2\times 25\times 1=\mathbf{50}$.]{.fragment fragment-index=1}
 
-## Tirar renda até voltar à curva de antes
+## Tirar renda até voltar à curva anterior
 
 ::: {.diagram}
 ![](../_assets/figuras/11-vc.svg){style="height:300px;max-height:300px"}
 :::
 
 - Em **A** o consumidor está no preço inicial, e, em **B**, no preço novo.
-- Com novo preço, reta cai para baixo até que tangencie a curva
-  ${u}^{0}$ novamente: é o ponto **C**.
+- Com novo preço, reta cai para baixo até tangenciar a curva ${u}^{0}$ novamente: é o ponto **C**.
 - Esse deslocamento corresponde a uma queda na renda igual a $VC = 50$ **sob o preço inicial**.
 
 ## Variação Equivalente
@@ -369,17 +355,16 @@ $$VE=E\left({p}^{0},{u}^{1},q\right)-E\left({p}^{1},{u}^{1},q\right)=E\left({p}^
 - Ou seja, mantém-se a utilidade fixa em ${u}^{1}$ (após a mudança).
 - Então, calculam-se os gastos do consumidor sob preços antigos (${p}^{0}$) e
   novos preços (${p}^{1}$).
-- Se ${p}^{1}>{p}^{0}$, então $VE<0$: o consumidor gastaria mais para obter a
-  nova utilidade.
+- Se ${p}^{1}>{p}^{0}$, então $VE<0$: o consumidor gastaria mais para obter a nova utilidade.
 - [No nosso exemplo, $VE=2\times 50\times 2-100=\mathbf{100}$.]{.fragment fragment-index=1}
 
-## Dar renda até chegar à curva de depois
+## Dar renda até chegar à nova curva
 
 ::: {.diagram}
 ![](../_assets/figuras/11-ve.svg){style="height:300px;max-height:300px"}
 :::
 
-- O enquadramento é o mesmo do slide anterior, com mesmos pontos **A** e **B**.
+- Usando o exemplo anterior, com mesmos pontos **A** e **B**.
 - Fixando o preço inicial, deslocamos a reta para **cima** até que encoste na curva ${u}^{1}$: é o ponto **D**.
 - Esse deslocamento corresponde a um adicional de renda igual a $VE = 100$ **sob o preço inicial**.
 
@@ -392,12 +377,8 @@ $$VE=E\left({p}^{0},{u}^{1},q\right)-E\left({p}^{1},{u}^{1},q\right)=E\left({p}^
 | **$VE$**: quanto ajusto na renda **sem** a mudança? | ${u}^{1}$, depois | é a WTA para abrir mão (aqui, 100) | é a WTP para evitar |
 :::
 
-- As duas medem a mesma queda de preço, mas dão números que diferem consideravelmente.
-- **A diferença não é erro de conta.** São perguntas diferentes, e a resposta de
-  cada uma depende de qual curva de indiferença serve de régua.
-- [O que decide se a resposta é WTP ou WTA não é a medida: é a **direção** da
-  mudança. Na abertura da aula a praia ficava mais suja, que é a coluna da
-  direita.]{.fragment fragment-index=1}
+- As duas medem a mesma queda de preço, mas dão números que diferem consideravelmente, pois a régua usada é distinta.
+- O que decide se a resposta é WTP ou WTA não é a medida, mas a **direção** da mudança. Na abertura da aula, tratando da praia ficando mais suja, usaríamos a última coluna da direita.
 
 ## Áreas sob Curvas de Demanda
 
@@ -412,28 +393,26 @@ $$VE=E\left({p}^{0},{u}^{1},q\right)-E\left({p}^{1},{u}^{1},q\right)=\int_{{p}_{
 :::
 
 ::: {.no-bullet}
-Repare que a integral é em **preço**, não em quantidade. É a faixa horizontal
-entre os dois preços, à esquerda da curva.
+Repare que a integral é em **preço**, não em quantidade: faixa horizontal entre os dois preços, à esquerda da curva.
 :::
 
-## A mesma VC, agora como área
+## Área representando Variação Compensada
 
 ::: {.diagram}
-![](../_assets/figuras/11-area-vc.svg){style="height:380px;max-height:380px"}
+![](../_assets/figuras/11-area-vc.svg){style="height:340px;max-height:340px"}
 :::
 
-- A Hicksiana de referência é $h(p,{u}^{0})=25/\sqrt{p}$, que passa pelo ponto
-  **A** do slide anterior.
-- A faixa entre $p=1$ e $p=4$, à esquerda dela, vale exatamente **50**.
+- A Hicksiana de referência é $h(p,{u}^{0})=25/\sqrt{p}$, que passa pelo ponto **A** do slide anterior.
+- A faixa entre $p=1$ e $p=4$, à esquerda, vale exatamente **50**.
 
-## E a mesma VE
+## Área representando Variação Equivalente
 
 ::: {.diagram}
-![](../_assets/figuras/11-area-ve.svg){style="height:380px;max-height:380px"}
+![](../_assets/figuras/11-area-ve.svg){style="height:340px;max-height:340px"}
 :::
 
-- Agora a régua é $h(p,{u}^{1})=50/\sqrt{p}$, que passa pelo ponto **B**.
-- Mesma conta, outra curva: **100**.
+- Agora, a régua é $h(p,{u}^{1})=50/\sqrt{p}$, que passa pelo ponto **B**.
+- Mesma conta, outra curva, traz resultado igual a **100**.
 
 ## Áreas sob Curvas de Demanda
 
@@ -442,13 +421,13 @@ Uma aproximação sujeita a imprecisões: Excedente do Consumidor.
 :::
 
 ::: {.diagram}
-![](../_assets/figuras/11-area-ec.svg){style="height:380px;max-height:380px"}
+![](../_assets/figuras/11-area-ec.svg){style="height:340px;max-height:340px"}
 :::
 
-- A Marshalliana é a única das três que se observa, porque não depende de $\overline{u}$.
-- Ela passa por **A** e por **B**, então fica **entre** as duas Hicksianas.
+- A Marshalliana é a única das três demandas que se observa, porque não depende de $\overline{u}$.
+- Passa por **A** e por **B**, ficando **entre** as duas Hicksianas.
 
-## Quando o excedente basta {.smaller}
+## Quando usar excedente do consumidor? {.smaller}
 
 ::: {.no-bullet}
 No nosso exemplo Cobb-Douglas, as três medidas têm fórmula fechada, e o
@@ -470,8 +449,8 @@ $$VC=y\left(1-{p}^{-\alpha }\right) \qquad EC=\alpha y\ln p \qquad VE=y({p}^{\al
 
 - Com a mesma queda de preço, o erro é pequeno quando o bem pesa pouco no
   orçamento.
-- **Como muitos bens ambientais são fatia pequena do orçamento**, a aproximação
-  Marshalliana serve, mas só onde há substituto. Sem ele, quem manda é Hanemann.
+- Para casos em que **bem ambiental represente fatia pequena do orçamento**, a aproximação
+  Marshalliana pode servir **se houver bens substitutos**.
 
 ## Bens Ambientais {.section-cover}
 
@@ -490,38 +469,50 @@ $$VC=y-E\left(p,{u}^{0},{q}^{1}\right) \qquad VE=E\left(p,{u}^{1},{q}^{0}\right)
 :::
 
 ::: {.no-bullet}
-É a mesma conta de antes, com $q$ no lugar de $p$.
+A definição das variações é a mesma, mas, agora, integral corre ao longo da quantidade (qualidade) $q$.
 :::
+
+## Melhora em qualidade
+
+::: {.diagram}
+![](../_assets/figuras/11-area-q.svg){style="height:295px;max-height:295px"}
+:::
+
+- Mesmo consumidor, mesma renda, preço fixo em ${p}^{0}=4$. Suponha que $q$ duplique,
+  levando a utilidade de 25 a 50, como no exemplo do preço.
+- Novamente, temos $VC=50$ e $VE=100$.
+- A integral é em $q$: área **sob** a curva.
 
 ## Peculiaridade de Bens Ambientais
 
 ::: {.no-bullet}
-Como não há mercado para o bem ambiental, preços não variam: como observar mudanças no dispêndio?
+No caso de mudanças de preço, ainda conseguíamos observar a demanda Marshalliana. No caso de $q$, nunca observamos aquelas curvas de demanda.
 :::
+
+- **Sem preço para o bem ambiental**, não temos curvas de mercado.
+- Além disso, $q$ não é escolhido pelo consumidor, pois é bem público: não há demanda por $q$ a ser
+  traçada, nem excedente do consumidor a calcular.
+- No exemplo anterior, a demanda por viagens fica em 12,5 antes e depois. O
+  consumidor ficou duas vezes melhor, mas não há mercado evidenciando essa mudança.
 
 ::: {.no-bullet}
-Além disso, não é possível usar o excedente do consumidor, pois não conseguimos traçar uma curva de demanda.
+Precisaríamos estimar a **disposição marginal a pagar** por unidades do bem ambiental (demanda inversa): o preço implícito.
 :::
-
-- **Não há preço para o bem ambiental.**
-- Precisaríamos estimar qual é a **disposição marginal a pagar** por mais (menos) quantidade do bem ambiental (demanda inversa).
 
 ## Medidas Indiretas
 
 ::: {.no-bullet}
-Se não temos medidas diretas, como a disposição marginal a pagar, precisamos de
-alternativas.
+Se não temos a disposição marginal a pagar, precisamos de alternativas.
 :::
 
 ::: {.no-bullet}
 Veremos medidas indiretas baseadas no conceito de **preferência revelada**.
 :::
 
-- A partir das escolhas que as pessoas efetivamente fazem, podemos inferir qual
-  valor elas atribuem a bens ambientais.
+- A partir das escolhas que as pessoas efetivamente fazem, podemos inferir qual valor elas atribuem a bens ambientais.
 
 ::: {.no-bullet}
-Usaremos variação de preço de outros bens para inferir o valor do bem ambiental.
+Usaremos variação de preço de outros bens para inferir o valor do bem ambiental. 
 :::
 
 ## Preferência Revelada
@@ -641,8 +632,8 @@ Aqui, assumimos que esses preços de esgotamento são finitos.
 ![](../_assets/figuras/11-choke-1.svg){style="height:300px;max-height:300px"}
 :::
 
-- A viagem custa R\$ 20, e a essa altura da curva ele faz 4 viagens por ano.
-- Acima de R\$ 60 ele não vai mais: este é o preço de esgotamento
+- A viagem custa R\$ 20, e consumidor faz 4 viagens por ano.
+- Acima de R\$ 60, não vai mais: este é o preço de esgotamento
   $\overline{p}({q}^{0})$.
 
 ## Com a praia limpa
@@ -651,10 +642,9 @@ Aqui, assumimos que esses preços de esgotamento são finitos.
 ![](../_assets/figuras/11-choke-2.svg){style="height:300px;max-height:300px"}
 :::
 
-- A limpeza gira a curva para fora: agora ele faz 8 viagens, e só desiste acima
-  de R\$ 100.
+- A limpeza desloca a curva para fora: agora, são 8 viagens e preço de afogamento é R\$ 100.
 - $A$ é a diferença entre as duas áreas: **R\$ 240 por pessoa por ano**.
-- Note que nenhuma das duas curvas tem preço de qualidade ambiental nelas. A
+- Note que nenhuma das duas curvas mostra o preço do bem ambiental. A
   conta inteira é feita com o preço da **viagem**.
 
 ## Bens Complementares
@@ -688,18 +678,16 @@ $E\left[\overline{p}\left({q}^{1}\right),{u}^{0},{q}^{1}\right]-E\left[\overline
   consumido.
 - De outra forma, **o bem ambiental só tem valor quando o bem privado é
   consumido.**
-  - É como se o bem ambiental só tivesse "valor de uso".
-- Essa hipótese tem nome, e é o conceito a levar desta aula:
-  **complementaridade fraca** [@maler1974].
+  - Seria análogo a pensar que o bem ambiental só tem "valor de uso".
+- Isso é o que chamamos conceitualmente de **complementaridade fraca** [@maler1974].
 
 ::: {.no-bullet}
-**Exemplo:** é como valorizar os Lençóis Maranhenses só porque é possível viajar
-até lá.
+**Exemplo:** seria o mesmo que valorizar os Lençóis Maranhenses só porque é possível viajar até lá.
 :::
 
 - Ou seja, o bem que importa é a viagem, não o local intrinsecamente.
 
-## O que a viagem não mede {.smaller}
+## O que a viagem não mede? {.smaller}
 
 ::: {.diagram}
 ![](../_assets/figuras/11-nao-uso.svg){style="height:360px;max-height:360px"}
@@ -707,10 +695,8 @@ até lá.
 
 - Suponha que a pessoa pagaria R\$ 100 por ano pela praia limpa **mesmo que
   nunca fosse lá**.
-- Os dois triângulos continuam dando 240, porque nada disso passa pelo custo da
-  viagem.
-- Nesse caso $A$ é um **piso** para $VC$, e não $VC$. A hipótese de
-  complementaridade fraca é justamente a de que essa barra cinza não existe.
+- Nesse caso, os dois triângulos continuam dando 240, porque esse valor intrínseco não passa pelo custo da viagem.
+- Ou seja, $A$ seria um **piso** para $VC$. A hipótese de complementaridade fraca é justamente a de que essa barra cinza não existe.
 
 ## Bens Complementares
 
@@ -718,8 +704,7 @@ até lá.
 Quando poderia fazer sentido pensar que o bem ambiental só tem "valor de uso"?
 :::
 
-- Tipicamente, quando os indivíduos consideram aquele bem como **não
-  essencial**.
+- Tipicamente, quando os indivíduos consideram aquele bem como **não-essencial**.
 
 ::: {.no-bullet}
 **Exemplo:** cachoeiras no interior de São Paulo.
@@ -753,19 +738,15 @@ Sob algumas condições, essa aproximação é razoável.
 :::
 
 - Em particular, se as elasticidades-renda de $x$ e $q$ forem similares.
-- [É o mesmo argumento da tabela de alguns slides atrás: se a viagem é uma fatia
-  pequena do orçamento, a diferença some.]{.fragment fragment-index=1}
+- É similar a um argumento que já fizemos: se a viagem é uma fatia pequena do orçamento, a diferença some.
 
-## Isso já foi usado para cobrar uma conta
+## Exemplo prático: vazamento de petróleo
 
 ::: {.no-bullet}
-O vazamento da plataforma Deepwater Horizon, em 2010, sujou a costa do Golfo do
-México. Para calcular a indenização, a agência ambiental americana precisava de
-um número [@english2018].
+O vazamento da plataforma Deepwater Horizon, em 2010, contaminou a costa do Golfo do México. Para calcular a indenização, a agência ambiental americana usou algo parecido com o que vimos agora [@english2018].
 :::
 
-- Foram cinco anos de trabalho, oito pesquisas amostrais e um modelo de demanda
-  por viagens de recreação para toda a população dos EUA.
+- Foram cinco anos de trabalho, oito pesquisas amostrais e um modelo de demanda por viagens de recreação para toda a população dos EUA.
 - Custo da viagem calculado com modo de transporte, inclusive passagem aérea.
 
 ::: {.tabela}
@@ -776,20 +757,18 @@ um número [@english2018].
 | **Dano recreacional total** | **US\$ 661 milhões** |
 :::
 
-## Isso já foi usado para cobrar uma conta
+## Exemplo prático: vazamento de petróleo
 
 - A conta é exatamente a dos dois triângulos: quanto de área sob a demanda por
   viagens desapareceu quando $q$ caiu.
 - Note o que **não** está nesses 661 milhões: o valor que alguém em Chicago
-  atribui a um Golfo do México limpo sem nunca pensar em ir lá.
+  atribui a um Golfo do México limpo sem nunca pensar em visitar a região.
 - Pela complementaridade fraca, esse valor é zero por hipótese.
-- [Ou seja, o número que foi a juízo é, pela própria construção, um
-  piso.]{.fragment fragment-index=1}
-- [No mesmo processo, uma pesquisa de preferência **declarada** perguntou a
+- Ou seja, o valor calculado é, por construção, um piso.
+- No mesmo processo, uma pesquisa de preferência **declarada** perguntou a
   domicílios de todo o país quanto pagariam para evitar um dano igual
-  [@bishop2017]. Deu ao menos **US\$ 17,2 bilhões**.]{.fragment fragment-index=2}
-- [As duas contas não medem a mesma coisa, e é esse o ponto: a segunda mede o
-  que a complementaridade fraca zerou na primeira.]{.fragment fragment-index=3}
+  [@bishop2017]. A conta alcançou **US\$ 17,2 bilhões**.
+- Fato é que cada método mede algo diferente: a segunda mede o que a complementaridade fraca zerou na primeira.
 
 ## Bens Substitutos {.section-cover}
 

@@ -398,6 +398,153 @@ def areas(nome, qual):
     t.salvar(nome, titulo)
 
 
+# --- a mesma melhora, agora medida em q ------------------------------------
+#
+# A transicao do bloco de preco para o bloco de bem ambiental dizia "e a mesma
+# conta, com q no lugar de p". Nao e: no mundo do preco VC e VE sao AREAS, e do
+# jeito como estava a area sumia, bem depois de dez slides ensinando a ve-la.
+#
+# A analogia certa de integral de h dp nao e "nada", e integral de MWTP dq. A
+# disposicao marginal a pagar por q e a demanda inversa compensada por q, e a
+# area dela entre q0 e q1 E a VC.
+#
+# A calibracao nao inventa um segundo consumidor. E a mesma Cobb-Douglas, com q
+# entrando multiplicativo:
+#
+#     U(x, z, q) = q sqrt(x z)      y = 100      p PARADO em p0 = 4
+#     q: 1 -> 2
+#
+#     V(p, y, q) = q y / (2 sqrt(p))        E(p, u, q) = 2 sqrt(p) u / q
+#
+# Com isso u0 = 25 e u1 = 50, que sao os MESMOS do exemplo de preco, e dai
+# VC = 50 e VE = 100, tambem os mesmos. Nao e coincidencia: com preferencias
+# homoteticas E e linear em u, entao VC = y(1 - u0/u1) e VE = y(u1/u0 - 1). As
+# duas mudancas dobram a utilidade, logo valem o mesmo. A medida nao se importa
+# com o que se moveu, e sim com quanto o consumidor melhorou.
+#
+#     MWTP(q, u) = -dE/dq = 2 sqrt(p) u / q^2   ->   100/q^2 em u0, 200/q^2 em u1
+#
+# E O PONTO CEGO, que e o assunto do slide seguinte: com essa U a demanda por x
+# nao depende de q. O consumidor fica em x = 12,5 antes e depois, ou seja, no
+# ponto A das tres figuras anteriores. Ele dobrou de bem-estar e nenhum mercado
+# viu. E o caso polar, e existe para motivar os dois blocos que vem depois.
+
+Q0, Q1 = 1.0, 2.0
+
+v_ind_q = lambda p, y, q: q * y / (2 * math.sqrt(p))
+disp_q = lambda p, u, q: 2 * math.sqrt(p) * u / q
+mwtp_q = lambda q, u: 2 * math.sqrt(P0) * u / (q * q)
+
+assert abs(v_ind_q(P0, RENDA, Q0) - U0) < 1e-9, "u0 do caso q saiu dos 25"
+assert abs(v_ind_q(P0, RENDA, Q1) - U1) < 1e-9, "u1 do caso q saiu dos 50"
+
+VC_Q = RENDA - disp_q(P0, U0, Q1)
+VE_Q = disp_q(P0, U1, Q0) - RENDA
+assert abs(VC_Q - VC) < 1e-9, "a VC do caso q deixou de bater com a do preco"
+assert abs(VE_Q - VE) < 1e-9, "a VE do caso q deixou de bater com a do preco"
+
+# A area sob a MWTP entre q0 e q1 E a medida. Conferida por soma de Riemann,
+# porque e exatamente isso que a figura desenha.
+def _area_mwtp(u, n=200000):
+    passo = (Q1 - Q0) / n
+    return sum(mwtp_q(Q0 + (k + 0.5) * passo, u) for k in range(n)) * passo
+
+assert abs(_area_mwtp(U0) - VC) < 1e-4, "a area sob MWTP(., u0) nao e mais VC"
+assert abs(_area_mwtp(U1) - VE) < 1e-4, "a area sob MWTP(., u1) nao e mais VE"
+# O ponto cego, em numero: a demanda por x nao se mexe.
+assert abs(marsh(P0) - 12.5) < 1e-9
+
+# O enquadramento e RECORTADO em torno de [1, 2], e nao comeca em q = 0.
+# Primeira versao ia de 0 a 2,45 e a faixa que interessa virava uma fatia de um
+# terco da largura, com o resto ocupado pela cauda plana da hiperbole, que nao
+# diz nada. Com 0,75 a 2,25 a faixa fica nos dois tercos do meio. O eixo nao
+# comecar em zero e aceitavel aqui porque q e um indice de qualidade e os dois
+# valores que importam estao marcados.
+# ATENCAO ao nome: `Q_MAX` ja existe neste arquivo, no bloco de substitutos, e
+# e definido DEPOIS daqui. Como a funcao so le a variavel na hora da chamada,
+# usar `Q_MAX` aqui pegava o 10,6 de la e a figura saia com o eixo esticado,
+# sem erro nenhum. Prefixo AQ = area-q.
+AQ_MIN, AQ_MAX, AQ_Y_MAX = 0.75, 2.25, 215.0
+
+
+def _curva_q(p, u, cor, larg=2.6):
+    """MWTP = 2 sqrt(p0) u / q^2, do ponto em que ela entra no quadro ate o fim.
+
+    Ela explode perto de q = 0, como as tres do plano (p, x), entao o inicio
+    nao pode ser fixo.
+    """
+    qq = AQ_MIN
+    while qq < AQ_MAX and mwtp_q(qq, u) > p.y1:
+        qq += 0.005
+    pts = [(qq + (AQ_MAX - qq) * k / 120.0, mwtp_q(qq + (AQ_MAX - qq) * k / 120.0, u))
+           for k in range(121)]
+    d = "M {:.1f} {:.1f} ".format(*p.p(*pts[0]))
+    d += " ".join("L {:.1f} {:.1f}".format(*p.p(a, b)) for a, b in pts[1:])
+    p.t.add('<path d="{}" fill="none" stroke="{}" stroke-width="{:.1f}"'
+            ' stroke-linecap="round"/>'.format(d, cor, larg))
+
+
+def _area_q(p, u, cor, opac):
+    """A area SOB a curva, entre q0 e q1.
+
+    No bloco de preco a area era uma faixa HORIZONTAL, a esquerda da curva,
+    porque a integral era em preco. Aqui a integral e em q, entao a area e a
+    vertical, sob a curva. A figura existe em boa parte para mostrar essa
+    troca de eixo.
+    """
+    pts = [(Q0, 0.0)]
+    pts += [(Q0 + (Q1 - Q0) * k / 60.0, mwtp_q(Q0 + (Q1 - Q0) * k / 60.0, u))
+            for k in range(61)]
+    pts.append((Q1, 0.0))
+    p.area(pts, cor, opac)
+
+
+def area_q():
+    t, p = moldura("Duas curvas, e nenhuma delas observável",
+                   LARG_PX, ALT_PX, (AQ_MIN, AQ_MAX), (0, AQ_Y_MAX),
+                   "q", "R$ por unidade de q")
+
+    # Vermelho e a regua u0 e azul e a regua u1, exatamente como em
+    # 11-area-vc e 11-area-ve. O roxo de q fica de fora de proposito: o
+    # assunto desta figura e QUAL curva de indiferenca serve de regua, que e o
+    # mesmo assunto das tres anteriores, e a rima visual vale mais.
+    _area_q(p, U1, COR_DANO, 0.16)
+    _area_q(p, U0, COR_CMG, 0.30)
+
+    p.reta(Q0, 0, Q0, mwtp_q(Q0, U1), cor=COR_GUIA, larg=1.1, tracejado="4 3")
+    p.reta(Q1, 0, Q1, mwtp_q(Q1, U1), cor=COR_GUIA, larg=1.1, tracejado="4 3")
+
+    _curva_q(p, U1, COR_DANO)
+    _curva_q(p, U0, COR_CMG)
+
+    # Os dois rotulos de curva ficam no MESMO q, a esquerda, onde as duas
+    # curvas estao a 80 unidades uma da outra. Postos a direita, onde a
+    # hiperbole ja achatou, eles caiam a 25px um do outro e os halos se comiam.
+    p.texto(1.12, mwtp_q(1.12, U1) + 12, "MWTP(q, u¹)", cor=COR_DANO,
+            negrito=True)
+    p.texto(1.12, mwtp_q(1.12, U0) + 12, "MWTP(q, u⁰)", cor=COR_CMG,
+            negrito=True)
+
+    p.marca_x(Q0, "q⁰ = 1")
+    p.marca_x(Q1, "q¹ = 2")
+    p.marca_y(mwtp_q(Q0, U0), "100")
+    p.marca_y(mwtp_q(Q0, U1), "200")
+
+    p.texto(1.55, 20, "VC = 50", cor=COR_CMG, negrito=True, italico=False,
+            ancora="middle")
+    # A 1,85 e 44 o rotulo encostava na propria curva azul, que passa em 58
+    # ali. Em 1,7 as duas curvas estao a 35 unidades uma da outra e ele cabe
+    # no meio, com folga parecida dos dois lados.
+    p.texto(1.7, 50, "VE = 100", cor=COR_DANO, negrito=True, italico=False,
+            ancora="middle")
+
+    rodape(t, LARG_PX, ALT_PX,
+           "a integral agora é em q, então a área é SOB a curva, e não à"
+           " esquerda dela")
+    t.salvar("11-area-q.svg",
+             "As duas curvas de disposição marginal a pagar por q")
+
+
 # ===========================================================================
 # Bloco 2 - complementaridade fraca e os precos de esgotamento
 # ===========================================================================
@@ -677,6 +824,7 @@ def main():
     areas("11-area-vc.svg", "VC")
     areas("11-area-ve.svg", "VE")
     areas("11-area-ec.svg", "EC")
+    area_q()
     choke("11-choke-1.svg", 1)
     choke("11-choke-2.svg", 2)
     nao_uso()
