@@ -1054,21 +1054,32 @@ Rafael Pucci
 <li><span class="math inline">\({f}_{xq}&gt;0\)</span>: benefício marginal da ida ao pesqueiro aumenta conforme o bem ambiental melhora.</li>
 </ul>
 </section>
-<section id="duas-tecnologias-os-mesmos-dois-pontos" class="slide level2">
-<h2>Duas tecnologias, os mesmos dois pontos</h2>
+<section id="ilustração-duas-tecnologias-diferentes" class="slide level2">
+<h2>Ilustração: duas tecnologias diferentes</h2>
 <div class="diagram">
 <p><img data-src="../_assets/figuras/11-substitutos.svg" style="height:295px;max-height:295px"></p>
 </div>
 <ul>
-<li>Uma família precisa de <span class="math inline">\(H\)</span> de água segura por semana. A torneira entrega <span class="math inline">\(q\)</span> de graça, e o resto vem de garrafas a R$ 5 cada.</li>
-<li>Nos dois painéis, passar de <span class="math inline">\(q=3\)</span> para <span class="math inline">\(q=7\)</span> derruba as garrafas de 7 para 3, e poupa os mesmos R$ 20.</li>
-<li>O que muda é a <strong>inclinação da isoquanta</strong>, que é o <span class="math inline">\({f}_{q}/{f}_{x}\)</span> que vamos usar em seguida.</li>
+<li>Uma família precisa de <span class="math inline">\(H\)</span> de água segura por mês: <span class="math inline">\(q\)</span> vem da torneira, de graça, e <span class="math inline">\(x\)</span> custa R$ 4 (garrafa à esquerda, refil de filtro à direita).</li>
+<li>Fixando <span class="math inline">\(H\)</span> por enquanto, os painéis mostram que mudar <span class="math inline">\(q\)</span> de 2 para 8 derruba o consumo de <span class="math inline">\(x\)</span> de 8 para 2: R$ 24 poupados. Mas muda a <strong>inclinação da isoquanta</strong>, <span class="math inline">\({f}_{q}/{f}_{x}\)</span>.</li>
+</ul>
+</section>
+<section id="do-gasto-poupado-à-disposição-a-pagar" class="slide level2">
+<h2>Do gasto poupado à disposição a pagar</h2>
+<div class="no-bullet">
+<p>A água da torneira melhorou, e a família passou a gastar R$ 24 a menos com garrafas ou refis. <strong>Esse é o valor da melhora para ela?</strong></p>
+</div>
+<ul>
+<li>Não necessariamente. Disposição a pagar é o <strong>máximo que ela pagaria</strong> pela água melhor e ainda ficaria tão bem quanto antes.</li>
+<li>Os dois números coincidem se a melhora <strong>não mudar o quanto ela consome de <span class="math inline">\(H\)</span></strong>. E isso depende do tamanho da melhora.</li>
+<li><span class="fragment" data-fragment-index="1"><strong>Melhora pequena</strong> (um ponto de <span class="math inline">\(q\)</span>): o gasto poupado é exatamente a disposição a pagar (e a MWTP).</span></li>
+<li><span class="fragment" data-fragment-index="2"><strong>Melhora grande</strong> (de 2 para 8): a família muda o <span class="math inline">\(H\)</span>, e o gasto poupado passa a ser só um piso da disposição a pagar.</span></li>
 </ul>
 </section>
 <section id="bens-substitutos-4" class="slide level2">
 <h2>Bens Substitutos</h2>
 <div class="no-bullet">
-<p>A função-custo pode ser escrita como um problema de minimização tradicional:</p>
+<p>Para entender melhor, escreva a função-custo como um problema de minimização tradicional:</p>
 </div>
 <div class="eq-block">
 <p><span class="math display">\[C\left(p,q,H\right)=\min_{x} \left\{px+\mu \left[H-f\left(x,q\right)\right]\right\}\]</span></p>
@@ -1103,7 +1114,7 @@ Rafael Pucci
 <p><span class="math display">\[E\left(p,u,q\right)=\min_{H,z} \left\{C\left(p,q,H\right)+z \text{ s.a. } U\left(H,z\right)=u\right\}\]</span></p>
 </div>
 <ul>
-<li>E obtemos demandas compensadas por <span class="math inline">\(H\)</span> e <span class="math inline">\(z\)</span>.</li>
+<li>E obtemos as demandas compensadas por <span class="math inline">\(H\)</span> e <span class="math inline">\(z\)</span>.</li>
 </ul>
 <div class="no-bullet">
 <p>Novamente, <span class="math inline">\(VC=E\left(p,{u}^{0},{q}^{0}\right)-E\left(p,{u}^{0},{q}^{1}\right)\)</span>.</p>
@@ -1121,42 +1132,186 @@ Rafael Pucci
 <p><span class="math display">\[MWTP=-\frac{\partial E\left(p,u,q\right)}{\partial q}=-\frac{\partial C\left(p,q,H\right)}{\partial q}\]</span></p>
 </div>
 <div class="no-bullet">
-<p>Vamos combinar essa expressão com os resultados anteriores da escolha do consumidor (<strong>LOUSA</strong>).</p>
+<p>Vamos entender melhor por que a segunda igualdade vale.</p>
 </div>
 </section>
-<section id="bens-substitutos-8" class="slide level2">
-<h2>Bens Substitutos</h2>
+<section id="por-que-basta-olhar-o-custo" class="slide level2">
+<h2>Por que basta olhar o custo?</h2>
 <div class="no-bullet">
-<p>Ou seja, para uma mudança marginal em <span class="math inline">\(q\)</span> mantendo <span class="math inline">\(H\)</span> constante, conseguimos calcular a MWTP de três formas:</p>
+<p>Disposição a pagar é o máximo que se pode <strong>cobrar</strong> da família pela água melhor sem que ela fique pior do que estava.</p>
 </div>
 <ul>
-<li>Usando a função-custo → <span class="math inline">\(MWTP=-\frac{\partial C(p,q,H)}{\partial q}\)</span></li>
-<li>Usando a tecnologia de “produção” → <span class="math inline">\(MWTP=p \frac{\partial f/\partial q}{\partial f/\partial x}\)</span></li>
-<li>Usando a demanda por <span class="math inline">\(x\)</span> → <span class="math inline">\(MWTP=-p\frac{\partial x}{\partial q}\)</span></li>
+<li>Considere o experimento: <span class="math inline">\(q\)</span> vai de 2 para 8 e, junto, cobramos da família os R$ 24 que ela poupa em refis.</li>
+<li>Ela compra 2 refis em vez de 8 e mantém <span class="math inline">\(H=16\)</span>. Gastava 32, agora gasta <span class="math inline">\(8+24=32\)</span>: sobra o mesmo <span class="math inline">\(z\)</span>. <strong>Fica exatamente como antes.</strong></li>
+<li>Portanto, aceita pagar <strong>pelo menos</strong> os 24. Pagaria mais? Só se ganhasse algo mudando o <span class="math inline">\(H\)</span>.</li>
+<li>Numa melhora pequena, mudar o <span class="math inline">\(H\)</span> quase não rende nada: ela já estava no melhor <span class="math inline">\(H\)</span>, e no topo do morro um passo para o lado quase não muda a altura.</li>
+<li>Por isso, <strong>na margem</strong>, <span class="math inline">\(MWTP=-\partial C/\partial q\)</span> (<span class="math inline">\(H\)</span> fixo). É o teorema do envelope.</li>
 </ul>
+</section>
+<section id="do-custo-para-a-isoquanta" class="slide level2">
+<h2>Do custo para a isoquanta</h2>
 <div class="no-bullet">
-<p>A terceira é a única que se observa: é o gasto com garrafas que se vê no caixa do supermercado.</p>
+<p>Com <span class="math inline">\(H\)</span> fixo, o custo é o gasto com <span class="math inline">\(x\)</span>: <span class="math inline">\(C(p,q,H)=p\cdot x(q,H)\)</span>, em que <span class="math inline">\(x(q,H)\)</span> é a isoquanta do exemplo inicial.</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[-\frac{\partial C}{\partial q}=-p\,\frac{\partial x}{\partial q}\Big|_{H}\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Ao longo da isoquanta, <span class="math inline">\(f(x,q)=H\)</span> não muda: <span class="math inline">\({f}_{x}\,dx+{f}_{q}\,dq=0\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="2">Logo <span class="math inline">\(-\partial x/\partial q\,\vert_{H}={f}_{q}/{f}_{x}\)</span>: quantas unidades de <span class="math inline">\(x\)</span> um ponto de <span class="math inline">\(q\)</span> substitui. É a inclinação da isoquanta.</span></li>
+</ul>
+<div class="eq-block fragment" data-fragment-index="3">
+<p><span class="math display">\[MWTP=p\,\frac{{f}_{q}}{{f}_{x}}\]</span></p>
 </div>
 </section>
-<section id="total-e-margem-não-são-a-mesma-coisa" class="slide level2">
-<h2>Total e margem não são a mesma coisa</h2>
+<section id="três-leituras-para-o-mesmo-número" class="slide level2">
+<h2>Três leituras para o mesmo número</h2>
+<div class="eq-block">
+<p><span class="math display">\[MWTP=-\frac{\partial C}{\partial q}=-p\,\frac{\partial x}{\partial q}\Big|_{H}=p\,\frac{{f}_{q}}{{f}_{x}}\]</span></p>
+</div>
+<div class="tabela">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>o que diz</th>
+<th><span class="math inline">\(f=x+q\)</span>, em <span class="math inline">\(q=2\)</span></th>
+<th><span class="math inline">\(f=x\cdot q\)</span>, em <span class="math inline">\(q=2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(-\partial C/\partial q\)</span></td>
+<td>quanto cai o custo de <span class="math inline">\(H\)</span></td>
+<td>4</td>
+<td><span class="math inline">\(4\times 16/2^{2}=16\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(-p\,\partial x/\partial q\,\vert_{H}\)</span></td>
+<td><span class="math inline">\(x\)</span> poupado, em reais</td>
+<td><span class="math inline">\(4\times 1=4\)</span></td>
+<td><span class="math inline">\(4\times 4=16\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(p\,{f}_{q}/{f}_{x}\)</span></td>
+<td>preço vezes inclinação da isoquanta</td>
+<td><span class="math inline">\(4\times 1=4\)</span></td>
+<td><span class="math inline">\(4\times 8/2=16\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Repare que, em todos os casos, <strong><span class="math inline">\(H\)</span> está fixo</strong>. Vale para um ponto de <span class="math inline">\(q\)</span> a mais, mas e para uma mudança grande?</li>
+</ul>
+</section>
+<section id="total-wtp-versus-margem-mwtp" class="slide level2">
+<h2>Total (WTP) versus margem (MWTP)</h2>
 <div class="diagram">
 <p><img data-src="../_assets/figuras/11-mwtp.svg" style="height:295px;max-height:295px"></p>
 </div>
 <ul>
-<li>Com substitutos perfeitos, cada ponto de qualidade vale R$ 5, sempre.</li>
-<li>Com a tecnologia multiplicativa, o primeiro ponto vale R$ 11,70 e o último vale R$ 2,10.</li>
-<li><strong>As duas áreas valem 20</strong>, que é a economia total do slide anterior. Só a curva é diferente.</li>
+<li>Com substitutos perfeitos, cada ponto de qualidade vale R$ 4, sempre.</li>
+<li>Com substitutos <strong>imperfeitos</strong>, o primeiro ponto vale R$ 16 e o último, R$ 1.</li>
+<li><strong>As duas áreas valem 24</strong>: é a soma das margens.</li>
+<li>Cada margem foi medida com <span class="math inline">\(H\)</span> fixo, mas a família deixaria de ajustar <span class="math inline">\(H\)</span>?</li>
 </ul>
 </section>
-<section id="bens-substitutos-9" class="slide level2">
+<section id="água-melhor-barateia-a-água-segura" class="slide level2">
+<h2>Água melhor barateia a água segura</h2>
+<div class="no-bullet">
+<p>Com <span class="math inline">\(f=x\cdot q\)</span>, cada refil rende <span class="math inline">\(q\)</span> unidades de água segura: quanto mais limpa a água que entra no filtro, mais ele trata antes de saturar.</p>
+</div>
+<ul>
+<li>Para ter <span class="math inline">\(H\)</span>, são <span class="math inline">\(x=H/q\)</span> refis, e o gasto é <span class="math inline">\(C=p\cdot H/q\)</span>: cada unidade de <span class="math inline">\(H\)</span> custa <span class="math inline">\(p/q\)</span>. Com <span class="math inline">\(q=2\)</span>, R$ 2; com <span class="math inline">\(q=8\)</span>, R$ 0,50.</li>
+<li>Melhorar <span class="math inline">\(q\)</span> é <strong>baratear <span class="math inline">\(H\)</span></strong> <span class="math inline">\(\rightarrow\)</span> consumidor quer mais <span class="math inline">\(H\)</span>.</li>
+</ul>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>custo de <span class="math inline">\(H\)</span></th>
+<th><span class="math inline">\(H\)</span></th>
+<th>refis</th>
+<th>gasto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(q=2\)</span></td>
+<td>R$ 2</td>
+<td>16</td>
+<td>8</td>
+<td>R$ 32</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(q=8\)</span>, <span class="math inline">\(H\)</span> parado</td>
+<td>R$ 0,50</td>
+<td>16</td>
+<td>2</td>
+<td>R$ 8</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(q=8\)</span>, <span class="math inline">\(H\)</span> se ajusta</td>
+<td>R$ 0,50</td>
+<td><strong>32</strong></td>
+<td><strong>4</strong></td>
+<td><strong>R$ 16</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Com <span class="math inline">\(f=x+q\)</span> não: cada unidade a mais de <span class="math inline">\(H\)</span> custa sempre <span class="math inline">\(p\)</span>, e o <span class="math inline">\(H\)</span> não se mexe.</span></li>
+</ul>
+</section>
+<section id="quanto-vale-baratear-h" class="slide level2">
+<h2>Quanto vale baratear <em>H</em>?</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/11-demanda-h-1.svg" style="height:300px;max-height:300px"></p>
+</div>
+<ul>
+<li>A reta é o valor de mais uma unidade de <span class="math inline">\(H\)</span>. A família compra até esse valor igualar o custo: <span class="math inline">\(H=16\)</span> com <span class="math inline">\(q=2\)</span>.</li>
+<li>Fixando <span class="math inline">\(H=16\)</span>, família poupa R$ 1,50 por unidade: <strong>R$ 24</strong>, o mesmo dos refis.</li>
+<li>Com esse dinheiro, compra exatamente o que tinha. Então paga <strong>pelo menos</strong> 24.</li>
+</ul>
+</section>
+<section id="quanto-vale-baratear-h-1" class="slide level2">
+<h2>Quanto vale baratear <em>H</em>?</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/11-demanda-h-2.svg" style="height:300px;max-height:300px"></p>
+</div>
+<ul>
+<li>Mas família se ajusta e vai até <span class="math inline">\(H=32\)</span>, ganhando o triângulo de <strong>R$ 12</strong>. A disposição a pagar é, na verdade, <span class="math inline">\(24+12=\)</span> <strong>R$ 36</strong>.</li>
+<li>É a conta do começo da aula: o ganho de uma queda de preço é a área à esquerda da demanda. Aqui, quem derruba o preço de <span class="math inline">\(H\)</span> é <span class="math inline">\(q\)</span>.</li>
+</ul>
+</section>
+<section id="somar-margens-com-qual-h" class="slide level2">
+<h2>Somar margens: com qual <em>H</em>?</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/11-mwtp-caminho.svg" style="height:270px;max-height:270px"></p>
+</div>
+<ul>
+<li>Roxa: MWTP com <span class="math inline">\(H\)</span> fixo em 16, área é 24. Vermelha: MWTP com o <span class="math inline">\(H\)</span> que a família escolheria em cada <span class="math inline">\(q\)</span>, área é <strong>36</strong>.</li>
+<li>Para mudanças marginais ao redor de <span class="math inline">\(q=2\)</span>, as duas áreas coincidem.</li>
+<li>Para mudança grande, somam-se as MWTPs <strong>ajustando <span class="math inline">\(H\)</span> também</strong>.</li>
+</ul>
+</section>
+<section id="bens-substitutos-8" class="slide level2">
 <h2>Bens Substitutos</h2>
 <div class="no-bullet">
-<p>E se mudança não for marginal, saindo de <span class="math inline">\({q}^{0}\)</span> para <span class="math inline">\({q}^{1}\)</span>?</p>
+<p>De forma mais geral, para mudança não marginal, saindo de <span class="math inline">\({q}^{0}\)</span> para <span class="math inline">\({q}^{1}\)</span>:</p>
 </div>
-<div class="no-bullet">
-<p>Podemos usar algo similar à medida usada para bens complementares.</p>
-</div>
+<ul>
+<li>Podemos usar algo similar à medida usada para bens complementares.</li>
+</ul>
 <div class="eq-block">
 <p><span class="math display">\[A=\int_{{p}^{0}}^{\overline{p}\left({q}^{1}\right)} h\left(p,{u}^{0},{q}^{1}\right)dp-\int_{{p}^{0}}^{\overline{p}\left({q}^{0}\right)} h\left(p,{u}^{0},{q}^{0}\right)dp\]</span></p>
 </div>
@@ -1164,7 +1319,7 @@ Rafael Pucci
 <p>No caso de bens substitutos, <span class="math inline">\(A=VC\)</span> ocorre quando <span class="math inline">\(x\)</span> é <strong>essencial</strong> para <span class="math inline">\(H\)</span> (contrário do caso de complementares).</p>
 </div>
 </section>
-<section id="bens-substitutos-10" class="slide level2">
+<section id="bens-substitutos-9" class="slide level2">
 <h2>Bens Substitutos</h2>
 <div class="no-bullet">
 <p>Quando <span class="math inline">\(x\)</span> é essencial para <span class="math inline">\(H\)</span>, temos:</p>
@@ -1185,7 +1340,18 @@ Rafael Pucci
 <li>Isto nos dá <span class="math inline">\(E\left[\overline{p}\left({q}^{1}\right),{u}^{0},{q}^{1}\right]-E\left[\overline{p}\left({q}^{0}\right),{u}^{0},{q}^{0}\right]=0 \to A=VC\)</span>.</li>
 </ul>
 </section>
-<section id="bens-substitutos-11" class="slide level2">
+<section id="a-medida-a-no-exemplo-dos-refis" class="slide level2">
+<h2>A medida <em>A</em> no exemplo dos refis</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/11-substitutos-a.svg" style="height:300px;max-height:300px"></p>
+</div>
+<ul>
+<li>Com <span class="math inline">\(f=x\cdot q\)</span>, sem refil não há água segura: <span class="math inline">\(f(0,q)=0\)</span>, e <span class="math inline">\(x\)</span> é essencial. Esgotamento: R$ 7 com <span class="math inline">\(q=2\)</span> e R$ 28 com <span class="math inline">\(q=8\)</span>.</li>
+<li><span class="math inline">\(A=48-12=\)</span> <strong>R$ 36</strong>, a disposição a pagar do triângulo.</li>
+<li>A família compra <strong>menos</strong> refis, e a área cresce: <span class="math inline">\(A\)</span> não mede o que se deixou de comprar.</li>
+</ul>
+</section>
+<section id="bens-substitutos-10" class="slide level2">
 <h2>Bens Substitutos</h2>
 <div class="no-bullet">
 <p><strong>Caso Especial:</strong> <span class="math inline">\(f(x,q)\)</span> <strong>é separável.</strong></p>
@@ -1206,7 +1372,7 @@ Rafael Pucci
 <p>Assumindo solução interior, temos <span class="math inline">\(p=\mu\)</span> e <span class="math inline">\(x=H-q\)</span>.</p>
 </div>
 </section>
-<section id="bens-substitutos-12" class="slide level2">
+<section id="bens-substitutos-11" class="slide level2">
 <h2>Bens Substitutos</h2>
 <div class="no-bullet">
 <p>A função-custo é dada por <span class="math inline">\(C\left(p,q,H\right)=p(H-q)\)</span>.</p>
@@ -1224,7 +1390,7 @@ Rafael Pucci
 <p><span class="math display">\[y=p\left(H-q\right)+z \to y+p\cdot q=p\cdot H+z \to y+p\cdot q=p\cdot f(x,q)+z\]</span></p>
 </div>
 </section>
-<section id="bens-substitutos-13" class="slide level2">
+<section id="bens-substitutos-12" class="slide level2">
 <h2>Bens Substitutos</h2>
 <div class="no-bullet">
 <p><span class="math inline">\(p\cdot q\)</span> funciona como um modificador da renda <span class="math inline">\(y\)</span>: <span class="math inline">\(\tilde{y}=y+p\cdot q\)</span>.</p>
@@ -1240,13 +1406,16 @@ Rafael Pucci
 <li>Será exatamente <span class="math inline">\(p({q}^{1}-{q}^{0})\)</span>.</li>
 </ul>
 <div class="no-bullet">
-<p>Logo, no caso separável em que bens são substitutos, a disposição a pagar por um aumento na qualidade do bem ambiental é simplesmente o <strong>preço do bem privado vezes a diferença de qualidade</strong>.</p>
+<p>Logo, no caso separável com bens substitutos, a disposição a pagar por um aumento na qualidade do bem ambiental é simplesmente o <strong>preço do bem privado vezes a diferença de qualidade</strong>.</p>
+</div>
+<div class="no-bullet fragment" data-fragment-index="1">
+<p>É o painel da esquerda do exemplo: <span class="math inline">\(4\times(8-2)=\)</span> R$ 24. Como <span class="math inline">\(H\)</span> não se mexe, a conta com <span class="math inline">\(H\)</span> fixo já é exata.</p>
 </div>
 </section>
 <section id="comprar-ar-limpo-em-prateleira" class="slide level2">
 <h2>Comprar ar limpo em prateleira</h2>
 <div class="no-bullet">
-<p>Na China, a norma de aquecimento ao norte do Rio Huai criou décadas de poluição a mais de um lado da linha. <span class="citation" data-cites="ito2020">(<a href="#/referências" role="doc-biblioref" onclick="">Ito e Zhang 2020</a>)</span> usam dados de caixa de purificadores de ar para ler a disposição a pagar direto no consumo.</p>
+<p>Na China, norma de aquecimento ao norte do Rio Huai criou décadas de poluição a mais de um lado da linha. <span class="citation" data-cites="ito2020">(<a href="#/referências" role="doc-biblioref" onclick="">Ito e Zhang 2020</a>)</span> usam dados de compras de purificadores de ar para ler a disposição a pagar direto no consumo.</p>
 </div>
 <ul>
 <li>O purificador é o <span class="math inline">\(x\)</span> do modelo, e a qualidade do ar é o <span class="math inline">\(q\)</span>.</li>
@@ -1276,10 +1445,10 @@ Rafael Pucci
 <section id="comprar-ar-limpo-em-prateleira-1" class="slide level2">
 <h2>Comprar ar limpo em prateleira</h2>
 <ul>
-<li>Repare que o número sai de <span class="math inline">\(-p\,\partial x/\partial q\)</span>, que é a <strong>terceira</strong> das três formas de calcular a MWTP.</li>
+<li>Repare que US$ 1,34 é uma <strong>MWTP</strong>: o valor de um µg/m³ a menos, lido no que se gasta com purificador.</li>
 <li>Nenhum chinês foi perguntado quanto vale o ar limpo. O que se observou foi o que ele levou para casa.</li>
-<li><span class="fragment" data-fragment-index="1">A disposição a pagar cresce com a renda e com a exposição a informação sobre a qualidade do ar.</span></li>
-<li><span class="fragment" data-fragment-index="2">Isso é um alerta: a medida capta a disposição a pagar de quem <strong>pode</strong> pagar, e a de quem sabe que o problema existe.</span></li>
+<li>A disposição a pagar cresce com a renda e com a exposição à informação sobre a qualidade do ar.</li>
+<li>Isso é um alerta: a medida capta a disposição a pagar de quem <strong>pode</strong> pagar, e a de quem sabe que o problema existe.</li>
 </ul>
 </section>
 <section id="quem-ignora-o-gasto-defensivo-subestima-o-benefício" class="slide level2">
@@ -1291,8 +1460,8 @@ Rafael Pucci
 <li>O programa derrubou emissão de NOx, ozônio, <strong>gasto com remédios</strong> e mortalidade.</li>
 <li>Redução anual de compra de medicamentos: cerca de US$ 800 milhões.</li>
 <li>Redução anual de mortalidade: cerca de US$ 1,3 bilhão.</li>
-<li><span class="fragment" data-fragment-index="1">Ou seja, o gasto defensivo é <strong>mais de um terço</strong> da disposição a pagar total.</span></li>
-<li><span class="fragment" data-fragment-index="2">Uma avaliação que olhasse só para mortalidade perderia essa parte inteira, e a política pareceria menos vantajosa do que é.</span></li>
+<li>Ou seja, o gasto defensivo é <strong>mais de um terço</strong> da disposição a pagar total.</li>
+<li>Uma avaliação que olhasse só para mortalidade perderia essa parte inteira, e a política pareceria menos vantajosa do que é.</li>
 </ul>
 </section>
 <section id="exercício-quanto-vale-despoluir-a-praia" class="slide level2">
@@ -1416,7 +1585,7 @@ Rafael Pucci
 <li>O excedente do consumidor fica entre as duas, e é uma aproximação boa para bens que são fatia pequena do orçamento <strong>e têm substituto</strong>.</li>
 <li>Sem mercado para <span class="math inline">\(q\)</span>, a saída é a <strong>preferência revelada</strong>: o valor do bem ambiental aparece no gasto com um bem privado ligado a ele.</li>
 <li>Com <strong>complementares</strong>, a medida é a diferença de áreas entre os preços de esgotamento, e ela vale se o bem ambiental só tiver valor de uso.</li>
-<li>Com <strong>substitutos</strong>, a medida é o gasto defensivo que deixa de ser feito, e ela vale se o bem privado for essencial.</li>
+<li>Com <strong>substitutos</strong>, o gasto defensivo poupado mede a MWTP na margem. Numa mudança grande ele é um piso, e vira exato se o bem privado for essencial ou a tecnologia for separável.</li>
 <li><span class="fragment" data-fragment-index="1">Fica a pergunta da próxima aula: e quando o bem ambiental não é complemento nem substituto de nada, mas vem <strong>embutido</strong> no preço de um bem que já tem mercado?</span></li>
 </ul>
 </section>

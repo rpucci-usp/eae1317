@@ -2884,18 +2884,25 @@
     "text": "Bens Substitutos\n\nO sinal de \\({f}_{xq}(x,q)\\) vai depender do contexto.\n\n\nExemplo 1: qualidade da água e saúde.\n\n\nQuanto melhor a qualidade da água (\\(q\\)), menor é a contribuição do filtro à saúde.\nLogo, esperaríamos \\({f}_{xq}&lt;0\\).\nOu seja, benefício marginal do filtro é decrescente conforme qualidade da água aumenta.\n\n\nExemplo 2: peixes pescados, idas ao pesqueiro e estoque de peixes no lago.\n\n\nPeixes pescados geram utilidade, e quanto mais peixes no lago, mais produtiva é a ida ao pesqueiro.\n\\({f}_{xq}&gt;0\\): benefício marginal da ida ao pesqueiro aumenta conforme o bem ambiental melhora."
   },
   {
-    "objectID": "aulas/11-valoracao/index.html#duas-tecnologias-os-mesmos-dois-pontos",
-    "href": "aulas/11-valoracao/index.html#duas-tecnologias-os-mesmos-dois-pontos",
+    "objectID": "aulas/11-valoracao/index.html#ilustração-duas-tecnologias-diferentes",
+    "href": "aulas/11-valoracao/index.html#ilustração-duas-tecnologias-diferentes",
     "title": "Valoração de Bens Ambientais",
-    "section": "Duas tecnologias, os mesmos dois pontos",
-    "text": "Duas tecnologias, os mesmos dois pontos\n\n\n\n\nUma família precisa de \\(H\\) de água segura por semana. A torneira entrega \\(q\\) de graça, e o resto vem de garrafas a R$ 5 cada.\nNos dois painéis, passar de \\(q=3\\) para \\(q=7\\) derruba as garrafas de 7 para 3, e poupa os mesmos R$ 20.\nO que muda é a inclinação da isoquanta, que é o \\({f}_{q}/{f}_{x}\\) que vamos usar em seguida."
+    "section": "Ilustração: duas tecnologias diferentes",
+    "text": "Ilustração: duas tecnologias diferentes\n\n\n\n\nUma família precisa de \\(H\\) de água segura por mês: \\(q\\) vem da torneira, de graça, e \\(x\\) custa R$ 4 (garrafa à esquerda, refil de filtro à direita).\nFixando \\(H\\) por enquanto, os painéis mostram que mudar \\(q\\) de 2 para 8 derruba o consumo de \\(x\\) de 8 para 2: R$ 24 poupados. Mas muda a inclinação da isoquanta, \\({f}_{q}/{f}_{x}\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#do-gasto-poupado-à-disposição-a-pagar",
+    "href": "aulas/11-valoracao/index.html#do-gasto-poupado-à-disposição-a-pagar",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Do gasto poupado à disposição a pagar",
+    "text": "Do gasto poupado à disposição a pagar\n\nA água da torneira melhorou, e a família passou a gastar R$ 24 a menos com garrafas ou refis. Esse é o valor da melhora para ela?\n\n\nNão necessariamente. Disposição a pagar é o máximo que ela pagaria pela água melhor e ainda ficaria tão bem quanto antes.\nOs dois números coincidem se a melhora não mudar o quanto ela consome de \\(H\\). E isso depende do tamanho da melhora.\nMelhora pequena (um ponto de \\(q\\)): o gasto poupado é exatamente a disposição a pagar (e a MWTP).\nMelhora grande (de 2 para 8): a família muda o \\(H\\), e o gasto poupado passa a ser só um piso da disposição a pagar."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-4",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-4",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nA função-custo pode ser escrita como um problema de minimização tradicional:\n\n\n\\[C\\left(p,q,H\\right)=\\min_{x} \\left\\{px+\\mu \\left[H-f\\left(x,q\\right)\\right]\\right\\}\\]\n\n\nEsse é o menor custo para a obtenção de \\(H\\), escolhendo \\(x\\)."
+    "text": "Bens Substitutos\n\nPara entender melhor, escreva a função-custo como um problema de minimização tradicional:\n\n\n\\[C\\left(p,q,H\\right)=\\min_{x} \\left\\{px+\\mu \\left[H-f\\left(x,q\\right)\\right]\\right\\}\\]\n\n\nEsse é o menor custo para a obtenção de \\(H\\), escolhendo \\(x\\)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-5",
@@ -2909,77 +2916,126 @@
     "href": "aulas/11-valoracao/index.html#bens-substitutos-6",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nPara medir bem-estar, precisamos da função dispêndio:\n\n\n\\[E\\left(p,u,q\\right)=\\min_{H,z} \\left\\{C\\left(p,q,H\\right)+z \\text{ s.a. } U\\left(H,z\\right)=u\\right\\}\\]\n\n\nE obtemos demandas compensadas por \\(H\\) e \\(z\\).\n\n\nNovamente, \\(VC=E\\left(p,{u}^{0},{q}^{0}\\right)-E\\left(p,{u}^{0},{q}^{1}\\right)\\)."
+    "text": "Bens Substitutos\n\nPara medir bem-estar, precisamos da função dispêndio:\n\n\n\\[E\\left(p,u,q\\right)=\\min_{H,z} \\left\\{C\\left(p,q,H\\right)+z \\text{ s.a. } U\\left(H,z\\right)=u\\right\\}\\]\n\n\nE obtemos as demandas compensadas por \\(H\\) e \\(z\\).\n\n\nNovamente, \\(VC=E\\left(p,{u}^{0},{q}^{0}\\right)-E\\left(p,{u}^{0},{q}^{1}\\right)\\)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-7",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-7",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nPrimeiro, vamos analisar uma mudança marginal em \\(q\\), mantendo \\(H\\) constante.\n\n\nA disposição marginal a pagar por uma mudança em \\(q\\) é:\n\n\n\\[MWTP=-\\frac{\\partial E\\left(p,u,q\\right)}{\\partial q}=-\\frac{\\partial C\\left(p,q,H\\right)}{\\partial q}\\]\n\n\nVamos combinar essa expressão com os resultados anteriores da escolha do consumidor (LOUSA)."
+    "text": "Bens Substitutos\n\nPrimeiro, vamos analisar uma mudança marginal em \\(q\\), mantendo \\(H\\) constante.\n\n\nA disposição marginal a pagar por uma mudança em \\(q\\) é:\n\n\n\\[MWTP=-\\frac{\\partial E\\left(p,u,q\\right)}{\\partial q}=-\\frac{\\partial C\\left(p,q,H\\right)}{\\partial q}\\]\n\n\nVamos entender melhor por que a segunda igualdade vale."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#por-que-basta-olhar-o-custo",
+    "href": "aulas/11-valoracao/index.html#por-que-basta-olhar-o-custo",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Por que basta olhar o custo?",
+    "text": "Por que basta olhar o custo?\n\nDisposição a pagar é o máximo que se pode cobrar da família pela água melhor sem que ela fique pior do que estava.\n\n\nConsidere o experimento: \\(q\\) vai de 2 para 8 e, junto, cobramos da família os R$ 24 que ela poupa em refis.\nEla compra 2 refis em vez de 8 e mantém \\(H=16\\). Gastava 32, agora gasta \\(8+24=32\\): sobra o mesmo \\(z\\). Fica exatamente como antes.\nPortanto, aceita pagar pelo menos os 24. Pagaria mais? Só se ganhasse algo mudando o \\(H\\).\nNuma melhora pequena, mudar o \\(H\\) quase não rende nada: ela já estava no melhor \\(H\\), e no topo do morro um passo para o lado quase não muda a altura.\nPor isso, na margem, \\(MWTP=-\\partial C/\\partial q\\) (\\(H\\) fixo). É o teorema do envelope."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#do-custo-para-a-isoquanta",
+    "href": "aulas/11-valoracao/index.html#do-custo-para-a-isoquanta",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Do custo para a isoquanta",
+    "text": "Do custo para a isoquanta\n\nCom \\(H\\) fixo, o custo é o gasto com \\(x\\): \\(C(p,q,H)=p\\cdot x(q,H)\\), em que \\(x(q,H)\\) é a isoquanta do exemplo inicial.\n\n\n\\[-\\frac{\\partial C}{\\partial q}=-p\\,\\frac{\\partial x}{\\partial q}\\Big|_{H}\\]\n\n\nAo longo da isoquanta, \\(f(x,q)=H\\) não muda: \\({f}_{x}\\,dx+{f}_{q}\\,dq=0\\).\nLogo \\(-\\partial x/\\partial q\\,\\vert_{H}={f}_{q}/{f}_{x}\\): quantas unidades de \\(x\\) um ponto de \\(q\\) substitui. É a inclinação da isoquanta.\n\n\n\\[MWTP=p\\,\\frac{{f}_{q}}{{f}_{x}}\\]"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#três-leituras-para-o-mesmo-número",
+    "href": "aulas/11-valoracao/index.html#três-leituras-para-o-mesmo-número",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Três leituras para o mesmo número",
+    "text": "Três leituras para o mesmo número\n\n\\[MWTP=-\\frac{\\partial C}{\\partial q}=-p\\,\\frac{\\partial x}{\\partial q}\\Big|_{H}=p\\,\\frac{{f}_{q}}{{f}_{x}}\\]\n\n\n\n\n\n\n\n\n\n\n\n\no que diz\n\\(f=x+q\\), em \\(q=2\\)\n\\(f=x\\cdot q\\), em \\(q=2\\)\n\n\n\n\n\\(-\\partial C/\\partial q\\)\nquanto cai o custo de \\(H\\)\n4\n\\(4\\times 16/2^{2}=16\\)\n\n\n\\(-p\\,\\partial x/\\partial q\\,\\vert_{H}\\)\n\\(x\\) poupado, em reais\n\\(4\\times 1=4\\)\n\\(4\\times 4=16\\)\n\n\n\\(p\\,{f}_{q}/{f}_{x}\\)\npreço vezes inclinação da isoquanta\n\\(4\\times 1=4\\)\n\\(4\\times 8/2=16\\)\n\n\n\n\n\nRepare que, em todos os casos, \\(H\\) está fixo. Vale para um ponto de \\(q\\) a mais, mas e para uma mudança grande?"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#total-wtp-versus-margem-mwtp",
+    "href": "aulas/11-valoracao/index.html#total-wtp-versus-margem-mwtp",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Total (WTP) versus margem (MWTP)",
+    "text": "Total (WTP) versus margem (MWTP)\n\n\n\n\nCom substitutos perfeitos, cada ponto de qualidade vale R$ 4, sempre.\nCom substitutos imperfeitos, o primeiro ponto vale R$ 16 e o último, R$ 1.\nAs duas áreas valem 24: é a soma das margens.\nCada margem foi medida com \\(H\\) fixo, mas a família deixaria de ajustar \\(H\\)?"
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#água-melhor-barateia-a-água-segura",
+    "href": "aulas/11-valoracao/index.html#água-melhor-barateia-a-água-segura",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Água melhor barateia a água segura",
+    "text": "Água melhor barateia a água segura\n\nCom \\(f=x\\cdot q\\), cada refil rende \\(q\\) unidades de água segura: quanto mais limpa a água que entra no filtro, mais ele trata antes de saturar.\n\n\nPara ter \\(H\\), são \\(x=H/q\\) refis, e o gasto é \\(C=p\\cdot H/q\\): cada unidade de \\(H\\) custa \\(p/q\\). Com \\(q=2\\), R$ 2; com \\(q=8\\), R$ 0,50.\nMelhorar \\(q\\) é baratear \\(H\\) \\(\\rightarrow\\) consumidor quer mais \\(H\\).\n\n\n\n\n\n\ncusto de \\(H\\)\n\\(H\\)\nrefis\ngasto\n\n\n\n\n\\(q=2\\)\nR$ 2\n16\n8\nR$ 32\n\n\n\\(q=8\\), \\(H\\) parado\nR$ 0,50\n16\n2\nR$ 8\n\n\n\\(q=8\\), \\(H\\) se ajusta\nR$ 0,50\n32\n4\nR$ 16\n\n\n\n\n\nCom \\(f=x+q\\) não: cada unidade a mais de \\(H\\) custa sempre \\(p\\), e o \\(H\\) não se mexe."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#quanto-vale-baratear-h",
+    "href": "aulas/11-valoracao/index.html#quanto-vale-baratear-h",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Quanto vale baratear H?",
+    "text": "Quanto vale baratear H?\n\n\n\n\nA reta é o valor de mais uma unidade de \\(H\\). A família compra até esse valor igualar o custo: \\(H=16\\) com \\(q=2\\).\nFixando \\(H=16\\), família poupa R$ 1,50 por unidade: R$ 24, o mesmo dos refis.\nCom esse dinheiro, compra exatamente o que tinha. Então paga pelo menos 24."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#quanto-vale-baratear-h-1",
+    "href": "aulas/11-valoracao/index.html#quanto-vale-baratear-h-1",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Quanto vale baratear H?",
+    "text": "Quanto vale baratear H?\n\n\n\n\nMas família se ajusta e vai até \\(H=32\\), ganhando o triângulo de R$ 12. A disposição a pagar é, na verdade, \\(24+12=\\) R$ 36.\nÉ a conta do começo da aula: o ganho de uma queda de preço é a área à esquerda da demanda. Aqui, quem derruba o preço de \\(H\\) é \\(q\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#somar-margens-com-qual-h",
+    "href": "aulas/11-valoracao/index.html#somar-margens-com-qual-h",
+    "title": "Valoração de Bens Ambientais",
+    "section": "Somar margens: com qual H?",
+    "text": "Somar margens: com qual H?\n\n\n\n\nRoxa: MWTP com \\(H\\) fixo em 16, área é 24. Vermelha: MWTP com o \\(H\\) que a família escolheria em cada \\(q\\), área é 36.\nPara mudanças marginais ao redor de \\(q=2\\), as duas áreas coincidem.\nPara mudança grande, somam-se as MWTPs ajustando \\(H\\) também."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-8",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-8",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nOu seja, para uma mudança marginal em \\(q\\) mantendo \\(H\\) constante, conseguimos calcular a MWTP de três formas:\n\n\nUsando a função-custo → \\(MWTP=-\\frac{\\partial C(p,q,H)}{\\partial q}\\)\nUsando a tecnologia de “produção” → \\(MWTP=p \\frac{\\partial f/\\partial q}{\\partial f/\\partial x}\\)\nUsando a demanda por \\(x\\) → \\(MWTP=-p\\frac{\\partial x}{\\partial q}\\)\n\n\nA terceira é a única que se observa: é o gasto com garrafas que se vê no caixa do supermercado."
-  },
-  {
-    "objectID": "aulas/11-valoracao/index.html#total-e-margem-não-são-a-mesma-coisa",
-    "href": "aulas/11-valoracao/index.html#total-e-margem-não-são-a-mesma-coisa",
-    "title": "Valoração de Bens Ambientais",
-    "section": "Total e margem não são a mesma coisa",
-    "text": "Total e margem não são a mesma coisa\n\n\n\n\nCom substitutos perfeitos, cada ponto de qualidade vale R$ 5, sempre.\nCom a tecnologia multiplicativa, o primeiro ponto vale R$ 11,70 e o último vale R$ 2,10.\nAs duas áreas valem 20, que é a economia total do slide anterior. Só a curva é diferente."
+    "text": "Bens Substitutos\n\nDe forma mais geral, para mudança não marginal, saindo de \\({q}^{0}\\) para \\({q}^{1}\\):\n\n\nPodemos usar algo similar à medida usada para bens complementares.\n\n\n\\[A=\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{1}\\right)} h\\left(p,{u}^{0},{q}^{1}\\right)dp-\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{0}\\right)} h\\left(p,{u}^{0},{q}^{0}\\right)dp\\]\n\n\nNo caso de bens substitutos, \\(A=VC\\) ocorre quando \\(x\\) é essencial para \\(H\\) (contrário do caso de complementares)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-9",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-9",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nE se mudança não for marginal, saindo de \\({q}^{0}\\) para \\({q}^{1}\\)?\n\n\nPodemos usar algo similar à medida usada para bens complementares.\n\n\n\\[A=\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{1}\\right)} h\\left(p,{u}^{0},{q}^{1}\\right)dp-\\int_{{p}^{0}}^{\\overline{p}\\left({q}^{0}\\right)} h\\left(p,{u}^{0},{q}^{0}\\right)dp\\]\n\n\nNo caso de bens substitutos, \\(A=VC\\) ocorre quando \\(x\\) é essencial para \\(H\\) (contrário do caso de complementares)."
+    "text": "Bens Substitutos\n\nQuando \\(x\\) é essencial para \\(H\\), temos:\n\n\n\\[f\\left(0,q\\right)=0\\to H=0\\to U(0,z)\\]\n\n\n\\(U(0,z)\\) não varia com mudanças em \\(q\\), porque o bem ambiental só faz diferença quando o bem privado é consumido.\n\n\nSe \\(x\\) é essencial, podemos usar mesma estratégia de antes com “preços de afogamento”:\n\n\nQuando os preços são iguais a \\(\\overline{p}\\left({q}^{1}\\right)\\) e \\(\\overline{p}\\left({q}^{0}\\right)\\), o bem \\(x\\) não é consumido;\nIsso implica em \\(H=0\\);\nQuando \\(H=0\\), o dispêndio para alcançar \\({u}^{0}\\) não depende de \\(q\\);\nIsto nos dá \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0 \\to A=VC\\)."
+  },
+  {
+    "objectID": "aulas/11-valoracao/index.html#a-medida-a-no-exemplo-dos-refis",
+    "href": "aulas/11-valoracao/index.html#a-medida-a-no-exemplo-dos-refis",
+    "title": "Valoração de Bens Ambientais",
+    "section": "A medida A no exemplo dos refis",
+    "text": "A medida A no exemplo dos refis\n\n\n\n\nCom \\(f=x\\cdot q\\), sem refil não há água segura: \\(f(0,q)=0\\), e \\(x\\) é essencial. Esgotamento: R$ 7 com \\(q=2\\) e R$ 28 com \\(q=8\\).\n\\(A=48-12=\\) R$ 36, a disposição a pagar do triângulo.\nA família compra menos refis, e a área cresce: \\(A\\) não mede o que se deixou de comprar."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-10",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-10",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nQuando \\(x\\) é essencial para \\(H\\), temos:\n\n\n\\[f\\left(0,q\\right)=0\\to H=0\\to U(0,z)\\]\n\n\n\\(U(0,z)\\) não varia com mudanças em \\(q\\), porque o bem ambiental só faz diferença quando o bem privado é consumido.\n\n\nSe \\(x\\) é essencial, podemos usar mesma estratégia de antes com “preços de afogamento”:\n\n\nQuando os preços são iguais a \\(\\overline{p}\\left({q}^{1}\\right)\\) e \\(\\overline{p}\\left({q}^{0}\\right)\\), o bem \\(x\\) não é consumido;\nIsso implica em \\(H=0\\);\nQuando \\(H=0\\), o dispêndio para alcançar \\({u}^{0}\\) não depende de \\(q\\);\nIsto nos dá \\(E\\left[\\overline{p}\\left({q}^{1}\\right),{u}^{0},{q}^{1}\\right]-E\\left[\\overline{p}\\left({q}^{0}\\right),{u}^{0},{q}^{0}\\right]=0 \\to A=VC\\)."
+    "text": "Bens Substitutos\n\nCaso Especial: \\(f(x,q)\\) é separável.\n\n\nSuponha que \\(f\\left(x,q\\right)=x+q\\).\n\n\nÉ o caso de substitutos perfeitos (água da torneira limpa ou água filtrada).\n\n\nCom isso, o problema de minimização de custo do consumidor será:\n\n\n\\[C\\left(p,q,H\\right)=\\min_{x} \\left\\{px+\\mu \\left[H-x-q\\right]\\right\\}\\]\n\n\nAssumindo solução interior, temos \\(p=\\mu\\) e \\(x=H-q\\)."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-11",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-11",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nCaso Especial: \\(f(x,q)\\) é separável.\n\n\nSuponha que \\(f\\left(x,q\\right)=x+q\\).\n\n\nÉ o caso de substitutos perfeitos (água da torneira limpa ou água filtrada).\n\n\nCom isso, o problema de minimização de custo do consumidor será:\n\n\n\\[C\\left(p,q,H\\right)=\\min_{x} \\left\\{px+\\mu \\left[H-x-q\\right]\\right\\}\\]\n\n\nAssumindo solução interior, temos \\(p=\\mu\\) e \\(x=H-q\\)."
+    "text": "Bens Substitutos\n\nA função-custo é dada por \\(C\\left(p,q,H\\right)=p(H-q)\\).\n\n\nRetomemos o problema de maximização de utilidade:\n\n\n\\[\\max_{x,z} U[H,z] \\text{ s.a. } y=C\\left(p,q,H\\right)+z, \\quad H=f(x,q)\\]\n\n\nNo caso separável, temos:\n\n\n\\[y=p\\left(H-q\\right)+z \\to y+p\\cdot q=p\\cdot H+z \\to y+p\\cdot q=p\\cdot f(x,q)+z\\]"
   },
   {
     "objectID": "aulas/11-valoracao/index.html#bens-substitutos-12",
     "href": "aulas/11-valoracao/index.html#bens-substitutos-12",
     "title": "Valoração de Bens Ambientais",
     "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\nA função-custo é dada por \\(C\\left(p,q,H\\right)=p(H-q)\\).\n\n\nRetomemos o problema de maximização de utilidade:\n\n\n\\[\\max_{x,z} U[H,z] \\text{ s.a. } y=C\\left(p,q,H\\right)+z, \\quad H=f(x,q)\\]\n\n\nNo caso separável, temos:\n\n\n\\[y=p\\left(H-q\\right)+z \\to y+p\\cdot q=p\\cdot H+z \\to y+p\\cdot q=p\\cdot f(x,q)+z\\]"
-  },
-  {
-    "objectID": "aulas/11-valoracao/index.html#bens-substitutos-13",
-    "href": "aulas/11-valoracao/index.html#bens-substitutos-13",
-    "title": "Valoração de Bens Ambientais",
-    "section": "Bens Substitutos",
-    "text": "Bens Substitutos\n\n\\(p\\cdot q\\) funciona como um modificador da renda \\(y\\): \\(\\tilde{y}=y+p\\cdot q\\).\n\n\nSuponha \\({q}^{1}-{q}^{0}&gt;0\\) → renda aumentaria em \\(p({q}^{1}-{q}^{0})\\).\n\n\nQual é a disposição a pagar por esse aumento de renda?\n\n\nÉ o mesmo que perguntar a disposição a pagar por mais dinheiro.\nSerá exatamente \\(p({q}^{1}-{q}^{0})\\).\n\n\nLogo, no caso separável em que bens são substitutos, a disposição a pagar por um aumento na qualidade do bem ambiental é simplesmente o preço do bem privado vezes a diferença de qualidade."
+    "text": "Bens Substitutos\n\n\\(p\\cdot q\\) funciona como um modificador da renda \\(y\\): \\(\\tilde{y}=y+p\\cdot q\\).\n\n\nSuponha \\({q}^{1}-{q}^{0}&gt;0\\) → renda aumentaria em \\(p({q}^{1}-{q}^{0})\\).\n\n\nQual é a disposição a pagar por esse aumento de renda?\n\n\nÉ o mesmo que perguntar a disposição a pagar por mais dinheiro.\nSerá exatamente \\(p({q}^{1}-{q}^{0})\\).\n\n\nLogo, no caso separável com bens substitutos, a disposição a pagar por um aumento na qualidade do bem ambiental é simplesmente o preço do bem privado vezes a diferença de qualidade.\n\n\nÉ o painel da esquerda do exemplo: \\(4\\times(8-2)=\\) R$ 24. Como \\(H\\) não se mexe, a conta com \\(H\\) fixo já é exata."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira",
     "href": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira",
     "title": "Valoração de Bens Ambientais",
     "section": "Comprar ar limpo em prateleira",
-    "text": "Comprar ar limpo em prateleira\n\nNa China, a norma de aquecimento ao norte do Rio Huai criou décadas de poluição a mais de um lado da linha. (Ito e Zhang 2020) usam dados de caixa de purificadores de ar para ler a disposição a pagar direto no consumo.\n\n\nO purificador é o \\(x\\) do modelo, e a qualidade do ar é o \\(q\\).\nQuem mora do lado poluído compra mais purificador, e paga mais caro por modelos que filtram melhor.\n\n\n\n\n\n\npor domicílio, por ano\n\n\n\n\nReduzir PM₁₀ em 1 µg/m³\nUS$ 1,34\n\n\nEliminar toda a poluição causada pela norma do Huai\nUS$ 32,70"
+    "text": "Comprar ar limpo em prateleira\n\nNa China, norma de aquecimento ao norte do Rio Huai criou décadas de poluição a mais de um lado da linha. (Ito e Zhang 2020) usam dados de compras de purificadores de ar para ler a disposição a pagar direto no consumo.\n\n\nO purificador é o \\(x\\) do modelo, e a qualidade do ar é o \\(q\\).\nQuem mora do lado poluído compra mais purificador, e paga mais caro por modelos que filtram melhor.\n\n\n\n\n\n\npor domicílio, por ano\n\n\n\n\nReduzir PM₁₀ em 1 µg/m³\nUS$ 1,34\n\n\nEliminar toda a poluição causada pela norma do Huai\nUS$ 32,70"
   },
   {
     "objectID": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira-1",
     "href": "aulas/11-valoracao/index.html#comprar-ar-limpo-em-prateleira-1",
     "title": "Valoração de Bens Ambientais",
     "section": "Comprar ar limpo em prateleira",
-    "text": "Comprar ar limpo em prateleira\n\nRepare que o número sai de \\(-p\\,\\partial x/\\partial q\\), que é a terceira das três formas de calcular a MWTP.\nNenhum chinês foi perguntado quanto vale o ar limpo. O que se observou foi o que ele levou para casa.\nA disposição a pagar cresce com a renda e com a exposição a informação sobre a qualidade do ar.\nIsso é um alerta: a medida capta a disposição a pagar de quem pode pagar, e a de quem sabe que o problema existe."
+    "text": "Comprar ar limpo em prateleira\n\nRepare que US$ 1,34 é uma MWTP: o valor de um µg/m³ a menos, lido no que se gasta com purificador.\nNenhum chinês foi perguntado quanto vale o ar limpo. O que se observou foi o que ele levou para casa.\nA disposição a pagar cresce com a renda e com a exposição à informação sobre a qualidade do ar.\nIsso é um alerta: a medida capta a disposição a pagar de quem pode pagar, e a de quem sabe que o problema existe."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#quem-ignora-o-gasto-defensivo-subestima-o-benefício",
@@ -3021,7 +3077,7 @@
     "href": "aulas/11-valoracao/index.html#concluindo",
     "title": "Valoração de Bens Ambientais",
     "section": "Concluindo",
-    "text": "Concluindo\n\n\\(VC\\) e \\(VE\\) respondem perguntas diferentes sobre a mesma mudança, e só coincidem quando o efeito renda é desprezível.\nO excedente do consumidor fica entre as duas, e é uma aproximação boa para bens que são fatia pequena do orçamento e têm substituto.\nSem mercado para \\(q\\), a saída é a preferência revelada: o valor do bem ambiental aparece no gasto com um bem privado ligado a ele.\nCom complementares, a medida é a diferença de áreas entre os preços de esgotamento, e ela vale se o bem ambiental só tiver valor de uso.\nCom substitutos, a medida é o gasto defensivo que deixa de ser feito, e ela vale se o bem privado for essencial.\nFica a pergunta da próxima aula: e quando o bem ambiental não é complemento nem substituto de nada, mas vem embutido no preço de um bem que já tem mercado?"
+    "text": "Concluindo\n\n\\(VC\\) e \\(VE\\) respondem perguntas diferentes sobre a mesma mudança, e só coincidem quando o efeito renda é desprezível.\nO excedente do consumidor fica entre as duas, e é uma aproximação boa para bens que são fatia pequena do orçamento e têm substituto.\nSem mercado para \\(q\\), a saída é a preferência revelada: o valor do bem ambiental aparece no gasto com um bem privado ligado a ele.\nCom complementares, a medida é a diferença de áreas entre os preços de esgotamento, e ela vale se o bem ambiental só tiver valor de uso.\nCom substitutos, o gasto defensivo poupado mede a MWTP na margem. Numa mudança grande ele é um piso, e vira exato se o bem privado for essencial ou a tecnologia for separável.\nFica a pergunta da próxima aula: e quando o bem ambiental não é complemento nem substituto de nada, mas vem embutido no preço de um bem que já tem mercado?"
   },
   {
     "objectID": "aulas/11-valoracao/index.html#referências",
