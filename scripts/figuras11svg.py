@@ -61,25 +61,26 @@ Bloco de complementaridade fraca (os "choke prices", que o autor destacou):
 
 Dois triangulos, tres numeros, e o resultado do `.pptx` inteiro.
 
-Bloco de bens substitutos. A sacada da figura e usar DUAS tecnologias que
-passam pelos MESMOS dois pontos e gastam o MESMO tanto:
+Bloco de bens substitutos. Duas tecnologias que passam pelos MESMOS dois pontos
+e, com H parado, poupam o MESMO tanto (q de 2 para 8, p = 4):
 
-    perfeitos    f(x, q) = x + q,  H = 10     x = 10 - q
-    imperfeitos  f(x, q) = x q,    H = 21     x = 21/q
+    perfeitos    f(x, q) = x + q,  H = 10     x = 10 - q      MWTP = 4
+    imperfeitos  f(x, q) = x q,    H = 16     x = 16/q        MWTP = 64/q^2
 
-    q = 3 -> x = 7 -> gasto 35        q = 7 -> x = 3 -> gasto 15
-    (com p = 5 nos dois casos)
+    economia com H parado: 4 x (8 - 2) = 24, nos dois casos
 
-    economia total: 20, nos dois casos.
+Depois a familia passa a escolher H (quase-linear, v(H) = 3,5 H - (3/64) H^2),
+e so na tecnologia multiplicativa isso muda algo, porque la melhorar q e
+baratear H (p/q: de 2 para 0,5). Os numeros da passagem da margem para a
+mudanca grande, todos conferidos por assert em main():
 
-    MWTP = -dC/dq:   perfeitos  p        = 5          (constante)
-                     imperfeitos p H/q^2 = 105/q^2    (11,67 -> 2,14)
+    queda do gasto com refis      16     (8 -> 4 refis)
+    economia com H parado         24     retangulo, cota inferior
+    disposicao a pagar            36     retangulo + triangulo 12
+                                         = integral da MWTP com H ajustando
+                                         = A com precos de esgotamento 7 e 28
 
-    integral de 105/q^2 entre 3 e 7 = 105 (1/3 - 1/7) = 20   <- fecha
-
-Ou seja: a disposicao TOTAL a pagar pelos quatro pontos de qualidade e a mesma
-nas duas tecnologias; a MARGINAL nao e. Essa e a unica figura do curso em que
-total e margem sao separados com numeros iguais dos dois lados.
+O detalhe de cada conta esta no comentario do Bloco 3, mais abaixo.
 
 O EXERCICIO
 -----------
@@ -655,27 +656,112 @@ def nao_uso():
 # ===========================================================================
 # Bloco 3 - bens substitutos: duas tecnologias, os mesmos dois pontos
 # ===========================================================================
+#
+# Recalibrado em 2026-09-30 (q de 2 para 8, p = 4), quando o autor pediu que a
+# passagem da MWTP para a disposicao a pagar por uma mudanca GRANDE fosse
+# construida em slides, e nao deixada na LOUSA. A calibracao antiga (q de 3
+# para 7, p = 5, H = 21) dava os mesmos 20 dos dois lados, mas nao tinha como
+# mostrar a familia reajustando H: nela H era fixo por hipotese, e dai os 20
+# eram exatos sem que o slide dissesse por que.
+#
+# Agora ha duas camadas.
+#
+# 1) H PARADO (as figuras 11-substitutos e 11-mwtp):
+#
+#     perfeitos    f = x + q,  H = 10    x = 10 - q     MWTP = p = 4
+#     imperfeitos  f = x q,    H = 16    x = 16 / q     MWTP = p H/q^2 = 64/q^2
+#
+#     q = 2 -> x = 8 ;  q = 8 -> x = 2   nos DOIS casos, economia 4 x 6 = 24
+#     integral de 64/q^2 entre 2 e 8 = 64 (1/2 - 1/8) = 24      <- fecha
+#
+# 2) H SE AJUSTA (so na tecnologia multiplicativa, que e onde isso importa).
+#    O x da tecnologia multiplicativa e REFIL DE FILTRO, e nao garrafa (trocado
+#    em 30/09): cada refil rende q unidades de H, porque quanto mais limpa a
+#    agua que entra, mais ele trata antes de saturar. Com garrafa a historia
+#    nao fecha (garrafa nao rende mais porque a torneira melhorou).
+#    Com f = x q, uma unidade de H custa p/q em refis: melhorar q e BARATEAR
+#    H. A familia tem utilidade quase-linear U = v(H) + z, com
+#
+#     v(H) = 3,5 H - (3/64) H^2      ->   valor marginal  v'(H) = 3,5 - 3H/32
+#
+#    Ela compra H ate v'(H) = p/q:
+#
+#     q = 2:  p/q = 2     H = 16    x = 8     gasto 32
+#     q = 8:  p/q = 0,5   H = 32    x = 4     gasto 16
+#
+#    A disposicao a pagar e o excedente que ela ganha com a queda de preco de H
+#    de 2 para 0,5: o trapezio (16 + 32)/2 x 1,5 = 36. Partido em dois:
+#
+#     retangulo  16 x 1,5        = 24   <- o que poupa SE NAO MEXER EM H
+#     triangulo  (32-16) x 1,5/2 = 12   <- o que ganha por comprar mais H
+#
+#    Tres numeros para a mesma melhora, e em ordem:
+#
+#     16  queda do gasto com refis, que e o que se ve no caixa
+#     24  economia com H parado, cota inferior (Bartik, 1988)
+#     36  disposicao a pagar (quase-linear: VC = VE = excedente)
+#
+#    No caso aditivo, H custa p qualquer que seja q (q so entra como H de graca),
+#    entao H nao se mexe e os tres numeros coincidem em 24 = p (q1 - q0). E o
+#    caso separavel do `.pptx`.
+#
+#    A MWTP ao longo do caminho em que H se ajusta e
+#
+#     m(q) = p H(q) / q^2 = (128/3)(3,5/q^2 - 4/q^3)     16 em q = 2, 2 em q = 8
+#
+#    e a integral dela entre 2 e 8 da 36. As duas curvas de MWTP (H parado e H
+#    ajustando) partem do MESMO ponto, 16 em q = 2: e o teorema do envelope
+#    desenhado. Na margem tanto faz; numa mudanca grande a diferenca e 12.
+#
+#    E a medida A do `.pptx` fecha com o mesmo numero. Como f(0, q) = 0, x e
+#    essencial, e a demanda por refis e
+#
+#     x(p, q) = (3,5 q - p) / ((3/32) q^2)
+#     q = 2:  x = (7 - p) 8/3     esgotamento  7    excedente  8 x 3 / 2 = 12
+#     q = 8:  x = (28 - p)/6      esgotamento 28    excedente 4 x 24 / 2 = 48
+#
+#     A = 48 - 12 = 36                                                <- fecha
+#
+#    O mercado de refis encolhe (8 -> 4) e a area cresce: e o slide que
+#    mostra que a medida A nao e "quanto se deixou de comprar".
 
-P_PRIV = 5.0
+P_PRIV = 4.0
 H_SOMA = 10.0     # f(x, q) = x + q
-H_PROD = 21.0     # f(x, q) = x q
-Q_ANTES, Q_DEPOIS = 3.0, 7.0
+H_PROD = 16.0     # f(x, q) = x q
+Q_ANTES, Q_DEPOIS = 2.0, 8.0
 
 x_soma = lambda q: H_SOMA - q
 x_prod = lambda q: H_PROD / q
 mwtp_prod = lambda q: P_PRIV * H_PROD / (q * q)
 
+# valor de H para a familia: v(H) = A_V H - B_V H^2 / 2
+A_V, B_V = 3.5, 3.0 / 32.0
+h_otimo = lambda q: (A_V - P_PRIV / q) / B_V                # 16 e 32
+mwtp_ajusta = lambda q: P_PRIV * h_otimo(q) / (q * q)       # 16 -> 2
+x_dem = lambda pp, q: max(0.0, (A_V * q - pp) / (B_V * q * q))
+esgot = lambda q: A_V * q                                   # 7 e 28
+
+R_ANTES, R_DEPOIS = P_PRIV / Q_ANTES, P_PRIV / Q_DEPOIS     # 2 e 0,5
+H_ANTES, H_DEPOIS = h_otimo(Q_ANTES), h_otimo(Q_DEPOIS)     # 16 e 32
+RETANGULO = H_ANTES * (R_ANTES - R_DEPOIS)                  # 24
+TRIANGULO = (H_DEPOIS - H_ANTES) * (R_ANTES - R_DEPOIS) / 2  # 12
+EXC_X = lambda q: x_dem(P_PRIV, q) * (esgot(q) - P_PRIV) / 2  # 12 e 48
+
 LARG_2P, ALT_2P = 356, 336
 Q_MAX = 10.6
+Y_MWTP = 18.6
 
 
 def _dois_paineis(titulo_esq, titulo_dir, ylim, rot_y):
+    # rot_y pode ser um par: na figura das isoquantas o x da esquerda e garrafa
+    # e o da direita e refil de filtro, e o eixo tem que dizer qual.
+    rots = rot_y if isinstance(rot_y, tuple) else (rot_y, rot_y)
     t = Tela(2 * LARG_2P + FOLGA, ALT_2P + ALTURA_RODAPE)
     ps = []
     for k, tit in enumerate((titulo_esq, titulo_dir)):
         p = Painel(t, k * LARG_2P, LARG_2P, (0, Q_MAX), ylim, ALT_2P)
         p.titulo(tit)
-        p.eixos("q", rot_y)
+        p.eixos("q", rots[k])
         ps.append(p)
     return t, ps
 
@@ -686,13 +772,13 @@ def isoquantas():
     f_q/f_x da formula da MWTP."""
     t, (pe, pd) = _dois_paineis("Substitutos perfeitos: f = x + q",
                                 "Substitutos imperfeitos: f = x · q",
-                                (0, 10.6), "x (garrafas por semana)")
+                                (0, 10.6), ("x (garrafas por mês)", "x (refis por mês)"))
 
-    pe.curva(x_soma, 0, 10.5, cor=COR_PROD, larg=2.8)
+    pe.curva(x_soma, 0, 10.0, cor=COR_PROD, larg=2.8)
     pe.texto(9.9, 3.2, "x = 10 − q", cor=COR_PROD, negrito=True,
              ancora="end")
     pd.curva(x_prod, H_PROD / 10.5, 10.5, cor=COR_Q, larg=2.8)
-    pd.texto(10.2, x_prod(10.2) + 1.9, "x = 21 / q", cor=COR_Q,
+    pd.texto(10.2, 4.6, "x = 16 / q", cor=COR_Q,
              negrito=True, ancora="end")
 
     for p, f in ((pe, x_soma), (pd, x_prod)):
@@ -704,39 +790,39 @@ def isoquantas():
 
     # A tangente so entra no painel da direita. No da esquerda ela coincide com
     # a propria reta e viraria ruido: o que ha para dizer la e que a inclinacao
-    # nao muda, e isso e uma frase, nao um traco.
-    for q in (Q_ANTES, Q_DEPOIS):
+    # nao muda, e isso e uma frase, nao um traco. Em q = 2 a tangente e ingreme
+    # (4), entao o trecho desenhado e mais curto para nao sair por cima.
+    for q, dq in ((Q_ANTES, 0.55), (Q_DEPOIS, 1.6)):
         incl = -H_PROD / (q * q)
-        dq = 1.35
         pd.reta(q - dq, x_prod(q) - incl * dq, q + dq,
                 x_prod(q) + incl * dq, cor=COR_CMG, larg=1.8, tracejado="6 4")
-    pd.texto(4.8, 8.7, "inclinação 7/3", cor=COR_CMG, negrito=True)
-    pd.texto(8.5, 1.4, "3/7", cor=COR_CMG, negrito=True)
-    pe.texto(5.3, 7.6, "inclinação −1 em", cor=COR_CMG, negrito=True,
+    pd.texto(2.75, 9.6, "inclinação 4", cor=COR_CMG, negrito=True)
+    pd.texto(6.9, 3.1, "1/4", cor=COR_CMG, negrito=True, ancora="middle")
+    pe.texto(5.6, 7.6, "inclinação 1 em", cor=COR_CMG, negrito=True,
              ancora="middle")
-    pe.texto(5.3, 6.5, "todo ponto", cor=COR_CMG, negrito=True,
+    pe.texto(5.6, 6.5, "todo ponto", cor=COR_CMG, negrito=True,
              ancora="middle")
 
     rodape(t, 2 * LARG_2P, ALT_2P,
            "as duas tecnologias passam pelos mesmos pontos e poupam os mesmos"
-           " R$ 20: o que muda é a inclinação")
+           " R$ 24: o que muda é a inclinação")
     t.salvar("11-substitutos.svg", "Duas tecnologias, os mesmos dois pontos")
 
 
 def mwtp():
-    """A disposicao MARGINAL a pagar. As duas areas valem 20, e e isso que
-    separa o total da margem."""
+    """A disposicao MARGINAL a pagar, com H parado. As duas areas valem 24, e
+    e isso que separa o total da margem."""
     t, (pe, pd) = _dois_paineis("f = x + q: MWTP é o próprio preço",
                                 "f = x · q: MWTP cai com a qualidade",
-                                (0, 13.6), "R$ por ponto de q")
+                                (0, Y_MWTP), "R$ por ponto de q")
 
     pe.area([(Q_ANTES, 0), (Q_DEPOIS, 0), (Q_DEPOIS, P_PRIV),
              (Q_ANTES, P_PRIV)], COR_PROD, 0.24)
     pe.reta(0, P_PRIV, 10.5, P_PRIV, cor=COR_PROD, larg=2.8)
-    pe.texto(10.4, P_PRIV + 1.0, "p = 5", cor=COR_PROD, negrito=True,
+    pe.texto(10.4, P_PRIV + 1.0, "p = 4", cor=COR_PROD, negrito=True,
              ancora="end")
-    pe.marca_y(P_PRIV, "5")
-    pe.texto(5.0, 2.2, "área = 20", cor=COR_PROD, negrito=True,
+    pe.marca_y(P_PRIV, "4")
+    pe.texto(5.0, 1.7, "área = 24", cor=COR_PROD, negrito=True,
              italico=False, ancora="middle")
 
     pts = [(Q_ANTES, 0)]
@@ -745,25 +831,169 @@ def mwtp():
             for k in range(61)]
     pts.append((Q_DEPOIS, 0))
     pd.area(pts, COR_Q, 0.24)
-    pd.curva(mwtp_prod, math.sqrt(P_PRIV * H_PROD / 13.4), 10.5, cor=COR_Q,
-             larg=2.8)
-    pd.texto(10.4, mwtp_prod(8.6) + 1.2, "p · H / q²", cor=COR_Q,
-             negrito=True, ancora="end")
-    pd.marca_y(mwtp_prod(Q_ANTES), "11,7")
-    pd.marca_y(mwtp_prod(Q_DEPOIS), "2,1")
-    pd.texto(4.6, 2.2, "área = 20", cor=COR_Q, negrito=True, italico=False,
+    pd.curva(mwtp_prod, math.sqrt(P_PRIV * H_PROD / (Y_MWTP - 0.3)), 10.5,
+             cor=COR_Q, larg=2.8)
+    pd.texto(2.7, 12.6, "64 / q²", cor=COR_Q, negrito=True)
+    pd.marca_y(mwtp_prod(Q_ANTES), "16")
+    pd.marca_y(mwtp_prod(Q_DEPOIS), "1")
+    pd.texto(4.0, 1.7, "área = 24", cor=COR_Q, negrito=True, italico=False,
              ancora="middle")
 
     for p in (pe, pd):
         for q in (Q_ANTES, Q_DEPOIS):
-            p.reta(q, 0, q, 12.8, cor=COR_GUIA, larg=1.1, tracejado="4 3")
+            p.reta(q, 0, q, Y_MWTP - 0.8, cor=COR_GUIA, larg=1.1,
+                   tracejado="4 3")
             p.marca_x(q, fmt(q, 0))
 
     rodape(t, 2 * LARG_2P, ALT_2P,
-           "a integral da disposição marginal entre 3 e 7 dá R$ 20 nos dois"
-           " casos: total e margem são coisas diferentes")
+           "a soma das margens entre 2 e 8 dá R$ 24 nos dois casos: total e"
+           " margem são coisas diferentes")
     t.salvar("11-mwtp.svg", "Disposição marginal a pagar")
 
+
+# --- a passagem da margem para a mudanca grande ------------------------------
+#
+# As tres figuras abaixo dividem o enquadramento por PAR: as duas etapas da
+# demanda por H tem eixos e tamanho identicos, e a figura das duas MWTP usa o
+# mesmo eixo vertical do painel direito de 11-mwtp, para que o 16 em q = 2 caia
+# na mesma altura nos dois slides.
+
+LARG_1P, ALT_1P = 680, 336
+H_MAX, R_MAX = 38.0, 4.0
+
+
+def demanda_h(nome, etapa):
+    """Melhorar q e baratear H. etapa 1: o retangulo (H parado). etapa 2: o
+    triangulo (H se ajusta), e a disposicao a pagar inteira."""
+    titulos = {
+        1: "Se a família não mexer em H, ela poupa o retângulo",
+        2: "Mas H ficou mais barato, e ela compra mais: ganha o triângulo",
+    }
+    t, p = moldura(titulos[etapa], LARG_1P, ALT_1P, (0, H_MAX), (0, R_MAX),
+                   "H", "custo de uma unidade de H (R$)")
+
+    p.area([(0, R_DEPOIS), (H_ANTES, R_DEPOIS), (H_ANTES, R_ANTES),
+            (0, R_ANTES)], COR_Q, 0.30)
+    p.texto(H_ANTES / 2, (R_ANTES + R_DEPOIS) / 2 - 0.08,
+            "16 × 1,5 = 24", cor=COR_Q, negrito=True, italico=False,
+            ancora="middle", tam=18)
+    if etapa == 2:
+        p.area([(H_ANTES, R_DEPOIS), (H_DEPOIS, R_DEPOIS),
+                (H_ANTES, R_ANTES)], COR_CMG, 0.22)
+        p.texto(H_ANTES + 4.2, R_DEPOIS + 0.35, "12", cor=COR_CMG,
+                negrito=True, italico=False, ancora="middle", tam=18)
+
+    p.reta(0, A_V, A_V / B_V, 0, cor=COR_DESTAQUE, larg=2.8)
+    p.texto(9.0, A_V - 9.0 * B_V + 0.25, "valor de mais uma unidade de H",
+            cor=COR_DESTAQUE, negrito=True)
+
+    for r, rot in ((R_ANTES, "com q = 2"), (R_DEPOIS, "com q = 8")):
+        p.reta(0, r, H_MAX, r, cor=COR_GUIA, larg=1.2, tracejado="4 3")
+        p.texto(H_MAX - 0.4, r + 0.1, rot, cor=COR_GUIA, negrito=True,
+                ancora="end")
+    p.marca_y(R_ANTES, "2")
+    p.marca_y(R_DEPOIS, "0,5")
+    p.marca_y(A_V, "3,5")
+
+    p.reta(H_ANTES, 0, H_ANTES, R_ANTES, cor=COR_GUIA, larg=1.1,
+           tracejado="4 3")
+    p.ponto(H_ANTES, R_ANTES)
+    p.marca_x(H_ANTES, "16")
+    if etapa == 2:
+        p.reta(H_DEPOIS, 0, H_DEPOIS, R_DEPOIS, cor=COR_GUIA, larg=1.1,
+               tracejado="4 3")
+        p.ponto(H_DEPOIS, R_DEPOIS)
+        p.marca_x(H_DEPOIS, "32")
+        rod = ("com a água melhor, a família vai de H = 16 para 32: a"
+               " disposição a pagar é 24 + 12 = R$ 36")
+    else:
+        rod = ("cada uma das 16 unidades de H ficou R$ 1,50 mais barata:"
+               " parada em H = 16, ela poupa R$ 24")
+    rodape(t, LARG_1P, ALT_1P, rod)
+    t.salvar(nome, titulos[etapa])
+
+
+def mwtp_caminho():
+    """A MWTP com H parado e a MWTP com H se ajustando. Partem do mesmo
+    ponto (envelope) e se afastam: a diferenca das areas e o triangulo."""
+    titulo = "Somar margens: com qual H?"
+    t, p = moldura(titulo, LARG_1P, ALT_1P, (0, Q_MAX), (0, Y_MWTP), "q",
+                   "R$ por ponto de q")
+
+    n = 80
+    qs = [Q_ANTES + (Q_DEPOIS - Q_ANTES) * k / n for k in range(n + 1)]
+    p.area([(Q_ANTES, 0)] + [(q, mwtp_prod(q)) for q in qs]
+           + [(Q_DEPOIS, 0)], COR_Q, 0.30)
+    p.area([(q, mwtp_prod(q)) for q in qs]
+           + [(q, mwtp_ajusta(q)) for q in reversed(qs)], COR_CMG, 0.22)
+
+    p.curva(mwtp_prod, Q_ANTES, 10.5, cor=COR_Q, larg=2.8)
+    p.curva(mwtp_ajusta, Q_ANTES, 10.5, cor=COR_CMG, larg=2.8)
+
+    # Legenda em vez de rotulo na ponta: as duas curvas correm coladas a
+    # direita de q = 5, e nao ha vao para escrever nelas.
+    for k, (cor, s) in enumerate(((COR_CMG, "H se ajusta: de 16 até 32"),
+                                  (COR_Q, "H parado em 16"))):
+        y = 15.6 - 1.7 * k
+        p.reta(5.4, y, 6.2, y, cor=cor, larg=2.8)
+        p.texto(6.4, y - 0.35, s, cor=cor, negrito=True, italico=False)
+
+    p.texto(4.0, 1.4, "24", cor=COR_Q, negrito=True, italico=False,
+            ancora="middle", tam=18)
+    p.texto(2.75, 8.4, "+12", cor=COR_CMG, negrito=True, italico=False,
+            ancora="middle", tam=17)
+
+    p.ponto(Q_ANTES, mwtp_prod(Q_ANTES))
+    p.texto(Q_ANTES + 0.25, mwtp_prod(Q_ANTES) + 0.6, "as duas partem daqui",
+            cor=COR_DESTAQUE, negrito=True)
+    p.marca_y(16, "16")
+    p.marca_y(mwtp_ajusta(Q_DEPOIS), "2")
+    for q in (Q_ANTES, Q_DEPOIS):
+        p.reta(q, 0, q, Y_MWTP - 0.8, cor=COR_GUIA, larg=1.1, tracejado="4 3")
+        p.marca_x(q, fmt(q, 0))
+
+    rodape(t, LARG_1P, ALT_1P,
+           "na margem, as duas curvas coincidem; numa mudança grande, somar"
+           " com H parado deixa R$ 12 de fora")
+    t.salvar("11-mwtp-caminho.svg", titulo)
+
+
+def demanda_x():
+    """A medida A do `.pptx`, aplicada aos refis. Menos refis, area
+    maior: A = 48 - 12 = 36, a mesma disposicao a pagar."""
+    titulo = "Menos refis, e ainda assim uma área maior"
+    t, p = moldura(titulo, LARG_1P, ALT_1P, (0, 20.0), (0, 31.0), "x",
+                   "p (R$ por refil)")
+
+    x0, x1 = x_dem(P_PRIV, Q_ANTES), x_dem(P_PRIV, Q_DEPOIS)
+    p.area([(0, P_PRIV), (x1, P_PRIV), (0, esgot(Q_DEPOIS))], COR_Q, 0.24)
+    p.area([(0, P_PRIV), (x0, P_PRIV), (0, esgot(Q_ANTES))], COR_Q_CLARO,
+           0.70)
+
+    p.reta(0, esgot(Q_DEPOIS), x_dem(0, Q_DEPOIS), 0, cor=COR_Q, larg=2.8)
+    p.reta(0, esgot(Q_ANTES), x_dem(0, Q_ANTES), 0, cor=COR_Q_CLARO,
+           larg=2.8)
+    p.texto(2.6, 17.0, "x(p, q¹), com q = 8", cor=COR_Q, negrito=True)
+    p.texto(12.3, 5.2, "x(p, q⁰), com q = 2", cor=COR_Q_CLARO,
+            negrito=True)
+
+    p.reta(0, P_PRIV, 20.0, P_PRIV, cor=COR_GUIA, larg=1.2, tracejado="4 3")
+    p.marca_y(P_PRIV, "4")
+    p.marca_y(esgot(Q_ANTES), "7")
+    p.marca_y(esgot(Q_DEPOIS), "28")
+    for x, cor in ((x0, COR_Q_CLARO), (x1, COR_Q)):
+        p.reta(x, 0, x, P_PRIV, cor=COR_GUIA, larg=1.1, tracejado="4 3")
+        p.marca_x(x, fmt(x, 0), cor=cor)
+
+    p.texto(2.0, 4.6, "12", cor=COR_DESTAQUE, negrito=True, italico=False,
+            ancora="middle", tam=15)
+    p.texto(1.1, 10.5, "48", cor=COR_Q, negrito=True, italico=False,
+            ancora="middle", tam=18)
+
+    rodape(t, LARG_1P, ALT_1P,
+           "a família compra menos refis (8 → 4), mas o triângulo cresce:"
+           " A = 48 − 12 = R$ 36")
+    t.salvar("11-substitutos-a.svg", titulo)
 
 # ===========================================================================
 # O exercicio - a versao discreta dos precos de esgotamento
@@ -830,6 +1060,10 @@ def main():
     nao_uso()
     isoquantas()
     mwtp()
+    demanda_h("11-demanda-h-1.svg", 1)
+    demanda_h("11-demanda-h-2.svg", 2)
+    mwtp_caminho()
+    demanda_x()
     exercicio()
     print()
     print("  conferencia da calibracao:")
@@ -841,11 +1075,33 @@ def main():
     exc_l = sum(v - P_EX for v in VAL_LIMPA if v >= P_EX)
     exc_s = sum(v - P_EX for v in VAL_SUJA if v >= P_EX)
     print("    exercicio: {} - {} = {}".format(exc_l, exc_s, exc_l - exc_s))
-    print("    substitutos: economia {} (soma) e {} (produto)".format(
-        fmt(P_PRIV * (x_soma(Q_ANTES) - x_soma(Q_DEPOIS))),
-        fmt(P_PRIV * (x_prod(Q_ANTES) - x_prod(Q_DEPOIS)))))
-    print("    integral da MWTP imperfeita entre 3 e 7: {}".format(
-        fmt(P_PRIV * H_PROD * (1 / Q_ANTES - 1 / Q_DEPOIS))))
+    eco_s = P_PRIV * (x_soma(Q_ANTES) - x_soma(Q_DEPOIS))
+    eco_p = P_PRIV * (x_prod(Q_ANTES) - x_prod(Q_DEPOIS))
+    int_parado = P_PRIV * H_PROD * (1 / Q_ANTES - 1 / Q_DEPOIS)
+    nq = 200000
+    dq = (Q_DEPOIS - Q_ANTES) / nq
+    int_ajusta = sum(mwtp_ajusta(Q_ANTES + (k + 0.5) * dq) for k in range(nq)) * dq
+    gasto = P_PRIV * (x_prod(Q_ANTES) - x_dem(P_PRIV, Q_DEPOIS))
+    a_med = EXC_X(Q_DEPOIS) - EXC_X(Q_ANTES)
+    assert abs(eco_s - 24) < 1e-9 and abs(eco_p - 24) < 1e-9
+    assert abs(int_parado - 24) < 1e-9 and abs(RETANGULO - 24) < 1e-9
+    assert abs(H_ANTES - 16) < 1e-9 and abs(H_DEPOIS - 32) < 1e-9
+    assert abs(x_dem(P_PRIV, Q_ANTES) - 8) < 1e-9
+    assert abs(x_dem(P_PRIV, Q_DEPOIS) - 4) < 1e-9
+    assert abs(TRIANGULO - 12) < 1e-9 and abs(gasto - 16) < 1e-9
+    assert abs(int_ajusta - 36) < 1e-6 and abs(a_med - 36) < 1e-9
+    assert abs(mwtp_ajusta(Q_ANTES) - 16) < 1e-9
+    assert abs(mwtp_ajusta(Q_DEPOIS) - 2) < 1e-9
+    print("    substitutos, H parado: economia {} (soma) e {} (produto),"
+          " integral da MWTP {}".format(fmt(eco_s), fmt(eco_p),
+                                        fmt(int_parado)))
+    print("    substitutos, H se ajusta: H {} -> {}, refis 8 -> {},"
+          " gasto cai {}".format(fmt(H_ANTES), fmt(H_DEPOIS),
+                                 fmt(x_dem(P_PRIV, Q_DEPOIS)), fmt(gasto)))
+    print("      retangulo {} + triangulo {} = {} = integral da MWTP {}"
+          " = A {}".format(fmt(RETANGULO), fmt(TRIANGULO),
+                           fmt(RETANGULO + TRIANGULO), fmt(int_ajusta, 3),
+                           fmt(a_med)))
     print()
     print("  a tabela de participacao no orcamento (slide do excedente):")
     print("    alfa      VC       EC       VE    erro do EC sobre VC")

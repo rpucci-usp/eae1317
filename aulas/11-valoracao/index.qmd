@@ -840,23 +840,38 @@ O sinal de ${f}_{xq}(x,q)$ vai depender do contexto.
 - ${f}_{xq}>0$: benefício marginal da ida ao pesqueiro aumenta conforme o bem
   ambiental melhora.
 
-## Duas tecnologias, os mesmos dois pontos
+## Ilustração: duas tecnologias diferentes
 
 ::: {.diagram}
 ![](../_assets/figuras/11-substitutos.svg){style="height:295px;max-height:295px"}
 :::
 
-- Uma família precisa de $H$ de água segura por semana. A torneira entrega $q$
-  de graça, e o resto vem de garrafas a R\$ 5 cada.
-- Nos dois painéis, passar de $q=3$ para $q=7$ derruba as garrafas de 7 para 3,
-  e poupa os mesmos R\$ 20.
-- O que muda é a **inclinação da isoquanta**, que é o
-  ${f}_{q}/{f}_{x}$ que vamos usar em seguida.
+- Uma família precisa de $H$ de água segura por mês: $q$ vem da torneira, de
+  graça, e $x$ custa R\$ 4 (garrafa à esquerda, refil de filtro à direita).
+- Fixando $H$ por enquanto, os painéis mostram que mudar $q$ de 2 para 8 derruba o consumo de $x$ de 8 para 2: R\$ 24
+  poupados. Mas muda a **inclinação da isoquanta**, ${f}_{q}/{f}_{x}$.
+
+
+## Do gasto poupado à disposição a pagar
+
+::: {.no-bullet}
+A água da torneira melhorou, e a família passou a gastar R\$ 24 a menos com
+garrafas ou refis. **Esse é o valor da melhora para ela?**
+:::
+
+- Não necessariamente. Disposição a pagar é o **máximo que ela pagaria** pela
+  água melhor e ainda ficaria tão bem quanto antes.
+- Os dois números coincidem se a melhora **não mudar o quanto ela consome de $H$**.
+  E isso depende do tamanho da melhora.
+- [**Melhora pequena** (um ponto de $q$): o gasto poupado é exatamente a
+  disposição a pagar (e a MWTP).]{.fragment fragment-index=1}
+- [**Melhora grande** (de 2 para 8): a família muda o $H$, e o gasto poupado
+  passa a ser só um piso da disposição a pagar.]{.fragment fragment-index=2}
 
 ## Bens Substitutos
 
 ::: {.no-bullet}
-A função-custo pode ser escrita como um problema de minimização tradicional:
+Para entender melhor, escreva a função-custo como um problema de minimização tradicional:
 :::
 
 ::: {.eq-block}
@@ -895,7 +910,7 @@ Para medir bem-estar, precisamos da função dispêndio:
 $$E\left(p,u,q\right)=\min_{H,z} \left\{C\left(p,q,H\right)+z \text{ s.a. } U\left(H,z\right)=u\right\}$$
 :::
 
-- E obtemos demandas compensadas por $H$ e $z$.
+- E obtemos as demandas compensadas por $H$ e $z$.
 
 ::: {.no-bullet}
 Novamente, $VC=E\left(p,{u}^{0},{q}^{0}\right)-E\left(p,{u}^{0},{q}^{1}\right)$.
@@ -916,47 +931,131 @@ $$MWTP=-\frac{\partial E\left(p,u,q\right)}{\partial q}=-\frac{\partial C\left(p
 :::
 
 ::: {.no-bullet}
-Vamos combinar essa expressão com os resultados anteriores da escolha do
-consumidor (**LOUSA**).
+Vamos entender melhor por que a segunda igualdade vale.
 :::
 
-## Bens Substitutos
+## Por que basta olhar o custo?
 
 ::: {.no-bullet}
-Ou seja, para uma mudança marginal em $q$ mantendo $H$ constante, conseguimos
-calcular a MWTP de três formas:
+Disposição a pagar é o máximo que se pode **cobrar** da família pela água
+melhor sem que ela fique pior do que estava.
 :::
 
-- Usando a função-custo → $MWTP=-\frac{\partial C(p,q,H)}{\partial q}$
-- Usando a tecnologia de "produção" → $MWTP=p \frac{\partial f/\partial q}{\partial f/\partial x}$
-- Usando a demanda por $x$ → $MWTP=-p\frac{\partial x}{\partial q}$
+- Considere o experimento: $q$ vai de 2 para 8 e, junto, cobramos da família os
+  R\$ 24 que ela poupa em refis.
+- Ela compra 2 refis em vez de 8 e mantém $H=16$. Gastava 32, agora gasta
+  $8+24=32$: sobra o mesmo $z$. **Fica exatamente como antes.**
+- Portanto, aceita pagar **pelo menos** os 24. Pagaria mais? Só se ganhasse
+  algo mudando o $H$.
+- Numa melhora pequena, mudar o $H$ quase não rende nada: ela já estava no
+  melhor $H$, e no topo do morro um passo para o lado quase não muda a
+  altura.
+- Por isso, **na margem**, $MWTP=-\partial C/\partial q$ ($H$ fixo). É o
+  teorema do envelope.
+
+## Do custo para a isoquanta
 
 ::: {.no-bullet}
-A terceira é a única que se observa: é o gasto com garrafas que se vê no caixa
-do supermercado.
+Com $H$ fixo, o custo é o gasto com $x$: $C(p,q,H)=p\cdot x(q,H)$, em que
+$x(q,H)$ é a isoquanta do exemplo inicial.
 :::
 
-## Total e margem não são a mesma coisa
+::: {.eq-block}
+$$-\frac{\partial C}{\partial q}=-p\,\frac{\partial x}{\partial q}\Big|_{H}$$
+:::
+
+- [Ao longo da isoquanta, $f(x,q)=H$ não muda: ${f}_{x}\,dx+{f}_{q}\,dq=0$.]{.fragment fragment-index=1}
+- [Logo $-\partial x/\partial q\,\vert_{H}={f}_{q}/{f}_{x}$: quantas unidades de
+  $x$ um ponto de $q$ substitui. É a inclinação da isoquanta.]{.fragment fragment-index=2}
+
+::: {.eq-block .fragment fragment-index=3}
+$$MWTP=p\,\frac{{f}_{q}}{{f}_{x}}$$
+:::
+
+## Três leituras para o mesmo número
+
+::: {.eq-block}
+$$MWTP=-\frac{\partial C}{\partial q}=-p\,\frac{\partial x}{\partial q}\Big|_{H}=p\,\frac{{f}_{q}}{{f}_{x}}$$
+:::
+
+::: {.tabela}
+| | o que diz | $f=x+q$, em $q=2$ | $f=x\cdot q$, em $q=2$ |
+|---|---|---|---|
+| $-\partial C/\partial q$ | quanto cai o custo de $H$ | 4 | $4\times 16/2^{2}=16$ |
+| $-p\,\partial x/\partial q\,\vert_{H}$ | $x$ poupado, em reais | $4\times 1=4$ | $4\times 4=16$ |
+| $p\,{f}_{q}/{f}_{x}$ | preço vezes inclinação da isoquanta | $4\times 1=4$ | $4\times 8/2=16$ |
+:::
+
+- Repare que, em todos os casos, **$H$ está fixo**. Vale para um ponto de $q$ a mais, mas e para uma mudança grande?
+
+## Total (WTP) versus margem (MWTP)
 
 ::: {.diagram}
 ![](../_assets/figuras/11-mwtp.svg){style="height:295px;max-height:295px"}
 :::
 
-- Com substitutos perfeitos, cada ponto de qualidade vale R\$ 5, sempre.
-- Com a tecnologia multiplicativa, o primeiro ponto vale R\$ 11,70 e o último
-  vale R\$ 2,10.
-- **As duas áreas valem 20**, que é a economia total do slide anterior. Só a
-  curva é diferente.
+- Com substitutos perfeitos, cada ponto de qualidade vale R\$ 4, sempre. 
+- Com substitutos **imperfeitos**, o primeiro ponto vale R\$ 16 e o último, R\$ 1.
+- **As duas áreas valem 24**: é a soma das margens.
+- Cada margem foi medida com $H$ fixo, mas a família deixaria de ajustar $H$?
+
+## Água melhor barateia a água segura
+
+::: {.no-bullet}
+Com $f=x\cdot q$, cada refil rende $q$ unidades de água segura: quanto mais limpa
+a água que entra no filtro, mais ele trata antes de saturar.
+:::
+
+- Para ter $H$, são $x=H/q$ refis, e o gasto é $C=p\cdot H/q$: cada unidade de
+  $H$ custa $p/q$. Com $q=2$, R\$ 2; com $q=8$, R\$ 0,50.
+- Melhorar $q$ é **baratear $H$** $\rightarrow$ consumidor quer mais $H$.
+
+::: {.tabela}
+| | custo de $H$ | $H$ | refis | gasto |
+|---|---|---|---|---|
+| $q=2$ | R\$ 2 | 16 | 8 | R\$ 32 |
+| $q=8$, $H$ parado | R\$ 0,50 | 16 | 2 | R\$ 8 |
+| $q=8$, $H$ se ajusta | R\$ 0,50 | **32** | **4** | **R\$ 16** |
+:::
+
+- [Com $f=x+q$ não: cada unidade a mais de $H$ custa sempre $p$, e o $H$ não se mexe.]{.fragment fragment-index=1}
+
+## Quanto vale baratear *H*?
+
+::: {.diagram}
+![](../_assets/figuras/11-demanda-h-1.svg){style="height:300px;max-height:300px"}
+:::
+
+- A reta é o valor de mais uma unidade de $H$. A família compra até esse valor igualar o custo: $H=16$ com $q=2$.
+- Fixando $H=16$, família poupa R\$ 1,50 por unidade: **R\$ 24**, o mesmo dos refis.
+- Com esse dinheiro, compra exatamente o que tinha. Então paga **pelo menos** 24.
+
+## Quanto vale baratear *H*?
+
+::: {.diagram}
+![](../_assets/figuras/11-demanda-h-2.svg){style="height:300px;max-height:300px"}
+:::
+
+- Mas família se ajusta e vai até $H=32$, ganhando o triângulo de **R\$ 12**. A disposição a pagar é, na verdade, $24+12=$ **R\$ 36**.
+- É a conta do começo da aula: o ganho de uma queda de preço é a área à esquerda da demanda. Aqui, quem derruba o preço de $H$ é $q$.
+
+## Somar margens: com qual *H*?
+
+::: {.diagram}
+![](../_assets/figuras/11-mwtp-caminho.svg){style="height:270px;max-height:270px"}
+:::
+
+- Roxa: MWTP com $H$ fixo em 16, área é 24. Vermelha: MWTP com o $H$ que a família escolheria em cada $q$, área é **36**.
+- Para mudanças marginais ao redor de $q=2$, as duas áreas coincidem.
+- Para mudança grande, somam-se as MWTPs **ajustando $H$ também**.
+
 
 ## Bens Substitutos
 
 ::: {.no-bullet}
-E se mudança não for marginal, saindo de ${q}^{0}$ para ${q}^{1}$?
+De forma mais geral, para mudança não marginal, saindo de ${q}^{0}$ para ${q}^{1}$:
 :::
-
-::: {.no-bullet}
-Podemos usar algo similar à medida usada para bens complementares.
-:::
+- Podemos usar algo similar à medida usada para bens complementares.
 
 ::: {.eq-block}
 $$A=\int_{{p}^{0}}^{\overline{p}\left({q}^{1}\right)} h\left(p,{u}^{0},{q}^{1}\right)dp-\int_{{p}^{0}}^{\overline{p}\left({q}^{0}\right)} h\left(p,{u}^{0},{q}^{0}\right)dp$$
@@ -990,6 +1089,18 @@ afogamento":
 - Isso implica em $H=0$;
 - Quando $H=0$, o dispêndio para alcançar ${u}^{0}$ não depende de $q$;
 - Isto nos dá $E\left[\overline{p}\left({q}^{1}\right),{u}^{0},{q}^{1}\right]-E\left[\overline{p}\left({q}^{0}\right),{u}^{0},{q}^{0}\right]=0 \to A=VC$.
+
+## A medida *A* no exemplo dos refis
+
+::: {.diagram}
+![](../_assets/figuras/11-substitutos-a.svg){style="height:300px;max-height:300px"}
+:::
+
+- Com $f=x\cdot q$, sem refil não há água segura: $f(0,q)=0$, e $x$ é
+  essencial. Esgotamento: R\$ 7 com $q=2$ e R\$ 28 com $q=8$.
+- $A=48-12=$ **R\$ 36**, a disposição a pagar do triângulo.
+- A família compra **menos** refis, e a área cresce: $A$ não mede o que se
+  deixou de comprar.
 
 ## Bens Substitutos
 
@@ -1053,16 +1164,19 @@ Qual é a disposição a pagar por esse aumento de renda?
 - Será exatamente $p({q}^{1}-{q}^{0})$.
 
 ::: {.no-bullet}
-Logo, no caso separável em que bens são substitutos, a disposição a pagar por um
-aumento na qualidade do bem ambiental é simplesmente o **preço do bem privado
-vezes a diferença de qualidade**.
+Logo, no caso separável com bens substitutos, a disposição a pagar por um aumento na qualidade do bem ambiental 
+é simplesmente o **preço do bem privado vezes a diferença de qualidade**.
+:::
+
+::: {.no-bullet .fragment fragment-index=1}
+É o painel da esquerda do exemplo: $4\times(8-2)=$ R\$ 24. Como $H$ não se mexe,
+a conta com $H$ fixo já é exata.
 :::
 
 ## Comprar ar limpo em prateleira
 
 ::: {.no-bullet}
-Na China, a norma de aquecimento ao norte do Rio Huai criou décadas de
-poluição a mais de um lado da linha. [@ito2020] usam dados de caixa de
+Na China, norma de aquecimento ao norte do Rio Huai criou décadas de poluição a mais de um lado da linha. [@ito2020] usam dados de compras de
 purificadores de ar para ler a disposição a pagar direto no consumo.
 :::
 
@@ -1079,14 +1193,14 @@ purificadores de ar para ler a disposição a pagar direto no consumo.
 
 ## Comprar ar limpo em prateleira
 
-- Repare que o número sai de $-p\,\partial x/\partial q$, que é a **terceira**
-  das três formas de calcular a MWTP.
+- Repare que US\$ 1,34 é uma **MWTP**: o valor de um µg/m³ a menos, lido no
+  que se gasta com purificador.
 - Nenhum chinês foi perguntado quanto vale o ar limpo. O que se observou foi o
   que ele levou para casa.
-- [A disposição a pagar cresce com a renda e com a exposição a informação sobre
-  a qualidade do ar.]{.fragment fragment-index=1}
-- [Isso é um alerta: a medida capta a disposição a pagar de quem **pode** pagar,
-  e a de quem sabe que o problema existe.]{.fragment fragment-index=2}
+- A disposição a pagar cresce com a renda e com a exposição à informação sobre
+  a qualidade do ar.
+- Isso é um alerta: a medida capta a disposição a pagar de quem **pode** pagar,
+  e a de quem sabe que o problema existe.
 
 ## Quem ignora o gasto defensivo subestima o benefício
 
@@ -1099,10 +1213,10 @@ do EU ETS da aula 07. [@deschenes2017] medem o que ele fez com a saúde.
   mortalidade.
 - Redução anual de compra de medicamentos: cerca de US\$ 800 milhões.
 - Redução anual de mortalidade: cerca de US\$ 1,3 bilhão.
-- [Ou seja, o gasto defensivo é **mais de um terço** da disposição a pagar
-  total.]{.fragment fragment-index=1}
-- [Uma avaliação que olhasse só para mortalidade perderia essa parte inteira, e
-  a política pareceria menos vantajosa do que é.]{.fragment fragment-index=2}
+- Ou seja, o gasto defensivo é **mais de um terço** da disposição a pagar
+  total.
+- Uma avaliação que olhasse só para mortalidade perderia essa parte inteira, e
+  a política pareceria menos vantajosa do que é.
 
 ## Exercício: quanto vale despoluir a praia
 
@@ -1193,8 +1307,9 @@ algum mercado.
   ambiental aparece no gasto com um bem privado ligado a ele.
 - Com **complementares**, a medida é a diferença de áreas entre os preços de
   esgotamento, e ela vale se o bem ambiental só tiver valor de uso.
-- Com **substitutos**, a medida é o gasto defensivo que deixa de ser feito, e
-  ela vale se o bem privado for essencial.
+- Com **substitutos**, o gasto defensivo poupado mede a MWTP na margem. Numa
+  mudança grande ele é um piso, e vira exato se o bem privado for essencial ou
+  a tecnologia for separável.
 - [Fica a pergunta da próxima aula: e quando o bem ambiental não é complemento
   nem substituto de nada, mas vem **embutido** no preço de um bem que já tem
   mercado?]{.fragment fragment-index=1}
