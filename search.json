@@ -4,7 +4,7 @@
     "href": "aulas/12-precos-hedonicos/index.html#um-apartamento-perto-do-parque-custa-15-mais",
     "title": "Preços Hedônicos",
     "section": "Um apartamento perto do parque custa 15% mais",
-    "text": "Um apartamento perto do parque custa 15% mais\n\nDois apartamentos, mesma metragem, mesmo número de quartos, mesmo andar. Um fica a 500 metros de um parque e custa 15% mais caro que o outro. O que esses 15% medem?\n\n\n(a) A disposição a pagar pelo parque de quem comprou o apartamento perto dele.\n(b) A disposição a pagar média da cidade pelo parque.\n(c) Nada em particular: bairros com parque costumam ser melhores em tudo, e os 15% podem ser as outras coisas."
+    "text": "Um apartamento perto do parque custa 15% mais\n\nConsidere dois apartamentos com a mesma metragem, o mesmo número de quartos e o mesmo andar. Um está a 500 metros de um parque e custa 15% mais que o outro. O que esses 15% medem?\n\n\n(a) A disposição a pagar pelo parque de quem comprou o apartamento mais próximo.\n(b) A disposição a pagar média da cidade pelo parque.\n(c) Nada em particular: bairros com parque tendem a ser melhores em outros atributos, que também entram nos 15%."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aula-passada",
@@ -25,7 +25,7 @@
     "href": "aulas/12-precos-hedonicos/index.html#onde-estamos-no-curso",
     "title": "Preços Hedônicos",
     "section": "Onde estamos no curso",
-    "text": "Onde estamos no curso\n\n\n1. Complementares. O valor da praia aparece no gasto com a viagem.\n\n\n2. Substitutos. O valor do ar aparece no gasto com o purificador.\n\n\n3. Diferenciados. O valor do ar aparece dentro do preço do apartamento, que já tem mercado.\n\n\n4. E daí o problema é outro: separar o que é o ar do que é o bairro."
+    "text": "Onde estamos no curso\n\n\n1. Complementares. O valor da praia aparece no gasto com a viagem.\n\n\n2. Substitutos. O valor do ar aparece no gasto com o purificador.\n\n\n3. Diferenciados. O valor do ar está embutido no preço do apartamento, que tem mercado próprio.\n\n\n4. Novo problema: separar o efeito do ar do efeito do bairro."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada",
@@ -46,7 +46,7 @@
     "href": "aulas/12-precos-hedonicos/index.html#bens-com-qualidade-diferenciada-2",
     "title": "Preços Hedônicos",
     "section": "Bens com Qualidade Diferenciada",
-    "text": "Bens com Qualidade Diferenciada\n\nA diferença deste caso com os dois anteriores é que, agora, o consumidor está comprando (indiretamente) o bem ambiental.\n\n\nNo que segue, trataremos de um modelo teórico para fundamentar o modelo empírico de preços hedônicos.\n\n\nNa aula passada, o gasto com a viagem e o gasto com o purificador eram pistas ao lado do bem ambiental.\nAqui o bem ambiental está dentro do preço, e a tarefa é extraí-lo de lá."
+    "text": "Bens com Qualidade Diferenciada\n\nA diferença deste caso com os dois anteriores é que, agora, o consumidor está comprando (indiretamente) o bem ambiental.\n\n\nNo que segue, trataremos de um modelo teórico para fundamentar o modelo empírico de preços hedônicos.\n\n\nNa aula passada, o valor do bem ambiental era inferido do gasto com um bem relacionado (viagem, purificador).\nAgora o bem ambiental está embutido no preço do imóvel. A tarefa é isolá-lo."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#distribuição-observada",
@@ -60,35 +60,35 @@
     "href": "aulas/12-precos-hedonicos/index.html#distribuição-observada-1",
     "title": "Preços Hedônicos",
     "section": "Distribuição Observada",
-    "text": "Distribuição Observada\n\nO preço cai com a distância ao parque, e a queda é bem visível.\nMas por quê? O parque em si, ou o que costuma vir junto com um parque?\nSegurança, escola, metrô, restaurante, vizinho rico.\nEsse é o problema da aula inteira, e vamos precisar do modelo antes de atacá-lo."
+    "text": "Distribuição Observada\n\nO preço por metro quadrado cai com a distância ao parque.\nMas por quê? Pelo parque ou pelo que costuma acompanhá-lo?\nSegurança, escolas, metrô, comércio, renda da vizinhança.\nEsse é o problema central da aula. Antes de enfrentá-lo, precisamos de um modelo."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#seis-apartamentos-e-uma-tabela-de-preços",
     "href": "aulas/12-precos-hedonicos/index.html#seis-apartamentos-e-uma-tabela-de-preços",
     "title": "Preços Hedônicos",
     "section": "Seis apartamentos e uma tabela de preços",
-    "text": "Seis apartamentos e uma tabela de preços\n\n\n\n\nPara montar a intuição, um mercado de brinquedo: seis apartamentos idênticos em tudo, menos na qualidade do ar \\(q\\) do quarteirão.\nOs preços estão aí. O que este desenho diz sobre quanto vale o ar limpo?"
+    "text": "Seis apartamentos e uma tabela de preços\n\n\n\n\nExemplo: seis apartamentos idênticos, exceto pela qualidade do ar \\(q\\) do quarteirão.\nO que esses preços dizem sobre o valor do ar limpo?"
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-mercado",
     "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-mercado",
     "title": "Preços Hedônicos",
     "section": "O cardápio do mercado",
-    "text": "O cardápio do mercado\n\n\n\n\nLigando os pontos, sai a função de preços hedônicos \\(P(q)\\).\nNote o que ela faz: dois pontos de qualidade custam R$ 4 mil embaixo e R$ 36 mil em cima."
+    "text": "O cardápio do mercado\n\n\n\n\nLigando os pontos, obtém-se a função de preços hedônicos \\(P(q)\\).\nO acréscimo de preço cresce com \\(q\\): R$ 4 mil na base, R$ 36 mil no topo."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#parece-uma-curva-de-demanda-e-não-é",
-    "href": "aulas/12-precos-hedonicos/index.html#parece-uma-curva-de-demanda-e-não-é",
+    "objectID": "aulas/12-precos-hedonicos/index.html#parece-uma-curva-de-demanda-mas-não-é",
+    "href": "aulas/12-precos-hedonicos/index.html#parece-uma-curva-de-demanda-mas-não-é",
     "title": "Preços Hedônicos",
-    "section": "Parece uma curva de demanda, e não é",
-    "text": "Parece uma curva de demanda, e não é\n\nSe \\(P(q)\\) fosse uma demanda inversa por qualidade do ar, ela estaria dizendo que as pessoas pagam mais por unidade quanto mais ar limpo já têm. Isso contraria tudo o que este curso fez desde a aula 02.\n\n\n\\(P(q)\\) não é a demanda de ninguém, nem a oferta de ninguém.\n\\(P(q)\\) é o cardápio: o que o mercado cobra hoje por cada nível de \\(q\\).\nNenhum comprador e nenhum vendedor escolhe \\(P(q)\\). Todos a tomam como dada e escolhem um ponto dela.\n\n\nO que ela tem de útil é a inclinação no ponto que alguém escolheu."
+    "section": "Parece uma curva de demanda, mas não é",
+    "text": "Parece uma curva de demanda, mas não é\n\nSe \\(P(q)\\) fosse uma demanda inversa por qualidade do ar, as pessoas pagariam mais por unidade quanto mais ar limpo já tivessem. Isso contraria a teoria do consumidor vista desde a aula 02.\n\n\n\\(P(q)\\) não é a demanda nem a oferta de nenhum agente.\n\\(P(q)\\) é um cardápio: o preço que o mercado cobra por cada nível de \\(q\\).\nCompradores e vendedores tomam \\(P(q)\\) como dada e escolhem um ponto da curva.\n\n\nO que interessa é a inclinação de \\(P(q)\\) no ponto escolhido."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-café",
     "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-do-café",
     "title": "Preços Hedônicos",
     "section": "O cardápio do café",
-    "text": "O cardápio do café\n\nA padaria cobra R$ 6 pelo café pequeno, R$ 8 pelo médio e R$ 11 pelo grande. Você pede o médio.\n\n\nO cardápio tem inclinação crescente: o segundo aumento de tamanho custa mais que o primeiro.\nIsso não diz nada sobre o seu apetite. Diz sobre a padaria.\nO que a sua escolha revela: passar de pequeno a médio vale mais de R$ 2 para você, e passar de médio a grande vale menos de R$ 3.\nÉ exatamente isso que o modelo hedônico faz, com apartamentos no lugar de cafés e ar limpo no lugar de mililitros."
+    "text": "O cardápio do café\n\nA padaria cobra R$ 6 pelo café pequeno, R$ 8 pelo médio e R$ 11 pelo grande. Você pede o médio.\n\n\nO cardápio tem inclinação crescente: o segundo aumento de tamanho custa mais que o primeiro.\nIsso descreve a padaria, não o seu apetite.\nA sua escolha revela: de pequeno para médio vale mais de R$ 2; de médio para grande, menos de R$ 3.\nO modelo hedônico segue a mesma lógica: apartamentos no lugar de cafés, qualidade do ar no lugar de mililitros."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#premissas",
@@ -116,14 +116,14 @@
     "href": "aulas/12-precos-hedonicos/index.html#demanda-2",
     "title": "Preços Hedônicos",
     "section": "Demanda",
-    "text": "Demanda\n\nNote que o consumidor pode escolher o valor de \\(q\\).\nNote, também, que qualquer combinação de \\(x\\) e \\(q\\) é possível.\n\nIsto é uma abstração: nem sempre é possível escolher cada característica separadamente.\n\nCondições de primeira ordem são:\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial {x}_{j}}=\\lambda \\frac{\\partial P\\left(x,q\\right)}{\\partial {x}_{j}} \\qquad \\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial q}=\\lambda \\frac{\\partial P\\left(x,q\\right)}{\\partial q} \\qquad \\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial z}=\\lambda\\]"
+    "text": "Demanda\n\nNote que o consumidor pode escolher o valor de \\(q\\).\nNote, também, que qualquer combinação de \\(x\\) e \\(q\\) é possível.\n\nIsto é uma abstração: nem sempre é possível escolher cada característica separadamente.\n\nCondições de primeira ordem são:\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial {x}_{j}}=\\lambda \\frac{\\partial P\\left(x,q\\right)}{\\partial {x}_{j}} \\qquad \\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial q}=\\lambda \\frac{\\partial P\\left(x,q\\right)}{\\partial q}\\]\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)}{\\partial z}=\\lambda\\]"
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#demanda-3",
     "href": "aulas/12-precos-hedonicos/index.html#demanda-3",
     "title": "Preços Hedônicos",
     "section": "Demanda",
-    "text": "Demanda\n\nCombinando as 2 últimas CPOs, temos:\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)/\\partial q}{\\partial U\\left(x,q,z,s\\right)/\\partial z} = \\frac{\\partial P\\left(x,q\\right)}{\\partial q}\\]\n\n\nÀ esquerda, a disposição marginal a pagar por \\(q\\). À direita, o preço marginal implícito de \\(q\\).\n\n\nEsta é a equação da aula inteira, e ela é uma igualdade entre uma coisa que ninguém observa e uma coisa que se estima com dados de cartório."
+    "text": "Demanda\n\nCombinando as 2 últimas CPOs, temos:\n\n\n\\[\\frac{\\partial U\\left(x,q,z,s\\right)/\\partial q}{\\partial U\\left(x,q,z,s\\right)/\\partial z} = \\frac{\\partial P\\left(x,q\\right)}{\\partial q}\\]\n\n\nÀ esquerda, a disposição marginal a pagar por \\(q\\). À direita, o preço marginal implícito de \\(q\\).\n\n\nEsta é a equação central da aula: iguala algo não observável a algo que se estima com dados de transações imobiliárias."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#demanda-4",
@@ -151,21 +151,21 @@
     "href": "aulas/12-precos-hedonicos/index.html#as-curvas-de-lance-do-consumidor-1",
     "title": "Preços Hedônicos",
     "section": "As curvas de lance do consumidor 1",
-    "text": "As curvas de lance do consumidor 1\n\n\n\n\nCada curva de lance liga as combinações de \\(q\\) e gasto com o imóvel que deixam o consumidor na mesma utilidade.\nCuidado com a leitura: o eixo vertical é gasto, então curva mais baixa é utilidade mais alta.\nA curva mais baixa de todas não é alcançável: nenhum apartamento é vendido por aquele preço."
+    "text": "As curvas de lance do consumidor 1\n\n\n\n\nCurva de lance: combinações de \\(q\\) e gasto com o imóvel com utilidade constante.\nO eixo vertical é gasto: curva mais baixa, utilidade mais alta.\nA curva mais baixa não é alcançável: nenhum imóvel é vendido a esse preço."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#ele-para-onde-o-lance-encosta-no-cardápio",
-    "href": "aulas/12-precos-hedonicos/index.html#ele-para-onde-o-lance-encosta-no-cardápio",
+    "objectID": "aulas/12-precos-hedonicos/index.html#a-escolha-ótima-é-o-ponto-de-tangência",
+    "href": "aulas/12-precos-hedonicos/index.html#a-escolha-ótima-é-o-ponto-de-tangência",
     "title": "Preços Hedônicos",
-    "section": "Ele para onde o lance encosta no cardápio",
-    "text": "Ele para onde o lance encosta no cardápio\n\n\n\n\nA melhor curva alcançável é a que tangencia o cardápio, e a tangência é a escolha: \\(q=4\\), ao preço de R$ 316 mil.\nNo ponto de tangência, \\(\\partial b/\\partial q = \\partial P/\\partial q = 8\\).\nÉ a mesma equação do slide anterior, agora como um desenho."
+    "section": "A escolha ótima é o ponto de tangência",
+    "text": "A escolha ótima é o ponto de tangência\n\n\n\n\nA melhor curva alcançável tangencia \\(P(q)\\): \\(q=4\\), a R$ 316 mil.\nNa tangência, \\(\\partial b/\\partial q = \\partial P/\\partial q = 8\\): a condição de primeira ordem em forma gráfica."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#dois-consumidores-dois-pontos-o-mesmo-cardápio",
-    "href": "aulas/12-precos-hedonicos/index.html#dois-consumidores-dois-pontos-o-mesmo-cardápio",
+    "objectID": "aulas/12-precos-hedonicos/index.html#dois-consumidores-a-mesma-função-de-preços",
+    "href": "aulas/12-precos-hedonicos/index.html#dois-consumidores-a-mesma-função-de-preços",
     "title": "Preços Hedônicos",
-    "section": "Dois consumidores, dois pontos, o mesmo cardápio",
-    "text": "Dois consumidores, dois pontos, o mesmo cardápio\n\n\n\n\nO consumidor 2 valoriza mais a qualidade do ar, e por isso encosta no cardápio mais adiante: \\(q=6\\), a R$ 336 mil.\nOs dois enfrentam o mesmo cardápio e leem dele números diferentes: 8 e 12."
+    "section": "Dois consumidores, a mesma função de preços",
+    "text": "Dois consumidores, a mesma função de preços\n\n\n\n\nO consumidor 2 valoriza mais a qualidade do ar. Escolhe \\(q=6\\), a R$ 336 mil.\nAmbos enfrentam a mesma \\(P(q)\\), mas as inclinações nos pontos escolhidos diferem: 8 e 12."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#oferta",
@@ -189,32 +189,32 @@
     "text": "Oferta\n\nAnalogamente ao caso do consumidor, defina uma quantidade \\(\\theta\\) que a firma está disposta a aceitar pelo imóvel:\n\n\n\\[\\overline{\\Pi }=\\theta -C(x,q,v)\\]\n\n\nNovamente, teremos:\n\n\n\\[\\frac{\\partial \\theta \\left(x,q,v,\\overline{\\Pi }\\right)}{\\partial q}=\\frac{\\partial P}{\\partial q}=\\frac{\\partial C}{\\partial q}\\]"
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#as-curvas-de-oferta-encostam-por-cima",
-    "href": "aulas/12-precos-hedonicos/index.html#as-curvas-de-oferta-encostam-por-cima",
+    "objectID": "aulas/12-precos-hedonicos/index.html#oferta-tangência-por-cima",
+    "href": "aulas/12-precos-hedonicos/index.html#oferta-tangência-por-cima",
     "title": "Preços Hedônicos",
-    "section": "As curvas de oferta encostam por cima",
-    "text": "As curvas de oferta encostam por cima\n\n\n\n\n\\(\\theta\\) é o que a firma precisa receber para manter o lucro, então curva mais alta é lucro mais alto.\nA melhor alcançável é, de novo, a tangente: a firma 1 entrega \\(q=4\\) e a firma 2 entrega \\(q=6\\).\nÉ a imagem espelhada da página anterior."
+    "section": "Oferta: tangência por cima",
+    "text": "Oferta: tangência por cima\n\n\n\n\n\\(\\theta\\) é o valor que a firma precisa receber: curva mais alta, lucro mais alto.\nNovamente, a melhor curva alcançável é a tangente: a firma 1 oferta \\(q=4\\); a firma 2, \\(q=6\\)."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#pontos-de-equilíbrio",
     "href": "aulas/12-precos-hedonicos/index.html#pontos-de-equilíbrio",
     "title": "Preços Hedônicos",
     "section": "Pontos de Equilíbrio",
-    "text": "Pontos de Equilíbrio\n\nOs pontos onde há transação entre, por exemplo, o indivíduo 1 e a firma 1 é dado por:\n\n\n\\[\\frac{\\partial b\\left(x,q,y,{s}_{1},{u}^{0}\\right)}{\\partial q}=\\frac{\\partial \\theta \\left(x,q,{v}_{1},{\\Pi }^{0} \\right)}{\\partial q}\\]\n\n\nEsse ponto vai estar associado a um determinado nível de \\(q={q}_{1}\\).\n\nE a um valor \\(P(x,{q}_{1})\\) pago pelo imóvel que tem \\(q={q}_{1}\\)."
+    "text": "Pontos de Equilíbrio\n\nO ponto onde há transação entre, por exemplo, o indivíduo 1 e a firma 1 é dado por\n\n\n\\[\\frac{\\partial b\\left(x,q,y,{s}_{1},{u}^{0}\\right)}{\\partial q}=\\frac{\\partial \\theta \\left(x,q,{v}_{1},{\\Pi }^{0} \\right)}{\\partial q}\\]\n\n\nEsse ponto vai estar associado a um determinado nível de \\(q={q}_{1}\\).\n\nE a um valor \\(P(x,{q}_{1})\\) pago pelo imóvel que tem \\(q={q}_{1}\\)."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-é-o-que-sobra",
-    "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-é-o-que-sobra",
+    "objectID": "aulas/12-precos-hedonicos/index.html#pq-é-uma-envoltória",
+    "href": "aulas/12-precos-hedonicos/index.html#pq-é-uma-envoltória",
     "title": "Preços Hedônicos",
-    "section": "O cardápio é o que sobra",
-    "text": "O cardápio é o que sobra\n\n\n\n\nCada comprador encosta por baixo, cada vendedor encosta por cima, e o cardápio passa exatamente por todos os pontos de encosto.\nNinguém escolheu \\(P(q)\\). Ela é a curva que faz todas as tangências valerem ao mesmo tempo, e o nome disso é envoltória (Rosen 1974)."
+    "section": "\\(P(q)\\) é uma envoltória",
+    "text": "\\(P(q)\\) é uma envoltória\n\n\n\n\nCompradores tangenciam \\(P(q)\\) por baixo; vendedores, por cima.\nNenhum agente escolhe \\(P(q)\\). Ela é a envoltória que torna todas as tangências compatíveis (Rosen 1974)."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#o-cardápio-e-a-inclinação-dele",
-    "href": "aulas/12-precos-hedonicos/index.html#o-cardápio-e-a-inclinação-dele",
+    "objectID": "aulas/12-precos-hedonicos/index.html#a-função-de-preços-e-sua-inclinação",
+    "href": "aulas/12-precos-hedonicos/index.html#a-função-de-preços-e-sua-inclinação",
     "title": "Preços Hedônicos",
-    "section": "O cardápio e a inclinação dele",
-    "text": "O cardápio e a inclinação dele\n\n\n\n\nÀ direita está \\(P′(q)\\), o preço implícito de um ponto a mais de qualidade.\nEla sobe, e ninguém anda sobre ela: cada consumidor ocupa um ponto só, e é o dele.\nA demanda de cada consumidor por \\(q\\), aqui, é horizontal. A reta que sobe é a fila de consumidores, ordenada por quanto valorizam o ar limpo."
+    "section": "A função de preços e sua inclinação",
+    "text": "A função de preços e sua inclinação\n\n\n\n\n\\(P′(q)\\): preço implícito de um ponto adicional de qualidade.\nA demanda individual por \\(q\\) é horizontal. A reta crescente apenas ordena os consumidores pela valoração do ar limpo."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#estimando-disposição-marginal-a-pagar",
@@ -245,60 +245,60 @@
     "text": "Estimando Disposição Marginal a Pagar\n\nQual é o parâmetro estimado de interesse?\n\n\n\\[\\alpha =\\frac{\\partial p}{\\partial q}\\]\n\n\nAo estimarmos o modelo, temos:\n\n\n\\[{\\hat{p}}_{i}={\\hat{\\beta }}_{0}+\\sum_{j=1}^{J} {\\hat{\\beta }}_{j}{x}_{j}+\\hat{\\alpha }{q}_{i}\\]\n\n\nE \\(\\hat{\\alpha }\\) é a estimativa da disposição marginal a pagar por \\(q\\)."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#de-quem-exatamente",
-    "href": "aulas/12-precos-hedonicos/index.html#de-quem-exatamente",
+    "objectID": "aulas/12-precos-hedonicos/index.html#de-quem-é-essa-disposição-a-pagar",
+    "href": "aulas/12-precos-hedonicos/index.html#de-quem-é-essa-disposição-a-pagar",
     "title": "Preços Hedônicos",
-    "section": "De quem, exatamente?",
-    "text": "De quem, exatamente?\n\n\n\n\nRodando o MQO nos seis apartamentos do começo da aula, sai exatamente 10.\nMas o preço por ponto de qualidade vai de 2 a 18 ao longo da tabela, e 10 é o valor em \\(q=5\\), o meio da amostra.\n\\(\\hat{\\alpha }\\) é uma média, e ela é a disposição marginal a pagar de quem escolheu o meio do cardápio."
+    "section": "De quem é essa disposição a pagar?",
+    "text": "De quem é essa disposição a pagar?\n\n\n\n\nMQO nos seis apartamentos do exemplo: \\(\\hat{\\alpha }=10\\), exatamente.\n\\(\\hat{\\alpha }\\) é uma média: o preço implícito em \\(q=5\\), o meio da amostra."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#as-duas-advertências-e-elas-são-diferentes",
-    "href": "aulas/12-precos-hedonicos/index.html#as-duas-advertências-e-elas-são-diferentes",
+    "objectID": "aulas/12-precos-hedonicos/index.html#duas-advertências-distintas",
+    "href": "aulas/12-precos-hedonicos/index.html#duas-advertências-distintas",
     "title": "Preços Hedônicos",
-    "section": "As duas advertências, e elas são diferentes",
-    "text": "As duas advertências, e elas são diferentes\n\n\n\n\n\n\n\n\n\n\nproblema\ncomo se ataca\n\n\n\n\nInterpretação\n\\(\\hat{\\alpha }\\) é o preço implícito no ponto médio, e não a demanda por \\(q\\)\nreconhecer que a medida é local e não extrapolar\n\n\nIdentificação\no que está no \\(\\varepsilon\\) pode andar junto com \\(q\\)\nachar variação em \\(q\\) que seja quase aleatória\n\n\n\n\n\nO primeiro é um problema de leitura, e existe mesmo com dados perfeitos.\nO segundo é um problema de dados, e é o que derruba a maioria das estimativas hedônicas.\nA alternativa (c) da votação de abertura é sobre o segundo."
+    "section": "Duas advertências distintas",
+    "text": "Duas advertências distintas\n\n\n\n\n\n\n\n\n\n\nproblema\ntratamento\n\n\n\n\nInterpretação\n\\(\\hat{\\alpha }\\) é o preço implícito no ponto médio, não a demanda por \\(q\\)\ntratar a medida como local; não extrapolar\n\n\nIdentificação\nvariáveis omitidas em \\(\\varepsilon\\) podem ser correlacionadas com \\(q\\)\nbuscar variação em \\(q\\) quase aleatória\n\n\n\n\n\nA primeira é um problema de interpretação: existe mesmo com dados perfeitos.\nA segunda é um problema de identificação: compromete a maioria das estimativas hedônicas.\nA alternativa (c) da votação inicial refere-se à segunda."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-i",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-i",
     "title": "Preços Hedônicos",
     "section": "Aplicação I",
-    "text": "Aplicação I\n\n(Ramírez-Juidías et al. 2022) estudam disposição a pagar para morar próximo a áreas verdes em Sevilha.\n\n\nMil anúncios de imóveis da cidade, com preço, área útil, número de cômodos, idade e banheiros.\nA variável ambiental é o tamanho da área verde próxima, medida com um sistema de informação geográfica."
+    "text": "Aplicação I\n\n(Ramírez-Juidías et al. 2022) estudam disposição a pagar para morar próximo a áreas verdes em Sevilha.\n\n\nDados: mil anúncios de imóveis da cidade (preço, área útil, cômodos, idade, banheiros).\nVariável ambiental: tamanho da área verde próxima, medida por sistema de informação geográfica."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-i-1",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-i-1",
     "title": "Preços Hedônicos",
     "section": "Aplicação I",
-    "text": "Aplicação I\n\nProximidade a áreas verdes aumenta valor da propriedade.\nCoeficiente é medida de disposição marginal a pagar por áreas verdes.\nO trabalho compara várias formas funcionais, e quais variáveis importam depende do modelo escolhido.\nIsso é uma pista do que vem nas próximas aplicações: a fragilidade não está na teoria, está no que sobra no erro."
+    "text": "Aplicação I\n\nProximidade a áreas verdes aumenta valor da propriedade.\nCoeficiente é medida de disposição marginal a pagar por áreas verdes.\nO trabalho compara diversas formas funcionais. A significância das variáveis depende do modelo escolhido.\nIsso antecipa as próximas aplicações: a fragilidade não está na teoria, mas no que permanece no termo de erro."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-ii",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-ii",
     "title": "Preços Hedônicos",
     "section": "Aplicação II",
-    "text": "Aplicação II\n\n(Sen Chakraborty et al. 2023) analisam o valor de estruturas para conter erosão do solo, na Nigéria.\n\n\nEfeito no preço dos lotes agrícolas.\nMede-se como esse valor varia dependendo da exposição dos lotes a climas mais úmidos.\n\nMais chuvas causam mais erosão, elevando o valor de tecnologias adaptativas.\n\nDados de valor da terra declarados pelos próprios domicílios, na pesquisa de padrão de vida da Nigéria de 2015-2016 e 2018-2019."
+    "text": "Aplicação II\n\n(Sen Chakraborty et al. 2023) analisam o valor de estruturas para conter erosão do solo, na Nigéria.\n\n\nEfeito no preço dos lotes agrícolas.\nMede-se como esse valor varia dependendo da exposição dos lotes a climas mais úmidos.\n\nMais chuvas causam mais erosão, elevando o valor de tecnologias adaptativas.\n\nDados: valor da terra declarado pelos domicílios na pesquisa de padrão de vida da Nigéria (2015-2016 e 2018-2019)."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-ii-1",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-ii-1",
     "title": "Preços Hedônicos",
     "section": "Aplicação II",
-    "text": "Aplicação II\n\nControle de erosão tem valor maior em regiões com chuvas mais intensas.\nO preço implícito estimado é de cerca de 26% do valor médio da terra, o equivalente a meio ano de renda de um domicílio agrícola nigeriano.\nEm locais com chuvas extremas, não parece haver efeito. Por quê?\n\nPode ser que controle de erosão seja impraticável nessas áreas.\n\n\n\nRepare que o preço implícito varia com o contexto. É exatamente o que a figura do cardápio previa: a inclinação não é um número só."
+    "text": "Aplicação II\n\nControle de erosão tem valor maior em regiões com chuvas mais intensas.\nPreço implícito estimado: cerca de 26% do valor médio da terra, equivalente a meio ano de renda de um domicílio agrícola.\nEm locais com chuvas extremas, não parece haver efeito. Por quê?\n\nPode ser que controle de erosão seja impraticável nessas áreas.\n\n\n\nO preço implícito varia com o contexto, como prevê o modelo: a inclinação de \\(P(q)\\) não é constante."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii",
     "title": "Preços Hedônicos",
     "section": "Aplicação III",
-    "text": "Aplicação III\n\n(Greenstone e Gallagher 2008) estudam disposição a pagar por morar perto de locais de descarte de lixo tóxico.\n\n\nExploram uma política de limpeza desses locais implementada na década de 1980 nos EUA, o programa Superfund.\nIdeia é que locais afetados pela limpeza experimentariam aumento de preço do imóvel.\nEste aumento poderia ser atribuído à eliminação da externalidade negativa.\nAté 2000, cerca de US$ 30 bilhões já tinham sido gastos em limpezas, a um custo médio de US$ 43 milhões por local."
+    "text": "Aplicação III\n\n(Greenstone e Gallagher 2008) estudam disposição a pagar por morar perto de locais de descarte de lixo tóxico.\n\n\nExploram uma política de limpeza desses locais implementada na década de 1980 nos EUA, o programa Superfund.\nIdeia é que locais afetados pela limpeza experimentariam aumento de preço do imóvel.\nEste aumento poderia ser atribuído à eliminação da externalidade negativa.\nAté 2000, foram gastos cerca de US$ 30 bilhões em limpezas, com custo médio de US$ 43 milhões por local."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-1",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii-1",
     "title": "Preços Hedônicos",
     "section": "Aplicação III",
-    "text": "Aplicação III\n\nAutores fazem primeiro uma regressão de preços hedônicos baseada na distância aos lixões tóxicos.\nEncontram que a limpeza aumentaria preço em cerca de 7%.\n\nApós controlar pelas características dos imóveis.\n\n\n\nÉ a estimativa que o modelo desta aula manda fazer, feita com cuidado. Ela parece resolver a questão."
+    "text": "Aplicação III\n\nAutores fazem primeiro uma regressão de preços hedônicos baseada na distância aos lixões tóxicos.\nEncontram que a limpeza aumentaria preço em cerca de 7%.\n\nApós controlar pelas características dos imóveis.\n\n\n\nTrata-se exatamente da estimativa prescrita pelo modelo desta aula. A questão parece resolvida."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-2",
@@ -315,60 +315,60 @@
     "text": "Aplicação III\n\nAproveitam o fato de que a política criou quase-aleatoriedades.\n\nAlguns locais foram “tratados” antes dos outros por conta de regra arbitrária.\n\nCom orçamento limitado, a Environmental Protection Agency (EPA) dos EUA selecionou os 400 locais de descarte de lixo tóxico mais perigosos.\n\nEstes locais foram priorizados para limpeza, deixando os outros para depois.\nSão locais que receberam uma nota 28,5 ou mais na escala criada pela EPA.\n\nIdeia é comparar locais priorizados com os outros.\n\nProvavelmente, são mais comparáveis do que locais que não precisam de limpeza."
   },
   {
-    "objectID": "aulas/12-precos-hedonicos/index.html#o-desenho-e-o-que-ele-achou",
-    "href": "aulas/12-precos-hedonicos/index.html#o-desenho-e-o-que-ele-achou",
+    "objectID": "aulas/12-precos-hedonicos/index.html#desenho-de-descontinuidade-e-resultado",
+    "href": "aulas/12-precos-hedonicos/index.html#desenho-de-descontinuidade-e-resultado",
     "title": "Preços Hedônicos",
-    "section": "O desenho, e o que ele achou",
-    "text": "O desenho, e o que ele achou\n\n\n\n\nÀ esquerda, o que uma descontinuidade encontraria se a limpeza valorizasse os imóveis: um salto no corte de 28,5.\nÀ direita, o que os autores encontram: nada que se distinga de zero."
+    "section": "Desenho de descontinuidade e resultado",
+    "text": "Desenho de descontinuidade e resultado\n\n\n\n\nÀ esquerda, o resultado esperado caso a limpeza valorizasse os imóveis: um salto no corte de 28,5.\nÀ direita, o resultado dos autores: nenhum salto distinguível de zero."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#aplicação-iii-4",
     "href": "aulas/12-precos-hedonicos/index.html#aplicação-iii-4",
     "title": "Preços Hedônicos",
     "section": "Aplicação III",
-    "text": "Aplicação III\n\nCom abordagem mais robusta, encontram efeitos de cerca de 4%.\nCom RDD, efeito local fica em torno de 2%.\nE nenhum dos dois é estatisticamente distinguível de zero. Quase duas décadas depois, não se rejeita que a limpeza não teve efeito nenhum sobre o preço.\nOs benefícios medidos pelo mercado imobiliário ficam bem abaixo dos US$ 43 milhões de custo médio por limpeza."
+    "text": "Aplicação III\n\nCom abordagem mais robusta, encontram efeitos de cerca de 4%.\nCom RDD, efeito local fica em torno de 2%.\nNenhuma das duas estimativas é estatisticamente diferente de zero. Não se rejeita a hipótese de efeito nulo da limpeza sobre o preço, mesmo duas décadas depois.\nOs benefícios captados pelo mercado imobiliário ficam muito abaixo do custo médio de US$ 43 milhões por limpeza."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#o-que-aconteceu-com-os-7",
     "href": "aulas/12-precos-hedonicos/index.html#o-que-aconteceu-com-os-7",
     "title": "Preços Hedônicos",
     "section": "O que aconteceu com os 7%",
-    "text": "O que aconteceu com os 7%\n\nOs 7% da primeira regressão não eram o valor do lixão: eram tudo o que anda junto com um lixão e não estava nos controles.\nO corte de 28,5 substitui a comparação “perto de lixão contra longe de lixão” por “quase entrou na lista contra entrou raspando”.\nIsso não diz que preços hedônicos não funcionam. Diz que \\(\\hat{\\alpha }\\) só vale quando a variação em \\(q\\) não carrega mais nada junto.\nE há uma leitura alternativa, que os autores levantam: talvez os moradores simplesmente não acreditassem que a limpeza tivesse reduzido o risco."
+    "text": "O que aconteceu com os 7%\n\nOs 7% da primeira regressão não mediam o valor da limpeza. Capturavam o que se correlaciona com a proximidade do lixão e não estava nos controles.\nO corte de 28,5 substitui a comparação “perto contra longe do lixão” por “logo acima contra logo abaixo do corte”.\nIsso não invalida o método de preços hedônicos. Mostra que \\(\\hat{\\alpha }\\) só é válido se a variação em \\(q\\) não for correlacionada com outros determinantes do preço.\nLeitura alternativa, levantada pelos autores: os moradores talvez não acreditassem que a limpeza tivesse reduzido o risco."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#exercício-quem-compra-qual-apartamento",
     "href": "aulas/12-precos-hedonicos/index.html#exercício-quem-compra-qual-apartamento",
     "title": "Preços Hedônicos",
     "section": "Exercício: quem compra qual apartamento",
-    "text": "Exercício: quem compra qual apartamento\n\nOs seis apartamentos do começo da aula, com o preço em R$ mil. Quatro compradores, cada um valorizando cada ponto de qualidade do ar em \\(s\\) mil reais, sempre o mesmo valor.\n\n\n\n\n\n\\(q\\)\n0\n2\n4\n6\n8\n10\n\n\n\n\nPreço\n300\n304\n316\n336\n364\n400\n\n\n\n\n\n(a) Com \\(s = 4, 8, 12\\) e \\(16\\), qual apartamento cada um leva?\n(b) O comprador com \\(s=12\\) está em qual apartamento? Vale a pena ele subir para \\(q=8\\)?\n(c) Você regride preço contra \\(q\\) nos seis apartamentos. Que inclinação obtém?\n(d) Essa inclinação é a disposição marginal a pagar de quem?"
+    "text": "Exercício: quem compra qual apartamento\n\nConsidere os seis apartamentos do início da aula (preços em R$ mil) e quatro compradores. Cada comprador valoriza cada ponto de qualidade do ar em \\(s\\) mil reais, valor constante.\n\n\n\n\n\n\\(q\\)\n0\n2\n4\n6\n8\n10\n\n\n\n\nPreço\n300\n304\n316\n336\n364\n400\n\n\n\n\n\n(a) Com \\(s = 4, 8, 12\\) e \\(16\\), qual apartamento cada um leva?\n(b) Em qual apartamento está o comprador com \\(s=12\\)? Vale a pena passar para \\(q=8\\)?\n(c) Estime por MQO o preço contra \\(q\\) nos seis apartamentos. Qual é a inclinação? Lembre que \\(\\hat{\\alpha }=\\dfrac{\\widehat{\\mathrm{Cov}}(q,P)}{\\widehat{\\mathrm{Var}}(q)}=\\dfrac{\\sum_{i}({q}_{i}-\\bar{q})({P}_{i}-\\bar{P})}{\\sum_{i}{({q}_{i}-\\bar{q})}^{2}}\\).\n(d) Essa inclinação é a disposição marginal a pagar de qual comprador?"
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#solução",
     "href": "aulas/12-precos-hedonicos/index.html#solução",
     "title": "Preços Hedônicos",
     "section": "Solução",
-    "text": "Solução\n\n\n\n\n(a) Cada um para onde o degrau do cardápio passa a custar mais do que \\(s\\) vale: \\(q = 2, 4, 6\\) e \\(8\\), a 304, 316, 336 e 364.\n(b) Ele está em \\(q=6\\). Subir para 8 lhe entrega \\(12\\times 2=24\\) e custa \\(364-336=28\\). Não vale, e ele fica onde está.\n(c) A inclinação de MQO é exatamente 10.\n(d) De ninguém desses quatro. É o preço implícito em \\(q=5\\), e nenhum comprador está lá."
+    "text": "Solução\n\n\n\n\n(a) Cada comprador sobe enquanto o acréscimo de preço for menor que \\(2s\\): \\(q = 2, 4, 6\\) e \\(8\\), a 304, 316, 336 e 364.\n(b) Está em \\(q=6\\). Passar a \\(q=8\\) gera \\(12\\times 2=24\\) e custa \\(364-336=28\\). Não vale a pena.\n(c) Inclinação de MQO: exatamente 10.\n(d) De nenhum dos quatro. É o preço implícito em \\(q=5\\), ponto que nenhum comprador escolheu."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#o-que-o-exercício-mostra",
     "href": "aulas/12-precos-hedonicos/index.html#o-que-o-exercício-mostra",
     "title": "Preços Hedônicos",
     "section": "O que o exercício mostra",
-    "text": "O que o exercício mostra\n\n\n\n\ncomprador\n\\(s\\)\ncompra \\(q\\)\npaga\n\\(P′(q)\\) no ponto dele\n\n\n\n\n1\n4\n2\n304\n4\n\n\n2\n8\n4\n316\n8\n\n\n3\n12\n6\n336\n12\n\n\n4\n16\n8\n364\n16\n\n\nMQO\n\n\n\n10\n\n\n\n\n\nA coluna da direita bate com a de \\(s\\) em todas as linhas: o modelo funciona, e a tangência entrega a disposição marginal a pagar de cada um.\nO 10 da última linha não bate com ninguém, e também não está errado: é a média ponderada dos quatro, e é o que uma regressão linear devolve.\nÉ por isso que o efeito de RDD de Greenstone e Gallagher é local. Ele vale perto do corte, e não para a cidade inteira."
+    "text": "O que o exercício mostra\n\n\n\n\ncomprador\n\\(s\\)\ncompra \\(q\\)\npaga\n\\(P′(q)\\) no ponto escolhido\n\n\n\n\n1\n4\n2\n304\n4\n\n\n2\n8\n4\n316\n8\n\n\n3\n12\n6\n336\n12\n\n\n4\n16\n8\n364\n16\n\n\nMQO\n\n\n\n10\n\n\n\n\n\nA última coluna coincide com \\(s\\) em todas as linhas: a tangência revela a disposição marginal a pagar de cada comprador.\nO 10 da linha de MQO não corresponde a nenhum comprador, mas não está errado: é a média que a regressão linear devolve.\nPor isso o efeito de RDD em Greenstone e Gallagher é local: vale perto do corte, não para a cidade inteira."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#voltando-à-pergunta-da-abertura",
     "href": "aulas/12-precos-hedonicos/index.html#voltando-à-pergunta-da-abertura",
     "title": "Preços Hedônicos",
     "section": "Voltando à pergunta da abertura",
-    "text": "Voltando à pergunta da abertura\n\nO apartamento perto do parque custa 15% mais. O que esses 15% medem?\n\n\n\nSe a proximidade do parque fosse a única coisa diferente entre os dois imóveis, a resposta seria (a): a disposição marginal a pagar de quem escolheu morar ali.\nNunca seria (b): a média da cidade exigiria conhecer as curvas de lance de todo mundo, e a regressão só entrega tangências.\nNa prática, quase sempre é (c) em parte, e o resto da aula foi sobre como saber quanto."
+    "text": "Voltando à pergunta da abertura\n\nO apartamento perto do parque custa 15% mais. O que esses 15% medem?\n\n\n\nSe a proximidade do parque fosse a única diferença entre os imóveis, a resposta seria (a): a disposição marginal a pagar de quem escolheu morar ali.\nNunca seria (b): a média da cidade exigiria conhecer as curvas de lance de todos os moradores. A regressão revela apenas tangências.\nNa prática, a resposta é quase sempre (c), em parte."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#concluindo",
     "href": "aulas/12-precos-hedonicos/index.html#concluindo",
     "title": "Preços Hedônicos",
     "section": "Concluindo",
-    "text": "Concluindo\n\nA função de preços hedônicos \\(P(x,q)\\) é o cardápio do mercado, e é a envoltória das curvas de lance e de oferta.\nSua inclinação em cada ponto iguala a disposição marginal a pagar de quem comprou ali com o custo marginal de quem vendeu.\nEstimar \\(\\hat{\\alpha }\\) dá o preço implícito médio, que é uma medida local e não a curva de demanda por qualidade ambiental.\nE \\(\\hat{\\alpha }\\) só mede o bem ambiental se a variação em \\(q\\) não vier acompanhada de outra coisa, o que quase nunca é verdade sem um desenho de pesquisa.\nCom os três métodos das duas aulas (complementares, substitutos e diferenciados), o dano marginal do modelo de custos e danos deixa de ser hipótese e passa a ser estimativa.\nFica a pergunta: e quando não há mercado nenhum onde procurar, nem viagem, nem filtro, nem imóvel?"
+    "text": "Concluindo\n\nA função de preços hedônicos \\(P(x,q)\\) é a envoltória das curvas de lance e de oferta.\nEm cada ponto, sua inclinação iguala a disposição marginal a pagar do comprador ao custo marginal do vendedor.\n\\(\\hat{\\alpha }\\) estima o preço implícito médio: medida local, não a curva de demanda por qualidade ambiental.\n\\(\\hat{\\alpha }\\) só mede o valor do bem ambiental se a variação em \\(q\\) não for correlacionada com outros determinantes do preço.\nOs três métodos (complementares, substitutos, diferenciados) permitem estimar o dano marginal do modelo de custos e danos."
   },
   {
     "objectID": "aulas/12-precos-hedonicos/index.html#referências",

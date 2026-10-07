@@ -12,7 +12,7 @@
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
     </marker>
   </defs>
-  <text x="178.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">O que o desenho procura</text>
+  <text x="178.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Se a limpeza valorizasse os imóveis</text>
   <line x1="58.0" y1="288.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="58.0" y1="288.0" x2="338.0" y2="288.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <text x="346.0" y="294.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">HRS</text>
@@ -90,7 +90,7 @@
   <text x="174.2" y="191.6" font-size="15" fill="#1b3a5c" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">salto</text>
   <text x="157.2" y="81.5" font-size="15" fill="#c8d0d8" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">não limpa</text>
   <text x="168.5" y="81.5" font-size="15" fill="#6A3D9A" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">limpa</text>
-  <text x="534.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">O que Greenstone e Gallagher acham</text>
+  <text x="534.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Resultado de Greenstone e Gallagher</text>
   <line x1="414.0" y1="288.0" x2="414.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <line x1="414.0" y1="288.0" x2="694.0" y2="288.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
   <text x="702.0" y="294.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">HRS</text>
@@ -163,6 +163,6 @@
   <line x1="518.8" y1="288.0" x2="518.8" y2="54.0" stroke="#1b3a5c" stroke-width="1.6" stroke-dasharray="6 4"/>
   <text x="513.2" y="81.5" font-size="15" fill="#c8d0d8" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">não limpa</text>
   <text x="524.5" y="81.5" font-size="15" fill="#6A3D9A" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">limpa</text>
-  <text x="382.0" y="362.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">esquema, e não os dados do paper: os dois painéis</text>
-  <text x="382.0" y="382.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">mostram o que o desenho encontraria em cada caso</text>
+  <text x="382.0" y="362.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">esquema ilustrativo, não os dados do artigo: cada</text>
+  <text x="382.0" y="382.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">painel mostra um resultado possível do desenho</text>
 </svg>
