@@ -2,7 +2,7 @@
 title: "Preços Hedônicos"
 subtitle: "EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais"
 author: "Rafael Pucci"
-date: "2026-09-24"
+date: "2026-10-08"
 lang: pt
 format:
   revealjs:
@@ -26,19 +26,19 @@ editor:
 ## Um apartamento perto do parque custa 15% mais
 
 ::: {.no-bullet}
-Dois apartamentos, mesma metragem, mesmo número de quartos, mesmo andar. Um
-fica a 500 metros de um parque e custa 15% mais caro que o outro. O que esses
-15% medem?
+Considere dois apartamentos com a mesma metragem, o mesmo número de quartos e o mesmo
+andar. Um está a 500 metros de um parque e custa 15% mais que o outro. O que
+esses 15% medem?
 :::
 
 ::: {.opcoes}
-**(a)** A disposição a pagar pelo parque de quem comprou o apartamento perto
-dele.
+**(a)** A disposição a pagar pelo parque de quem comprou o apartamento mais
+próximo.
 
 **(b)** A disposição a pagar média da cidade pelo parque.
 
-**(c)** Nada em particular: bairros com parque costumam ser melhores em tudo, e
-os 15% podem ser as outras coisas.
+**(c)** Nada em particular: bairros com parque tendem a ser melhores em outros
+atributos, que também entram nos 15%.
 :::
 
 ## Aula Passada
@@ -86,18 +86,18 @@ Referência: Phaneuf e Requate, caps. 15 e 18
 :::
 
 ::: {.step .now}
-**3. Diferenciados.** O valor do ar aparece **dentro** do preço do apartamento,
-que já tem mercado.
+**3. Diferenciados.** O valor do ar está **embutido** no preço do apartamento,
+que tem mercado próprio.
 :::
 
 ::: {.step .now}
-**4. E daí o problema é outro:** separar o que é o ar do que é o bairro.
+**4. Novo problema:** separar o efeito do ar do efeito do bairro.
 :::
 ::::::
 
 ## Bens com Qualidade Diferenciada {.section-cover}
 
-## Bens com Qualidade Diferenciada
+## Bens com Qualidade Diferenciada {style="font-size:0.94em"}
 
 ::: {.no-bullet}
 Estudaremos agora o caso em que o bem ambiental afeta o preço do bem privado.
@@ -133,9 +133,10 @@ No que segue, trataremos de um modelo teórico para fundamentar o **modelo
 empírico de preços hedônicos**.
 :::
 
-- Na aula passada, o gasto com a viagem e o gasto com o purificador eram pistas
-  **ao lado** do bem ambiental.
-- Aqui o bem ambiental está **dentro** do preço, e a tarefa é extraí-lo de lá.
+- Na aula passada, o valor do bem ambiental era inferido do gasto com um bem
+  relacionado (viagem, purificador).
+- Agora o bem ambiental está **embutido** no preço do imóvel. A tarefa é
+  isolá-lo.
 
 ## Distribuição Observada
 
@@ -149,48 +150,48 @@ Preço por metro quadrado (valor venal) em 2019 e distância ao Ibirapuera.
 
 ## Distribuição Observada
 
-- O preço cai com a distância ao parque, e a queda é bem visível.
-- **Mas por quê?** O parque em si, ou o que costuma vir junto com um parque?
-- [Segurança, escola, metrô, restaurante, vizinho rico.]{.fragment fragment-index=1}
-- [Esse é o problema da aula inteira, e vamos precisar do modelo antes de
-  atacá-lo.]{.fragment fragment-index=2}
+- O preço por metro quadrado cai com a distância ao parque.
+- **Mas por quê?** Pelo parque ou pelo que costuma acompanhá-lo?
+- [Segurança, escolas, metrô, comércio, renda da
+  vizinhança.]{.fragment fragment-index=1}
+- [Esse é o problema central da aula. Antes de enfrentá-lo, precisamos de um
+  modelo.]{.fragment fragment-index=2}
 
 ## Seis apartamentos e uma tabela de preços
 
 ::: {.diagram}
-![](../_assets/figuras/12-menu-1.svg){style="height:430px;max-height:430px"}
+![](../_assets/figuras/12-menu-1.svg){style="height:360px;max-height:360px"}
 :::
 
-- Para montar a intuição, um mercado de brinquedo: seis apartamentos idênticos
-  em tudo, menos na qualidade do ar $q$ do quarteirão.
-- Os preços estão aí. O que este desenho diz sobre quanto vale o ar limpo?
+- Exemplo: seis apartamentos idênticos, exceto pela qualidade do ar $q$ do
+  quarteirão.
+- O que esses preços dizem sobre o valor do ar limpo?
 
 ## O cardápio do mercado
 
 ::: {.diagram}
-![](../_assets/figuras/12-menu-2.svg){style="height:430px;max-height:430px"}
+![](../_assets/figuras/12-menu-2.svg){style="height:360px;max-height:360px"}
 :::
 
-- Ligando os pontos, sai a **função de preços hedônicos** $P(q)$.
-- Note o que ela faz: dois pontos de qualidade custam R\$ 4 mil embaixo e
-  R\$ 36 mil em cima.
+- Ligando os pontos, obtém-se a **função de preços hedônicos** $P(q)$.
+- O acréscimo de preço cresce com $q$: R\$ 4 mil na base, R\$ 36 mil no topo.
 
-## Parece uma curva de demanda, e não é
+## Parece uma curva de demanda, mas não é
 
 ::: {.no-bullet}
-Se $P(q)$ fosse uma demanda inversa por qualidade do ar, ela estaria dizendo
-que as pessoas pagam **mais** por unidade quanto **mais** ar limpo já têm. Isso
-contraria tudo o que este curso fez desde a aula 02.
+Se $P(q)$ fosse uma demanda inversa por qualidade do ar, as pessoas pagariam
+**mais** por unidade quanto **mais** ar limpo já tivessem. Isso contraria a
+teoria do consumidor vista desde a aula 02.
 :::
 
-- $P(q)$ **não é** a demanda de ninguém, nem a oferta de ninguém.
-- $P(q)$ **é** o cardápio: o que o mercado cobra hoje por cada nível de $q$.
-- Nenhum comprador e nenhum vendedor escolhe $P(q)$. Todos a tomam como dada e
-  escolhem **um ponto** dela.
+- $P(q)$ **não é** a demanda nem a oferta de nenhum agente.
+- $P(q)$ **é** um cardápio: o preço que o mercado cobra por cada nível de $q$.
+- Compradores e vendedores tomam $P(q)$ como dada e escolhem **um ponto** da
+  curva.
 
 ::: {.no-bullet}
-[O que ela tem de útil é a **inclinação no ponto que alguém
-escolheu**.]{.fragment fragment-index=1}
+[O que interessa é a **inclinação de $P(q)$ no ponto
+escolhido**.]{.fragment fragment-index=1}
 :::
 
 ## O cardápio do café
@@ -202,11 +203,11 @@ Você pede o médio.
 
 - O cardápio tem inclinação crescente: o segundo aumento de tamanho custa mais
   que o primeiro.
-- Isso não diz nada sobre o seu apetite. Diz sobre a padaria.
-- [O que a **sua escolha** revela: passar de pequeno a médio vale mais de R\$ 2
-  para você, e passar de médio a grande vale menos de R\$ 3.]{.fragment fragment-index=1}
-- [É exatamente isso que o modelo hedônico faz, com apartamentos no lugar de
-  cafés e ar limpo no lugar de mililitros.]{.fragment fragment-index=2}
+- Isso descreve a padaria, não o seu apetite.
+- [A **sua escolha** revela: de pequeno para médio vale mais de R\$ 2; de médio
+  para grande, menos de R\$ 3.]{.fragment fragment-index=1}
+- [O modelo hedônico segue a mesma lógica: apartamentos no lugar de cafés,
+  qualidade do ar no lugar de mililitros.]{.fragment fragment-index=2}
 
 ## Premissas
 
@@ -244,7 +245,11 @@ $$\max_{x,q,z} U(x,q,z,s) \text{ s.a. } y=P\left(x,q\right)+z$$
 - Condições de primeira ordem são:
 
 ::: {.eq-block}
-$$\frac{\partial U\left(x,q,z,s\right)}{\partial {x}_{j}}=\lambda \frac{\partial P\left(x,q\right)}{\partial {x}_{j}} \qquad \frac{\partial U\left(x,q,z,s\right)}{\partial q}=\lambda \frac{\partial P\left(x,q\right)}{\partial q} \qquad \frac{\partial U\left(x,q,z,s\right)}{\partial z}=\lambda$$
+$$\frac{\partial U\left(x,q,z,s\right)}{\partial {x}_{j}}=\lambda \frac{\partial P\left(x,q\right)}{\partial {x}_{j}} \qquad \frac{\partial U\left(x,q,z,s\right)}{\partial q}=\lambda \frac{\partial P\left(x,q\right)}{\partial q}$$
+:::
+
+::: {.eq-block}
+$$\frac{\partial U\left(x,q,z,s\right)}{\partial z}=\lambda$$
 :::
 
 ## Demanda
@@ -260,9 +265,8 @@ $$\frac{\partial U\left(x,q,z,s\right)/\partial q}{\partial U\left(x,q,z,s\right
 marginal implícito de $q$**.
 :::
 
-- [Esta é a equação da aula inteira, e ela é uma igualdade entre uma coisa que
-  ninguém observa e uma coisa que se estima com dados de
-  cartório.]{.fragment fragment-index=1}
+- [Esta é a equação central da aula: iguala algo não observável a algo que se
+  estima com dados de transações imobiliárias.]{.fragment fragment-index=1}
 
 ## Demanda
 
@@ -318,36 +322,33 @@ nível de referência fixo de utilidade $\overline{u}$.
 ## As curvas de lance do consumidor 1
 
 ::: {.diagram}
-![](../_assets/figuras/12-lance-1.svg){style="height:410px;max-height:410px"}
+![](../_assets/figuras/12-lance-1.svg){style="height:360px;max-height:360px"}
 :::
 
-- Cada curva de lance liga as combinações de $q$ e **gasto com o imóvel** que
-  deixam o consumidor na mesma utilidade.
-- Cuidado com a leitura: o eixo vertical é **gasto**, então curva mais **baixa**
-  é utilidade mais **alta**.
-- A curva mais baixa de todas não é alcançável: nenhum apartamento é vendido
-  por aquele preço.
+- Curva de lance: combinações de $q$ e **gasto com o imóvel** com utilidade
+  constante.
+- O eixo vertical é **gasto**: curva mais **baixa**, utilidade mais **alta**.
+- A curva mais baixa não é alcançável: nenhum imóvel é vendido a esse preço.
 
-## Ele para onde o lance encosta no cardápio
+## A escolha ótima é o ponto de tangência
 
 ::: {.diagram}
-![](../_assets/figuras/12-lance-2.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/12-lance-2.svg){style="height:360px;max-height:360px"}
 :::
 
-- A melhor curva alcançável é a que **tangencia** o cardápio, e a tangência é a
-  escolha: $q=4$, ao preço de R\$ 316 mil.
-- No ponto de tangência, $\partial b/\partial q = \partial P/\partial q = 8$.
-- É a mesma equação do slide anterior, agora como um desenho.
+- A melhor curva alcançável **tangencia** $P(q)$: $q=4$, a R\$ 316 mil.
+- Na tangência, $\partial b/\partial q = \partial P/\partial q = 8$: a
+  condição de primeira ordem em forma gráfica.
 
-## Dois consumidores, dois pontos, o mesmo cardápio
+## Dois consumidores, a mesma função de preços
 
 ::: {.diagram}
-![](../_assets/figuras/12-lance-3.svg){style="height:430px;max-height:430px"}
+![](../_assets/figuras/12-lance-3.svg){style="height:360px;max-height:360px"}
 :::
 
-- O consumidor 2 valoriza mais a qualidade do ar, e por isso encosta no cardápio
-  mais adiante: $q=6$, a R\$ 336 mil.
-- Os dois enfrentam **o mesmo** cardápio e leem dele números diferentes: 8 e 12.
+- O consumidor 2 valoriza mais a qualidade do ar. Escolhe $q=6$, a R\$ 336 mil.
+- Ambos enfrentam a **mesma** $P(q)$, mas as inclinações nos pontos escolhidos
+  diferem: 8 e 12.
 
 ## Oferta {.section-cover}
 
@@ -380,22 +381,21 @@ $$\overline{\Pi }=\theta -C(x,q,v)$$
 $$\frac{\partial \theta \left(x,q,v,\overline{\Pi }\right)}{\partial q}=\frac{\partial P}{\partial q}=\frac{\partial C}{\partial q}$$
 :::
 
-## As curvas de oferta encostam por cima
+## Oferta: tangência por cima
 
 ::: {.diagram}
-![](../_assets/figuras/12-oferta.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/12-oferta.svg){style="height:360px;max-height:360px"}
 :::
 
-- $\theta$ é o que a firma precisa **receber** para manter o lucro, então curva
-  mais **alta** é lucro mais **alto**.
-- A melhor alcançável é, de novo, a tangente: a firma 1 entrega $q=4$ e a firma
-  2 entrega $q=6$.
-- É a imagem espelhada da página anterior.
+- $\theta$ é o valor que a firma precisa **receber**: curva mais **alta**,
+  lucro mais **alto**.
+- Novamente, a melhor curva alcançável é a tangente: a firma 1 oferta $q=4$; a
+  firma 2, $q=6$.
 
 ## Pontos de Equilíbrio
 
-- Os pontos onde há transação entre, por exemplo, o indivíduo 1 e a firma 1 é
-  dado por:
+- O ponto onde há transação entre, por exemplo, o indivíduo 1 e a firma 1 é
+  dado por
 
 ::: {.eq-block}
 $$\frac{\partial b\left(x,q,y,{s}_{1},{u}^{0}\right)}{\partial q}=\frac{\partial \theta \left(x,q,{v}_{1},{\Pi }^{0} \right)}{\partial q}$$
@@ -404,28 +404,25 @@ $$\frac{\partial b\left(x,q,y,{s}_{1},{u}^{0}\right)}{\partial q}=\frac{\partial
 - Esse ponto vai estar associado a um determinado nível de $q={q}_{1}$.
   - E a um valor $P(x,{q}_{1})$ pago pelo imóvel que tem $q={q}_{1}$.
 
-## O cardápio é o que sobra
+## $P(q)$ é uma envoltória
 
 ::: {.diagram}
-![](../_assets/figuras/12-equilibrio.svg){style="height:420px;max-height:420px"}
+![](../_assets/figuras/12-equilibrio.svg){style="height:360px;max-height:360px"}
 :::
 
-- Cada comprador encosta por baixo, cada vendedor encosta por cima, e o cardápio
-  passa exatamente por todos os pontos de encosto.
-- **Ninguém escolheu $P(q)$.** Ela é a curva que faz todas as tangências valerem
-  ao mesmo tempo, e o nome disso é envoltória [@rosen1974].
+- Compradores tangenciam $P(q)$ por baixo; vendedores, por cima.
+- **Nenhum agente escolhe $P(q)$.** Ela é a envoltória que torna todas as
+  tangências compatíveis [@rosen1974].
 
-## O cardápio e a inclinação dele
+## A função de preços e sua inclinação
 
 ::: {.diagram}
-![](../_assets/figuras/12-implicito.svg){style="height:410px;max-height:410px"}
+![](../_assets/figuras/12-implicito.svg){style="height:360px;max-height:360px"}
 :::
 
-- À direita está $P′(q)$, o preço implícito de um ponto a mais de qualidade.
-- Ela sobe, e **ninguém anda sobre ela**: cada consumidor ocupa um ponto só, e é
-  o dele.
-- A demanda de cada consumidor por $q$, aqui, é **horizontal**. A reta que sobe
-  é a fila de consumidores, ordenada por quanto valorizam o ar limpo.
+- $P′(q)$: preço implícito de um ponto adicional de qualidade.
+- A demanda individual por $q$ é **horizontal**. A reta crescente apenas ordena
+  os consumidores pela valoração do ar limpo.
 
 ## Estimando Disposição Marginal a Pagar {.section-cover}
 
@@ -466,31 +463,31 @@ $${\hat{p}}_{i}={\hat{\beta }}_{0}+\sum_{j=1}^{J} {\hat{\beta }}_{j}{x}_{j}+\hat
 
 - E $\hat{\alpha }$ é a estimativa da disposição marginal a pagar por $q$.
 
-## De quem, exatamente?
+## De quem é essa disposição a pagar?
 
 ::: {.diagram}
-![](../_assets/figuras/12-regressao.svg){style="height:410px;max-height:410px"}
+![](../_assets/figuras/12-regressao.svg){style="height:360px;max-height:360px"}
 :::
 
-- Rodando o MQO nos seis apartamentos do começo da aula, sai exatamente **10**.
-- Mas o preço por ponto de qualidade vai de 2 a 18 ao longo da tabela, e 10 é o
-  valor em $q=5$, o meio da amostra.
-- $\hat{\alpha }$ é uma **média**, e ela é a disposição marginal a pagar de
-  quem escolheu o meio do cardápio.
+- MQO nos seis apartamentos do exemplo: $\hat{\alpha }=10$, exatamente.
+- $\hat{\alpha }$ é uma **média**: o preço implícito em $q=5$, o meio da
+  amostra.
 
-## As duas advertências, e elas são diferentes
+## Duas advertências distintas
 
 ::: {.cmp}
-| | problema | como se ataca |
+| | problema | tratamento |
 |---|---|---|
-| Interpretação | $\hat{\alpha }$ é o preço implícito no ponto médio, e não a demanda por $q$ | reconhecer que a medida é local e não extrapolar |
-| Identificação | o que está no $\varepsilon$ pode andar junto com $q$ | achar variação em $q$ que seja quase aleatória |
+| Interpretação | $\hat{\alpha }$ é o preço implícito no ponto médio, não a demanda por $q$ | tratar a medida como local; não extrapolar |
+| Identificação | variáveis omitidas em $\varepsilon$ podem ser correlacionadas com $q$ | buscar variação em $q$ quase aleatória |
 :::
 
-- O primeiro é um problema de **leitura**, e existe mesmo com dados perfeitos.
-- O segundo é um problema de **dados**, e é o que derruba a maioria das
+- A primeira é um problema de **interpretação**: existe mesmo com dados
+  perfeitos.
+- A segunda é um problema de **identificação**: compromete a maioria das
   estimativas hedônicas.
-- [A alternativa (c) da votação de abertura é sobre o segundo.]{.fragment fragment-index=1}
+- [A alternativa (c) da votação inicial refere-se à
+  segunda.]{.fragment fragment-index=1}
 
 ## Aplicação I
 
@@ -499,19 +496,19 @@ $${\hat{p}}_{i}={\hat{\beta }}_{0}+\sum_{j=1}^{J} {\hat{\beta }}_{j}{x}_{j}+\hat
 Sevilha.
 :::
 
-- Mil anúncios de imóveis da cidade, com preço, área útil, número de cômodos,
-  idade e banheiros.
-- A variável ambiental é o tamanho da área verde próxima, medida com um sistema
-  de informação geográfica.
+- Dados: mil anúncios de imóveis da cidade (preço, área útil, cômodos, idade,
+  banheiros).
+- Variável ambiental: tamanho da área verde próxima, medida por sistema de
+  informação geográfica.
 
 ## Aplicação I
 
 - Proximidade a áreas verdes aumenta valor da propriedade.
 - Coeficiente é medida de disposição marginal a pagar por áreas verdes.
-- [O trabalho compara várias formas funcionais, e quais variáveis importam
+- [O trabalho compara diversas formas funcionais. A significância das variáveis
   depende do modelo escolhido.]{.fragment fragment-index=1}
-- [Isso é uma pista do que vem nas próximas aplicações: a fragilidade não está
-  na teoria, está no que sobra no erro.]{.fragment fragment-index=2}
+- [Isso antecipa as próximas aplicações: a fragilidade não está na teoria, mas
+  no que permanece no termo de erro.]{.fragment fragment-index=2}
 
 ## Aplicação II
 
@@ -524,20 +521,20 @@ Nigéria.
 - Mede-se como esse valor varia dependendo da exposição dos lotes a climas mais
   úmidos.
   - Mais chuvas causam mais erosão, elevando o valor de tecnologias adaptativas.
-- Dados de valor da terra declarados pelos próprios domicílios, na pesquisa de
-  padrão de vida da Nigéria de 2015-2016 e 2018-2019.
+- Dados: valor da terra declarado pelos domicílios na pesquisa de padrão de
+  vida da Nigéria (2015-2016 e 2018-2019).
 
 ## Aplicação II
 
 - Controle de erosão tem valor maior em regiões com chuvas mais intensas.
-- O preço implícito estimado é de cerca de **26% do valor médio da terra**, o
-  equivalente a meio ano de renda de um domicílio agrícola nigeriano.
+- Preço implícito estimado: cerca de **26% do valor médio da terra**,
+  equivalente a meio ano de renda de um domicílio agrícola.
 - Em locais com chuvas extremas, não parece haver efeito. Por quê?
   - Pode ser que controle de erosão seja impraticável nessas áreas.
 
 ::: {.no-bullet}
-[Repare que o preço implícito **varia com o contexto**. É exatamente o que a
-figura do cardápio previa: a inclinação não é um número só.]{.fragment fragment-index=1}
+[O preço implícito **varia com o contexto**, como prevê o modelo: a inclinação
+de $P(q)$ não é constante.]{.fragment fragment-index=1}
 :::
 
 ## Aplicação III
@@ -552,8 +549,8 @@ descarte de lixo tóxico.
 - Ideia é que locais afetados pela limpeza experimentariam aumento de preço do
   imóvel.
 - Este aumento poderia ser atribuído à eliminação da externalidade negativa.
-- [Até 2000, cerca de US\$ 30 bilhões já tinham sido gastos em limpezas, a um
-  custo médio de US\$ 43 milhões por local.]{.fragment fragment-index=1}
+- [Até 2000, foram gastos cerca de US\$ 30 bilhões em limpezas, com custo médio
+  de US\$ 43 milhões por local.]{.fragment fragment-index=1}
 
 ## Aplicação III
 
@@ -563,8 +560,8 @@ descarte de lixo tóxico.
   - Após controlar pelas características dos imóveis.
 
 ::: {.no-bullet}
-É a estimativa que o modelo desta aula manda fazer, feita com cuidado. Ela
-parece resolver a questão.
+Trata-se exatamente da estimativa prescrita pelo modelo desta aula. A questão
+parece resolvida.
 :::
 
 ## Aplicação III
@@ -589,44 +586,44 @@ parece resolver a questão.
   - Provavelmente, são mais comparáveis do que locais que não precisam de
     limpeza.
 
-## O desenho, e o que ele achou
+## Desenho de descontinuidade e resultado
 
 ::: {.diagram}
-![](../_assets/figuras/12-rdd.svg){style="height:430px;max-height:430px"}
+![](../_assets/figuras/12-rdd.svg){style="height:380px;max-height:380px"}
 :::
 
-- À esquerda, o que uma descontinuidade encontraria se a limpeza valorizasse os
-  imóveis: um salto no corte de 28,5.
-- À direita, o que os autores encontram: nada que se distinga de zero.
+- À esquerda, o resultado esperado caso a limpeza valorizasse os imóveis: um
+  salto no corte de 28,5.
+- À direita, o resultado dos autores: nenhum salto distinguível de zero.
 
 ## Aplicação III
 
 - Com abordagem mais robusta, encontram efeitos de cerca de **4%**.
 - Com RDD, efeito local fica em torno de **2%**.
-- [**E nenhum dos dois é estatisticamente distinguível de zero.** Quase duas
-  décadas depois, não se rejeita que a limpeza não teve efeito nenhum sobre o
-  preço.]{.fragment fragment-index=1}
-- [Os benefícios medidos pelo mercado imobiliário ficam **bem abaixo** dos
-  US\$ 43 milhões de custo médio por limpeza.]{.fragment fragment-index=2}
+- [**Nenhuma das duas estimativas é estatisticamente diferente de zero.** Não se
+  rejeita a hipótese de efeito nulo da limpeza sobre o preço, mesmo duas
+  décadas depois.]{.fragment fragment-index=1}
+- [Os benefícios captados pelo mercado imobiliário ficam **muito abaixo** do
+  custo médio de US\$ 43 milhões por limpeza.]{.fragment fragment-index=2}
 
 ## O que aconteceu com os 7%
 
-- Os 7% da primeira regressão não eram o valor do lixão: eram tudo o que anda
-  junto com um lixão e não estava nos controles.
-- O corte de 28,5 substitui a comparação "perto de lixão contra longe de lixão"
-  por "quase entrou na lista contra entrou raspando".
-- [Isso não diz que preços hedônicos não funcionam. Diz que $\hat{\alpha }$ só
-  vale quando a variação em $q$ não carrega mais nada junto.]{.fragment fragment-index=1}
-- [E há uma leitura alternativa, que os autores levantam: talvez os moradores
-  simplesmente não acreditassem que a limpeza tivesse reduzido o
-  risco.]{.fragment fragment-index=2}
+- Os 7% da primeira regressão não mediam o valor da limpeza. Capturavam o que se
+  correlaciona com a proximidade do lixão e não estava nos controles.
+- O corte de 28,5 substitui a comparação "perto contra longe do lixão" por
+  "logo acima contra logo abaixo do corte".
+- [Isso não invalida o método de preços hedônicos. Mostra que $\hat{\alpha }$
+  só é válido se a variação em $q$ não for correlacionada com outros
+  determinantes do preço.]{.fragment fragment-index=1}
+- [Leitura alternativa, levantada pelos autores: os moradores talvez não
+  acreditassem que a limpeza tivesse reduzido o risco.]{.fragment fragment-index=2}
 
-## Exercício: quem compra qual apartamento
+## Exercício: quem compra qual apartamento {style="font-size:0.94em"}
 
 ::: {.no-bullet}
-Os seis apartamentos do começo da aula, com o preço em R\$ mil. Quatro
-compradores, cada um valorizando **cada ponto** de qualidade do ar em $s$ mil
-reais, sempre o mesmo valor.
+Considere os seis apartamentos do início da aula (preços em R\$ mil) e quatro
+compradores. Cada comprador valoriza **cada ponto** de qualidade do ar em $s$
+mil reais, valor constante.
 :::
 
 ::: {.tabela}
@@ -636,30 +633,31 @@ reais, sempre o mesmo valor.
 :::
 
 - **(a)** Com $s = 4, 8, 12$ e $16$, qual apartamento cada um leva?
-- **(b)** O comprador com $s=12$ está em qual apartamento? Vale a pena ele subir
+- **(b)** Em qual apartamento está o comprador com $s=12$? Vale a pena passar
   para $q=8$?
-- **(c)** Você regride preço contra $q$ nos seis apartamentos. Que inclinação
-  obtém?
-- **(d)** Essa inclinação é a disposição marginal a pagar de quem?
+- **(c)** Estime por MQO o preço contra $q$ nos seis apartamentos. Qual é a
+  inclinação? Lembre que
+  $\hat{\alpha }=\dfrac{\widehat{\mathrm{Cov}}(q,P)}{\widehat{\mathrm{Var}}(q)}=\dfrac{\sum_{i}({q}_{i}-\bar{q})({P}_{i}-\bar{P})}{\sum_{i}{({q}_{i}-\bar{q})}^{2}}$.
+- **(d)** Essa inclinação é a disposição marginal a pagar de qual comprador?
 
-## Solução
+## Solução {.smaller}
 
 ::: {.diagram}
-![](../_assets/figuras/12-exercicio.svg){style="max-height:300px"}
+![](../_assets/figuras/12-exercicio.svg){style="height:360px;max-height:360px"}
 :::
 
-- **(a)** Cada um para onde o degrau do cardápio passa a custar mais do que
-  $s$ vale: $q = 2, 4, 6$ e $8$, a 304, 316, 336 e 364.
-- [**(b)** Ele está em $q=6$. Subir para 8 lhe entrega $12\times 2=24$ e custa
-  $364-336=28$. **Não vale**, e ele fica onde está.]{.fragment fragment-index=1}
-- [**(c)** A inclinação de MQO é exatamente **10**.]{.fragment fragment-index=2}
-- [**(d)** De ninguém desses quatro. É o preço implícito em $q=5$, e nenhum
-  comprador está lá.]{.fragment fragment-index=3}
+- **(a)** Cada comprador sobe enquanto o acréscimo de preço for menor que $2s$:
+  $q = 2, 4, 6$ e $8$, a 304, 316, 336 e 364.
+- [**(b)** Está em $q=6$. Passar a $q=8$ gera $12\times 2=24$ e custa
+  $364-336=28$. **Não vale a pena.**]{.fragment fragment-index=1}
+- [**(c)** Inclinação de MQO: exatamente **10**.]{.fragment fragment-index=2}
+- [**(d)** De nenhum dos quatro. É o preço implícito em $q=5$, ponto que nenhum
+  comprador escolheu.]{.fragment fragment-index=3}
 
 ## O que o exercício mostra
 
 ::: {.tabela}
-| comprador | $s$ | compra $q$ | paga | $P′(q)$ no ponto dele |
+| comprador | $s$ | compra $q$ | paga | $P′(q)$ no ponto escolhido |
 |---|---|---|---|---|
 | 1 | 4 | 2 | 304 | 4 |
 | 2 | 8 | 4 | 316 | 8 |
@@ -668,12 +666,12 @@ reais, sempre o mesmo valor.
 | **MQO** | | | | **10** |
 :::
 
-- A coluna da direita bate com a de $s$ em todas as linhas: o modelo funciona, e
-  a tangência entrega a disposição marginal a pagar de cada um.
-- O 10 da última linha não bate com ninguém, e também não está errado: é a média
-  ponderada dos quatro, e é o que uma regressão linear devolve.
-- **É por isso que o efeito de RDD de Greenstone e Gallagher é local.** Ele vale
-  perto do corte, e não para a cidade inteira.
+- A última coluna coincide com $s$ em todas as linhas: a tangência revela a
+  disposição marginal a pagar de cada comprador.
+- O 10 da linha de MQO não corresponde a nenhum comprador, mas não está errado:
+  é a média que a regressão linear devolve.
+- **Por isso o efeito de RDD em Greenstone e Gallagher é local:** vale perto do
+  corte, não para a cidade inteira.
 
 ## Voltando à pergunta da abertura
 
@@ -682,33 +680,28 @@ reais, sempre o mesmo valor.
 :::
 
 ::: {.opcoes}
-- Se a proximidade do parque fosse a única coisa diferente entre os dois
-  imóveis, a resposta seria **(a)**: a disposição marginal a pagar de quem
-  escolheu morar ali.
+- Se a proximidade do parque fosse a única diferença entre os imóveis, a
+  resposta seria **(a)**: a disposição marginal a pagar de quem escolheu morar
+  ali.
 
 - Nunca seria **(b)**: a média da cidade exigiria conhecer as curvas de lance de
-  todo mundo, e a regressão só entrega tangências.
+  todos os moradores. A regressão revela apenas tangências.
 
-- Na prática, quase sempre é **(c)** em parte, e o resto da aula foi sobre como
-  saber quanto.
+- Na prática, a resposta é quase sempre **(c)**, em parte. 
 :::
 
 ## Concluindo
 
-- A função de preços hedônicos $P(x,q)$ é o **cardápio** do mercado, e é a
-  envoltória das curvas de lance e de oferta.
-- Sua inclinação em cada ponto iguala a disposição marginal a pagar de quem
-  comprou ali com o custo marginal de quem vendeu.
-- Estimar $\hat{\alpha }$ dá o preço implícito **médio**, que é uma medida local
-  e não a curva de demanda por qualidade ambiental.
-- E $\hat{\alpha }$ só mede o bem ambiental se a variação em $q$ não vier
-  acompanhada de outra coisa, o que quase nunca é verdade sem um desenho de
-  pesquisa.
-- Com os três métodos das duas aulas (complementares, substitutos e
-  diferenciados), o dano marginal do modelo de custos e danos deixa de ser
-  hipótese e passa a ser estimativa.
-- [Fica a pergunta: e quando não há mercado nenhum onde procurar, nem viagem,
-  nem filtro, nem imóvel?]{.fragment fragment-index=1}
+- A função de preços hedônicos $P(x,q)$ é a **envoltória** das curvas de lance
+  e de oferta.
+- Em cada ponto, sua inclinação iguala a disposição marginal a pagar do
+  comprador ao custo marginal do vendedor.
+- $\hat{\alpha }$ estima o preço implícito **médio**: medida local, não a curva
+  de demanda por qualidade ambiental.
+- $\hat{\alpha }$ só mede o valor do bem ambiental se a variação em $q$ não for
+  correlacionada com outros determinantes do preço.
+- Os três métodos (complementares, substitutos, diferenciados) permitem estimar
+  o dano marginal do modelo de custos e danos.
 
 ## Referências
 

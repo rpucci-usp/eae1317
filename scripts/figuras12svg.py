@@ -147,8 +147,8 @@ def pontos_cardapio(p, cor=COR_DESTAQUE, r=5.0, rotular=True):
 def menu(nome, etapa):
     """etapa 1: so os seis apartamentos. etapa 2: a curva e os degraus."""
     titulos = {
-        1: "Seis apartamentos, iguais em tudo menos na qualidade do ar",
-        2: "A função de preços hedônicos é o cardápio do mercado",
+        1: "Seis apartamentos que diferem apenas na qualidade do ar",
+        2: "A função de preços hedônicos como cardápio do mercado",
     }
     t, p = cardapio(titulos[etapa])
     if etapa == 2:
@@ -165,8 +165,8 @@ def menu(nome, etapa):
     pontos_cardapio(p)
     rod = ("q é um índice de qualidade do ar do quarteirão, de 0 a 10"
            if etapa == 1 else
-           "dois pontos a mais de qualidade custam R$ 4 mil na base da tabela"
-           " e R$ 36 mil no topo")
+           "dois pontos adicionais de qualidade custam R$ 4 mil na base da"
+           " tabela e R$ 36 mil no topo")
     rodape(t, LARG, ALT, rod)
     t.salvar(nome, titulos[etapa])
 
@@ -182,9 +182,9 @@ def _reta_lance(p, s, deslocamento=0.0, cor=COR_Q, larg=2.4, tracejado=None,
 def lance_fig(nome, etapa):
     """1: a familia de curvas de lance. 2: a tangencia. 3: dois consumidores."""
     titulos = {
-        1: "As curvas de lance do consumidor 1, e por que ele quer a de baixo",
-        2: "Ele para onde o lance encosta no cardápio",
-        3: "Dois consumidores, dois pontos, o mesmo cardápio",
+        1: "Curvas de lance do consumidor 1: a mais baixa é a preferida",
+        2: "A escolha ótima é o ponto de tangência",
+        3: "Dois consumidores, a mesma função de preços",
     }
     t, p = cardapio(titulos[etapa])
     curva_cardapio(p)
@@ -198,20 +198,22 @@ def lance_fig(nome, etapa):
         # A seta do "melhor" e o unico jeito de a figura dizer que a ordem das
         # curvas de lance esta invertida em relacao a toda curva de indiferenca
         # que o curso desenhou ate aqui: aqui o eixo vertical e GASTO.
-        p.reta(0.75, 324, 0.75, 294, cor=COR_DESTAQUE, larg=2.2)
+        # O texto fica acima das retas de lance, onde o grafico esta vazio; a
+        # seta sobe ate ele e continua atravessando as curvas para baixo.
+        p.reta(0.75, 364, 0.75, 294, cor=COR_DESTAQUE, larg=2.2)
         p.t.add('<path d="{} {} {} {} {} {}" fill="{}"/>'.format(
             "M", "{:.1f},{:.1f}".format(*p.p(0.75, 289)), "L",
             "{:.1f},{:.1f}".format(*p.p(0.50, 297)), "L",
             "{:.1f},{:.1f}".format(*p.p(1.00, 297)), COR_DESTAQUE))
-        p.texto(1.15, 318, "gasta menos no", cor=COR_DESTAQUE, italico=False)
-        p.texto(1.15, 308, "apartamento, sobra", cor=COR_DESTAQUE,
+        p.texto(1.15, 358, "menor gasto no", cor=COR_DESTAQUE, italico=False)
+        p.texto(1.15, 348, "imóvel: mais renda", cor=COR_DESTAQUE,
                 italico=False)
-        p.texto(1.15, 298, "mais para o resto", cor=COR_DESTAQUE,
+        p.texto(1.15, 338, "para outros bens", cor=COR_DESTAQUE,
                 italico=False)
         p.texto(7.4, lance(7.4, 8) - 13, "b(q, s₁)", cor=COR_Q,
                 negrito=True, ancora="end")
-        rod = ("a curva de lance liga as combinações de q e gasto que deixam"
-               " o consumidor 1 na mesma utilidade")
+        rod = ("curva de lance: combinações de q e gasto que mantêm a"
+               " utilidade do consumidor 1 constante")
     else:
         alvos = ([(8, COR_Q_CLARO)] if etapa == 2
                  else [(8, COR_Q_CLARO), (12, COR_Q)])
@@ -228,20 +230,20 @@ def lance_fig(nome, etapa):
                     "inclinação {}".format(s), cor=cor, negrito=True,
                     italico=False, ancora="middle")
         if etapa == 2:
-            rod = ("no ponto de tangência a inclinação do cardápio é a"
-                   " disposição marginal a pagar do consumidor 1: 8")
+            rod = ("na tangência, a inclinação de P(q) iguala a disposição"
+                   " marginal a pagar do consumidor 1: 8")
         else:
-            rod = ("o consumidor 2 valoriza mais a qualidade, compra q = 6 e"
-                   " paga R$ 336 mil; o cardápio é o mesmo para os dois")
+            rod = ("o consumidor 2 valoriza mais a qualidade: escolhe q = 6"
+                   " por R$ 336 mil, diante da mesma P(q)")
     pontos_cardapio(p, cor=COR_APAGADA, r=3.6, rotular=False)
     rodape(t, LARG, ALT, rod)
     t.salvar(nome, titulos[etapa])
 
 
 def oferta_fig(nome, com_lance):
-    titulo = ("O cardápio é o que sobra quando as duas tangências valem"
+    titulo = ("P(q) é a envoltória das curvas de lance e de oferta"
               if com_lance else
-              "Do lado da oferta, as curvas encostam por cima")
+              "Oferta: as curvas tangenciam P(q) por cima")
     t, p = cardapio(titulo)
     curva_cardapio(p)
     p.texto(10.7, preco(10.5) + 12, "P(q)", cor=COR_EIXO, negrito=True,
@@ -259,11 +261,11 @@ def oferta_fig(nome, com_lance):
             p.texto(s / 2.0 + JANELA - 0.1, lance(s / 2.0 + JANELA, s) - 10,
                     "b(q, s{})".format(sub), cor=cor, negrito=True,
                     ancora="end")
-        rod = ("o comprador 1 fecha com a firma 1 em q = 4 e o comprador 2 com"
-               " a firma 2 em q = 6: nenhum dos quatro escolheu P(q)")
+        rod = ("comprador 1 e firma 1 transacionam em q = 4; comprador 2 e"
+               " firma 2, em q = 6. Nenhum deles escolheu P(q)")
     else:
-        rod = ("θ é o que a firma precisa receber para manter o lucro:"
-               " quanto mais alta a curva, melhor para ela")
+        rod = ("θ é o valor que a firma precisa receber para manter o lucro:"
+               " curva mais alta, lucro mais alto")
     pontos_cardapio(p, cor=COR_APAGADA, r=3.6, rotular=False)
     rodape(t, LARG, ALT, rod)
     t.salvar(nome, titulo)
@@ -282,14 +284,14 @@ def implicito():
     t = Tela(2 * larg_p + FOLGA, alt_p + ALTURA_RODAPE)
 
     pe = Painel(t, 0, larg_p, (0, Q_MAX), (Y_MIN, Y_MAX), alt_p)
-    pe.titulo("O cardápio: P(q)")
+    pe.titulo("Função de preços: P(q)")
     pe.eixos("q", "R$ mil")
     pe.curva(preco, 0, Q_MAX, cor=COR_EIXO, larg=2.8)
     pe.marca_y(300, "300")
     pe.marca_y(400, "400")
 
     pd = Painel(t, larg_p, larg_p, (0, Q_MAX), (0, 23.0), alt_p)
-    pd.titulo("A inclinação dele: P′(q)")
+    pd.titulo("Preço implícito: P′(q)")
     pd.eixos("q", "R$ mil por ponto de q")
     pd.reta(0, 0, Q_MAX, preco_mg(Q_MAX), cor=COR_EIXO, larg=2.8)
 
@@ -313,9 +315,8 @@ def implicito():
              negrito=True, ancora="end")
 
     rodape(t, 2 * larg_p, alt_p,
-           "a reta da direita sobe, mas ninguém anda sobre ela: cada"
-           " consumidor ocupa um ponto só, e é o dele")
-    t.salvar("12-implicito.svg", "O cardápio e o preço implícito")
+           "P′(q) cresce, mas cada consumidor ocupa um único ponto dela")
+    t.salvar("12-implicito.svg", "A função de preços e o preço implícito")
 
 
 def regressao():
@@ -355,13 +356,13 @@ def regressao():
             cor=COR_APAGADA)
 
     rodape(t, LARG, ALT,
-           "o preço por ponto vai de 2 a 18 ao longo da tabela, e o"
-           " coeficiente único de 10 só vale perto do meio")
+           "o preço por ponto varia de 2 a 18 ao longo da tabela; o"
+           " coeficiente de 10 só vale perto do meio da amostra")
     t.salvar("12-regressao.svg", titulo)
 
 
 def exercicio():
-    titulo = "Solução do exercício: cada comprador para onde a inclinação bate"
+    titulo = "Solução: cada comprador escolhe q tal que P′(q) = s"
     t, p = cardapio(titulo)
     p.curva(preco, 0, Q_MAX, cor=COR_EIXO, larg=2.6)
     pontos_cardapio(p, cor=COR_APAGADA, r=4.0, rotular=False)
@@ -377,8 +378,7 @@ def exercicio():
         p.marca_x(q_est, fmt(q_est, 0), cor=cores[s])
 
     rodape(t, LARG, ALT,
-           "quem valoriza mais a qualidade compra mais qualidade, e paga por"
-           " ela o que o cardápio pedir: 304, 316, 336 e 364")
+           "maior valoração implica maior q: preços de 304, 316, 336 e 364")
     t.salvar("12-exercicio.svg", titulo)
 
 
@@ -397,8 +397,8 @@ def rdd():
     ruido = [rng.uniform(-3.4, 3.4) for _ in nuvem]
 
     for k, (tit, salto) in enumerate([
-            ("O que o desenho procura", 7.0),
-            ("O que Greenstone e Gallagher acham", 0.0)]):
+            ("Se a limpeza valorizasse os imóveis", 7.0),
+            ("Resultado de Greenstone e Gallagher", 0.0)]):
         p = Painel(t, k * larg_p, larg_p, (10, 58), (-12, 22), alt_p)
         p.titulo(tit)
         p.eixos("HRS", "variação do preço (%)")
@@ -433,8 +433,8 @@ def rdd():
         p.texto(corte + 1.0, 18, "limpa", cor=COR_Q, negrito=True)
 
     rodape(t, 2 * larg_p + 52 - FOLGA, alt_p,
-           "esquema, e não os dados do paper: os dois painéis mostram o que o"
-           " desenho encontraria em cada caso")
+           "esquema ilustrativo, não os dados do artigo: cada painel mostra"
+           " um resultado possível do desenho")
     t.salvar("12-rdd.svg", "Esquema do desenho de descontinuidade")
 
 
