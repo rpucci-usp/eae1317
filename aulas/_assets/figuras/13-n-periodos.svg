@@ -1,0 +1,94 @@
+<svg width="752" height="386" viewBox="0 0 752 386"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Extração com N períodos</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="181.5" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Extração por período</text>
+  <text x="544.5" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Custos marginais</text>
+  <line x1="58.0" y1="272.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="272.0" x2="345.0" y2="272.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="353.0" y="278.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">t</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">quantidade extraída</text>
+  <line x1="421.0" y1="272.0" x2="421.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="421.0" y1="272.0" x2="708.0" y2="272.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="716.0" y="278.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">t</text>
+  <text x="429.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$ por unidade</text>
+  <text x="84.3" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">1</text>
+  <text x="110.6" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="137.0" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3</text>
+  <text x="163.3" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">4</text>
+  <text x="189.6" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">5</text>
+  <text x="215.9" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">6</text>
+  <text x="242.2" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">7</text>
+  <text x="268.6" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8</text>
+  <text x="294.9" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">9</text>
+  <text x="321.2" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">10</text>
+  <text x="447.3" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">1</text>
+  <text x="473.6" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="500.0" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3</text>
+  <text x="526.3" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">4</text>
+  <text x="552.6" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">5</text>
+  <text x="578.9" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">6</text>
+  <text x="605.2" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">7</text>
+  <text x="631.6" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8</text>
+  <text x="657.9" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">9</text>
+  <text x="684.2" y="292.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">10</text>
+  <text x="50.0" y="233.4" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="413.0" y="228.6" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="50.0" y="189.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">4</text>
+  <text x="413.0" y="180.1" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">4</text>
+  <text x="50.0" y="146.2" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">6</text>
+  <text x="413.0" y="131.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">6</text>
+  <text x="50.0" y="102.6" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8</text>
+  <text x="413.0" y="83.2" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8</text>
+  <line x1="84.3" y1="97.5" x2="110.6" y2="112.8" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="110.6" y1="112.8" x2="137.0" y2="129.5" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="137.0" y1="129.5" x2="163.3" y2="148.0" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="163.3" y1="148.0" x2="189.6" y2="168.3" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="189.6" y1="168.3" x2="215.9" y2="190.6" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="215.9" y1="190.6" x2="242.2" y2="215.2" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="242.2" y1="215.2" x2="268.6" y2="242.2" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="268.6" y1="242.2" x2="294.9" y2="271.9" stroke="#2E7D32" stroke-width="2.6"/>
+  <circle cx="84.3" cy="97.5" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="110.6" cy="112.8" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="137.0" cy="129.5" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="163.3" cy="148.0" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="189.6" cy="168.3" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="215.9" cy="190.6" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="242.2" cy="215.2" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="268.6" cy="242.2" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="294.9" cy="271.9" r="4.2" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="92.2" y="86.6" font-size="15" fill="#2E7D32" text-anchor="start" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8,0</text>
+  <line x1="431.5" y1="78.2" x2="694.7" y2="78.2" stroke="#8a94a0" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="694.7" y="71.0" font-size="15" fill="#8a94a0" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">a = 8</text>
+  <line x1="447.3" y1="223.6" x2="657.9" y2="223.6" stroke="#C00000" stroke-width="2.6"/>
+  <text x="663.2" y="215.1" font-size="15" fill="#C00000" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">extração</text>
+  <line x1="447.3" y1="155.8" x2="473.6" y2="149.0" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="473.6" y1="149.0" x2="500.0" y2="141.5" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="500.0" y1="141.5" x2="526.3" y2="133.3" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="526.3" y1="133.3" x2="552.6" y2="124.3" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="552.6" y1="124.3" x2="578.9" y2="114.4" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="578.9" y1="114.4" x2="605.2" y2="103.5" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="605.2" y1="103.5" x2="631.6" y2="91.5" stroke="#1b3a5c" stroke-width="2.6"/>
+  <line x1="631.6" y1="91.5" x2="657.9" y2="78.3" stroke="#1b3a5c" stroke-width="2.6"/>
+  <circle cx="447.3" cy="155.8" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="473.6" cy="149.0" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="500.0" cy="141.5" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="526.3" cy="133.3" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="552.6" cy="124.3" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="578.9" cy="114.4" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="605.2" cy="103.5" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="631.6" cy="91.5" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="657.9" cy="78.3" r="4.2" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="489.4" y="172.7" font-size="15" fill="#1b3a5c" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">custo marginal total</text>
+  <text x="376.0" y="352.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">estoque de 40: o custo marginal total sobe de 4,80 a 8 e a extração zera no período 9</text>
+</svg>
