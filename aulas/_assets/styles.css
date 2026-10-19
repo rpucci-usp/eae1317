@@ -492,3 +492,18 @@
   line-height: 1.3;
   margin-bottom: 0.35em;
 }
+
+/* Linha de fonte ------------------------------------------------------------
+   Crédito de dado ou imagem no pé do slide (MapBiomas, CEMPRE na aula 13). No
+   .pptx essas linhas vinham em corpo mínimo, alinhadas à direita; em .no-bullet
+   elas ocupavam uma linha de corpo inteira e disputavam espaço com a figura. */
+.reveal .fonte {
+  text-align: right;
+  font-size: 0.5em;
+  color: #6b7280;
+  margin-top: 0.2em;
+}
+
+.reveal .slides section .fonte p {
+  margin: 0;
+}

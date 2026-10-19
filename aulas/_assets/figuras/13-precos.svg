@@ -1,0 +1,53 @@
+<svg width="752" height="376" viewBox="0 0 752 376"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Preço e custo de usuário nas duas gerações</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="181.5" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Geração 1</text>
+  <line x1="58.0" y1="262.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="262.0" x2="345.0" y2="262.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="353.0" y="268.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">q</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$ por unidade</text>
+  <line x1="58.0" y1="81.1" x2="323.7" y2="262.0" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="58.0" y1="216.8" x2="330.4" y2="216.8" stroke="#C00000" stroke-width="2.6"/>
+  <line x1="58.0" y1="173.7" x2="194.0" y2="173.7" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="194.0" y1="262.0" x2="194.0" y2="173.7" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="194.0" cy="173.7" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="257.3" cy="216.8" r="4" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="194.0" y="282.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">10,24</text>
+  <text x="50.0" y="221.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="50.0" y="178.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">3,905</text>
+  <path d="M 58.0 216.8 L 194.0 216.8 L 194.0 173.7 L 58.0 173.7 Z" fill="#1b3a5c" fill-opacity="0.14" stroke="none"/>
+  <text x="126.0" y="202.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">λ₁ = 1,905</text>
+  <text x="50.0" y="86.1" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8</text>
+  <text x="327.7" y="234.9" font-size="15" fill="#C00000" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg = 2</text>
+  <text x="544.5" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Geração 2</text>
+  <line x1="421.0" y1="262.0" x2="421.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="421.0" y1="262.0" x2="708.0" y2="262.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="716.0" y="268.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">q</text>
+  <text x="429.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$ por unidade</text>
+  <line x1="421.0" y1="81.1" x2="686.7" y2="262.0" stroke="#2E7D32" stroke-width="2.6"/>
+  <line x1="421.0" y1="216.8" x2="693.4" y2="216.8" stroke="#C00000" stroke-width="2.6"/>
+  <line x1="421.0" y1="169.4" x2="550.7" y2="169.4" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="550.7" y1="262.0" x2="550.7" y2="169.4" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="550.7" cy="169.4" r="4.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="620.3" cy="216.8" r="4" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="550.7" y="282.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">9,76</text>
+  <text x="413.0" y="221.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="413.0" y="174.4" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">4,095</text>
+  <path d="M 421.0 216.8 L 550.7 216.8 L 550.7 169.4 L 421.0 169.4 Z" fill="#1b3a5c" fill-opacity="0.14" stroke="none"/>
+  <text x="485.8" y="199.9" font-size="15" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">λ₂ = 2,095</text>
+  <text x="413.0" y="86.1" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8</text>
+  <text x="690.7" y="234.9" font-size="15" fill="#C00000" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">CMg = 2</text>
+  <text x="376.0" y="336.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">preço = custo de extração + custo de usuário; o custo</text>
+  <text x="376.0" y="356.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">de usuário cresce de 1,905 para 2,095, isto é, 10%</text>
+</svg>

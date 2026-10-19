@@ -14,3 +14,4 @@ title: "EAE1317"
 8. [Mercado Não Competitivo](aulas/10-monopolio/)
 9. [Valoração de Bens Ambientais](aulas/11-valoracao/)
 10. [Preços Hedônicos](aulas/12-precos-hedonicos/)
+11. [Recursos Naturais](aulas/13-recursos-naturais/)
