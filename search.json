@@ -301,13 +301,6 @@
     "text": "Exemplo: Fundo Permanente do Alasca\n\nEsta é uma política que satisfaz o critério da sustentabilidade?\n\n\nNão exatamente.\n\n\nApenas 25% da receita é devolvida às gerações futuras.\n\n\nUma grande parte do ganho de bem-estar gerado fica com geração presente.\n\n\nPortanto, o fundo resolve parcialmente o problema.\n\n\nPela regra de Hartwick, a sustentabilidade plena exigiria investir 100% da renda de escassez.\nEm junho de 2026, o fundo valia US$ 91,9 bilhões e, em 2025, pagou dividendos de US$ 1.000 a cada residente."
   },
   {
-    "objectID": "aulas/13-recursos-naturais/index.html#noruega-e-reino-unido-o-mesmo-mar-duas-escolhas",
-    "href": "aulas/13-recursos-naturais/index.html#noruega-e-reino-unido-o-mesmo-mar-duas-escolhas",
-    "title": "Recursos Naturais",
-    "section": "Noruega e Reino Unido: o mesmo mar, duas escolhas",
-    "text": "Noruega e Reino Unido: o mesmo mar, duas escolhas\n\nO petróleo do Mar do Norte foi descoberto nos anos 1960. Reino Unido e Noruega são os dois grandes produtores.\nReino Unido (anos 1980): extração rápida; a receita tributária financiou sobretudo consumo corrente.\nNoruega: extração mais lenta; em 1990 criou um fundo de petróleo, alimentado por tributos e royalties. Em 2015, o fundo passava de 6,5 trilhões de coroas norueguesas.\nConsumir a renda do recurso provavelmente não é sustentável; investi-la é um passo na direção certa (Keohane e Olmstead 2016)."
-  },
-  {
     "objectID": "aulas/13-recursos-naturais/index.html#critérios-alternativos",
     "href": "aulas/13-recursos-naturais/index.html#critérios-alternativos",
     "title": "Recursos Naturais",
@@ -376,13 +369,6 @@
     "title": "Recursos Naturais",
     "section": "Tecnologia: o minério de ferro de Mesabi",
     "text": "Tecnologia: o minério de ferro de Mesabi\n\nEm 1947, o presidente da Republic Steel estimou entre 5 e 7 anos a vida útil das minas de Mesabi (Minnesota), fonte de cerca de 60% do minério de ferro consumido pelos EUA na Segunda Guerra. Em 1955, a escassez já não preocupava (Kakela 1981).\n\n\n\n\n\n\nAntes\nCom pelotização\n\n\n\n\nTeor de ferro do minério usado\n50% a 65%\nmenos de 30% (taconita)\n\n\nEnergia por tonelada\n\n−17%\n\n\nTrabalho por tonelada\n\n−8,2%\n\n\nProdução de um alto-forno (t/dia)\n1.500\n2.700 a 2.800\n\n\n\n\n\nMinério de pior qualidade e custo menor: o progresso técnico pode conter o custo marginal total por um longo período (Tietenberg e Lewis 2018)."
-  },
-  {
-    "objectID": "aulas/13-recursos-naturais/index.html#a-aposta-de-simon-e-ehrlich",
-    "href": "aulas/13-recursos-naturais/index.html#a-aposta-de-simon-e-ehrlich",
-    "title": "Recursos Naturais",
-    "section": "A aposta de Simon e Ehrlich",
-    "text": "A aposta de Simon e Ehrlich\n\n1980: o ecólogo Paul Ehrlich aposta que os preços reais de cinco metais (cobre, cromo, níquel, estanho e tungstênio) subiriam em dez anos. O economista Julian Simon aposta que cairiam.\nUS$ 200 em cada metal. Em 1990, os cinco preços reais tinham caído: Ehrlich enviou a Simon um cheque de US$ 576,07.\nNovas jazidas, substituição em vários usos e o colapso do cartel do estanho explicam a queda.\nDécada a década, ao longo do século XX, Simon teria ganhado cinco apostas e perdido cinco (Tietenberg e Lewis 2018).\nWeitzman estima que o ganho de bem-estar do progresso técnico é cerca de 40 vezes a perda pelo esgotamento de minerais (Weitzman 1999)."
   },
   {
     "objectID": "aulas/13-recursos-naturais/index.html#recursos-recicláveis",
@@ -473,7 +459,7 @@
     "href": "aulas/13-recursos-naturais/index.html#o-que-muda-com-o-substituto",
     "title": "Recursos Naturais",
     "section": "O que muda com o substituto",
-    "text": "O que muda com o substituto\n\nA troca ocorre no período 6, não no 9. Com substituto, guardar recurso para o futuro vale menos: \\(\\lambda\\) cai de 2,80 para 2,48.\nExtrai-se mais no início.\nDepois da troca, o preço fica em \\(d=6\\) e o consumo em \\((8-6)/0{,}4=5\\).\nO renovável funciona como teto para o preço do não renovável: ninguém paga pelo petróleo mais que pela energia equivalente do sol ou do vento (Keohane e Olmstead 2016)."
+    "text": "O que muda com o substituto\n\nA troca ocorre no período 6, não no 9. Com substituto, guardar recurso para o futuro vale menos: \\(\\lambda\\) cai de 2,80 para 2,48.\nExtrai-se mais no início.\nDepois da troca, o preço fica em \\(d=6\\) e o consumo em \\((8-6)/0{,}4=5\\).\nO recurso renovável induz um teto para o preço do não renovável: ninguém paga pelo petróleo mais que pela energia equivalente do sol ou do vento (Keohane e Olmstead 2016)."
   },
   {
     "objectID": "aulas/13-recursos-naturais/index.html#custo-de-extração-crescente",
@@ -494,21 +480,49 @@
     "href": "aulas/13-recursos-naturais/index.html#o-que-muda-com-o-custo-crescente",
     "title": "Recursos Naturais",
     "section": "O que muda com o custo crescente",
-    "text": "O que muda com o custo crescente\n\nCom \\(c=2\\), \\(\\alpha=0{,}1\\) e \\(d=6\\), o custo de usuário cai ao longo do tempo: de 2,43 a zero na troca. No custo constante, ele subia.\nCada unidade extraída hoje encarece a extração futura. Perto da troca, guardar uma unidade quase nada vale para o futuro.\nO recurso não se esgota: a extração para em \\(Q=40\\), onde \\(2+0{,}1Q=6\\). O que fica no solo custa mais que o substituto (Tietenberg e Lewis 2018)."
+    "text": "O que muda com o custo crescente\n\nCom \\(c=2\\), \\(\\alpha=0{,}1\\) e \\(d=6\\), o custo de usuário cai ao longo do tempo: de 2,43 a zero na troca. No custo constante, ele subia.\nCada unidade extraída hoje encarece a extração futura. Perto da troca, guardar uma unidade quase nada vale para o futuro.\nO limite passa a ser econômico: a extração para em \\(Q=40\\), onde \\(2+0{,}1Q=6\\), para qualquer estoque acima disso. Com \\(\\overline{Q}=60\\), 20 unidades ficam no solo porque custam mais que o substituto (Tietenberg e Lewis 2018)."
   },
   {
     "objectID": "aulas/13-recursos-naturais/index.html#custo-ambiental-da-extração",
     "href": "aulas/13-recursos-naturais/index.html#custo-ambiental-da-extração",
     "title": "Recursos Naturais",
     "section": "Custo ambiental da extração",
-    "text": "Custo ambiental da extração\n\n\n\n\nSuponha que cada unidade extraída cause um dano de 1, não pago pela mineradora. O custo social de extração passa a \\(3+0{,}1{Q}_{t}\\).\nSem internalizar o dano: preço baixo demais, extração rápida demais e total extraído alto demais (40 contra 30)."
+    "text": "Custo ambiental da extração\n\n\n\n\nSuponha que cada unidade extraída cause um dano de 1, não pago pela mineradora. O custo social de extração passa a \\(3+0{,}1{Q}_{t}\\).\nSem internalizar o dano: preço baixo demais, extração por período alta demais (7,13 contra 6,30 em \\(t=1\\)) e total extraído alto demais (40 contra 30)."
+  },
+  {
+    "objectID": "aulas/13-recursos-naturais/index.html#extrai-se-mais-por-mais-tempo",
+    "href": "aulas/13-recursos-naturais/index.html#extrai-se-mais-por-mais-tempo",
+    "title": "Recursos Naturais",
+    "section": "Extrai-se mais, por mais tempo",
+    "text": "Extrai-se mais, por mais tempo\n\n\n\n\nSem internalizar o dano, a troca para o renovável chega mais tarde (período 7 contra 6). Por quê?\nO preço maior reduz o consumo e alongaria o uso, mas há menos a extrair. No exemplo, prevalece o segundo efeito (Tietenberg e Lewis 2018)."
   },
   {
     "objectID": "aulas/13-recursos-naturais/index.html#o-paradoxo-verde",
     "href": "aulas/13-recursos-naturais/index.html#o-paradoxo-verde",
     "title": "Recursos Naturais",
     "section": "O paradoxo verde",
-    "text": "O paradoxo verde\n\nSinn (2008): um imposto sobre carbono que cresce mais rápido que \\(r\\) reduz o ganho de esperar e antecipa a extração (Sinn 2008).\nCom custo de extração constante, o total extraído não muda. Muda o momento: o dano chega antes.\nCom custo crescente, o imposto deixa mais recurso no solo.\nA avaliação inicial da literatura é que o paradoxo não é obstáculo sério à política climática, mas a evidência empírica ainda é escassa (Tietenberg e Lewis 2018)."
+    "text": "O paradoxo verde\n\nSinn (2008): um imposto sobre carbono que cresce mais rápido que \\(r\\) reduz o ganho de esperar e antecipa a extração (Sinn 2008).\nA antecipação ocorre tanto com custo de extração constante como crescente. O que muda entre os dois casos é o total extraído:\n\nCusto constante: estoque de recurso esgota antes com imposto, mas o total extraído é igual ao cenário sem imposto.\nCusto crescente: além de antecipar, o imposto encarece as últimas unidades e faz com que mais recursos fiquem guardados no solo.\n\n\n\nConsidere este exemplo, com custo constante. Por que a taxa de crescimento do imposto importa?"
+  },
+  {
+    "objectID": "aulas/13-recursos-naturais/index.html#paradoxo-verde-em-números",
+    "href": "aulas/13-recursos-naturais/index.html#paradoxo-verde-em-números",
+    "title": "Recursos Naturais",
+    "section": "Paradoxo verde em números",
+    "text": "Paradoxo verde em números\n\nMesmo modelo de N períodos: \\(\\overline{Q}=40\\), \\(c=2\\), sem substituto. Cada unidade extraída emite uma unidade de CO\\(_2\\).\n\n\nOs donos do recurso pagam um imposto por unidade \\({\\tau}_{t}=0{,}5{\\left(1+g\\right)}^{t-1}\\). A CPO passa a ser\n\n\n\\[\\frac{a-b{q}_{t}-c-{\\tau}_{t}}{{\\left(1+r\\right)}^{t-1}}=\\lambda\\]\n\n\nCom \\(g=r\\), o termo \\({\\tau}_{t}/{\\left(1+r\\right)}^{t-1}\\) vale 0,5 em todo período. O imposto reduz \\(\\lambda\\) (de 2,80 para 2,30), mas a extração se comporta exatamente como no caso sem imposto: a decisão intertemporal não muda.\nCom \\(g&gt;r\\), esse termo cresce com \\(t\\). Extrai-se antes, porque adiar custa mais caro."
+  },
+  {
+    "objectID": "aulas/13-recursos-naturais/index.html#um-imposto-que-cresce-30",
+    "href": "aulas/13-recursos-naturais/index.html#um-imposto-que-cresce-30",
+    "title": "Recursos Naturais",
+    "section": "Um imposto que cresce 30%",
+    "text": "Um imposto que cresce 30%\n\n\n\n\nCom \\(g=0{,}3\\), a extração no período 1 sobe de 8,0 para 9,22. O estoque acaba no período 7 (sem imposto, no 8).\nO total emitido continua 40. O que muda é a data: até \\(t=3\\), saem 25,0 em vez de 21,8."
+  },
+  {
+    "objectID": "aulas/13-recursos-naturais/index.html#quatro-trajetórias-do-imposto",
+    "href": "aulas/13-recursos-naturais/index.html#quatro-trajetórias-do-imposto",
+    "title": "Recursos Naturais",
+    "section": "Quatro trajetórias do imposto",
+    "text": "Quatro trajetórias do imposto\n\n\n\n\n\n\n\n\n\n\n\nImposto \\(\\tau_t\\)\n\\(q_1\\)\nÚltimo período\nExtraído até \\(t=3\\)\nVP do dano\n\n\n\n\nSem imposto\n8,00\n8\n21,84\n32,06\n\n\nConstante, 0,5\n7,58\n9\n20,84\n31,60\n\n\nCresce 10% (\\(=r\\))\n8,00\n8\n21,84\n32,06\n\n\nCresce 30%\n9,22\n7\n25,00\n33,32\n\n\n\n\n\nDano de 1 por unidade, a VP com \\(r=0{,}1\\). O total extraído é 40 em todas as linhas.\nCom custo crescente (\\(2+0{,}1{Q}_{t}\\), \\(d=6\\)), o imposto de 30% ainda antecipa (\\(q_1\\) de 7,13 para 7,84). O total extraído, porém, cai de 40 para 26,8; o VP do dano cai de 31,5 para 23,7.\nA avaliação inicial da literatura é que o paradoxo não é obstáculo sério à política climática, mas a evidência empírica ainda é escassa (Tietenberg e Lewis 2018)."
   },
   {
     "objectID": "aulas/13-recursos-naturais/index.html#recurso-parcialmente-renovável",
@@ -571,7 +585,7 @@
     "href": "aulas/13-recursos-naturais/index.html#referências",
     "title": "Recursos Naturais",
     "section": "Referências",
-    "text": "Referências\n\n\nHartwick, John M. 1977. «Intergenerational Equity and the Investing of Rents from Exhaustible Resources». American Economic Review 67 (5): 972–74.\n\n\nHotelling, Harold. 1931. «The Economics of Exhaustible Resources». Journal of Political Economy 39 (2): 137–75.\n\n\nKakela, Peter J. 1981. «Iron Ore: From Depletion to Abundance». Science 212: 132–36.\n\n\nKeohane, Nathaniel O., e Sheila M. Olmstead. 2016. Markets and the Environment. 2.ª ed. Island Press.\n\n\nSinn, Hans-Werner. 2008. «Public Policies against Global Warming: A Supply Side Approach». International Tax and Public Finance 15: 360–94.\n\n\nTietenberg, Tom, e Lynne Lewis. 2018. Environmental and Natural Resource Economics. 11.ª ed. Routledge.\n\n\nVan Houtven, George L., e Glenn E. Morris. 1999. «Household Behavior under Alternative Pay-as-You-Throw Systems for Solid Waste Disposal». Land Economics 75 (4): 515–37.\n\n\nWeitzman, Martin L. 1999. «Pricing the Limits to Growth from Minerals Depletion». Quarterly Journal of Economics 114 (2): 691–706."
+    "text": "Referências\n\n\nHartwick, John M. 1977. «Intergenerational Equity and the Investing of Rents from Exhaustible Resources». American Economic Review 67 (5): 972–74.\n\n\nHotelling, Harold. 1931. «The Economics of Exhaustible Resources». Journal of Political Economy 39 (2): 137–75.\n\n\nKakela, Peter J. 1981. «Iron Ore: From Depletion to Abundance». Science 212: 132–36.\n\n\nKeohane, Nathaniel O., e Sheila M. Olmstead. 2016. Markets and the Environment. 2.ª ed. Island Press.\n\n\nSinn, Hans-Werner. 2008. «Public Policies against Global Warming: A Supply Side Approach». International Tax and Public Finance 15: 360–94.\n\n\nTietenberg, Tom, e Lynne Lewis. 2018. Environmental and Natural Resource Economics. 11.ª ed. Routledge.\n\n\nVan Houtven, George L., e Glenn E. Morris. 1999. «Household Behavior under Alternative Pay-as-You-Throw Systems for Solid Waste Disposal». Land Economics 75 (4): 515–37."
   },
   {
     "objectID": "aulas/11-valoracao/index.html#de-onde-vem-o-dano-marginal",
