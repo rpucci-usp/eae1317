@@ -721,18 +721,7 @@ da renda de escassez.
 - Em junho de 2026, o fundo valia US\$ 91,9 bilhões e, em 2025, pagou
 dividendos de US\$ 1.000 a cada residente.
 
-## Noruega e Reino Unido: o mesmo mar, duas escolhas
 
-- O petróleo do Mar do Norte foi descoberto nos anos 1960. Reino Unido e
-  Noruega são os dois grandes produtores.
-- **Reino Unido** (anos 1980): extração rápida; a receita tributária
-  financiou sobretudo consumo corrente.
-- **Noruega**: extração mais lenta; em 1990 criou um fundo de petróleo,
-  alimentado por tributos e royalties. Em 2015, o fundo passava de 6,5
-  trilhões de coroas norueguesas.
-- [Consumir a renda do recurso provavelmente não é sustentável; investi-la
-  é um passo na direção certa [@keohane2016].]{.fragment
-  fragment-index=1}
 
 ## Critérios alternativos
 
@@ -884,21 +873,7 @@ não preocupava [@kakela1981].
 - Minério de pior qualidade e custo **menor**: o progresso técnico pode
   conter o custo marginal total por um longo período [@tietenberg2018].
 
-## A aposta de Simon e Ehrlich
 
-- 1980: o ecólogo Paul Ehrlich aposta que os preços reais de cinco metais
-  (cobre, cromo, níquel, estanho e tungstênio) subiriam em dez anos. O
-  economista Julian Simon aposta que cairiam.
-- US\$ 200 em cada metal. Em 1990, os cinco preços reais tinham caído:
-  Ehrlich enviou a Simon um cheque de **US\$ 576,07**.
-- [Novas jazidas, substituição em vários usos e o colapso do cartel do
-  estanho explicam a queda.]{.fragment fragment-index=1}
-- [Década a década, ao longo do século XX, Simon teria ganhado cinco
-  apostas e perdido cinco [@tietenberg2018].]{.fragment
-  fragment-index=2}
-- [Weitzman estima que o ganho de bem-estar do progresso técnico é cerca
-  de 40 vezes a perda pelo esgotamento de minerais
-  [@weitzman1999].]{.fragment fragment-index=3}
 
 ## Recursos Recicláveis
 
@@ -1127,9 +1102,9 @@ $$\begin{aligned}\max_{\substack{\{{q}_{1},...,{q}_{T}\}\\ \{{q}_{s1},...,{q}_{s
 - Extrai-se **mais** no início.
 - Depois da troca, o preço fica em $d=6$ e o consumo em
   $(8-6)/0{,}4=5$.
-- [O renovável funciona como **teto** para o preço do não renovável:
+- O recurso renovável induz um **teto** para o preço do não renovável:
   ninguém paga pelo petróleo mais que pela energia equivalente do sol ou
-  do vento [@keohane2016].]{.fragment fragment-index=1}
+  do vento [@keohane2016].
 
 ## Custo de Extração Crescente
 
@@ -1174,8 +1149,9 @@ menor do que custo marginal do recurso renovável.
   do tempo: de 2,43 a zero na troca. No custo constante, ele subia.
 - Cada unidade extraída hoje encarece a extração futura. Perto da troca,
   guardar uma unidade quase nada vale para o futuro.
-- O recurso não se esgota: a extração para em $Q=40$, onde
-  $2+0{,}1Q=6$. O que fica no solo custa mais que o substituto
+- O limite passa a ser econômico: a extração para em $Q=40$, onde
+  $2+0{,}1Q=6$, para qualquer estoque acima disso. Com $\overline{Q}=60$,
+  20 unidades ficam no solo porque custam mais que o substituto
   [@tietenberg2018].
 
 ## Custo ambiental da extração
@@ -1186,19 +1162,84 @@ menor do que custo marginal do recurso renovável.
 
 - Suponha que cada unidade extraída cause um dano de 1, não pago pela
   mineradora. O custo social de extração passa a $3+0{,}1{Q}_{t}$.
-- [Sem internalizar o dano: preço baixo demais, extração rápida demais e
-  total extraído alto demais (40 contra 30).]{.fragment fragment-index=1}
+- [Sem internalizar o dano: preço baixo demais, extração por período alta
+  demais (7,13 contra 6,30 em $t=1$) e total extraído alto demais (40
+  contra 30).]{.fragment fragment-index=1}
+
+## Extrai-se mais, por mais tempo
+
+::: {.diagram}
+![](../_assets/figuras/13-custo-ambiental.svg){style="height:340px;max-height:340px"}
+:::
+
+- Sem internalizar o dano, a troca para o renovável chega **mais tarde**
+  (período 7 contra 6). Por quê?
+- [O preço maior reduz o consumo e alongaria o uso, mas há menos a
+  extrair. No exemplo, prevalece o segundo efeito
+  [@tietenberg2018].]{.fragment fragment-index=1}
 
 ## O paradoxo verde
 
 - Sinn (2008): um imposto sobre carbono que **cresce mais rápido que
   $r$** reduz o ganho de esperar e antecipa a extração [@sinn2008].
-- Com custo de extração constante, o total extraído não muda. Muda o
-  momento: o dano chega antes.
-- Com custo crescente, o imposto deixa mais recurso no solo.
+- A antecipação ocorre tanto com custo de extração constante como crescente. O
+  que muda entre os dois casos é o total extraído:
+  - Custo constante: estoque de recurso esgota antes com imposto, mas o total extraído é igual ao cenário sem imposto.
+  - Custo crescente: além de antecipar, o imposto encarece as últimas unidades e faz com que mais recursos fiquem guardados no solo.
+
+::: {.no-bullet}
+Considere este exemplo, com custo constante. Por que a taxa de crescimento do   imposto importa?
+:::
+
+## Paradoxo verde em números
+
+::: {.no-bullet}
+Mesmo modelo de N períodos: $\overline{Q}=40$, $c=2$, sem substituto.
+Cada unidade extraída emite uma unidade de CO$_2$.
+:::
+
+- Os donos do recurso pagam um imposto por unidade
+  ${\tau}_{t}=0{,}5{\left(1+g\right)}^{t-1}$. A CPO passa a ser
+
+::: {.eq-block}
+$$\frac{a-b{q}_{t}-c-{\tau}_{t}}{{\left(1+r\right)}^{t-1}}=\lambda$$
+:::
+
+- [Com $g=r$, o termo ${\tau}_{t}/{\left(1+r\right)}^{t-1}$ vale 0,5 em
+  todo período. O imposto reduz $\lambda$ (de 2,80 para 2,30), mas a extração se comporta exatamente como no caso sem imposto: a decisão intertemporal não muda.]{.fragment fragment-index=1}
+- [Com $g>r$, esse termo cresce com $t$. Extrai-se antes, porque adiar custa mais caro.]{.fragment fragment-index=2}
+
+## Um imposto que cresce 30%
+
+::: {.diagram}
+![](../_assets/figuras/13-paradoxo-verde.svg){style="height:340px;max-height:340px"}
+:::
+
+- Com $g=0{,}3$, a extração no período 1 sobe de 8,0 para 9,22. O estoque
+  acaba no período 7 (sem imposto, no 8).
+- [O total emitido continua 40. O que muda é a data: até $t=3$, saem 25,0
+  em vez de 21,8.]{.fragment fragment-index=1}
+
+## Quatro trajetórias do imposto
+
+::: {.tabela}
+| Imposto $\tau_t$ | $q_1$ | Último período | Extraído até $t=3$ | VP do dano |
+|---|---|---|---|---|
+| Sem imposto | 8,00 | 8 | 21,84 | 32,06 |
+| Constante, 0,5 | 7,58 | 9 | 20,84 | 31,60 |
+| Cresce 10% ($=r$) | 8,00 | 8 | 21,84 | 32,06 |
+| Cresce 30% | 9,22 | 7 | 25,00 | 33,32 |
+:::
+
+- Dano de 1 por unidade, a VP com $r=0{,}1$. O total extraído é 40 em
+  todas as linhas.
+- [Com custo crescente ($2+0{,}1{Q}_{t}$, $d=6$), o imposto de 30% ainda
+  antecipa ($q_1$ de 7,13 para 7,84). O total extraído, porém, cai de 40
+  para 26,8; o VP do dano cai de 31,5 para 23,7.]{.fragment
+  fragment-index=1}
 - [A avaliação inicial da literatura é que o paradoxo não é obstáculo
   sério à política climática, mas a evidência empírica ainda é escassa
-  [@tietenberg2018].]{.fragment fragment-index=1}
+  [@tietenberg2018].]{.fragment fragment-index=2}
 
 ## Recurso Parcialmente Renovável
 

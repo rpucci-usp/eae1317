@@ -148,13 +148,20 @@ Q_RENOV = (A - D_SUB) / B                       # 5: consumo depois da troca
 
 # --- custo de extracao crescente --------------------------------------------
 
-def custo_crescente(c0, horizonte=20, iteracoes=20000, passo=0.5):
+def custo_crescente(c0, horizonte=20, iteracoes=20000, passo=0.5,
+                    imposto=lambda t: 0.0):
     """Maximiza o VP do beneficio liquido com CMg_t = c0 + alfa Q_t.
+
+    imposto(t) e o imposto por unidade no periodo t + 1 (paradoxo verde);
+    entra como custo de extracao, e o substituto renovavel nao paga.
 
     O substituto e escolhido periodo a periodo (s_t = max(0, 5 - q_t)), entao
     o preco e a - b max(q_t, 5). O gradiente em q_t e
         beta^(t-1) [P_t - c0 - alfa Q_t] - alfa sum_{k>t} beta^(k-1) q_k
     e o problema e concavo: gradiente projetado em q >= 0 converge.
+
+    Nao ha restricao de estoque: o resultado vale para qualquer estoque
+    >= 40. O slide usa 60, para que algo fique no solo (com 40, nao fica).
     """
     q = [1.0] * horizonte
     for _ in range(iteracoes):
@@ -165,7 +172,8 @@ def custo_crescente(c0, horizonte=20, iteracoes=20000, passo=0.5):
         cauda, g = 0.0, [0.0] * horizonte
         for t in range(horizonte - 1, -1, -1):
             preco = A - B * max(q[t], Q_RENOV)
-            g[t] = BETA ** t * (preco - c0 - ALFA * cum[t]) - cauda
+            g[t] = (BETA ** t * (preco - c0 - imposto(t) - ALFA * cum[t])
+                    - cauda)
             cauda += BETA ** t * ALFA * q[t]
         q = [max(0.0, x + passo * gx) for x, gx in zip(q, g)]
     acc, linhas = 0.0, []
@@ -193,6 +201,56 @@ assert all(a > b for a, b in zip(muc[:6], muc[1:7]))
 # confere a condicao de primeira ordem no periodo 1
 cauda1 = sum(BETA ** k * ALFA * CC[k][1] for k in range(1, len(CC)))
 assert abs(muc[0] - cauda1) < 1e-3
+
+
+# --- paradoxo verde (Sinn, 2008) --------------------------------------------
+#
+# O modelo de N periodos com estoque 40, sem substituto. Cada unidade emite
+# uma unidade de CO2, e os donos pagam um imposto por unidade
+#     tau_t = 0,5 (1 + g)^(t-1).
+# A CPO vira (a - b q_t - c - tau_t)/(1+r)^(t-1) = lambda. Com g = r, o termo
+# tau_t/(1+r)^(t-1) e constante (0,5) e o imposto so reduz lambda: a extracao
+# nao muda. Com g > r, adiar fica mais caro e a extracao se antecipa.
+
+TAU0 = 0.5
+G_SINN = 0.3
+
+def n_periodos_imposto(imposto, estoque=40.0, horizonte=30):
+    qs = lambda l: [max(0.0, (A - C - imposto(t) - l * (1 + R) ** t) / B)
+                    for t in range(horizonte)]
+    lam = bissec(lambda l: sum(qs(l)) - estoque, -5.0, A - C)
+    return lam, qs(lam)
+
+
+def vp(qs):
+    """VP do dano, com dano de 1 por unidade extraida."""
+    return sum(DANO * q / (1 + R) ** t for t, q in enumerate(qs))
+
+
+def ultimo(qs):
+    return max(t for t, q in enumerate(qs) if q > 0.01) + 1
+
+
+IMPOSTOS = (("sem imposto", lambda t: 0.0),
+            ("constante, 0,5", lambda t: TAU0),
+            ("cresce 10% (= r)", lambda t: TAU0 * (1 + R) ** t),
+            ("cresce 30%", lambda t: TAU0 * (1 + G_SINN) ** t))
+SINN = [(nome,) + n_periodos_imposto(f) for nome, f in IMPOSTOS]
+Q_SINN = SINN[3][2]
+
+assert all(abs(sum(q) - 40.0) < 1e-6 for _, _, q in SINN)  # total nao muda
+# imposto que cresce a r e neutro: cai todo sobre a renda de escassez
+assert abs(SINN[2][1] - (LAM_N - TAU0)) < 1e-6
+assert max(abs(x - y) for x, y in zip(SINN[2][2], Q_N)) < 1e-6
+assert [ultimo(q) for _, _, q in SINN] == [8, 9, 8, 7]
+assert abs(Q_SINN[0] - 9.22) < 5e-3 and abs(sum(Q_SINN[:3]) - 25.0) < 5e-3
+assert [round(vp(q), 2) for _, _, q in SINN] == [32.06, 31.60, 32.06, 33.32]
+
+# com custo crescente (sem dano), o mesmo imposto de 30%
+CS = custo_crescente(C, iteracoes=40000,
+                     imposto=lambda t: TAU0 * (1 + G_SINN) ** t)
+assert CS[0][1] > CC[0][1]                       # ainda antecipa
+assert abs(CS[-1][2] - 26.78) < 1e-2             # mas deixa mais no solo
 
 
 # ===========================================================================
@@ -691,6 +749,50 @@ def ambiental_fig():
     t.salvar("13-custo-ambiental.svg", "Custo ambiental da extração")
 
 
+def paradoxo_fig():
+    # Mesmo par de paineis das figuras temporais, mas o da direita e a
+    # extracao acumulada (as emissoes), que termina em 40 nos dois casos.
+    t = Tela(2 * LARG_P2 + FOLGA, ALT_P2 + ALTURA_RODAPE)
+    pa = Painel(t, 0, LARG_P2, (0, 10.6), (0, 11.0), ALT_P2)
+    pb = Painel(t, LARG_P2, LARG_P2, (0, 10.6), (0, 46.0), ALT_P2)
+    pa.titulo("Extração por período")
+    pb.titulo("Extração acumulada (emissões)")
+    pa.eixos("t", "quantidade extraída")
+    pb.eixos("t", "total extraído até t")
+    for p in (pa, pb):
+        for k in range(1, 11):
+            p.marca_x(k, str(k))
+    for v in (2, 4, 6, 8, 10):
+        pa.marca_y(v, str(v))
+    for v in (10, 20, 30, 40):
+        pb.marca_y(v, str(v))
+    pb.reta(0.4, 40, 10.4, 40, cor=COR_GUIA, larg=1.1, tracejado="4 3")
+    pb.texto(10.4, 41.5, "estoque = 40", cor=COR_GUIA, ancora="end",
+             negrito=True)
+    # "com o imposto" tracejado em azul, como "com o dano" em 13-custo-ambiental
+    for qs, tr, cor in ((Q_N, None, COR_PROD), (Q_SINN, "7 4", COR_DANO)):
+        fim = ultimo(qs)
+        serie(pa, [(k + 1, q) for k, q in enumerate(qs[:fim])] +
+              [(fim + 1, 0)], cor, tracejado=tr, r=3.6)
+        acc, pts = 0.0, []
+        for k, q in enumerate(qs[:fim + 2]):
+            acc += q
+            pts.append((k + 1, acc))
+        serie(pb, pts, cor, tracejado=tr, r=3.6)
+    pa.texto(10.4, 10.0, "τ cresce 30%", cor=COR_DANO, negrito=True,
+             ancora="end")
+    pa.texto(10.4, 9.0, "sem imposto ou τ a 10%", cor=COR_PROD, negrito=True,
+             ancora="end")
+    pb.reta(3, 0, 3, sum(Q_SINN[:3]), cor=COR_GUIA, larg=1.1,
+            tracejado="4 3")
+    pb.texto(4.2, 18.0, "até t = 3: 25,0 contra 21,8", cor=COR_DESTAQUE,
+             negrito=True)
+    rodape(t, 2 * LARG_P2, ALT_P2,
+           "imposto de 0,5 que cresce 30% por período: extrai-se mais no"
+           " início; o estoque acaba um período antes; o total é 40")
+    t.salvar("13-paradoxo-verde.svg", "Paradoxo verde")
+
+
 # ===========================================================================
 # Exercicio
 # ===========================================================================
@@ -732,6 +834,7 @@ def main():
     substituto_fig()
     crescente_fig()
     ambiental_fig()
+    paradoxo_fig()
     exercicio()
     print()
     print("  conferencia da calibracao:")
@@ -751,6 +854,16 @@ def main():
         for k, x, cum, pr, mec in linhas[:troca(linhas)]:
             print("      t={} q={:.3f} Q={:.2f} P={:.3f} CMg={:.3f}"
                   " usuario={:.3f}".format(k, x, cum, pr, mec, pr - mec))
+    for nome, lam, qs in SINN:
+        print("    imposto {}: lambda = {:.3f}, ultimo = {}, ate t=3 = {:.2f},"
+              " VP dano = {:.2f}, q = {}".format(
+                  nome, lam, ultimo(qs), sum(qs[:3]), vp(qs),
+                  " ".join(fmt(q, 2) for q in qs[:ultimo(qs)])))
+    print("    custo crescente + imposto 30%: q1 = {:.2f} (sem: {:.2f}),"
+          " total = {:.2f}, troca em {}, VP dano = {:.2f} (sem: {:.2f})"
+          .format(CS[0][1], CC[0][1], CS[-1][2], troca(CS),
+                  vp([x for _, x, _, _, _ in CS]),
+                  vp([x for _, x, _, _, _ in CC])))
     print("    exercicio: q1 = q2 = {:.3f}, BMgL = {:.3f}, V = {:.2f}".format(
         EX_Q1, EX_BMGL, v_liq(EX_Q1)))
 
