@@ -1,0 +1,52 @@
+<svg width="726" height="406" viewBox="0 0 726 406"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Emissões mundiais de gases de efeito estufa, por setor</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="350.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Emissões mundiais de gases de efeito estufa, por setor</text>
+  <line x1="58.0" y1="292.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="292.0" x2="682.0" y2="292.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="690.0" y="298.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke"></text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">GtCO₂e</text>
+  <text x="50.0" y="242.9" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">10</text>
+  <line x1="58.0" y1="237.9" x2="674.0" y2="237.9" stroke="#c8d0d8" stroke-width="0.8"/>
+  <text x="50.0" y="188.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">20</text>
+  <line x1="58.0" y1="183.8" x2="674.0" y2="183.8" stroke="#c8d0d8" stroke-width="0.8"/>
+  <text x="50.0" y="134.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">30</text>
+  <line x1="58.0" y1="129.7" x2="674.0" y2="129.7" stroke="#c8d0d8" stroke-width="0.8"/>
+  <text x="50.0" y="80.6" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">40</text>
+  <line x1="58.0" y1="75.6" x2="674.0" y2="75.6" stroke="#c8d0d8" stroke-width="0.8"/>
+  <path d="M 58.0 162.4 L 76.7 161.6 L 95.3 162.3 L 114.0 161.6 L 132.7 161.1 L 151.3 157.5 L 170.0 154.7 L 188.7 152.4 L 207.3 151.6 L 226.0 150.9 L 244.7 146.7 L 263.3 144.7 L 282.0 143.0 L 300.7 136.3 L 319.3 129.5 L 338.0 123.5 L 356.7 118.6 L 375.3 112.7 L 394.0 111.4 L 412.7 114.2 L 431.3 103.9 L 450.0 98.5 L 468.7 96.6 L 487.3 92.9 L 506.0 92.5 L 524.7 93.5 L 543.3 93.6 L 562.0 90.5 L 580.7 86.2 L 599.3 86.3 L 618.0 97.3 L 636.7 86.8 L 655.3 84.3 L 674.0 81.1" fill="none" stroke="#1b3a5c" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="81.1" r="4" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 264.1 L 76.7 264.2 L 95.3 264.3 L 114.0 264.5 L 132.7 264.2 L 151.3 263.9 L 170.0 263.8 L 188.7 264.2 L 207.3 263.9 L 226.0 263.6 L 244.7 263.6 L 263.3 263.6 L 282.0 263.3 L 300.7 263.3 L 319.3 262.7 L 338.0 262.5 L 356.7 262.2 L 375.3 261.8 L 394.0 261.7 L 412.7 261.7 L 431.3 261.4 L 450.0 260.7 L 468.7 260.6 L 487.3 260.9 L 506.0 260.6 L 524.7 260.5 L 543.3 260.3 L 562.0 259.8 L 580.7 260.0 L 599.3 260.0 L 618.0 259.3 L 636.7 259.0 L 655.3 259.0 L 674.0 258.2" fill="none" stroke="#2E7D32" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="258.2" r="4" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 286.1 L 76.7 286.1 L 95.3 286.0 L 114.0 286.0 L 132.7 285.7 L 151.3 285.3 L 170.0 285.1 L 188.7 284.9 L 207.3 285.0 L 226.0 284.9 L 244.7 284.7 L 263.3 284.6 L 282.0 284.3 L 300.7 283.7 L 319.3 283.2 L 338.0 282.6 L 356.7 281.9 L 375.3 281.2 L 394.0 281.0 L 412.7 280.7 L 431.3 280.0 L 450.0 279.2 L 468.7 278.8 L 487.3 278.2 L 506.0 277.7 L 524.7 277.9 L 543.3 277.4 L 562.0 276.8 L 580.7 276.2 L 599.3 275.7 L 618.0 275.3 L 636.7 274.8 L 655.3 274.9 L 674.0 274.9" fill="none" stroke="#6A3D9A" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="274.9" r="4" fill="#6A3D9A" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 284.7 L 76.7 284.6 L 95.3 284.2 L 114.0 283.9 L 132.7 283.5 L 151.3 283.4 L 170.0 283.4 L 188.7 283.4 L 207.3 283.5 L 226.0 283.5 L 244.7 283.4 L 263.3 283.5 L 282.0 283.5 L 300.7 283.5 L 319.3 283.6 L 338.0 283.6 L 356.7 283.5 L 375.3 283.4 L 394.0 283.3 L 412.7 283.3 L 431.3 283.2 L 450.0 283.3 L 468.7 283.1 L 487.3 283.0 L 506.0 282.8 L 524.7 282.6 L 543.3 282.5 L 562.0 282.3 L 580.7 282.1 L 599.3 282.0 L 618.0 281.9 L 636.7 281.8 L 655.3 281.7 L 674.0 281.5" fill="none" stroke="#C26A00" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="281.5" r="4" fill="#C26A00" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 279.5 L 76.7 279.5 L 95.3 279.5 L 114.0 279.5 L 132.7 279.5 L 151.3 279.5 L 170.0 280.5 L 188.7 275.1 L 207.3 278.8 L 226.0 279.9 L 244.7 280.7 L 263.3 291.0 L 282.0 288.1 L 300.7 289.8 L 319.3 287.8 L 338.0 289.3 L 356.7 287.3 L 375.3 290.2 L 394.0 290.5 L 412.7 288.4 L 431.3 290.1 L 450.0 292.9 L 468.7 292.7 L 487.3 293.0 L 506.0 291.1 L 524.7 290.9 L 543.3 291.8 L 562.0 292.1 L 580.7 291.2 L 599.3 289.7 L 618.0 291.9 L 636.7 290.7 L 655.3 290.9 L 674.0 289.5" fill="none" stroke="#8a94a0" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="289.5" r="4" fill="#8a94a0" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="356.7" y="110.0" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">energia</text>
+  <text x="76.7" y="257.7" font-size="15" fill="#2E7D32" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">agricultura</text>
+  <text x="662.8" y="250.3" font-size="15" fill="#6A3D9A" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">processos industriais</text>
+  <line x1="599.3" y1="254.6" x2="599.3" y2="274.1" stroke="#6A3D9A" stroke-width="1.0"/>
+  <text x="254.0" y="217.4" font-size="15" fill="#8a94a0" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">uso da terra</text>
+  <line x1="310.0" y1="222.2" x2="310.0" y2="287.7" stroke="#8a94a0" stroke-width="1.0"/>
+  <text x="356.7" y="246.6" font-size="15" fill="#C26A00" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">resíduos</text>
+  <line x1="394.0" y1="251.4" x2="394.0" y2="281.2" stroke="#C26A00" stroke-width="1.0"/>
+  <text x="674.0" y="68.1" font-size="15" fill="#1b3a5c" text-anchor="end" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">39</text>
+  <text x="58.0" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">1990</text>
+  <text x="244.7" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2000</text>
+  <text x="431.3" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2010</text>
+  <text x="674.0" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2023</text>
+  <text x="363.0" y="372.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">em 2023, a energia emitiu 39 das 50,8 GtCO₂e do mundo (77%)</text>
+</svg>
