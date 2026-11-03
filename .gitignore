@@ -21,3 +21,10 @@ Thumbs.db
 # Cache do Python
 __pycache__/
 *.pyc
+
+# Versão restrita da aula (.pptx de sala): figuras recortadas de relatórios e
+# artigos, sem licença para publicação. Ver o comentário no topo de
+# aulas/14-transicao-energetica/index.qmd.
+aulas/_restrito/
+_site-restrito/
+_quarto-restrito.yml

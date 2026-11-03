@@ -15,3 +15,4 @@ title: "EAE1317"
 9. [Valoração de Bens Ambientais](aulas/11-valoracao/)
 10. [Preços Hedônicos](aulas/12-precos-hedonicos/)
 11. [Recursos Naturais](aulas/13-recursos-naturais/)
+12. [Transição Energética](aulas/14-transicao-energetica/)

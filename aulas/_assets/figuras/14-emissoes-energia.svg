@@ -1,0 +1,45 @@
+<svg width="726" height="406" viewBox="0 0 726 406"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Emissões do setor de energia, por subsetor</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="350.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Emissões do setor de energia, por subsetor</text>
+  <line x1="58.0" y1="292.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="292.0" x2="682.0" y2="292.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="690.0" y="298.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke"></text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">GtCO₂e</text>
+  <text x="50.0" y="234.4" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">5</text>
+  <line x1="58.0" y1="229.4" x2="674.0" y2="229.4" stroke="#c8d0d8" stroke-width="0.8"/>
+  <text x="50.0" y="171.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">10</text>
+  <line x1="58.0" y1="166.7" x2="674.0" y2="166.7" stroke="#c8d0d8" stroke-width="0.8"/>
+  <text x="50.0" y="109.1" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">15</text>
+  <line x1="58.0" y1="104.1" x2="674.0" y2="104.1" stroke="#c8d0d8" stroke-width="0.8"/>
+  <path d="M 58.0 183.6 L 76.7 181.9 L 95.3 179.9 L 114.0 179.3 L 132.7 178.0 L 151.3 175.6 L 170.0 171.0 L 188.7 167.6 L 207.3 164.8 L 226.0 164.0 L 244.7 159.0 L 263.3 155.7 L 282.0 153.4 L 300.7 145.6 L 319.3 140.8 L 338.0 136.1 L 356.7 129.8 L 375.3 122.8 L 394.0 122.4 L 412.7 125.1 L 431.3 113.6 L 450.0 105.9 L 468.7 102.1 L 487.3 98.4 L 506.0 99.2 L 524.7 102.5 L 543.3 102.3 L 562.0 97.8 L 580.7 92.6 L 599.3 93.7 L 618.0 99.6 L 636.7 85.3 L 655.3 82.7 L 674.0 78.2" fill="none" stroke="#1b3a5c" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="78.2" r="4" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 232.8 L 76.7 232.3 L 95.3 231.0 L 114.0 230.4 L 132.7 229.2 L 151.3 227.5 L 170.0 224.8 L 188.7 223.9 L 207.3 222.3 L 226.0 220.2 L 244.7 218.0 L 263.3 217.6 L 282.0 215.6 L 300.7 214.0 L 319.3 210.4 L 338.0 208.6 L 356.7 206.7 L 375.3 204.0 L 394.0 203.9 L 412.7 205.7 L 431.3 202.0 L 450.0 200.5 L 468.7 199.9 L 487.3 197.5 L 506.0 195.9 L 524.7 192.9 L 543.3 190.8 L 562.0 188.4 L 580.7 185.8 L 599.3 184.8 L 618.0 199.0 L 636.7 191.7 L 655.3 188.0 L 674.0 185.7" fill="none" stroke="#C00000" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="185.7" r="4" fill="#C00000" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 242.3 L 76.7 243.2 L 95.3 244.9 L 114.0 245.6 L 132.7 245.4 L 151.3 242.6 L 170.0 244.1 L 188.7 243.7 L 207.3 243.8 L 226.0 245.7 L 244.7 243.8 L 263.3 243.6 L 282.0 243.5 L 300.7 241.1 L 319.3 235.7 L 338.0 230.5 L 356.7 227.6 L 375.3 224.0 L 394.0 222.7 L 412.7 222.9 L 431.3 216.5 L 450.0 213.7 L 468.7 213.2 L 487.3 212.7 L 506.0 211.9 L 524.7 213.5 L 543.3 215.4 L 562.0 216.3 L 580.7 215.3 L 599.3 215.3 L 618.0 216.5 L 636.7 214.8 L 655.3 215.0 L 674.0 214.3" fill="none" stroke="#2E7D32" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="214.3" r="4" fill="#2E7D32" stroke="#ffffff" stroke-width="1.5"/>
+  <path d="M 58.0 251.5 L 76.7 251.1 L 95.3 252.5 L 114.0 251.6 L 132.7 252.6 L 151.3 251.6 L 170.0 250.8 L 188.7 251.0 L 207.3 252.9 L 226.0 252.0 L 244.7 252.3 L 263.3 252.0 L 282.0 251.9 L 300.7 250.9 L 319.3 250.3 L 338.0 250.3 L 356.7 250.7 L 375.3 250.9 L 394.0 250.1 L 412.7 250.7 L 431.3 250.1 L 450.0 250.8 L 468.7 251.6 L 487.3 250.2 L 506.0 250.9 L 524.7 250.7 L 543.3 250.3 L 562.0 249.4 L 580.7 249.1 L 599.3 249.7 L 618.0 250.3 L 636.7 249.8 L 655.3 250.8 L 674.0 251.9" fill="none" stroke="#C26A00" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="674.0" cy="251.9" r="4" fill="#C26A00" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="300.7" y="133.1" font-size="15" fill="#1b3a5c" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">eletricidade e calor</text>
+  <text x="487.3" y="186.2" font-size="15" fill="#C00000" text-anchor="end" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">transporte</text>
+  <text x="487.3" y="226.5" font-size="15" fill="#2E7D32" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">indústria e construção</text>
+  <text x="76.7" y="263.7" font-size="15" fill="#C26A00" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">edificações</text>
+  <text x="674.0" y="68.9" font-size="15" fill="#1b3a5c" text-anchor="end" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">17,1</text>
+  <text x="674.0" y="176.3" font-size="15" fill="#C00000" text-anchor="end" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">8,5</text>
+  <text x="58.0" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">1990</text>
+  <text x="244.7" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2000</text>
+  <text x="431.3" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2010</text>
+  <text x="674.0" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2023</text>
+  <text x="363.0" y="372.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">em 2023, eletricidade e transporte somaram 25,5 GtCO₂e: 66% das emissões da energia</text>
+</svg>
