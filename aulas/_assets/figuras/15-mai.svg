@@ -1,0 +1,32 @@
+<svg width="726" height="406" viewBox="0 0 726 406"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Média anual de volume, V(t)/t</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="350.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Média anual de volume, V(t)/t</text>
+  <line x1="58.0" y1="292.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="292.0" x2="682.0" y2="292.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="690.0" y="298.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">t</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">V(t)/t</text>
+  <text x="50.0" y="240.3" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">10</text>
+  <text x="50.0" y="183.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">20</text>
+  <text x="50.0" y="127.0" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">30</text>
+  <path d="M 65.2 229.7 L 70.3 225.9 L 75.4 222.1 L 80.5 218.3 L 85.5 214.6 L 90.6 211.0 L 95.7 207.4 L 100.8 203.9 L 105.8 200.4 L 110.9 197.0 L 116.0 193.6 L 121.0 190.3 L 126.1 187.1 L 131.2 183.9 L 136.3 180.7 L 141.3 177.7 L 146.4 174.6 L 151.5 171.7 L 156.6 168.7 L 161.6 165.9 L 166.7 163.1 L 171.8 160.3 L 176.9 157.6 L 181.9 155.0 L 187.0 152.4 L 192.1 149.9 L 197.1 147.4 L 202.2 145.0 L 207.3 142.6 L 212.4 140.3 L 217.4 138.1 L 222.5 135.9 L 227.6 133.8 L 232.7 131.7 L 237.7 129.7 L 242.8 127.7 L 247.9 125.8 L 252.9 123.9 L 258.0 122.1 L 263.1 120.4 L 268.2 118.7 L 273.2 117.0 L 278.3 115.4 L 283.4 113.9 L 288.5 112.4 L 293.5 111.0 L 298.6 109.7 L 303.7 108.4 L 308.7 107.1 L 313.8 105.9 L 318.9 104.8 L 324.0 103.7 L 329.0 102.7 L 334.1 101.7 L 339.2 100.8 L 344.3 99.9 L 349.3 99.1 L 354.4 98.4 L 359.5 97.7 L 364.6 97.0 L 369.6 96.4 L 374.7 95.9 L 379.8 95.4 L 384.8 95.0 L 389.9 94.7 L 395.0 94.4 L 400.1 94.1 L 405.1 93.9 L 410.2 93.8 L 415.3 93.7 L 420.4 93.7 L 425.4 93.7 L 430.5 93.8 L 435.6 93.9 L 440.6 94.1 L 445.7 94.4 L 450.8 94.7 L 455.9 95.0 L 460.9 95.4 L 466.0 95.9 L 471.1 96.4 L 476.2 97.0 L 481.2 97.7 L 486.3 98.4 L 491.4 99.1 L 496.4 99.9 L 501.5 100.8 L 506.6 101.7 L 511.7 102.7 L 516.7 103.7 L 521.8 104.8 L 526.9 105.9 L 532.0 107.1 L 537.0 108.4 L 542.1 109.7 L 547.2 111.0 L 552.2 112.4 L 557.3 113.9 L 562.4 115.4 L 567.5 117.0 L 572.5 118.7 L 577.6 120.4 L 582.7 122.1 L 587.8 123.9 L 592.8 125.8 L 597.9 127.7 L 603.0 129.7 L 608.1 131.7 L 613.1 133.8 L 618.2 135.9 L 623.3 138.1 L 628.3 140.3 L 633.4 142.6 L 638.5 145.0 L 643.6 147.4 L 648.6 149.9 L 653.7 152.4 L 658.8 155.0 L 663.9 157.6 L 668.9 160.3 L 674.0 163.1" fill="none" stroke="#2E7D32" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="58.0" y1="93.7" x2="420.4" y2="93.7" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="420.4" y1="292.0" x2="420.4" y2="93.7" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="420.4" cy="93.7" r="5.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="420.4" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">50</text>
+  <text x="50.0" y="98.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">35</text>
+  <text x="420.4" y="79.5" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">rotação biológica</text>
+  <text x="363.0" y="366.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">nenhuma outra idade de corte dá mais madeira</text>
+  <text x="363.0" y="386.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">por ano em média: 1.750 unidades em 50 anos</text>
+</svg>

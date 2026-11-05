@@ -1,0 +1,40 @@
+<svg width="726" height="406" viewBox="0 0 726 406"
+     xmlns="http://www.w3.org/2000/svg" role="img" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">
+  <title>Valor presente da madeira, por idade de corte</title>
+  <defs>
+    <marker id="seta" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#000000"/>
+    </marker>
+    <marker id="seta-apagada" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#c8d0d8"/>
+    </marker>
+    <marker id="seta-dano" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#0070C0"/>
+    </marker>
+  </defs>
+  <text x="350.0" y="17.0" font-size="18" fill="#000000" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Valor presente da madeira, por idade de corte</text>
+  <line x1="58.0" y1="292.0" x2="58.0" y2="46.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <line x1="58.0" y1="292.0" x2="682.0" y2="292.0" stroke="#000000" stroke-width="1.2" marker-end="url(#seta)"/>
+  <text x="690.0" y="298.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">t</text>
+  <text x="66.0" y="46.0" font-size="19" fill="#000000" text-anchor="start" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">R$</text>
+  <text x="50.0" y="247.4" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">100</text>
+  <text x="50.0" y="197.8" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">200</text>
+  <text x="50.0" y="148.2" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">300</text>
+  <text x="50.0" y="98.7" font-size="15" fill="#000000" text-anchor="end" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">400</text>
+  <path d="M 58.0 292.0 L 63.1 289.3 L 68.3 286.5 L 73.4 283.5 L 78.5 280.4 L 83.7 277.1 L 88.8 273.8 L 93.9 270.3 L 99.1 266.7 L 104.2 263.0 L 109.3 259.2 L 114.5 255.4 L 119.6 251.5 L 124.7 247.6 L 129.9 243.6 L 135.0 239.6 L 140.1 235.6 L 145.3 231.5 L 150.4 227.4 L 155.5 223.3 L 160.7 219.3 L 165.8 215.2 L 170.9 211.1 L 176.1 207.1 L 181.2 203.1 L 186.3 199.1 L 191.5 195.1 L 196.6 191.2 L 201.7 187.4 L 206.9 183.5 L 212.0 179.7 L 217.1 176.0 L 222.3 172.3 L 227.4 168.7 L 232.5 165.1 L 237.7 161.6 L 242.8 158.2 L 247.9 154.8 L 253.1 151.5 L 258.2 148.3 L 263.3 145.2 L 268.5 142.1 L 273.6 139.1 L 278.7 136.2 L 283.9 133.3 L 289.0 130.6 L 294.1 127.9 L 299.3 125.3 L 304.4 122.7 L 309.5 120.3 L 314.7 118.0 L 319.8 115.7 L 324.9 113.5 L 330.1 111.4 L 335.2 109.4 L 340.3 107.4 L 345.5 105.6 L 350.6 103.8 L 355.7 102.1 L 360.9 100.5 L 366.0 99.0 L 371.1 97.6 L 376.3 96.2 L 381.4 95.0 L 386.5 93.8 L 391.7 92.7 L 396.8 91.6 L 401.9 90.7 L 407.1 89.8 L 412.2 89.0 L 417.3 88.3 L 422.5 87.6 L 427.6 87.1 L 432.7 86.6 L 437.9 86.2 L 443.0 85.8 L 448.1 85.5 L 453.3 85.3 L 458.4 85.2 L 463.5 85.1 L 468.7 85.1 L 473.8 85.2 L 478.9 85.3 L 484.1 85.5 L 489.2 85.8 L 494.3 86.1 L 499.5 86.5 L 504.6 86.9 L 509.7 87.4 L 514.9 88.0 L 520.0 88.6 L 525.1 89.2 L 530.3 90.0 L 535.4 90.7 L 540.5 91.5 L 545.7 92.4 L 550.8 93.3 L 555.9 94.3 L 561.1 95.3 L 566.2 96.4 L 571.3 97.5 L 576.5 98.6 L 581.6 99.8 L 586.7 101.0 L 591.9 102.3 L 597.0 103.6 L 602.1 104.9 L 607.3 106.3 L 612.4 107.7 L 617.5 109.1 L 622.7 110.6 L 627.8 112.1 L 632.9 113.7 L 638.1 115.2 L 643.2 116.8 L 648.3 118.5 L 653.5 120.1 L 658.6 121.8 L 663.7 123.5 L 668.9 125.2 L 674.0 126.9" fill="none" stroke="#2E7D32" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="405.7" cy="90.0" r="3.5" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="336.2" cy="109.0" r="3.5" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="256.7" cy="149.2" r="3.5" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="157.4" cy="221.9" r="3.5" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="87.8" cy="274.4" r="3.5" fill="#c8d0d8" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="58.0" y1="85.1" x2="465.4" y2="85.1" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <line x1="465.4" y1="292.0" x2="465.4" y2="85.1" stroke="#8a94a0" stroke-width="1.1" stroke-dasharray="4 3"/>
+  <circle cx="465.4" cy="85.1" r="5.5" fill="#1b3a5c" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="465.4" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">41</text>
+  <text x="465.4" y="73.8" font-size="15" fill="#1b3a5c" text-anchor="middle" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Pareto: 417 (208,6 cada)</text>
+  <circle cx="77.9" cy="280.8" r="5.5" fill="#0070C0" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="77.9" y="312.0" font-size="15" fill="#000000" text-anchor="middle" font-style="italic" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">2</text>
+  <text x="137.5" y="272.2" font-size="15" fill="#0070C0" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">Nash: 22,5 (11,3 cada)</text>
+  <text x="72.9" y="120.9" font-size="15" fill="#0070C0" text-anchor="start" font-style="italic" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">corrida: 41 → 40 → 39 → … → 2</text>
+  <text x="363.0" y="372.0" font-size="17" fill="#1b3a5c" text-anchor="middle" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">juntos, cortam aos 41; na corrida, aos 2. O valor da floresta cai de 417 para 22,5</text>
+</svg>
