@@ -17,3 +17,4 @@ title: "EAE1317"
 11. [Recursos Naturais](aulas/13-recursos-naturais/)
 12. [Transição Energética](aulas/14-transicao-energetica/)
 13. [Recursos Comuns](aulas/15-recursos-comuns/)
+14. [Acidentes Ambientais](aulas/16-acidentes-ambientais/)
