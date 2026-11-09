@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Rafael Pucci">
+  <meta name="dcterms.date" content="2026-11-10">
+  <title>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais – Acidentes Ambientais</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-0427d8d92a431aa6a6430e53ec02a470.css">
+  <link rel="stylesheet" href="../_assets/styles.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Acidentes Ambientais</h1>
+  <p class="subtitle">EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Rafael Pucci 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-11-10</p>
+</section>
+<section id="aula-passada" class="slide level2">
+<h2>Aula Passada</h2>
+<ul>
+<li>Recursos Comuns
+<ul>
+<li>Comportamento estratégico</li>
+</ul></li>
+<li>Rotação Florestal
+<ul>
+<li>Rotação biológica, de Wicksell e de Faustmann</li>
+</ul></li>
+<li>Direitos de Propriedade e Desmatamento
+<ul>
+<li>Corrida entre vizinhos, acesso livre</li>
+</ul></li>
+<li>Grilagem de Terras</li>
+</ul>
+</section>
+<section id="agenda" class="slide level2" style="font-size:0.88em">
+<h2>Agenda</h2>
+<ul>
+<li>Acidentes vs.&nbsp;Poluição Contínua</li>
+<li>Modelo Básico
+<ul>
+<li>Probabilidade de Acidente</li>
+<li>Dano Esperado</li>
+<li>Custos de Produção e Prevenção</li>
+<li>Ótimo Social</li>
+<li>Firma sem Responsabilização Ambiental</li>
+</ul></li>
+<li>Regras de Responsabilização Ambiental
+<ul>
+<li>Responsabilização Total</li>
+<li>Regra da Negligência</li>
+</ul></li>
+<li>Responsabilização com Seguro</li>
+</ul>
+<div class="no-bullet">
+<p>Referência: Phaneuf e Requate, cap. 10</p>
+</div>
+</section>
+<section id="acidentes-vs.-poluição-contínua" class="slide level2">
+<h2>Acidentes vs.&nbsp;Poluição Contínua</h2>
+<div class="no-bullet">
+<p>Os modelos que vimos até agora lidam com poluição contínua.</p>
+</div>
+<ul>
+<li>São firmas cuja atividade produtiva gera poluentes de forma regular.</li>
+<li>Muitas vezes, entretanto, danos ambientais advêm de acidentes graves:
+<ul>
+<li>Vazamento de petróleo na costa brasileira em 2019;</li>
+<li>Rompimento das barragens do Fundão (2015) e Córrego do Feijão (2018);</li>
+<li>Acidente nuclear de Chernobyl (1986);</li>
+<li>Acidente nuclear de Fukushima (2011).</li>
+</ul></li>
+<li>Em caso de acidentes, a atividade da firma não é necessariamente poluidora.
+<ul>
+<li>No entanto, o acidente em si é extremamente danoso ao meio ambiente e à saúde da comunidade.</li>
+</ul></li>
+</ul>
+</section>
+<section id="acidentes-vs.-poluição-contínua-1" class="slide level2">
+<h2>Acidentes vs.&nbsp;Poluição Contínua</h2>
+<div class="no-bullet">
+<p>Chamaremos esses acidentes de <strong>eventos discretos</strong>, em oposição à <strong>poluição contínua</strong>.</p>
+</div>
+<div class="no-bullet solto">
+<p>Abordagem regulatória será diferente aqui.</p>
+</div>
+<ul>
+<li>Não se trata de taxar a atividade poluidora.</li>
+<li>É preciso incentivar esforços para <strong>prevenção de acidentes</strong>.
+<ul>
+<li>Acidentes que, talvez, nunca venham a ocorrer.</li>
+</ul></li>
+<li>Além disso, há o <strong>pagamento de multas</strong> no caso de acidente.
+<ul>
+<li>Tamanho da multa pode afetar comportamento da firma de forma inesperada.</li>
+</ul></li>
+</ul>
+</section>
+<section id="modelo-básico" class="slide level2 section-cover">
+<h2>Modelo Básico</h2>
+</section>
+<section id="probabilidade-de-acidente" class="slide level2">
+<h2>Probabilidade de Acidente</h2>
+<div class="no-bullet">
+<p>Por conta da natureza diferente do problema, usaremos um modelo ligeiramente diferente.</p>
+</div>
+<div class="no-bullet solto">
+<p>Denote <span class="math inline">\(\rho(a)\)</span> como a probabilidade de ocorrência de um acidente.</p>
+</div>
+<ul>
+<li>Em que <span class="math inline">\(a\)</span> é o nível de prevenção adotado.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Probabilidade decresce com mais prevenção, mas a taxas decrescente.</p>
+</div>
+<ul>
+<li><span class="math inline">\(\rho'(a)&lt;0\)</span> e <span class="math inline">\(\rho''(a)&gt;0\)</span>.</li>
+<li>Além disso, temos <span class="math inline">\(\lim_{a\to \infty} \rho(a)=0\)</span>.</li>
+</ul>
+</section>
+<section id="um-exemplo-numérico" class="slide level2">
+<h2>Um Exemplo Numérico</h2>
+<div class="no-bullet">
+<p>Ao longo da aula: <span class="math inline">\(\rho(a) = 0{,}25/(1+a)\)</span>, com <span class="math inline">\(a\)</span> em R$ milhões.</p>
+</div>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/16-probabilidade.svg" style="height:330px;max-height:330px"></p>
+</div>
+<ul>
+<li><span class="math inline">\(\rho'(a) = -0{,}25/(1+a)^2 &lt; 0\)</span> e <span class="math inline">\(\rho''(a) = 0{,}5/(1+a)^3 &gt; 0\)</span>.</li>
+<li>Sem prevenção, <span class="math inline">\(\rho(0)\)</span> = 25%. Com <span class="math inline">\(a\)</span> = 4, <span class="math inline">\(\rho(4) = 0{,}25/5\)</span> = 5%.</li>
+</ul>
+</section>
+<section id="dano-esperado" class="slide level2">
+<h2>Dano Esperado</h2>
+<ul>
+<li>Trataremos o dano ambiental como um valor exógeno igual a <span class="math inline">\(D\)</span>.
+<ul>
+<li>Quando não há acidente, o dano é igual a zero.</li>
+</ul></li>
+<li>Assim, o valor esperado do dano ambiental é dado por:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[EV(Dano)=\rho(a)\cdot D+\left[1-\rho(a)\right]\cdot 0=\rho(a)D\]</span></p>
+</div>
+<div class="no-bullet solto">
+<p>No exemplo, <span class="math inline">\(D\)</span> = R$ 400 milhões.</p>
+</div>
+<ul>
+<li>Sem prevenção: <span class="math inline">\(0{,}25 \times 400\)</span> = R$ 100 milhões de dano esperado.</li>
+<li>Com <span class="math inline">\(a\)</span> = 4: <span class="math inline">\(0{,}05 \times 400\)</span> = R$ 20 milhões.</li>
+</ul>
+</section>
+<section id="custos-de-produção-e-prevenção" class="slide level2">
+<h2>Custos de Produção e Prevenção</h2>
+<ul>
+<li>Considere <span class="math inline">\(x\)</span> como o bem produzido pela firma, com risco de acidente.
+<ul>
+<li>Focaremos em <strong>apenas uma firma</strong>;</li>
+<li><span class="math inline">\(P(x)\)</span> é a demanda inversa pelo bem <span class="math inline">\(x\)</span>.</li>
+</ul></li>
+<li>O custo da firma é uma combinação de custo de produção com custo de prevenção (“abatimento”).
+<ul>
+<li><span class="math inline">\(C(x,a)\)</span></li>
+</ul></li>
+<li>Custos crescentes em produção e prevenção:
+<ul>
+<li><span class="math inline">\(C_{x}(x,a)=\frac{\partial C}{\partial x}&gt;0\)</span> e <span class="math inline">\(C_{a}(x,a)=\frac{\partial C}{\partial a}&gt;0\)</span>.</li>
+</ul></li>
+<li>Além disso, assumimos o seguinte:
+<ul>
+<li><span class="math inline">\(C_{xx}(x,a)\geq 0\)</span> ; <span class="math inline">\(C_{aa}(x,a)\geq 0\)</span> ; <span class="math inline">\(C_{ax}(x,a)=C_{xa}(x,a)\geq 0\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="ótimo-social" class="slide level2">
+<h2>Ótimo Social</h2>
+<ul>
+<li>O bem-estar social é função de <span class="math inline">\(x\)</span> e <span class="math inline">\(a\)</span>:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[SW(x,a)=\int_{0}^{x} P(t)\,dt-C(x,a)-\rho(a)D\]</span></p>
+</div>
+<ul>
+<li>O regulador escolhe <span class="math inline">\(x\)</span> e <span class="math inline">\(a\)</span> para maximizar <span class="math inline">\(SW(x,a)\)</span>: <span class="math inline">\(\max_{x,a} SW(x,a)\)</span>.</li>
+<li>E as CPOs são:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[P(x)=C_{x}(x,a) \qquad\qquad -\rho'(a)D=C_{a}(x,a)\]</span></p>
+</div>
+<ul>
+<li>Na primeira, benefício Mg de <span class="math inline">\(x\)</span> = CMg de <span class="math inline">\(x\)</span>.</li>
+<li>Na segunda, dano <strong>esperado</strong> Mg = CMg de prevenção (<span class="math inline">\(a\)</span>).</li>
+</ul>
+</section>
+<section id="algumas-simplificações" class="slide level2">
+<h2>Algumas Simplificações</h2>
+<div class="no-bullet">
+<p>Para seguirmos, vamos simplificar um pouco a função de custo.</p>
+</div>
+<ul>
+<li>Assuma que o custo de produção é independente do custo de prevenção.</li>
+<li>Assuma também uma função quase-linear para que o esforço de prevenção esteja em unidades monetárias.</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[C(x,a)=C(x)+a\]</span></p>
+</div>
+<div class="no-bullet solto">
+<p>Isto significa que o bem-estar também será “separável”.</p>
+</div>
+</section>
+<section id="algumas-simplificações-1" class="slide level2">
+<h2>Algumas Simplificações</h2>
+<ul>
+<li>Vamos denotar o benefício líquido máximo do bem <span class="math inline">\(x\)</span> como:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[b=\max_{x} \int_{0}^{x} P(t)\,dt-C(x)\]</span></p>
+</div>
+<ul>
+<li>Logo, temos:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[SW(a)=\int_{0}^{x} P(t)\,dt-C(x)-a-\rho(a)D\]</span></p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[=b-\left[a+\rho(a)D\right]\]</span></p>
+</div>
+</section>
+<section id="algumas-simplificações-2" class="slide level2">
+<h2>Algumas Simplificações</h2>
+<ul>
+<li>Neste caso, a condição de ótimo social é dada por:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[-\rho'(a)D=1\]</span></p>
+</div>
+<ul>
+<li>O custo social esperado de um acidente é dado pelo <strong>custo de prevenção mais o eventual dano causado pelo acidente:</strong></li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[SC=a+\rho(a)D\]</span></p>
+</div>
+</section>
+<section id="ótimo-social-em-números" class="slide level2">
+<h2>Ótimo Social em Números</h2>
+<div class="no-bullet">
+<p>Com <span class="math inline">\(\rho(a) = 0{,}25/(1+a)\)</span> e <span class="math inline">\(D\)</span> = 400, a condição de ótimo fica:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[-\rho'(a)D = \frac{0{,}25 \times 400}{(1+a)^2} = \frac{100}{(1+a)^2} = 1
+\;\Rightarrow\; 1 + a^* = 10 \;\Rightarrow\; a^* = 9\]</span></p>
+</div>
+<div class="tabela">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prevenção, <span class="math inline">\(a\)</span></th>
+<th><span class="math inline">\(\rho(a)\)</span></th>
+<th>Dano esperado, <span class="math inline">\(\rho(a)D\)</span></th>
+<th>Custo social, <span class="math inline">\(a + \rho(a)D\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>25%</td>
+<td>100</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5%</td>
+<td>20</td>
+<td>24</td>
+</tr>
+<tr class="odd">
+<td><strong>9</strong></td>
+<td><strong>2,5%</strong></td>
+<td><strong>10</strong></td>
+<td><strong>19</strong></td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>1,25%</td>
+<td>5</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>De 4 para 9, gastam-se 5 milhões a mais e o dano esperado cai 10. De 9 para 19, gastam-se 10 a mais, mas o dano cai apenas 5.</li>
+</ul>
+</section>
+<section id="representação-gráfica" class="slide level2">
+<h2>Representação Gráfica</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/16-custo-social.svg" style="height:380px;max-height:380px"></p>
+</div>
+<ul>
+<li>À esquerda de <span class="math inline">\(a^*\)</span>, um milhão a mais em prevenção reduz o dano esperado em mais de um milhão. À direita, em menos.</li>
+</ul>
+</section>
+<section id="firma-sem-responsabilização-ambiental" class="slide level2">
+<h2>Firma sem Responsabilização Ambiental</h2>
+<ul>
+<li>Do lado da firma, na ausência de responsabilização, o lucro é:</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\Pi=px-C(x)-a\]</span></p>
+</div>
+<ul>
+<li>Definiremos <span class="math inline">\(v=\max_{x} px-C(x)\)</span>.
+<ul>
+<li>Ou seja, o lucro máximo considerando apenas o lado da produção de <span class="math inline">\(x\)</span>.</li>
+</ul></li>
+<li>Assim, o lucro se torna, simplesmente, <span class="math inline">\(\Pi=v-a\)</span>.</li>
+</ul>
+</section>
+<section id="firma-sem-responsabilização-ambiental-1" class="slide level2">
+<h2>Firma sem Responsabilização Ambiental</h2>
+<ul>
+<li>Qual será a escolha ótima de prevenção da firma neste caso?</li>
+</ul>
+<div class="eq-block">
+<p><span class="math display">\[\max_{a} \Pi=v-a\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Solução de canto: <span class="math inline">\(\hat{a}=0\neq a^{*}&gt;0\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="1">Intuitivamente, se não há responsabilização, <strong>a firma não se esforça para evitar acidentes</strong>.</span></li>
+<li><span class="fragment" data-fragment-index="2">No exemplo: <span class="math inline">\(\rho(0)\)</span> = 25% e custo social de 100, contra 19 no ótimo.</span></li>
+</ul>
+</section>
+<section id="regras-de-responsabilização" class="slide level2 section-cover">
+<h2>Regras de Responsabilização</h2>
+</section>
+<section id="regras-de-responsabilização-ambiental" class="slide level2">
+<h2>Regras de Responsabilização Ambiental</h2>
+<div class="no-bullet">
+<p>Em se tratando de acidentes ambientais, é relevante discutir o <strong>tamanho da multa em relação aos ativos da firma</strong>.</p>
+</div>
+<div class="no-bullet solto">
+<p>Defina a variável <span class="math inline">\(k\)</span> como o valor dos ativos da firma.</p>
+</div>
+<div class="no-bullet solto">
+<p>A riqueza (<em>valuation</em>) da firma é dada por <span class="math inline">\(y=v+k\)</span>.</p>
+</div>
+<ul>
+<li>Em que <span class="math inline">\(v=\max_{x} px-C(x)\)</span> é o lucro máximo com a venda de <span class="math inline">\(x\)</span>.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Assim, a <strong>solvência</strong> da firma depende de <span class="math inline">\(y\)</span> e <span class="math inline">\(D\)</span>.</p>
+</div>
+<ul>
+<li>Se <span class="math inline">\(y\geq D\)</span>, a firma é solvente diante do acidente;</li>
+<li>Se <span class="math inline">\(y&lt;D\)</span>, a firma não é solvente.</li>
+</ul>
+</section>
+<section id="firma-solvente" class="slide level2">
+<h2>Firma Solvente</h2>
+<div class="no-bullet">
+<p>Estudaremos, primeiro, o caso de uma firma solvente.</p>
+</div>
+<ul>
+<li>Ou seja, em que temos <span class="math inline">\(y&gt;a+D\)</span>.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Discutiremos duas regras de responsabilização:</p>
+</div>
+<ol type="1">
+<li>Responsabilização Total</li>
+<li>Regra da Negligência</li>
+</ol>
+</section>
+<section id="firma-solvente-responsabilização-total" class="slide level2">
+<h2>Firma Solvente: Responsabilização Total</h2>
+<div class="no-bullet">
+<p>Neste caso, a firma paga por todo o dano causado se houver acidente.</p>
+</div>
+<div class="no-bullet solto">
+<p>Vamos assumir uma firma neutra ao risco: lucro esperado é <span class="math inline">\(EV\left[\Pi(a)\right]=y-a-\rho(a)D\)</span>.</p>
+</div>
+<div class="no-bullet solto">
+<p>A condição de maximização é dada por:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[-\rho'(a)D=1\]</span></p>
+</div>
+<ul>
+<li>É exatamente a escolha socialmente ótima.</li>
+</ul>
+<div class="no-bullet solto">
+<p><strong><u>Se a firma é solvente</u>, a responsabilização total leva a uma escolha socialmente ótima</strong>.</p>
+</div>
+</section>
+<section id="firma-solvente-regra-da-negligência" class="slide level2">
+<h2>Firma Solvente: Regra da Negligência</h2>
+<div class="no-bullet">
+<p>Suponha, agora, que o regulador define um nível mínimo de prevenção igual a <span class="math inline">\(\bar{a}\)</span>.</p>
+</div>
+<ul>
+<li>A firma só é responsabilizável se for comprovado que escolheu um nível de prevenção menor do que <span class="math inline">\(\bar{a}\)</span>.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Considerando uma firma neutra ao risco, temos:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[EV\left[\Pi(a)\right]=\begin{cases} y-\left[a+\rho(a)D\right] &amp; \text{se } a&lt;\bar{a} \\ y-a &amp; \text{se } a\geq \bar{a}\end{cases}\]</span></p>
+</div>
+<div class="no-bullet solto">
+<p>Qual será a escolha ótima?</p>
+</div>
+</section>
+<section id="cumprir-ou-descumprir" class="slide level2" style="font-size:0.92em">
+<h2>Cumprir ou Descumprir?</h2>
+<div class="no-bullet">
+<p>A firma tem, na prática, duas opções.</p>
+</div>
+<ul>
+<li><strong>Cumprir</strong> (<span class="math inline">\(a \geq \bar{a}\)</span>): a firma não responde pelo acidente e gasta só a prevenção. O mais barato é <span class="math inline">\(a = \bar{a}\)</span>.
+<ul>
+<li>O dano esperado, <span class="math inline">\(\rho(\bar{a})D\)</span>, fica com as vítimas.</li>
+</ul></li>
+<li><strong>Descumprir</strong> (<span class="math inline">\(a &lt; \bar{a}\)</span>): a firma indeniza todo o dano, como na responsabilização total. Seu custo esperado é <span class="math inline">\(a + \rho(a)D\)</span>, o próprio custo social.
+<ul>
+<li>O menor valor do custo social é <span class="math inline">\(a^* + \rho(a^*)D\)</span> (no exemplo, 19). Descumprindo, a firma não gasta menos que isso.</li>
+</ul></li>
+</ul>
+<div class="no-bullet solto fragment" data-fragment-index="1">
+<p>Logo, a firma cumpre o padrão se:</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[\bar{a} \leq a^* + \rho(a^*)D\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Se cumpre, escolhe <span class="math inline">\(a = \bar{a}\)</span>. Se descumpre, escolhe <span class="math inline">\(a = a^*\)</span> e paga os danos.</span></li>
+</ul>
+</section>
+<section id="representação-gráfica-1" class="slide level2">
+<h2>Representação Gráfica</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/16-negligencia.svg" style="height:380px;max-height:380px"></p>
+</div>
+<ul>
+<li>No exemplo, <span class="math inline">\(a^* + \rho(a^*)D = 9 + 10\)</span> = 19.</li>
+</ul>
+</section>
+<section id="regra-da-negligência-em-números" class="slide level2">
+<h2>Regra da Negligência em Números</h2>
+<div class="tabela">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Padrão, <span class="math inline">\(\bar{a}\)</span></th>
+<th>Cumprir custa</th>
+<th>Descumprir custa, no mínimo</th>
+<th>Escolha</th>
+<th>Custo social</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>4</td>
+<td>19</td>
+<td>cumpre: <span class="math inline">\(a\)</span> = 4</td>
+<td>24</td>
+</tr>
+<tr class="even">
+<td><strong>9</strong></td>
+<td><strong>9</strong></td>
+<td><strong>19</strong></td>
+<td><strong>cumpre: <span class="math inline">\(a\)</span> = 9</strong></td>
+<td><strong>19</strong></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>15</td>
+<td>19</td>
+<td>cumpre: <span class="math inline">\(a\)</span> = 15</td>
+<td>21,25</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>25</td>
+<td>19</td>
+<td>descumpre: <span class="math inline">\(a\)</span> = 9</td>
+<td>19</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fonte">
+<p>Custo social de <span class="math inline">\(a\)</span> = 15: <span class="math inline">\(15 + 100/16\)</span> = 21,25.</p>
+</div>
+<ul>
+<li><span class="math inline">\(\bar{a} = a^*\)</span>: a firma escolhe o ótimo, como na responsabilização total.</li>
+<li><span class="math inline">\(\bar{a} &lt; a^*\)</span>: a firma cumpre, mas previne pouco. Entre <span class="math inline">\(a^*\)</span> e 19, previne demais.</li>
+<li><span class="math inline">\(\bar{a}\)</span> acima de 19: o padrão é ignorado. A firma paga os danos e escolhe <span class="math inline">\(a^*\)</span>.</li>
+</ul>
+</section>
+<section id="total-ou-negligência" class="slide level2">
+<h2>Total ou Negligência?</h2>
+<div class="no-bullet">
+<p>Com <span class="math inline">\(\bar{a} = a^*\)</span>, as duas regras levam à mesma prevenção. Muda quem arca com o dano esperado.</p>
+</div>
+<div class="tabela">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th></th>
+<th>Responsabilização total</th>
+<th>Negligência, <span class="math inline">\(\bar{a} = a^*\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prevenção</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Gasto esperado da firma</td>
+<td>9 + 10 = 19</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>Dano esperado sem compensação</td>
+<td>0</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Na negligência, a firma que cumpre o padrão não indeniza as vítimas.</li>
+<li>Para fixar <span class="math inline">\(\bar{a} = a^*\)</span>, o regulador precisa conhecer <span class="math inline">\(\rho(a)\)</span> e <span class="math inline">\(D\)</span>. Na responsabilização total, a própria firma calcula <span class="math inline">\(a^*\)</span>.</li>
+</ul>
+</section>
+<section id="firma-insolvente" class="slide level2 section-cover">
+<h2>Firma Insolvente</h2>
+</section>
+<section id="firma-insolvente-1" class="slide level2" style="font-size:0.86em">
+<h2>Firma Insolvente</h2>
+<div class="no-bullet">
+<p>Trataremos agora do caso em que a firma pode se tornar insolvente se tiver que pagar pelos danos ambientais.</p>
+</div>
+<div class="no-bullet solto">
+<p>Note que <strong>só faz sentido estudar este caso se</strong> <span class="math inline">\(b-a^{*}-\rho(a^{*})D&gt;0\)</span>.</p>
+</div>
+<ul>
+<li>Ou seja, existe algum benefício (esperado) em se produzir <span class="math inline">\(x\)</span>.</li>
+<li>Se for menor do que zero, a produção de <span class="math inline">\(x\)</span> não faz sentido socialmente.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Assumir que há benefício, entretanto, não garante <span class="math inline">\(y-a^{*}-D&gt;0\)</span> (solvência).</p>
+</div>
+<div class="no-bullet solto">
+<p>Ou seja, estamos estudando um caso em que:</p>
+</div>
+<ul>
+<li><strong>a produção de</strong> <span class="math inline">\(x\)</span> <strong>faz sentido socialmente <em>ex-ante</em></strong> (antes do acidente);</li>
+<li>mas a <strong>firma não consegue cobrir os danos <em>ex-post</em></strong> (após o acidente).</li>
+</ul>
+</section>
+<section id="firma-insolvente-responsabilização-total" class="slide level2">
+<h2>Firma Insolvente: Responsabilização Total</h2>
+<div class="no-bullet">
+<p>Na ausência de mercado de crédito (riqueza da firma não pode ser negativa), temos:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[EV\left[\Pi(a,y)\right]=\rho(a)\cdot \max\left\{0,y-a-D\right\}+[1-\rho(a)](y-a)\]</span></p>
+</div>
+<div class="no-bullet solto">
+<p>Em palavras:</p>
+</div>
+<ul>
+<li>Se há acidente, o lucro da firma é, no mínimo, zero.
+<ul>
+<li>Se firma é insolvente, teríamos <span class="math inline">\(y-a-D&lt;0\)</span>.</li>
+</ul></li>
+<li>Se não há acidente, lucro da firma é <span class="math inline">\(y-a\)</span>.</li>
+</ul>
+</section>
+<section id="firma-insolvente-responsabilização-total-1" class="slide level2">
+<h2>Firma Insolvente: Responsabilização Total</h2>
+<div class="no-bullet">
+<p>Se firma é insolvente, temos <span class="math inline">\(\max\left\{0,y-a-D\right\}=0\)</span>. Logo:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[EV\left[\Pi(a,y)\right]=\rho(a)\cdot 0+\left[1-\rho(a)\right](y-a)=\left[1-\rho(a)\right](y-a)\]</span></p>
+</div>
+<div class="no-bullet solto fragment" data-fragment-index="1">
+<p>Condição de máximo é:</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[-\rho'(a)(y-a)=1-\rho(a)\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Note que o custo marginal (lado direito) é menor do que quando a firma é solvente (<span class="math inline">\(CMg=1\)</span>).</span>
+<ul>
+<li><span class="fragment" data-fragment-index="1">Isto ocorre porque o custo da prevenção só é relevante quando não há acidente.</span></li>
+</ul></li>
+<li><span class="fragment" data-fragment-index="1">O lado esquerdo, no entanto, também diminui: benefício é proporcional à riqueza, não ao dano.</span></li>
+</ul>
+</section>
+<section id="firma-insolvente-responsabilização-total-2" class="slide level2">
+<h2>Firma Insolvente: Responsabilização Total</h2>
+<div class="no-bullet">
+<p>Podemos reescrever a CPO e compará-la com a da firma solvente:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[\text{solvente: } -\rho'(a^*)=\frac{1}{D} \qquad\qquad \text{insolvente: } -\rho'(\tilde{a})=\frac{1-\rho(\tilde{a})}{y-\tilde{a}}\]</span></p>
+</div>
+<ul>
+<li>Lado esquerdo, igual nas duas: quanto um real de prevenção reduz <span class="math inline">\(\rho\)</span>.</li>
+<li>Lado direito: a redução mínima que faz esse real valer a pena.</li>
+<li><span class="math inline">\(D\)</span> não aparece na CPO da insolvente: só a riqueza <span class="math inline">\(y\)</span> importa.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Nesse caso, <span class="math inline">\(\tilde{a}&lt;a^{*}\)</span>?</p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1"><span class="math inline">\(-\rho'(a)\)</span> é decrescente: <span class="math inline">\(\tilde{a} &lt; a^*\)</span> se o lado direito da insolvente passa de <span class="math inline">\(1/D\)</span>.</span></li>
+<li><span class="fragment" data-fragment-index="2">Sim, se dano for suficientemente grande em relação à riqueza da firma.</span></li>
+</ul>
+</section>
+<section id="firma-insolvente-em-números" class="slide level2">
+<h2>Firma Insolvente em Números</h2>
+<div class="no-bullet">
+<p>Com <span class="math inline">\(\rho(a) = 0{,}25/(1+a)\)</span>, a CPO fica:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[\frac{0{,}25\,(y-\tilde{a})}{(1+\tilde{a})^2} = \frac{0{,}75+\tilde{a}}{1+\tilde{a}}\]</span></p>
+</div>
+<div class="no-bullet solto">
+<p>Multiplicando os dois lados por <span class="math inline">\((1+\tilde{a})^2\)</span>:</p>
+</div>
+<div class="eq-block">
+<p><span class="math display">\[0{,}25\,(y-\tilde{a}) = (1+\tilde{a})^2 - 0{,}25\,(1+\tilde{a})
+\;\Rightarrow\; (1+\tilde{a})^2 = \frac{y+1}{4}\]</span></p>
+</div>
+<ul>
+<li>Com <span class="math inline">\(y\)</span> = 99 (o dano é quatro vezes a riqueza): <span class="math inline">\((1+\tilde{a})^2\)</span> = 25, logo <span class="math inline">\(\tilde{a}\)</span> = 4.</li>
+</ul>
+</section>
+<section id="prevenção-e-riqueza" class="slide level2">
+<h2>Prevenção e Riqueza</h2>
+<div class="diagram">
+<p><img data-src="../_assets/figuras/16-insolvente.svg" style="height:380px;max-height:380px"></p>
+</div>
+<ul>
+<li>Com <span class="math inline">\(y\)</span> = 99: <span class="math inline">\(\tilde{a}\)</span> = 4, <span class="math inline">\(\rho(4)\)</span> = 5% e custo social de 24, contra 19 no ótimo.</li>
+</ul>
+</section>
+<section id="firma-insolvente-regra-da-negligência" class="slide level2">
+<h2>Firma Insolvente: Regra da Negligência</h2>
+<div class="no-bullet">
+<p>Tipicamente, teremos o mesmo resultado: há menos prevenção do que o socialmente ótimo.</p>
+</div>
+<div class="no-bullet solto">
+<p>No entanto, há uma implicação interessante:</p>
+</div>
+<ul>
+<li>Se a riqueza da firma for pequena o suficiente, é possível definir <span class="math inline">\(\bar{a}\)</span> de modo que a <strong>Regra da Negligência produza resultado mais eficiente do que a Responsabilização Total</strong>.</li>
+</ul>
+</section>
+<section id="negligência-com-firma-insolvente" class="slide level2">
+<h2>Negligência com Firma Insolvente</h2>
+<div class="no-bullet">
+<p>As mesmas duas opções, agora com <span class="math inline">\(y\)</span> = 99:</p>
+</div>
+<ul>
+<li><strong>Cumprir</strong>: não responde pelo acidente. Fica com <span class="math inline">\(y - \bar{a}\)</span> com certeza.</li>
+<li><strong>Descumprir</strong>: no máximo, repete a escolha da responsabilização total, <span class="math inline">\((1-\rho(4))(99-4) = 0{,}95 \times 95\)</span> = 90,25.</li>
+</ul>
+<div class="tabela fragment" data-fragment-index="1">
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Padrão, <span class="math inline">\(\bar{a}\)</span></th>
+<th>Cumprir rende</th>
+<th>Descumprir rende, no máximo</th>
+<th>Escolha</th>
+<th>Custo social</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8</td>
+<td>99 − 8 = 91</td>
+<td>90,25</td>
+<td>cumpre: <span class="math inline">\(a\)</span> = 8</td>
+<td>8 + 100/9 = 19,1</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>99 − 9 = 90</td>
+<td>90,25</td>
+<td>descumpre: <span class="math inline">\(a\)</span> = 4</td>
+<td>24</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="2">Quem cumpre o padrão guarda a riqueza mesmo se houver acidente. Esse prêmio leva a firma pequena a prevenir mais.</span></li>
+</ul>
+</section>
+<section id="responsabilização-com-seguro" class="slide level2 section-cover">
+<h2>Responsabilização com Seguro</h2>
+</section>
+<section id="responsabilização-com-seguro-1" class="slide level2">
+<h2>Responsabilização com Seguro</h2>
+<div class="no-bullet">
+<p>Vimos que, em caso de acidente, a firma pode decretar falência e não pagar a multa ambiental.</p>
+</div>
+<div class="no-bullet solto">
+<p>Dado isso, pode fazer sentido que a firma seja obrigada a contratar um seguro.</p>
+</div>
+<ul>
+<li>Assim, em caso de acidente, a multa é paga com o dinheiro do seguro.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Qual problema pode surgir neste caso?</p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="1"><strong><em>Moral hazard</em>:</strong> se a firma sabe que o seguro vai cobrir o dano, pode escolher ser mais negligente.</span></li>
+</ul>
+</section>
+<section id="responsabilização-com-seguro-2" class="slide level2">
+<h2>Responsabilização com Seguro</h2>
+<div class="no-bullet">
+<p>Suponha que a cobertura do seguro obrigatório seja <span class="math inline">\(c=D\)</span> e o preço por unidade de cobertura é dado por <span class="math inline">\(\phi\)</span>.</p>
+</div>
+<ul>
+<li>Logo, o gasto com seguro é <span class="math inline">\(\phi D\)</span>.</li>
+</ul>
+<div class="no-bullet solto">
+<p>Neste caso, qual é o lucro esperado da firma?</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="1">
+<p><span class="math display">\[EV(\Pi)=\left[1-\rho(a)\right](y-a-\phi D)+\rho(a)\max\left\{0,y-a-\phi D+D-D\right\}\]</span></p>
+</div>
+<div class="no-bullet solto fragment" data-fragment-index="2">
+<p>Considerando que a firma consiga pagar pelo seguro, temos:</p>
+</div>
+<div class="eq-block fragment" data-fragment-index="2">
+<p><span class="math display">\[EV(\Pi)=\left[1-\rho(a)\right](y-a-\phi D)+\rho(a)(y-a-\phi D)=y-a-\phi D\]</span></p>
+</div>
+<ul>
+<li><span class="fragment" data-fragment-index="3">Qual é a escolha ótima da firma? <span class="math inline">\(\rightarrow\)</span> <span class="math inline">\(\boxed{a=0}\)</span></span></li>
+</ul>
+</section>
+<section id="responsabilização-com-seguro-3" class="slide level2" style="font-size:0.88em">
+<h2>Responsabilização com Seguro</h2>
+<div class="no-bullet">
+<p>Ou seja, um <strong>seguro obrigatório com cobertura total não incentiva a firma a tomar precauções</strong>.</p>
+</div>
+<ul>
+<li><em>Moral Hazard</em></li>
+</ul>
+<div class="no-bullet solto">
+<p>Para resolver esse problema, pode-se, por exemplo, exigir coparticipação (franquia) da firma.</p>
+</div>
+<ul>
+<li>Neste caso, a cobertura do seguro é <span class="math inline">\(c&lt;D\)</span>.</li>
+</ul>
+<div class="no-bullet solto">
+<p>O problema da franquia é que <span class="math inline">\(c&lt;D\)</span> pode fazer com que pessoas afetadas não recebam compensação suficiente.</p>
+</div>
+<ul>
+<li>Ou seja, haverá um <strong><em>trade-off</em> entre eficiência (mais coparticipação) e equidade (compensação para as vítimas)</strong>.</li>
+</ul>
+</section>
+<section id="seguro-em-números" class="slide level2">
+<h2>Seguro em Números</h2>
+<div class="no-bullet">
+<p>No exemplo, <span class="math inline">\(a = 0\)</span> leva a <span class="math inline">\(\rho(0)\)</span> = 25%: dano esperado de 100, contra 10 no ótimo.</p>
+</div>
+<div class="no-bullet solto">
+<p>E se o preço do seguro acompanhar a prevenção, <span class="math inline">\(\phi = \rho(a)\)</span>?</p>
+</div>
+<ul>
+<li>O gasto com seguro passa a ser <span class="math inline">\(\rho(a)D\)</span>. O lucro esperado volta a ser <span class="math inline">\(y - a - \rho(a)D\)</span>, o mesmo da responsabilização total.</li>
+<li>A firma escolhe <span class="math inline">\(a^*\)</span> = 9 e paga um prêmio de <span class="math inline">\(0{,}025 \times 400\)</span> =
+<ol start="10" type="1">
+<li></li>
+</ol></li>
+</ul>
+<div class="no-bullet solto">
+<p>Ou seja, uma seguradora que observa a prevenção devolve o incentivo que a cobertura total retira.</p>
+</div>
+</section>
+<section id="seguro-obrigatório-no-texas" class="slide level2" style="font-size:0.94em">
+<h2>Seguro Obrigatório no Texas</h2>
+<div class="no-bullet">
+<p>Petróleo e gás no Texas: milhares de produtores pequenos, com poços de baixa produção.</p>
+</div>
+<ul>
+<li>Em 2001 e 2002, o Texas não conseguiu cobrar 68% das multas aplicadas, frequentemente por causa de falências.</li>
+<li>As firmas responsáveis por 20% da produção (as menores) concentravam quase todos os poços abandonados (falências), 95% das violações e 40% dos <em>blowouts</em>.</li>
+<li>Desde março de 2002, todo produtor precisa de uma garantia (<em>surety bond</em>): US$ 2 por pé de profundidade dos poços, ou US$ 25 mil para até 10 poços.</li>
+<li>O prêmio anual é de 1% a 2,5% do valor garantido para firmas de baixo risco; de 10% a 15% para as de alto risco.</li>
+</ul>
+<div class="fonte">
+<p>Fonte: <span class="citation" data-cites="boomhower2019">Boomhower (<a href="#/referências" role="doc-biblioref" onclick="">2019</a>)</span>; números da versão de trabalho (2016).</p>
+</div>
+</section>
+<section id="seguro-obrigatório-no-texas-1" class="slide level2" style="font-size:0.94em">
+<h2>Seguro Obrigatório no Texas</h2>
+<div class="tabela">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Efeito da exigência de garantia</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Produtores que saíram do mercado logo depois</td>
+<td>cerca de 6%</td>
+</tr>
+<tr class="even">
+<td>Produção das 80% menores firmas</td>
+<td>queda de cerca de 5%</td>
+</tr>
+<tr class="odd">
+<td>Firmas que deixam poços sem tamponar ao fim da produção</td>
+<td>queda de 85%</td>
+</tr>
+<tr class="even">
+<td>Violações em inspeções e <em>blowouts</em></td>
+<td>queda substancial</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>As firmas que saíram eram pequenas e tinham histórico ambiental ruim: são como as firmas insolventes do modelo que vimos.</li>
+<li>O prêmio varia com o risco da firma (<span class="math inline">\(\phi\)</span> que acompanha a prevenção), por isso incentivou esforço.</li>
+<li>A maior parte dos poços passou a firmas grandes, que são mais capazes de responder pelos danos.</li>
+</ul>
+<div class="fonte">
+<p>Fonte: <span class="citation" data-cites="boomhower2019">Boomhower (<a href="#/referências" role="doc-biblioref" onclick="">2019</a>)</span>; números da versão de trabalho (2016).</p>
+</div>
+</section>
+<section id="concluindo" class="slide level2">
+<h2>Concluindo</h2>
+<ul>
+<li>Sem responsabilização, a firma não previne: <span class="math inline">\(a = 0\)</span>.</li>
+<li>Com firma solvente, a responsabilização total leva ao ótimo. A regra da negligência também, se <span class="math inline">\(\bar{a} = a^*\)</span>.</li>
+<li>Na negligência, a firma compara duas opções: cumprir custa <span class="math inline">\(\bar{a}\)</span>; descumprir custa, no mínimo, <span class="math inline">\(a^* + \rho(a^*)D\)</span>.</li>
+<li>Com firma insolvente, a falência limita a perda: a prevenção cai com a riqueza. A negligência pode fazer melhor que a responsabilização total.</li>
+<li>Seguro com cobertura total e preço fixo elimina a prevenção. Prêmio que acompanha o risco a recupera, como no Texas.</li>
+</ul>
+</section>
+<section id="referências" class="slide level2 smaller scrollable">
+<h2>Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-boomhower2019" class="csl-entry" role="listitem">
+Boomhower, Judson. 2019. <span>«Drilling Like There’s No Tomorrow: Bankruptcy, Insurance, and Environmental Risk»</span>. <em>American Economic Review</em> 109 (2): 391–426.
+</div>
+<div id="ref-phaneuf2017" class="csl-entry" role="listitem">
+Phaneuf, Daniel J., e Till Requate. 2017. <em>A Course in Environmental Economics: Theory, Policy, and Practice</em>. Cambridge University Press.
+</div>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>EAE1317 — Economia do Meio Ambiente e dos Recursos Naturais</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 8.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/rpucci-usp\.github\.io\/eae1317\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
